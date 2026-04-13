@@ -11,4 +11,5 @@ export const tripleOrb: TemplateFactory = (roomColor, accentColor) => ({
   statColor: '#fff',
   headlineSize: 27,
   accent: roomColor,
+  photoLayout: 'none',
 });

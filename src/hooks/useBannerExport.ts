@@ -19,7 +19,7 @@ export function useBannerExport() {
     const dim = plat.imageDimensions[imageDimensionIndex] || plat.imageDimensions[0];
 
     try {
-      const canvas = drawBannerCanvas(result, rm, bannerVariant, dim.width, dim.height);
+      const canvas = await drawBannerCanvas(result, rm, bannerVariant, dim.width, dim.height);
       if (!canvas) throw new Error('Render failed');
 
       const blob = await new Promise<Blob>((resolve, reject) => {

@@ -11,4 +11,5 @@ export const centeredRadial: TemplateFactory = (roomColor, accentColor) => ({
   statColor: '#fff',
   headlineSize: 30,
   accent: roomColor,
+  photoLayout: 'none',
 });

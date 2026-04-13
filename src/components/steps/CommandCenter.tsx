@@ -22,13 +22,24 @@ export function CommandCenter({ history }: CommandCenterProps) {
         <div className="text-[10px] font-bold tracking-wider text-bronze mb-2">THE PLAY</div>
         <div className="text-tx-mid text-[13px] leading-relaxed">
           Every post is a <span className="text-tx font-semibold">trust deposit</span>.
-          Every closing line plants a seed:{' '}
+          Every closing line creates hunger:{' '}
           <span className="text-bronze italic">
-            "I should probably have someone look at this."
+            "I need to talk to someone who understands this."
           </span>{' '}
-          When they need advisory, MICS is the only name.
+          You never sell. You make them come to you.
         </div>
       </Card>
+
+      {/* Calendar */}
+      <Label>CALENDAR</Label>
+      <Button
+        variant="ghost"
+        fullWidth
+        onClick={() => setStep(9)}
+        className="!py-3.5 !text-[13px] !rounded-card-lg !mb-6 !border-bronze/30 !text-bronze hover:!bg-bronze/10"
+      >
+        Content Calendar
+      </Button>
 
       {/* Create actions */}
       <Label>CREATE</Label>

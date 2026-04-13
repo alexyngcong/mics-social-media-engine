@@ -78,6 +78,15 @@ export interface OrbConfig {
   opacity: number;
 }
 
+export type PhotoLayout =
+  | 'none'           // gradient-only (existing templates)
+  | 'fullbleed'      // full photo + dark gradient overlay
+  | 'split-left'     // photo left half, content right
+  | 'split-right'    // photo right half, content left
+  | 'duotone'        // photo with room-color duotone effect
+  | 'frosted'        // blurred photo bg + frosted glass panel
+  | 'vignette';      // photo with heavy dark vignette, content centered
+
 export interface BannerTemplate {
   bg: string;
   bgColors: string[];
@@ -86,6 +95,30 @@ export interface BannerTemplate {
   headlineSize: number;
   accent: string;
   leftBar?: boolean;
+  photoLayout: PhotoLayout;
+  photoOverlayOpacity?: number;   // 0-1, strength of dark overlay on photo
+  photoDuotoneColor?: string;     // tint color for duotone mode
 }
 
 export type TemplateFactory = (roomColor: string, accentColor: string) => BannerTemplate;
+
+// ─── Calendar types ─────────────────────────────────────────────
+
+export type CalendarDayStatus = 'planned' | 'generating' | 'generated' | 'copied' | 'skipped';
+
+export interface CalendarEntry {
+  date: string;             // YYYY-MM-DD
+  room: RoomId;
+  topic: string;
+  postTime: string;         // e.g. "08:30"
+  postTimeLabel: string;    // e.g. "8:30 AM UAE"
+  status: CalendarDayStatus;
+  result?: GeneratedPost;
+  bannerVariant?: number;
+}
+
+export interface CalendarMonth {
+  year: number;
+  month: number;            // 0-based (JS Date convention)
+  entries: Record<string, CalendarEntry>; // keyed by YYYY-MM-DD
+}

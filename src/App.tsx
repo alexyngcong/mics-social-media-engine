@@ -14,6 +14,8 @@ import { CustomTopic } from './components/steps/CustomTopic';
 import { DeepDive } from './components/steps/DeepDive';
 import { LoadingState } from './components/steps/LoadingState';
 import { ResultView } from './components/steps/ResultView';
+import { CalendarView } from './components/calendar/CalendarView';
+import { DayDetail } from './components/calendar/DayDetail';
 import { Button } from './components/ui/Button';
 
 function getStepTitle(step: number): string {
@@ -26,6 +28,7 @@ function getStepTitle(step: number): string {
     case 4: case 8: return 'Your Post';
     case 5: return 'Custom Topic';
     case 6: return 'AI Deep Dive';
+    case 9: return 'Content Calendar';
     default: return '';
   }
 }
@@ -68,7 +71,7 @@ export default function App() {
               {getStepTitle(store.step)}
             </h1>
             <div className="text-[10px] text-tx-dim mt-0.5">
-              {dateFormatted.short} | CFOs Private Insights Circle
+              {dateFormatted.short} | Private Intelligence
             </div>
           </div>
           <div className="flex gap-2">
@@ -87,6 +90,12 @@ export default function App() {
       {/* Content */}
       <div className="flex-1 overflow-y-auto px-5 py-5 pb-24">
         {store.step === 0 && <CommandCenter history={history} />}
+        {store.step === 9 && (
+          <>
+            <CalendarView />
+            <DayDetail />
+          </>
+        )}
         {store.step === 10 && <PlatformSelect />}
         {store.step === 1 && <RoomSelect />}
         {store.step === 2 && <FormatSelect onGenerate={() => generate()} />}
@@ -128,7 +137,7 @@ export default function App() {
 
       {/* Footer */}
       <div className="px-5 py-2.5 border-t border-ink-border bg-ink flex justify-between text-[10px] text-tx-dim">
-        <span>MICS International | DIFC</span>
+        <span>Intelligence Engine</span>
         <span className="text-tx-ghost">v4.0</span>
       </div>
     </div>

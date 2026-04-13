@@ -4,7 +4,7 @@ import { useClipboard } from '../../hooks/useClipboard';
 import { useBannerExport } from '../../hooks/useBannerExport';
 import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
-import { TEMPLATE_COUNT } from '../banner/templates';
+import { TEMPLATE_COUNT, isPhotoTemplate } from '../banner/templates';
 import { BannerPreview } from '../banner/BannerPreview';
 import { Button } from '../ui/Button';
 import { Label } from '../ui/Label';
@@ -63,7 +63,13 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
       )}
 
       {/* Banner graphic */}
-      <Label>GRAPHIC ({dim.width}x{dim.height})</Label>
+      <Label>
+        GRAPHIC ({dim.width}x{dim.height})
+        {' '}
+        <span className="text-[9px] text-tx-ghost ml-1">
+          {isPhotoTemplate(store.bannerVariant) ? 'PHOTO' : 'ABSTRACT'}
+        </span>
+      </Label>
 
       {/* Dimension selector */}
       {platform.imageDimensions.length > 1 && (

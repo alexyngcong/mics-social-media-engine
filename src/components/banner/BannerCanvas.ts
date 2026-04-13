@@ -1,7 +1,9 @@
-import type { GeneratedPost, Room } from '../../types';
+import type { GeneratedPost, Room, RoomId, PhotoLayout } from '../../types';
 import { tokens } from '../../config/designTokens';
-import { brand, dateFormatted } from '../../config/brand';
+import { dateFormatted } from '../../config/brand';
 import { getTemplate } from './templates';
+import { getPhotoForTopic } from '../../config/stockPhotos';
+import { loadImage } from '../../services/imageLoader';
 
 const SCALE = 2;
 
@@ -29,86 +31,345 @@ function hexToRgba(hex: string, alpha: number): string {
   return `rgba(${r},${g},${b},${alpha})`;
 }
 
-function drawGeometricPattern(ctx: CanvasRenderingContext2D, W: number, H: number, color: string) {
-  ctx.save();
-  ctx.globalAlpha = 0.03;
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 0.5;
+// ─── Photo cover (object-fit: cover equivalent) ─────────────────
 
-  // Diagonal grid lines
-  for (let i = -H; i < W + H; i += 60) {
-    ctx.beginPath();
-    ctx.moveTo(i, 0);
-    ctx.lineTo(i + H, H);
-    ctx.stroke();
-  }
-  for (let i = -H; i < W + H; i += 60) {
-    ctx.beginPath();
-    ctx.moveTo(i + H, 0);
-    ctx.lineTo(i, H);
-    ctx.stroke();
-  }
-  ctx.restore();
+function drawPhotoCover(
+  ctx: CanvasRenderingContext2D, img: HTMLImageElement,
+  dx: number, dy: number, dw: number, dh: number
+) {
+  const imgRatio = img.width / img.height;
+  const destRatio = dw / dh;
+  let sx = 0, sy = 0, sw = img.width, sh = img.height;
+  if (imgRatio > destRatio) { sw = img.height * destRatio; sx = (img.width - sw) / 2; }
+  else { sh = img.width / destRatio; sy = (img.height - sh) / 2; }
+  ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh);
 }
 
-function drawHexagonRing(ctx: CanvasRenderingContext2D, cx: number, cy: number, radius: number, color: string, alpha: number) {
+// ─── Photo background compositing ──────────────────────────────
+
+function drawPhotoFullbleed(
+  ctx: CanvasRenderingContext2D, img: HTMLImageElement,
+  W: number, H: number, opacity: number, roomColor: string
+) {
+  drawPhotoCover(ctx, img, 0, 0, W, H);
+  // Cinematic gradient - heavier at bottom for text
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, `rgba(4,4,12,${opacity * 0.15})`);
+  grad.addColorStop(0.25, `rgba(4,4,12,${opacity * 0.3})`);
+  grad.addColorStop(0.5, `rgba(4,4,12,${opacity * 0.55})`);
+  grad.addColorStop(0.75, `rgba(4,4,12,${opacity * 0.85})`);
+  grad.addColorStop(1, `rgba(4,4,12,0.96)`);
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+  // Colored ambient
+  ctx.fillStyle = hexToRgba(roomColor, 0.04);
+  ctx.fillRect(0, 0, W, H);
+}
+
+function drawPhotoSplit(
+  ctx: CanvasRenderingContext2D, img: HTMLImageElement,
+  W: number, H: number, side: 'left' | 'right', opacity: number, roomColor: string
+) {
+  const photoW = W * 0.52;
+  const photoX = side === 'right' ? W - photoW : 0;
+  ctx.fillStyle = '#060610';
+  ctx.fillRect(0, 0, W, H);
   ctx.save();
-  ctx.globalAlpha = alpha;
-  ctx.strokeStyle = color;
+  ctx.beginPath(); ctx.rect(photoX, 0, photoW, H); ctx.clip();
+  drawPhotoCover(ctx, img, photoX, 0, photoW, H);
+  const fadeDir = side === 'right'
+    ? ctx.createLinearGradient(photoX + photoW, 0, photoX, 0)
+    : ctx.createLinearGradient(photoX, 0, photoX + photoW, 0);
+  fadeDir.addColorStop(0, `rgba(6,6,16,${opacity})`);
+  fadeDir.addColorStop(0.5, `rgba(6,6,16,${opacity * 0.4})`);
+  fadeDir.addColorStop(1, 'rgba(6,6,16,0.05)');
+  ctx.fillStyle = fadeDir;
+  ctx.fillRect(photoX, 0, photoW, H);
+  ctx.restore();
+  const glow = ctx.createRadialGradient(
+    side === 'right' ? W * 0.22 : W * 0.78, H * 0.4, 0,
+    side === 'right' ? W * 0.22 : W * 0.78, H * 0.4, W * 0.3
+  );
+  glow.addColorStop(0, hexToRgba(roomColor, 0.06));
+  glow.addColorStop(1, 'transparent');
+  ctx.fillStyle = glow;
+  ctx.fillRect(0, 0, W, H);
+}
+
+function drawPhotoDuotone(
+  ctx: CanvasRenderingContext2D, img: HTMLImageElement,
+  W: number, H: number, duotoneColor: string, opacity: number
+) {
+  drawPhotoCover(ctx, img, 0, 0, W, H);
+  ctx.globalCompositeOperation = 'saturation';
+  ctx.fillStyle = '#808080';
+  ctx.fillRect(0, 0, W, H);
+  ctx.globalCompositeOperation = 'multiply';
+  ctx.fillStyle = duotoneColor;
+  ctx.fillRect(0, 0, W, H);
+  ctx.globalCompositeOperation = 'source-over';
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, `rgba(4,4,12,${opacity * 0.2})`);
+  grad.addColorStop(0.45, `rgba(4,4,12,${opacity * 0.5})`);
+  grad.addColorStop(0.75, `rgba(4,4,12,${opacity * 0.85})`);
+  grad.addColorStop(1, 'rgba(4,4,12,0.96)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+}
+
+function drawPhotoFrosted(
+  ctx: CanvasRenderingContext2D, img: HTMLImageElement,
+  W: number, H: number, opacity: number, roomColor: string
+) {
+  drawPhotoCover(ctx, img, 0, 0, W, H);
+  ctx.fillStyle = `rgba(4,4,12,${opacity})`;
+  ctx.fillRect(0, 0, W, H);
+  const panelPad = W * 0.06;
+  const panelY = H * 0.12;
+  const panelW = W - panelPad * 2;
+  const panelH = H * 0.74;
+  ctx.save();
+  ctx.beginPath(); ctx.roundRect(panelPad, panelY, panelW, panelH, 24); ctx.clip();
+  const prevFilter = ctx.filter;
+  ctx.filter = 'blur(40px) brightness(0.5)';
+  drawPhotoCover(ctx, img, 0, 0, W, H);
+  ctx.filter = prevFilter || 'none';
+  ctx.fillStyle = 'rgba(10,10,24,0.6)';
+  ctx.fillRect(panelPad, panelY, panelW, panelH);
+  ctx.restore();
+  ctx.strokeStyle = hexToRgba(roomColor, 0.12);
   ctx.lineWidth = 1;
-  ctx.beginPath();
-  for (let i = 0; i < 6; i++) {
-    const angle = (Math.PI / 3) * i - Math.PI / 6;
-    const x = cx + radius * Math.cos(angle);
-    const y = cy + radius * Math.sin(angle);
-    if (i === 0) ctx.moveTo(x, y);
-    else ctx.lineTo(x, y);
-  }
-  ctx.closePath();
-  ctx.stroke();
-  ctx.restore();
+  ctx.beginPath(); ctx.roundRect(panelPad, panelY, panelW, panelH, 24); ctx.stroke();
 }
 
-function drawDataDots(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, color: string) {
+function drawPhotoVignette(
+  ctx: CanvasRenderingContext2D, img: HTMLImageElement,
+  W: number, H: number, opacity: number, roomColor: string
+) {
+  drawPhotoCover(ctx, img, 0, 0, W, H);
+  const vig = ctx.createRadialGradient(W / 2, H * 0.3, W * 0.12, W / 2, H * 0.35, W * 0.7);
+  vig.addColorStop(0, `rgba(4,4,12,${opacity * 0.1})`);
+  vig.addColorStop(0.35, `rgba(4,4,12,${opacity * 0.45})`);
+  vig.addColorStop(0.65, `rgba(4,4,12,${opacity * 0.8})`);
+  vig.addColorStop(1, 'rgba(4,4,12,0.97)');
+  ctx.fillStyle = vig;
+  ctx.fillRect(0, 0, W, H);
+  const glow = ctx.createRadialGradient(W / 2, H * 0.25, 0, W / 2, H * 0.25, W * 0.25);
+  glow.addColorStop(0, hexToRgba(roomColor, 0.07));
+  glow.addColorStop(1, 'transparent');
+  ctx.fillStyle = glow;
+  ctx.fillRect(0, 0, W, H);
+}
+
+// ─── Gradient fallback background ───────────────────────────────
+
+function drawGradientBackground(
+  ctx: CanvasRenderingContext2D, W: number, H: number,
+  bgColors: string[], roomColor: string
+) {
+  const bgGrad = ctx.createLinearGradient(0, 0, W * 0.2, H);
+  bgGrad.addColorStop(0, bgColors[0]);
+  bgGrad.addColorStop(0.4, bgColors[1]);
+  bgGrad.addColorStop(1, bgColors[2]);
+  ctx.fillStyle = bgGrad;
+  ctx.fillRect(0, 0, W, H);
+  const g1 = ctx.createRadialGradient(W * 0.2, H * 0.3, 0, W * 0.2, H * 0.3, W * 0.5);
+  g1.addColorStop(0, hexToRgba(roomColor, 0.08));
+  g1.addColorStop(1, 'transparent');
+  ctx.fillStyle = g1;
+  ctx.fillRect(0, 0, W, H);
+  // Subtle grid
   ctx.save();
-  // Simulated mini chart dots
-  const points = [0.3, 0.5, 0.4, 0.7, 0.6, 0.85, 0.75, 0.9, 0.8, 0.95];
-  ctx.globalAlpha = 0.15;
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 1.5;
-  ctx.beginPath();
-  for (let i = 0; i < points.length; i++) {
-    const px = x + (i / (points.length - 1)) * w;
-    const py = y + (1 - points[i]) * 30;
-    if (i === 0) ctx.moveTo(px, py);
-    else ctx.lineTo(px, py);
+  ctx.globalAlpha = 0.025;
+  ctx.strokeStyle = roomColor;
+  ctx.lineWidth = 0.5;
+  for (let i = -H; i < W + H; i += 60) {
+    ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i + H, H); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(i + H, 0); ctx.lineTo(i, H); ctx.stroke();
   }
-  ctx.stroke();
-
-  // Glow under the line
-  ctx.globalAlpha = 0.05;
-  ctx.fillStyle = color;
-  ctx.lineTo(x + w, y + 30);
-  ctx.lineTo(x, y + 30);
-  ctx.closePath();
-  ctx.fill();
   ctx.restore();
 }
 
-export function drawBannerCanvas(
+// ─── Creative content rendering ─────────────────────────────────
+
+function drawCreativeContent(
+  ctx: CanvasRenderingContext2D,
+  result: GeneratedPost,
+  room: Room,
+  W: number, H: number, fs: number,
+  T: ReturnType<typeof getTemplate>,
+  layout: PhotoLayout
+) {
+  const isSplit = layout === 'split-left' || layout === 'split-right';
+  const cx = isSplit ? (layout === 'split-right' ? W * 0.24 : W * 0.76) : W / 2;
+  const maxW = isSplit ? W * 0.4 : W * 0.78;
+
+  // ── Top: Minimal room indicator (no brand name) ──
+  // Thin accent line at very top
+  const accentGrad = ctx.createLinearGradient(0, 0, W, 0);
+  accentGrad.addColorStop(0, 'transparent');
+  accentGrad.addColorStop(0.3, hexToRgba(room.color, 0.5));
+  accentGrad.addColorStop(0.7, hexToRgba(room.color, 0.5));
+  accentGrad.addColorStop(1, 'transparent');
+  ctx.fillStyle = accentGrad;
+  ctx.fillRect(0, 0, W, 3);
+
+  // Room icon + label, very small, top-left
+  ctx.textAlign = 'left';
+  ctx.fillStyle = hexToRgba(room.color, 0.6);
+  ctx.font = `600 ${11 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(room.icon + '  ' + room.short.toUpperCase(), 40 * fs, 36 * fs);
+
+  // Date, top-right
+  ctx.textAlign = 'right';
+  ctx.fillStyle = 'rgba(255,255,255,0.18)';
+  ctx.font = `300 ${10 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(dateFormatted.short, W - 40 * fs, 36 * fs);
+
+  // ── THE STAT: Large, immersive, blended into the scene ──
+  ctx.textAlign = 'center';
+
+  // Giant stat number - positioned in the photo zone (upper half)
+  const statSize = Math.min(isSplit ? 100 : 150, (isSplit ? 90 : 140) * fs);
+  const statY = H * 0.30;
+
+  // Stat glow halo behind text (makes it feel like it's PART of the image)
+  const statGlow = ctx.createRadialGradient(cx, statY - 10, 0, cx, statY - 10, statSize * 1.5);
+  statGlow.addColorStop(0, hexToRgba(room.color, 0.12));
+  statGlow.addColorStop(0.5, hexToRgba(room.color, 0.04));
+  statGlow.addColorStop(1, 'transparent');
+  ctx.fillStyle = statGlow;
+  ctx.fillRect(0, 0, W, H);
+
+  // Draw stat with depth: soft shadow layer first
+  ctx.font = `800 ${statSize}px Georgia,serif`;
+  ctx.fillStyle = hexToRgba(room.color, 0.08);
+  ctx.fillText(result.stat || '--', cx + 3, statY + 3);
+
+  // Main stat
+  ctx.fillStyle = '#ffffff';
+  ctx.shadowColor = hexToRgba(room.color, 0.35);
+  ctx.shadowBlur = 80;
+  ctx.shadowOffsetY = 4;
+  ctx.fillText(result.stat || '--', cx, statY);
+  ctx.shadowBlur = 0;
+  ctx.shadowOffsetY = 0;
+
+  // Stat label directly under the number, tightly coupled
+  ctx.fillStyle = hexToRgba(tokens.colors.bronzeLight, 0.7);
+  ctx.font = `600 ${13 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.letterSpacing = `${4 * fs}px`;
+  ctx.fillText((result.statLabel || '').toUpperCase(), cx, statY + 40 * fs);
+  ctx.letterSpacing = '0px';
+
+  // Direction indicator - minimal, just a colored line + text
+  const dir = result.statDirection || 'neutral';
+  const dirColor = dir === 'up' ? '#22C55E' : dir === 'down' ? '#EF4444' : '#64748B';
+  const dirArrow = dir === 'up' ? '\u25B2' : dir === 'down' ? '\u25BC' : '\u2022';
+  const dirLabel = dir === 'up' ? 'RISING' : dir === 'down' ? 'FALLING' : 'STABLE';
+
+  ctx.fillStyle = dirColor;
+  ctx.font = `700 ${10 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(dirArrow + '  ' + dirLabel, cx, statY + 62 * fs);
+
+  // ── DIVIDER: Organic, asymmetric ──
+  const divY = H * 0.48;
+  // Left accent dash
+  ctx.strokeStyle = hexToRgba(room.color, 0.3);
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(cx - 60 * fs, divY);
+  ctx.lineTo(cx - 15 * fs, divY);
+  ctx.stroke();
+  // Right accent dash
+  ctx.beginPath();
+  ctx.moveTo(cx + 15 * fs, divY);
+  ctx.lineTo(cx + 60 * fs, divY);
+  ctx.stroke();
+  // Center dot
+  ctx.fillStyle = room.color;
+  ctx.globalAlpha = 0.5;
+  ctx.beginPath(); ctx.arc(cx, divY, 3, 0, Math.PI * 2); ctx.fill();
+  ctx.globalAlpha = 1;
+
+  // ── HEADLINE: Bold, cinematic ──
+  const hlY = divY + 50 * fs;
+  const hlSize = T.headlineSize * (isSplit ? 1.2 : 1.6) * fs;
+
+  ctx.fillStyle = '#ffffff';
+  ctx.font = `700 ${hlSize}px Georgia,serif`;
+  const hlLines = wrapText(ctx, result.headline || 'INTELLIGENCE BRIEF', maxW);
+  let currentY = hlY;
+  for (const line of hlLines) {
+    // Subtle text shadow for depth
+    ctx.fillStyle = 'rgba(0,0,0,0.4)';
+    ctx.fillText(line, cx + 1, currentY + 2);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillText(line, cx, currentY);
+    currentY += hlSize * 1.25;
+  }
+
+  // ── SUBLINE: Lighter, informational ──
+  ctx.fillStyle = 'rgba(255,255,255,0.4)';
+  ctx.font = `300 ${15 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  const subLines = wrapText(ctx, result.subline || '', maxW - 30 * fs);
+  let subY = currentY + 16 * fs;
+  for (const line of subLines) {
+    ctx.fillText(line, cx, subY);
+    subY += 24 * fs;
+  }
+
+  // ── SOURCE: Tiny, discreet ──
+  if (result.source) {
+    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    ctx.font = `400 ${9 * fs}px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillText(result.source.toUpperCase(), cx, subY + 28 * fs);
+  }
+
+  // ── BOTTOM: Minimal, anonymous ──
+  // Thin accent line above footer
+  const footerLineY = H - 52 * fs;
+  const footGrad = ctx.createLinearGradient(W * 0.15, 0, W * 0.85, 0);
+  footGrad.addColorStop(0, 'transparent');
+  footGrad.addColorStop(0.3, hexToRgba(room.color, 0.2));
+  footGrad.addColorStop(0.7, hexToRgba(room.color, 0.2));
+  footGrad.addColorStop(1, 'transparent');
+  ctx.strokeStyle = footGrad;
+  ctx.lineWidth = 0.5;
+  ctx.beginPath();
+  ctx.moveTo(W * 0.15, footerLineY);
+  ctx.lineTo(W * 0.85, footerLineY);
+  ctx.stroke();
+
+  // Anonymous tag line
+  ctx.fillStyle = 'rgba(255,255,255,0.12)';
+  ctx.font = `300 ${9 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText('PRIVATE INTELLIGENCE', cx, H - 28 * fs);
+
+  // Room color dot
+  ctx.fillStyle = room.color;
+  ctx.globalAlpha = 0.3;
+  ctx.beginPath(); ctx.arc(cx, H - 14 * fs, 2.5, 0, Math.PI * 2); ctx.fill();
+  ctx.globalAlpha = 1;
+}
+
+// ─── Main entry point ───────────────────────────────────────────
+
+export async function drawBannerCanvas(
   result: GeneratedPost,
   room: Room,
   variant: number,
   width: number = 1080,
   height: number = 1350
-): HTMLCanvasElement | null {
+): Promise<HTMLCanvasElement | null> {
   if (!result || !room) return null;
 
   const T = getTemplate(variant, room.color, tokens.colors.bronze);
   const W = width;
   const H = height;
   const S = SCALE;
-  const fs = W / 1080; // font scale
+  const fs = W / 1080;
+  const layout = T.photoLayout;
 
   const canvas = document.createElement('canvas');
   canvas.width = W * S;
@@ -116,250 +377,41 @@ export function drawBannerCanvas(
   const ctx = canvas.getContext('2d')!;
   ctx.scale(S, S);
 
+  // Load topic-matched photo
+  const topicText = [result.headline, result.subline, result.statLabel].filter(Boolean).join(' ');
+  let photo: HTMLImageElement | null = null;
+  photo = await loadImage(getPhotoForTopic(topicText, room.id as RoomId, variant));
+
   // === BACKGROUND ===
-  const bgColors = T.bgColors;
-  const bgGrad = ctx.createLinearGradient(0, 0, W * 0.2, H);
-  bgGrad.addColorStop(0, bgColors[0]);
-  bgGrad.addColorStop(0.4, bgColors[1]);
-  bgGrad.addColorStop(1, bgColors[2]);
-  ctx.fillStyle = bgGrad;
-  ctx.fillRect(0, 0, W, H);
-
-  // Room color ambient glow
-  const g1 = ctx.createRadialGradient(W * 0.2, H * 0.3, 0, W * 0.2, H * 0.3, W * 0.5);
-  g1.addColorStop(0, hexToRgba(room.color, 0.08));
-  g1.addColorStop(1, 'transparent');
-  ctx.fillStyle = g1;
-  ctx.fillRect(0, 0, W, H);
-
-  const g2 = ctx.createRadialGradient(W * 0.8, H * 0.6, 0, W * 0.8, H * 0.6, W * 0.4);
-  g2.addColorStop(0, hexToRgba(tokens.colors.bronze, 0.06));
-  g2.addColorStop(1, 'transparent');
-  ctx.fillStyle = g2;
-  ctx.fillRect(0, 0, W, H);
-
-  // Geometric pattern overlay
-  drawGeometricPattern(ctx, W, H, room.color);
-
-  // Hexagon decorations
-  drawHexagonRing(ctx, W * 0.85, H * 0.15, 80 * fs, room.color, 0.06);
-  drawHexagonRing(ctx, W * 0.85, H * 0.15, 120 * fs, room.color, 0.03);
-  drawHexagonRing(ctx, W * 0.1, H * 0.7, 60 * fs, tokens.colors.bronze, 0.05);
-  drawHexagonRing(ctx, W * 0.1, H * 0.7, 100 * fs, tokens.colors.bronze, 0.025);
+  if (photo) {
+    const ov = T.photoOverlayOpacity ?? 0.5;
+    switch (layout) {
+      case 'fullbleed': drawPhotoFullbleed(ctx, photo, W, H, ov, room.color); break;
+      case 'split-left':
+      case 'split-right': drawPhotoSplit(ctx, photo, W, H, layout === 'split-left' ? 'left' : 'right', ov, room.color); break;
+      case 'duotone': drawPhotoDuotone(ctx, photo, W, H, T.photoDuotoneColor || room.color, ov); break;
+      case 'frosted': drawPhotoFrosted(ctx, photo, W, H, ov, room.color); break;
+      case 'vignette': drawPhotoVignette(ctx, photo, W, H, ov, room.color); break;
+      default: drawPhotoFullbleed(ctx, photo, W, H, ov, room.color); break;
+    }
+  } else {
+    // Fallback only if image fails to load
+    drawGradientBackground(ctx, W, H, T.bgColors, room.color);
+  }
 
   // Left accent bar
   if (T.leftBar) {
     const barGrad = ctx.createLinearGradient(0, 0, 0, H);
     barGrad.addColorStop(0, hexToRgba(room.color, 0));
-    barGrad.addColorStop(0.3, hexToRgba(room.color, 0.4));
-    barGrad.addColorStop(0.7, hexToRgba(room.color, 0.4));
+    barGrad.addColorStop(0.3, hexToRgba(room.color, 0.35));
+    barGrad.addColorStop(0.7, hexToRgba(room.color, 0.35));
     barGrad.addColorStop(1, hexToRgba(room.color, 0));
     ctx.fillStyle = barGrad;
-    ctx.fillRect(0, 0, 5, H);
+    ctx.fillRect(0, 0, 4, H);
   }
 
-  // === HEADER BAND ===
-  const headerH = H * 0.105;
-  const hGrad = ctx.createLinearGradient(0, 0, 0, headerH + 30);
-  hGrad.addColorStop(0, 'rgba(4,4,12,0.98)');
-  hGrad.addColorStop(1, 'rgba(4,4,12,0.3)');
-  ctx.fillStyle = hGrad;
-  ctx.fillRect(0, 0, W, headerH + 30);
-
-  // Gold accent line under header
-  const accentGrad = ctx.createLinearGradient(0, 0, W, 0);
-  accentGrad.addColorStop(0, hexToRgba(tokens.colors.bronze, 0.1));
-  accentGrad.addColorStop(0.3, tokens.colors.bronzeLight);
-  accentGrad.addColorStop(0.7, tokens.colors.bronzeLight);
-  accentGrad.addColorStop(1, hexToRgba(tokens.colors.bronze, 0.1));
-  ctx.fillStyle = accentGrad;
-  ctx.fillRect(0, headerH, W, 2.5);
-
-  // Header content
-  const px = 52 * fs;
-
-  // Brand name
-  ctx.textAlign = 'left';
-  ctx.fillStyle = '#ffffff';
-  ctx.font = `800 ${17 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.letterSpacing = '3px';
-  ctx.fillText('MICS INTERNATIONAL', px, headerH * 0.38);
-
-  ctx.fillStyle = 'rgba(255,255,255,0.35)';
-  ctx.font = `300 ${11 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(brand.tagline, px, headerH * 0.55);
-
-  // Room badge
-  ctx.fillStyle = hexToRgba(room.color, 0.12);
-  const badgeW = ctx.measureText(room.icon + ' ' + room.short.toUpperCase()).width + 28 * fs;
-  const badgeX = px - 4;
-  const badgeY = headerH * 0.67;
-  ctx.beginPath();
-  ctx.roundRect(badgeX, badgeY - 10 * fs, badgeW, 22 * fs, 4);
-  ctx.fill();
-  ctx.fillStyle = room.color;
-  ctx.font = `700 ${12 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(room.icon + '  ' + room.short.toUpperCase(), px, headerH * 0.72);
-
-  // Right side - community label + date
-  ctx.textAlign = 'right';
-  ctx.fillStyle = hexToRgba(tokens.colors.bronzeLight, 0.6);
-  ctx.font = `700 ${9 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText('CFOs PRIVATE INSIGHTS CIRCLE', W - px, headerH * 0.38);
-  ctx.fillStyle = 'rgba(255,255,255,0.2)';
-  ctx.font = `300 ${11 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(dateFormatted.short, W - px, headerH * 0.72);
-
-  // === MAIN CONTENT AREA ===
-  ctx.textAlign = 'center';
-
-  // Stat section with background panel
-  const statPanelY = headerH + H * 0.08;
-  const statPanelH = H * 0.22;
-
-  // Subtle panel behind stat
-  ctx.fillStyle = hexToRgba(room.color, 0.03);
-  ctx.beginPath();
-  ctx.roundRect(W * 0.1, statPanelY, W * 0.8, statPanelH, 16);
-  ctx.fill();
-  ctx.strokeStyle = hexToRgba(room.color, 0.08);
-  ctx.lineWidth = 1;
-  ctx.stroke();
-
-  // Mini data chart behind stat
-  drawDataDots(ctx, W * 0.15, statPanelY + statPanelH * 0.12, W * 0.7, room.color);
-
-  // Main stat number
-  const statFontSize = Math.min(110, 100 * fs);
-  const statY = statPanelY + statPanelH * 0.55;
-  ctx.fillStyle = T.statColor;
-  ctx.font = `700 ${statFontSize}px Georgia,serif`;
-  ctx.shadowColor = hexToRgba(room.color, 0.25);
-  ctx.shadowBlur = 60;
-  ctx.fillText(result.stat || '--', W / 2, statY);
-  ctx.shadowBlur = 0;
-
-  // Stat label
-  ctx.fillStyle = tokens.colors.bronzeLight;
-  ctx.font = `700 ${14 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText((result.statLabel || '').toUpperCase(), W / 2, statY + 35 * fs);
-
-  // Direction badge
-  const dir = result.statDirection || 'neutral';
-  const dirColor = dir === 'up' ? '#22C55E' : dir === 'down' ? '#EF4444' : '#94A3B8';
-  const dirText = dir === 'up' ? '\u25B2  TRENDING UP' : dir === 'down' ? '\u25BC  DECLINING' : '\u25CF  HOLDING STEADY';
-  const dirBadgeW = 140 * fs;
-  ctx.fillStyle = hexToRgba(dirColor, 0.12);
-  ctx.beginPath();
-  ctx.roundRect(W / 2 - dirBadgeW / 2, statY + 48 * fs, dirBadgeW, 24 * fs, 12);
-  ctx.fill();
-  ctx.fillStyle = dirColor;
-  ctx.font = `700 ${11 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(dirText, W / 2, statY + 64 * fs);
-
-  // === DIVIDER SECTION ===
-  const divY = statPanelY + statPanelH + H * 0.04;
-
-  // Elegant divider with side decorations
-  const divGrad = ctx.createLinearGradient(W * 0.08, 0, W * 0.92, 0);
-  divGrad.addColorStop(0, 'transparent');
-  divGrad.addColorStop(0.15, hexToRgba(tokens.colors.bronzeLight, 0.3));
-  divGrad.addColorStop(0.5, tokens.colors.bronzeLight);
-  divGrad.addColorStop(0.85, hexToRgba(tokens.colors.bronzeLight, 0.3));
-  divGrad.addColorStop(1, 'transparent');
-  ctx.strokeStyle = divGrad;
-  ctx.lineWidth = 1;
-  ctx.beginPath();
-  ctx.moveTo(W * 0.08, divY);
-  ctx.lineTo(W * 0.92, divY);
-  ctx.stroke();
-
-  // Center diamond
-  ctx.fillStyle = tokens.colors.bronzeLight;
-  ctx.save();
-  ctx.translate(W / 2, divY);
-  ctx.rotate(Math.PI / 4);
-  ctx.fillRect(-5, -5, 10, 10);
-  ctx.restore();
-
-  // Side dots
-  ctx.globalAlpha = 0.4;
-  ctx.beginPath(); ctx.arc(W * 0.15, divY, 2, 0, Math.PI * 2); ctx.fill();
-  ctx.beginPath(); ctx.arc(W * 0.85, divY, 2, 0, Math.PI * 2); ctx.fill();
-  ctx.globalAlpha = 1;
-
-  // === HEADLINE SECTION ===
-  const headlineY = divY + 45 * fs;
-  const hlSize = T.headlineSize * 1.5 * fs;
-  ctx.fillStyle = '#ffffff';
-  ctx.font = `700 ${hlSize}px Georgia,serif`;
-  const hlLines = wrapText(ctx, result.headline || 'INTELLIGENCE BRIEF', W - 140 * fs);
-  let hlY = headlineY;
-  for (const line of hlLines) {
-    ctx.fillText(line, W / 2, hlY);
-    hlY += hlSize * 1.3;
-  }
-
-  // Subline
-  ctx.fillStyle = 'rgba(255,255,255,0.5)';
-  ctx.font = `400 ${16 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  const subLines = wrapText(ctx, result.subline || '', W - 180 * fs);
-  let subY = hlY + 18 * fs;
-  for (const line of subLines) {
-    ctx.fillText(line, W / 2, subY);
-    subY += 26 * fs;
-  }
-
-  // === SOURCE ATTRIBUTION ===
-  if (result.source) {
-    const srcY = subY + 30 * fs;
-    ctx.fillStyle = hexToRgba(tokens.colors.bronze, 0.4);
-    ctx.font = `600 ${10 * fs}px 'Segoe UI',system-ui,sans-serif`;
-    ctx.fillText('SOURCE: ' + result.source.toUpperCase(), W / 2, srcY);
-  }
-
-  // === CORNER BRACKETS (premium detail) ===
-  ctx.strokeStyle = hexToRgba(tokens.colors.bronzeLight, 0.2);
-  ctx.lineWidth = 1.5;
-  const cm = 32; // corner margin
-  const cl = 24; // corner length
-  // Top-left
-  ctx.beginPath(); ctx.moveTo(cm, headerH + cm + cl); ctx.lineTo(cm, headerH + cm); ctx.lineTo(cm + cl, headerH + cm); ctx.stroke();
-  // Top-right
-  ctx.beginPath(); ctx.moveTo(W - cm, headerH + cm + cl); ctx.lineTo(W - cm, headerH + cm); ctx.lineTo(W - cm - cl, headerH + cm); ctx.stroke();
-  // Bottom-left
-  ctx.beginPath(); ctx.moveTo(cm, H - 78 - cm - cl); ctx.lineTo(cm, H - 78 - cm); ctx.lineTo(cm + cl, H - 78 - cm); ctx.stroke();
-  // Bottom-right
-  ctx.beginPath(); ctx.moveTo(W - cm, H - 78 - cm - cl); ctx.lineTo(W - cm, H - 78 - cm); ctx.lineTo(W - cm - cl, H - 78 - cm); ctx.stroke();
-
-  // === FOOTER ===
-  const footerH = 76 * fs;
-
-  // Footer separator
-  ctx.fillStyle = accentGrad;
-  ctx.fillRect(0, H - footerH - 2, W, 2);
-
-  // Footer background
-  ctx.fillStyle = 'rgba(4,4,12,0.97)';
-  ctx.fillRect(0, H - footerH, W, footerH);
-
-  // Footer content
-  ctx.textAlign = 'center';
-  ctx.fillStyle = 'rgba(255,255,255,0.5)';
-  ctx.font = `600 ${12 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(brand.community, W / 2, H - footerH * 0.58);
-
-  ctx.fillStyle = hexToRgba(tokens.colors.bronze, 0.45);
-  ctx.font = `300 ${10 * fs}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(brand.footer, W / 2, H - footerH * 0.25);
-
-  // Small room color accent dot in footer
-  ctx.fillStyle = room.color;
-  ctx.globalAlpha = 0.4;
-  ctx.beginPath();
-  ctx.arc(W / 2, H - footerH * 0.85, 3, 0, Math.PI * 2);
-  ctx.fill();
-  ctx.globalAlpha = 1;
+  // === CONTENT ===
+  drawCreativeContent(ctx, result, room, W, H, fs, T, layout);
 
   return canvas;
 }

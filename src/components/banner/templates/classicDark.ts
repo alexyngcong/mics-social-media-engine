@@ -11,4 +11,5 @@ export const classicDark: TemplateFactory = (roomColor, accentColor) => ({
   statColor: '#fff',
   headlineSize: 28,
   accent: roomColor,
+  photoLayout: 'none',
 });

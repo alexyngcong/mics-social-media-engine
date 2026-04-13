@@ -11,4 +11,5 @@ export const leftBarAccent: TemplateFactory = (roomColor, accentColor) => ({
   headlineSize: 26,
   accent: accentColor,
   leftBar: true,
+  photoLayout: 'none',
 });

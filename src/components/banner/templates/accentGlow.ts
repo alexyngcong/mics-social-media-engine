@@ -10,4 +10,5 @@ export const accentGlow: TemplateFactory = (roomColor, accentColor) => ({
   statColor: roomColor,
   headlineSize: 26,
   accent: accentColor,
+  photoLayout: 'none',
 });
