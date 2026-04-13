@@ -61,7 +61,7 @@ Think: Anonymous insider sharing intelligence at a private dinner. Confident, ne
 - Write CLEAN text only - no markup, no references, no footnotes`;
 
 const STANDARD_OUTPUT = `=== OUTPUT FORMAT: JSON ONLY, zero preamble, zero explanation ===
-{"text":"complete formatted post text (NO URLs, NO citation tags, NO HTML, clean text only)","headline":"4-6 WORD ALL CAPS HEADLINE for graphic","subline":"10-15 word context line with specific ${dateFormatted.year} data","stat":"key number with unit (e.g. 14.2%, $7.8B, AED 5M)","statLabel":"3-5 WORD LABEL for stat","statDirection":"up|down|neutral","source":"publication name","sourceUrl":"full URL"}`;
+{"text":"complete formatted post text - MUST use \\n\\n between paragraphs for readability. Write 4-6 short paragraphs, NOT one wall of text. NO URLs, NO citation tags, NO HTML.","headline":"4-6 WORD ALL CAPS HEADLINE for graphic","subline":"10-15 word context line with specific ${dateFormatted.year} data","stat":"key number with unit (e.g. 14.2%, $7.8B, AED 5M)","statLabel":"3-5 WORD LABEL for stat","statDirection":"up|down|neutral","source":"publication name","sourceUrl":"full URL"}`;
 
 const STANDARD_OUTPUT_WITH_HASHTAGS = `=== OUTPUT FORMAT: JSON ONLY, zero preamble, zero explanation ===
 {"text":"complete formatted post text (NO URLs, NO citation tags, NO HTML)","headline":"4-6 WORD ALL CAPS HEADLINE","subline":"10-15 word context line with ${dateFormatted.year} specifics","stat":"key number with unit","statLabel":"3-5 WORD LABEL","statDirection":"up|down|neutral","source":"publication","sourceUrl":"URL","hashtags":["relevant","hashtag","array","15-20 for IG","3-5 for LinkedIn"]}`;

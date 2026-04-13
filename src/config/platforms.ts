@@ -14,9 +14,9 @@ export const PLATFORMS: Platform[] = [
       { label: 'Square', width: 1080, height: 1080, isDefault: false },
     ],
     voiceModifier:
-      'Write for an exclusive WhatsApp community of CFOs. Use WhatsApp formatting: *bold* for emphasis, _italic_ for nuance. 60-120 words. No URLs in the text body.',
+      'Write for an exclusive WhatsApp community of CFOs. Use WhatsApp formatting: *bold* for key facts, _italic_ for the closing line. 80-150 words. No URLs in the text body.',
     structureRules:
-      'Output a single continuous message. No bullet points. Lead with signal, then context, then advisory seed. Contractions OK. Senior partner at dinner tone.',
+      'CRITICAL FORMATTING: Use \\n\\n (double newline) between EVERY paragraph. WhatsApp needs real line breaks to be readable. Structure the message as 4-6 SHORT paragraphs separated by blank lines:\\n\\nParagraph 1: Bold opening hook (1-2 sentences)\\n\\nParagraph 2: The key data/signal (2-3 sentences)\\n\\nParagraph 3: What it means / context (2-3 sentences)\\n\\nParagraph 4: The implication (1-2 sentences)\\n\\nParagraph 5: _Italic closing advisory seed_\\n\\nNEVER write one long wall of text. Each paragraph must be separated by a blank line (\\n\\n in the JSON text field). Contractions OK. Senior partner at dinner tone.',
   },
   {
     id: 'instagram',

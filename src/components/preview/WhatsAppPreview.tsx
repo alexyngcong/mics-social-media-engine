@@ -55,9 +55,46 @@ function formatLine(line: string, keyBase: number): React.ReactNode[] {
  * then applies WhatsApp inline formatting. Returns proper block-level elements
  * with real paragraph spacing like WhatsApp actually renders.
  */
+/**
+ * Auto-breaks a wall of text into paragraphs by splitting after sentences
+ * that end with . or ? or ! followed by a space and a capital letter or *.
+ * Only used as fallback when the AI doesn't include \n\n breaks.
+ */
+function autoParagraph(text: string): string {
+  // If text already has paragraph breaks, return as-is
+  if (text.includes('\n\n')) return text;
+
+  // Split after sentence-ending punctuation followed by space + uppercase/formatting
+  // Insert \n\n every ~2-3 sentences (target ~60-80 chars per paragraph)
+  const sentences = text.split(/(?<=[.!?])\s+(?=[A-Z*_~])/);
+  if (sentences.length <= 2) return text;
+
+  const paragraphs: string[] = [];
+  let current = '';
+  let sentenceCount = 0;
+
+  for (const sentence of sentences) {
+    current += (current ? ' ' : '') + sentence;
+    sentenceCount++;
+
+    // Break into paragraph every 2-3 sentences or if chunk is long enough
+    if (sentenceCount >= 2 && current.length > 80) {
+      paragraphs.push(current);
+      current = '';
+      sentenceCount = 0;
+    }
+  }
+  if (current) paragraphs.push(current);
+
+  return paragraphs.join('\n\n');
+}
+
 function parseWhatsAppText(text: string): React.ReactNode[] {
+  // Auto-paragraph fallback for wall-of-text outputs
+  const processedText = autoParagraph(text);
+
   // Split on double newlines to get paragraphs
-  const paragraphs = text.split(/\n\n+/);
+  const paragraphs = processedText.split(/\n\n+/);
   let globalKey = 0;
 
   return paragraphs.map((para, pIdx) => {
