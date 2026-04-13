@@ -1,0 +1,140 @@
+import { useCallback, useEffect, useRef } from 'react';
+import { useAppStore } from '../store/appStore';
+import { generateContent } from '../services/api';
+import { parseStandardResponse, parseDeepResponse } from '../services/aiResponseParser';
+import { buildStandardPrompt, buildDeepPrompt, buildUserMessage, buildDeepUserMessage } from '../services/prompts';
+import { ROOMS } from '../config/rooms';
+import { POST_TYPES } from '../config/postTypes';
+import { PLATFORMS } from '../config/platforms';
+import { TEMPLATE_COUNT } from '../components/banner/templates';
+import type { HistoryItem } from '../types';
+import { dateFormatted } from '../config/brand';
+
+const LOADING_MSGS = [
+  'Scanning feeds...', 'Cross-referencing sources...', 'Filtering signals...',
+  'Verifying data...', 'Crafting intelligence...', 'Planting advisory seed...',
+];
+const DEEP_MSGS = [
+  'Deep research initiated...', 'Searching global wires...', 'Cross-referencing 5+ sources...',
+  'Analyzing impact...', 'Finding missed angles...', 'Building brief...', 'Polishing output...',
+];
+
+export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
+  const store = useAppStore();
+  const intervalRef = useRef<ReturnType<typeof setInterval>>();
+
+  // Rotating loading messages
+  useEffect(() => {
+    if (!store.loading) return;
+    const pool = store.step === 7 ? DEEP_MSGS : LOADING_MSGS;
+    let i = 0;
+    store.setLoadingMessage(pool[0]);
+    intervalRef.current = setInterval(() => {
+      i = (i + 1) % pool.length;
+      store.setLoadingMessage(pool[i]);
+    }, 2400);
+    return () => clearInterval(intervalRef.current);
+  }, [store.loading, store.step]);
+
+  const generate = useCallback(
+    async (customTopic?: string) => {
+      const { room, postType, platform } = store;
+      if (!room) return;
+
+      store.setLoading(true);
+      store.setError('');
+      store.setResult(null);
+      store.setBannerReady(false);
+      store.shuffleVariant(TEMPLATE_COUNT);
+
+      const rm = ROOMS.find((r) => r.id === room)!;
+      const tp = postType ? POST_TYPES.find((t) => t.id === postType) : POST_TYPES[3];
+      const plat = PLATFORMS.find((p) => p.id === platform)!;
+
+      const systemPrompt = buildStandardPrompt(plat);
+      const userMsg = buildUserMessage(
+        rm.label, tp!.promptFragment, rm.topics, customTopic, room === 'world'
+      );
+
+      try {
+        const raw = await generateContent(systemPrompt, userMsg);
+        const parsed = parseStandardResponse(raw);
+
+        if (!parsed.text && !parsed.headline) {
+          store.setError('Empty response. Try again.');
+          store.setLoading(false);
+          store.setStep(4);
+          return;
+        }
+
+        store.setResult(parsed);
+        addHistoryItem({
+          ...parsed,
+          id: Date.now(),
+          room: rm.short,
+          type: tp?.label || 'Custom',
+          timestamp: dateFormatted.short,
+          mode: 'standard',
+          platform,
+        });
+        store.setStep(4);
+      } catch (e) {
+        store.setError(e instanceof Error ? e.message : 'Connection error');
+        store.setStep(4);
+      }
+      store.setLoading(false);
+    },
+    [store.room, store.postType, store.platform, addHistoryItem]
+  );
+
+  const generateDeep = useCallback(
+    async (topic: string) => {
+      const { room, platform } = store;
+      if (!room || !topic) return;
+
+      store.setLoading(true);
+      store.setError('');
+      store.setDeepResult(null);
+      store.setBannerReady(false);
+      store.shuffleVariant(TEMPLATE_COUNT);
+
+      const rm = ROOMS.find((r) => r.id === room)!;
+      const plat = PLATFORMS.find((p) => p.id === platform)!;
+
+      const systemPrompt = buildDeepPrompt(plat);
+      const userMsg = buildDeepUserMessage(rm.label, topic, room === 'world');
+
+      try {
+        const raw = await generateContent(systemPrompt, userMsg, { maxTokens: 2500 });
+        const parsed = parseDeepResponse(raw);
+
+        if (!parsed.post && !parsed.brief) {
+          store.setError('Empty response. Try again.');
+          store.setLoading(false);
+          store.setStep(8);
+          return;
+        }
+
+        store.setDeepResult(parsed);
+        store.setResult(parsed);
+        addHistoryItem({
+          ...parsed,
+          id: Date.now(),
+          room: rm.short,
+          type: 'Deep Dive',
+          timestamp: dateFormatted.short,
+          mode: 'deep',
+          platform,
+        });
+        store.setStep(8);
+      } catch (e) {
+        store.setError(e instanceof Error ? e.message : 'Connection error');
+        store.setStep(8);
+      }
+      store.setLoading(false);
+    },
+    [store.room, store.platform, addHistoryItem]
+  );
+
+  return { generate, generateDeep };
+}
