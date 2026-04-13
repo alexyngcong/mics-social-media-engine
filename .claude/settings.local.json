@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(where node:*)",
+      "Bash(where npm:*)",
+      "Bash(cmd.exe /c \"powershell -Command \\\\\"Get-Command node -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\\\\\"\")",
+      "Bash(cmd.exe /c \"winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements\")",
+      "Bash(cmd.exe /c \"powershell -Command \\\\\"winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements 2>&1\\\\\"\")",
+      "Bash(cmd.exe /c \"powershell -NoProfile -ExecutionPolicy Bypass -Command \\\\\"& { winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements }\\\\\"\")",
+      "Bash(cmd.exe /c \"powershell -NoProfile -ExecutionPolicy Bypass -Command \\\\\"Write-Host 'Testing PowerShell'; Get-Command winget -ErrorAction SilentlyContinue | Format-List\\\\\"\")",
+      "Bash(powershell.exe -NoProfile -Command \"Write-Host 'hello from powershell'; node --version 2>&1; npm --version 2>&1\")",
+      "Bash(powershell.exe -NoProfile -ExecutionPolicy Bypass -Command ':*)",
+      "Bash(powershell.exe -NoProfile -Command ':*)",
+      "Bash(export PATH=\"/c/Users/Admin/nodejs/node-v20.18.1-win-x64:$PATH\")",
+      "Bash(npm --version)",
+      "Bash(npx create-vite@5 . --template react-ts)",
+      "Bash(npx --yes create-vite@5 . --template react-ts)",
+      "Bash(npm install:*)",
+      "Bash(gh auth:*)",
+      "Bash(export PATH=\"/c/Users/Admin/gh-cli/bin:/c/Users/Admin/nodejs/node-v20.18.1-win-x64:$PATH\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node -e \"console.log\\(require\\('vite/package.json'\\).main\\)\")",
+      "Bash(gh repo:*)",
+      "Bash(npx vite:*)",
+      "Bash(npx gh-pages:*)"
+    ]
+  }
+}

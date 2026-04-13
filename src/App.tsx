@@ -1,11 +1,9 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useAppStore } from './store/appStore';
 import { useGenerate } from './hooks/useGenerate';
 import { useHistory } from './hooks/useHistory';
-import { getStoredApiKey, clearApiKey } from './services/api';
 import { dateFormatted } from './config/brand';
 
-import { ApiKeySetup } from './components/steps/ApiKeySetup';
 import { CommandCenter } from './components/steps/CommandCenter';
 import { PlatformSelect } from './components/steps/PlatformSelect';
 import { RoomSelect } from './components/steps/RoomSelect';
@@ -31,16 +29,10 @@ function getStepTitle(step: number): string {
 }
 
 export default function App() {
-  const [hasKey, setHasKey] = useState(() => !!getStoredApiKey());
   const store = useAppStore();
   const { items: history, addItem } = useHistory();
   const { generate, generateDeep } = useGenerate(addItem);
   const fallbackTextareaRef = useRef<HTMLTextAreaElement>(null);
-
-  // Show API key setup if no key stored
-  if (!hasKey) {
-    return <ApiKeySetup onKeySet={() => setHasKey(true)} />;
-  }
 
   const handleRetryStandard = () => {
     store.setStep(3);
@@ -50,11 +42,6 @@ export default function App() {
   const handleRetryDeep = () => {
     store.setStep(7);
     setTimeout(() => generateDeep(store.customTopic), 200);
-  };
-
-  const handleDisconnect = () => {
-    clearApiKey();
-    setHasKey(false);
   };
 
   return (
@@ -78,16 +65,11 @@ export default function App() {
               {dateFormatted.short} | CFOs Private Insights Circle
             </div>
           </div>
-          <div className="flex gap-2">
-            {store.step > 0 && (
-              <Button variant="ghost" onClick={store.reset} className="!px-3.5 !py-1.5 !text-[11px]">
-                Home
-              </Button>
-            )}
-            <Button variant="ghost" onClick={handleDisconnect} className="!px-2.5 !py-1.5 !text-[10px] !text-tx-ghost">
-              Key
+          {store.step > 0 && (
+            <Button variant="ghost" onClick={store.reset} className="!px-3.5 !py-1.5 !text-[11px]">
+              Home
             </Button>
-          </div>
+          )}
         </div>
       </div>
 
