@@ -99,7 +99,7 @@ export function CustomTopic({ onGenerate }: CustomTopicProps) {
         value={store.customTopic}
         onChange={(e) => store.setCustomTopic(e.target.value)}
         placeholder="e.g. 'CBUAE Q2 2026 rate hold impact on Dubai real estate'"
-        className="w-full min-h-[90px] p-3 rounded-card border border-ink-border bg-ink-card text-tx-DEFAULT text-[13px] leading-relaxed font-sans outline-none resize-y mb-3.5 focus:border-bronze/50 transition-colors"
+        className="w-full min-h-[90px] p-3 rounded-card border border-ink-border bg-ink-card text-tx text-[13px] leading-relaxed font-sans outline-none resize-y mb-3.5 focus:border-bronze/50 transition-colors"
       />
 
       <Button

@@ -9,7 +9,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantClasses: Record<Variant, string> = {
-  gold: 'bg-gradient-to-br from-bronze to-bronze-light text-ink-DEFAULT hover:brightness-110',
+  gold: 'bg-gradient-to-br from-bronze to-bronze-light text-ink hover:brightness-110',
   ghost: 'bg-transparent border border-ink-border text-tx-mid hover:border-bronze/50 hover:text-tx-DEFAULT',
   green: 'bg-signal-green text-black',
   purple: 'bg-gradient-to-br from-signal-purple to-purple-600 text-white hover:brightness-110',

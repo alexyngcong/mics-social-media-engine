@@ -24,7 +24,7 @@ export function FormatSelect({ onGenerate }: FormatSelectProps) {
           }}
         >
           <div className="flex justify-between items-center">
-            <span className="text-[14px] font-semibold text-tx-DEFAULT">
+            <span className="text-[14px] font-semibold text-tx">
               {tp.icon} {tp.label}
             </span>
             <span className="text-[10px] text-tx-dim bg-ink-el px-2.5 py-0.5 rounded-full">

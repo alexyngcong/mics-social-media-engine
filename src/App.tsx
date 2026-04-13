@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import { useAppStore } from './store/appStore';
 import { useGenerate } from './hooks/useGenerate';
 import { useHistory } from './hooks/useHistory';
-import { fontImportUrl } from './config/designTokens';
 import { dateFormatted } from './config/brand';
 
 import { CommandCenter } from './components/steps/CommandCenter';
@@ -46,9 +45,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-ink-DEFAULT font-sans text-tx-DEFAULT max-w-[480px] mx-auto flex flex-col">
-      {/* Font import */}
-      <style>{`@import url('${fontImportUrl}');`}</style>
+    <div className="min-h-screen bg-ink font-sans text-tx max-w-[480px] mx-auto flex flex-col">
+      {/* Fonts loaded via index.html <link> tags for non-blocking render */}
 
       {/* Clipboard fallback */}
       <textarea
@@ -62,7 +60,7 @@ export default function App() {
       <div className="px-5 py-4 pb-3.5 border-b border-ink-border bg-ink-mid">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="font-serif text-[22px] font-semibold text-tx-DEFAULT">
+            <h1 className="font-serif text-[22px] font-semibold text-tx">
               {getStepTitle(store.step)}
             </h1>
             <div className="text-[10px] text-tx-dim mt-0.5">
@@ -129,7 +127,7 @@ export default function App() {
       </div>
 
       {/* Footer */}
-      <div className="px-5 py-2.5 border-t border-ink-border bg-ink-DEFAULT flex justify-between text-[10px] text-tx-dim">
+      <div className="px-5 py-2.5 border-t border-ink-border bg-ink flex justify-between text-[10px] text-tx-dim">
         <span>MICS International | DIFC</span>
         <span className="text-tx-ghost">v4.0</span>
       </div>

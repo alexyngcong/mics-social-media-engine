@@ -29,7 +29,7 @@ export function DeepDive({ onGenerateDeep }: DeepDiveProps) {
     <>
       <div className="bg-gradient-to-br from-signal-purple/10 to-ink-card border border-signal-purple/30 rounded-card-lg p-4 mb-4">
         <div className="text-[20px] mb-2">{'\u{1F52E}'}</div>
-        <div className="font-serif text-[18px] font-semibold text-tx-DEFAULT mb-1.5">
+        <div className="font-serif text-[18px] font-semibold text-tx mb-1.5">
           AI Deep Dive
         </div>
         <div className="text-tx-mid text-[12px] leading-relaxed">
@@ -87,7 +87,7 @@ export function DeepDive({ onGenerateDeep }: DeepDiveProps) {
         value={store.customTopic}
         onChange={(e) => store.setCustomTopic(e.target.value)}
         placeholder="e.g. 'How US tariff escalation reshapes GCC trade corridors'"
-        className="w-full min-h-[100px] p-3 rounded-card border border-ink-border bg-ink-card text-tx-DEFAULT text-[13px] leading-relaxed font-sans outline-none resize-y mb-3.5 focus:border-signal-purple/50 transition-colors"
+        className="w-full min-h-[100px] p-3 rounded-card border border-ink-border bg-ink-card text-tx text-[13px] leading-relaxed font-sans outline-none resize-y mb-3.5 focus:border-signal-purple/50 transition-colors"
       />
 
       <Button

@@ -21,7 +21,7 @@ export function CommandCenter({ history }: CommandCenterProps) {
       <Card className="!bg-gradient-to-br !from-ink-card !to-ink-el !border-bronze/15 !mb-5">
         <div className="text-[10px] font-bold tracking-wider text-bronze mb-2">THE PLAY</div>
         <div className="text-tx-mid text-[13px] leading-relaxed">
-          Every post is a <span className="text-tx-DEFAULT font-semibold">trust deposit</span>.
+          Every post is a <span className="text-tx font-semibold">trust deposit</span>.
           Every closing line plants a seed:{' '}
           <span className="text-bronze italic">
             "I should probably have someone look at this."
@@ -93,7 +93,7 @@ export function CommandCenter({ history }: CommandCenterProps) {
               className="flex items-center justify-between py-2.5 px-3 rounded-card bg-ink-card border border-ink-border mb-1.5"
             >
               <div className="flex-1 min-w-0 mr-2">
-                <div className="text-[11px] font-semibold truncate text-tx-DEFAULT">
+                <div className="text-[11px] font-semibold truncate text-tx">
                   {h.headline || h.text?.slice(0, 50)}
                 </div>
                 <div className="text-[9px] text-tx-dim mt-0.5">

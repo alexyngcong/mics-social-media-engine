@@ -48,9 +48,9 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
           SEND IN 3 STEPS
         </div>
         <div className="text-tx-mid text-[12px] leading-relaxed">
-          <b className="text-tx-DEFAULT">1.</b> Save image{' '}
-          <b className="text-tx-DEFAULT">2.</b> Copy text{' '}
-          <b className="text-tx-DEFAULT">3.</b> Post on {platform.name}
+          <b className="text-tx">1.</b> Save image{' '}
+          <b className="text-tx">2.</b> Copy text{' '}
+          <b className="text-tx">3.</b> Post on {platform.name}
         </div>
       </div>
 
@@ -58,7 +58,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
       {isDeep && deepData.keyFinding && (
         <div className="bg-gradient-to-br from-signal-purple/5 to-ink-card border border-signal-purple/30 rounded-card p-4 mb-3.5">
           <div className="text-[10px] font-bold text-signal-purple tracking-wider mb-1">KEY FINDING</div>
-          <div className="text-tx-DEFAULT text-[13px] leading-relaxed">{deepData.keyFinding}</div>
+          <div className="text-tx text-[13px] leading-relaxed">{deepData.keyFinding}</div>
         </div>
       )}
 
@@ -132,7 +132,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             </div>
             <div
               onClick={() => copy(deepData.post, 'hook')}
-              className="p-3.5 text-[13px] leading-relaxed text-tx-DEFAULT bg-ink-card cursor-pointer whitespace-pre-wrap break-words"
+              className="p-3.5 text-[13px] leading-relaxed text-tx bg-ink-card cursor-pointer whitespace-pre-wrap break-words"
             >
               {deepData.post}
             </div>
@@ -152,7 +152,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             </div>
             <div
               onClick={() => copy(deepData.brief, 'brief')}
-              className="p-3.5 text-[13px] leading-loose text-tx-DEFAULT bg-ink-card cursor-pointer whitespace-pre-wrap break-words"
+              className="p-3.5 text-[13px] leading-loose text-tx bg-ink-card cursor-pointer whitespace-pre-wrap break-words"
             >
               {deepData.brief}
             </div>
@@ -177,7 +177,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             </div>
             <div
               onClick={() => copy(result.text, 'txt')}
-              className="p-3.5 text-[13px] leading-relaxed text-tx-DEFAULT bg-ink-card cursor-pointer min-h-[100px] whitespace-pre-wrap break-words"
+              className="p-3.5 text-[13px] leading-relaxed text-tx bg-ink-card cursor-pointer min-h-[100px] whitespace-pre-wrap break-words"
             >
               {result.text}
             </div>
@@ -227,7 +227,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
                   {store.copiedLabel === `thread${i}` ? 'Copied!' : 'Copy'}
                 </Button>
               </div>
-              <div className="px-3.5 pb-3 text-[12px] leading-relaxed text-tx-DEFAULT">{tweet}</div>
+              <div className="px-3.5 pb-3 text-[12px] leading-relaxed text-tx">{tweet}</div>
             </div>
           ))}
         </>
