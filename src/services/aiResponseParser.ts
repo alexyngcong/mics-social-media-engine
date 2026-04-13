@@ -9,7 +9,14 @@ const DEEP_KEYS: (keyof DeepDivePost)[] = [
 ];
 
 function cleanText(value: string): string {
-  return value.replace(/\u2014/g, ', ').replace(/\u2013/g, ', ');
+  return value
+    .replace(/<cite[^>]*>.*?<\/cite>/gi, '')  // Strip <cite> tags and contents
+    .replace(/<\/?cite[^>]*>/gi, '')           // Strip unclosed cite tags
+    .replace(/<[^>]+>/g, '')                   // Strip any remaining HTML tags
+    .replace(/\u2014/g, ', ')                  // Em dash to comma
+    .replace(/\u2013/g, ', ')                  // En dash to comma
+    .replace(/\s{2,}/g, ' ')                   // Collapse multiple spaces
+    .trim();
 }
 
 function isValidDirection(value: string): value is StatDirection {

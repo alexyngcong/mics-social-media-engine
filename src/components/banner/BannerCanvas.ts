@@ -5,26 +5,94 @@ import { getTemplate } from './templates';
 
 const SCALE = 2;
 
-function wrapText(
-  ctx: CanvasRenderingContext2D,
-  text: string,
-  maxWidth: number
-): string[] {
+function wrapText(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string[] {
   const words = text.split(' ');
   const lines: string[] = [];
-  let currentLine = '';
-
+  let current = '';
   for (const word of words) {
-    const test = currentLine ? currentLine + ' ' + word : word;
+    const test = current ? current + ' ' + word : word;
     if (ctx.measureText(test).width > maxWidth) {
-      if (currentLine) lines.push(currentLine);
-      currentLine = word;
+      if (current) lines.push(current);
+      current = word;
     } else {
-      currentLine = test;
+      current = test;
     }
   }
-  if (currentLine) lines.push(currentLine);
+  if (current) lines.push(current);
   return lines;
+}
+
+function hexToRgba(hex: string, alpha: number): string {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+
+function drawGeometricPattern(ctx: CanvasRenderingContext2D, W: number, H: number, color: string) {
+  ctx.save();
+  ctx.globalAlpha = 0.03;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 0.5;
+
+  // Diagonal grid lines
+  for (let i = -H; i < W + H; i += 60) {
+    ctx.beginPath();
+    ctx.moveTo(i, 0);
+    ctx.lineTo(i + H, H);
+    ctx.stroke();
+  }
+  for (let i = -H; i < W + H; i += 60) {
+    ctx.beginPath();
+    ctx.moveTo(i + H, 0);
+    ctx.lineTo(i, H);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawHexagonRing(ctx: CanvasRenderingContext2D, cx: number, cy: number, radius: number, color: string, alpha: number) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  for (let i = 0; i < 6; i++) {
+    const angle = (Math.PI / 3) * i - Math.PI / 6;
+    const x = cx + radius * Math.cos(angle);
+    const y = cy + radius * Math.sin(angle);
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.closePath();
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawDataDots(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, color: string) {
+  ctx.save();
+  // Simulated mini chart dots
+  const points = [0.3, 0.5, 0.4, 0.7, 0.6, 0.85, 0.75, 0.9, 0.8, 0.95];
+  ctx.globalAlpha = 0.15;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  for (let i = 0; i < points.length; i++) {
+    const px = x + (i / (points.length - 1)) * w;
+    const py = y + (1 - points[i]) * 30;
+    if (i === 0) ctx.moveTo(px, py);
+    else ctx.lineTo(px, py);
+  }
+  ctx.stroke();
+
+  // Glow under the line
+  ctx.globalAlpha = 0.05;
+  ctx.fillStyle = color;
+  ctx.lineTo(x + w, y + 30);
+  ctx.lineTo(x, y + 30);
+  ctx.closePath();
+  ctx.fill();
+  ctx.restore();
 }
 
 export function drawBannerCanvas(
@@ -39,142 +107,174 @@ export function drawBannerCanvas(
   const T = getTemplate(variant, room.color, tokens.colors.bronze);
   const W = width;
   const H = height;
-  const isLandscape = W > H;
-  const isSquare = Math.abs(W - H) < 50;
+  const S = SCALE;
+  const fs = W / 1080; // font scale
 
   const canvas = document.createElement('canvas');
-  canvas.width = W * SCALE;
-  canvas.height = H * SCALE;
+  canvas.width = W * S;
+  canvas.height = H * S;
   const ctx = canvas.getContext('2d')!;
-  ctx.scale(SCALE, SCALE);
+  ctx.scale(S, S);
 
-  // Background gradient
+  // === BACKGROUND ===
   const bgColors = T.bgColors;
-  const bgGrad = ctx.createLinearGradient(0, 0, W * 0.3, H);
+  const bgGrad = ctx.createLinearGradient(0, 0, W * 0.2, H);
   bgGrad.addColorStop(0, bgColors[0]);
-  bgGrad.addColorStop(0.5, bgColors[1]);
+  bgGrad.addColorStop(0.4, bgColors[1]);
   bgGrad.addColorStop(1, bgColors[2]);
   ctx.fillStyle = bgGrad;
   ctx.fillRect(0, 0, W, H);
 
-  // Room color glow
-  const g1 = ctx.createRadialGradient(W * 0.3, H * 0.25, 0, W * 0.3, H * 0.25, W * 0.37);
-  g1.addColorStop(0, room.color + '20');
+  // Room color ambient glow
+  const g1 = ctx.createRadialGradient(W * 0.2, H * 0.3, 0, W * 0.2, H * 0.3, W * 0.5);
+  g1.addColorStop(0, hexToRgba(room.color, 0.08));
   g1.addColorStop(1, 'transparent');
   ctx.fillStyle = g1;
   ctx.fillRect(0, 0, W, H);
 
-  const g2 = ctx.createRadialGradient(W * 0.7, H * 0.7, 0, W * 0.7, H * 0.7, W * 0.32);
-  g2.addColorStop(0, tokens.colors.bronze + '15');
+  const g2 = ctx.createRadialGradient(W * 0.8, H * 0.6, 0, W * 0.8, H * 0.6, W * 0.4);
+  g2.addColorStop(0, hexToRgba(tokens.colors.bronze, 0.06));
   g2.addColorStop(1, 'transparent');
   ctx.fillStyle = g2;
   ctx.fillRect(0, 0, W, H);
 
-  // Decorative orbs
-  ctx.lineWidth = 1;
-  for (const orb of T.orbs) {
-    const ox = (parseFloat(orb.left) / 100) * W;
-    const oy = (parseFloat(orb.top) / 100) * H;
-    ctx.strokeStyle = orb.color;
-    ctx.globalAlpha = orb.opacity * 2;
-    ctx.beginPath();
-    ctx.arc(ox + orb.size / 2, oy + orb.size / 2, orb.size / 2, 0, Math.PI * 2);
-    ctx.stroke();
-  }
-  ctx.globalAlpha = 1;
+  // Geometric pattern overlay
+  drawGeometricPattern(ctx, W, H, room.color);
 
-  // Left bar accent
+  // Hexagon decorations
+  drawHexagonRing(ctx, W * 0.85, H * 0.15, 80 * fs, room.color, 0.06);
+  drawHexagonRing(ctx, W * 0.85, H * 0.15, 120 * fs, room.color, 0.03);
+  drawHexagonRing(ctx, W * 0.1, H * 0.7, 60 * fs, tokens.colors.bronze, 0.05);
+  drawHexagonRing(ctx, W * 0.1, H * 0.7, 100 * fs, tokens.colors.bronze, 0.025);
+
+  // Left accent bar
   if (T.leftBar) {
-    ctx.fillStyle = room.color;
-    ctx.globalAlpha = 0.25;
-    ctx.fillRect(0, 0, 6, H);
-    ctx.globalAlpha = 1;
+    const barGrad = ctx.createLinearGradient(0, 0, 0, H);
+    barGrad.addColorStop(0, hexToRgba(room.color, 0));
+    barGrad.addColorStop(0.3, hexToRgba(room.color, 0.4));
+    barGrad.addColorStop(0.7, hexToRgba(room.color, 0.4));
+    barGrad.addColorStop(1, hexToRgba(room.color, 0));
+    ctx.fillStyle = barGrad;
+    ctx.fillRect(0, 0, 5, H);
   }
 
-  // Header band
-  const headerH = isLandscape ? H * 0.18 : H * 0.11;
-  const hGrad = ctx.createLinearGradient(0, 0, 0, headerH);
-  hGrad.addColorStop(0, 'rgba(6,6,16,0.95)');
-  hGrad.addColorStop(1, 'rgba(6,6,16,0.5)');
+  // === HEADER BAND ===
+  const headerH = H * 0.105;
+  const hGrad = ctx.createLinearGradient(0, 0, 0, headerH + 30);
+  hGrad.addColorStop(0, 'rgba(4,4,12,0.98)');
+  hGrad.addColorStop(1, 'rgba(4,4,12,0.3)');
   ctx.fillStyle = hGrad;
-  ctx.fillRect(0, 0, W, headerH);
+  ctx.fillRect(0, 0, W, headerH + 30);
 
-  // Gold accent line
+  // Gold accent line under header
   const accentGrad = ctx.createLinearGradient(0, 0, W, 0);
-  accentGrad.addColorStop(0, tokens.colors.bronze);
-  accentGrad.addColorStop(0.5, tokens.colors.bronzeLight);
-  accentGrad.addColorStop(1, tokens.colors.bronze);
+  accentGrad.addColorStop(0, hexToRgba(tokens.colors.bronze, 0.1));
+  accentGrad.addColorStop(0.3, tokens.colors.bronzeLight);
+  accentGrad.addColorStop(0.7, tokens.colors.bronzeLight);
+  accentGrad.addColorStop(1, hexToRgba(tokens.colors.bronze, 0.1));
   ctx.fillStyle = accentGrad;
-  ctx.fillRect(0, headerH - 3, W, 3);
+  ctx.fillRect(0, headerH, W, 2.5);
 
-  // Header text - scale based on dimensions
-  const baseFontScale = W / 1080;
-  const px = W * 0.052;
+  // Header content
+  const px = 52 * fs;
 
+  // Brand name
   ctx.textAlign = 'left';
-  ctx.fillStyle = '#fff';
-  ctx.font = `800 ${16 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(brand.name.toUpperCase(), px, headerH * 0.35);
+  ctx.fillStyle = '#ffffff';
+  ctx.font = `800 ${17 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.letterSpacing = '3px';
+  ctx.fillText('MICS INTERNATIONAL', px, headerH * 0.38);
 
-  ctx.fillStyle = 'rgba(255,255,255,0.3)';
-  ctx.font = `300 ${12 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(brand.tagline, px, headerH * 0.5);
+  ctx.fillStyle = 'rgba(255,255,255,0.35)';
+  ctx.font = `300 ${11 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(brand.tagline, px, headerH * 0.55);
 
+  // Room badge
+  ctx.fillStyle = hexToRgba(room.color, 0.12);
+  const badgeW = ctx.measureText(room.icon + ' ' + room.short.toUpperCase()).width + 28 * fs;
+  const badgeX = px - 4;
+  const badgeY = headerH * 0.67;
+  ctx.beginPath();
+  ctx.roundRect(badgeX, badgeY - 10 * fs, badgeW, 22 * fs, 4);
+  ctx.fill();
   ctx.fillStyle = room.color;
-  ctx.font = `700 ${13 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(room.icon + ' ' + room.short.toUpperCase(), px, headerH * 0.78);
+  ctx.font = `700 ${12 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(room.icon + '  ' + room.short.toUpperCase(), px, headerH * 0.72);
 
+  // Right side - community label + date
   ctx.textAlign = 'right';
-  ctx.fillStyle = 'rgba(255,255,255,0.25)';
-  ctx.font = `300 ${13 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(dateFormatted.short, W - px, headerH * 0.78);
+  ctx.fillStyle = hexToRgba(tokens.colors.bronzeLight, 0.6);
+  ctx.font = `700 ${9 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText('CFOs PRIVATE INSIGHTS CIRCLE', W - px, headerH * 0.38);
+  ctx.fillStyle = 'rgba(255,255,255,0.2)';
+  ctx.font = `300 ${11 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(dateFormatted.short, W - px, headerH * 0.72);
 
-  ctx.fillStyle = tokens.colors.bronze + '90';
-  ctx.font = `700 ${10 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText('CFOs PRIVATE', W - px, headerH * 0.32);
-  ctx.fillText('INSIGHTS CIRCLE', W - px, headerH * 0.45);
-
-  // Content area - adaptive layout
+  // === MAIN CONTENT AREA ===
   ctx.textAlign = 'center';
-  const contentStartY = headerH + (isLandscape ? H * 0.08 : H * 0.12);
 
-  // Stat block
-  const statFontSize = isLandscape ? 80 : isSquare ? 90 : 120;
-  const statY = contentStartY + statFontSize * 0.8;
+  // Stat section with background panel
+  const statPanelY = headerH + H * 0.08;
+  const statPanelH = H * 0.22;
+
+  // Subtle panel behind stat
+  ctx.fillStyle = hexToRgba(room.color, 0.03);
+  ctx.beginPath();
+  ctx.roundRect(W * 0.1, statPanelY, W * 0.8, statPanelH, 16);
+  ctx.fill();
+  ctx.strokeStyle = hexToRgba(room.color, 0.08);
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Mini data chart behind stat
+  drawDataDots(ctx, W * 0.15, statPanelY + statPanelH * 0.12, W * 0.7, room.color);
+
+  // Main stat number
+  const statFontSize = Math.min(110, 100 * fs);
+  const statY = statPanelY + statPanelH * 0.55;
   ctx.fillStyle = T.statColor;
-  ctx.font = `700 ${statFontSize * baseFontScale}px Georgia,serif`;
-  ctx.shadowColor = room.color + '30';
-  ctx.shadowBlur = 40;
+  ctx.font = `700 ${statFontSize}px Georgia,serif`;
+  ctx.shadowColor = hexToRgba(room.color, 0.25);
+  ctx.shadowBlur = 60;
   ctx.fillText(result.stat || '--', W / 2, statY);
   ctx.shadowBlur = 0;
 
   // Stat label
   ctx.fillStyle = tokens.colors.bronzeLight;
-  ctx.font = `700 ${16 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText((result.statLabel || '').toUpperCase(), W / 2, statY + 45 * baseFontScale);
+  ctx.font = `700 ${14 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText((result.statLabel || '').toUpperCase(), W / 2, statY + 35 * fs);
 
-  // Direction indicator
+  // Direction badge
   const dir = result.statDirection || 'neutral';
   const dirColor = dir === 'up' ? '#22C55E' : dir === 'down' ? '#EF4444' : '#94A3B8';
-  const dirText = dir === 'up' ? '\u25B2 UP' : dir === 'down' ? '\u25BC DOWN' : '\u25CF STABLE';
+  const dirText = dir === 'up' ? '\u25B2  TRENDING UP' : dir === 'down' ? '\u25BC  DECLINING' : '\u25CF  HOLDING STEADY';
+  const dirBadgeW = 140 * fs;
+  ctx.fillStyle = hexToRgba(dirColor, 0.12);
+  ctx.beginPath();
+  ctx.roundRect(W / 2 - dirBadgeW / 2, statY + 48 * fs, dirBadgeW, 24 * fs, 12);
+  ctx.fill();
   ctx.fillStyle = dirColor;
-  ctx.font = `700 ${14 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(dirText, W / 2, statY + 75 * baseFontScale);
+  ctx.font = `700 ${11 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(dirText, W / 2, statY + 64 * fs);
 
-  // Divider
-  const divY = statY + 105 * baseFontScale;
-  const divGrad = ctx.createLinearGradient(W * 0.15, 0, W * 0.85, 0);
+  // === DIVIDER SECTION ===
+  const divY = statPanelY + statPanelH + H * 0.04;
+
+  // Elegant divider with side decorations
+  const divGrad = ctx.createLinearGradient(W * 0.08, 0, W * 0.92, 0);
   divGrad.addColorStop(0, 'transparent');
+  divGrad.addColorStop(0.15, hexToRgba(tokens.colors.bronzeLight, 0.3));
   divGrad.addColorStop(0.5, tokens.colors.bronzeLight);
+  divGrad.addColorStop(0.85, hexToRgba(tokens.colors.bronzeLight, 0.3));
   divGrad.addColorStop(1, 'transparent');
   ctx.strokeStyle = divGrad;
-  ctx.lineWidth = 1.5;
+  ctx.lineWidth = 1;
   ctx.beginPath();
-  ctx.moveTo(W * 0.15, divY);
-  ctx.lineTo(W * 0.85, divY);
+  ctx.moveTo(W * 0.08, divY);
+  ctx.lineTo(W * 0.92, divY);
   ctx.stroke();
 
-  // Diamond on divider
+  // Center diamond
   ctx.fillStyle = tokens.colors.bronzeLight;
   ctx.save();
   ctx.translate(W / 2, divY);
@@ -182,58 +282,84 @@ export function drawBannerCanvas(
   ctx.fillRect(-5, -5, 10, 10);
   ctx.restore();
 
-  // Headline
-  const hlFontSize = T.headlineSize * 1.4 * baseFontScale;
-  ctx.fillStyle = '#fff';
-  ctx.font = `700 ${hlFontSize}px Georgia,serif`;
-  const hlLines = wrapText(ctx, result.headline || 'INTELLIGENCE BRIEF', W - 160 * baseFontScale);
-  let hlY = divY + 55 * baseFontScale;
+  // Side dots
+  ctx.globalAlpha = 0.4;
+  ctx.beginPath(); ctx.arc(W * 0.15, divY, 2, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(W * 0.85, divY, 2, 0, Math.PI * 2); ctx.fill();
+  ctx.globalAlpha = 1;
+
+  // === HEADLINE SECTION ===
+  const headlineY = divY + 45 * fs;
+  const hlSize = T.headlineSize * 1.5 * fs;
+  ctx.fillStyle = '#ffffff';
+  ctx.font = `700 ${hlSize}px Georgia,serif`;
+  const hlLines = wrapText(ctx, result.headline || 'INTELLIGENCE BRIEF', W - 140 * fs);
+  let hlY = headlineY;
   for (const line of hlLines) {
     ctx.fillText(line, W / 2, hlY);
-    hlY += hlFontSize * 1.35;
+    hlY += hlSize * 1.3;
   }
 
   // Subline
-  ctx.fillStyle = 'rgba(255,255,255,0.45)';
-  ctx.font = `300 ${18 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  const subLines = wrapText(ctx, result.subline || '', W - 200 * baseFontScale);
-  let subY = hlY + 20 * baseFontScale;
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.font = `400 ${16 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  const subLines = wrapText(ctx, result.subline || '', W - 180 * fs);
+  let subY = hlY + 18 * fs;
   for (const line of subLines) {
     ctx.fillText(line, W / 2, subY);
-    subY += 28 * baseFontScale;
+    subY += 26 * fs;
   }
 
-  // Corner brackets
-  ctx.strokeStyle = tokens.colors.bronzeLight + '40';
-  ctx.lineWidth = 1;
-  const cornerPairs: [number, number, number, number][] = [
-    [40, headerH + 20, 1, 1],
-    [W - 40, headerH + 20, -1, 1],
-    [40, H - 80, 1, -1],
-    [W - 40, H - 80, -1, -1],
-  ];
-  for (const [cx, cy, dx, dy] of cornerPairs) {
-    ctx.beginPath();
-    ctx.moveTo(cx, cy + 20 * dy);
-    ctx.lineTo(cx, cy);
-    ctx.lineTo(cx + 20 * dx, cy);
-    ctx.stroke();
+  // === SOURCE ATTRIBUTION ===
+  if (result.source) {
+    const srcY = subY + 30 * fs;
+    ctx.fillStyle = hexToRgba(tokens.colors.bronze, 0.4);
+    ctx.font = `600 ${10 * fs}px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillText('SOURCE: ' + result.source.toUpperCase(), W / 2, srcY);
   }
 
-  // Footer
-  const footerH = isLandscape ? H * 0.1 : H * 0.058;
+  // === CORNER BRACKETS (premium detail) ===
+  ctx.strokeStyle = hexToRgba(tokens.colors.bronzeLight, 0.2);
+  ctx.lineWidth = 1.5;
+  const cm = 32; // corner margin
+  const cl = 24; // corner length
+  // Top-left
+  ctx.beginPath(); ctx.moveTo(cm, headerH + cm + cl); ctx.lineTo(cm, headerH + cm); ctx.lineTo(cm + cl, headerH + cm); ctx.stroke();
+  // Top-right
+  ctx.beginPath(); ctx.moveTo(W - cm, headerH + cm + cl); ctx.lineTo(W - cm, headerH + cm); ctx.lineTo(W - cm - cl, headerH + cm); ctx.stroke();
+  // Bottom-left
+  ctx.beginPath(); ctx.moveTo(cm, H - 78 - cm - cl); ctx.lineTo(cm, H - 78 - cm); ctx.lineTo(cm + cl, H - 78 - cm); ctx.stroke();
+  // Bottom-right
+  ctx.beginPath(); ctx.moveTo(W - cm, H - 78 - cm - cl); ctx.lineTo(W - cm, H - 78 - cm); ctx.lineTo(W - cm - cl, H - 78 - cm); ctx.stroke();
+
+  // === FOOTER ===
+  const footerH = 76 * fs;
+
+  // Footer separator
   ctx.fillStyle = accentGrad;
   ctx.fillRect(0, H - footerH - 2, W, 2);
-  ctx.fillStyle = 'rgba(6,6,16,0.95)';
+
+  // Footer background
+  ctx.fillStyle = 'rgba(4,4,12,0.97)';
   ctx.fillRect(0, H - footerH, W, footerH);
 
+  // Footer content
   ctx.textAlign = 'center';
-  ctx.fillStyle = 'rgba(255,255,255,0.45)';
-  ctx.font = `600 ${12 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(brand.community, W / 2, H - footerH * 0.55);
-  ctx.fillStyle = tokens.colors.bronze + '70';
-  ctx.font = `300 ${11 * baseFontScale}px 'Segoe UI',system-ui,sans-serif`;
-  ctx.fillText(brand.footer, W / 2, H - footerH * 0.2);
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.font = `600 ${12 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(brand.community, W / 2, H - footerH * 0.58);
+
+  ctx.fillStyle = hexToRgba(tokens.colors.bronze, 0.45);
+  ctx.font = `300 ${10 * fs}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillText(brand.footer, W / 2, H - footerH * 0.25);
+
+  // Small room color accent dot in footer
+  ctx.fillStyle = room.color;
+  ctx.globalAlpha = 0.4;
+  ctx.beginPath();
+  ctx.arc(W / 2, H - footerH * 0.85, 3, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.globalAlpha = 1;
 
   return canvas;
 }

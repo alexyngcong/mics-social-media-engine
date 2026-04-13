@@ -23,7 +23,10 @@
       "Bash(node -e \"console.log\\(require\\('vite/package.json'\\).main\\)\")",
       "Bash(gh repo:*)",
       "Bash(npx vite:*)",
-      "Bash(npx gh-pages:*)"
+      "Bash(npx gh-pages:*)",
+      "Bash(gh api:*)",
+      "Bash(git fetch:*)",
+      "Bash(git ls-tree:*)"
     ]
   }
 }
