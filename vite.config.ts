@@ -4,6 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/mics-social-media-engine/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -11,11 +12,5 @@ export default defineConfig({
   },
   server: {
     port: 5173,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3001',
-        changeOrigin: true,
-      },
-    },
   },
 })
