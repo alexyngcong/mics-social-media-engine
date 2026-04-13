@@ -6,7 +6,7 @@ import { useBannerExport } from '../../hooks/useBannerExport';
 import { useAppStore } from '../../store/appStore';
 import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
-import { BannerPreview } from '../banner/BannerPreview';
+import { WhatsAppPreview } from '../preview/WhatsAppPreview';
 import { Button } from '../ui/Button';
 import { Spinner } from '../ui/Spinner';
 
@@ -37,9 +37,8 @@ export function DayDetail() {
   const isGenerating = generatingDate === selectedDate;
   const hasResult = !!entry.result;
 
-  const whatsapp = PLATFORMS.find((p) => p.id === 'whatsapp')!;
-  const dim = whatsapp.imageDimensions[0];
-  const previewScale = Math.min(440 / dim.width, 0.38);
+  const _whatsapp = PLATFORMS.find((p) => p.id === 'whatsapp')!;
+  void _whatsapp; // Used for generation; WhatsAppPreview handles display
 
   const handleGenerate = async () => {
     setError('');
@@ -146,63 +145,48 @@ export function DayDetail() {
               <div className="text-[10px] text-tx-dim ml-auto">WhatsApp</div>
             </div>
 
-            {/* Banner preview */}
-            <div className="rounded-lg overflow-hidden border border-ink-border">
-              <div style={{ width: dim.width * previewScale, height: dim.height * previewScale }}>
-                <BannerPreview
-                  result={entry.result}
-                  room={room}
-                  variant={entry.bannerVariant ?? 0}
-                  width={dim.width}
-                  height={dim.height}
-                  scale={previewScale}
-                />
-              </div>
-            </div>
+            {/* WhatsApp preview - exact look */}
+            <WhatsAppPreview
+              result={entry.result}
+              room={room}
+              bannerVariant={entry.bannerVariant ?? 0}
+            />
 
-            {/* Save image */}
-            <Button
-              variant={imgSaved ? 'green' : 'gold'}
-              fullWidth
-              onClick={handleSaveBanner}
-              className="!py-2.5 !text-[12px]"
-            >
-              {imgSaved ? 'Image Saved!' : 'Save Banner Image'}
-            </Button>
-
-            {/* Post text */}
-            <div className="bg-ink-el border border-ink-border rounded-lg overflow-hidden">
-              <div className="px-3 py-2 border-b border-ink-border/50 flex justify-between items-center">
-                <span className="text-[10px] text-tx-dim">WhatsApp text</span>
-                <Button
-                  variant={copiedField === 'cal-txt' ? 'green' : 'ghost'}
-                  onClick={() => handleCopy(entry.result!.text, 'cal-txt')}
-                  className="!px-3 !py-1 !text-[10px]"
-                >
-                  {copiedField === 'cal-txt' ? 'Copied!' : 'Copy'}
-                </Button>
-              </div>
-              <div
-                onClick={() => handleCopy(entry.result!.text, 'cal-txt')}
-                className="px-3 py-3 text-[12px] leading-relaxed text-tx cursor-pointer whitespace-pre-wrap break-words"
-              >
-                {entry.result.text}
-              </div>
-            </div>
-
-            {/* Stat + Source row */}
+            {/* Action buttons */}
             <div className="flex gap-2">
-              <div className="flex-1 bg-ink-el border border-ink-border rounded-lg px-3 py-2 text-center">
-                <div className="text-[18px] font-serif font-bold text-tx">{entry.result.stat}</div>
-                <div className="text-[9px] text-tx-dim mt-0.5">{entry.result.statLabel}</div>
-              </div>
-              {entry.result.source && (
-                <div className="flex-1 bg-ink-el border border-ink-border rounded-lg px-3 py-2 flex flex-col justify-center">
-                  <div className="text-[9px] text-tx-ghost">SOURCE</div>
-                  <div className="text-[11px] text-tx-mid truncate">{entry.result.source}</div>
-                </div>
-              )}
+              <Button
+                variant={imgSaved ? 'green' : 'gold'}
+                onClick={handleSaveBanner}
+                className="flex-1 !py-2.5 !text-[12px]"
+              >
+                {imgSaved ? 'Saved!' : '1. Save Image'}
+              </Button>
+              <Button
+                variant={copiedField === 'cal-txt' ? 'green' : 'gold'}
+                onClick={() => handleCopy(entry.result!.text, 'cal-txt')}
+                className="flex-1 !py-2.5 !text-[12px]"
+              >
+                {copiedField === 'cal-txt' ? 'Copied!' : '2. Copy Text'}
+              </Button>
             </div>
+
+            {/* Source */}
+            {entry.result.source && (
+              <div className="bg-ink-el border border-ink-border rounded-lg px-3 py-2 flex justify-between items-center">
+                <div>
+                  <div className="text-[9px] text-tx-ghost">SOURCE</div>
+                  <div className="text-[11px] text-tx-mid">{entry.result.source}</div>
+                </div>
+                {entry.result.sourceUrl && (
+                  <button
+                    onClick={() => window.open(entry.result!.sourceUrl, '_blank')}
+                    className="text-[10px] text-bronze border border-bronze/30 px-2.5 py-1 rounded hover:bg-bronze/10 transition-colors"
+                  >
+                    Open
+                  </button>
+                )}
+              </div>
+            )}
 
             {/* Regenerate */}
             <Button
