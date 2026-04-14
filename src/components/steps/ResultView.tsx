@@ -41,7 +41,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
   if (!room || !platform) return null;
 
   const isWhatsApp = platform.id === 'whatsapp';
-  const isVoiceNote = store.postType === 'voicenote';
+  const isInsiderNote = store.postType === 'voicenote'; // "Insider Note" casual text format
   const isPulse = store.postType === 'pulse';
   const isNoBanner = postType?.noBanner || false;
   const dim = platform.imageDimensions[store.imageDimensionIndex] || platform.imageDimensions[0];
@@ -70,7 +70,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
                 : 'text-tx-dim hover:text-tx'
             }`}
           >
-            {isVoiceNote ? 'Voice Note Preview' : 'WhatsApp Preview'}
+            {isInsiderNote ? 'Insider Note Preview' : 'WhatsApp Preview'}
           </button>
           <button
             onClick={() => setActiveTab('edit')}
@@ -80,7 +80,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
                 : 'text-tx-dim hover:text-tx'
             }`}
           >
-            {isVoiceNote ? 'Script & Export' : 'Edit & Export'}
+            {isInsiderNote ? 'Text & Export' : 'Edit & Export'}
           </button>
         </div>
       )}
@@ -90,14 +90,13 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
         <>
           {/* Quick steps — varies by post type */}
           <div className="bg-gradient-to-br from-ink-card to-ink-el border border-bronze/15 rounded-card-lg px-4 py-3 mb-3.5">
-            {isVoiceNote ? (
+            {isInsiderNote ? (
               <>
                 <div className="text-[10px] font-bold text-[#25D366] tracking-wide mb-1">
-                  🎙️ VOICE NOTE SCRIPT
+                  💬 INSIDER NOTE
                 </div>
                 <div className="text-tx-mid text-[12px] leading-relaxed">
-                  Record this script as a WhatsApp voice message. Estimated duration:{' '}
-                  <span className="text-tx font-semibold">{estimateDuration(result.text)}</span>
+                  Personal, casual message. Copy and send as-is. No image needed.
                 </div>
               </>
             ) : isPulse ? (
@@ -127,7 +126,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             room={room}
             bannerVariant={store.bannerVariant}
             showBanner={!isNoBanner}
-            isVoiceNote={isVoiceNote}
+            isVoiceNote={false}
           />
 
           {/* Action buttons below preview */}
@@ -146,7 +145,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
               onClick={() => copy(result.text, 'txt')}
               className="flex-1 py-3 text-[12px]"
             >
-              {store.copiedLabel === 'txt' ? 'Copied!' : isVoiceNote ? 'Copy Script' : isPulse ? 'Copy Message' : `${isNoBanner ? '1' : '2'}. Copy Text`}
+              {store.copiedLabel === 'txt' ? 'Copied!' : isInsiderNote ? 'Copy Note' : isPulse ? 'Copy Message' : `${isNoBanner ? '1' : '2'}. Copy Text`}
             </Button>
           </div>
 
@@ -165,15 +164,12 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             </Button>
           </div>
 
-          {/* Voice note recording tips */}
-          {isVoiceNote && (
+          {/* Insider note tip */}
+          {isInsiderNote && (
             <div className="bg-ink-card border border-[#25D366]/20 rounded-card px-3.5 py-2.5 mt-3">
-              <div className="text-[10px] font-bold text-[#25D366] mb-1">RECORDING TIPS</div>
-              <div className="text-tx-dim text-[11px] leading-relaxed space-y-1">
-                <p>• Read the script naturally, don't sound rehearsed</p>
-                <p>• Pause at "..." marks for natural breathing</p>
-                <p>• Keep energy warm but measured, like calling a friend</p>
-                <p>• Target: {estimateDuration(result.text)} duration</p>
+              <div className="text-[10px] font-bold text-[#25D366] mb-1">WHY THIS FORMAT WORKS</div>
+              <div className="text-tx-dim text-[11px] leading-relaxed">
+                This feels like a personal message, not a broadcast. It breaks the pattern of formal posts and builds a direct connection with your audience.
               </div>
             </div>
           )}
@@ -199,15 +195,15 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
         <>
           {/* Quick steps guide */}
           <div className="bg-gradient-to-br from-ink-card to-ink-el border border-bronze/15 rounded-card-lg px-4 py-3 mb-3.5">
-            {isVoiceNote ? (
+            {isInsiderNote ? (
               <>
                 <div className="text-[10px] font-bold text-[#25D366] tracking-wide mb-1">
-                  VOICE NOTE SCRIPT — {estimateDuration(result.text)}
+                  INSIDER NOTE — TEXT ONLY
                 </div>
                 <div className="text-tx-mid text-[12px] leading-relaxed">
-                  <b className="text-tx">1.</b> Read script{' '}
-                  <b className="text-tx">2.</b> Record voice note{' '}
-                  <b className="text-tx">3.</b> Send to group
+                  <b className="text-tx">1.</b> Copy text{' '}
+                  <b className="text-tx">2.</b> Paste in group{' '}
+                  <span className="text-tx-dim">(personal, casual tone)</span>
                 </div>
               </>
             ) : isPulse ? (
@@ -351,14 +347,14 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
           {!isDeep && (
             <>
               <Label>
-                {isVoiceNote ? 'VOICE NOTE SCRIPT' : isPulse ? 'PULSE SIGNAL' : `${platform.name.toUpperCase()} TEXT`}
+                {isInsiderNote ? 'INSIDER NOTE' : isPulse ? 'PULSE SIGNAL' : `${platform.name.toUpperCase()} TEXT`}
               </Label>
               <div className={`bg-ink-card border rounded-card overflow-hidden mb-2 ${
-                isVoiceNote ? 'border-[#25D366]/30' : isPulse ? 'border-signal-purple/30' : 'border-ink-border'
+                isInsiderNote ? 'border-[#25D366]/30' : isPulse ? 'border-signal-purple/30' : 'border-ink-border'
               }`}>
                 <div className="px-3.5 py-2 border-b border-ink-border flex justify-between items-center">
                   <span className="text-tx-dim text-[11px]">
-                    {isVoiceNote ? `Read aloud · ~${estimateDuration(result.text)}` : 'Tap to copy'}
+                    {isInsiderNote ? 'Personal tone · text only' : 'Tap to copy'}
                   </span>
                   <Button
                     variant={store.copiedLabel === 'txt' ? 'green' : 'gold'}
@@ -371,7 +367,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
                 <div
                   onClick={() => copy(result.text, 'txt')}
                   className={`p-3.5 text-[13px] leading-relaxed text-tx bg-ink-card cursor-pointer min-h-[100px] whitespace-pre-wrap break-words ${
-                    isVoiceNote ? 'italic' : ''
+                    ''
                   }`}
                 >
                   {result.text}

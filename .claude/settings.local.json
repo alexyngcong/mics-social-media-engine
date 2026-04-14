@@ -37,7 +37,8 @@
       "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/node.exe\" -e \"try { require.resolve\\('gh-pages'\\); console.log\\('found'\\); } catch\\(e\\) { console.log\\('not found'\\); }\")",
       "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/npm.cmd\" install:*)",
       "WebFetch(domain:alexyngcong.github.io)",
-      "Bash(export PATH=\"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64:$PATH\")"
+      "Bash(export PATH=\"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64:$PATH\")",
+      "WebSearch"
     ]
   }
 }

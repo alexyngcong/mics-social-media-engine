@@ -131,7 +131,8 @@ export function CommandCenter({ history }: CommandCenterProps) {
             { day: 'Tue', type: '🔍 Intelligence Drop — 9:00 AM', active: new Date().getDay() === 2, posting: true },
             { day: 'Wed', type: '🤫 Strategic Silence', active: new Date().getDay() === 3, posting: false },
             { day: 'Thu', type: '🎯 Closing Signal — 1:30 PM', active: new Date().getDay() === 4, posting: true },
-            { day: 'Fri-Sat', type: '🤫 Weekend Silence', active: [5, 6].includes(new Date().getDay()), posting: false },
+            { day: 'Fri', type: '🤫 Strategic Silence', active: new Date().getDay() === 5, posting: false },
+            { day: 'Sat', type: '🤫 Weekend Rest', active: new Date().getDay() === 6, posting: false },
           ].map((row) => (
             <div
               key={row.day}

@@ -57,14 +57,14 @@ export const POST_TYPES: PostType[] = [
   },
   {
     id: 'voicenote',
-    label: 'Voice Note Script',
-    icon: '🎙️',
+    label: 'Insider Note',
+    icon: '💬',
     day: 'Any day',
     category: 'engagement',
-    description: '60-90 second spoken script to record as audio',
+    description: 'Personal, casual message — feels like a DM, not a broadcast',
     noBanner: true,
     promptFragment:
-      'a voice note script to be READ ALOUD as a WhatsApp voice message. 60-90 seconds of natural spoken language (approximately 150-200 words). Write in conversational first person as a senior insider sharing something important. Use short sentences. Use natural pauses marked with "..." Use rhetorical questions. DO NOT use any WhatsApp formatting (*bold*, _italic_). Write as SPOKEN words, not written text. The tone is a trusted colleague calling to share something urgent. Include one specific data point. End with something that makes the listener want to reach out privately: "If this touches anything in your structure, you know where to find me" type of energy.',
+      'a short, personal, casual message written as if you are typing a quick personal note directly to the group. 80-120 words. First person. Conversational. Start with something like "Quick thought before the week starts..." or "Something I keep hearing from people I trust..." Use WhatsApp formatting *bold* for one key number only. NO formal structure, NO paragraphs headers. Just a natural, warm, insightful message from someone who cares about this group. Include one specific data point that surprises. End with something personal and forward-looking like "Hope that helps. Have a good week everyone." or "Thought this was worth flagging. Talk soon." The power is in how DIFFERENT this feels from the structured intelligence posts.',
   },
   {
     id: 'exclusive',
