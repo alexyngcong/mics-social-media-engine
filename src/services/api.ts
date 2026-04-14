@@ -1,57 +1,43 @@
-const API_URL = 'https://api.anthropic.com/v1/messages';
+/**
+ * API SERVICE — Zero-key content generation
+ *
+ * Replaces Anthropic Claude API with:
+ *   - GDELT + Google News RSS for live data (free, no key)
+ *   - Content engine for post generation (template-based)
+ *
+ * The app works instantly — no API key, no setup, no cost.
+ */
 
-function getApiKey(): string {
-  const key = localStorage.getItem('mics_api_key') || '';
-  if (!key) throw new Error('No API key. Tap "Disconnect" then re-enter your key.');
-  return key;
-}
+import { fetchNews } from './newsFetcher';
+import { generatePost } from './contentEngine';
+import type { GeneratedPost, RoomId, PostTypeId } from '../types';
 
-export function setApiKey(key: string): void {
-  localStorage.setItem('mics_api_key', key.trim());
-}
-
-export function getStoredApiKey(): string {
-  return localStorage.getItem('mics_api_key') || '';
-}
-
-export function clearApiKey(): void {
-  localStorage.removeItem('mics_api_key');
-}
-
+/**
+ * Generate a post using live news data. No API key required.
+ *
+ * @param room - The intelligence room (growth/capital/risk/world)
+ * @param postTypeId - The post format (observation/alert/poll/etc.)
+ * @param customTopic - Optional custom topic override
+ * @returns GeneratedPost ready for QA validation and display
+ */
 export async function generateContent(
-  system: string,
-  userMessage: string,
-  options?: { model?: string; maxTokens?: number }
-): Promise<string> {
-  const apiKey = getApiKey();
+  room: RoomId,
+  postTypeId: PostTypeId,
+  customTopic?: string,
+): Promise<GeneratedPost> {
+  // Step 1: Fetch live news from approved sources
+  const articles = await fetchNews(room, customTopic);
 
-  const response = await fetch(API_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true',
-    },
-    body: JSON.stringify({
-      model: options?.model ?? 'claude-sonnet-4-20250514',
-      max_tokens: options?.maxTokens ?? 1500,
-      system,
-      tools: [{ type: 'web_search_20250305', name: 'web_search' }],
-      messages: [{ role: 'user', content: userMessage }],
-    }),
-  });
+  // Step 2: Generate formatted post from articles
+  const post = generatePost(articles, room, postTypeId, customTopic);
 
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => null);
-    const msg = errorData?.error?.message || `API error: ${response.status}`;
-    if (response.status === 401) throw new Error('Invalid API key. Tap "Disconnect" and re-enter your key.');
-    throw new Error(msg);
-  }
-
-  const data = await response.json() as { content?: Array<{ type: string; text?: string }> };
-  return (data.content || [])
-    .filter((b) => b.type === 'text')
-    .map((b) => b.text || '')
-    .join('\n');
+  return post;
 }
+
+/**
+ * Legacy API key functions — kept as no-ops for backward compatibility.
+ * These do nothing now since no API key is needed.
+ */
+export function setApiKey(_key: string): void { /* no-op */ }
+export function getStoredApiKey(): string { return 'live-data'; }
+export function clearApiKey(): void { /* no-op */ }

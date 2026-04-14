@@ -1,11 +1,9 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useAppStore } from './store/appStore';
 import { useGenerate } from './hooks/useGenerate';
 import { useHistory } from './hooks/useHistory';
-import { getStoredApiKey, clearApiKey } from './services/api';
 import { dateFormatted } from './config/brand';
 
-import { ApiKeySetup } from './components/steps/ApiKeySetup';
 import { CommandCenter } from './components/steps/CommandCenter';
 import { PlatformSelect } from './components/steps/PlatformSelect';
 import { RoomSelect } from './components/steps/RoomSelect';
@@ -34,15 +32,10 @@ function getStepTitle(step: number): string {
 }
 
 export default function App() {
-  const [hasKey, setHasKey] = useState(() => !!getStoredApiKey());
   const store = useAppStore();
   const { items: history, addItem } = useHistory();
   const { generate, generateDeep } = useGenerate(addItem);
   const fallbackTextareaRef = useRef<HTMLTextAreaElement>(null);
-
-  if (!hasKey) {
-    return <ApiKeySetup onKeySet={() => setHasKey(true)} />;
-  }
 
   const handleRetryStandard = () => {
     store.setStep(3);
@@ -52,11 +45,6 @@ export default function App() {
   const handleRetryDeep = () => {
     store.setStep(7);
     setTimeout(() => generateDeep(store.customTopic), 200);
-  };
-
-  const handleDisconnect = () => {
-    clearApiKey();
-    setHasKey(false);
   };
 
   return (
@@ -80,9 +68,10 @@ export default function App() {
                 Home
               </Button>
             )}
-            <Button variant="ghost" onClick={handleDisconnect} className="!px-2.5 !py-1.5 !text-[10px] !text-signal-red/70 !border-signal-red/20">
-              Disconnect
-            </Button>
+            <div className="flex items-center gap-1 px-2 py-1 rounded-full bg-signal-green/10 border border-signal-green/20">
+              <div className="w-1.5 h-1.5 rounded-full bg-signal-green animate-pulse" />
+              <span className="text-[9px] text-signal-green font-semibold">LIVE</span>
+            </div>
           </div>
         </div>
       </div>
@@ -137,8 +126,8 @@ export default function App() {
 
       {/* Footer */}
       <div className="px-5 py-2.5 border-t border-ink-border bg-ink flex justify-between text-[10px] text-tx-dim">
-        <span>Intelligence Engine</span>
-        <span className="text-tx-ghost">v4.0</span>
+        <span>Live Intelligence Engine</span>
+        <span className="text-tx-ghost">v5.0 | No API Key Required</span>
       </div>
     </div>
   );

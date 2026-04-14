@@ -1,23 +1,20 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useAppStore } from '../store/appStore';
 import { generateContent } from '../services/api';
-import { parseStandardResponse, parseDeepResponse } from '../services/aiResponseParser';
-import { buildStandardPrompt, buildDeepPrompt, buildUserMessage, buildDeepUserMessage } from '../services/prompts';
 import { validatePost, autoFixPost } from '../services/qaValidator';
 import { ROOMS } from '../config/rooms';
 import { POST_TYPES } from '../config/postTypes';
-import { PLATFORMS } from '../config/platforms';
 import { TEMPLATE_COUNT } from '../components/banner/templates';
-import type { HistoryItem } from '../types';
+import type { HistoryItem, PostTypeId } from '../types';
 import { dateFormatted } from '../config/brand';
 
 const LOADING_MSGS = [
-  'Scanning feeds...', 'Cross-referencing sources...', 'Filtering signals...',
-  'Verifying data...', 'Crafting intelligence...', 'Planting advisory seed...',
+  'Scanning live feeds...', 'Checking approved sources...', 'Filtering signals...',
+  'Cross-referencing data...', 'Building intelligence...', 'Planting advisory seed...',
 ];
 const DEEP_MSGS = [
-  'Deep research initiated...', 'Searching global wires...', 'Cross-referencing 5+ sources...',
-  'Analyzing impact...', 'Finding missed angles...', 'Building brief...', 'Polishing output...',
+  'Deep research initiated...', 'Searching Mondaq, MEED, Lexology...', 'Cross-referencing 5+ sources...',
+  'Analyzing regional impact...', 'Finding missed angles...', 'Building brief...', 'Polishing output...',
 ];
 const ENGAGEMENT_MSGS = [
   'Scanning insider channels...', 'Finding the signal...', 'Crafting the hook...',
@@ -54,31 +51,26 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
       store.setLoading(true);
       store.setError('');
       store.setResult(null);
+      store.setQAReport(null);
       store.setBannerReady(false);
       store.shuffleVariant(TEMPLATE_COUNT);
 
       const rm = ROOMS.find((r) => r.id === room)!;
       const tp = postType ? POST_TYPES.find((t) => t.id === postType) : POST_TYPES[3];
-      const plat = PLATFORMS.find((p) => p.id === platform)!;
-
-      // Pass room context and postTypeId to the prompt builder
-      const systemPrompt = buildStandardPrompt(plat, tp?.id, rm);
-      const userMsg = buildUserMessage(
-        rm.label, tp!.promptFragment, rm.topics, customTopic, room === 'world'
-      );
+      const postTypeId: PostTypeId = tp?.id || 'generic';
 
       try {
-        const raw = await generateContent(systemPrompt, userMsg);
-        const parsed = parseStandardResponse(raw);
+        // Step 1: Fetch live news + generate post (no API key needed)
+        const parsed = await generateContent(room, postTypeId, customTopic);
 
         if (!parsed.text && !parsed.headline) {
-          store.setError('Empty response. Try again.');
+          store.setError('No content generated. Try a different topic.');
           store.setLoading(false);
           store.setStep(4);
           return;
         }
 
-        // ═══ QA GATE: Auto-fix → Validate → Verdict ═══
+        // Step 2: QA GATE — Auto-fix then validate
         store.setLoadingMessage(QA_MSGS[0]);
         const { fixed, fixes } = autoFixPost(parsed);
         if (fixes.length > 0) {
@@ -88,13 +80,12 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
         store.setLoadingMessage(QA_MSGS[1]);
         const qaReport = validatePost(fixed, {
           platform,
-          postTypeId: tp?.id,
+          postTypeId,
         });
 
         store.setQAReport(qaReport);
 
         if (qaReport.verdict === 'REJECTED') {
-          // Show content anyway so user can see what failed, but flag it
           store.setResult(fixed);
           store.setError(`QA REJECTED (score: ${qaReport.score}): ${qaReport.summary}`);
           addHistoryItem({
@@ -121,7 +112,7 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
           store.setStep(4);
         }
       } catch (e) {
-        store.setError(e instanceof Error ? e.message : 'Connection error');
+        store.setError(e instanceof Error ? e.message : 'Failed to fetch news. Check your connection.');
         store.setStep(4);
       }
       store.setLoading(false);
@@ -137,40 +128,40 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
       store.setLoading(true);
       store.setError('');
       store.setDeepResult(null);
+      store.setQAReport(null);
       store.setBannerReady(false);
       store.shuffleVariant(TEMPLATE_COUNT);
 
       const rm = ROOMS.find((r) => r.id === room)!;
-      const plat = PLATFORMS.find((p) => p.id === platform)!;
-
-      // Pass room context to deep prompt builder
-      const systemPrompt = buildDeepPrompt(plat, rm);
-      const userMsg = buildDeepUserMessage(rm.label, topic, room === 'world');
 
       try {
-        const raw = await generateContent(systemPrompt, userMsg, { maxTokens: 2500 });
-        const parsed = parseDeepResponse(raw);
+        // Generate as observation type for deep dives
+        const parsed = await generateContent(room, 'observation', topic);
 
-        if (!parsed.post && !parsed.brief) {
-          store.setError('Empty response. Try again.');
+        if (!parsed.text && !parsed.headline) {
+          store.setError('No content generated. Try a different topic.');
           store.setLoading(false);
           store.setStep(8);
           return;
         }
 
-        // ═══ QA GATE: Auto-fix → Validate → Verdict ═══
+        // QA GATE
         store.setLoadingMessage(QA_MSGS[2]);
         const { fixed } = autoFixPost(parsed);
 
         store.setLoadingMessage(QA_MSGS[3]);
-        const qaReport = validatePost(fixed, {
-          platform,
-          isDeep: true,
-          deepResult: { ...parsed, ...fixed },
-        });
+        const qaReport = validatePost(fixed, { platform });
+
+        // Build deep result with brief
+        const deepResult = {
+          ...fixed,
+          post: fixed.text,
+          brief: `${fixed.text}\n\n---\n\nSource: ${fixed.source}\nData: ${fixed.stat} ${fixed.statLabel}\nPublished: ${dateFormatted.short}`,
+          keyFinding: fixed.subline || fixed.headline,
+        };
 
         store.setQAReport(qaReport);
-        store.setDeepResult({ ...parsed, ...fixed });
+        store.setDeepResult(deepResult);
         store.setResult(fixed);
 
         if (qaReport.verdict === 'REJECTED') {
@@ -188,7 +179,7 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
         });
         store.setStep(8);
       } catch (e) {
-        store.setError(e instanceof Error ? e.message : 'Connection error');
+        store.setError(e instanceof Error ? e.message : 'Failed to fetch news.');
         store.setStep(8);
       }
       store.setLoading(false);
