@@ -2,6 +2,11 @@ import { create } from 'zustand';
 import type { CalendarEntry, CalendarDayStatus, GeneratedPost } from '../types';
 import { generateMonthPlan } from '../config/calendarPlan';
 
+/**
+ * Bump this version whenever calendarPlan.ts changes rhythm / rooms / topics.
+ * Old localStorage entries under a different version are automatically discarded.
+ */
+const CALENDAR_VERSION = 2; // v1 = old 6-day rhythm, v2 = 3-day rhythm
 const STORAGE_KEY = 'mics_calendar';
 
 interface CalendarState {
@@ -20,9 +25,13 @@ interface CalendarState {
   setEntryResult: (date: string, result: GeneratedPost, bannerVariant: number) => void;
 }
 
+function storageKey(year: number, month: number) {
+  return `${STORAGE_KEY}_v${CALENDAR_VERSION}_${year}_${month}`;
+}
+
 function loadFromStorage(year: number, month: number): Record<string, CalendarEntry> | null {
   try {
-    const raw = localStorage.getItem(`${STORAGE_KEY}_${year}_${month}`);
+    const raw = localStorage.getItem(storageKey(year, month));
     if (!raw) return null;
     return JSON.parse(raw);
   } catch { return null; }
@@ -30,9 +39,24 @@ function loadFromStorage(year: number, month: number): Record<string, CalendarEn
 
 function saveToStorage(year: number, month: number, entries: Record<string, CalendarEntry>) {
   try {
-    localStorage.setItem(`${STORAGE_KEY}_${year}_${month}`, JSON.stringify(entries));
+    localStorage.setItem(storageKey(year, month), JSON.stringify(entries));
   } catch { /* quota exceeded */ }
 }
+
+/** Remove stale calendar caches from previous versions */
+function purgeOldCaches() {
+  try {
+    const keys = Object.keys(localStorage);
+    for (const key of keys) {
+      if (key.startsWith(STORAGE_KEY) && !key.includes(`_v${CALENDAR_VERSION}_`)) {
+        localStorage.removeItem(key);
+      }
+    }
+  } catch { /* ignore */ }
+}
+
+// Run once on module load
+purgeOldCaches();
 
 const now = new Date();
 const initYear = now.getFullYear();

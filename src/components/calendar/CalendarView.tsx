@@ -43,6 +43,7 @@ export function CalendarView() {
   const planned = allEntries.filter((e) => e.status === 'planned').length;
   const generated = allEntries.filter((e) => e.status === 'generated' || e.status === 'copied').length;
   const total = allEntries.filter((e) => e.status !== 'skipped').length;
+  const silenceDays = allEntries.filter((e) => e.status === 'skipped').length;
 
   return (
     <div>
@@ -70,12 +71,24 @@ export function CalendarView() {
         </button>
       </div>
 
+      {/* Rhythm summary */}
+      <div className="bg-ink-el/50 border border-ink-border rounded-lg px-3 py-2 mb-3 text-center">
+        <div className="text-[10px] text-tx-dim">
+          <span className="text-bronze font-semibold">{total} posts</span> this month
+          <span className="mx-1.5">&middot;</span>
+          <span className="text-tx-ghost">{silenceDays} silence days</span>
+          <span className="mx-1.5">&middot;</span>
+          Sun &bull; Tue &bull; Thu only
+        </div>
+      </div>
+
       {/* Legend */}
       <div className="flex gap-3 mb-3 justify-center">
         {[
           { label: 'Planned', color: 'bg-bronze/50' },
           { label: 'Ready', color: 'bg-signal-green' },
           { label: 'Copied', color: 'bg-signal-blue' },
+          { label: 'Silence', color: 'bg-tx-ghost/30' },
         ].map((l) => (
           <div key={l.label} className="flex items-center gap-1.5 text-[9px] text-tx-dim">
             <div className={`w-2 h-2 rounded-full ${l.color}`} />
