@@ -11,15 +11,14 @@ interface CommandCenterProps {
   history: HistoryItem[];
 }
 
-/** Get today's recommended post type based on PDF weekly rhythm */
+/** Get today's recommended post type based on optimized 3/week rhythm */
 function getTodayRecommendation(): { type: string; icon: string; label: string; note: string } {
   const day = new Date().getDay(); // 0=Sun, 1=Mon, ...
   switch (day) {
-    case 1: return { type: 'observation', icon: '🔍', label: 'Market Observation', note: 'Monday is for sharp signals' };
-    case 2: return { type: 'alert', icon: '⚡', label: 'CFO Alert', note: 'Tuesday is for urgent intelligence' };
-    case 4: return { type: 'poll', icon: '📊', label: 'Poll / Discussion', note: 'Thursday is for surfacing tensions' };
-    case 3: return { type: 'exclusive', icon: '🔒', label: 'Exclusive Intel', note: 'Mid-week insider drop' };
-    default: return { type: 'generic', icon: '💎', label: 'Value Post or Silence', note: 'Only post if there\'s real signal' };
+    case 0: return { type: 'exclusive', icon: '🔒', label: 'Week Ahead Signal', note: 'Sunday evening — set the tone for the week' };
+    case 2: return { type: 'observation', icon: '🔍', label: 'Intelligence Drop', note: 'Tuesday morning — data-driven signal' };
+    case 4: return { type: 'pulse', icon: '🎯', label: 'Closing Signal', note: 'Thursday afternoon — create weekend DMs' };
+    default: return { type: 'generic', icon: '🤫', label: 'Strategic Silence', note: 'Silence builds exclusivity. No post today.' };
   }
 }
 
@@ -40,6 +39,7 @@ export function CommandCenter({ history }: CommandCenterProps) {
       return d >= weekStart;
     } catch { return false; }
   }).length;
+  const maxPostsPerWeek = 3;
 
   return (
     <>
@@ -70,13 +70,13 @@ export function CommandCenter({ history }: CommandCenterProps) {
           </div>
           <div className="text-right">
             <div className="text-[9px] text-tx-dim">This week</div>
-            <div className={`text-[18px] font-bold ${thisWeekPosts >= 5 ? 'text-signal-red' : thisWeekPosts >= 3 ? 'text-bronze' : 'text-tx'}`}>
-              {thisWeekPosts}/5
+            <div className={`text-[18px] font-bold ${thisWeekPosts >= maxPostsPerWeek ? 'text-signal-red' : thisWeekPosts >= 2 ? 'text-bronze' : 'text-tx'}`}>
+              {thisWeekPosts}/{maxPostsPerWeek}
             </div>
             <div className="text-[8px] text-tx-dim">posts max</div>
           </div>
         </div>
-        {thisWeekPosts >= 5 && (
+        {thisWeekPosts >= maxPostsPerWeek && (
           <div className="mt-2 pt-2 border-t border-signal-red/20 text-signal-red text-[11px]">
             Weekly limit reached. Silence reinforces exclusivity.
           </div>
@@ -126,11 +126,12 @@ export function CommandCenter({ history }: CommandCenterProps) {
       <Card className="!mb-6 !p-0 overflow-hidden">
         <div className="divide-y divide-ink-border">
           {[
-            { day: 'Mon', type: '🔍 Market Observation', active: new Date().getDay() === 1 },
-            { day: 'Tue', type: '⚡ CFO Alert / Insight', active: new Date().getDay() === 2 },
-            { day: 'Wed', type: '🔒 Exclusive Intel / 🎙️ Voice Note', active: new Date().getDay() === 3 },
-            { day: 'Thu', type: '📊 Poll / Discussion', active: new Date().getDay() === 4 },
-            { day: 'Fri-Sun', type: '💎 Value Post or Strategic Silence', active: [0, 5, 6].includes(new Date().getDay()) },
+            { day: 'Sun', type: '🔒 Week Ahead Signal — 8:00 PM', active: new Date().getDay() === 0, posting: true },
+            { day: 'Mon', type: '🤫 Strategic Silence', active: new Date().getDay() === 1, posting: false },
+            { day: 'Tue', type: '🔍 Intelligence Drop — 9:00 AM', active: new Date().getDay() === 2, posting: true },
+            { day: 'Wed', type: '🤫 Strategic Silence', active: new Date().getDay() === 3, posting: false },
+            { day: 'Thu', type: '🎯 Closing Signal — 1:30 PM', active: new Date().getDay() === 4, posting: true },
+            { day: 'Fri-Sat', type: '🤫 Weekend Silence', active: [5, 6].includes(new Date().getDay()), posting: false },
           ].map((row) => (
             <div
               key={row.day}
@@ -141,7 +142,7 @@ export function CommandCenter({ history }: CommandCenterProps) {
               <span className={`text-[11px] font-semibold w-[60px] ${row.active ? 'text-bronze' : 'text-tx-dim'}`}>
                 {row.day}
               </span>
-              <span className={`text-[12px] flex-1 ${row.active ? 'text-tx font-medium' : 'text-tx-mid'}`}>
+              <span className={`text-[12px] flex-1 ${row.active ? 'text-tx font-medium' : row.posting ? 'text-tx-mid' : 'text-tx-dim italic'}`}>
                 {row.type}
               </span>
               {row.active && (
@@ -187,9 +188,10 @@ export function CommandCenter({ history }: CommandCenterProps) {
       <Card className="!mt-4 !bg-ink-el/50 !border-ink-border">
         <div className="text-[10px] font-bold tracking-wider text-tx-dim mb-1">POSTING DISCIPLINE</div>
         <div className="text-tx-dim text-[11px] leading-relaxed">
-          Max <span className="text-tx font-semibold">3-5 posts/week</span> across all rooms.
-          Silence is part of the strategy. Only post when there's real signal.
-          Some weeks 4 posts. Some weeks 3. Never more than 5.
+          Exactly <span className="text-tx font-semibold">3 posts/week</span>. No more.
+          Sunday evening, Tuesday morning, Thursday afternoon.
+          Every other day is <span className="text-tx">strategic silence</span>.
+          Less is more. Each post gets full attention.
         </div>
       </Card>
 
