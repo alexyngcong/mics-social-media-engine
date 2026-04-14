@@ -18,6 +18,10 @@ const DEEP_MSGS = [
   'Deep research initiated...', 'Searching global wires...', 'Cross-referencing 5+ sources...',
   'Analyzing impact...', 'Finding missed angles...', 'Building brief...', 'Polishing output...',
 ];
+const ENGAGEMENT_MSGS = [
+  'Scanning insider channels...', 'Finding the signal...', 'Crafting the hook...',
+  'Tuning the tone...', 'Sharpening the edge...', 'Finalizing intel...',
+];
 
 export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
   const store = useAppStore();
@@ -26,7 +30,8 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
   // Rotating loading messages
   useEffect(() => {
     if (!store.loading) return;
-    const pool = store.step === 7 ? DEEP_MSGS : LOADING_MSGS;
+    const isEngagement = ['pulse', 'voicenote', 'exclusive'].includes(store.postType || '');
+    const pool = store.step === 7 ? DEEP_MSGS : isEngagement ? ENGAGEMENT_MSGS : LOADING_MSGS;
     let i = 0;
     store.setLoadingMessage(pool[0]);
     intervalRef.current = setInterval(() => {
@@ -51,7 +56,8 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
       const tp = postType ? POST_TYPES.find((t) => t.id === postType) : POST_TYPES[3];
       const plat = PLATFORMS.find((p) => p.id === platform)!;
 
-      const systemPrompt = buildStandardPrompt(plat);
+      // Pass room context and postTypeId to the prompt builder
+      const systemPrompt = buildStandardPrompt(plat, tp?.id, rm);
       const userMsg = buildUserMessage(
         rm.label, tp!.promptFragment, rm.topics, customTopic, room === 'world'
       );
@@ -101,7 +107,8 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
       const rm = ROOMS.find((r) => r.id === room)!;
       const plat = PLATFORMS.find((p) => p.id === platform)!;
 
-      const systemPrompt = buildDeepPrompt(plat);
+      // Pass room context to deep prompt builder
+      const systemPrompt = buildDeepPrompt(plat, rm);
       const userMsg = buildDeepUserMessage(rm.label, topic, room === 'world');
 
       try {

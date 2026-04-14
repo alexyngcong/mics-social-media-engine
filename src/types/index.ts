@@ -1,6 +1,6 @@
 export type PlatformId = 'whatsapp' | 'instagram' | 'linkedin' | 'twitter' | 'facebook';
 export type RoomId = 'growth' | 'capital' | 'risk' | 'world';
-export type PostTypeId = 'observation' | 'alert' | 'poll' | 'generic';
+export type PostTypeId = 'observation' | 'alert' | 'poll' | 'generic' | 'pulse' | 'voicenote' | 'exclusive';
 export type StatDirection = 'up' | 'down' | 'neutral';
 
 export interface Room {
@@ -10,7 +10,9 @@ export interface Room {
   short: string;
   color: string;
   description: string;
+  cfoQuestion: string;
   micsServices: string;
+  serviceDetails: string[];
   topics: string[];
 }
 
@@ -20,6 +22,9 @@ export interface PostType {
   icon: string;
   day: string;
   promptFragment: string;
+  category: 'core' | 'engagement';
+  description?: string;
+  noBanner?: boolean;
 }
 
 export interface ImageDimension {

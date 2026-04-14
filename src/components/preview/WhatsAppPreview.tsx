@@ -7,6 +7,7 @@ interface WhatsAppPreviewProps {
   room: Room;
   bannerVariant: number;
   showBanner?: boolean;
+  isVoiceNote?: boolean;
 }
 
 /**
@@ -51,21 +52,10 @@ function formatLine(line: string, keyBase: number): React.ReactNode[] {
 }
 
 /**
- * Splits text into paragraphs (double newline) and lines (single newline),
- * then applies WhatsApp inline formatting. Returns proper block-level elements
- * with real paragraph spacing like WhatsApp actually renders.
- */
-/**
- * Auto-breaks a wall of text into paragraphs by splitting after sentences
- * that end with . or ? or ! followed by a space and a capital letter or *.
- * Only used as fallback when the AI doesn't include \n\n breaks.
+ * Auto-breaks a wall of text into paragraphs by splitting after sentences.
  */
 function autoParagraph(text: string): string {
-  // If text already has paragraph breaks, return as-is
   if (text.includes('\n\n')) return text;
-
-  // Split after sentence-ending punctuation followed by space + uppercase/formatting
-  // Insert \n\n every ~2-3 sentences (target ~60-80 chars per paragraph)
   const sentences = text.split(/(?<=[.!?])\s+(?=[A-Z*_~])/);
   if (sentences.length <= 2) return text;
 
@@ -76,8 +66,6 @@ function autoParagraph(text: string): string {
   for (const sentence of sentences) {
     current += (current ? ' ' : '') + sentence;
     sentenceCount++;
-
-    // Break into paragraph every 2-3 sentences or if chunk is long enough
     if (sentenceCount >= 2 && current.length > 80) {
       paragraphs.push(current);
       current = '';
@@ -85,15 +73,11 @@ function autoParagraph(text: string): string {
     }
   }
   if (current) paragraphs.push(current);
-
   return paragraphs.join('\n\n');
 }
 
 function parseWhatsAppText(text: string): React.ReactNode[] {
-  // Auto-paragraph fallback for wall-of-text outputs
   const processedText = autoParagraph(text);
-
-  // Split on double newlines to get paragraphs
   const paragraphs = processedText.split(/\n\n+/);
   let globalKey = 0;
 
@@ -116,16 +100,88 @@ function parseWhatsAppText(text: string): React.ReactNode[] {
   });
 }
 
-export function WhatsAppPreview({ result, room, bannerVariant, showBanner = true }: WhatsAppPreviewProps) {
+/** Voice note waveform bars */
+function VoiceNoteWaveform({ duration }: { duration: string }) {
+  // Generate random-ish waveform bars
+  const bars = Array.from({ length: 40 }, (_, i) => {
+    const base = Math.sin(i * 0.4) * 0.3 + 0.5;
+    const noise = Math.sin(i * 2.7 + 1.3) * 0.2;
+    return Math.max(0.15, Math.min(1, base + noise));
+  });
+
+  return (
+    <div style={{
+      padding: '10px 12px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+    }}>
+      {/* Play button */}
+      <div style={{
+        width: 34, height: 34, borderRadius: '50%',
+        background: '#25D366',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        flexShrink: 0,
+      }}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+          <polygon points="5,3 19,12 5,21" />
+        </svg>
+      </div>
+
+      {/* Waveform */}
+      <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 1.5, height: 30 }}>
+        {bars.map((h, i) => (
+          <div
+            key={i}
+            style={{
+              width: 2.5,
+              height: `${h * 100}%`,
+              borderRadius: 1,
+              background: i < bars.length * 0.6 ? '#25D366' : 'rgba(134,150,160,0.5)',
+              transition: 'height 0.2s',
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Duration */}
+      <span style={{ color: '#8696A0', fontSize: 11, flexShrink: 0, minWidth: 32 }}>
+        {duration}
+      </span>
+
+      {/* Microphone icon */}
+      <div style={{
+        width: 24, height: 24, borderRadius: '50%',
+        background: 'linear-gradient(135deg, #25D366, #128C7E)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        flexShrink: 0,
+      }}>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="white">
+          <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
+          <path d="M19 10v2a7 7 0 01-14 0v-2" stroke="white" strokeWidth="2" fill="none" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+export function WhatsAppPreview({ result, room, bannerVariant, showBanner = true, isVoiceNote = false }: WhatsAppPreviewProps) {
   const formattedText = useMemo(() => parseWhatsAppText(result.text), [result.text]);
 
   const now = new Date();
   const timeStr = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
 
+  // Estimate voice note duration
+  const words = result.text.trim().split(/\s+/).length;
+  const seconds = Math.round(words / 2.5);
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  const durationStr = mins > 0 ? `${mins}:${String(secs).padStart(2, '0')}` : `0:${String(secs).padStart(2, '0')}`;
+
   // WhatsApp constrains shared images to ~260px max height in chat bubble
   const bubbleW = 330;
   const bannerW = 1080;
-  const bannerH = 1080; // Use square crop for chat preview (WhatsApp crops tall images)
+  const bannerH = 1080;
   const imgMaxH = 260;
   const bannerScale = bubbleW / bannerW;
   const scaledH = Math.min(bannerH * bannerScale, imgMaxH);
@@ -180,84 +236,117 @@ export function WhatsAppPreview({ result, room, bannerVariant, showBanner = true
         backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(30,45,58,0.4) 0%, transparent 60%)',
         padding: '10px 10px 6px',
       }}>
-        {/* Outgoing bubble */}
-        <div style={{
-          background: '#005C4B',
-          borderRadius: '0 8px 8px 8px',
-          maxWidth: bubbleW,
-          overflow: 'hidden',
-          position: 'relative',
-        }}>
-          {/* Tail */}
+        {/* ── Voice Note Bubble ── */}
+        {isVoiceNote ? (
           <div style={{
-            position: 'absolute', top: 0, left: -6, width: 0, height: 0,
-            borderRight: '8px solid #005C4B', borderBottom: '10px solid transparent',
-          }} />
-
-          {/* ── Banner Image (cropped to WhatsApp proportions) ── */}
-          {showBanner && (
+            background: '#005C4B',
+            borderRadius: '0 8px 8px 8px',
+            maxWidth: bubbleW,
+            overflow: 'hidden',
+            position: 'relative',
+          }}>
+            {/* Tail */}
             <div style={{
-              width: bubbleW,
-              height: scaledH,
-              overflow: 'hidden',
-              padding: '3px 3px 0',
+              position: 'absolute', top: 0, left: -6, width: 0, height: 0,
+              borderRight: '8px solid #005C4B', borderBottom: '10px solid transparent',
+            }} />
+
+            {/* Waveform */}
+            <VoiceNoteWaveform duration={durationStr} />
+
+            {/* Timestamp + Blue Ticks */}
+            <div style={{
+              display: 'flex', justifyContent: 'flex-end', alignItems: 'center',
+              gap: 3, padding: '0 8px 5px',
             }}>
+              <span style={{ color: 'rgba(233,237,239,0.45)', fontSize: 10.5, lineHeight: 1 }}>
+                {timeStr}
+              </span>
+              <svg width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M11.071 0.929L4.5 7.5L1.929 4.929" stroke="#53BDEB" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M14.071 0.929L7.5 7.5L6.5 6.5" stroke="#53BDEB" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+          </div>
+        ) : (
+          /* ── Standard Text Bubble ── */
+          <div style={{
+            background: '#005C4B',
+            borderRadius: '0 8px 8px 8px',
+            maxWidth: bubbleW,
+            overflow: 'hidden',
+            position: 'relative',
+          }}>
+            {/* Tail */}
+            <div style={{
+              position: 'absolute', top: 0, left: -6, width: 0, height: 0,
+              borderRight: '8px solid #005C4B', borderBottom: '10px solid transparent',
+            }} />
+
+            {/* ── Banner Image (cropped to WhatsApp proportions) ── */}
+            {showBanner && (
               <div style={{
-                width: bubbleW - 6,
-                height: scaledH - 3,
-                borderRadius: '6px 6px 0 0',
+                width: bubbleW,
+                height: scaledH,
                 overflow: 'hidden',
-                position: 'relative',
+                padding: '3px 3px 0',
               }}>
-                {/* Render at full resolution then clip to the stat/headline zone */}
                 <div style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: `translate(-50%, -50%) scale(${bannerScale})`,
-                  transformOrigin: 'center center',
-                  width: 1080,
-                  height: 1350,
+                  width: bubbleW - 6,
+                  height: scaledH - 3,
+                  borderRadius: '6px 6px 0 0',
+                  overflow: 'hidden',
+                  position: 'relative',
                 }}>
-                  <BannerPreview
-                    result={result}
-                    room={room}
-                    variant={bannerVariant}
-                    width={1080}
-                    height={1350}
-                    scale={1}
-                  />
+                  <div style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: `translate(-50%, -50%) scale(${bannerScale})`,
+                    transformOrigin: 'center center',
+                    width: 1080,
+                    height: 1350,
+                  }}>
+                    <BannerPreview
+                      result={result}
+                      room={room}
+                      variant={bannerVariant}
+                      width={1080}
+                      height={1350}
+                      scale={1}
+                    />
+                  </div>
                 </div>
               </div>
+            )}
+
+            {/* ── Message Text ── */}
+            <div style={{
+              padding: '8px 10px 3px',
+              color: '#E9EDEF',
+              fontSize: 14,
+              lineHeight: 1.5,
+              letterSpacing: '0.01em',
+              wordBreak: 'break-word',
+            }}>
+              {formattedText}
             </div>
-          )}
 
-          {/* ── Message Text ── */}
-          <div style={{
-            padding: '8px 10px 3px',
-            color: '#E9EDEF',
-            fontSize: 14,
-            lineHeight: 1.5,
-            letterSpacing: '0.01em',
-            wordBreak: 'break-word',
-          }}>
-            {formattedText}
+            {/* ── Timestamp + Blue Ticks ── */}
+            <div style={{
+              display: 'flex', justifyContent: 'flex-end', alignItems: 'center',
+              gap: 3, padding: '2px 8px 5px',
+            }}>
+              <span style={{ color: 'rgba(233,237,239,0.45)', fontSize: 10.5, lineHeight: 1 }}>
+                {timeStr}
+              </span>
+              <svg width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M11.071 0.929L4.5 7.5L1.929 4.929" stroke="#53BDEB" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M14.071 0.929L7.5 7.5L6.5 6.5" stroke="#53BDEB" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
           </div>
-
-          {/* ── Timestamp + Blue Ticks ── */}
-          <div style={{
-            display: 'flex', justifyContent: 'flex-end', alignItems: 'center',
-            gap: 3, padding: '2px 8px 5px',
-          }}>
-            <span style={{ color: 'rgba(233,237,239,0.45)', fontSize: 10.5, lineHeight: 1 }}>
-              {timeStr}
-            </span>
-            <svg width="16" height="11" viewBox="0 0 16 11" fill="none">
-              <path d="M11.071 0.929L4.5 7.5L1.929 4.929" stroke="#53BDEB" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M14.071 0.929L7.5 7.5L6.5 6.5" stroke="#53BDEB" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
-        </div>
+        )}
       </div>
 
       {/* ── Input Bar ── */}

@@ -26,7 +26,18 @@
       "Bash(npx gh-pages:*)",
       "Bash(gh api:*)",
       "Bash(git fetch:*)",
-      "Bash(git ls-tree:*)"
+      "Bash(git ls-tree:*)",
+      "Bash(npx tsc:*)",
+      "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/npx.cmd\" tsc:*)",
+      "Bash(export PATH=\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64:$PATH\")",
+      "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/node.exe\" ./node_modules/typescript/lib/tsc.js --noEmit)",
+      "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/node.exe\" ./node_modules/vite/bin/vite.js build)",
+      "Bash(node ./node_modules/gh-pages/bin/gh-pages.js -d dist)",
+      "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/node.exe\" ./node_modules/gh-pages/bin/gh-pages.js -d dist)",
+      "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/node.exe\" -e \"try { require.resolve\\('gh-pages'\\); console.log\\('found'\\); } catch\\(e\\) { console.log\\('not found'\\); }\")",
+      "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/npm.cmd\" install:*)",
+      "WebFetch(domain:alexyngcong.github.io)",
+      "Bash(export PATH=\"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64:$PATH\")"
     ]
   }
 }

@@ -4,6 +4,7 @@ import { useClipboard } from '../../hooks/useClipboard';
 import { useBannerExport } from '../../hooks/useBannerExport';
 import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
+import { POST_TYPES } from '../../config/postTypes';
 import { TEMPLATE_COUNT, isPhotoTemplate } from '../banner/templates';
 import { BannerPreview } from '../banner/BannerPreview';
 import { WhatsAppPreview } from '../preview/WhatsAppPreview';
@@ -18,6 +19,15 @@ interface ResultViewProps {
   onRetry: () => void;
 }
 
+/** Estimate voice note duration from word count */
+function estimateDuration(text: string): string {
+  const words = text.trim().split(/\s+/).length;
+  const seconds = Math.round(words / 2.5); // ~150 wpm = 2.5 wps
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  return mins > 0 ? `${mins}:${String(secs).padStart(2, '0')}` : `0:${String(secs).padStart(2, '0')}`;
+}
+
 export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewProps) {
   const store = useAppStore();
   const { copy } = useClipboard();
@@ -27,9 +37,13 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
 
   const room = ROOMS.find((r) => r.id === store.room);
   const platform = PLATFORMS.find((p) => p.id === store.platform);
+  const postType = POST_TYPES.find((t) => t.id === store.postType);
   if (!room || !platform) return null;
 
   const isWhatsApp = platform.id === 'whatsapp';
+  const isVoiceNote = store.postType === 'voicenote';
+  const isPulse = store.postType === 'pulse';
+  const isNoBanner = postType?.noBanner || false;
   const dim = platform.imageDimensions[store.imageDimensionIndex] || platform.imageDimensions[0];
   const previewScale = Math.min(440 / dim.width, 0.42);
 
@@ -56,7 +70,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
                 : 'text-tx-dim hover:text-tx'
             }`}
           >
-            WhatsApp Preview
+            {isVoiceNote ? 'Voice Note Preview' : 'WhatsApp Preview'}
           </button>
           <button
             onClick={() => setActiveTab('edit')}
@@ -66,7 +80,7 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
                 : 'text-tx-dim hover:text-tx'
             }`}
           >
-            Edit &amp; Export
+            {isVoiceNote ? 'Script & Export' : 'Edit & Export'}
           </button>
         </div>
       )}
@@ -74,14 +88,37 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
       {/* ═══ WHATSAPP PREVIEW TAB ═══ */}
       {isWhatsApp && activeTab === 'preview' && (
         <>
-          {/* Quick steps */}
+          {/* Quick steps — varies by post type */}
           <div className="bg-gradient-to-br from-ink-card to-ink-el border border-bronze/15 rounded-card-lg px-4 py-3 mb-3.5">
-            <div className="text-[10px] font-bold text-bronze tracking-wide mb-1">
-              FINAL PREVIEW
-            </div>
-            <div className="text-tx-mid text-[12px] leading-relaxed">
-              This is exactly how your post will look in WhatsApp
-            </div>
+            {isVoiceNote ? (
+              <>
+                <div className="text-[10px] font-bold text-[#25D366] tracking-wide mb-1">
+                  🎙️ VOICE NOTE SCRIPT
+                </div>
+                <div className="text-tx-mid text-[12px] leading-relaxed">
+                  Record this script as a WhatsApp voice message. Estimated duration:{' '}
+                  <span className="text-tx font-semibold">{estimateDuration(result.text)}</span>
+                </div>
+              </>
+            ) : isPulse ? (
+              <>
+                <div className="text-[10px] font-bold text-signal-purple tracking-wide mb-1">
+                  🎯 PULSE SIGNAL
+                </div>
+                <div className="text-tx-mid text-[12px] leading-relaxed">
+                  Short, sharp micro-insight. Copy and send as-is. No image needed.
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="text-[10px] font-bold text-bronze tracking-wide mb-1">
+                  FINAL PREVIEW
+                </div>
+                <div className="text-tx-mid text-[12px] leading-relaxed">
+                  This is exactly how your post will look in WhatsApp
+                </div>
+              </>
+            )}
           </div>
 
           {/* WhatsApp phone preview */}
@@ -89,38 +126,57 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             result={result}
             room={room}
             bannerVariant={store.bannerVariant}
+            showBanner={!isNoBanner}
+            isVoiceNote={isVoiceNote}
           />
 
           {/* Action buttons below preview */}
           <div className="flex gap-2 mt-3.5">
-            <Button
-              variant={imgSaved ? 'green' : 'gold'}
-              onClick={handleSave}
-              className="flex-1 py-3 text-[12px]"
-            >
-              {imgSaved ? 'Saved!' : '1. Save Image'}
-            </Button>
+            {!isNoBanner && (
+              <Button
+                variant={imgSaved ? 'green' : 'gold'}
+                onClick={handleSave}
+                className="flex-1 py-3 text-[12px]"
+              >
+                {imgSaved ? 'Saved!' : '1. Save Image'}
+              </Button>
+            )}
             <Button
               variant={store.copiedLabel === 'txt' ? 'green' : 'gold'}
               onClick={() => copy(result.text, 'txt')}
               className="flex-1 py-3 text-[12px]"
             >
-              {store.copiedLabel === 'txt' ? 'Copied!' : '2. Copy Text'}
+              {store.copiedLabel === 'txt' ? 'Copied!' : isVoiceNote ? 'Copy Script' : isPulse ? 'Copy Message' : `${isNoBanner ? '1' : '2'}. Copy Text`}
             </Button>
           </div>
 
           <div className="flex gap-2 mt-2">
-            <Button
-              variant="ghost"
-              onClick={() => store.shuffleVariant(TEMPLATE_COUNT)}
-              className="flex-1 py-2.5 text-[11px]"
-            >
-              Shuffle Design
-            </Button>
+            {!isNoBanner && (
+              <Button
+                variant="ghost"
+                onClick={() => store.shuffleVariant(TEMPLATE_COUNT)}
+                className="flex-1 py-2.5 text-[11px]"
+              >
+                Shuffle Design
+              </Button>
+            )}
             <Button variant="ghost" onClick={onRetry} className="flex-1 py-2.5 text-[11px]">
               Regenerate
             </Button>
           </div>
+
+          {/* Voice note recording tips */}
+          {isVoiceNote && (
+            <div className="bg-ink-card border border-[#25D366]/20 rounded-card px-3.5 py-2.5 mt-3">
+              <div className="text-[10px] font-bold text-[#25D366] mb-1">RECORDING TIPS</div>
+              <div className="text-tx-dim text-[11px] leading-relaxed space-y-1">
+                <p>• Read the script naturally, don't sound rehearsed</p>
+                <p>• Pause at "..." marks for natural breathing</p>
+                <p>• Keep energy warm but measured, like calling a friend</p>
+                <p>• Target: {estimateDuration(result.text)} duration</p>
+              </div>
+            </div>
+          )}
 
           {/* Source */}
           {result.sourceUrl && (
@@ -143,14 +199,40 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
         <>
           {/* Quick steps guide */}
           <div className="bg-gradient-to-br from-ink-card to-ink-el border border-bronze/15 rounded-card-lg px-4 py-3 mb-3.5">
-            <div className="text-[10px] font-bold text-bronze tracking-wide mb-1">
-              SEND IN 3 STEPS
-            </div>
-            <div className="text-tx-mid text-[12px] leading-relaxed">
-              <b className="text-tx">1.</b> Save image{' '}
-              <b className="text-tx">2.</b> Copy text{' '}
-              <b className="text-tx">3.</b> Post on {platform.name}
-            </div>
+            {isVoiceNote ? (
+              <>
+                <div className="text-[10px] font-bold text-[#25D366] tracking-wide mb-1">
+                  VOICE NOTE SCRIPT — {estimateDuration(result.text)}
+                </div>
+                <div className="text-tx-mid text-[12px] leading-relaxed">
+                  <b className="text-tx">1.</b> Read script{' '}
+                  <b className="text-tx">2.</b> Record voice note{' '}
+                  <b className="text-tx">3.</b> Send to group
+                </div>
+              </>
+            ) : isPulse ? (
+              <>
+                <div className="text-[10px] font-bold text-signal-purple tracking-wide mb-1">
+                  PULSE SIGNAL — TEXT ONLY
+                </div>
+                <div className="text-tx-mid text-[12px] leading-relaxed">
+                  <b className="text-tx">1.</b> Copy text{' '}
+                  <b className="text-tx">2.</b> Paste in group{' '}
+                  <span className="text-tx-dim">(no image needed)</span>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="text-[10px] font-bold text-bronze tracking-wide mb-1">
+                  SEND IN 3 STEPS
+                </div>
+                <div className="text-tx-mid text-[12px] leading-relaxed">
+                  <b className="text-tx">1.</b> Save image{' '}
+                  <b className="text-tx">2.</b> Copy text{' '}
+                  <b className="text-tx">3.</b> Post on {platform.name}
+                </div>
+              </>
+            )}
           </div>
 
           {/* Key finding (deep dive only) */}
@@ -161,60 +243,64 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             </div>
           )}
 
-          {/* Banner graphic */}
-          <Label>
-            GRAPHIC ({dim.width}x{dim.height})
-          </Label>
+          {/* Banner graphic — only for types that use it */}
+          {!isNoBanner && (
+            <>
+              <Label>
+                GRAPHIC ({dim.width}x{dim.height})
+              </Label>
 
-          {/* Dimension selector */}
-          {platform.imageDimensions.length > 1 && (
-            <div className="flex gap-1.5 mb-2">
-              {platform.imageDimensions.map((d, i) => (
-                <button
-                  key={i}
-                  onClick={() => store.setImageDimensionIndex(i)}
-                  className={`px-2.5 py-1 text-[10px] rounded-full border transition-all ${
-                    store.imageDimensionIndex === i
-                      ? 'bg-bronze/15 border-bronze/50 text-bronze font-semibold'
-                      : 'border-ink-border text-tx-dim hover:border-bronze/30'
-                  }`}
+              {/* Dimension selector */}
+              {platform.imageDimensions.length > 1 && (
+                <div className="flex gap-1.5 mb-2">
+                  {platform.imageDimensions.map((d, i) => (
+                    <button
+                      key={i}
+                      onClick={() => store.setImageDimensionIndex(i)}
+                      className={`px-2.5 py-1 text-[10px] rounded-full border transition-all ${
+                        store.imageDimensionIndex === i
+                          ? 'bg-bronze/15 border-bronze/50 text-bronze font-semibold'
+                          : 'border-ink-border text-tx-dim hover:border-bronze/30'
+                      }`}
+                    >
+                      {d.label} ({d.width}x{d.height})
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              <div className="rounded-card-lg overflow-hidden mb-2 border border-ink-border">
+                <div style={{ width: dim.width * previewScale, height: dim.height * previewScale }}>
+                  <BannerPreview
+                    result={result}
+                    room={room}
+                    variant={store.bannerVariant}
+                    width={dim.width}
+                    height={dim.height}
+                    scale={previewScale}
+                    onReady={() => store.setBannerReady(true)}
+                  />
+                </div>
+              </div>
+
+              <div className="flex gap-2 mb-4">
+                <Button
+                  variant={imgSaved ? 'green' : 'gold'}
+                  onClick={handleSave}
+                  className="flex-1 py-3 text-[12px]"
                 >
-                  {d.label} ({d.width}x{d.height})
-                </button>
-              ))}
-            </div>
+                  {imgSaved ? 'Saved!' : 'Save Image'}
+                </Button>
+                <Button
+                  variant="ghost"
+                  onClick={() => store.shuffleVariant(TEMPLATE_COUNT)}
+                  className="py-3 text-[12px]"
+                >
+                  Shuffle Design
+                </Button>
+              </div>
+            </>
           )}
-
-          <div className="rounded-card-lg overflow-hidden mb-2 border border-ink-border">
-            <div style={{ width: dim.width * previewScale, height: dim.height * previewScale }}>
-              <BannerPreview
-                result={result}
-                room={room}
-                variant={store.bannerVariant}
-                width={dim.width}
-                height={dim.height}
-                scale={previewScale}
-                onReady={() => store.setBannerReady(true)}
-              />
-            </div>
-          </div>
-
-          <div className="flex gap-2 mb-4">
-            <Button
-              variant={imgSaved ? 'green' : 'gold'}
-              onClick={handleSave}
-              className="flex-1 py-3 text-[12px]"
-            >
-              {imgSaved ? 'Saved!' : 'Save Image'}
-            </Button>
-            <Button
-              variant="ghost"
-              onClick={() => store.shuffleVariant(TEMPLATE_COUNT)}
-              className="py-3 text-[12px]"
-            >
-              Shuffle Design
-            </Button>
-          </div>
 
           {/* Deep dive: hook post + brief */}
           {isDeep && deepData.post && (
@@ -264,10 +350,16 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
           {/* Standard post text */}
           {!isDeep && (
             <>
-              <Label>{platform.name.toUpperCase()} TEXT</Label>
-              <div className="bg-ink-card border border-ink-border rounded-card overflow-hidden mb-2">
+              <Label>
+                {isVoiceNote ? 'VOICE NOTE SCRIPT' : isPulse ? 'PULSE SIGNAL' : `${platform.name.toUpperCase()} TEXT`}
+              </Label>
+              <div className={`bg-ink-card border rounded-card overflow-hidden mb-2 ${
+                isVoiceNote ? 'border-[#25D366]/30' : isPulse ? 'border-signal-purple/30' : 'border-ink-border'
+              }`}>
                 <div className="px-3.5 py-2 border-b border-ink-border flex justify-between items-center">
-                  <span className="text-tx-dim text-[11px]">Tap to copy</span>
+                  <span className="text-tx-dim text-[11px]">
+                    {isVoiceNote ? `Read aloud · ~${estimateDuration(result.text)}` : 'Tap to copy'}
+                  </span>
                   <Button
                     variant={store.copiedLabel === 'txt' ? 'green' : 'gold'}
                     onClick={() => copy(result.text, 'txt')}
@@ -278,7 +370,9 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
                 </div>
                 <div
                   onClick={() => copy(result.text, 'txt')}
-                  className="p-3.5 text-[13px] leading-relaxed text-tx bg-ink-card cursor-pointer min-h-[100px] whitespace-pre-wrap break-words"
+                  className={`p-3.5 text-[13px] leading-relaxed text-tx bg-ink-card cursor-pointer min-h-[100px] whitespace-pre-wrap break-words ${
+                    isVoiceNote ? 'italic' : ''
+                  }`}
                 >
                   {result.text}
                 </div>
