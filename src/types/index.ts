@@ -107,6 +107,39 @@ export interface BannerTemplate {
 
 export type TemplateFactory = (roomColor: string, accentColor: string) => BannerTemplate;
 
+// ─── QA Validator types ─────────────────────────────────────────
+
+export type QAVerdict = 'APPROVED' | 'FLAGGED' | 'REJECTED';
+export type QASeverity = 'critical' | 'warning' | 'info';
+export type QACategory =
+  | 'freshness'
+  | 'source'
+  | 'voice'
+  | 'format'
+  | 'platform'
+  | 'integrity'
+  | 'conversion';
+
+export interface QACheckResult {
+  id: string;
+  category: QACategory;
+  severity: QASeverity;
+  passed: boolean;
+  label: string;
+  detail: string;
+}
+
+export interface QAReport {
+  verdict: QAVerdict;
+  score: number;
+  timestamp: string;
+  checks: QACheckResult[];
+  passCount: number;
+  warnCount: number;
+  failCount: number;
+  summary: string;
+}
+
 // ─── Calendar types ─────────────────────────────────────────────
 
 export type CalendarDayStatus = 'planned' | 'generating' | 'generated' | 'copied' | 'skipped';
@@ -120,6 +153,7 @@ export interface CalendarEntry {
   status: CalendarDayStatus;
   result?: GeneratedPost;
   bannerVariant?: number;
+  qaReport?: QAReport;
 }
 
 export interface CalendarMonth {

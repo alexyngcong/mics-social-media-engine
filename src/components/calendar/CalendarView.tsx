@@ -149,8 +149,19 @@ export function CalendarView() {
                 </span>
               )}
 
-              {/* Status dot */}
-              {!isSkipped && <StatusDot status={entry.status} />}
+              {/* Status dot + QA indicator */}
+              {!isSkipped && (
+                <div className="flex items-center gap-0.5">
+                  <StatusDot status={entry.status} />
+                  {entry.qaReport && (
+                    <div className={`w-1.5 h-1.5 rounded-full ${
+                      entry.qaReport.verdict === 'APPROVED' ? 'bg-signal-green'
+                        : entry.qaReport.verdict === 'FLAGGED' ? 'bg-signal-amber'
+                        : 'bg-signal-red'
+                    }`} />
+                  )}
+                </div>
+              )}
 
               {/* Today indicator */}
               {isToday && (

@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { PlatformId, RoomId, PostTypeId, GeneratedPost, DeepDivePost } from '../types';
+import type { PlatformId, RoomId, PostTypeId, GeneratedPost, DeepDivePost, QAReport } from '../types';
 
 interface AppState {
   step: number;
@@ -16,6 +16,7 @@ interface AppState {
   error: string;
   copiedLabel: string;
   imageDimensionIndex: number;
+  qaReport: QAReport | null;
 
   setStep: (step: number) => void;
   setPlatform: (p: PlatformId) => void;
@@ -31,6 +32,7 @@ interface AppState {
   setBannerReady: (ready: boolean) => void;
   shuffleVariant: (templateCount: number) => void;
   setImageDimensionIndex: (i: number) => void;
+  setQAReport: (report: QAReport | null) => void;
   reset: () => void;
 }
 
@@ -49,6 +51,7 @@ const initialState = {
   error: '',
   copiedLabel: '',
   imageDimensionIndex: 0,
+  qaReport: null as QAReport | null,
 };
 
 export const useAppStore = create<AppState>((set) => ({
@@ -69,5 +72,6 @@ export const useAppStore = create<AppState>((set) => ({
   shuffleVariant: (templateCount) =>
     set({ bannerVariant: Math.floor(Math.random() * templateCount), bannerReady: false }),
   setImageDimensionIndex: (imageDimensionIndex) => set({ imageDimensionIndex }),
+  setQAReport: (qaReport) => set({ qaReport }),
   reset: () => set(initialState),
 }));

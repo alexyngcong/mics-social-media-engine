@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useAppStore } from '../../store/appStore';
 import { useClipboard } from '../../hooks/useClipboard';
 import { useBannerExport } from '../../hooks/useBannerExport';
+import { validatePost, autoFixPost } from '../../services/qaValidator';
 import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
 import { POST_TYPES } from '../../config/postTypes';
 import { TEMPLATE_COUNT, isPhotoTemplate } from '../banner/templates';
 import { BannerPreview } from '../banner/BannerPreview';
 import { WhatsAppPreview } from '../preview/WhatsAppPreview';
+import { QABadge } from '../qa/QABadge';
 import { Button } from '../ui/Button';
 import { Label } from '../ui/Label';
 import type { GeneratedPost, DeepDivePost } from '../../types';
@@ -35,6 +37,19 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
   const [imgSaved, setImgSaved] = useState(false);
   const [activeTab, setActiveTab] = useState<'preview' | 'edit'>('preview');
 
+  const qaReport = useAppStore((s) => s.qaReport);
+
+  const handleAutoFix = useCallback(() => {
+    if (!result) return;
+    const { fixed } = autoFixPost(result);
+    store.setResult(fixed);
+    const newReport = validatePost(fixed, {
+      platform: store.platform,
+      postTypeId: store.postType || undefined,
+    });
+    store.setQAReport(newReport);
+  }, [result, store.platform, store.postType]);
+
   const room = ROOMS.find((r) => r.id === store.room);
   const platform = PLATFORMS.find((p) => p.id === store.platform);
   const postType = POST_TYPES.find((t) => t.id === store.postType);
@@ -59,6 +74,15 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
 
   return (
     <>
+      {/* ═══ QA VERIFICATION BADGE ═══ */}
+      {qaReport && (
+        <QABadge
+          report={qaReport}
+          onAutoFix={handleAutoFix}
+          onRegenerate={onRetry}
+        />
+      )}
+
       {/* Tab switcher (WhatsApp gets preview tab) */}
       {isWhatsApp && (
         <div className="flex gap-1 mb-3.5 bg-ink-card rounded-card-lg p-1 border border-ink-border">

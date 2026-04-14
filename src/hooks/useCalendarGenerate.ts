@@ -3,6 +3,7 @@ import { useCalendarStore } from '../store/calendarStore';
 import { generateContent } from '../services/api';
 import { buildStandardPrompt, buildUserMessage } from '../services/prompts';
 import { parseStandardResponse } from '../services/aiResponseParser';
+import { validatePost, autoFixPost } from '../services/qaValidator';
 import { PLATFORMS } from '../config/platforms';
 import { ROOMS } from '../config/rooms';
 import { TEMPLATE_COUNT } from '../components/banner/templates';
@@ -41,10 +42,18 @@ export function useCalendarGenerate() {
       );
 
       const raw = await generateContent(system, userMsg);
-      const result = parseStandardResponse(raw);
+      const parsed = parseStandardResponse(raw);
+
+      // ═══ QA GATE: Auto-fix → Validate ═══
+      const { fixed } = autoFixPost(parsed);
+      const qaReport = validatePost(fixed, { platform: 'whatsapp' });
       const bannerVariant = Math.floor(Math.random() * TEMPLATE_COUNT);
 
-      store.setEntryResult(dateStr, result, bannerVariant);
+      store.setEntryResult(dateStr, fixed, bannerVariant, qaReport);
+
+      if (qaReport.verdict === 'REJECTED') {
+        console.warn('[QA] Calendar post rejected:', qaReport.summary);
+      }
     } catch (e) {
       store.setEntryStatus(dateStr, 'planned');
       store.setGenerating(null);

@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { CalendarEntry, CalendarDayStatus, GeneratedPost } from '../types';
+import type { CalendarEntry, CalendarDayStatus, GeneratedPost, QAReport } from '../types';
 import { generateMonthPlan } from '../config/calendarPlan';
 
 /**
@@ -22,7 +22,7 @@ interface CalendarState {
   selectDate: (date: string | null) => void;
   setGenerating: (date: string | null) => void;
   setEntryStatus: (date: string, status: CalendarDayStatus) => void;
-  setEntryResult: (date: string, result: GeneratedPost, bannerVariant: number) => void;
+  setEntryResult: (date: string, result: GeneratedPost, bannerVariant: number, qaReport?: QAReport) => void;
 }
 
 function storageKey(year: number, month: number) {
@@ -104,13 +104,13 @@ export const useCalendarStore = create<CalendarState>((set, get) => ({
     set({ entries: updated });
   },
 
-  setEntryResult: (date, result, bannerVariant) => {
+  setEntryResult: (date, result, bannerVariant, qaReport?) => {
     const { entries, year, month } = get();
     const entry = entries[date];
     if (!entry) return;
     const updated = {
       ...entries,
-      [date]: { ...entry, status: 'generated' as const, result, bannerVariant },
+      [date]: { ...entry, status: 'generated' as const, result, bannerVariant, qaReport },
     };
     saveToStorage(year, month, updated);
     set({ entries: updated, generatingDate: null });

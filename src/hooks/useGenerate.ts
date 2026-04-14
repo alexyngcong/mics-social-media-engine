@@ -3,6 +3,7 @@ import { useAppStore } from '../store/appStore';
 import { generateContent } from '../services/api';
 import { parseStandardResponse, parseDeepResponse } from '../services/aiResponseParser';
 import { buildStandardPrompt, buildDeepPrompt, buildUserMessage, buildDeepUserMessage } from '../services/prompts';
+import { validatePost, autoFixPost } from '../services/qaValidator';
 import { ROOMS } from '../config/rooms';
 import { POST_TYPES } from '../config/postTypes';
 import { PLATFORMS } from '../config/platforms';
@@ -21,6 +22,10 @@ const DEEP_MSGS = [
 const ENGAGEMENT_MSGS = [
   'Scanning insider channels...', 'Finding the signal...', 'Crafting the hook...',
   'Tuning the tone...', 'Sharpening the edge...', 'Finalizing intel...',
+];
+const QA_MSGS = [
+  'Running quality audit...', 'Verifying source reliability...',
+  'Checking content freshness...', 'Validating brand voice...',
 ];
 
 export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
@@ -73,17 +78,48 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
           return;
         }
 
-        store.setResult(parsed);
-        addHistoryItem({
-          ...parsed,
-          id: Date.now(),
-          room: rm.short,
-          type: tp?.label || 'Custom',
-          timestamp: dateFormatted.short,
-          mode: 'standard',
+        // ═══ QA GATE: Auto-fix → Validate → Verdict ═══
+        store.setLoadingMessage(QA_MSGS[0]);
+        const { fixed, fixes } = autoFixPost(parsed);
+        if (fixes.length > 0) {
+          console.log('[QA] Auto-fixed:', fixes);
+        }
+
+        store.setLoadingMessage(QA_MSGS[1]);
+        const qaReport = validatePost(fixed, {
           platform,
+          postTypeId: tp?.id,
         });
-        store.setStep(4);
+
+        store.setQAReport(qaReport);
+
+        if (qaReport.verdict === 'REJECTED') {
+          // Show content anyway so user can see what failed, but flag it
+          store.setResult(fixed);
+          store.setError(`QA REJECTED (score: ${qaReport.score}): ${qaReport.summary}`);
+          addHistoryItem({
+            ...fixed,
+            id: Date.now(),
+            room: rm.short,
+            type: tp?.label || 'Custom',
+            timestamp: dateFormatted.short,
+            mode: 'standard',
+            platform,
+          });
+          store.setStep(4);
+        } else {
+          store.setResult(fixed);
+          addHistoryItem({
+            ...fixed,
+            id: Date.now(),
+            room: rm.short,
+            type: tp?.label || 'Custom',
+            timestamp: dateFormatted.short,
+            mode: 'standard',
+            platform,
+          });
+          store.setStep(4);
+        }
       } catch (e) {
         store.setError(e instanceof Error ? e.message : 'Connection error');
         store.setStep(4);
@@ -122,10 +158,27 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
           return;
         }
 
-        store.setDeepResult(parsed);
-        store.setResult(parsed);
+        // ═══ QA GATE: Auto-fix → Validate → Verdict ═══
+        store.setLoadingMessage(QA_MSGS[2]);
+        const { fixed } = autoFixPost(parsed);
+
+        store.setLoadingMessage(QA_MSGS[3]);
+        const qaReport = validatePost(fixed, {
+          platform,
+          isDeep: true,
+          deepResult: { ...parsed, ...fixed },
+        });
+
+        store.setQAReport(qaReport);
+        store.setDeepResult({ ...parsed, ...fixed });
+        store.setResult(fixed);
+
+        if (qaReport.verdict === 'REJECTED') {
+          store.setError(`QA REJECTED (score: ${qaReport.score}): ${qaReport.summary}`);
+        }
+
         addHistoryItem({
-          ...parsed,
+          ...fixed,
           id: Date.now(),
           room: rm.short,
           type: 'Deep Dive',

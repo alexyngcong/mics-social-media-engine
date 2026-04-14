@@ -7,6 +7,7 @@ import { useAppStore } from '../../store/appStore';
 import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
 import { WhatsAppPreview } from '../preview/WhatsAppPreview';
+import { QABadge } from '../qa/QABadge';
 import { Button } from '../ui/Button';
 import { Spinner } from '../ui/Spinner';
 
@@ -138,6 +139,15 @@ export function DayDetail() {
         {/* Generated result */}
         {hasResult && entry.result && (
           <div className="space-y-3">
+            {/* QA badge */}
+            {entry.qaReport && (
+              <QABadge
+                report={entry.qaReport}
+                onRegenerate={handleGenerate}
+                compact={false}
+              />
+            )}
+
             {/* Posting instructions */}
             <div className="bg-ink-el/50 rounded-lg px-3 py-2 flex items-center gap-2">
               <div className="text-[10px] text-bronze font-bold">POST AT</div>
