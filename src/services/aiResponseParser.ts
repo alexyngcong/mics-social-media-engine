@@ -36,7 +36,7 @@ export function parseStandardResponse(raw: string): GeneratedPost {
       const parsed = JSON.parse(match[0]);
       for (const key of STANDARD_KEYS) {
         if (parsed[key]) {
-          (result as Record<string, string>)[key] = cleanText(String(parsed[key]));
+          (result as unknown as Record<string, string>)[key] = cleanText(String(parsed[key]));
         }
       }
       if (parsed.hashtags && Array.isArray(parsed.hashtags)) {
@@ -52,7 +52,7 @@ export function parseStandardResponse(raw: string): GeneratedPost {
       const regex = new RegExp(`"${key}"\\s*:\\s*"([^"]*?)"`);
       const match = raw.match(regex);
       if (match) {
-        (result as Record<string, string>)[key] = cleanText(match[1]);
+        (result as unknown as Record<string, string>)[key] = cleanText(match[1]);
       }
     }
   }
@@ -78,7 +78,7 @@ export function parseDeepResponse(raw: string): DeepDivePost {
       const parsed = JSON.parse(match[0]);
       for (const key of DEEP_KEYS) {
         if (parsed[key]) {
-          (result as Record<string, string>)[key] = cleanText(String(parsed[key]));
+          (result as unknown as Record<string, string>)[key] = cleanText(String(parsed[key]));
         }
       }
     }
@@ -87,7 +87,7 @@ export function parseDeepResponse(raw: string): DeepDivePost {
       const regex = new RegExp(`"${key}"\\s*:\\s*"([^"]*?)"`);
       const match = raw.match(regex);
       if (match) {
-        (result as Record<string, string>)[key] = cleanText(match[1]);
+        (result as unknown as Record<string, string>)[key] = cleanText(match[1]);
       }
     }
   }
