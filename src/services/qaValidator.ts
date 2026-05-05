@@ -172,7 +172,7 @@ export function validatePost(
   const sourceUrl = post.sourceUrl || '';
   const sourceHasRecentDate = sourceUrl.includes(currentYear) ||
     sourceUrl.includes(`/${currentYear.slice(2)}/`) ||
-    sourceUrl.match(/202[5-9]/);
+    Boolean(sourceUrl.match(/202[5-9]/));
   checks.push(check(
     'fresh-source',
     'freshness',

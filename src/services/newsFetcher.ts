@@ -13,6 +13,8 @@ import { dateFormatted } from '../config/brand';
 // ─── Article shape ──────────────────────────────────────────────
 
 export interface NewsArticle {
+  fetchedAt?: string;
+
   title: string;
   url: string;
   source: string;       // domain or publication name
@@ -26,7 +28,8 @@ export interface NewsArticle {
 
 const APPROVED_DOMAINS: string[] = [
   // Preferred intelligence sources
-  'mondaq.com', 'meed.com', 'lexology.com',
+  'mondaq.com', 'meed.com', 'lexology.com', 'bluej.com', 'cocounsel.com',
+  'thomsonreuters.com', 'tax.thomsonreuters.com',
   // Tier 1 global financial
   'bloomberg.com', 'reuters.com', 'ft.com', 'wsj.com', 'economist.com',
   'nikkei.com', 'scmp.com',
@@ -68,6 +71,13 @@ const ROOM_QUERIES_SIMPLE: Record<RoomId, string> = {
   capital: 'UAE bond market interest rate sukuk 2026',
   risk: 'UAE corporate tax regulation compliance 2026',
   world: 'global economy trade emerging markets 2026',
+};
+
+const PRIORITY_DOMAIN_FEEDS: Record<RoomId, string[]> = {
+  growth: ['meed.com', 'bluej.com'],
+  capital: ['meed.com', 'thomsonreuters.com'],
+  risk: ['mondaq.com', 'lexology.com', 'thomsonreuters.com', 'cocounsel.com'],
+  world: ['meed.com', 'lexology.com', 'mondaq.com'],
 };
 
 // ─── GDELT DOC API ──────────────────────────────────────────────
@@ -142,6 +152,47 @@ function formatGDELTDate(seendate: string): string {
   }
 }
 
+
+const MAX_ARTICLE_AGE_DAYS = 3;
+
+function isFreshDate(value: string): boolean {
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return false;
+  const now = new Date();
+  const cutoff = new Date(now);
+  cutoff.setDate(cutoff.getDate() - MAX_ARTICLE_AGE_DAYS);
+  return d >= cutoff && d <= now && d.getFullYear() === now.getFullYear();
+}
+
+function normalizeAndAudit(articles: NewsArticle[], feedName: string): NewsArticle[] {
+  const seen = new Set<string>();
+  const normalized: NewsArticle[] = [];
+
+  for (const article of articles) {
+    const url = article.url?.trim();
+    const domain = extractFullDomain(url || '');
+    const date = article.date?.slice(0, 10) || '';
+
+    if (!url || seen.has(url)) continue;
+    if (!isApprovedSource(domain)) continue;
+    if (!isFreshDate(date)) continue;
+
+    seen.add(url);
+    normalized.push({
+      ...article,
+      source: article.source || extractDomainFromUrl(url),
+      date,
+      fetchedAt: new Date().toISOString(),
+      description: article.description || article.title,
+    });
+  }
+
+  normalized.sort((a, b) => +new Date(b.date) - +new Date(a.date));
+  if (!normalized.length) {
+    console.warn(`[News][${feedName}] 0 fresh approved records after audit`);
+  }
+  return normalized;
+}
 // ─── Google News RSS ────────────────────────────────────────────
 
 const CORS_PROXIES = [
@@ -189,6 +240,7 @@ async function fetchGoogleNewsRSS(room: RoomId, maxResults = 8): Promise<NewsArt
     const weekAgo = new Date();
     weekAgo.setDate(weekAgo.getDate() - 7);
     if (articleDate < weekAgo) return;
+    if (!isFreshDate(articleDate.toISOString().slice(0, 10))) return;
 
     // Only include articles from approved sources
     const articleSource = source || extractDomainFromUrl(link);
@@ -206,6 +258,70 @@ async function fetchGoogleNewsRSS(room: RoomId, maxResults = 8): Promise<NewsArt
 
   if (!articles.length) throw new Error('Google News: no recent articles');
   return articles;
+}
+
+async function fetchGoogleNewsByDomain(domain: string, room: RoomId, maxResults = 4): Promise<NewsArticle[]> {
+  const query = encodeURIComponent(`site:${domain} ${ROOM_QUERIES_SIMPLE[room]}`);
+  const rssUrl = `https://news.google.com/rss/search?q=${query}&hl=en&gl=US&ceid=US:en`;
+
+  let xml = '';
+  for (const proxy of CORS_PROXIES) {
+    try {
+      const resp = await fetch(proxy + encodeURIComponent(rssUrl), {
+        signal: AbortSignal.timeout(6000),
+      });
+      if (resp.ok) {
+        xml = await resp.text();
+        break;
+      }
+    } catch {
+      continue;
+    }
+  }
+  if (!xml) return [];
+
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(xml, 'text/xml');
+  const items = doc.querySelectorAll('item');
+  const articles: NewsArticle[] = [];
+
+  items.forEach((item, i) => {
+    if (i >= maxResults) return;
+    const title = item.querySelector('title')?.textContent || '';
+    const link = item.querySelector('link')?.textContent || '';
+    const pubDate = item.querySelector('pubDate')?.textContent || '';
+    const description = item.querySelector('description')?.textContent || '';
+    const urlDomain = extractFullDomain(link);
+
+    const articleDate = new Date(pubDate);
+    const weekAgo = new Date();
+    weekAgo.setDate(weekAgo.getDate() - 7);
+
+    if (!urlDomain || !isApprovedSource(urlDomain) || articleDate < weekAgo) return;
+    if (!isFreshDate(articleDate.toISOString().slice(0, 10))) return;
+
+    articles.push({
+      title: cleanHTMLEntities(title),
+      url: link,
+      source: extractDomainFromUrl(link),
+      date: articleDate.toISOString().slice(0, 10),
+      description: cleanHTMLEntities(stripHTML(description)),
+    });
+  });
+
+  return articles;
+}
+
+async function fetchPriorityDomainNews(room: RoomId, maxResults = 8): Promise<NewsArticle[]> {
+  const domains = PRIORITY_DOMAIN_FEEDS[room] || [];
+  if (!domains.length) return [];
+
+  const batches = await Promise.all(domains.map((d) => fetchGoogleNewsByDomain(d, room, 4).catch(() => [])));
+  const merged = batches.flat();
+
+  const deduped = Array.from(new Map(merged.map((a) => [a.url, a])).values());
+  deduped.sort((a, b) => +new Date(b.date) - +new Date(a.date));
+  return deduped.slice(0, maxResults);
 }
 
 function stripHTML(html: string): string {
@@ -363,21 +479,50 @@ export async function fetchNews(room: RoomId, customTopic?: string): Promise<New
 
   // Tier 1: GDELT
   try {
-    const articles = await fetchGDELT(room);
+    const articles = normalizeAndAudit(await fetchGDELT(room), "GDELT");
     if (articles.length > 0) return articles;
   } catch (e) {
     console.warn('[News] GDELT failed:', e);
   }
 
-  // Tier 2: Google News RSS
+  // Tier 2: Priority legal/finance sources via Google News site filters
   try {
-    const articles = await fetchGoogleNewsRSS(room);
+    const articles = normalizeAndAudit(await fetchPriorityDomainNews(room), "PRIORITY");
+    if (articles.length > 0) return articles;
+  } catch (e) {
+    console.warn('[News] Priority domain feeds failed:', e);
+  }
+
+  // Tier 3: Google News RSS
+  try {
+    const articles = normalizeAndAudit(await fetchGoogleNewsRSS(room), "GOOGLE");
     if (articles.length > 0) return articles;
   } catch (e) {
     console.warn('[News] Google News RSS failed:', e);
   }
 
-  // Tier 3: Pre-seeded fallback
-  console.warn('[News] Using pre-seeded fallback articles');
-  return FALLBACK_ARTICLES[room] || FALLBACK_ARTICLES.growth;
+  // Tier 4: Strict mode denies stale fallback content
+  console.error('[News] No fresh approved articles found in live feeds.');
+  return [];
+}
+
+export interface NewsAuditReport {
+  room: RoomId;
+  requestedAt: string;
+  maxAgeDays: number;
+  approvedDomains: number;
+  resultCount: number;
+  oldestDate?: string;
+}
+
+export async function auditNewsEngine(room: RoomId): Promise<NewsAuditReport> {
+  const articles = await fetchNews(room);
+  return {
+    room,
+    requestedAt: new Date().toISOString(),
+    maxAgeDays: MAX_ARTICLE_AGE_DAYS,
+    approvedDomains: APPROVED_DOMAINS.length,
+    resultCount: articles.length,
+    oldestDate: articles.length ? articles[articles.length - 1].date : undefined,
+  };
 }
