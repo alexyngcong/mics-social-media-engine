@@ -23,14 +23,36 @@ export type { QAReport, QAVerdict, QACheckResult };
 // ─── Approved Sources ──────────────────────────────────────────────
 
 const TIER_1_SOURCES = [
-  'mondaq', 'meed', 'lexology',
+  // ── Specialist legal / tax / advisory intelligence ──
+  'mondaq', 'meed', 'lexology', 'blue j', 'thomson reuters',
+  'checkpoint edge', 'cocounsel', 'bloomberg tax', 'tax notes',
+  'international tax review', 'tax foundation',
+  'pinsent masons', 'white & case',
+  // ── Tier-1 global financial wires ──
   'bloomberg', 'reuters', 'financial times', 'ft.com',
-  'wall street journal', 'wsj',
-  'the national', 'gulf news', 'zawya',
-  'central bank', 'cbuae', 'ministry of finance',
-  'difc', 'adgm', 'sca', 'fta',
+  'wall street journal', 'wsj', 'economist', 'nikkei', 'scmp',
+  'cnbc', 'marketwatch', 'forbes', 'business insider',
+  'euromoney', 'the banker', 'banker middle east', 'ft adviser',
+  // ── UAE / Gulf regional outlets ──
+  'the national', 'gulf news', 'zawya', 'khaleej times',
+  'arabian business', 'argaam', 'agbi',
+  'economy middle east', 'gulf business', 'gulf today', 'emirates 24',
+  // ── UAE official ──
+  'central bank', 'cbuae', 'ministry of finance', 'ministry of economy',
+  'difc', 'adgm', 'sca', 'fta', 'mohre', 'moiat',
+  'wam', 'dubai media office', 'abu dhabi media office', 'dubai chamber',
+  // ── Multilaterals & central banks ──
   'imf', 'world bank', 'oecd', 'bis',
-  'nikkei', 'scmp', 'economist',
+  'federal reserve', 'ecb', 'bank of england', 'wto', 'unctad',
+  // ── Ratings agencies ──
+  's&p', 'spglobal', 'moody', 'fitch',
+  // ── Energy ──
+  'opec', 'iea', 'eia', 'argus media',
+  // ── Policy / think tanks ──
+  'brookings', 'chatham house', 'cfr', 'piie', 'rand',
+  'hbr', 'harvard business review',
+  // ── Wire services ──
+  'ap', 'afp',
 ];
 
 const BLOCKED_SOURCES = [
@@ -130,6 +152,32 @@ function check(
 }
 
 /**
+ * Strip the trailing source URL line from text before running promo/HTML
+ * pattern checks. The post format intentionally appends the source URL on
+ * its own line at the end — that's attribution, not self-promotion.
+ */
+function stripTrailingSourceUrl(text: string, sourceUrl?: string): string {
+  // If we know the exact URL, strip it explicitly
+  if (sourceUrl) {
+    const escaped = sourceUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(`\\s*\\n*${escaped}\\s*$`);
+    const stripped = text.replace(re, '').trimEnd();
+    if (stripped !== text) return stripped;
+  }
+  // Fallback: strip any URL that appears as the last non-empty token
+  return text.replace(/\n\n[^\s]*https?:\/\/[^\s]+\s*$/i, '').trimEnd();
+}
+
+/**
+ * AUDIT-REFRESH POLICY — Ladder cutoff matching the news fetcher.
+ *
+ * QA rejects articles older than 72h (the news fetcher's hard cap).
+ * Articles in the 24-72h window pass but the UI shows their actual age
+ * so the user makes an informed post/skip decision.
+ */
+export const QA_MAX_ARTICLE_AGE_HOURS = 72;
+
+/**
  * Run full QA validation on a generated post.
  * Returns a QAReport with verdict, score, and individual check results.
  */
@@ -140,19 +188,53 @@ export function validatePost(
     postTypeId?: PostTypeId;
     isDeep?: boolean;
     deepResult?: DeepDivePost;
+    /** Article age in hours (from newsFetcher). Triggers REJECT if > QA_MAX_ARTICLE_AGE_HOURS. */
+    articleHoursAgo?: number;
   }
 ): QAReport {
   const checks: QACheckResult[] = [];
   const text = post.text || '';
   const platform = options?.platform || 'whatsapp';
   const postTypeId = options?.postTypeId;
+  const articleHoursAgo = options?.articleHoursAgo;
   const isNoBanner = postTypeId === 'pulse' || postTypeId === 'voicenote';
+
+  // ═══════════════════════════════════════════════════════
+  // 0. AUDIT REFRESH — runs FIRST on every validation call.
+  //    Re-reads the system clock; never uses a cached "now".
+  // ═══════════════════════════════════════════════════════
+  const auditNowMs = Date.now();
+  const auditReadable = new Date(auditNowMs).toLocaleString('en-GB', {
+    day: 'numeric', month: 'short', year: 'numeric',
+    hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Dubai',
+  }) + ' UAE';
+  void auditReadable;
+
+  // 0a. STRICT RECENCY GATE — article cannot be older than 7 days
+  //     OR future-dated relative to the live system clock.
+  if (articleHoursAgo !== undefined && articleHoursAgo !== null) {
+    const isFutureDated = articleHoursAgo < 0;
+    const isTooOld = articleHoursAgo > QA_MAX_ARTICLE_AGE_HOURS;
+    const ageOk = !isFutureDated && !isTooOld;
+    checks.push(check(
+      'audit-recency-gate',
+      'freshness',
+      'critical',
+      'Article within real-time freshness window',
+      ageOk,
+      ageOk
+        ? `Article is ${articleHoursAgo}h old at audit time. Within ${QA_MAX_ARTICLE_AGE_HOURS}h cutoff.`
+        : isFutureDated
+          ? `REJECTED: Article dated AFTER current system time (${articleHoursAgo}h offset). Cannot post content dated past the live clock.`
+          : `REJECTED: Article is ${articleHoursAgo}h old. Exceeds ${QA_MAX_ARTICLE_AGE_HOURS}h real-time freshness cutoff.`
+    ));
+  }
 
   // ═══════════════════════════════════════════════════════
   // 1. CONTENT FRESHNESS CHECKS
   // ═══════════════════════════════════════════════════════
 
-  // 1a. Text references current year
+  // 1a. Text references current year (re-read on every call)
   const currentYear = dateFormatted.year;
   const hasCurrentYear = text.includes(currentYear) ||
     post.subline?.includes(currentYear) ||
@@ -450,10 +532,15 @@ export function validatePost(
   // 6. CONTENT INTEGRITY
   // ═══════════════════════════════════════════════════════
 
-  // 6a. No HTML or citation tags
+  // The post format intentionally ends with the source URL on its own line.
+  // That's source attribution, NOT self-promotion. Strip it before running
+  // promo/HTML pattern checks so the trailing URL doesn't trigger false fails.
+  const bodyForPromoChecks = stripTrailingSourceUrl(text, post.sourceUrl);
+
+  // 6a. No HTML or citation tags (in body content, excluding trailing source URL)
   const htmlIssues: string[] = [];
   for (const pattern of HTML_PATTERNS) {
-    const match = text.match(pattern);
+    const match = bodyForPromoChecks.match(pattern);
     if (match) htmlIssues.push(match[0]);
   }
   checks.push(check(
@@ -467,10 +554,10 @@ export function validatePost(
       : `Found HTML/citation artifacts: "${htmlIssues.join('", "')}". Must be stripped.`
   ));
 
-  // 6b. No self-promotion or company mentions
+  // 6b. No self-promotion or company mentions (in body, excluding trailing source URL)
   const promoIssues: string[] = [];
   for (const pattern of SELF_PROMO_PATTERNS) {
-    const match = text.match(pattern);
+    const match = bodyForPromoChecks.match(pattern);
     if (match) promoIssues.push(match[0]);
   }
   checks.push(check(
@@ -619,7 +706,8 @@ export function validatePost(
   return {
     verdict,
     score,
-    timestamp: new Date().toISOString(),
+    // Audit timestamp — always live, taken at the start of this call
+    timestamp: new Date(auditNowMs).toISOString(),
     checks,
     passCount: passed.length,
     warnCount: warnings.length,
@@ -636,47 +724,180 @@ export function autoFixPost(post: GeneratedPost): { fixed: GeneratedPost; fixes:
   const fixes: string[] = [];
   const fixed = { ...post };
 
-  // Fix 1: Strip remaining HTML/cite tags
+  // \u2500\u2500 Fix 1: Strip remaining HTML/cite tags \u2500\u2500
   if (/<[^>]+>/.test(fixed.text)) {
     fixed.text = fixed.text
       .replace(/<cite[^>]*>.*?<\/cite>/gi, '')
       .replace(/<\/?cite[^>]*>/gi, '')
       .replace(/<[^>]+>/g, '');
-    fixes.push('Removed HTML/citation tags from text');
+    fixes.push('Removed HTML/citation tags');
   }
 
-  // Fix 2: Replace em/en dashes with commas
+  // \u2500\u2500 Fix 2: Replace em/en dashes with commas \u2500\u2500
   if (/\u2014|\u2013/.test(fixed.text)) {
     fixed.text = fixed.text.replace(/\u2014/g, ', ').replace(/\u2013/g, ', ');
     fixes.push('Replaced em/en dashes with commas');
   }
 
-  // Fix 3: Remove semicolons
+  // \u2500\u2500 Fix 3: Replace semicolons with periods \u2500\u2500
   if (fixed.text.includes(';')) {
     fixed.text = fixed.text.replace(/;/g, '.');
     fixes.push('Replaced semicolons with periods');
   }
 
-  // Fix 4: Remove citation references [1], [2], etc.
+  // \u2500\u2500 Fix 4: Strip citation references [1], [2], etc. \u2500\u2500
   if (/\[\d+\]/.test(fixed.text)) {
     fixed.text = fixed.text.replace(/\[\d+\]/g, '');
     fixes.push('Removed citation reference numbers');
   }
 
-  // Fix 5: Normalize multiple spaces
-  fixed.text = fixed.text.replace(/\s{2,}/g, ' ').replace(/ \n/g, '\n');
+  // \u2500\u2500 Fix 5: Replace banned words with neutral synonyms \u2500\u2500
+  const BANNED_WORD_SUBSTITUTES: Record<string, string> = {
+    'leverage': 'use',
+    'utilize': 'use',
+    'landscape': 'environment',
+    'navigate': 'manage',
+    'robust': 'strong',
+    'holistic': 'overall',
+    'synergy': 'alignment',
+    'unpack': 'examine',
+    'deep dive': 'closer look',
+    'pivoting': 'shifting',
+    'paradigm': 'model',
+    'actionable': 'practical',
+    'scalable': 'flexible',
+    'disrupt': 'change',
+  };
+  for (const [bad, good] of Object.entries(BANNED_WORD_SUBSTITUTES)) {
+    const re = new RegExp(`\\b${bad}\\b`, 'gi');
+    if (re.test(fixed.text)) {
+      fixed.text = fixed.text.replace(re, (match) => {
+        // Preserve capitalisation of first letter
+        return match[0] === match[0].toUpperCase()
+          ? good.charAt(0).toUpperCase() + good.slice(1)
+          : good;
+      });
+      fixes.push(`Replaced banned word "${bad}" with "${good}"`);
+    }
+  }
 
-  // Fix 6: Force headline to ALL CAPS if it isn't
+  // \u2500\u2500 Fix 6: Strip banned phrase patterns \u2500\u2500
+  const BANNED_STRIP_PATTERNS: Array<{ re: RegExp; label: string }> = [
+    { re: /in today['']s\s+/gi, label: '"in today\'s"' },
+    { re: /it['']s worth noting that\s+/gi, label: '"it\'s worth noting"' },
+    { re: /\binterestingly,?\s+/gi, label: '"interestingly"' },
+    { re: /let['']s explore\s+/gi, label: '"let\'s explore"' },
+    { re: /here['']s the thing,?\s+/gi, label: '"here\'s the thing"' },
+    { re: /it goes without saying that\s+/gi, label: '"goes without saying"' },
+    { re: /needless to say,?\s+/gi, label: '"needless to say"' },
+    { re: /at the end of the day,?\s+/gi, label: '"at the end of the day"' },
+    { re: /moving forward,?\s+/gi, label: '"moving forward"' },
+    { re: /\bcircle back\s+/gi, label: '"circle back"' },
+  ];
+  for (const { re, label } of BANNED_STRIP_PATTERNS) {
+    if (re.test(fixed.text)) {
+      fixed.text = fixed.text.replace(re, '');
+      fixes.push(`Stripped banned phrase ${label}`);
+    }
+  }
+
+  // \u2500\u2500 Fix 7: Strip stale-language phrases \u2500\u2500
+  const STALE_STRIP_PATTERNS: Array<{ re: RegExp; label: string }> = [
+    { re: /last year['']?s?\s+/gi, label: '"last year\'s"' },
+    { re: /previous year,?\s+/gi, label: '"previous year"' },
+    { re: /a year ago,?\s+/gi, label: '"a year ago"' },
+    { re: /two years ago,?\s+/gi, label: '"two years ago"' },
+    { re: /\bhistorically,?\s+/gi, label: '"historically"' },
+    { re: /\bin the past,?\s+/gi, label: '"in the past"' },
+  ];
+  for (const { re, label } of STALE_STRIP_PATTERNS) {
+    if (re.test(fixed.text)) {
+      fixed.text = fixed.text.replace(re, '');
+      fixes.push(`Stripped stale phrase ${label}`);
+    }
+  }
+
+  // \u2500\u2500 Fix 8: Strip self-promo / CTA phrases (URLs already excluded from text) \u2500\u2500
+  const PROMO_STRIP_PATTERNS: Array<{ re: RegExp; label: string }> = [
+    { re: /mics\s*international\s*/gi, label: 'company name' },
+    { re: /mics\s*advisory\s*/gi, label: 'company name' },
+    { re: /\bcontact us\s*/gi, label: '"contact us"' },
+    { re: /reach out to us\s*/gi, label: '"reach out"' },
+    { re: /visit (?:our|the) website\s*/gi, label: '"visit website"' },
+  ];
+  for (const { re, label } of PROMO_STRIP_PATTERNS) {
+    if (re.test(fixed.text)) {
+      fixed.text = fixed.text.replace(re, '');
+      fixes.push(`Stripped promo ${label}`);
+    }
+  }
+  // Strip any URLs that snuck into the body (URL is supposed to live on sourceUrl, not in text)
+  if (/https?:\/\/\S+/.test(fixed.text)) {
+    fixed.text = fixed.text.replace(/\s*https?:\/\/\S+\s*/g, ' ').trim();
+    fixes.push('Removed inline URL (URL belongs on source field, not in body)');
+  }
+
+  // \u2500\u2500 Fix 9: Auto-paragraph long wall-of-text \u2500\u2500
+  if (!fixed.text.includes('\n\n') && fixed.text.length > 200) {
+    const sentences = fixed.text.split(/(?<=[.!?])\s+(?=[A-Z*_~])/);
+    if (sentences.length >= 3) {
+      const paragraphs: string[] = [];
+      let cur = '';
+      let count = 0;
+      for (const s of sentences) {
+        cur += (cur ? ' ' : '') + s;
+        count++;
+        if (count >= 2 && cur.length > 80) {
+          paragraphs.push(cur);
+          cur = '';
+          count = 0;
+        }
+      }
+      if (cur) paragraphs.push(cur);
+      fixed.text = paragraphs.join('\n\n');
+      fixes.push('Auto-paragraphed wall-of-text for WhatsApp readability');
+    }
+  }
+
+  // \u2500\u2500 Fix 10: Normalize whitespace \u2500\u2500
+  // Collapse multiple spaces (but not newlines), and collapse 3+ newlines to 2.
+  fixed.text = fixed.text
+    .replace(/[ \t]{2,}/g, ' ')
+    .replace(/ \n/g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  // \u2500\u2500 Fix 11: Trim platform-overflow (keep hook + closer, drop middle paragraph) \u2500\u2500
+  // For WhatsApp's 700-char target, if grossly over (>1.5x), trim middle.
+  if (fixed.text.length > 1050) {
+    const paras = fixed.text.split('\n\n');
+    if (paras.length >= 4) {
+      // Keep first 2 + last 2 paragraphs
+      const trimmed = [...paras.slice(0, 2), ...paras.slice(-2)].join('\n\n');
+      if (trimmed.length < fixed.text.length) {
+        fixed.text = trimmed;
+        fixes.push('Trimmed middle paragraphs to fit platform length');
+      }
+    }
+  }
+
+  // \u2500\u2500 Fix 12: Force headline to ALL CAPS \u2500\u2500
   if (fixed.headline && fixed.headline !== fixed.headline.toUpperCase()) {
     fixed.headline = fixed.headline.toUpperCase();
     fixes.push('Converted headline to ALL CAPS');
   }
 
-  // Fix 7: Clean stat of any non-visual text
+  // \u2500\u2500 Fix 13: Clean stat of qualifier prefixes \u2500\u2500
   if (fixed.stat) {
-    fixed.stat = fixed.stat.replace(/approximately\s*/i, '').replace(/around\s*/i, '').trim();
-    if (fixed.stat !== post.stat) {
-      fixes.push('Cleaned stat for visual impact');
+    const before = fixed.stat;
+    fixed.stat = fixed.stat
+      .replace(/^approximately\s*/i, '')
+      .replace(/^around\s*/i, '')
+      .replace(/^about\s*/i, '')
+      .replace(/^roughly\s*/i, '')
+      .trim();
+    if (fixed.stat !== before) {
+      fixes.push('Cleaned stat qualifier for visual impact');
     }
   }
 

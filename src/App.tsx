@@ -1,5 +1,11 @@
 import { useRef } from 'react';
 import { useAppStore } from './store/appStore';
+
+// Build timestamp injected by vite at compile time. If this string in the
+// UI footer doesn't match the time you just deployed, your browser is
+// serving a cached bundle.
+declare const __BUILD_TIME__: string;
+const BUILD_TIMESTAMP = typeof __BUILD_TIME__ !== 'undefined' ? __BUILD_TIME__ : 'dev';
 import { useGenerate } from './hooks/useGenerate';
 import { useHistory } from './hooks/useHistory';
 import { dateFormatted } from './config/brand';
@@ -12,6 +18,7 @@ import { CustomTopic } from './components/steps/CustomTopic';
 import { DeepDive } from './components/steps/DeepDive';
 import { LoadingState } from './components/steps/LoadingState';
 import { ResultView } from './components/steps/ResultView';
+import { BriefImport } from './components/steps/BriefImport';
 import { CalendarView } from './components/calendar/CalendarView';
 import { DayDetail } from './components/calendar/DayDetail';
 import { Button } from './components/ui/Button';
@@ -27,6 +34,7 @@ function getStepTitle(step: number): string {
     case 5: return 'Custom Topic';
     case 6: return 'AI Deep Dive';
     case 9: return 'Content Calendar';
+    case 11: return 'Import Deep Research Brief';
     default: return '';
   }
 }
@@ -90,6 +98,7 @@ export default function App() {
         {store.step === 2 && <FormatSelect onGenerate={() => generate()} />}
         {store.step === 5 && <CustomTopic onGenerate={(topic) => generate(topic)} />}
         {store.step === 6 && <DeepDive onGenerateDeep={(topic) => generateDeep(topic)} />}
+        {store.step === 11 && <BriefImport />}
 
         {[3, 7].includes(store.step) && store.loading && <LoadingState />}
 
@@ -124,10 +133,12 @@ export default function App() {
         )}
       </div>
 
-      {/* Footer */}
+      {/* Footer with build timestamp so cache state is obvious at a glance */}
       <div className="px-5 py-2.5 border-t border-ink-border bg-ink flex justify-between text-[10px] text-tx-dim">
         <span>Live Intelligence Engine</span>
-        <span className="text-tx-ghost">v5.0 | No API Key Required</span>
+        <span className="text-tx-ghost">
+          v5.3 · {BUILD_TIMESTAMP}
+        </span>
       </div>
     </div>
   );

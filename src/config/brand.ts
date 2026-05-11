@@ -1,4 +1,14 @@
-const today = new Date();
+/**
+ * Brand voice + live date helpers.
+ *
+ * AUDIT-REFRESH POLICY (per posting requirements):
+ *   - `dateFormatted` is implemented as getters, NOT a cached object.
+ *   - Every property access re-reads the system clock.
+ *   - No date string is ever cached past a single tick of consumption.
+ *   - This guarantees: if the app sits open across midnight or longer,
+ *     the next post stamps the CURRENT real-time date, not the stale
+ *     bundle-load date.
+ */
 
 export const brand = {
   name: 'MICS International',
@@ -22,15 +32,36 @@ export const brand = {
   ],
 } as const;
 
+/**
+ * Live date helpers. Every property is a getter — re-reads `new Date()`
+ * on each access. There is NO static cached "today" value anywhere.
+ */
 export const dateFormatted = {
-  full: today.toLocaleDateString('en-GB', {
-    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
-  }),
-  short: today.toLocaleDateString('en-GB', {
-    day: 'numeric', month: 'short', year: 'numeric',
-  }),
-  monthYear: today.toLocaleDateString('en-GB', {
-    month: 'long', year: 'numeric',
-  }),
-  year: String(today.getFullYear()),
+  get full() {
+    return new Date().toLocaleDateString('en-GB', {
+      weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
+    });
+  },
+  get short() {
+    return new Date().toLocaleDateString('en-GB', {
+      day: 'numeric', month: 'short', year: 'numeric',
+    });
+  },
+  get monthYear() {
+    return new Date().toLocaleDateString('en-GB', {
+      month: 'long', year: 'numeric',
+    });
+  },
+  get year() {
+    return String(new Date().getFullYear());
+  },
+  /** Audit timestamps (always live, never cached) */
+  get nowMs() { return Date.now(); },
+  get nowISO() { return new Date().toISOString(); },
+  get nowReadable() {
+    return new Date().toLocaleString('en-GB', {
+      day: 'numeric', month: 'short', year: 'numeric',
+      hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Dubai',
+    }) + ' UAE';
+  },
 };

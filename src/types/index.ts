@@ -58,6 +58,10 @@ export interface GeneratedPost {
   sourceUrl: string;
   hashtags?: string[];
   threadPosts?: string[];
+  /** Article age in hours at generation time (for audit-refresh recency gate) */
+  articleHoursAgo?: number;
+  /** Audit timestamp (ms since epoch) at generation time */
+  generatedAtMs?: number;
 }
 
 export interface DeepDivePost extends GeneratedPost {
@@ -138,6 +142,35 @@ export interface QAReport {
   warnCount: number;
   failCount: number;
   summary: string;
+}
+
+// ─── Deep Research Brief import types ──────────────────────────
+// The app can be used as a middleman: paste a CFO Early Warning Brief
+// from any external Deep Research source (ChatGPT, Claude, Perplexity)
+// and the app parses it into structured items that can be turned into
+// polished WhatsApp posts using the marketing-framework engine.
+
+export type BriefPriority = 'high' | 'medium' | 'watch' | 'unknown';
+
+export interface BriefItem {
+  id: string;
+  title: string;                  // headline
+  source: string;                 // e.g. "Reuters"
+  sourceUrl: string;              // direct URL
+  date: string;                   // publication date, ISO YYYY-MM-DD if available
+  publicationTime?: string;       // optional time string
+  priority: BriefPriority;
+  cfoImplication: string;         // the deep CFO-specific analysis
+  tags: string[];                 // e.g. ['risk', 'treasury']
+  suggestedRoom?: RoomId;         // inferred from tags
+  rawText: string;                // original parsed block (for debugging)
+}
+
+export interface ImportedBrief {
+  importedAt: number;             // ms timestamp at import time
+  itemCount: number;
+  items: BriefItem[];
+  rawContent: string;             // full original paste
 }
 
 // ─── Calendar types ─────────────────────────────────────────────

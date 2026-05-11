@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useAppStore } from '../store/appStore';
-import { generateContent } from '../services/api';
+import { generateContent, generateFromBrief } from '../services/api';
 import { validatePost, autoFixPost } from '../services/qaValidator';
 import { ROOMS } from '../config/rooms';
 import { POST_TYPES } from '../config/postTypes';
@@ -60,8 +60,15 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
       const postTypeId: PostTypeId = tp?.id || 'generic';
 
       try {
-        // Step 1: Fetch live news + generate post (no API key needed)
-        const parsed = await generateContent(room, postTypeId, customTopic);
+        // Step 1: Generate. Two paths:
+        //   - If a brief item is selected (from Deep Research import),
+        //     generate directly from the brief — bypasses news fetch
+        //     and uses the brief's CFO implication as body content.
+        //   - Otherwise: fetch live news from approved sources.
+        const briefItem = store.selectedBriefItem;
+        const parsed = briefItem
+          ? await generateFromBrief(briefItem, room, postTypeId)
+          : await generateContent(room, postTypeId, customTopic);
 
         if (!parsed.text && !parsed.headline) {
           store.setError('No content generated. Try a different topic.');
@@ -81,6 +88,9 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
         const qaReport = validatePost(fixed, {
           platform,
           postTypeId,
+          // AUDIT-REFRESH: pass article age so the QA gate hard-rejects
+          // anything older than the freshness cutoff (7 days).
+          articleHoursAgo: fixed.articleHoursAgo,
         });
 
         store.setQAReport(qaReport);
@@ -112,7 +122,14 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
           store.setStep(4);
         }
       } catch (e) {
-        store.setError(e instanceof Error ? e.message : 'Failed to fetch news. Check your connection.');
+        const isNoFresh = e instanceof Error && e.name === 'NoFreshNewsError';
+        store.setError(
+          isNoFresh
+            ? 'No verified news from approved sources in the last 24 hours. The engine is blocking the post rather than serving stale content. Try again in a few minutes or pick a different room.'
+            : e instanceof Error
+              ? e.message
+              : 'Failed to fetch news. Check your connection.'
+        );
         store.setStep(4);
       }
       store.setLoading(false);
@@ -150,7 +167,10 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
         const { fixed } = autoFixPost(parsed);
 
         store.setLoadingMessage(QA_MSGS[3]);
-        const qaReport = validatePost(fixed, { platform });
+        const qaReport = validatePost(fixed, {
+          platform,
+          articleHoursAgo: fixed.articleHoursAgo,
+        });
 
         // Build deep result with brief
         const deepResult = {
@@ -179,7 +199,14 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
         });
         store.setStep(8);
       } catch (e) {
-        store.setError(e instanceof Error ? e.message : 'Failed to fetch news.');
+        const isNoFresh = e instanceof Error && e.name === 'NoFreshNewsError';
+        store.setError(
+          isNoFresh
+            ? 'No verified news from approved sources in the last 24 hours. Deep dive blocked rather than running on stale data. Try again later.'
+            : e instanceof Error
+              ? e.message
+              : 'Failed to fetch news.'
+        );
         store.setStep(8);
       }
       store.setLoading(false);

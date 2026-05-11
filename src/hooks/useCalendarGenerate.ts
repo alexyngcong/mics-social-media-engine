@@ -22,9 +22,12 @@ export function useCalendarGenerate() {
       // Generate post using live news (no API key needed)
       const parsed = await generateContent(entry.room, 'observation', entry.topic);
 
-      // QA GATE: Auto-fix then validate
+      // QA GATE: Auto-fix then validate (audit-refresh: live, no cache)
       const { fixed } = autoFixPost(parsed);
-      const qaReport = validatePost(fixed, { platform: 'whatsapp' });
+      const qaReport = validatePost(fixed, {
+        platform: 'whatsapp',
+        articleHoursAgo: fixed.articleHoursAgo,
+      });
       const bannerVariant = Math.floor(Math.random() * TEMPLATE_COUNT);
 
       store.setEntryResult(dateStr, fixed, bannerVariant, qaReport);
@@ -35,6 +38,13 @@ export function useCalendarGenerate() {
     } catch (e) {
       store.setEntryStatus(dateStr, 'planned');
       store.setGenerating(null);
+      // NoFreshNewsError bubbles up to the UI with a clean message.
+      // Any other failure rethrows so the caller can show a generic error.
+      if (e instanceof Error && e.name === 'NoFreshNewsError') {
+        const friendly = new Error('No verified news from approved sources in the last 24 hours. This day cannot be generated until fresh content arrives.');
+        friendly.name = 'NoFreshNewsError';
+        throw friendly;
+      }
       throw e;
     }
   }, [store.entries]);

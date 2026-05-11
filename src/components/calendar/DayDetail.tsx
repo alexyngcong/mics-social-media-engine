@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useCalendarStore } from '../../store/calendarStore';
 import { useCalendarGenerate } from '../../hooks/useCalendarGenerate';
 import { useClipboard } from '../../hooks/useClipboard';
 import { useBannerExport } from '../../hooks/useBannerExport';
 import { useAppStore } from '../../store/appStore';
+import { autoFixPost, validatePost } from '../../services/qaValidator';
 import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
 import { WhatsAppPreview } from '../preview/WhatsAppPreview';
@@ -16,6 +17,7 @@ const WEEKDAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', '
 export function DayDetail() {
   const { selectedDate, entries, generatingDate, selectDate } = useCalendarStore();
   const setEntryStatus = useCalendarStore((s) => s.setEntryStatus);
+  const setEntryResult = useCalendarStore((s) => s.setEntryResult);
   const { generateForDate } = useCalendarGenerate();
   const { copy } = useClipboard();
   const appStore = useAppStore();
@@ -24,6 +26,27 @@ export function DayDetail() {
   const [error, setError] = useState('');
   const [copiedField, setCopiedField] = useState('');
   const [imgSaved, setImgSaved] = useState(false);
+  const [autoFixFlash, setAutoFixFlash] = useState('');
+
+  // ── Auto-fix the current entry's content. Re-runs autoFixPost + validatePost
+  //    and writes the cleaned result + new QA report back to the calendar entry.
+  const handleAutoFix = useCallback(() => {
+    if (!selectedDate) return;
+    const current = entries[selectedDate];
+    if (!current?.result) return;
+    const { fixed, fixes } = autoFixPost(current.result);
+    const newQa = validatePost(fixed, {
+      platform: 'whatsapp',
+      articleHoursAgo: fixed.articleHoursAgo,
+    });
+    setEntryResult(selectedDate, fixed, current.bannerVariant ?? 0, newQa);
+    setAutoFixFlash(
+      fixes.length > 0
+        ? `Applied ${fixes.length} auto-fix${fixes.length === 1 ? '' : 'es'}`
+        : 'No auto-fixable issues found — try Regenerate'
+    );
+    setTimeout(() => setAutoFixFlash(''), 4000);
+  }, [selectedDate, entries, setEntryResult]);
 
   if (!selectedDate) return null;
   const entry = entries[selectedDate];
@@ -139,13 +162,21 @@ export function DayDetail() {
         {/* Generated result */}
         {hasResult && entry.result && (
           <div className="space-y-3">
-            {/* QA badge */}
+            {/* QA badge — with Auto-Fix and Regenerate options when flagged/rejected */}
             {entry.qaReport && (
               <QABadge
                 report={entry.qaReport}
+                onAutoFix={handleAutoFix}
                 onRegenerate={handleGenerate}
                 compact={false}
               />
+            )}
+
+            {/* Auto-fix flash message */}
+            {autoFixFlash && (
+              <div className="bg-signal-green/10 border border-signal-green/30 rounded-card px-3 py-2 text-[11px] text-signal-green">
+                {autoFixFlash}
+              </div>
             )}
 
             {/* Posting instructions */}
@@ -208,6 +239,31 @@ export function DayDetail() {
             >
               Regenerate Post
             </Button>
+
+            {/* ── Alternative input paths ── */}
+            <div className="flex gap-2 mt-1">
+              <Button
+                variant="gold"
+                onClick={() => {
+                  appStore.setSelectedBriefItem(null);
+                  handleGenerate();
+                }}
+                disabled={isGenerating}
+                className="flex-1 !py-2 !text-[11px]"
+              >
+                🔄 Pull Fresh News
+              </Button>
+              <Button
+                variant="purple"
+                onClick={() => {
+                  appStore.setRoom(entry.room);
+                  appStore.setStep(11);
+                }}
+                className="flex-1 !py-2 !text-[11px]"
+              >
+                📋 Import Deep Research
+              </Button>
+            </div>
           </div>
         )}
       </div>

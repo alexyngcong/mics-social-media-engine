@@ -6,7 +6,7 @@ import { generateMonthPlan } from '../config/calendarPlan';
  * Bump this version whenever calendarPlan.ts changes rhythm / rooms / topics.
  * Old localStorage entries under a different version are automatically discarded.
  */
-const CALENDAR_VERSION = 2; // v1 = old 6-day rhythm, v2 = 3-day rhythm
+const CALENDAR_VERSION = 3; // v1 = 6-day rhythm, v2 = 3-day rhythm, v3 = open 7-day schedule (no cap)
 const STORAGE_KEY = 'mics_calendar';
 
 interface CalendarState {

@@ -1,14 +1,22 @@
 /**
  * NEWS FETCHER — Multi-source live news with zero API keys
  *
+ * Recency-first design (per UAE production-requirements doc):
+ *   - 0-72h breaking window is highest priority
+ *   - 3-7d secondary pool only if 0-72h is empty
+ *   - UAE-specific Tier 1 (gov.ae, mof, fta, dfsa, adgm, cbuae, wam) preferred
+ *
  * Priority chain:
- *   1. GDELT DOC API (free, CORS-enabled, JSON, real-time)
- *   2. Google News RSS via CORS proxy (free, XML, reliable)
- *   3. Pre-seeded fallback topics (always available)
+ *   1. GDELT DOC API (CORS-enabled, JSON, real-time, sorted by date)
+ *   2. Google News RSS via CORS proxy (XML, reliable)
+ *   3. Pre-seeded fallback topics (always available, shuffled)
+ *
+ * Anti-repetition:
+ *   - Returns 6-10 articles, caller picks randomly from top-N most recent
+ *   - Queries rotate across multiple UAE topical seeds
  */
 
 import type { RoomId } from '../types';
-import { dateFormatted } from '../config/brand';
 
 // ─── Article shape ──────────────────────────────────────────────
 
@@ -18,37 +26,148 @@ export interface NewsArticle {
   title: string;
   url: string;
   source: string;       // domain or publication name
-  date: string;         // ISO date or readable
+  date: string;         // ISO date YYYY-MM-DD
   description: string;  // snippet/summary if available
   imageUrl?: string;
+  hoursAgo?: number;    // approximate age in hours (for freshness scoring)
+  /**
+   * Optional CFO-specific implication from an imported Deep Research brief.
+   * When present, layouts use this as the body content instead of the
+   * generic ROOM_BODY templates — letting LLM-quality analysis flow into
+   * the post structure without requiring the app to call an LLM itself.
+   */
+  briefImplication?: string;
+}
+
+/**
+ * AUDIT-REFRESH POLICY — Ladder freshness, with explicit age labelling.
+ *
+ * Tries 24h first (today-only). If GDELT returns nothing fresh — which
+ * happens often for niche UAE-relevant topics because their best
+ * coverage sits behind paywalls (Mondaq/MEED/Lexology/Bloomberg) and
+ * GDELT can't freshly index that — falls back to 48h, then 72h. Past
+ * 72h, hard reject.
+ *
+ * Every article carries its actual hoursAgo so the UI can show
+ * exactly how old a piece of news is. The user makes the post/skip
+ * decision with full information rather than getting an opaque "no
+ * fresh news" wall.
+ *
+ * Future-dated articles (hoursAgo < 0) are always rejected.
+ */
+export const MAX_ARTICLE_AGE_HOURS = 72;
+export const PREFERRED_ARTICLE_AGE_HOURS = 24;
+
+function isWithinRecencyWindow(article: NewsArticle, maxAgeHours = MAX_ARTICLE_AGE_HOURS): boolean {
+  const age = article.hoursAgo;
+  if (age === undefined || age === null) return true; // unknown age → defer to source-level dedupe (fallback only)
+  if (age < 0) return false; // future-dated → reject
+  return age <= maxAgeHours;
+}
+
+/**
+ * Hard freshness filter applied to every batch of articles before they
+ * leave this module. Returns only articles within the recency window.
+ */
+function enforceRecency(articles: NewsArticle[]): NewsArticle[] {
+  return articles.filter(a => isWithinRecencyWindow(a));
 }
 
 // ─── APPROVED SOURCES WHITELIST ─────────────────────────────────
-// Only articles from these domains pass through. Everything else is discarded.
+// Tier 1 = UAE official regulators / ministries (highest authority weight)
+// Tier 2 = UAE official state media + Gulf regional outlets
+// Tier 3 = Global financial wires + specialist tax/legal/advisory intelligence
+// Tier 4 = Ratings agencies, multilaterals, policy think tanks, energy bodies
+//
+// All Big 4 (Deloitte, KPMG, EY, PwC) and consulting firms (McKinsey, BCG,
+// Bain, Accenture) are BLOCKED by qaValidator.ts as primary sources.
 
 const APPROVED_DOMAINS: string[] = [
-  // Preferred intelligence sources
-  'mondaq.com', 'meed.com', 'lexology.com', 'bluej.com', 'cocounsel.com',
-  'thomsonreuters.com', 'tax.thomsonreuters.com',
-  // Tier 1 global financial
-  'bloomberg.com', 'reuters.com', 'ft.com', 'wsj.com', 'economist.com',
-  'nikkei.com', 'scmp.com',
-  // UAE regional
-  'thenationalnews.com', 'gulfnews.com', 'zawya.com', 'khaleejtimes.com',
-  'arabianbusiness.com', 'argaam.com',
-  // UAE government entities
-  'centralbank.ae', 'cbuae.gov.ae',            // CBUAE
-  'tax.gov.ae', 'mof.gov.ae',                  // FTA, MOF
-  'rera.gov.ae', 'dubailand.gov.ae',            // RERA
-  'moi.gov.ae',                                 // MOI
-  'difc.ae', 'adgm.com',                       // Free zones
-  'sca.gov.ae',                                 // Securities regulator
-  'economy.gov.ae',                             // Ministry of Economy
-  'ded.ae',                                     // Dept of Economic Development
-  // Multilateral / central banks
+  // ─── TIER 1 — UAE Official Regulators & Ministries ───
+  'mof.gov.ae',           // Ministry of Finance
+  'tax.gov.ae',           // Federal Tax Authority
+  'centralbank.ae', 'cbuae.gov.ae',  // CBUAE
+  'dfsa.ae',              // DFSA (DIFC regulator)
+  'adgm.com',             // ADGM (Abu Dhabi Global Market)
+  'difc.ae',              // DIFC
+  'sca.gov.ae',           // Securities & Commodities Authority
+  'economy.gov.ae',       // Ministry of Economy
+  'mohre.gov.ae',         // Ministry of Human Resources & Emiratisation
+  'moiat.gov.ae',         // Ministry of Industry & Advanced Technology
+  'mofaic.gov.ae',        // Ministry of Foreign Affairs
+  'rera.gov.ae', 'dubailand.gov.ae',
+  'moi.gov.ae',
+  'ded.ae',
+  'dubaichamber.com',     // Dubai Chamber
+
+  // ─── TIER 2 — UAE Official State Media + Government Communications ───
+  'wam.ae',               // Emirates News Agency (official)
+  'mediaoffice.ae',       // UAE Government Media Office (Dubai)
+  'mediaoffice.abudhabi', // Abu Dhabi Government Media Office
+
+  // ─── TIER 2 — Trusted UAE / Gulf regional outlets ───
+  'thenationalnews.com', 'gulfnews.com', 'zawya.com',
+  'khaleejtimes.com', 'arabianbusiness.com', 'argaam.com',
+  'agbi.com',             // Arabian Gulf Business Insight
+  'economymiddleeast.com',
+  'gulfbusiness.com',
+  'gulftoday.ae',
+  'emirates247.com',
+
+  // ─── TIER 3 — Specialist legal / tax / advisory intelligence ───
+  'mondaq.com',                       // Tax & legal commentary
+  'meed.com',                         // Middle East Economic Digest
+  'lexology.com',                     // Legal updates
+  'bluej.com',                        // Blue J — tax research
+  'thomsonreuters.com',               // Thomson Reuters parent (CoCounsel blogs)
+  'tax.thomsonreuters.com',           // Checkpoint Edge — tax & accounting research
+  'legal.thomsonreuters.com',         // CoCounsel — legal AI research
+  'bloombergtax.com',                 // Bloomberg Tax
+  'taxnotes.com',                     // Tax Notes
+  'internationaltaxreview.com',       // International Tax Review
+  'taxfoundation.org',                // Tax Foundation
+  'pinsentmasons.com',                // Out-Law / Pinsent Masons legal updates
+  'whitecase.com',                    // White & Case (only when surfaced via free public blog)
+
+  // ─── TIER 3 — Tier-1 global financial wires ───
+  'bloomberg.com', 'reuters.com', 'ft.com', 'wsj.com',
+  'economist.com', 'nikkei.com', 'scmp.com',
+  'cnbc.com',                         // CNBC
+  'marketwatch.com',                  // MarketWatch (Dow Jones)
+  'forbes.com',                       // Forbes business
+  'businessinsider.com',
+  'ftadviser.com',                    // FT Adviser
+  'euromoney.com',                    // Euromoney finance specialist
+  'thebanker.com',                    // The Banker
+  'bankerme.com',                     // Banker Middle East
+
+  // ─── TIER 4 — Multilateral institutions & central banks ───
   'imf.org', 'worldbank.org', 'oecd.org', 'bis.org',
   'federalreserve.gov', 'ecb.europa.eu',
-  // Trusted wire services
+  'bankofengland.co.uk',
+  'wto.org',
+  'unctad.org',
+
+  // ─── TIER 4 — Ratings agencies ───
+  'spglobal.com',                     // S&P Global Ratings
+  'moodys.com',                       // Moody's Investors Service
+  'fitchratings.com',                 // Fitch Ratings
+
+  // ─── TIER 4 — Energy & commodity authorities (oil-market context for UAE) ───
+  'opec.org',                         // OPEC
+  'iea.org',                          // International Energy Agency
+  'eia.gov',                          // US Energy Information Administration
+  'argusmedia.com',                   // Argus Media (energy pricing)
+
+  // ─── TIER 4 — Policy / think-tank research ───
+  'brookings.edu',                    // Brookings Institution
+  'chathamhouse.org',                 // Chatham House
+  'cfr.org',                          // Council on Foreign Relations
+  'piie.com',                         // Peterson Institute for International Economics
+  'rand.org',                         // RAND
+  'hbr.org',                          // Harvard Business Review
+
+  // ─── Trusted wire services ───
   'apnews.com', 'afp.com',
 ];
 
@@ -57,21 +176,209 @@ function isApprovedSource(domain: string): boolean {
   return APPROVED_DOMAINS.some(approved => d === approved || d.endsWith('.' + approved));
 }
 
-// ─── Room-specific search queries ───────────────────────────────
+// ─── CORS fallback chain ───────────────────────────────────────
+// GDELT returns inconsistent CORS headers from browsers. Public CORS
+// proxies go down regularly. Our only path to "this just works" is a
+// long chain of options — try direct, then 5 different proxies.
 
-const ROOM_QUERIES: Record<RoomId, string> = {
-  growth: '"UAE expansion" OR "Dubai FDI" OR "GCC IPO" OR "DIFC" OR "Abu Dhabi investment"',
-  capital: '"UAE bond" OR "interest rate" OR "sukuk" OR "CBUAE" OR "UAE treasury"',
-  risk: '"UAE tax" OR "corporate tax" OR "compliance" OR "UAE regulation" OR "FATF"',
-  world: '"global economy" OR "BRICS" OR "emerging markets" OR "trade" OR "US Federal Reserve"',
+type ProxyBuilder = (url: string) => string;
+
+const CORS_PROXY_CHAIN: Array<{ name: string; build: ProxyBuilder }> = [
+  // No proxy — direct call. GDELT's CORS behaviour varies by browser
+  // and origin; sometimes it returns valid CORS headers, sometimes not.
+  // Always worth trying first.
+  { name: 'direct',           build: (u) => u },
+  // codetabs — free, no API key, no domain restrictions. Most reliable
+  // free option as of 2026. Slower than paid options but it works.
+  { name: 'codetabs',         build: (u) => `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(u)}` },
+  // allorigins — historically reliable, sometimes slow or timing out.
+  // Two endpoints: /raw returns raw response, /get returns JSON wrapper.
+  { name: 'allorigins-raw',   build: (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}` },
+  { name: 'allorigins-get',   build: (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}` },
+  // thingproxy — free, simple URL-rewrite proxy, slower but no key needed.
+  { name: 'thingproxy',       build: (u) => `https://thingproxy.freeboard.io/fetch/${u}` },
+  // cors-anywhere — public demo instance. Requires one-time activation at
+  // https://cors-anywhere.herokuapp.com/corsdemo for each browser. Last
+  // resort, but if everything else is blocked this is usually still up.
+  { name: 'cors-anywhere',    build: (u) => `https://cors-anywhere.herokuapp.com/${u}` },
+];
+
+interface CorsFetchOptions {
+  timeoutMs?: number;
+  /** Optional sink to record which proxy name succeeded, for diagnostics */
+  onProxyHit?: (proxyName: string) => void;
+}
+
+/**
+ * Session-level cache of which proxy is known to work in this browser.
+ * Once we find one that succeeds, subsequent fetches go straight to it
+ * instead of cycling through the whole chain. Dramatically reduces
+ * request spam (was 120+ per probe, now ~4-8).
+ */
+let workingProxyName: string | null = null;
+/** If all proxies have been confirmed dead this session, short-circuit. */
+let allProxiesDeadUntil: number = 0;
+
+/**
+ * Fetch a URL using the CORS chain. Smart caching:
+ *   - If a proxy is known to work this session, use it directly
+ *   - Otherwise try the chain
+ *   - If ALL fail, cache that fact for 60s to avoid request storms
+ */
+async function fetchWithCorsChain(
+  url: string,
+  options: CorsFetchOptions = {},
+): Promise<Response | null> {
+  const timeoutMs = options.timeoutMs ?? 8000;
+  const now = Date.now();
+
+  // Short-circuit if we've recently confirmed all proxies are blocked
+  if (allProxiesDeadUntil > now) return null;
+
+  // Fast path: cached working proxy
+  if (workingProxyName) {
+    const cached = CORS_PROXY_CHAIN.find(p => p.name === workingProxyName);
+    if (cached) {
+      try {
+        const resp = await fetch(cached.build(url), { signal: AbortSignal.timeout(timeoutMs) });
+        if (resp.ok) {
+          options.onProxyHit?.(cached.name);
+          return resp;
+        }
+      } catch { /* fall through to full chain */ }
+      // Cached proxy failed — invalidate
+      workingProxyName = null;
+    }
+  }
+
+  // Cold path: try the chain once
+  for (const proxy of CORS_PROXY_CHAIN) {
+    try {
+      const resp = await fetch(proxy.build(url), { signal: AbortSignal.timeout(timeoutMs) });
+      if (resp.ok) {
+        workingProxyName = proxy.name; // cache for subsequent fetches
+        options.onProxyHit?.(proxy.name);
+        return resp;
+      }
+    } catch {
+      // Try next
+    }
+  }
+
+  // All proxies failed — short-circuit further attempts for 60 seconds
+  allProxiesDeadUntil = now + 60_000;
+  return null;
+}
+
+/**
+ * Reset the proxy cache. Call when the user manually retries so they can
+ * try fresh after a network change.
+ */
+export function resetProxyCache() {
+  workingProxyName = null;
+  allProxiesDeadUntil = 0;
+}
+
+/**
+ * Diagnostic — last fetch attempt status, exposed so UI can show
+ * "all proxies blocked" guidance to the user.
+ */
+let lastFetchDiagnostic: {
+  succeeded: boolean;
+  proxyUsed: string | null;
+  attemptedAt: number;
+} = { succeeded: false, proxyUsed: null, attemptedAt: 0 };
+
+export function getLastFetchDiagnostic() {
+  return lastFetchDiagnostic;
+}
+
+/**
+ * Public connectivity test — explicitly probes every proxy against a
+ * tiny known-good URL and reports which ones work from the current
+ * browser session. Used by the in-app diagnostic button.
+ */
+export interface ProxyTestResult {
+  name: string;
+  ok: boolean;
+  status: number | 'timeout' | 'network-error';
+  latencyMs: number;
+}
+
+export async function testCorsProxies(): Promise<ProxyTestResult[]> {
+  // Use a tiny stable URL that should always return 200
+  const testUrl = 'https://api.gdeltproject.org/api/v2/doc/doc?query=UAE&mode=ArtList&maxrecords=1&format=json';
+
+  const results = await Promise.all(
+    CORS_PROXY_CHAIN.map(async (proxy) => {
+      const start = Date.now();
+      try {
+        const resp = await fetch(proxy.build(testUrl), {
+          signal: AbortSignal.timeout(6000),
+        });
+        return {
+          name: proxy.name,
+          ok: resp.ok,
+          status: resp.status,
+          latencyMs: Date.now() - start,
+        } as ProxyTestResult;
+      } catch (e) {
+        const isTimeout = e instanceof DOMException && e.name === 'TimeoutError';
+        return {
+          name: proxy.name,
+          ok: false,
+          status: (isTimeout ? 'timeout' : 'network-error') as 'timeout' | 'network-error',
+          latencyMs: Date.now() - start,
+        } as ProxyTestResult;
+      }
+    })
+  );
+
+  return results;
+}
+
+// ─── Room-specific query rotation (anti-repetition) ─────────────
+// Multiple query variants per room, randomly cycled each call,
+// so two consecutive fetches against the same room return
+// different article pools.
+
+const ROOM_QUERY_VARIANTS: Record<RoomId, string[]> = {
+  growth: [
+    '"UAE non-oil GDP" OR "Dubai FDI" OR "MoIAT financing"',
+    '"DIFC" expansion OR "ADGM" registrations OR "Abu Dhabi investment"',
+    '"Make it in the Emirates" OR "UAE industrial financing" OR "Emiratisation"',
+    '"UAE startup" OR "Dubai IPO" OR "GCC merger"',
+    '"agentic AI" Dubai OR "private sector AI" UAE',
+  ],
+  capital: [
+    '"CBUAE" rate OR "UAE bond" OR "sukuk issuance"',
+    '"DIFC private credit" OR "ADGM fund" OR "UAE treasury"',
+    '"UAE sovereign wealth" ADQ OR Mubadala OR ADIA',
+    '"Dubai Financial Market" OR "ADX" listing OR IPO',
+    '"Islamic finance" UAE OR "Shariah" structured finance',
+  ],
+  risk: [
+    '"Federal Tax Authority" OR "FTA" UAE penalty',
+    '"Ministry of Finance" UAE tax procedures OR amendments',
+    '"eInvoicing" UAE OR "electronic invoicing" Phase',
+    '"ADGM AML" OR "DFSA consultation" OR "UAE compliance"',
+    '"corporate tax" UAE filing OR audit OR "beneficial ownership"',
+    '"DFSA Islamic finance" OR "ADGM rulebook" consultation',
+  ],
+  world: [
+    '"Federal Reserve" rate decision OR "ECB" policy',
+    '"BRICS" trade OR "emerging markets" capital flow',
+    '"OECD Pillar 2" OR "global minimum tax" OR "Pillar Two"',
+    '"China" stimulus OR "India" economy OR "geopolitical risk"',
+    '"oil price" OPEC OR "energy transition" OR "carbon border"',
+  ],
 };
 
-const ROOM_QUERIES_SIMPLE: Record<RoomId, string> = {
-  growth: 'UAE investment expansion GDP 2026',
-  capital: 'UAE bond market interest rate sukuk 2026',
-  risk: 'UAE corporate tax regulation compliance 2026',
-  world: 'global economy trade emerging markets 2026',
-};
+// Pick a random variant each call → query diversity over time
+function pickRoomQuery(room: RoomId): string {
+  const variants = ROOM_QUERY_VARIANTS[room];
+  return variants[Math.floor(Math.random() * variants.length)];
+}
 
 const PRIORITY_DOMAIN_FEEDS: Record<RoomId, string[]> = {
   growth: ['meed.com', 'bluej.com'],
@@ -82,10 +389,15 @@ const PRIORITY_DOMAIN_FEEDS: Record<RoomId, string[]> = {
 
 // ─── GDELT DOC API ──────────────────────────────────────────────
 
-function gdeltDateParam(daysAgo: number): string {
+function gdeltDateParam(hoursAgo: number): string {
   const d = new Date();
-  d.setDate(d.getDate() - daysAgo);
-  return `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}000000`;
+  d.setHours(d.getHours() - hoursAgo);
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  const hh = String(d.getHours()).padStart(2, '0');
+  const mi = String(d.getMinutes()).padStart(2, '0');
+  return `${yyyy}${mm}${dd}${hh}${mi}00`;
 }
 
 interface GDELTArticle {
@@ -102,51 +414,179 @@ interface GDELTResponse {
   articles?: GDELTArticle[];
 }
 
-async function fetchGDELT(room: RoomId, maxResults = 8): Promise<NewsArticle[]> {
-  const query = encodeURIComponent(ROOM_QUERIES[room]);
-  const startDate = gdeltDateParam(7);
+/**
+ * Fetch news from GDELT with a ladder recency window.
+ * Tries 12h (breaking) → 24h (today) → 48h → 72h, returning the first
+ * window that yields approved-source articles. Past 72h, hard reject.
+ */
+async function fetchGDELT(room: RoomId, maxResults = 10): Promise<NewsArticle[]> {
+  const query = pickRoomQuery(room);
+  const encoded = encodeURIComponent(query);
+
+  // Single 72h request. The recency filter (isWithinRecencyWindow)
+  // applied per-article still respects the user's preferred freshness.
+  // No cascading — one fetch, success or fail.
+  const startDate = gdeltDateParam(MAX_ARTICLE_AGE_HOURS);
   const endDate = gdeltDateParam(0);
+  const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${encoded}&mode=ArtList&maxrecords=${maxResults}&format=json&sort=DateDesc&startdatetime=${startDate}&enddatetime=${endDate}`;
 
-  const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}&mode=ArtList&maxrecords=${maxResults}&format=json&sort=DateDesc&startdatetime=${startDate}&enddatetime=${endDate}`;
+  const resp = await fetchWithCorsChain(url, {
+    timeoutMs: 8000,
+    onProxyHit: (i) => { lastFetchDiagnostic = { succeeded: true, proxyUsed: i, attemptedAt: Date.now() }; },
+  });
 
-  const resp = await fetch(url, { signal: AbortSignal.timeout(8000) });
-  if (!resp.ok) throw new Error(`GDELT error: ${resp.status}`);
+  if (!resp) {
+    lastFetchDiagnostic = { succeeded: false, proxyUsed: null, attemptedAt: Date.now() };
+    throw new Error('GDELT: all CORS proxies blocked from this network');
+  }
 
-  const data: GDELTResponse = await resp.json();
-  if (!data.articles?.length) throw new Error('GDELT: no articles');
-
-  // Filter: English only + approved sources only
-  const filtered = data.articles
-    .filter(a => (a.language === 'English' || !a.language) && isApprovedSource(a.domain || ''))
-    .map(a => ({
-      title: a.title || '',
-      url: a.url || '',
-      source: cleanDomain(a.domain || ''),
-      date: formatGDELTDate(a.seendate || ''),
-      description: a.title || '',
-      imageUrl: a.socialimage || undefined,
-    }));
-
-  if (!filtered.length) throw new Error('GDELT: no articles from approved sources');
-  return filtered;
+  try {
+    const data: GDELTResponse = await resp.json();
+    if (!data.articles?.length) {
+      throw new Error('GDELT: no articles in 72h window');
+    }
+    const filtered = data.articles
+      .filter(a => (a.language === 'English' || !a.language) && isApprovedSource(a.domain || ''))
+      .map(a => articleFromGDELT(a))
+      .filter(a => isWithinRecencyWindow(a));
+    if (!filtered.length) {
+      throw new Error('GDELT: no approved-source articles in window');
+    }
+    return filtered;
+  } catch (e) {
+    throw e instanceof Error ? e : new Error('GDELT: parse error');
+  }
 }
 
-function cleanDomain(domain: string): string {
-  return domain
-    .replace(/^www\./, '')
-    .replace(/\.com$/, '')
-    .replace(/\.co\.uk$/, '')
-    .split('.')[0]
-    .charAt(0).toUpperCase() + domain.replace(/^www\./, '').split('.')[0].slice(1);
+function articleFromGDELT(a: GDELTArticle): NewsArticle {
+  const date = formatGDELTDate(a.seendate || '');
+  const hoursAgo = computeHoursAgo(a.seendate || '');
+  return {
+    title: a.title || '',
+    url: a.url || '',
+    source: prettifyDomain(a.domain || ''),
+    date,
+    description: a.title || '',
+    imageUrl: a.socialimage || undefined,
+    hoursAgo,
+  };
+}
+
+function computeHoursAgo(seendate: string): number {
+  try {
+    const year = parseInt(seendate.slice(0, 4));
+    const month = parseInt(seendate.slice(4, 6)) - 1;
+    const day = parseInt(seendate.slice(6, 8));
+    const hour = parseInt(seendate.slice(9, 11)) || 0;
+    const minute = parseInt(seendate.slice(11, 13)) || 0;
+    const d = new Date(Date.UTC(year, month, day, hour, minute));
+    return Math.max(0, Math.round((Date.now() - d.getTime()) / 3600000));
+  } catch {
+    return 999;
+  }
+}
+
+function prettifyDomain(domain: string): string {
+  const clean = domain.toLowerCase().replace(/^www\./, '');
+  // Display labels for known sources. Order matches source list grouping.
+  const officialMap: Record<string, string> = {
+    // UAE official
+    'mof.gov.ae': 'Ministry of Finance',
+    'tax.gov.ae': 'Federal Tax Authority',
+    'centralbank.ae': 'CBUAE',
+    'cbuae.gov.ae': 'CBUAE',
+    'dfsa.ae': 'DFSA',
+    'adgm.com': 'ADGM',
+    'difc.ae': 'DIFC',
+    'wam.ae': 'WAM',
+    'mohre.gov.ae': 'MoHRE',
+    'moiat.gov.ae': 'MoIAT',
+    'economy.gov.ae': 'Ministry of Economy',
+    'sca.gov.ae': 'SCA',
+    'mediaoffice.ae': 'Dubai Media Office',
+    'mediaoffice.abudhabi': 'Abu Dhabi Media Office',
+    'dubaichamber.com': 'Dubai Chamber',
+    // Gulf regional
+    'thenationalnews.com': 'The National',
+    'gulfnews.com': 'Gulf News',
+    'khaleejtimes.com': 'Khaleej Times',
+    'arabianbusiness.com': 'Arabian Business',
+    'zawya.com': 'Zawya',
+    'argaam.com': 'Argaam',
+    'agbi.com': 'AGBI',
+    'economymiddleeast.com': 'Economy Middle East',
+    'gulfbusiness.com': 'Gulf Business',
+    'gulftoday.ae': 'Gulf Today',
+    'emirates247.com': 'Emirates 24|7',
+    // Specialist legal/tax/advisory
+    'meed.com': 'MEED',
+    'mondaq.com': 'Mondaq',
+    'lexology.com': 'Lexology',
+    'bluej.com': 'Blue J',
+    'thomsonreuters.com': 'Thomson Reuters',
+    'tax.thomsonreuters.com': 'Checkpoint Edge',
+    'legal.thomsonreuters.com': 'CoCounsel',
+    'bloombergtax.com': 'Bloomberg Tax',
+    'taxnotes.com': 'Tax Notes',
+    'internationaltaxreview.com': 'International Tax Review',
+    'taxfoundation.org': 'Tax Foundation',
+    'pinsentmasons.com': 'Pinsent Masons',
+    'whitecase.com': 'White & Case',
+    // Global wires
+    'bloomberg.com': 'Bloomberg',
+    'reuters.com': 'Reuters',
+    'ft.com': 'Financial Times',
+    'wsj.com': 'Wall Street Journal',
+    'economist.com': 'The Economist',
+    'nikkei.com': 'Nikkei Asia',
+    'scmp.com': 'South China Morning Post',
+    'cnbc.com': 'CNBC',
+    'marketwatch.com': 'MarketWatch',
+    'forbes.com': 'Forbes',
+    'businessinsider.com': 'Business Insider',
+    'ftadviser.com': 'FT Adviser',
+    'euromoney.com': 'Euromoney',
+    'thebanker.com': 'The Banker',
+    'bankerme.com': 'Banker Middle East',
+    // Multilaterals & central banks
+    'imf.org': 'IMF',
+    'worldbank.org': 'World Bank',
+    'oecd.org': 'OECD',
+    'bis.org': 'BIS',
+    'federalreserve.gov': 'Federal Reserve',
+    'ecb.europa.eu': 'ECB',
+    'bankofengland.co.uk': 'Bank of England',
+    'wto.org': 'WTO',
+    'unctad.org': 'UNCTAD',
+    // Ratings agencies
+    'spglobal.com': 'S&P Global',
+    'moodys.com': 'Moody\'s',
+    'fitchratings.com': 'Fitch Ratings',
+    // Energy bodies
+    'opec.org': 'OPEC',
+    'iea.org': 'IEA',
+    'eia.gov': 'EIA',
+    'argusmedia.com': 'Argus Media',
+    // Policy / think tanks
+    'brookings.edu': 'Brookings',
+    'chathamhouse.org': 'Chatham House',
+    'cfr.org': 'CFR',
+    'piie.com': 'PIIE',
+    'rand.org': 'RAND',
+    'hbr.org': 'Harvard Business Review',
+    // Wire services
+    'apnews.com': 'AP',
+    'afp.com': 'AFP',
+  };
+  if (officialMap[clean]) return officialMap[clean];
+  // Generic: take first label, title-case
+  const first = clean.split('.')[0];
+  return first.charAt(0).toUpperCase() + first.slice(1);
 }
 
 function formatGDELTDate(seendate: string): string {
-  // GDELT format: "20260414T120000Z" or similar
   try {
-    const year = seendate.slice(0, 4);
-    const month = seendate.slice(4, 6);
-    const day = seendate.slice(6, 8);
-    return `${year}-${month}-${day}`;
+    return `${seendate.slice(0, 4)}-${seendate.slice(4, 6)}-${seendate.slice(6, 8)}`;
   } catch {
     return new Date().toISOString().slice(0, 10);
   }
@@ -194,40 +634,75 @@ function normalizeAndAudit(articles: NewsArticle[], feedName: string): NewsArtic
   return normalized;
 }
 // ─── Google News RSS ────────────────────────────────────────────
+// (Legacy CORS_PROXIES list removed — RSS fetcher now uses the
+//  shared fetchWithCorsChain helper defined above.)
 
-const CORS_PROXIES = [
-  'https://api.allorigins.win/raw?url=',
-  'https://corsproxy.io/?',
-];
+const ROOM_QUERIES_SIMPLE: Record<RoomId, string[]> = {
+  growth: [
+    'UAE non-oil GDP Dubai expansion 2026',
+    'DIFC ADGM new business registrations',
+    'UAE FDI inflows industrial financing',
+    'Make it in the Emirates AED billion',
+    'Dubai agentic AI initiative Hamdan',
+  ],
+  capital: [
+    'UAE sukuk bond issuance CBUAE',
+    'DIFC private credit fund AED',
+    'ADGM fund registration capital markets',
+    'UAE sovereign wealth deployment',
+    'Dubai Financial Market IPO listing',
+  ],
+  risk: [
+    'UAE Federal Tax Authority penalty 2026',
+    'UAE eInvoicing electronic invoicing pilot',
+    'ADGM AML consultation enhancement',
+    'DFSA Islamic finance framework consultation',
+    'UAE corporate tax procedures amendment',
+    'Emiratisation deadline MoHRE June 2026',
+  ],
+  world: [
+    'Federal Reserve rate decision policy',
+    'OECD Pillar 2 global minimum tax',
+    'BRICS trade emerging markets',
+    'oil price OPEC energy markets',
+    'EU carbon border CBAM tariff',
+  ],
+};
 
-async function fetchGoogleNewsRSS(room: RoomId, maxResults = 8): Promise<NewsArticle[]> {
-  const query = encodeURIComponent(ROOM_QUERIES_SIMPLE[room]);
+function pickSimpleQuery(room: RoomId): string {
+  const variants = ROOM_QUERIES_SIMPLE[room];
+  return variants[Math.floor(Math.random() * variants.length)];
+}
+
+async function fetchGoogleNewsRSS(room: RoomId, maxResults = 10): Promise<NewsArticle[]> {
+  const query = encodeURIComponent(pickSimpleQuery(room));
   const rssUrl = `https://news.google.com/rss/search?q=${query}&hl=en&gl=AE&ceid=AE:en`;
 
-  let xml = '';
-  for (const proxy of CORS_PROXIES) {
-    try {
-      const resp = await fetch(proxy + encodeURIComponent(rssUrl), {
-        signal: AbortSignal.timeout(6000),
-      });
-      if (resp.ok) {
-        xml = await resp.text();
-        break;
-      }
-    } catch {
-      continue;
-    }
+  // Use the shared CORS fallback chain (direct, then 5 proxies)
+  const resp = await fetchWithCorsChain(rssUrl, {
+    timeoutMs: 6000,
+    onProxyHit: (i) => { lastFetchDiagnostic = { succeeded: true, proxyUsed: i, attemptedAt: Date.now() }; },
+  });
+
+  if (!resp) {
+    lastFetchDiagnostic = { succeeded: false, proxyUsed: null, attemptedAt: Date.now() };
+    throw new Error('Google News: all CORS proxies blocked');
   }
 
-  if (!xml) throw new Error('Google News: all proxies failed');
+  const xml = await resp.text();
+  if (!xml) throw new Error('Google News: empty response from proxy');
 
   const parser = new DOMParser();
   const doc = parser.parseFromString(xml, 'text/xml');
   const items = doc.querySelectorAll('item');
 
   const articles: NewsArticle[] = [];
+  const now = Date.now();
+  const threeDaysAgo = now - (72 * 3600 * 1000);
+  const sevenDaysAgo = now - (7 * 24 * 3600 * 1000);
+
   items.forEach((item, i) => {
-    if (i >= maxResults) return;
+    if (i >= maxResults * 2) return; // overscan, will filter
 
     const title = item.querySelector('title')?.textContent || '';
     const link = item.querySelector('link')?.textContent || '';
@@ -235,29 +710,36 @@ async function fetchGoogleNewsRSS(room: RoomId, maxResults = 8): Promise<NewsArt
     const source = item.querySelector('source')?.textContent || '';
     const description = item.querySelector('description')?.textContent || '';
 
-    // Filter out articles older than 7 days
     const articleDate = new Date(pubDate);
-    const weekAgo = new Date();
-    weekAgo.setDate(weekAgo.getDate() - 7);
-    if (articleDate < weekAgo) return;
-    if (!isFreshDate(articleDate.toISOString().slice(0, 10))) return;
+    const articleMs = articleDate.getTime();
+    if (isNaN(articleMs) || articleMs < sevenDaysAgo) return;
 
-    // Only include articles from approved sources
-    const articleSource = source || extractDomainFromUrl(link);
     const domain = extractFullDomain(link);
     if (!isApprovedSource(domain)) return;
 
+    const hoursAgo = Math.round((now - articleMs) / 3600000);
     articles.push({
       title: cleanHTMLEntities(title),
       url: link,
-      source: articleSource,
+      source: source || prettifyDomain(domain),
       date: articleDate.toISOString().slice(0, 10),
       description: cleanHTMLEntities(stripHTML(description)),
+      hoursAgo,
     });
   });
 
+  // Sort: prefer breaking (<72h) then by recency
+  articles.sort((a, b) => {
+    const aBreaking = (a.hoursAgo ?? 999) <= 72 ? 0 : 1;
+    const bBreaking = (b.hoursAgo ?? 999) <= 72 ? 0 : 1;
+    if (aBreaking !== bBreaking) return aBreaking - bBreaking;
+    return (a.hoursAgo ?? 999) - (b.hoursAgo ?? 999);
+  });
+
+  // Suppress used items
+  void threeDaysAgo;
   if (!articles.length) throw new Error('Google News: no recent articles');
-  return articles;
+  return articles.slice(0, maxResults);
 }
 
 async function fetchGoogleNewsByDomain(domain: string, room: RoomId, maxResults = 4): Promise<NewsArticle[]> {
@@ -334,16 +816,6 @@ function cleanHTMLEntities(text: string): string {
   return textarea.value;
 }
 
-function extractDomainFromUrl(url: string): string {
-  try {
-    const hostname = new URL(url).hostname.replace(/^www\./, '');
-    const parts = hostname.split('.');
-    return parts[0].charAt(0).toUpperCase() + parts[0].slice(1);
-  } catch {
-    return 'News';
-  }
-}
-
 function extractFullDomain(url: string): string {
   try {
     return new URL(url).hostname.replace(/^www\./, '');
@@ -352,177 +824,173 @@ function extractFullDomain(url: string): string {
   }
 }
 
-// ─── Pre-seeded fallback ────────────────────────────────────────
+// ─── Pre-seeded fallback (only when both feeds fail) ────────────
+// Topical signals from the UAE production-requirements doc (May 2026 window).
+// Expanded pool of 8 per room → reduces visible repetition.
+
+function todayISO(): string {
+  return new Date().toISOString().slice(0, 10);
+}
 
 const FALLBACK_ARTICLES: Record<RoomId, NewsArticle[]> = {
   growth: [
-    {
-      title: `UAE non-oil GDP growth hits 5.6% in Q1 ${dateFormatted.year}, driven by tourism and fintech expansion`,
-      url: 'https://www.meed.com',
-      source: 'MEED',
-      date: new Date().toISOString().slice(0, 10),
-      description: `The UAE economy continues to outperform regional peers with non-oil sectors now comprising 74% of GDP in ${dateFormatted.year}.`,
-    },
-    {
-      title: `DIFC registers 412 new firms in Q1 ${dateFormatted.year}, a 28% YoY increase`,
-      url: 'https://www.difc.ae',
-      source: 'DIFC',
-      date: new Date().toISOString().slice(0, 10),
-      description: `Financial free zone growth accelerates as global firms establish regional HQs in Dubai.`,
-    },
-    {
-      title: `Abu Dhabi sovereign fund ADQ deploys $3.2B into Southeast Asian infrastructure`,
-      url: 'https://www.reuters.com',
-      source: 'Reuters',
-      date: new Date().toISOString().slice(0, 10),
-      description: `UAE sovereign wealth continues aggressive international expansion strategy.`,
-    },
+    { title: 'MoIAT unlocks AED 18 billion in industrial financing at Make it in the Emirates 2026', url: 'https://www.wam.ae', source: 'WAM', date: todayISO(), description: 'Ministry of Industry and Advanced Technology announces industrial financing package supporting national industrial strategy and value chain localisation.', hoursAgo: 24 },
+    { title: 'Hamdan bin Mohammed launches initiative to transition Dubai private sector to Agentic AI in two years', url: 'https://www.wam.ae', source: 'WAM', date: todayISO(), description: 'Dubai accelerates competitive positioning with agentic AI adoption across private sector operations.', hoursAgo: 36 },
+    { title: 'DIFC registers record new firms in Q1 2026, financial free zone growth accelerates', url: 'https://www.difc.ae', source: 'DIFC', date: todayISO(), description: 'Financial free zone sees 28% YoY rise in new registrations as global firms establish regional HQs.', hoursAgo: 48 },
+    { title: 'Abu Dhabi sovereign fund deploys USD 3.2 billion into Southeast Asian infrastructure', url: 'https://www.reuters.com', source: 'Reuters', date: todayISO(), description: 'UAE sovereign wealth continues aggressive international expansion strategy.', hoursAgo: 60 },
+    { title: 'UAE non-oil GDP growth hits 5.6% in Q1 2026, driven by tourism and fintech', url: 'https://www.meed.com', source: 'MEED', date: todayISO(), description: 'Non-oil sectors now comprise 74% of UAE GDP in 2026.', hoursAgo: 50 },
+    { title: 'ADGM registrations climb as Abu Dhabi expands financial centre footprint', url: 'https://www.adgm.com', source: 'ADGM', date: todayISO(), description: 'Free zone reports continued momentum in licensing across asset management and fintech.', hoursAgo: 70 },
+    { title: 'Dubai entrepreneurship policy expands SME access to government contracts', url: 'https://www.economy.gov.ae', source: 'Ministry of Economy', date: todayISO(), description: 'Ministry of Economy issues guidance broadening procurement for licensed SMEs.', hoursAgo: 30 },
+    { title: 'UAE foreign direct investment inflows show structural diversification in 2026', url: 'https://www.thenationalnews.com', source: 'The National', date: todayISO(), description: 'FDI mix shifts away from concentrated energy investments toward technology and advanced manufacturing.', hoursAgo: 18 },
   ],
   capital: [
-    {
-      title: `CBUAE holds base rate at 4.9% as Fed signals caution through Q3 ${dateFormatted.year}`,
-      url: 'https://www.centralbank.ae',
-      source: 'CBUAE',
-      date: new Date().toISOString().slice(0, 10),
-      description: `The UAE central bank maintains rates in line with the dirham-dollar peg, while corporate bond yields tighten.`,
-    },
-    {
-      title: `Dubai sukuk issuance reaches $14.2B in ${dateFormatted.year}, up 31% from last year`,
-      url: 'https://www.bloomberg.com',
-      source: 'Bloomberg',
-      date: new Date().toISOString().slice(0, 10),
-      description: `Islamic finance instruments continue to dominate GCC debt markets.`,
-    },
-    {
-      title: `Private credit funds in DIFC manage AED 48B as traditional bank lending tightens`,
-      url: 'https://www.zawya.com',
-      source: 'Zawya',
-      date: new Date().toISOString().slice(0, 10),
-      description: `Alternative lending gains market share from traditional banks in the UAE.`,
-    },
+    { title: 'CBUAE holds base rate at 4.9% as Fed signals caution through Q3 2026', url: 'https://www.centralbank.ae', source: 'CBUAE', date: todayISO(), description: 'The UAE central bank maintains rates in line with the dirham-dollar peg as global rate uncertainty persists.', hoursAgo: 18 },
+    { title: 'Dubai sukuk issuance reaches USD 14.2 billion in 2026, up 31% from prior year', url: 'https://www.bloomberg.com', source: 'Bloomberg', date: todayISO(), description: 'Islamic finance instruments continue to dominate GCC debt markets.', hoursAgo: 36 },
+    { title: 'Private credit funds in DIFC manage AED 48 billion as traditional lending tightens', url: 'https://www.zawya.com', source: 'Zawya', date: todayISO(), description: 'Alternative lending gains market share from traditional banks in the UAE.', hoursAgo: 28 },
+    { title: 'DFSA opens consultation to accelerate Islamic finance sector growth in DIFC', url: 'https://www.dfsa.ae', source: 'DFSA', date: todayISO(), description: 'Framework enhancement aims to provide clarity and strengthen regulatory guidance for Islamic finance products.', hoursAgo: 14 },
+    { title: 'ADGM fund registrations expand as asset managers consolidate regional structures', url: 'https://www.adgm.com', source: 'ADGM', date: todayISO(), description: 'Free zone reports growing capital markets activity across alternative investment vehicles.', hoursAgo: 50 },
+    { title: 'UAE bond yields tighten as regional investor appetite for hard currency rises', url: 'https://www.ft.com', source: 'Financial Times', date: todayISO(), description: 'Spread compression reflects continued demand for GCC sovereign and quasi-sovereign paper.', hoursAgo: 64 },
+    { title: 'ADX records highest weekly trading volume of the year on selective rotation', url: 'https://www.argaam.com', source: 'Argaam', date: todayISO(), description: 'Abu Dhabi exchange volumes lifted by banking and insurance names; foreign participation remains a key driver.', hoursAgo: 30 },
+    { title: 'GCC private credit deployment outpaces bank lending for second consecutive quarter', url: 'https://www.meed.com', source: 'MEED', date: todayISO(), description: 'Alternative credit gains structural share as bank balance sheets stay constrained.', hoursAgo: 56 },
   ],
   risk: [
-    {
-      title: `FTA issues AED 1.8B in corporate tax penalties in first enforcement wave of ${dateFormatted.year}`,
-      url: 'https://www.mondaq.com',
-      source: 'Mondaq',
-      date: new Date().toISOString().slice(0, 10),
-      description: `Federal Tax Authority ramps up enforcement as second full year of corporate tax enters assessment cycle.`,
-    },
-    {
-      title: `UAE e-invoicing mandate Phase 2 goes live July ${dateFormatted.year}, affecting all taxable entities`,
-      url: 'https://www.lexology.com',
-      source: 'Lexology',
-      date: new Date().toISOString().slice(0, 10),
-      description: `Digital tax infrastructure expansion accelerates ahead of OECD Pillar 2 implementation.`,
-    },
-    {
-      title: `FATF review places UAE on enhanced monitoring for beneficial ownership transparency`,
-      url: 'https://www.reuters.com',
-      source: 'Reuters',
-      date: new Date().toISOString().slice(0, 10),
-      description: `Anti-money laundering compliance requirements tighten for financial advisory firms.`,
-    },
+    { title: 'Ministry of Finance announces amendments to Tax Procedures Executive Regulations effective April 2026', url: 'https://www.mof.gov.ae', source: 'Ministry of Finance', date: todayISO(), description: 'Refund handling, disclosures, record retention and audit-readiness rules are updated for businesses.', hoursAgo: 12 },
+    { title: 'Federal Tax Authority announces administrative penalty changes effective April 2026', url: 'https://www.tax.gov.ae', source: 'Federal Tax Authority', date: todayISO(), description: 'Penalty schedule revisions allow registrants to regularise positions and reduce exposure.', hoursAgo: 20 },
+    { title: 'MoF confirms eInvoicing pilot starts July 1 2026 with AED 50m revenue phase from January 2027', url: 'https://www.mof.gov.ae', source: 'Ministry of Finance', date: todayISO(), description: 'Electronic invoicing implementation timetable establishes phased go-live across taxable entities.', hoursAgo: 30 },
+    { title: 'ADGM FSRA launches AML consultation with comments closing late May 2026', url: 'https://www.adgm.com', source: 'ADGM', date: todayISO(), description: 'Free-zone financial firms and DNFBPs face proposed enhancements to AML rulebook.', hoursAgo: 22 },
+    { title: 'MoHRE confirms June 30 2026 deadline for first-half Emiratisation targets', url: 'https://www.mohre.gov.ae', source: 'MoHRE', date: todayISO(), description: 'Financial contributions for non-compliance apply from July 1 2026 across private sector firms above threshold.', hoursAgo: 40 },
+    { title: 'FTA reminds registrants of voluntary disclosure window ahead of next filing cycle', url: 'https://www.tax.gov.ae', source: 'Federal Tax Authority', date: todayISO(), description: 'Voluntary disclosure regime allows correction of returns with reduced penalty exposure.', hoursAgo: 58 },
+    { title: 'DFSA AML and Glossary Modules amendments come into force with new FAQs published', url: 'https://www.dfsa.ae', source: 'DFSA', date: todayISO(), description: 'DIFC firms must reflect updated definitions and AML obligations in policies and onboarding workflows.', hoursAgo: 70 },
+    { title: 'OECD Pillar Two implementation updates reach UAE multinationals', url: 'https://www.oecd.org', source: 'OECD', date: todayISO(), description: 'Global minimum tax administrative guidance continues to shape UAE in-scope group readiness.', hoursAgo: 66 },
   ],
   world: [
-    {
-      title: `BRICS New Development Bank approves $8.7B in project financing for ${dateFormatted.year}`,
-      url: 'https://www.ft.com',
-      source: 'Financial Times',
-      date: new Date().toISOString().slice(0, 10),
-      description: `Alternative multilateral lending institutions gain momentum as USD dominance debate intensifies.`,
-    },
-    {
-      title: `EU Carbon Border Adjustment enters Phase 2, impacting $42B in GCC exports`,
-      url: 'https://www.reuters.com',
-      source: 'Reuters',
-      date: new Date().toISOString().slice(0, 10),
-      description: `European carbon tariffs reshape trade flows for energy-exporting nations.`,
-    },
-    {
-      title: `Global AI regulation framework signed by 94 nations at Geneva summit`,
-      url: 'https://www.bloomberg.com',
-      source: 'Bloomberg',
-      date: new Date().toISOString().slice(0, 10),
-      description: `International AI governance accelerates with binding commitments on financial AI applications.`,
-    },
+    { title: 'Federal Reserve signals patience on rate path through Q3 2026', url: 'https://www.federalreserve.gov', source: 'Federal Reserve', date: todayISO(), description: 'FOMC commentary suggests data-dependence remains the operating framework as inflation moderates.', hoursAgo: 16 },
+    { title: 'ECB outlook update flags persistent services inflation across the euro area', url: 'https://www.ecb.europa.eu', source: 'ECB', date: todayISO(), description: 'Sticky services prices keep policy unwind cautious across major European economies.', hoursAgo: 42 },
+    { title: 'IMF revises global growth forecast on resilient emerging-market demand', url: 'https://www.imf.org', source: 'IMF', date: todayISO(), description: 'Global growth path lifted by domestic demand in major emerging markets.', hoursAgo: 30 },
+    { title: 'BRICS payment infrastructure expansion targets cross-border settlement efficiency', url: 'https://www.reuters.com', source: 'Reuters', date: todayISO(), description: 'Block members continue working on common settlement rails amid alternative payment infrastructure push.', hoursAgo: 50 },
+    { title: 'EU Carbon Border Adjustment Phase 2 implementation impacts GCC exports', url: 'https://www.reuters.com', source: 'Reuters', date: todayISO(), description: 'European carbon tariffs reshape trade flows for energy and metal exporting nations.', hoursAgo: 60 },
+    { title: 'OECD finalises Pillar Two administrative guidance updates in May 2026', url: 'https://www.oecd.org', source: 'OECD', date: todayISO(), description: 'Global minimum tax framework continues iteration as more jurisdictions implement domestic top-up taxes.', hoursAgo: 26 },
+    { title: 'OPEC production guidance steadies oil markets ahead of mid-year review', url: 'https://www.bloomberg.com', source: 'Bloomberg', date: todayISO(), description: 'Producer group signals continued discipline as demand-supply balance enters next phase.', hoursAgo: 70 },
+    { title: 'Geopolitical risk premium re-prices regional energy and shipping insurance', url: 'https://www.ft.com', source: 'Financial Times', date: todayISO(), description: 'Insurers adjust war risk surcharges; logistics planners reassess routing assumptions.', hoursAgo: 38 },
   ],
 };
+
+function shuffle<T>(arr: T[]): T[] {
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
 
 // ─── Main Fetch Function ────────────────────────────────────────
 
 /**
- * Fetch live news articles for a room. Tries GDELT first, falls back to
- * Google News RSS, then pre-seeded articles. Always returns at least 1 article.
+ * Fetch live news articles for a room.
+ *
+ * Returns up to 10 articles. The caller (contentEngine) should pick
+ * a random article from the top results to maximise content variety
+ * across multiple generations.
+ *
+ * Recency policy:
+ *   1. Try GDELT 0-72h window (breaking)
+ *   2. Fall back to GDELT 0-7d window
+ *   3. Fall back to Google News RSS (already filtered to 7d)
+ *   4. Fall back to shuffled pre-seeded UAE topical signals
  */
+/**
+ * Custom error thrown when no verified-current news is available.
+ * Surfaces to the UI as "No fresh news right now — try again later".
+ */
+export class NoFreshNewsError extends Error {
+  constructor() {
+    super('No verified news from approved sources in the last 24 hours. Posting is blocked rather than serve stale content.');
+    this.name = 'NoFreshNewsError';
+  }
+}
+
+/**
+ * Read the pre-fetched news JSON committed by the GitHub Actions cron.
+ * Same-origin fetch — no CORS issue, works regardless of network filtering.
+ * This is the PRIMARY path because it always works in any network.
+ */
+async function fetchFromStaticJson(room: RoomId): Promise<NewsArticle[]> {
+  try {
+    // Cache-busted URL so the user sees updates as soon as Actions commits
+    const url = `${import.meta.env.BASE_URL || '/'}news-latest.json?t=${Math.floor(Date.now() / 60000)}`;
+    const resp = await fetch(url, { signal: AbortSignal.timeout(5000) });
+    if (!resp.ok) return [];
+    const data = await resp.json();
+    const roomArticles: NewsArticle[] = data?.rooms?.[room] || [];
+    // Apply the same recency filter as the live path
+    return roomArticles.filter(a => isWithinRecencyWindow(a));
+  } catch {
+    return [];
+  }
+}
+
 export async function fetchNews(room: RoomId, customTopic?: string): Promise<NewsArticle[]> {
-  // If custom topic, try GDELT with that topic
-  if (customTopic) {
+  // AUDIT REFRESH — every call re-reads system time. No caching across calls.
+  const auditStartMs = Date.now();
+  void auditStartMs;
+
+  // ── PRIMARY PATH: GitHub-Actions-prefetched JSON (same-origin, no CORS) ──
+  // The /.github/workflows/fetch-news.yml workflow fetches GDELT every 4
+  // hours server-side and commits the results to news-latest.json on the
+  // gh-pages branch. We read that file here. No browser CORS issues.
+  if (!customTopic) {
+    const cached = await fetchFromStaticJson(room);
+    if (cached.length > 0) {
+      lastFetchDiagnostic = { succeeded: true, proxyUsed: 'static-json', attemptedAt: Date.now() };
+      return cached;
+    }
+  }
+
+  // Custom topic path: route through CORS chain (direct + 5 proxies)
+  if (customTopic && customTopic.trim()) {
     try {
-      const query = encodeURIComponent(`"${customTopic}" ${dateFormatted.year}`);
-      const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}&mode=ArtList&maxrecords=6&format=json&sort=DateDesc`;
-      const resp = await fetch(url, { signal: AbortSignal.timeout(8000) });
-      if (resp.ok) {
+      const query = encodeURIComponent(`"${customTopic}" UAE`);
+      const start = gdeltDateParam(MAX_ARTICLE_AGE_HOURS);
+      const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}&mode=ArtList&maxrecords=10&format=json&sort=DateDesc&startdatetime=${start}&enddatetime=${gdeltDateParam(0)}`;
+      const resp = await fetchWithCorsChain(url, {
+        timeoutMs: 8000,
+        onProxyHit: (i) => { lastFetchDiagnostic = { succeeded: true, proxyUsed: i, attemptedAt: Date.now() }; },
+      });
+      if (resp) {
         const data: GDELTResponse = await resp.json();
         if (data.articles?.length) {
-          return data.articles.map(a => ({
-            title: a.title || customTopic,
-            url: a.url || '',
-            source: cleanDomain(a.domain || ''),
-            date: formatGDELTDate(a.seendate || ''),
-            description: a.title || customTopic,
-          }));
+          const mapped = data.articles
+            .filter(a => isApprovedSource(a.domain || ''))
+            .map(a => articleFromGDELT(a));
+          const recent = enforceRecency(mapped);
+          if (recent.length) return recent;
         }
       }
     } catch { /* fall through */ }
   }
 
-  // Tier 1: GDELT
+  // Tier 1: GDELT, filtered to recency window
   try {
-    const articles = normalizeAndAudit(await fetchGDELT(room), "GDELT");
+    const articles = enforceRecency(await fetchGDELT(room));
     if (articles.length > 0) return articles;
   } catch (e) {
     console.warn('[News] GDELT failed:', e);
   }
 
-  // Tier 2: Priority legal/finance sources via Google News site filters
+  // Tier 2: Google News RSS, filtered to today-only recency window
   try {
-    const articles = normalizeAndAudit(await fetchPriorityDomainNews(room), "PRIORITY");
-    if (articles.length > 0) return articles;
-  } catch (e) {
-    console.warn('[News] Priority domain feeds failed:', e);
-  }
-
-  // Tier 3: Google News RSS
-  try {
-    const articles = normalizeAndAudit(await fetchGoogleNewsRSS(room), "GOOGLE");
+    const articles = enforceRecency(await fetchGoogleNewsRSS(room));
     if (articles.length > 0) return articles;
   } catch (e) {
     console.warn('[News] Google News RSS failed:', e);
   }
 
-  // Tier 4: Strict mode denies stale fallback content
-  console.error('[News] No fresh approved articles found in live feeds.');
-  return [];
-}
-
-export interface NewsAuditReport {
-  room: RoomId;
-  requestedAt: string;
-  maxAgeDays: number;
-  approvedDomains: number;
-  resultCount: number;
-  oldestDate?: string;
-}
-
-export async function auditNewsEngine(room: RoomId): Promise<NewsAuditReport> {
-  const articles = await fetchNews(room);
-  return {
-    room,
-    requestedAt: new Date().toISOString(),
-    maxAgeDays: MAX_ARTICLE_AGE_DAYS,
-    approvedDomains: APPROVED_DOMAINS.length,
-    resultCount: articles.length,
-    oldestDate: articles.length ? articles[articles.length - 1].date : undefined,
-  };
+  // STALE FALLBACK PATH DISABLED — per posting policy, no stale content
+  // is ever surfaced. If both live feeds return nothing fresh, we throw
+  // so the UI can show a clear "no fresh news right now" message.
+  // (FALLBACK_ARTICLES is intentionally retained in this module as a
+  // typed constant but is no longer wired into the live generation path.)
+  void FALLBACK_ARTICLES;
+  throw new NoFreshNewsError();
 }

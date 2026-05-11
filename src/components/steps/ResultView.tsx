@@ -188,6 +188,31 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
             </Button>
           </div>
 
+          {/* ── Alternative input paths after seeing the result ── */}
+          <div className="flex gap-2 mt-2">
+            <Button
+              variant="gold"
+              onClick={() => {
+                // Clear any prior brief item so this is a fresh fetch
+                store.setSelectedBriefItem(null);
+                onRetry();
+              }}
+              className="flex-1 !py-2.5 !text-[11px]"
+            >
+              🔄 Pull Fresh News
+            </Button>
+            <Button
+              variant="purple"
+              onClick={() => {
+                // Route to BriefImport, preserving current room+format
+                store.setStep(11);
+              }}
+              className="flex-1 !py-2.5 !text-[11px]"
+            >
+              📋 Import Deep Research
+            </Button>
+          </div>
+
           {/* Insider note tip */}
           {isInsiderNote && (
             <div className="bg-ink-card border border-[#25D366]/20 rounded-card px-3.5 py-2.5 mt-3">
@@ -465,6 +490,27 @@ export function ResultView({ result, isDeep, deepResult, onRetry }: ResultViewPr
           <Button variant="ghost" fullWidth onClick={onRetry} className="mt-1.5 py-3 text-[12px]">
             Generate Different Version
           </Button>
+
+          {/* ── Alternative input paths ── */}
+          <div className="flex gap-2 mt-2">
+            <Button
+              variant="gold"
+              onClick={() => {
+                store.setSelectedBriefItem(null);
+                onRetry();
+              }}
+              className="flex-1 !py-2.5 !text-[11px]"
+            >
+              🔄 Pull Fresh News
+            </Button>
+            <Button
+              variant="purple"
+              onClick={() => store.setStep(11)}
+              className="flex-1 !py-2.5 !text-[11px]"
+            >
+              📋 Import Deep Research
+            </Button>
+          </div>
         </>
       )}
     </>

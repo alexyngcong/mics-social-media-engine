@@ -238,15 +238,10 @@ export function BannerPreview({
           {result.subline}
         </div>
 
-        {/* Source */}
-        {result.source && (
-          <div style={{
-            fontSize: 8 * fs, color: 'rgba(255,255,255,0.15)',
-            marginTop: 22 * fs, letterSpacing: '.05em',
-          }}>
-            {result.source.toUpperCase()}
-          </div>
-        )}
+        {/* Source attribution is NOT shown on the banner — viewers should not
+            see where the news was pulled from. Source is kept on result.source
+            for internal reference only and surfaces in the in-app attribution
+            panel that only the post author sees. */}
       </div>
 
       {/* Loading state */}

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { QAReport } from '../../types';
 import { QAReportCard } from './QAReportCard';
+import { Button } from '../ui/Button';
 
 interface QABadgeProps {
   report: QAReport;
@@ -118,6 +119,42 @@ export function QABadge({ report, onAutoFix, onRegenerate, compact }: QABadgePro
         </span>
       </div>
 
+      {/* Audit-refresh line — proves to the user this validation ran live */}
+      <div className="flex gap-2 mt-1 px-1 text-[9px] text-tx-ghost">
+        <span>Audit refreshed:</span>
+        <span className="text-tx-dim">{formatAuditTime(report.timestamp)}</span>
+      </div>
+
+      {/* Quick-action buttons — visible WITHOUT needing to expand the report.
+          Shown whenever the post is not APPROVED, so the user always has a
+          clear next step. */}
+      {report.verdict !== 'APPROVED' && (onAutoFix || onRegenerate) && (
+        <div className="flex gap-2 mt-2">
+          {onAutoFix && (
+            <Button
+              variant="gold"
+              onClick={onAutoFix}
+              className="flex-1 !py-2 !text-[11px]"
+            >
+              Auto-Fix Issues
+            </Button>
+          )}
+          {onRegenerate && (
+            <Button
+              variant="ghost"
+              onClick={onRegenerate}
+              className={`flex-1 !py-2 !text-[11px] ${
+                report.verdict === 'REJECTED'
+                  ? '!border-signal-red/40 !text-signal-red'
+                  : '!border-signal-amber/40 !text-signal-amber'
+              }`}
+            >
+              Regenerate Post
+            </Button>
+          )}
+        </div>
+      )}
+
       {/* Expanded report */}
       {expanded && (
         <div className="mt-2">
@@ -130,4 +167,16 @@ export function QABadge({ report, onAutoFix, onRegenerate, compact }: QABadgePro
       )}
     </div>
   );
+}
+
+/** Format the QA audit timestamp in a readable UAE-time string. */
+function formatAuditTime(isoTimestamp: string): string {
+  try {
+    return new Date(isoTimestamp).toLocaleString('en-GB', {
+      day: 'numeric', month: 'short', year: 'numeric',
+      hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Dubai',
+    }) + ' UAE';
+  } catch {
+    return isoTimestamp;
+  }
 }

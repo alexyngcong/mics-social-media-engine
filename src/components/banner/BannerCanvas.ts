@@ -319,12 +319,9 @@ function drawCreativeContent(
     subY += 24 * fs;
   }
 
-  // ── SOURCE: Tiny, discreet ──
-  if (result.source) {
-    ctx.fillStyle = 'rgba(255,255,255,0.15)';
-    ctx.font = `400 ${9 * fs}px 'Segoe UI',system-ui,sans-serif`;
-    ctx.fillText(result.source.toUpperCase(), cx, subY + 28 * fs);
-  }
+  // Source name intentionally NOT drawn on the exported banner image.
+  // Viewers of the shared image should not see the news origin — that's
+  // internal-reference data only, available to the post author in the app.
 
   // ── BOTTOM: Minimal, anonymous ──
   // Thin accent line above footer

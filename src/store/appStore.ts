@@ -1,5 +1,8 @@
 import { create } from 'zustand';
-import type { PlatformId, RoomId, PostTypeId, GeneratedPost, DeepDivePost, QAReport } from '../types';
+import type {
+  PlatformId, RoomId, PostTypeId, GeneratedPost, DeepDivePost, QAReport,
+  ImportedBrief, BriefItem,
+} from '../types';
 
 interface AppState {
   step: number;
@@ -17,6 +20,10 @@ interface AppState {
   copiedLabel: string;
   imageDimensionIndex: number;
   qaReport: QAReport | null;
+  /** Currently imported Deep Research brief (if any) */
+  brief: ImportedBrief | null;
+  /** Currently selected brief item (for generation) */
+  selectedBriefItem: BriefItem | null;
 
   setStep: (step: number) => void;
   setPlatform: (p: PlatformId) => void;
@@ -33,6 +40,9 @@ interface AppState {
   shuffleVariant: (templateCount: number) => void;
   setImageDimensionIndex: (i: number) => void;
   setQAReport: (report: QAReport | null) => void;
+  setBrief: (brief: ImportedBrief | null) => void;
+  setSelectedBriefItem: (item: BriefItem | null) => void;
+  clearBrief: () => void;
   reset: () => void;
 }
 
@@ -52,6 +62,8 @@ const initialState = {
   copiedLabel: '',
   imageDimensionIndex: 0,
   qaReport: null as QAReport | null,
+  brief: null as ImportedBrief | null,
+  selectedBriefItem: null as BriefItem | null,
 };
 
 export const useAppStore = create<AppState>((set) => ({
@@ -73,5 +85,8 @@ export const useAppStore = create<AppState>((set) => ({
     set({ bannerVariant: Math.floor(Math.random() * templateCount), bannerReady: false }),
   setImageDimensionIndex: (imageDimensionIndex) => set({ imageDimensionIndex }),
   setQAReport: (qaReport) => set({ qaReport }),
+  setBrief: (brief) => set({ brief }),
+  setSelectedBriefItem: (selectedBriefItem) => set({ selectedBriefItem }),
+  clearBrief: () => set({ brief: null, selectedBriefItem: null }),
   reset: () => set(initialState),
 }));

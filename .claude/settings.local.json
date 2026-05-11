@@ -38,7 +38,30 @@
       "Bash(\"C:/Users/Admin/nodejs/node-v20.18.1-win-x64/npm.cmd\" install:*)",
       "WebFetch(domain:alexyngcong.github.io)",
       "Bash(export PATH=\"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64:$PATH\")",
-      "WebSearch"
+      "WebSearch",
+      "Bash(\"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64\\\\npx.cmd\" vite:*)",
+      "Bash(set \"PATH=C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64;%PATH%\")",
+      "Bash(\"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64\\\\node.exe\" \"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64\\\\node_modules\\\\npm\\\\bin\\\\npx-cli.js\" vite build)",
+      "Read(//c/Users/Admin/nodejs/node-v20.18.1-win-x64/**)",
+      "Bash(node -e ':*)",
+      "Read(//tmp/**)",
+      "Bash(python -c ' *)",
+      "Bash(cp /tmp/docx_extract/extracted.txt \"C:/Users/Admin/Desktop/sdsssf/Social Media/_req_extracted.txt\" && wc -l \"C:/Users/Admin/Desktop/sdsssf/Social Media/_req_extracted.txt\")",
+      "Bash(cat vite.config.ts)",
+      "Bash(cat vite.config.js)",
+      "Bash(git ls-remote *)",
+      "Bash(curl -s -L \"https://alexyngcong.github.io/mics-social-media-engine/\")",
+      "Bash(curl -s \"https://alexyngcong.github.io/mics-social-media-engine/assets/index-B3TRf0PF.js\")",
+      "Bash(curl -s \"https://alexyngcong.github.io/mics-social-media-engine/\")",
+      "Bash(curl -s \"https://corsproxy.io/?$\\(printf %s 'https://api.gdeltproject.org/api/v2/doc/doc?query=UAE&mode=ArtList&maxrecords=2&format=json')",
+      "Bash(curl -s -o /tmp/gdelt-test.json -w \"HTTP %{http_code} · %{size_download} bytes · %{time_total}s\\\\n\" 'https://api.gdeltproject.org/api/v2/doc/doc?query=UAE&mode=ArtList&maxrecords=2&format=json' --max-time 15)",
+      "Bash(xargs wc -l)",
+      "Bash(node scripts/fetch-news.mjs)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)"
     ]
   }
 }

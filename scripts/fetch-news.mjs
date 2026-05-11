@@ -3,16 +3,18 @@
  * GDELT news fetcher — server-side, runs in GitHub Actions.
  *
  * Fetches the latest articles from GDELT DOC API for all four rooms,
- * filters to the same approved-source list used by the browser app,
- * and writes the result to `news-latest.json` for the app to consume.
+ * filters with a TIERED approach (strict approved-source whitelist
+ * first, broader trusted-news fallback second), and writes the result
+ * to `news-latest.json`.
  *
  * Runs in Node 20+, no dependencies (uses built-in fetch).
  */
 
 import { writeFile } from 'node:fs/promises';
 
-// ─── Approved sources (kept in sync with src/services/newsFetcher.ts) ───
-const APPROVED_DOMAINS = [
+// ─── TIER 1 — Highest-quality approved sources ──────────────────
+// Matches src/services/newsFetcher.ts. Most CFO-actionable content.
+const TIER_1_APPROVED = new Set([
   // UAE official regulators
   'mof.gov.ae', 'tax.gov.ae', 'centralbank.ae', 'cbuae.gov.ae',
   'dfsa.ae', 'adgm.com', 'difc.ae', 'sca.gov.ae',
@@ -50,21 +52,60 @@ const APPROVED_DOMAINS = [
   'piie.com', 'rand.org', 'hbr.org',
   // Wire services
   'apnews.com', 'afp.com',
-];
+]);
 
+// ─── TIER 2 — Broader trusted-news fallback ────────────────────
+// Used only when TIER 1 returns 0 results. These are reputable
+// international and regional outlets that GDELT indexes well.
+const TIER_2_FALLBACK = new Set([
+  // Major broadcasters and wires
+  'bbc.com', 'bbc.co.uk', 'cnn.com', 'aljazeera.com', 'aljazeera.net',
+  'theguardian.com', 'nytimes.com', 'washingtonpost.com',
+  'usatoday.com', 'foxbusiness.com', 'cnbc.com',
+  // Regional and trade press that often covers UAE
+  'reuters.com', 'apnews.com', 'afp.com', 'dpa-international.com',
+  'middleeasteye.net', 'arabnews.com', 'aawsat.com',
+  'menafn.com', 'tradearabia.com', 'thearabianpost.com',
+  'menabytes.com', 'wamda.com', 'al-monitor.com',
+  // Business-news that covers MENA
+  'businessinsider.com', 'fortune.com', 'cnbcarabia.com',
+  'thenationalnews.com', 'gulfnews.com',
+  // Financial press
+  'investing.com', 'seekingalpha.com', 'morningstar.com',
+  // Energy
+  'rigzone.com', 'oilprice.com', 'energyintel.com',
+]);
+
+// ─── Simpler GDELT queries ─────────────────────────────────────
+// GDELT's query parser handles simple keyword AND/OR better than
+// complex quoted-phrase chains. Each room gets a short query that
+// hits the maximum number of relevant articles.
 const ROOM_QUERIES = {
-  growth: '"UAE non-oil GDP" OR "Dubai FDI" OR "MoIAT financing" OR "DIFC" expansion OR "ADGM" registrations OR "Abu Dhabi investment"',
-  capital: '"CBUAE" rate OR "UAE bond" OR "sukuk issuance" OR "DIFC private credit" OR "ADGM fund"',
-  risk: '"Federal Tax Authority" OR "Ministry of Finance" UAE OR "eInvoicing" UAE OR "ADGM AML" OR "DFSA consultation"',
-  world: '"Federal Reserve" rate OR "ECB" policy OR "OECD Pillar" OR "BRICS" trade OR oil OPEC',
+  growth:  'UAE Dubai investment growth economy',
+  capital: 'UAE Dubai bond sukuk treasury rate',
+  risk:    'UAE tax compliance regulation FTA',
+  world:   'oil OPEC Federal Reserve emerging markets',
 };
 
 const MAX_AGE_HOURS = 72;
-const MAX_RESULTS_PER_ROOM = 15;
+const MAX_RESULTS_PER_ROOM = 20;
 
-function isApproved(domain) {
+function isTier1(domain) {
   const d = (domain || '').toLowerCase().replace(/^www\./, '');
-  return APPROVED_DOMAINS.some(a => d === a || d.endsWith('.' + a));
+  if (TIER_1_APPROVED.has(d)) return true;
+  for (const a of TIER_1_APPROVED) {
+    if (d.endsWith('.' + a)) return true;
+  }
+  return false;
+}
+
+function isTier2(domain) {
+  const d = (domain || '').toLowerCase().replace(/^www\./, '');
+  if (TIER_2_FALLBACK.has(d)) return true;
+  for (const a of TIER_2_FALLBACK) {
+    if (d.endsWith('.' + a)) return true;
+  }
+  return false;
 }
 
 function gdeltDateParam(hoursAgo) {
@@ -113,11 +154,31 @@ function prettifyDomain(domain) {
     'lexology.com': 'Lexology',
     'meed.com': 'MEED',
     'agbi.com': 'AGBI',
+    'bbc.com': 'BBC',
+    'bbc.co.uk': 'BBC',
+    'aljazeera.com': 'Al Jazeera',
+    'arabnews.com': 'Arab News',
+    'theguardian.com': 'The Guardian',
+    'nytimes.com': 'New York Times',
   };
   const clean = (domain || '').toLowerCase().replace(/^www\./, '');
   if (map[clean]) return map[clean];
   const first = clean.split('.')[0] || domain || '';
   return first.charAt(0).toUpperCase() + first.slice(1);
+}
+
+function articleFromGDELT(a) {
+  const hoursAgo = computeHoursAgo(a.seendate || '');
+  const date = (a.seendate || '').slice(0, 8).replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
+  return {
+    title: a.title || '',
+    url: a.url || '',
+    source: prettifyDomain(a.domain || ''),
+    date,
+    description: a.title || '',
+    imageUrl: a.socialimage || undefined,
+    hoursAgo,
+  };
 }
 
 async function fetchRoom(room) {
@@ -126,31 +187,53 @@ async function fetchRoom(room) {
   const end = gdeltDateParam(0);
   const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}&mode=ArtList&maxrecords=${MAX_RESULTS_PER_ROOM}&format=json&sort=DateDesc&startdatetime=${start}&enddatetime=${end}`;
 
-  console.log(`[${room}] fetching GDELT...`);
+  console.log(`\n[${room}] query: "${ROOM_QUERIES[room]}"`);
   try {
     const resp = await fetch(url, { signal: AbortSignal.timeout(30_000) });
     if (!resp.ok) {
       console.warn(`[${room}] HTTP ${resp.status}`);
       return [];
     }
-    const data = await resp.json();
-    const articles = (data.articles || [])
-      .filter(a => (a.language === 'English' || !a.language) && isApproved(a.domain || ''))
-      .map(a => {
-        const hoursAgo = computeHoursAgo(a.seendate || '');
-        return {
-          title: a.title || '',
-          url: a.url || '',
-          source: prettifyDomain(a.domain || ''),
-          date: (a.seendate || '').slice(0, 8).replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3'),
-          description: a.title || '',
-          imageUrl: a.socialimage || undefined,
-          hoursAgo,
-        };
-      })
+    const text = await resp.text();
+    // GDELT sometimes returns non-JSON when results are empty or on error
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      console.warn(`[${room}] non-JSON response (first 200 chars): ${text.slice(0, 200)}`);
+      return [];
+    }
+    const allArticles = data.articles || [];
+    console.log(`[${room}] GDELT returned ${allArticles.length} articles`);
+
+    // Log domain distribution for diagnostics
+    const domainCounts = {};
+    for (const a of allArticles) {
+      const d = (a.domain || '?').toLowerCase().replace(/^www\./, '');
+      domainCounts[d] = (domainCounts[d] || 0) + 1;
+    }
+    const topDomains = Object.entries(domainCounts).sort((a, b) => b[1] - a[1]).slice(0, 5);
+    if (topDomains.length) {
+      console.log(`[${room}] top domains: ${topDomains.map(([d, c]) => `${d}(${c})`).join(', ')}`);
+    }
+
+    // Pass 1: English + Tier 1 approved sources
+    const englishOnly = allArticles.filter(a => a.language === 'English' || !a.language);
+    const tier1 = englishOnly
+      .filter(a => isTier1(a.domain || ''))
+      .map(articleFromGDELT)
       .filter(a => a.hoursAgo >= 0 && a.hoursAgo <= MAX_AGE_HOURS);
-    console.log(`[${room}] kept ${articles.length} of ${data.articles?.length || 0} articles`);
-    return articles;
+    console.log(`[${room}] Tier-1 approved: ${tier1.length}`);
+
+    // Pass 2 (fallback): Tier 2 if Tier 1 yielded nothing
+    if (tier1.length > 0) return tier1;
+
+    const tier2 = englishOnly
+      .filter(a => isTier2(a.domain || ''))
+      .map(articleFromGDELT)
+      .filter(a => a.hoursAgo >= 0 && a.hoursAgo <= MAX_AGE_HOURS);
+    console.log(`[${room}] Tier-2 fallback: ${tier2.length}`);
+    return tier2;
   } catch (e) {
     console.error(`[${room}] fetch error:`, e.message);
     return [];
@@ -176,6 +259,7 @@ async function main() {
   await writeFile('news-latest.json', JSON.stringify(result, null, 2), 'utf8');
 
   console.log('');
+  console.log('═══════════════════════════════════════');
   console.log('Summary:');
   console.log(`  Generated at: ${result.generatedAt}`);
   console.log(`  Total articles: ${result.totalCount}`);

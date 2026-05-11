@@ -111,13 +111,20 @@ export function QAReportCard({ report, onAutoFix, onRegenerate }: QAReportCardPr
     return bFails - aFails;
   });
 
-  const hasFixableIssues = report.checks.some(c =>
-    !c.passed && (
-      c.id === 'voice-punctuation' ||
-      c.id === 'integrity-no-html' ||
-      c.id === 'format-headline'
-    )
-  );
+  // Show Auto-Fix whenever the post isn't approved AND there's at least one
+  // check that autoFixPost knows how to address.
+  const FIXABLE_CHECK_IDS = new Set([
+    'voice-punctuation',
+    'voice-banned-words',
+    'voice-banned-patterns',
+    'integrity-no-html',
+    'integrity-no-promo',
+    'format-headline',
+    'format-paragraphs',
+    'fresh-language',
+  ]);
+  const hasFixableIssues = report.verdict !== 'APPROVED' &&
+    report.checks.some(c => !c.passed && FIXABLE_CHECK_IDS.has(c.id));
 
   return (
     <div className="bg-ink-card border border-ink-border rounded-card-lg overflow-hidden">
@@ -156,8 +163,8 @@ export function QAReportCard({ report, onAutoFix, onRegenerate }: QAReportCardPr
         ))}
       </div>
 
-      {/* Action buttons */}
-      {(hasFixableIssues || report.verdict === 'REJECTED') && (
+      {/* Action buttons — surface Auto-Fix and Regenerate whenever the post is not APPROVED */}
+      {report.verdict !== 'APPROVED' && (
         <div className="px-4 py-3 border-t border-ink-border bg-ink-el/30 flex gap-2">
           {hasFixableIssues && onAutoFix && (
             <Button
@@ -168,11 +175,15 @@ export function QAReportCard({ report, onAutoFix, onRegenerate }: QAReportCardPr
               Auto-Fix Issues
             </Button>
           )}
-          {report.verdict === 'REJECTED' && onRegenerate && (
+          {onRegenerate && (
             <Button
-              variant="ghost"
+              variant={report.verdict === 'REJECTED' ? 'ghost' : 'ghost'}
               onClick={onRegenerate}
-              className="flex-1 !py-2 !text-[11px] !border-signal-red/30 !text-signal-red"
+              className={`flex-1 !py-2 !text-[11px] ${
+                report.verdict === 'REJECTED'
+                  ? '!border-signal-red/30 !text-signal-red'
+                  : '!border-signal-amber/30 !text-signal-amber'
+              }`}
             >
               Regenerate Post
             </Button>

@@ -1,25 +1,25 @@
 import type { RoomId, CalendarEntry } from '../types';
 
 /**
- * Optimized CFO engagement rhythm — 3 posts per week ONLY.
+ * Open posting schedule — every day is a posting day.
  *
- * WHY 3 NOT 5:
- * - Less = more exclusive. Each post gets full attention.
- * - Silence builds anticipation. CFOs notice when you DON'T post.
- * - Quality over frequency. Every post must earn its spot.
+ * There is NO weekly cap and NO "silence" day. Post whenever the signal
+ * warrants it. The schedule below is a suggested rotation that distributes
+ * the 4 intelligence rooms across the 7 days of the week with sensible
+ * times, on a 3-week cycle so the same room doesn't always land on the
+ * same day.
  *
- * POSTING DAYS (UAE time):
- * - Sunday   8:00 PM — "Week Ahead Signal" (CFOs winding down, thinking ahead)
- * - Tuesday  9:00 AM — "Intelligence Drop" (Monday backlog cleared, strategic mode)
- * - Thursday 1:30 PM — "Closing Signal" (end-of-week, creates weekend DMs)
+ * SUGGESTED DAY ANGLES (for reference, not enforcement):
+ *  - Sun  Week Ahead Signal — 8:00 PM UAE
+ *  - Mon  Monday Intelligence — 9:00 AM UAE
+ *  - Tue  Intelligence Drop — 9:00 AM UAE
+ *  - Wed  Midweek Pulse — 1:00 PM UAE
+ *  - Thu  Sector Read — 1:30 PM UAE
+ *  - Fri  Closing Signal — 11:00 AM UAE
+ *  - Sat  Insider Note — 5:00 PM UAE
  *
- * SILENCE DAYS: Monday, Wednesday, Friday, Saturday
- * Silence is a feature, not a gap.
- *
- * ROOM ROTATION (3-week cycle, then repeats):
- * Week A: Growth (Tue) → Risk (Thu) → Capital (Sun)
- * Week B: Risk (Tue) → Capital (Thu) → Growth (Sun)
- * Week C: Capital (Tue) → Growth (Thu) → Risk (Sun)
+ * ROOM ROTATION (3-week cycle, then repeats). Each cycle covers all 7 days
+ * so every day has a planned room.
  */
 
 // ─── Room rotation by week cycle and day ────────────────────────
@@ -27,13 +27,13 @@ import type { RoomId, CalendarEntry } from '../types';
 type WeekCycle = 'A' | 'B' | 'C';
 
 const ROOM_ROTATION: Record<WeekCycle, Record<number, RoomId>> = {
-  A: { 0: 'capital', 2: 'growth', 4: 'risk' },    // Sun=Capital, Tue=Growth, Thu=Risk
-  B: { 0: 'growth', 2: 'risk', 4: 'capital' },     // Sun=Growth, Tue=Risk, Thu=Capital
-  C: { 0: 'risk', 2: 'capital', 4: 'growth' },     // Sun=Risk, Tue=Capital, Thu=Growth
+  // Sun Mon Tue Wed Thu Fri Sat
+  A: { 0: 'capital', 1: 'growth',  2: 'risk',    3: 'world',   4: 'growth',  5: 'capital', 6: 'world'  },
+  B: { 0: 'growth',  1: 'risk',    2: 'capital', 3: 'world',   4: 'risk',    5: 'growth',  6: 'capital' },
+  C: { 0: 'risk',    1: 'capital', 2: 'growth',  3: 'world',   4: 'capital', 5: 'risk',    6: 'growth'  },
 };
 
 function getWeekCycle(date: Date): WeekCycle {
-  // Determine which week of the rotation we're in based on ISO week number
   const startOfYear = new Date(date.getFullYear(), 0, 1);
   const dayOfYear = Math.floor((date.getTime() - startOfYear.getTime()) / 86400000);
   const weekNum = Math.floor(dayOfYear / 7);
@@ -41,15 +41,19 @@ function getWeekCycle(date: Date): WeekCycle {
   return (['A', 'B', 'C'] as WeekCycle[])[cycle];
 }
 
-// ─── Posting times ──────────────────────────────────────────────
+// ─── Posting times (suggested per day) ──────────────────────────
 
 const POST_TIMES: Record<number, { time: string; label: string }> = {
-  0: { time: '20:00', label: '8:00 PM UAE' },   // Sunday evening
-  2: { time: '09:00', label: '9:00 AM UAE' },   // Tuesday morning
-  4: { time: '13:30', label: '1:30 PM UAE' },   // Thursday afternoon
+  0: { time: '20:00', label: '8:00 PM UAE'  }, // Sunday   — Week Ahead Signal
+  1: { time: '09:00', label: '9:00 AM UAE'  }, // Monday   — Monday Intelligence
+  2: { time: '09:00', label: '9:00 AM UAE'  }, // Tuesday  — Intelligence Drop
+  3: { time: '13:00', label: '1:00 PM UAE'  }, // Wednesday — Midweek Pulse
+  4: { time: '13:30', label: '1:30 PM UAE'  }, // Thursday — Sector Read
+  5: { time: '11:00', label: '11:00 AM UAE' }, // Friday   — Closing Signal
+  6: { time: '17:00', label: '5:00 PM UAE'  }, // Saturday — Insider Note
 };
 
-// ─── Topic pools (enriched with April 2026 data) ────────────────
+// ─── Topic pools ────────────────────────────────────────────────
 
 const GROWTH_TOPICS = [
   'Dubai real estate Q1 2026 — AED 252B transactions, 31% YoY surge',
@@ -64,6 +68,8 @@ const GROWTH_TOPICS = [
   'UAE AI adoption by enterprises: impact on financial services sector',
   'Binghatti, Majid Al Futtaim IPO prospects — Dubai capital markets deepening',
   'D33 agenda FDI target: AED 60B/year vs current trajectory analysis',
+  'Hamdan bin Mohammed launches Dubai private-sector Agentic AI initiative',
+  'MoIAT unlocks AED 18B industrial financing at Make it in the Emirates 2026',
 ];
 
 const CAPITAL_TOPICS = [
@@ -79,6 +85,8 @@ const CAPITAL_TOPICS = [
   'UAE bank lending growth trends — Q1 2026 credit expansion signals',
   'GCC family office asset allocation shifts — regional vs global',
   'Cross-border capital flows: UAE as global remittance and treasury hub',
+  'DFSA Islamic finance consultation — DIFC framework enhancement May 2026',
+  'ADX and DFM weekly flows — foreign participation drivers',
 ];
 
 const RISK_TOPICS = [
@@ -94,6 +102,8 @@ const RISK_TOPICS = [
   'UBO register requirements — beneficial ownership disclosure expanding',
   'DIFC and ADGM regulatory enforcement — recent actions and implications',
   'Voluntary disclosure window before new penalty framework — strategic timing',
+  'MoHRE Emiratisation deadline 30 June 2026 — financial contributions from July',
+  'Tax Procedures Executive Regulation amendments effective April 1, 2026',
 ];
 
 const WORLD_TOPICS = [
@@ -109,6 +119,8 @@ const WORLD_TOPICS = [
   'Emerging market currency moves — capital flow shifts toward GCC safe havens',
   'Central bank digital currencies — GCC CBDC pilots and implications',
   'Global PE dry powder at historic levels — GCC deal flow attractiveness',
+  'ECB outlook update — euro area services inflation and GCC trade flow',
+  'OECD Pillar Two administrative guidance — UAE in-scope group impact',
 ];
 
 const TOPIC_POOLS: Record<RoomId, string[]> = {
@@ -128,9 +140,13 @@ function getTopicForDate(room: RoomId, date: Date): string {
 
 // ─── Calendar generation ────────────────────────────────────────
 
-/** Only post on Sunday, Tuesday, Thursday */
-export function isPostingDay(dayOfWeek: number): boolean {
-  return dayOfWeek === 0 || dayOfWeek === 2 || dayOfWeek === 4;
+/**
+ * Every day is a posting day under the open schedule. Function retained for
+ * compatibility with any caller that still asks the question.
+ */
+export function isPostingDay(_dayOfWeek: number): boolean {
+  void _dayOfWeek;
+  return true;
 }
 
 export function generateMonthPlan(year: number, month: number): Record<string, CalendarEntry> {
@@ -141,18 +157,6 @@ export function generateMonthPlan(year: number, month: number): Record<string, C
     const date = new Date(year, month, day);
     const dow = date.getDay();
     const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-
-    if (!isPostingDay(dow)) {
-      entries[dateStr] = {
-        date: dateStr,
-        room: 'growth',
-        topic: '',
-        postTime: '',
-        postTimeLabel: dow === 5 || dow === 6 ? 'Weekend' : 'Strategic Silence',
-        status: 'skipped',
-      };
-      continue;
-    }
 
     const cycle = getWeekCycle(date);
     const room = ROOM_ROTATION[cycle][dow] || 'growth';
