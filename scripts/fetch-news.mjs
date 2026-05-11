@@ -207,58 +207,78 @@ function unwrapText(s) {
 // ═══════════════════════════════════════════════════════════════
 
 // ─── 1. GDELT DOC 2.0 ─────────────────────────────────────────
-async function fetchGDELT() {
-  // Try 24h first (per spec), fall back to 72h if empty
-  for (const timespan of ['24H', '72H']) {
-    const params = new URLSearchParams({
-      query: '("UAE" OR "Dubai" OR "Abu Dhabi" OR "GCC")',
-      mode: 'ArtList',
-      format: 'json',
-      sort: 'HybridRel',
-      maxrecords: '100',
-      timespan,
-    });
-    const url = `https://api.gdeltproject.org/api/v2/doc/doc?${params.toString()}`;
+// Tries a cascade of query+timespan combinations. First one that
+// returns articles wins. Manual URL construction (no URLSearchParams)
+// preserves the exact parentheses GDELT expects.
 
-    console.log(`[GDELT] fetching (timespan=${timespan})...`);
-    try {
-      const resp = await fetch(url, { signal: AbortSignal.timeout(30_000) });
-      if (!resp.ok) {
-        console.warn(`[GDELT] HTTP ${resp.status} at ${timespan}`);
-        continue;
+const GDELT_USER_AGENT = 'mics-intelligence/1.0 (+https://alexyngcong.github.io/mics-social-media-engine)';
+
+const GDELT_QUERIES = [
+  '("UAE" OR "Dubai" OR "Abu Dhabi" OR "GCC")',  // spec query
+  'UAE OR Dubai OR "Abu Dhabi" OR GCC',           // unquoted-ish
+  'UAE Dubai GCC',                                // simple keyword form
+  'UAE',                                          // bare minimum diagnostic
+];
+
+async function fetchGDELT() {
+  for (const query of GDELT_QUERIES) {
+    for (const timespan of ['24H', '72H']) {
+      // Build URL manually to ensure clean encoding. encodeURIComponent
+      // handles quotes and parens correctly for GDELT.
+      const url =
+        'https://api.gdeltproject.org/api/v2/doc/doc' +
+        `?query=${encodeURIComponent(query)}` +
+        `&mode=ArtList&format=json&sort=HybridRel` +
+        `&maxrecords=100&timespan=${timespan}`;
+
+      console.log(`[GDELT] try query="${query}" timespan=${timespan}`);
+      try {
+        const resp = await fetch(url, {
+          signal: AbortSignal.timeout(30_000),
+          headers: {
+            'User-Agent': GDELT_USER_AGENT,
+            'Accept': 'application/json,*/*',
+          },
+        });
+        if (!resp.ok) {
+          console.warn(`[GDELT]   HTTP ${resp.status}`);
+          continue;
+        }
+        const text = await resp.text();
+        if (!text || text.length < 10) {
+          console.warn(`[GDELT]   empty body`);
+          continue;
+        }
+        let data;
+        try { data = JSON.parse(text); }
+        catch {
+          console.warn(`[GDELT]   non-JSON (${text.length} bytes): ${text.slice(0, 150)}`);
+          continue;
+        }
+        const list = data.articles || [];
+        if (list.length === 0) {
+          console.warn(`[GDELT]   0 articles in response`);
+          continue;
+        }
+        const articles = list.map(a => ({
+          title: a.title || '',
+          url: a.url || '',
+          domain: normaliseDomain(a.domain || ''),
+          source: prettifyDomain(a.domain || ''),
+          description: a.title || '',
+          seendate: a.seendate || '',
+          language: a.language || 'English',
+          imageUrl: a.socialimage || undefined,
+          origin: 'gdelt',
+        }));
+        console.log(`[GDELT]   ✅ ${articles.length} articles (query="${query}", timespan=${timespan})`);
+        return articles;
+      } catch (e) {
+        console.warn(`[GDELT]   error: ${e.message}`);
       }
-      const text = await resp.text();
-      let data;
-      try { data = JSON.parse(text); }
-      catch {
-        console.warn(`[GDELT] non-JSON response at ${timespan}: ${text.slice(0, 200)}`);
-        continue;
-      }
-      const list = data.articles || [];
-      if (list.length === 0) {
-        console.warn(`[GDELT] 0 articles at timespan=${timespan}, trying wider window`);
-        continue;
-      }
-      const articles = list.map(a => ({
-        title: a.title || '',
-        url: a.url || '',
-        domain: normaliseDomain(a.domain || ''),
-        source: prettifyDomain(a.domain || ''),
-        description: a.title || '',
-        seendate: a.seendate || '',
-        language: a.language || 'English',
-        imageUrl: a.socialimage || undefined,
-        origin: 'gdelt',
-      }));
-      console.log(`[GDELT] returned ${articles.length} articles at timespan=${timespan}`);
-      return articles;
-    } catch (e) {
-      console.warn(`[GDELT] fetch error at ${timespan}: ${e.message}`);
-      continue;
     }
   }
-  // All windows exhausted
-  console.warn('[GDELT] no articles found across any timespan');
+  console.warn('[GDELT] all query/timespan combinations exhausted');
   return [];
 }
 
@@ -331,48 +351,82 @@ async function fetchGoogleNewsRSS() {
   return flat;
 }
 
-// ─── 3. Reddit public JSON ─────────────────────────────────────
+// ─── 3. Reddit ─────────────────────────────────────────────────
+// Reddit tightened anti-bot policies in 2023. Strategy:
+//   1. Try .json endpoint with compliant User-Agent
+//   2. Fall back to .rss endpoint (less restricted)
+//   3. Fall back to old.reddit.com .json (sometimes less rate-limited)
+
+const REDDIT_USER_AGENT = 'web:mics-intelligence:v1.0 (by /u/anonymous)';
 const REDDIT_SUBREDDITS = [
   'economics', 'finance', 'investing', 'business',
   'geopolitics', 'worldnews', 'artificial',
 ];
 
-async function fetchReddit() {
-  console.log(`[Reddit] fetching ${REDDIT_SUBREDDITS.length} subreddits...`);
-  const results = await Promise.all(REDDIT_SUBREDDITS.map(async (sub) => {
-    const url = `https://www.reddit.com/r/${sub}/top.json?t=day&limit=20`;
+async function fetchRedditSub(sub) {
+  // Strategy 1: JSON endpoint
+  const jsonAttempts = [
+    `https://www.reddit.com/r/${sub}/top.json?t=day&limit=20`,
+    `https://old.reddit.com/r/${sub}/top.json?t=day&limit=20`,
+  ];
+  for (const url of jsonAttempts) {
     try {
       const resp = await fetch(url, {
         signal: AbortSignal.timeout(15_000),
-        headers: { 'User-Agent': 'mics-intel-bot/1.0 (https://alexyngcong.github.io/mics-social-media-engine)' },
+        headers: {
+          'User-Agent': REDDIT_USER_AGENT,
+          'Accept': 'application/json,*/*',
+        },
       });
-      if (!resp.ok) return [];
+      if (!resp.ok) continue;
       const data = await resp.json();
       const children = data?.data?.children || [];
+      if (children.length === 0) continue;
       return children
         .filter(c => c?.data?.title && !c.data.over_18 && !c.data.stickied)
-        .map(c => {
-          const d = c.data;
-          const externalUrl = d.url_overridden_by_dest;
-          const isExternal = externalUrl && !externalUrl.includes('reddit.com');
-          const domain = isExternal ? extractDomain(externalUrl) : 'reddit.com';
-          return {
-            title: d.title,
-            url: isExternal ? externalUrl : `https://reddit.com${d.permalink}`,
-            domain,
-            source: isExternal ? prettifyDomain(domain) : `Reddit r/${sub}`,
-            description: d.selftext?.slice(0, 600) || d.title,
-            seendate: String(d.created_utc * 1000),
-            language: 'English',
-            redditScore: d.score,
-            redditComments: d.num_comments,
-            origin: `reddit-${sub}`,
-          };
-        });
+        .map(c => mapRedditPost(c.data, sub));
     } catch {
-      return [];
+      continue;
     }
-  }));
+  }
+  // Strategy 2: RSS endpoint (more permissive)
+  try {
+    const rssUrl = `https://www.reddit.com/r/${sub}/top/.rss?t=day`;
+    const resp = await fetch(rssUrl, {
+      signal: AbortSignal.timeout(15_000),
+      headers: { 'User-Agent': REDDIT_USER_AGENT, 'Accept': 'application/rss+xml,*/*' },
+    });
+    if (resp.ok) {
+      const xml = await resp.text();
+      const items = parseRSS(xml, `Reddit r/${sub}`);
+      // Reddit RSS sets link to the reddit thread, not external; that's OK
+      return items.slice(0, 20).map(i => ({ ...i, origin: `reddit-${sub}` }));
+    }
+  } catch { /* fall through */ }
+  return [];
+}
+
+function mapRedditPost(d, sub) {
+  const externalUrl = d.url_overridden_by_dest;
+  const isExternal = externalUrl && !externalUrl.includes('reddit.com');
+  const domain = isExternal ? extractDomain(externalUrl) : 'reddit.com';
+  return {
+    title: d.title,
+    url: isExternal ? externalUrl : `https://reddit.com${d.permalink}`,
+    domain,
+    source: isExternal ? prettifyDomain(domain) : `Reddit r/${sub}`,
+    description: d.selftext?.slice(0, 600) || d.title,
+    seendate: String(d.created_utc * 1000),
+    language: 'English',
+    redditScore: d.score,
+    redditComments: d.num_comments,
+    origin: `reddit-${sub}`,
+  };
+}
+
+async function fetchReddit() {
+  console.log(`[Reddit] fetching ${REDDIT_SUBREDDITS.length} subreddits...`);
+  const results = await Promise.all(REDDIT_SUBREDDITS.map(s => fetchRedditSub(s).catch(() => [])));
   const flat = results.flat();
   console.log(`[Reddit] total returned: ${flat.length}`);
   return flat;
@@ -510,13 +564,39 @@ function classifyTopic(article) {
 // PIPELINE
 // ═══════════════════════════════════════════════════════════════
 
+/**
+ * Deduplicate by exact normalised title AND by lexical similarity
+ * (Jaccard overlap of significant tokens). The previous version
+ * shipped three near-duplicate eInvoicing stories with slightly
+ * different headlines — this catches that case.
+ */
 function deduplicate(articles) {
-  const seen = new Set();
   const out = [];
+  const seenKeys = new Set();
+  const seenTokenSets = []; // [{ tokens: Set, idx }]
+
   for (const a of articles) {
     const key = normalizeTitle(a.title);
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
+    if (!key || seenKeys.has(key)) continue;
+
+    // Token Jaccard check vs. already-accepted articles
+    const tokens = new Set(
+      key.split(/\s+/).filter(t => t.length > 3) // skip stopwords-ish short tokens
+    );
+    let isDup = false;
+    for (const prev of seenTokenSets) {
+      const inter = [...tokens].filter(t => prev.tokens.has(t)).length;
+      const union = new Set([...tokens, ...prev.tokens]).size;
+      const jaccard = union > 0 ? inter / union : 0;
+      // 0.55 catches "UAE extends e-invoicing deadline" vs
+      // "UAE announces extension of e-invoicing deadline" but lets
+      // legitimately distinct stories through.
+      if (jaccard >= 0.55) { isDup = true; break; }
+    }
+    if (isDup) continue;
+
+    seenKeys.add(key);
+    seenTokenSets.push({ tokens });
     out.push(a);
   }
   return out;
