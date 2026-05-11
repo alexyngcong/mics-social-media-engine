@@ -1,40 +1,29 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-11T20:49:20.098Z",
+  "generatedAt": "2026-05-11T20:55:52.913Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
-    "googleNews": 150,
+    "gdelt": 9,
+    "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 199,
-    "big4Rejected": 1,
-    "englishOnly": 179,
-    "withinRecency": 78,
-    "scored": 78,
-    "passed": 9
+    "totalFetched": 169,
+    "afterDedup": 155,
+    "big4Rejected": 0,
+    "englishOnly": 154,
+    "withinRecency": 55,
+    "scored": 55,
+    "passed": 5
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUms3Q3RHQW1xeTBXS2RERmhibkRHM0l2RXpNV1BVRmRwV3VkZVNtOW45X0h6ek1UV3dFUzNVU25wUFM1R3Q5MUtCT2YtMzlsNnN5VGxhc2FqZmhaZEh4WnliVU9DSVRDMHlRQ1Y3LVpVc1pISW5pMzBaQjE4bm9XUGtraUdJQ0kxQ2dPRWNGdHNkLU5lWlJXMVUteVE4clVLb3pYdW9FdzA0bVJJYUJIWDBaVXBjbUJHcmF1R0JIZTJ0anV5dUhaRXRXU21scVR3Q1Rz?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-05-11",
-        "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 10,
-        "score": 8,
-        "topic": "UAE/GCC Economy",
-        "origin": "google-news"
-      },
+    "growth": [],
+    "capital": [
       {
         "title": "Flynas profit falls on higher fuel and maintenance costs",
         "url": "https://www.agbi.com/aviation/2026/05/flynas-profit-falls-on-higher-fuel-and-maintenance-costs/",
@@ -44,7 +33,7 @@
         "description": "Net profit at Saudi budget airline Flynas took a hit in the first quarter of 2026 due to higher fuel and maintenance costs. The bottom line declined 20 percent to SAR118 million ($31.3 million) in the quarter ended March 31, from SAR148 million a year earlier, the carrier said in a statement to the Saudi stock [&#8230;]",
         "hoursAgo": 12,
         "score": 8,
-        "topic": "Market Trends",
+        "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
       {
@@ -56,7 +45,7 @@
         "description": "Saudi Arabian franchiser Cenomi Retail recorded a loss in the first quarter of 2026 due to higher finance costs and the absence of a prior-year non-recurring divestment gain. A net loss of SAR47.3 million ($13 million) in the quarter ending in March is in stark contrast to the SAR1.8 million net profit in the same period [&#8230;]",
         "hoursAgo": 8,
         "score": 7,
-        "topic": "Consumer & Retail",
+        "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
       {
@@ -68,23 +57,10 @@
         "description": "Developer Arada, co-owned by princes of the Sharjah and Saudi Arabian royal families, has bought a majority share in Reem Hospital, an Abu Dhabi medical facility and company. According to the developer’s CEO, it is part of a strategy to diversify from cyclical real estate sales towards sustainable recurring revenues. The developer spent AED2 billion [&#8230;]",
         "hoursAgo": 11,
         "score": 7,
-        "topic": "Real Estate & Construction",
+        "topic": "Corporate Finance",
         "origin": "uae-rss"
-      },
-      {
-        "title": "Abu Dhabi Infrastructure Summit unites developers and investors to advance $57 billion infrastructure agenda - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRDI2Y0hLT080T0hWRjRBaUZja3lzdGNLTkNIb1I2TnpVNWJIYjBYV0JmR2ZhNXdzQVBtT25Sd3RWcDdsME83b2RyUDNrcFVuS1FiU196cF9oNHBSQzF4aGtzQ21rUEE5elRheF9fdHRfa3lXd0dVNmVFbGJKWUFZTW9NcTgzNkhJdWJ3MlBUQUxXV0drbHhNQ2dDLWY5WXF6QVFpMjVKb2x3MW9HbkwtWUJLQzFWVThXRTdUcEFKYXM4b1dfRHhLRU9ISDc4TmgzNzg1MUpOSHRpbUU?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-05-11",
-        "description": "Abu Dhabi Infrastructure Summit unites developers and investors to advance $57 billion infrastructure agenda  Economy Middle East",
-        "hoursAgo": 8,
-        "score": 6,
-        "topic": "UAE/GCC Economy",
-        "origin": "google-news"
       }
     ],
-    "capital": [],
     "risk": [
       {
         "title": "UAE e-invoicing deadline extended: What this means for businesses now - Gulf News",
@@ -99,45 +75,19 @@
         "origin": "google-news"
       },
       {
-        "title": "UAE extends e-invoicing provider deadline to Oct 30 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaXAwLUJfcGJYMzlweWJ0R0E0VkNXZ1BBU2ZpY3JvR09ncll3QXdISVRuX2NfVExsSG1UQVBpbVVYWF9YSkJiY04xSER5RXZZSU5sdHRYR3NwN2xJeVNWVWJodGdHeFVKUXFHQ1d1Q3BBdV9kZVkycWhRbE9uSkJfU19ncWVNUHotU3lvRnhscGw4TWpweS1rSGQweWt5UQ?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
+        "title": "Abu Dhabi Infrastructure Summit unites developers and investors to advance $57 billion infrastructure agenda - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRDI2Y0hLT080T0hWRjRBaUZja3lzdGNLTkNIb1I2TnpVNWJIYjBYV0JmR2ZhNXdzQVBtT25Sd3RWcDdsME83b2RyUDNrcFVuS1FiU196cF9oNHBSQzF4aGtzQ21rUEE5elRheF9fdHRfa3lXd0dVNmVFbGJKWUFZTW9NcTgzNkhJdWJ3MlBUQUxXV0drbHhNQ2dDLWY5WXF6QVFpMjVKb2x3MW9HbkwtWUJLQzFWVThXRTdUcEFKYXM4b1dfRHhLRU9ISDc4TmgzNzg1MUpOSHRpbUU?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
         "date": "2026-05-11",
-        "description": "UAE extends e-invoicing provider deadline to Oct 30  Gulf Business",
-        "hoursAgo": 11,
-        "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE announces extension of e-invoicing provider deadline to October 2026 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2RHNHJtZGtkN2s1aG9hT3ZOWVB6ZElGd19hektnWERfSUxzZnBDSm9RTERQaWRzMG1XdndHeU1LdU9SamlKMmw3WEhIX2FOSVdVZ0gwTkhJa25ZZDdpUGpCY29tbnZTUnBNQXd4MXZWRkNwb3lNSFRCQklPaEp6S3ducnRSVk9kUUVjZmEwNTRsOWJpYzJLZ29uWThyUGh5OGRpUWVXSHBZNTJUcWV2V1Rqb9IBwwFBVV95cUxPY1NEWUY2UkhQei1CU0hjMnFpd1JtR2pvLXdrb0tiQ1k1OFFWZWdLdGU0a09yZkVRaEZrNzdCM080SWJhaFBBLWkyWnQ3ZzdGejl5SjJTcy0xdkE4ejQtV0RSeVJmbWJOeWc0aDhwV3k1MkxyM1RhTm5oVzJXR3N0cDc5X1FHdGtmcTMyRXlmdEtlcG9EbmtScGZKMEFjSUo2Y0wxdDJhVHp6SXNKMXJSQ0c4QzZ4OWF5eExxOE1jdGtzbEk?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-10",
-        "description": "UAE announces extension of e-invoicing provider deadline to October 2026  Gulf News",
-        "hoursAgo": 27,
-        "score": 6.5,
-        "topic": "Tax & Regulatory",
+        "description": "Abu Dhabi Infrastructure Summit unites developers and investors to advance $57 billion infrastructure agenda  Economy Middle East",
+        "hoursAgo": 8,
+        "score": 6,
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "UAE e - Invoicing Deadline Extended to October 2026 : What Businesses Need to Do Now",
-        "url": "https://gulfnews.com/business/tax-news/uae-e-invoicing-deadline-extended-what-this-means-for-businesses-now-1.500535992",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-11",
-        "description": "UAE e - Invoicing Deadline Extended to October 2026 : What Businesses Need to Do Now",
-        "imageUrl": "https://gumlet-images.assettype.com/gulfnews%2F2024-11-18%2F8dhfgcht%2FUAEECONOMY2019_resources1_16a3106b387_original_ratio.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "gdelt"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 9
+  "totalCount": 5
 }
