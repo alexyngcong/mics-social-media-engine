@@ -72,30 +72,38 @@ const PRIORITY_SOURCES = new Set([
 // 20-TOPIC TAXONOMY → 4 ROOMS
 // ═══════════════════════════════════════════════════════════════
 
+// Order matters — when `classifyTopic` scans, the FIRST topic to match
+// wins. Most specific / highest-CFO-relevance categories first, so an
+// article about "Cenomi Retail's finance costs" classifies as corporate
+// finance (Capital room) not consumer (Growth room).
 const TOPICS = {
-  economy:        { label: 'UAE/GCC Economy',           room: 'growth',  re: /\b(economy|gdp|inflation|monetary|economic growth|recession|sovereign)\b/i },
-  investment:     { label: 'Investment & Funding',      room: 'growth',  re: /\b(invest|fund|venture|private equity|family office|allocation|deployment)\b/i },
-  expansion:      { label: 'Business Expansion',        room: 'growth',  re: /\b(expansion|expand|market entry|new market|establish|setup|launch)\b/i },
-  realestate:     { label: 'Real Estate & Construction',room: 'growth',  re: /\b(real estate|property|construction|residential|commercial|emaar|aldar|nakheel|damac)\b/i },
-  consumer:       { label: 'Consumer & Retail',         room: 'growth',  re: /\b(consumer|retail|spending|e-?commerce|tourism|hospitality|shopper)\b/i },
-  infrastructure: { label: 'Infrastructure & Logistics',room: 'growth',  re: /\b(infrastructure|airport|port|metro|transport|utility|telecom)\b/i },
-  marketTrends:   { label: 'Market Trends',             room: 'growth',  re: /\b(market trend|index|equity|stock|outlook|forecast|sentiment)\b/i },
-
-  corpFinance:    { label: 'Corporate Finance',         room: 'capital', re: /\b(treasury|cash flow|working capital|liquidity|profitability|refinanc)\b/i },
-  banking:        { label: 'Banking & Rates',           room: 'capital', re: /\b(banking|bank|interest rate|federal reserve|\bfed\b|\becb\b|central bank|sukuk|bond)\b/i },
-  ipoMa:          { label: 'IPO & M&A',                 room: 'capital', re: /\b(ipo|listing|m&a|merger|acquisition|takeover|spinoff|valuation)\b/i },
+  // ─── HIGHEST PRIORITY — direct CFO/treasury signals ─────────────────
+  tax:            { label: 'Tax & Regulatory',          room: 'risk',    re: /\b(corporate tax|vat|e-?invoicing|fta|cbuae|dfsa|adgm|sca|regulator|compliance|amnesty|pillar two|dmtt|transfer pricing|aml)\b/i },
+  ipoMa:          { label: 'IPO & M&A',                 room: 'capital', re: /\b(\bipo\b|listing|m&a|merger|acquisition|acquir|takeover|spinoff|valuation|public offering)\b/i },
+  corpFinance:    { label: 'Corporate Finance',         room: 'capital', re: /\b(treasury|cash flow|working capital|liquidity|profitability|earnings|margin|revenue|profit|debt|refinanc|loan|finance cost|operating cost|interest cost|capex|opex)\b/i },
+  banking:        { label: 'Banking & Rates',           room: 'capital', re: /\b(banking|bank loan|interest rate|federal reserve|\bfed\b|\becb\b|central bank|sukuk|bond|yield|repo|deposit)\b/i },
   familyBusiness: { label: 'Family Business',           room: 'capital', re: /\b(family office|family business|succession|next generation|patriarch|heir)\b/i },
-  workforce:      { label: 'Workforce & HR',            room: 'capital', re: /\b(workforce|hiring|talent|salary|emiratisation|recruitment|layoff)\b/i },
 
-  tax:            { label: 'Tax & Regulatory',          room: 'risk',    re: /\b(tax|vat|e-?invoicing|fta|cbuae|dfsa|adgm|regulator|compliance|amnesty|pillar two)\b/i },
-  geopolitical:   { label: 'Geopolitical Risk',         room: 'risk',    re: /\b(geopolitic|tension|sanction|conflict|war|trump|biden|middle east|iran|israel)\b/i },
-  supplyChain:    { label: 'Supply Chain Disruption',   room: 'risk',    re: /\b(supply chain|shipping|logistics|freight|hormuz|red sea|tariff|trade war)\b/i },
-  emerging:       { label: 'Emerging Risks',            room: 'risk',    re: /\b(risk|disruption|cyber|fraud|breach|crisis|warning|threat)\b/i },
+  // ─── Risk + regulatory ─────────────────────────────────────────────
+  geopolitical:   { label: 'Geopolitical Risk',         room: 'risk',    re: /\b(geopolitic|tension|sanction|conflict|\bwar\b|trump|biden|middle east|iran|israel|gaza|yemen)\b/i },
+  supplyChain:    { label: 'Supply Chain Disruption',   room: 'risk',    re: /\b(supply chain|shipping|logistics|freight|hormuz|red sea|tariff|trade war|export control)\b/i },
+  emerging:       { label: 'Emerging Risks',            room: 'risk',    re: /\b(cyber|fraud|breach|ransomware|crisis|warning|threat|vulnerability)\b/i },
 
-  ai:             { label: 'AI & Technology',           room: 'world',   re: /\b(artificial intelligence|\bai\b|machine learning|generative|chatgpt|claude|\bllm\b|\bgpt\b|agentic)\b/i },
+  // ─── World / macro / tech ─────────────────────────────────────────
+  oil:            { label: 'Oil & Energy Markets',      room: 'world',   re: /\b(\boil\b|opec|crude|brent|wti|petroleum|natural gas|barrel|aramco|adnoc|energy market)\b/i },
+  ai:             { label: 'AI & Technology',           room: 'world',   re: /\b(artificial intelligence|\bai\b|machine learning|generative|chatgpt|claude|\bllm\b|\bgpt\b|agentic ai)\b/i },
   digital:        { label: 'Digital Transformation',    room: 'world',   re: /\b(digital transformation|cloud|saas|automation|cybersecurity|fintech)\b/i },
-  oil:            { label: 'Oil & Energy Markets',      room: 'world',   re: /\b(oil|opec|crude|brent|wti|petroleum|\bgas\b|energy|barrel|aramco|adnoc)\b/i },
-  global:         { label: 'Global Economic Signals',   room: 'world',   re: /\b(global|world economy|developed|emerging market|china|us economy|europe|asia pacific)\b/i },
+  global:         { label: 'Global Economic Signals',   room: 'world',   re: /\b(global economy|world economy|developed market|emerging market|china economy|us economy|europe economy|asia pacific)\b/i },
+
+  // ─── Growth signals (after CFO/risk so they don't steal classification) ─
+  investment:     { label: 'Investment & Funding',      room: 'growth',  re: /\b(investment fund|fundraising|venture capital|private equity|family office allocation|deployment|series [a-d])\b/i },
+  realestate:     { label: 'Real Estate & Construction',room: 'growth',  re: /\b(real estate|property market|construction|residential|commercial property|emaar|aldar|nakheel|damac|housing)\b/i },
+  infrastructure: { label: 'Infrastructure & Logistics',room: 'growth',  re: /\b(infrastructure summit|airport|seaport|metro|transport|utility|telecom|5g|fibre|data center)\b/i },
+  expansion:      { label: 'Business Expansion',        room: 'growth',  re: /\b(expansion|expand into|market entry|new market|establish|opens? in|launches? in)\b/i },
+  consumer:       { label: 'Consumer & Retail',         room: 'growth',  re: /\b(consumer spending|retail sales|e-?commerce|tourism|hospitality|shopper|footfall)\b/i },
+  workforce:      { label: 'Workforce & HR',            room: 'capital', re: /\b(workforce|hiring|talent|salary|emiratisation|recruitment|layoff|redundanc)\b/i },
+  marketTrends:   { label: 'Market Trends',             room: 'capital', re: /\b(market trend|stock index|equity market|outlook|forecast|sentiment|adx|dfm|tadawul)\b/i },
+  economy:        { label: 'UAE/GCC Economy',           room: 'growth',  re: /\b(gdp|inflation|monetary|economic growth|recession|sovereign|fiscal)\b/i },
 };
 
 // ═══════════════════════════════════════════════════════════════
