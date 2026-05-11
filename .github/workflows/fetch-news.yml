@@ -1,0 +1,74 @@
+name: Fetch UAE News
+
+# Runs server-side on GitHub's infrastructure — no CORS, no browser-network
+# restrictions, no proxy chains. Fetches GDELT every 4 hours and commits the
+# filtered, recency-gated results to the gh-pages branch as a static JSON
+# file. The app reads that file from the same origin (no CORS issue).
+#
+# This is the architecture fix for users whose networks block CORS proxies.
+
+on:
+  # Cron in UTC. Runs at minute 0 every 4 hours.
+  schedule:
+    - cron: '0 */4 * * *'
+  # Manual trigger button in the Actions tab
+  workflow_dispatch:
+  # Re-run whenever the fetcher script changes
+  push:
+    branches: [master, main]
+    paths:
+      - 'scripts/fetch-news.mjs'
+      - '.github/workflows/fetch-news.yml'
+
+permissions:
+  contents: write
+
+# Prevent concurrent runs from stomping on each other's commits
+concurrency:
+  group: fetch-news
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Download fetcher script
+        run: |
+          # Pull the latest fetcher script from the default branch
+          # (scripts/fetch-news.mjs lives on master, not on gh-pages)
+          curl -fsSL -H "Authorization: token ${GITHUB_TOKEN}" \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME_DEFAULT:-master}/scripts/fetch-news.mjs" \
+            -o fetch-news.mjs || \
+          curl -fsSL -H "Authorization: token ${GITHUB_TOKEN}" \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/master/scripts/fetch-news.mjs" \
+            -o fetch-news.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run news fetcher
+        run: node fetch-news.mjs
+
+      - name: Commit results if changed
+        run: |
+          rm -f fetch-news.mjs
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add news-latest.json
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit"
+          else
+            git commit -m "chore(news): refresh news-latest.json $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
