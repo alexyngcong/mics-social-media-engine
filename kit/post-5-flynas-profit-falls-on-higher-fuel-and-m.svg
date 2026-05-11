@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="cinematic" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.7 0.15 0.05 0 0
+        0.15 0.7 0.05 0 0
+        0.05 0.1 0.55 0 0
+        0   0    0    1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="0.92" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="0.95" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="1" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+    <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.25"/>
+      <stop offset="35%" stop-color="#06060f" stop-opacity="0.55"/>
+      <stop offset="65%" stop-color="#06060f" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#06060f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="vignTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#06060f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <radialGradient id="vignCenter" cx="0.5" cy="0.5" r="0.65">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#06060f" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.95"/>
+    </radialGradient>
+    <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0%" stop-color="#F0C050" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#F0C050" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#F0C050" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassUnder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8926A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A8926A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A8926A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.75"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1080" height="1080" fill="#06060f"/>
+
+  <!-- Photo top region only -->
+  <clipPath id="topHalf"><rect x="0" y="0" width="1080" height="595"/></clipPath>
+  <g clip-path="url(#topHalf)">
+    <image href="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="1080" height="700" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <rect width="1080" height="595" fill="url(#vignTop)"/>
+    <rect width="1080" height="595" fill="url(#accentGlow)"/>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1080" height="6" fill="#F0C050"/>
+
+  <!-- Bottom ink panel -->
+  <rect x="0" y="595" width="1080" height="485" fill="#08081a"/>
+
+  <!-- Tier banner across the seam -->
+  <rect x="60" y="565" width="960" height="60" fill="#06060f" stroke="#F0C050" stroke-width="2"/>
+  <text x="540" y="603" font-size="22" font-weight="700" letter-spacing="8" fill="#F0C050" text-anchor="middle">TREASURY READ</text>
+
+  <!-- Top metadata, over photo -->
+  <text x="80" y="80" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
+  <text x="80" y="116" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.65)" filter="url(#textShadow)">CAPITAL · CASH</text>
+
+  <!-- HUGE stat in bottom panel, left side -->
+  <text x="80" y="830" font-family="'Cormorant Garamond','Georgia',serif" font-size="270" font-weight="500" fill="#ffffff">$31.3M</text>
+  <text x="80" y="850" font-size="16" font-weight="600" letter-spacing="4" fill="#F0C050">CASH FLOW REVIEWS · CAPITAL STRUCTURING · SPVS · WEALTH MANAGEMENT</text>
+
+  <!-- Headline, right-aligned bottom -->
+  <text x="1000" y="900" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end">Flynas profit falls on higher fuel and maintenance costs</text>
+  <text x="1000" y="942" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end"></text>
+<g opacity="0.15"><line x1="60" y1="60" x2="60" y2="300" stroke="#F0C050" stroke-width="0.5"/><line x1="60" y1="60" x2="300" y2="60" stroke="#F0C050" stroke-width="0.5"/><line x1="100" y1="60" x2="100" y2="300" stroke="#F0C050" stroke-width="0.5"/><line x1="60" y1="100" x2="300" y2="100" stroke="#F0C050" stroke-width="0.5"/><line x1="140" y1="60" x2="140" y2="300" stroke="#F0C050" stroke-width="0.5"/><line x1="60" y1="140" x2="300" y2="140" stroke="#F0C050" stroke-width="0.5"/><line x1="180" y1="60" x2="180" y2="300" stroke="#F0C050" stroke-width="0.5"/><line x1="60" y1="180" x2="300" y2="180" stroke="#F0C050" stroke-width="0.5"/><line x1="220" y1="60" x2="220" y2="300" stroke="#F0C050" stroke-width="0.5"/><line x1="60" y1="220" x2="300" y2="220" stroke="#F0C050" stroke-width="0.5"/><line x1="260" y1="60" x2="260" y2="300" stroke="#F0C050" stroke-width="0.5"/><line x1="60" y1="260" x2="300" y2="260" stroke="#F0C050" stroke-width="0.5"/><line x1="300" y1="60" x2="300" y2="300" stroke="#F0C050" stroke-width="0.5"/><line x1="60" y1="300" x2="300" y2="300" stroke="#F0C050" stroke-width="0.5"/></g>
+
+  <rect x="540" y="20" width="40" height="3" fill="#F0C050" opacity="0.85"/>
+  <rect x="540" y="1057" width="40" height="3" fill="#F0C050" opacity="0.85"/>
+  <rect x="20" y="540" width="3" height="40" fill="#A8926A" opacity="0.7"/>
+  <rect x="1057" y="540" width="3" height="40" fill="#A8926A" opacity="0.7"/>
+
+  <rect x="80" y="1000" width="920" height="1" fill="url(#brassUnder)"/>
+  <text x="540" y="1042" font-size="13" font-weight="700" letter-spacing="6" fill="rgba(168,146,106,0.7)" text-anchor="middle">MICS INTERNATIONAL</text>
+</svg>
