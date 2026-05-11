@@ -133,21 +133,25 @@ function computeHoursAgo(dateInput) {
   if (typeof dateInput === 'number') {
     ms = dateInput;
   } else if (typeof dateInput === 'string') {
-    // GDELT seendate format YYYYMMDDTHHMMSSZ
-    if (/^\d{8}T?\d{0,6}Z?$/.test(dateInput)) {
-      try {
-        const y = parseInt(dateInput.slice(0, 4));
-        const m = parseInt(dateInput.slice(4, 6)) - 1;
-        const d = parseInt(dateInput.slice(6, 8));
-        const h = parseInt(dateInput.slice(9, 11)) || 0;
-        const mi = parseInt(dateInput.slice(11, 13)) || 0;
-        ms = Date.UTC(y, m, d, h, mi);
-      } catch { ms = NaN; }
+    // Order matters — most specific format first.
+    if (/^\d{8}T\d{4,6}Z?$/.test(dateInput)) {
+      // GDELT format: YYYYMMDDTHHMMSSZ
+      const y = parseInt(dateInput.slice(0, 4));
+      const m = parseInt(dateInput.slice(4, 6)) - 1;
+      const d = parseInt(dateInput.slice(6, 8));
+      const h = parseInt(dateInput.slice(9, 11)) || 0;
+      const mi = parseInt(dateInput.slice(11, 13)) || 0;
+      ms = Date.UTC(y, m, d, h, mi);
+    } else if (/^\d{10,16}$/.test(dateInput)) {
+      // Pure numeric string — Unix ms (13-16 digits) or seconds (10 digits)
+      const n = parseInt(dateInput, 10);
+      ms = dateInput.length <= 10 ? n * 1000 : n;
     } else {
+      // Standard date string — RFC 2822, ISO 8601, etc.
       ms = Date.parse(dateInput);
     }
   }
-  if (isNaN(ms)) return 999;
+  if (isNaN(ms) || !isFinite(ms)) return 999;
   return Math.max(0, Math.round((Date.now() - ms) / 3600000));
 }
 
@@ -204,47 +208,58 @@ function unwrapText(s) {
 
 // ─── 1. GDELT DOC 2.0 ─────────────────────────────────────────
 async function fetchGDELT() {
-  const params = new URLSearchParams({
-    query: '("UAE" OR "Dubai" OR "Abu Dhabi" OR "GCC")',
-    mode: 'ArtList',
-    format: 'json',
-    sort: 'HybridRel',
-    maxrecords: '100',
-    timespan: '24H',
-  });
-  const url = `https://api.gdeltproject.org/api/v2/doc/doc?${params.toString()}`;
+  // Try 24h first (per spec), fall back to 72h if empty
+  for (const timespan of ['24H', '72H']) {
+    const params = new URLSearchParams({
+      query: '("UAE" OR "Dubai" OR "Abu Dhabi" OR "GCC")',
+      mode: 'ArtList',
+      format: 'json',
+      sort: 'HybridRel',
+      maxrecords: '100',
+      timespan,
+    });
+    const url = `https://api.gdeltproject.org/api/v2/doc/doc?${params.toString()}`;
 
-  console.log('[GDELT] fetching...');
-  try {
-    const resp = await fetch(url, { signal: AbortSignal.timeout(30_000) });
-    if (!resp.ok) {
-      console.warn(`[GDELT] HTTP ${resp.status}`);
-      return [];
+    console.log(`[GDELT] fetching (timespan=${timespan})...`);
+    try {
+      const resp = await fetch(url, { signal: AbortSignal.timeout(30_000) });
+      if (!resp.ok) {
+        console.warn(`[GDELT] HTTP ${resp.status} at ${timespan}`);
+        continue;
+      }
+      const text = await resp.text();
+      let data;
+      try { data = JSON.parse(text); }
+      catch {
+        console.warn(`[GDELT] non-JSON response at ${timespan}: ${text.slice(0, 200)}`);
+        continue;
+      }
+      const list = data.articles || [];
+      if (list.length === 0) {
+        console.warn(`[GDELT] 0 articles at timespan=${timespan}, trying wider window`);
+        continue;
+      }
+      const articles = list.map(a => ({
+        title: a.title || '',
+        url: a.url || '',
+        domain: normaliseDomain(a.domain || ''),
+        source: prettifyDomain(a.domain || ''),
+        description: a.title || '',
+        seendate: a.seendate || '',
+        language: a.language || 'English',
+        imageUrl: a.socialimage || undefined,
+        origin: 'gdelt',
+      }));
+      console.log(`[GDELT] returned ${articles.length} articles at timespan=${timespan}`);
+      return articles;
+    } catch (e) {
+      console.warn(`[GDELT] fetch error at ${timespan}: ${e.message}`);
+      continue;
     }
-    const text = await resp.text();
-    let data;
-    try { data = JSON.parse(text); }
-    catch {
-      console.warn(`[GDELT] non-JSON response: ${text.slice(0, 200)}`);
-      return [];
-    }
-    const articles = (data.articles || []).map(a => ({
-      title: a.title || '',
-      url: a.url || '',
-      domain: normaliseDomain(a.domain || ''),
-      source: prettifyDomain(a.domain || ''),
-      description: a.title || '',
-      seendate: a.seendate || '',
-      language: a.language || 'English',
-      imageUrl: a.socialimage || undefined,
-      origin: 'gdelt',
-    }));
-    console.log(`[GDELT] returned ${articles.length} articles`);
-    return articles;
-  } catch (e) {
-    console.warn(`[GDELT] fetch error: ${e.message}`);
-    return [];
   }
+  // All windows exhausted
+  console.warn('[GDELT] no articles found across any timespan');
+  return [];
 }
 
 // ─── 2. Google News RSS (multi-query) ──────────────────────────
