@@ -61,6 +61,7 @@ jobs:
         run: node fetch-news.mjs
 
       - name: Commit results if changed
+        id: commit
         run: |
           rm -f fetch-news.mjs
           git config user.name 'github-actions[bot]'
@@ -68,7 +69,23 @@ jobs:
           git add news-latest.json
           if git diff --cached --quiet; then
             echo "No changes — skipping commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore(news): refresh news-latest.json $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Once fresh news is committed to gh-pages, kick off the kit rebuild
+      # so /daily-kit/ stays in sync with the latest signals. Decoupled
+      # workflow keeps the cron logic clean.
+      - name: Trigger kit rebuild
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          curl -fsSL -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/build-weekly-kit.yml/dispatches" \
+            -d '{"ref":"master"}' || echo "::warning::Kit rebuild dispatch failed (non-fatal)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -173,6 +173,69 @@ export interface ImportedBrief {
   rawContent: string;             // full original paste
 }
 
+// ─── Intelligence Feed types (Phase 2 — AI Business Intelligence Command Center) ──
+
+/** A single article from the intelligence-feed JSON (news-latest.json) */
+export interface IntelligenceItem {
+  title: string;
+  url: string;
+  source: string;
+  domain: string;
+  date: string;            // YYYY-MM-DD
+  description: string;
+  imageUrl?: string;
+  hoursAgo: number;
+  score: number;           // 0-14 per spec
+  topic: string;           // human-readable topic label
+  origin: string;          // gdelt | google-news | reddit-* | uae-rss | google-trends
+}
+
+/** The full feed file shape, produced by scripts/fetch-news.mjs */
+export interface IntelligenceFeed {
+  schemaVersion: number;
+  spec: string;
+  generatedAt: string;
+  minScore: number;
+  maxScore: number;
+  cutoffHours: number;
+  sources: Record<string, number>;
+  diagnostic: Record<string, number>;
+  rooms: {
+    growth: IntelligenceItem[];
+    capital: IntelligenceItem[];
+    risk: IntelligenceItem[];
+    world: IntelligenceItem[];
+  };
+  totalCount: number;
+}
+
+/**
+ * The 17 fields Claude returns after running an "AI Brief" prompt.
+ * Names mirror the spec section 6 output requirements exactly.
+ */
+export interface AIBrief {
+  executiveSummary?: string;
+  whyItMatters?: string;
+  cfoAngle?: string;
+  founderAngle?: string;
+  investorAngle?: string;
+  riskOpportunity?: string;
+  linkedinPost?: string;
+  whatsappUpdate?: string;
+  hashtags?: string[];
+  contentHook?: string;
+  visualIdea?: string;
+  cta?: string;
+  advisoryAngle?: string;
+  viralHeadlines?: string[];
+  carouselOutline?: string;
+  pollIdea?: string;
+  newsletterSummary?: string;
+  // Metadata
+  generatedAt?: number;
+  sourceItemUrl?: string;
+}
+
 // ─── Calendar types ─────────────────────────────────────────────
 
 export type CalendarDayStatus = 'planned' | 'generating' | 'generated' | 'copied' | 'skipped';

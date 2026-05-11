@@ -11,14 +11,13 @@ import { useHistory } from './hooks/useHistory';
 import { dateFormatted } from './config/brand';
 
 import { CommandCenter } from './components/steps/CommandCenter';
-import { PlatformSelect } from './components/steps/PlatformSelect';
 import { RoomSelect } from './components/steps/RoomSelect';
 import { FormatSelect } from './components/steps/FormatSelect';
-import { CustomTopic } from './components/steps/CustomTopic';
-import { DeepDive } from './components/steps/DeepDive';
 import { LoadingState } from './components/steps/LoadingState';
 import { ResultView } from './components/steps/ResultView';
 import { BriefImport } from './components/steps/BriefImport';
+import { AIBriefPaste } from './components/steps/AIBriefPaste';
+import { WeeklyKit } from './components/steps/WeeklyKit';
 import { CalendarView } from './components/calendar/CalendarView';
 import { DayDetail } from './components/calendar/DayDetail';
 import { Button } from './components/ui/Button';
@@ -26,15 +25,14 @@ import { Button } from './components/ui/Button';
 function getStepTitle(step: number): string {
   switch (step) {
     case 0: return 'Command Center';
-    case 10: return 'Select Platform';
     case 1: return 'Select Room';
     case 2: return 'Choose Format';
-    case 3: case 7: return 'Generating...';
-    case 4: case 8: return 'Your Post';
-    case 5: return 'Custom Topic';
-    case 6: return 'AI Deep Dive';
+    case 3: return 'Generating...';
+    case 4: return 'Your Post';
     case 9: return 'Content Calendar';
     case 11: return 'Import Deep Research Brief';
+    case 12: return 'Paste AI Brief Response';
+    case 13: return 'Weekly Posting Kit';
     default: return '';
   }
 }
@@ -42,17 +40,12 @@ function getStepTitle(step: number): string {
 export default function App() {
   const store = useAppStore();
   const { items: history, addItem } = useHistory();
-  const { generate, generateDeep } = useGenerate(addItem);
+  const { generate } = useGenerate(addItem);
   const fallbackTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   const handleRetryStandard = () => {
     store.setStep(3);
     setTimeout(() => generate(), 200);
-  };
-
-  const handleRetryDeep = () => {
-    store.setStep(7);
-    setTimeout(() => generateDeep(store.customTopic), 200);
   };
 
   return (
@@ -93,14 +86,13 @@ export default function App() {
             <DayDetail />
           </>
         )}
-        {store.step === 10 && <PlatformSelect />}
         {store.step === 1 && <RoomSelect />}
         {store.step === 2 && <FormatSelect onGenerate={() => generate()} />}
-        {store.step === 5 && <CustomTopic onGenerate={(topic) => generate(topic)} />}
-        {store.step === 6 && <DeepDive onGenerateDeep={(topic) => generateDeep(topic)} />}
         {store.step === 11 && <BriefImport />}
+        {store.step === 12 && <AIBriefPaste />}
+        {store.step === 13 && <WeeklyKit />}
 
-        {[3, 7].includes(store.step) && store.loading && <LoadingState />}
+        {store.step === 3 && store.loading && <LoadingState />}
 
         {store.step === 4 && (
           <>
@@ -113,21 +105,6 @@ export default function App() {
               </div>
             ) : store.result ? (
               <ResultView result={store.result} isDeep={false} onRetry={handleRetryStandard} />
-            ) : null}
-          </>
-        )}
-
-        {store.step === 8 && (
-          <>
-            {store.error && !store.deepResult ? (
-              <div className="bg-ink-card border border-signal-red/40 rounded-card p-4 mb-3.5">
-                <div className="text-signal-red text-[13px] mb-2.5">{store.error}</div>
-                <Button variant="purple" onClick={handleRetryDeep} className="!px-5 !py-2.5 !text-[12px]">
-                  Retry Deep Dive
-                </Button>
-              </div>
-            ) : store.deepResult ? (
-              <ResultView result={store.deepResult} isDeep={true} deepResult={store.deepResult} onRetry={handleRetryDeep} />
             ) : null}
           </>
         )}

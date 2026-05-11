@@ -61,7 +61,32 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(git pull *)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(curl -s \"https://api.github.com/repos/alexyngcong/mics-social-media-engine/contents/.github/workflows/fetch-news.yml\")",
+      "Bash(curl -X POST \"https://api.github.com/repos/alexyngcong/mics-social-media-engine/actions/workflows/fetch-news.yml/dispatches\" -H \"Accept: application/vnd.github+json\" -d '{\"ref\":\"master\"}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s 'https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal%20Tax%20Authority%22%20OR%20%22Ministry%20of%20Finance%22%20UAE&mode=ArtList&maxrecords=20&format=json&sort=DateDesc' --max-time 20)",
+      "Bash(curl -s -o /tmp/gdelt-resp.txt -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\" 'https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal%20Tax%20Authority%22%20OR%20%22Ministry%20of%20Finance%22%20UAE&mode=ArtList&maxrecords=20&format=json&sort=DateDesc' --max-time 20)",
+      "Bash(curl -s -o /tmp/gdelt-resp2.txt -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\" 'https://api.gdeltproject.org/api/v2/doc/doc?query=UAE&mode=ArtList&maxrecords=10&format=json&sort=DateDesc' --max-time 20)",
+      "Bash(curl -s \"https://alexyngcong.github.io/mics-social-media-engine/news-latest.json?t=$\\(date +%s\\)\")",
+      "Bash(git commit -m 'tune\\(news\\): lower score threshold from 8 to 6 of 14 *)",
+      "Bash(git commit -m 'tune\\(news\\): reorder topic classification + broaden corpFinance keywords *)",
+      "Bash(curl -sv \"https://alexyngcong.github.io/mics-social-media-engine/news-latest.json?t=$\\(date +%s\\)\")",
+      "Bash(node scripts/build-weekly-kit.mjs)",
+      "PowerShell(node scripts/build-weekly-kit.mjs)",
+      "PowerShell(Get-Command npx -ErrorAction SilentlyContinue; Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue | Select-Object Name -First 5; \\(Get-Command npm -ErrorAction SilentlyContinue\\).Source)",
+      "Bash(curl -sS \"https://alexyngcong.github.io/mics-social-media-engine/news-latest.json\")",
+      "Bash(gh run *)",
+      "Bash(curl -sS \"https://api.github.com/repos/alexyngcong/mics-social-media-engine/actions/workflows/fetch-news.yml/runs?per_page=5\")",
+      "Bash(curl -sS \"https://api.github.com/repos/alexyngcong/mics-social-media-engine/actions/runs/25697742915/jobs\")",
+      "Bash(curl -sS \"https://api.github.com/repos/alexyngcong/mics-social-media-engine/commits?sha=gh-pages&per_page=10\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Admin\\\\Desktop\\\\sdsssf\\\\Social Media\" -Directory)",
+      "Bash(Select-Object Name)",
+      "Bash(curl -sSI \"https://alexyngcong.github.io/mics-social-media-engine/daily-kit/\")",
+      "Bash(curl -sSI \"https://alexyngcong.github.io/mics-social-media-engine/daily-kit/post-1-hormuz.svg\")",
+      "Bash(curl -sS \"https://api.github.com/repos/alexyngcong/mics-social-media-engine/commits?sha=gh-pages&per_page=5\")",
+      "Bash(mkdir -p public/kit && cp daily-kit/post-*.txt daily-kit/post-*.svg public/kit/ 2>&1 && ls public/kit/ | wc -l && echo \"files copied to public/kit/\")",
+      "Bash(awk 'NR>=1193 && NR<=1491 {next} {print}' scripts/build-weekly-kit.mjs)",
+      "Bash(mv /tmp/_build_clean.mjs scripts/build-weekly-kit.mjs)"
     ]
   }
 }

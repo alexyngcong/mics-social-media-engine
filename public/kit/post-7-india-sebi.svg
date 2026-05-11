@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="cinematic" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.55 0.10 0.05 0 0
+        0.05 0.85 0.10 0 0
+        0.10 0.10 0.55 0 0
+        0   0    0    1 0"/>
+    </filter>
+    <linearGradient id="vignTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#06060f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0%" stop-color="#4ADE80" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#4ADE80" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassUnder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8926A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A8926A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A8926A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.75"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="topHalf"><rect x="0" y="0" width="1080" height="595"/></clipPath>
+  </defs>
+
+  <rect width="1080" height="1080" fill="#06060f"/>
+
+  <g clip-path="url(#topHalf)">
+    <image href="https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
+           xlink:href="https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
+           x="0" y="-40" width="1080" height="700" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <rect width="1080" height="595" fill="url(#vignTop)"/>
+    <rect width="1080" height="595" fill="url(#accentGlow)"/>
+  </g>
+
+  <rect x="0" y="0" width="1080" height="6" fill="#4ADE80"/>
+  <rect x="0" y="595" width="1080" height="485" fill="#08081a"/>
+
+  <rect x="60" y="565" width="960" height="60" fill="#06060f" stroke="#4ADE80" stroke-width="2"/>
+  <text x="540" y="603" font-size="22" font-weight="700" letter-spacing="8" fill="#4ADE80" text-anchor="middle">SPEED OF DEPLOYMENT  ·  EARLY MOVER</text>
+
+  <text x="80" y="80" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
+  <text x="80" y="116" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.65)" filter="url(#textShadow)">GROWTH SIGNALS</text>
+
+  <text x="80" y="800" font-family="'Cormorant Garamond','Georgia',serif" font-size="120" font-weight="500" fill="#ffffff">MONTHS</text>
+  <text x="80" y="900" font-family="'Cormorant Garamond','Georgia',serif" font-size="120" font-weight="500" fill="#4ADE80">→  WEEKS</text>
+  <text x="80" y="945" font-size="16" font-weight="600" letter-spacing="3" fill="#4ADE80">SEBI AIF GREEN CHANNEL  ·  INDIA</text>
+
+  <text x="1000" y="800" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end">GP launch window</text>
+  <text x="1000" y="842" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end">compresses.</text>
+  <text x="1000" y="890" font-size="14" font-style="italic" fill="#B0AAB0" text-anchor="end">UAE family offices reposition.</text>
+
+  <!-- THEME DECORATIONS — orbital-rings + horizon-stripe (growth/expansion) -->
+  <circle cx="940" cy="240" r="60" fill="none" stroke="#4ADE80" stroke-width="1" opacity="0.35"/>
+  <circle cx="940" cy="240" r="100" fill="none" stroke="#4ADE80" stroke-width="1" opacity="0.22"/>
+  <circle cx="940" cy="240" r="150" fill="none" stroke="#4ADE80" stroke-width="1" opacity="0.12"/>
+  <circle cx="940" cy="240" r="4" fill="#4ADE80" opacity="0.8"/>
+  <rect x="120" y="180" width="60" height="2" fill="#4ADE80" opacity="0.7"/>
+  <rect x="900" y="180" width="60" height="2" fill="#4ADE80" opacity="0.7"/>
+  <rect x="120" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
+  <rect x="900" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
+
+  <rect x="80" y="1000" width="920" height="1" fill="url(#brassUnder)"/>
+  <text x="540" y="1042" font-size="13" font-weight="700" letter-spacing="6" fill="rgba(168,146,106,0.7)" text-anchor="middle">MICS INTERNATIONAL</text>
+</svg>

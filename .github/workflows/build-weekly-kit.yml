@@ -1,0 +1,76 @@
+name: Build Weekly Posting Kit
+
+# Generates kit-latest.json + /kit/ folder on the gh-pages branch every
+# Sunday night so the React app's in-app WeeklyKit view (step 13) always
+# has fresh content to render.
+#
+# Also runs after every fetch-news refresh so the kit is never stale.
+# Triggered manually via the Actions tab as well.
+
+on:
+  schedule:
+    # Sundays 23:00 UTC = Monday 03:00 GST. Kit ready before the workweek.
+    - cron: '0 23 * * 0'
+  workflow_dispatch:
+  # Re-run whenever the builder or the news fetcher changes
+  push:
+    branches: [master, main]
+    paths:
+      - 'scripts/build-weekly-kit.mjs'
+      - '.github/workflows/build-weekly-kit.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-weekly-kit
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Download builder script from default branch
+        run: |
+          # The builder lives on master; we run it inside the gh-pages
+          # checkout because news-latest.json sits there.
+          curl -fsSL -H "Authorization: token ${GITHUB_TOKEN}" \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/master/scripts/build-weekly-kit.mjs" \
+            -o build-weekly-kit.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify news-latest.json exists
+        run: |
+          if [ ! -f news-latest.json ]; then
+            echo "::warning::news-latest.json missing on gh-pages — generating empty placeholder so the kit still builds."
+            echo '{"schemaVersion":3,"generatedAt":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'","cutoffHours":72,"rooms":{"growth":[],"capital":[],"risk":[],"world":[]},"totalCount":0}' > news-latest.json
+          fi
+
+      - name: Build kit
+        run: node build-weekly-kit.mjs
+
+      - name: Commit kit if changed
+        run: |
+          rm -f build-weekly-kit.mjs
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add kit-latest.json kit
+          if git diff --cached --quiet; then
+            echo "No kit changes — skipping commit"
+          else
+            git commit -m "chore(kit): rebuild kit-latest.json $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

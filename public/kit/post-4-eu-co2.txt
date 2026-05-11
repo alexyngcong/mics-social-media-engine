@@ -1,0 +1,9 @@
+11 May 2026.
+
+The European Commission has drafted a technical change to the ETS allocation formula that would include companies' indirect emissions, the carbon embedded in purchased electricity and energy-in-production, alongside direct emissions when calculating free CO2 permits. The proposal covers 2026-2030 and is currently sized at roughly EUR 4 billion in saved compliance costs for European industry across the window. Brussels is expected to publish the formal proposal in the coming weeks, with a final decision targeted by June.
+
+For UAE manufacturers exporting aluminium, steel, fertilizer, cement, electricity, or hydrogen into the EU, the CBAM math shifts twice. The EU's own industrial base gets cheaper relative carbon costs through the indirect-emissions inclusion, and CBAM's pricing reference point shifts as the EU's internal ETS price re-equilibrates. Anyone running a 2026-2030 emissions cash-flow model on the existing assumption should re-stress before the June decision lands.
+
+Retroactive compliance is always more expensive than ahead-of-curve readiness. The firms that get caught mid-cycle pay in remediation costs, advisory fees, and management bandwidth that compounds across multiple quarters.
+
+Let's see how the next read lands.

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-11T12:00:00.000Z",
+  "weekOf": "11 May 2026",
+  "totalCount": 7,
+  "posts": [
+    {
+      "n": 6,
+      "slug": "cbuae-whatsapp",
+      "slot": { "day": "Mon", "time": "08:00 GST" },
+      "framework": "PAS · ALERT",
+      "room": "risk",
+      "theme": "compliance_risk",
+      "tier": "ENFORCEMENT LIVE · ACT THIS WEEK",
+      "title": "CBUAE closes WhatsApp window for licensed FIs",
+      "sourceUrl": "https://www.centralbank.ae/",
+      "filenameBase": "post-6-cbuae-whatsapp"
+    },
+    {
+      "n": 1,
+      "slug": "hormuz",
+      "slot": { "day": "Mon", "time": "17:00 GST" },
+      "framework": "PAS · ALERT",
+      "room": "world",
+      "theme": "oil_energy",
+      "tier": "STRUCTURAL SIGNAL · AHEAD OF CURVE",
+      "title": "Hormuz oil shock — Brent above $105.70",
+      "sourceUrl": "https://www.reuters.com/business/energy/",
+      "filenameBase": "post-1-hormuz"
+    },
+    {
+      "n": 2,
+      "slug": "china-ppi",
+      "slot": { "day": "Tue", "time": "08:00 GST" },
+      "framework": "DATA · OBSERVATION",
+      "room": "world",
+      "theme": "geopolitics",
+      "tier": "PRINT OF THE DAY · 30-DAY WINDOW",
+      "title": "China PPI 45-month high — 2.8%",
+      "sourceUrl": "https://www.bloomberg.com/news/economics",
+      "filenameBase": "post-2-china-ppi"
+    },
+    {
+      "n": 4,
+      "slug": "eu-co2",
+      "slot": { "day": "Tue", "time": "17:00 GST" },
+      "framework": "BAB · ALERT",
+      "room": "risk",
+      "theme": "compliance_risk",
+      "tier": "REGULATORY SHIFT · 60-DAY WINDOW",
+      "title": "EU CO2 permit shift — €4B impact",
+      "sourceUrl": "https://www.bloomberg.com/news/eu-cbam",
+      "filenameBase": "post-4-eu-co2"
+    },
+    {
+      "n": 3,
+      "slug": "tech-bonds",
+      "slot": { "day": "Wed", "time": "09:00 GST" },
+      "framework": "AIDA · OBSERVATION",
+      "room": "capital",
+      "theme": "treasury_capital",
+      "tier": "TREASURY READ · 60-DAY WINDOW",
+      "title": "Alphabet ¥ + Amazon CHF bonds for AI capex",
+      "sourceUrl": "https://www.bloomberg.com/news/markets",
+      "filenameBase": "post-3-tech-bonds"
+    },
+    {
+      "n": 5,
+      "slug": "eon-ovo",
+      "slot": { "day": "Thu", "time": "09:00 GST" },
+      "framework": "BAB · OBSERVATION",
+      "room": "risk",
+      "theme": "compliance_risk",
+      "tier": "PATTERN MIGRATING · CROSS-CYCLE",
+      "title": "E.ON acquires Ovo under Ofgem capital pressure",
+      "sourceUrl": "https://www.ft.com/companies/energy",
+      "filenameBase": "post-5-eon-ovo"
+    },
+    {
+      "n": 7,
+      "slug": "india-sebi",
+      "slot": { "day": "Fri", "time": "09:00 GST" },
+      "framework": "AIDA · OBSERVATION",
+      "room": "growth",
+      "theme": "growth_expansion",
+      "tier": "SPEED OF DEPLOYMENT · EARLY MOVER",
+      "title": "India SEBI green-channel AIF approvals",
+      "sourceUrl": "https://www.sebi.gov.in/",
+      "filenameBase": "post-7-india-sebi"
+    }
+  ]
+}

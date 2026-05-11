@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useAppStore } from '../../store/appStore';
 import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
@@ -6,10 +5,8 @@ import { Button } from '../ui/Button';
 import { Card } from '../ui/Card';
 import { Label } from '../ui/Label';
 import { useClipboard } from '../../hooks/useClipboard';
-import { useRoomNewsStatus } from '../../hooks/useRoomNewsStatus';
-import { NewsStatusBadge } from '../qa/NewsStatusBadge';
-import { testCorsProxies, type ProxyTestResult } from '../../services/newsFetcher';
-import type { HistoryItem } from '../../types';
+import { IntelligenceFeed } from '../intelligence/IntelligenceFeed';
+import type { HistoryItem, IntelligenceItem } from '../../types';
 
 interface CommandCenterProps {
   history: HistoryItem[];
@@ -37,28 +34,20 @@ export function CommandCenter({ history }: CommandCenterProps) {
   const { copy } = useClipboard();
   const today = getTodayRecommendation();
   const dayName = dayNames[new Date().getDay()];
-  const { statuses: roomStatuses, anyFresh, isProbing, probe } = useRoomNewsStatus();
-
-  // ── Network diagnostic state ──
-  const [proxyResults, setProxyResults] = useState<ProxyTestResult[] | null>(null);
-  const [isTesting, setIsTesting] = useState(false);
-
-  const runConnectivityTest = async () => {
-    setIsTesting(true);
-    setProxyResults(null);
-    try {
-      const results = await testCorsProxies();
-      setProxyResults(results);
-    } finally {
-      setIsTesting(false);
-    }
-  };
-
   // Helper: clear any selected brief item before starting a fresh generation flow,
   // so the engine fetches live news instead of regenerating from the last brief.
   const startFresh = (targetStep: number) => {
     setSelectedBriefItem(null);
     setStep(targetStep);
+  };
+
+  // When the user clicks "Paste AI Response" on an intelligence item,
+  // we store the item context and route to step 12 (AIBriefPaste).
+  // That view parses Claude's heading-based 17-section output and
+  // generates platform-specific posts using the item's metadata.
+  const handlePasteAIResponse = (item: IntelligenceItem) => {
+    useAppStore.getState().setPendingIntelligenceItem(item);
+    setStep(12);
   };
 
   // Count posts this week (from history)
@@ -75,35 +64,46 @@ export function CommandCenter({ history }: CommandCenterProps) {
 
   return (
     <>
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          PRIMARY ENTRY POINT — Deep Research Brief Import.
-          This is the most reliable workflow: no external fetches, no
-          CORS issues, works in any network. Run Deep Research in
-          ChatGPT/Claude/Perplexity → paste → app generates polished
-          posts using the marketing-framework engine.
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <Card className="!bg-gradient-to-br !from-signal-purple/15 !to-signal-purple/5 !border-signal-purple/30 !mb-4">
-        <div className="text-[10px] font-bold tracking-wider text-signal-purple mb-1.5">
-          ⚡ RECOMMENDED WORKFLOW
+      {/* ━━━ WEEKLY POSTING KIT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          In-app view (step 13). Reads kit-latest.json same-origin and
+          renders the 7 posts + banners inside the React app. No external
+          tab, no separate page that runs on its own — fully integrated.
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <Card className="!bg-gradient-to-br !from-bronze/15 !to-ink-card !border-bronze/30 !mb-3">
+        <div className="flex items-center justify-between mb-1.5">
+          <div className="text-[10px] font-bold tracking-wider text-bronze">
+            📦 WEEKLY POSTING KIT
+          </div>
+          <span className="text-[9px] tracking-wider px-1.5 py-0.5 rounded-full bg-signal-green/10 border border-signal-green/30 text-signal-green font-bold">
+            AUTO-REFRESHED
+          </span>
         </div>
-        <div className="text-tx text-[14px] font-semibold mb-1">
-          Import Deep Research Brief
+        <div className="text-tx text-[13px] font-semibold mb-1">
+          7 ready-to-post signals + matching banners
         </div>
-        <div className="text-tx-mid text-[12px] leading-relaxed mb-3">
-          Run your CFO research in ChatGPT, Claude, or Perplexity.
-          Paste the brief here. The engine parses it, picks the right
-          marketing framework per item, and produces ready-to-post
-          content. Works without any external API calls.
+        <div className="text-tx-mid text-[11px] leading-relaxed mb-2.5">
+          Updates every Sunday and after each fresh news pull. Posts + banners
+          open inside this app — no separate page.
         </div>
         <Button
-          variant="purple"
+          variant="gold"
           fullWidth
-          onClick={() => setStep(11)}
+          onClick={() => setStep(13)}
           className="!py-3 !text-[13px]"
         >
-          📋 Open Brief Importer →
+          Open Weekly Kit →
         </Button>
       </Card>
+
+      {/* ━━━ PRIMARY VIEW — INTELLIGENCE FEED ━━━━━━━━━━━━━━━━━━━━
+          Live items from the GitHub Actions news pipeline.
+          Each card has a One-Click AI Brief button:
+            1. Builds complete Claude prompt with 17 outputs
+            2. Auto-copies to clipboard + opens claude.ai
+            3. User pastes, gets response, copies it back
+            4. App parses 17 outputs into ready-to-post content
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <IntelligenceFeed onPasteResponse={handlePasteAIResponse} />
 
       {/* Strategy card */}
       <Card className="!bg-gradient-to-br !from-ink-card !to-ink-el !border-bronze/15 !mb-3">
@@ -140,74 +140,10 @@ export function CommandCenter({ history }: CommandCenterProps) {
         </div>
       </Card>
 
-      {/* ── EMPTY-FEED ALERT — when all rooms are dry, point to Deep Research path
-                                 PLUS expose a connectivity test so the user can see
-                                 which CORS proxies are actually reachable from their
-                                 network. ── */}
-      {!isProbing && !anyFresh && (
-        <Card className="!bg-signal-amber/10 !border-signal-amber/30 !mb-3">
-          <div className="text-[10px] font-bold tracking-wider text-signal-amber mb-1">
-            ⚠️ LIVE FEEDS DRY
-          </div>
-          <div className="text-tx-mid text-[12px] leading-relaxed mb-2.5">
-            Either GDELT has no fresh UAE-relevant content right now, or your
-            network is blocking the CORS proxies needed to reach it. Run the
-            connectivity test to find out which.
-          </div>
-
-          <div className="flex gap-2 mb-2.5">
-            <Button
-              variant="purple"
-              onClick={() => setStep(11)}
-              className="flex-1 !py-2.5 !text-[12px]"
-            >
-              📋 Import Deep Research →
-            </Button>
-            <Button
-              variant="ghost"
-              onClick={runConnectivityTest}
-              disabled={isTesting}
-              className="flex-1 !py-2.5 !text-[12px]"
-            >
-              {isTesting ? 'Testing...' : '🔬 Test Network'}
-            </Button>
-          </div>
-
-          {/* Diagnostic results — shown after the test runs */}
-          {proxyResults && (
-            <div className="bg-ink-card border border-ink-border rounded-card-lg p-3 text-[11px]">
-              <div className="text-tx-dim font-bold mb-1.5 text-[10px] tracking-wider">
-                NETWORK DIAGNOSTIC RESULTS
-              </div>
-              <div className="space-y-1">
-                {proxyResults.map((r) => (
-                  <div key={r.name} className="flex items-center justify-between gap-2">
-                    <span className="font-mono text-tx-mid">{r.name}</span>
-                    <div className="flex items-center gap-2">
-                      <span className="text-tx-ghost text-[10px]">{r.latencyMs}ms</span>
-                      <span className={`
-                        text-[9px] font-bold px-1.5 py-0.5 rounded
-                        ${r.ok
-                          ? 'bg-signal-green/15 text-signal-green'
-                          : 'bg-signal-red/15 text-signal-red'
-                        }
-                      `}>
-                        {r.ok ? 'OK' : typeof r.status === 'string' ? r.status.toUpperCase() : `HTTP ${r.status}`}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="text-tx-dim text-[10px] mt-2 leading-relaxed">
-                {proxyResults.some(r => r.ok)
-                  ? '✓ At least one proxy works. Try Pull Fresh News again — the engine will route through the working proxy.'
-                  : '✗ All proxies blocked from your network. Use Import Deep Research instead — that path needs no external fetches.'
-                }
-              </div>
-            </div>
-          )}
-        </Card>
-      )}
+      {/* Legacy LIVE FEEDS DRY / Test Network card removed. The static
+          intelligence-feed.json from GitHub Actions makes the browser-side
+          CORS proxy chain irrelevant; the IntelligenceFeed component above
+          handles its own empty state. */}
 
       {/* Calendar */}
       <Label>CALENDAR</Label>
@@ -220,43 +156,21 @@ export function CommandCenter({ history }: CommandCenterProps) {
         Content Calendar
       </Button>
 
-      {/* Create actions */}
-      <Label>CREATE</Label>
-
-      {/* IMPORT DEEP RESEARCH BRIEF — middleman flow:
-          paste any external brief, parse, generate polished posts from it. */}
+      {/* Create actions — only the "paste a brief" path remains. The legacy
+          "Generate Intelligence Post / Custom Topic / AI Deep Dive" buttons
+          were removed: they relied on a browser-side CORS-proxy news fetch
+          that no longer functions in the deployed network environment, and
+          their template-based output has been superseded by the AI Brief
+          flow at the top of the screen (per-signal claude.ai handoff) plus
+          the auto-refreshed Daily Posting Kit. */}
+      <Label>IMPORT EXTERNAL BRIEF</Label>
       <Button
         variant="purple"
         fullWidth
-        onClick={() => setStep(11)}
-        className="!py-3.5 !text-[13px] !rounded-card-lg !mb-2.5"
-      >
-        Import Deep Research Brief →
-      </Button>
-
-      <Button
-        variant="gold"
-        fullWidth
-        onClick={() => startFresh(10)}
-        className="!py-4 !text-[14px] !rounded-card-lg !mb-2.5"
-      >
-        Generate Intelligence Post
-      </Button>
-      <Button
-        variant="ghost"
-        fullWidth
-        onClick={() => startFresh(5)}
-        className="!py-3 !text-[13px] !rounded-card-lg !mb-2.5"
-      >
-        Custom Topic Post
-      </Button>
-      <Button
-        variant="purple"
-        fullWidth
-        onClick={() => startFresh(6)}
+        onClick={() => startFresh(11)}
         className="!py-3.5 !text-[13px] !rounded-card-lg !mb-6"
       >
-        AI Deep Dive (Research Mode)
+        Paste CFO Brief from ChatGPT / Perplexity →
       </Button>
 
       {/* Weekly Rhythm Guide — post any day, suggested angles only */}
@@ -308,48 +222,23 @@ export function CommandCenter({ history }: CommandCenterProps) {
         ))}
       </div>
 
-      {/* Rooms overview with fresh-news indicators + manual fetch trigger */}
-      <div className="flex items-center justify-between">
-        <Label>INTELLIGENCE ROOMS</Label>
-        <Button
-          variant="ghost"
-          onClick={probe}
-          disabled={isProbing}
-          className="!px-2.5 !py-1 !text-[10px] !mb-1"
-        >
-          {isProbing ? 'Fetching...' : '🔄 Pull Fresh News'}
-        </Button>
-      </div>
-      <div className="flex items-center justify-end mb-2">
-        <span className="text-[9px] text-tx-dim">
-          {isProbing
-            ? 'Checking...'
-            : anyFresh
-              ? 'Fresh signals available'
-              : 'No fresh signals · 24h cutoff'}
-        </span>
-      </div>
-      {ROOMS.map((rm) => {
-        const st = roomStatuses[rm.id];
-        // Only show the status badge if a probe has actually run
-        // (checkedAt > 0). Otherwise the home page stays clean and silent.
-        const hasProbed = st && st.checkedAt > 0;
-        return (
-          <Card key={rm.id} accentColor={rm.color} className="!mb-2">
-            <div className="flex items-center justify-between mb-0.5">
-              <div className="text-[14px] font-semibold" style={{ color: rm.color }}>
-                {rm.icon} {rm.label}
-              </div>
-              {hasProbed && <NewsStatusBadge status={st.status} count={st.count} />}
-            </div>
-            <div className="text-tx text-[12px] font-medium mb-0.5 italic">
-              "{rm.cfoQuestion}"
-            </div>
-            <div className="text-tx-dim text-[11px] leading-snug mb-1">{rm.description}</div>
-            <div className="text-bronze text-[10px]">MICS: {rm.micsServices}</div>
-          </Card>
-        );
-      })}
+      {/* Rooms overview — descriptive reference. The live intelligence
+          per room is rendered by the IntelligenceFeed component at the
+          top of the page. This section is just a "what each room covers"
+          legend for the user. */}
+      <Label>INTELLIGENCE ROOMS</Label>
+      {ROOMS.map((rm) => (
+        <Card key={rm.id} accentColor={rm.color} className="!mb-2">
+          <div className="text-[14px] font-semibold mb-0.5" style={{ color: rm.color }}>
+            {rm.icon} {rm.label}
+          </div>
+          <div className="text-tx text-[12px] font-medium mb-0.5 italic">
+            "{rm.cfoQuestion}"
+          </div>
+          <div className="text-tx-dim text-[11px] leading-snug mb-1">{rm.description}</div>
+          <div className="text-bronze text-[10px]">MICS: {rm.micsServices}</div>
+        </Card>
+      ))}
 
       {/* Posting guidance — no cap */}
       <Card className="!mt-4 !bg-ink-el/50 !border-ink-border">

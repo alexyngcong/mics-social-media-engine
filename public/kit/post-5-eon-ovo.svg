@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="cinematic" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.85 0.05 0.05 0 0
+        0.10 0.55 0.10 0 0
+        0.10 0.10 0.55 0 0
+        0   0    0    1 0"/>
+    </filter>
+    <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.25"/>
+      <stop offset="35%" stop-color="#06060f" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0%" stop-color="#EF5555" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#EF5555" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassUnder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8926A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A8926A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A8926A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.75"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="topStrip"><rect x="0" y="0" width="1080" height="755"/></clipPath>
+  </defs>
+
+  <rect width="1080" height="1080" fill="#06060f"/>
+
+  <g clip-path="url(#topStrip)">
+    <image href="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
+           xlink:href="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
+           x="0" y="0" width="1080" height="800" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <rect width="1080" height="755" fill="url(#darken)" opacity="0.5"/>
+    <rect width="1080" height="755" fill="url(#accentGlow)"/>
+  </g>
+
+  <rect x="0" y="0" width="1080" height="4" fill="#EF5555"/>
+  <rect x="0" y="755" width="1080" height="325" fill="#06060f"/>
+  <rect x="0" y="753" width="1080" height="2" fill="#EF5555"/>
+
+  <text x="80" y="80" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
+  <text x="80" y="116" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.65)" filter="url(#textShadow)">RISK  ·  GOVERNANCE</text>
+
+  <text x="80" y="690" font-family="'Cormorant Garamond','Georgia',serif" font-size="40" font-style="italic" font-weight="600" fill="rgba(234,230,222,0.9)" filter="url(#textShadow)">"Capital-buffer rules drive consolidation."</text>
+
+  <line x1="80" y1="800" x2="180" y2="800" stroke="#EF5555" stroke-width="2"/>
+  <text x="80" y="845" font-size="18" font-weight="700" letter-spacing="5" fill="#EF5555">PATTERN MIGRATING</text>
+  <text x="80" y="885" font-size="14" letter-spacing="3" fill="#B0AAB0">RISK  ·  GOVERNANCE</text>
+  <text x="80" y="918" font-size="12" font-style="italic" fill="#6A6478">Tax · AML · Audit · Governance</text>
+
+  <line x1="430" y1="785" x2="430" y2="975" stroke="#EF5555" stroke-width="1" opacity="0.4"/>
+
+  <text x="540" y="900" font-family="'Cormorant Garamond','Georgia',serif" font-size="110" font-weight="500" fill="#ffffff" text-anchor="middle">9.6M</text>
+
+  <line x1="650" y1="785" x2="650" y2="975" stroke="#EF5555" stroke-width="1" opacity="0.4"/>
+
+  <text x="1000" y="845" font-family="'Cormorant Garamond','Georgia',serif" font-size="28" font-weight="600" fill="#EAE6DE" text-anchor="end">3 UK consolidations</text>
+  <text x="1000" y="885" font-family="'Cormorant Garamond','Georgia',serif" font-size="28" font-weight="600" fill="#EAE6DE" text-anchor="end">in 18 months.</text>
+  <text x="1000" y="920" font-size="13" letter-spacing="2" fill="#EF5555" text-anchor="end">CBUAE SUPERVISORY CYCLE NEXT</text>
+
+  <!-- THEME DECORATIONS — corner-ticks + diagonal-slash (compliance/risk) -->
+  <line x1="40" y1="40" x2="90" y2="40" stroke="#A8926A" stroke-width="2"/>
+  <line x1="40" y1="40" x2="40" y2="90" stroke="#A8926A" stroke-width="2"/>
+  <line x1="1040" y1="40" x2="990" y2="40" stroke="#A8926A" stroke-width="2"/>
+  <line x1="1040" y1="40" x2="1040" y2="90" stroke="#A8926A" stroke-width="2"/>
+  <line x1="1080" y1="0" x2="0" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.08"/>
+  <line x1="1020" y1="0" x2="0" y2="1020" stroke="#A8926A" stroke-width="1" opacity="0.06"/>
+
+  <rect x="80" y="1000" width="920" height="1" fill="url(#brassUnder)"/>
+  <text x="540" y="1042" font-size="13" font-weight="700" letter-spacing="6" fill="rgba(168,146,106,0.7)" text-anchor="middle">MICS INTERNATIONAL</text>
+</svg>

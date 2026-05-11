@@ -30,6 +30,11 @@ export function BannerPreview({
   const dirArrow = dir === 'up' ? '\u25B2' : dir === 'down' ? '\u25BC' : '\u2022';
   const dirLabel = dir === 'up' ? 'RISING' : dir === 'down' ? 'FALLING' : 'STABLE';
 
+  // Tier label sits above the stat \u2014 frames the signal as intelligence-grade
+  // analysis with an explicit time-advantage window. Replaces the visual
+  // weight of a news-ticker with the framing of an intelligence brief.
+  const tierLabel = buildTierLabel(result.articleHoursAgo, room.id as RoomId);
+
   const fs = width / 1080;
   const layout = T.photoLayout;
   const isSplit = layout === 'split-left' || layout === 'split-right';
@@ -168,6 +173,18 @@ export function BannerPreview({
         marginLeft: isSplit && layout === 'split-right' ? 0 : 'auto',
         marginRight: isSplit && layout === 'split-left' ? 0 : 'auto',
       }}>
+        {/* Tier label — intelligence-grade framing above the stat.
+            Signals "this is curated peer intelligence ahead of mainstream",
+            not "this is the news ticker headline number". */}
+        <div style={{
+          fontSize: 10 * fs, fontWeight: 700,
+          color: room.color, letterSpacing: '.32em',
+          marginBottom: 14 * fs,
+          opacity: 0.92,
+        }}>
+          {tierLabel}
+        </div>
+
         {/* STAT - large, immersive */}
         <div style={{
           fontFamily: 'Georgia,serif',
@@ -275,4 +292,29 @@ export function BannerPreview({
       </div>
     </div>
   );
+}
+
+/**
+ * Build the tier label that sits above the stat on a banner. Maps the
+ * article's freshness to an intelligence-grade tier + an explicit
+ * time-advantage window. The point is to signal "this is curated peer
+ * intelligence ahead of mainstream coverage", not "this is a news stat".
+ *
+ * Room-aware so the tier reads naturally — a treasury signal gets
+ * "TREASURY READ", a compliance signal gets "REGULATORY SHIFT", etc.
+ */
+function buildTierLabel(hoursAgo: number | undefined, roomId: RoomId): string {
+  const roomTiers: Record<RoomId, string> = {
+    risk: 'REGULATORY SHIFT',
+    capital: 'TREASURY READ',
+    world: 'STRUCTURAL SIGNAL',
+    growth: 'STRATEGIC OPENING',
+  };
+  const base = roomTiers[roomId] || 'STRATEGIC SIGNAL';
+
+  if (hoursAgo === undefined) return base;
+  if (hoursAgo <= 6)  return `${base}  ·  AHEAD OF CURVE`;
+  if (hoursAgo <= 24) return `${base}  ·  30-DAY WINDOW`;
+  if (hoursAgo <= 72) return `${base}  ·  60-DAY WINDOW`;
+  return base;
 }

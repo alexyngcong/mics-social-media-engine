@@ -1,0 +1,9 @@
+11 May 2026.
+
+The Central Bank of the UAE closed the WhatsApp window for licensed financial institutions on 1 May. Banks, insurers, exchange houses, and finance companies are now prohibited from using instant-messaging platforms for any customer transaction, data request, or authentication step. The compliance confirmation deadline closed at the end of April.
+
+The pressure is at enforcement level. Non-compliance can trigger supervisory action or financial sanctions ranging from AED 250,000 to AED 500,000 per finding, with imprisonment in scope at the upper end of severity. For finance teams on the corporate side of the equation, the immediate work is two-fold. First, audit any client-facing messaging trails that touch transaction data or KYC-adjacent flows, and migrate to compliant channels. Second, brief the audit committee on customer-experience implications, because the rule does not just sit on the bank's side of the table.
+
+Audit-season exposure is built in the quarters before audit, not during. The documentation trail, the control evidence, and the governance posture all need to be in place ahead of the window, not assembled retroactively.
+
+Let's stay close to this one.

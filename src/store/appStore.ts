@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import type {
   PlatformId, RoomId, PostTypeId, GeneratedPost, DeepDivePost, QAReport,
-  ImportedBrief, BriefItem,
+  ImportedBrief, BriefItem, IntelligenceItem,
 } from '../types';
 
 interface AppState {
@@ -24,6 +24,8 @@ interface AppState {
   brief: ImportedBrief | null;
   /** Currently selected brief item (for generation) */
   selectedBriefItem: BriefItem | null;
+  /** Intelligence item the user clicked "Paste Response" on. Used by AIBriefPaste. */
+  pendingIntelligenceItem: IntelligenceItem | null;
 
   setStep: (step: number) => void;
   setPlatform: (p: PlatformId) => void;
@@ -42,6 +44,7 @@ interface AppState {
   setQAReport: (report: QAReport | null) => void;
   setBrief: (brief: ImportedBrief | null) => void;
   setSelectedBriefItem: (item: BriefItem | null) => void;
+  setPendingIntelligenceItem: (item: IntelligenceItem | null) => void;
   clearBrief: () => void;
   reset: () => void;
 }
@@ -64,6 +67,7 @@ const initialState = {
   qaReport: null as QAReport | null,
   brief: null as ImportedBrief | null,
   selectedBriefItem: null as BriefItem | null,
+  pendingIntelligenceItem: null as IntelligenceItem | null,
 };
 
 export const useAppStore = create<AppState>((set) => ({
@@ -87,6 +91,7 @@ export const useAppStore = create<AppState>((set) => ({
   setQAReport: (qaReport) => set({ qaReport }),
   setBrief: (brief) => set({ brief }),
   setSelectedBriefItem: (selectedBriefItem) => set({ selectedBriefItem }),
+  setPendingIntelligenceItem: (pendingIntelligenceItem) => set({ pendingIntelligenceItem }),
   clearBrief: () => set({ brief: null, selectedBriefItem: null }),
   reset: () => set(initialState),
 }));

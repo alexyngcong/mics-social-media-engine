@@ -380,13 +380,6 @@ function pickRoomQuery(room: RoomId): string {
   return variants[Math.floor(Math.random() * variants.length)];
 }
 
-const PRIORITY_DOMAIN_FEEDS: Record<RoomId, string[]> = {
-  growth: ['meed.com', 'bluej.com'],
-  capital: ['meed.com', 'thomsonreuters.com'],
-  risk: ['mondaq.com', 'lexology.com', 'thomsonreuters.com', 'cocounsel.com'],
-  world: ['meed.com', 'lexology.com', 'mondaq.com'],
-};
-
 // ─── GDELT DOC API ──────────────────────────────────────────────
 
 function gdeltDateParam(hoursAgo: number): string {
@@ -620,7 +613,7 @@ function normalizeAndAudit(articles: NewsArticle[], feedName: string): NewsArtic
     seen.add(url);
     normalized.push({
       ...article,
-      source: article.source || extractDomainFromUrl(url),
+      source: article.source || extractFullDomain(url),
       date,
       fetchedAt: new Date().toISOString(),
       description: article.description || article.title,
@@ -742,68 +735,12 @@ async function fetchGoogleNewsRSS(room: RoomId, maxResults = 10): Promise<NewsAr
   return articles.slice(0, maxResults);
 }
 
-async function fetchGoogleNewsByDomain(domain: string, room: RoomId, maxResults = 4): Promise<NewsArticle[]> {
-  const query = encodeURIComponent(`site:${domain} ${ROOM_QUERIES_SIMPLE[room]}`);
-  const rssUrl = `https://news.google.com/rss/search?q=${query}&hl=en&gl=US&ceid=US:en`;
-
-  let xml = '';
-  for (const proxy of CORS_PROXIES) {
-    try {
-      const resp = await fetch(proxy + encodeURIComponent(rssUrl), {
-        signal: AbortSignal.timeout(6000),
-      });
-      if (resp.ok) {
-        xml = await resp.text();
-        break;
-      }
-    } catch {
-      continue;
-    }
+function extractFullDomain(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return '';
   }
-  if (!xml) return [];
-
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(xml, 'text/xml');
-  const items = doc.querySelectorAll('item');
-  const articles: NewsArticle[] = [];
-
-  items.forEach((item, i) => {
-    if (i >= maxResults) return;
-    const title = item.querySelector('title')?.textContent || '';
-    const link = item.querySelector('link')?.textContent || '';
-    const pubDate = item.querySelector('pubDate')?.textContent || '';
-    const description = item.querySelector('description')?.textContent || '';
-    const urlDomain = extractFullDomain(link);
-
-    const articleDate = new Date(pubDate);
-    const weekAgo = new Date();
-    weekAgo.setDate(weekAgo.getDate() - 7);
-
-    if (!urlDomain || !isApprovedSource(urlDomain) || articleDate < weekAgo) return;
-    if (!isFreshDate(articleDate.toISOString().slice(0, 10))) return;
-
-    articles.push({
-      title: cleanHTMLEntities(title),
-      url: link,
-      source: extractDomainFromUrl(link),
-      date: articleDate.toISOString().slice(0, 10),
-      description: cleanHTMLEntities(stripHTML(description)),
-    });
-  });
-
-  return articles;
-}
-
-async function fetchPriorityDomainNews(room: RoomId, maxResults = 8): Promise<NewsArticle[]> {
-  const domains = PRIORITY_DOMAIN_FEEDS[room] || [];
-  if (!domains.length) return [];
-
-  const batches = await Promise.all(domains.map((d) => fetchGoogleNewsByDomain(d, room, 4).catch(() => [])));
-  const merged = batches.flat();
-
-  const deduped = Array.from(new Map(merged.map((a) => [a.url, a])).values());
-  deduped.sort((a, b) => +new Date(b.date) - +new Date(a.date));
-  return deduped.slice(0, maxResults);
 }
 
 function stripHTML(html: string): string {
@@ -816,73 +753,14 @@ function cleanHTMLEntities(text: string): string {
   return textarea.value;
 }
 
-function extractFullDomain(url: string): string {
-  try {
-    return new URL(url).hostname.replace(/^www\./, '');
-  } catch {
-    return '';
-  }
-}
-
-// ─── Pre-seeded fallback (only when both feeds fail) ────────────
-// Topical signals from the UAE production-requirements doc (May 2026 window).
-// Expanded pool of 8 per room → reduces visible repetition.
-
-function todayISO(): string {
-  return new Date().toISOString().slice(0, 10);
-}
-
-const FALLBACK_ARTICLES: Record<RoomId, NewsArticle[]> = {
-  growth: [
-    { title: 'MoIAT unlocks AED 18 billion in industrial financing at Make it in the Emirates 2026', url: 'https://www.wam.ae', source: 'WAM', date: todayISO(), description: 'Ministry of Industry and Advanced Technology announces industrial financing package supporting national industrial strategy and value chain localisation.', hoursAgo: 24 },
-    { title: 'Hamdan bin Mohammed launches initiative to transition Dubai private sector to Agentic AI in two years', url: 'https://www.wam.ae', source: 'WAM', date: todayISO(), description: 'Dubai accelerates competitive positioning with agentic AI adoption across private sector operations.', hoursAgo: 36 },
-    { title: 'DIFC registers record new firms in Q1 2026, financial free zone growth accelerates', url: 'https://www.difc.ae', source: 'DIFC', date: todayISO(), description: 'Financial free zone sees 28% YoY rise in new registrations as global firms establish regional HQs.', hoursAgo: 48 },
-    { title: 'Abu Dhabi sovereign fund deploys USD 3.2 billion into Southeast Asian infrastructure', url: 'https://www.reuters.com', source: 'Reuters', date: todayISO(), description: 'UAE sovereign wealth continues aggressive international expansion strategy.', hoursAgo: 60 },
-    { title: 'UAE non-oil GDP growth hits 5.6% in Q1 2026, driven by tourism and fintech', url: 'https://www.meed.com', source: 'MEED', date: todayISO(), description: 'Non-oil sectors now comprise 74% of UAE GDP in 2026.', hoursAgo: 50 },
-    { title: 'ADGM registrations climb as Abu Dhabi expands financial centre footprint', url: 'https://www.adgm.com', source: 'ADGM', date: todayISO(), description: 'Free zone reports continued momentum in licensing across asset management and fintech.', hoursAgo: 70 },
-    { title: 'Dubai entrepreneurship policy expands SME access to government contracts', url: 'https://www.economy.gov.ae', source: 'Ministry of Economy', date: todayISO(), description: 'Ministry of Economy issues guidance broadening procurement for licensed SMEs.', hoursAgo: 30 },
-    { title: 'UAE foreign direct investment inflows show structural diversification in 2026', url: 'https://www.thenationalnews.com', source: 'The National', date: todayISO(), description: 'FDI mix shifts away from concentrated energy investments toward technology and advanced manufacturing.', hoursAgo: 18 },
-  ],
-  capital: [
-    { title: 'CBUAE holds base rate at 4.9% as Fed signals caution through Q3 2026', url: 'https://www.centralbank.ae', source: 'CBUAE', date: todayISO(), description: 'The UAE central bank maintains rates in line with the dirham-dollar peg as global rate uncertainty persists.', hoursAgo: 18 },
-    { title: 'Dubai sukuk issuance reaches USD 14.2 billion in 2026, up 31% from prior year', url: 'https://www.bloomberg.com', source: 'Bloomberg', date: todayISO(), description: 'Islamic finance instruments continue to dominate GCC debt markets.', hoursAgo: 36 },
-    { title: 'Private credit funds in DIFC manage AED 48 billion as traditional lending tightens', url: 'https://www.zawya.com', source: 'Zawya', date: todayISO(), description: 'Alternative lending gains market share from traditional banks in the UAE.', hoursAgo: 28 },
-    { title: 'DFSA opens consultation to accelerate Islamic finance sector growth in DIFC', url: 'https://www.dfsa.ae', source: 'DFSA', date: todayISO(), description: 'Framework enhancement aims to provide clarity and strengthen regulatory guidance for Islamic finance products.', hoursAgo: 14 },
-    { title: 'ADGM fund registrations expand as asset managers consolidate regional structures', url: 'https://www.adgm.com', source: 'ADGM', date: todayISO(), description: 'Free zone reports growing capital markets activity across alternative investment vehicles.', hoursAgo: 50 },
-    { title: 'UAE bond yields tighten as regional investor appetite for hard currency rises', url: 'https://www.ft.com', source: 'Financial Times', date: todayISO(), description: 'Spread compression reflects continued demand for GCC sovereign and quasi-sovereign paper.', hoursAgo: 64 },
-    { title: 'ADX records highest weekly trading volume of the year on selective rotation', url: 'https://www.argaam.com', source: 'Argaam', date: todayISO(), description: 'Abu Dhabi exchange volumes lifted by banking and insurance names; foreign participation remains a key driver.', hoursAgo: 30 },
-    { title: 'GCC private credit deployment outpaces bank lending for second consecutive quarter', url: 'https://www.meed.com', source: 'MEED', date: todayISO(), description: 'Alternative credit gains structural share as bank balance sheets stay constrained.', hoursAgo: 56 },
-  ],
-  risk: [
-    { title: 'Ministry of Finance announces amendments to Tax Procedures Executive Regulations effective April 2026', url: 'https://www.mof.gov.ae', source: 'Ministry of Finance', date: todayISO(), description: 'Refund handling, disclosures, record retention and audit-readiness rules are updated for businesses.', hoursAgo: 12 },
-    { title: 'Federal Tax Authority announces administrative penalty changes effective April 2026', url: 'https://www.tax.gov.ae', source: 'Federal Tax Authority', date: todayISO(), description: 'Penalty schedule revisions allow registrants to regularise positions and reduce exposure.', hoursAgo: 20 },
-    { title: 'MoF confirms eInvoicing pilot starts July 1 2026 with AED 50m revenue phase from January 2027', url: 'https://www.mof.gov.ae', source: 'Ministry of Finance', date: todayISO(), description: 'Electronic invoicing implementation timetable establishes phased go-live across taxable entities.', hoursAgo: 30 },
-    { title: 'ADGM FSRA launches AML consultation with comments closing late May 2026', url: 'https://www.adgm.com', source: 'ADGM', date: todayISO(), description: 'Free-zone financial firms and DNFBPs face proposed enhancements to AML rulebook.', hoursAgo: 22 },
-    { title: 'MoHRE confirms June 30 2026 deadline for first-half Emiratisation targets', url: 'https://www.mohre.gov.ae', source: 'MoHRE', date: todayISO(), description: 'Financial contributions for non-compliance apply from July 1 2026 across private sector firms above threshold.', hoursAgo: 40 },
-    { title: 'FTA reminds registrants of voluntary disclosure window ahead of next filing cycle', url: 'https://www.tax.gov.ae', source: 'Federal Tax Authority', date: todayISO(), description: 'Voluntary disclosure regime allows correction of returns with reduced penalty exposure.', hoursAgo: 58 },
-    { title: 'DFSA AML and Glossary Modules amendments come into force with new FAQs published', url: 'https://www.dfsa.ae', source: 'DFSA', date: todayISO(), description: 'DIFC firms must reflect updated definitions and AML obligations in policies and onboarding workflows.', hoursAgo: 70 },
-    { title: 'OECD Pillar Two implementation updates reach UAE multinationals', url: 'https://www.oecd.org', source: 'OECD', date: todayISO(), description: 'Global minimum tax administrative guidance continues to shape UAE in-scope group readiness.', hoursAgo: 66 },
-  ],
-  world: [
-    { title: 'Federal Reserve signals patience on rate path through Q3 2026', url: 'https://www.federalreserve.gov', source: 'Federal Reserve', date: todayISO(), description: 'FOMC commentary suggests data-dependence remains the operating framework as inflation moderates.', hoursAgo: 16 },
-    { title: 'ECB outlook update flags persistent services inflation across the euro area', url: 'https://www.ecb.europa.eu', source: 'ECB', date: todayISO(), description: 'Sticky services prices keep policy unwind cautious across major European economies.', hoursAgo: 42 },
-    { title: 'IMF revises global growth forecast on resilient emerging-market demand', url: 'https://www.imf.org', source: 'IMF', date: todayISO(), description: 'Global growth path lifted by domestic demand in major emerging markets.', hoursAgo: 30 },
-    { title: 'BRICS payment infrastructure expansion targets cross-border settlement efficiency', url: 'https://www.reuters.com', source: 'Reuters', date: todayISO(), description: 'Block members continue working on common settlement rails amid alternative payment infrastructure push.', hoursAgo: 50 },
-    { title: 'EU Carbon Border Adjustment Phase 2 implementation impacts GCC exports', url: 'https://www.reuters.com', source: 'Reuters', date: todayISO(), description: 'European carbon tariffs reshape trade flows for energy and metal exporting nations.', hoursAgo: 60 },
-    { title: 'OECD finalises Pillar Two administrative guidance updates in May 2026', url: 'https://www.oecd.org', source: 'OECD', date: todayISO(), description: 'Global minimum tax framework continues iteration as more jurisdictions implement domestic top-up taxes.', hoursAgo: 26 },
-    { title: 'OPEC production guidance steadies oil markets ahead of mid-year review', url: 'https://www.bloomberg.com', source: 'Bloomberg', date: todayISO(), description: 'Producer group signals continued discipline as demand-supply balance enters next phase.', hoursAgo: 70 },
-    { title: 'Geopolitical risk premium re-prices regional energy and shipping insurance', url: 'https://www.ft.com', source: 'Financial Times', date: todayISO(), description: 'Insurers adjust war risk surcharges; logistics planners reassess routing assumptions.', hoursAgo: 38 },
-  ],
-};
-
-function shuffle<T>(arr: T[]): T[] {
-  const out = [...arr];
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
+// ─── (Removed) Pre-seeded fallback content
+//
+// Earlier versions of this module shipped a hand-curated pool of 32 generic
+// UAE articles that would surface when live feeds returned nothing. That
+// path was disabled at the policy level (no stale content under any
+// circumstance) and the constant has now been removed entirely. The
+// fetcher's failure mode is a single NoFreshNewsError thrown from
+// fetchNews(), surfaced to the UI as "No fresh news right now".
 
 // ─── Main Fetch Function ────────────────────────────────────────
 
@@ -986,11 +864,8 @@ export async function fetchNews(room: RoomId, customTopic?: string): Promise<New
     console.warn('[News] Google News RSS failed:', e);
   }
 
-  // STALE FALLBACK PATH DISABLED — per posting policy, no stale content
-  // is ever surfaced. If both live feeds return nothing fresh, we throw
-  // so the UI can show a clear "no fresh news right now" message.
-  // (FALLBACK_ARTICLES is intentionally retained in this module as a
-  // typed constant but is no longer wired into the live generation path.)
-  void FALLBACK_ARTICLES;
+  // No stale-fallback path under any circumstance. If all live feeds
+  // return nothing fresh, we throw so the UI shows "no fresh news right
+  // now" rather than serving recycled content.
   throw new NoFreshNewsError();
 }
