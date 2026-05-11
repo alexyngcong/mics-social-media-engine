@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-11T23:34:04.315Z",
+  "weekOf": "11 May 2026",
+  "totalCount": 7,
+  "posts": [
+    {
+      "n": 1,
+      "slug": "awaiting-risk-signal",
+      "slot": {
+        "day": "Mon",
+        "time": "08:00 GST"
+      },
+      "framework": "PAS  ·  ALERT",
+      "room": "risk",
+      "theme": "compliance_risk",
+      "tier": "ENFORCEMENT LIVE",
+      "title": "Awaiting Risk signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-risk-signal"
+    },
+    {
+      "n": 2,
+      "slug": "awaiting-world-signal",
+      "slot": {
+        "day": "Mon",
+        "time": "17:00 GST"
+      },
+      "framework": "PAS  ·  ALERT",
+      "room": "world",
+      "theme": "geopolitics",
+      "tier": "MACRO ALERT",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-2-awaiting-world-signal"
+    },
+    {
+      "n": 3,
+      "slug": "awaiting-world-signal",
+      "slot": {
+        "day": "Tue",
+        "time": "08:00 GST"
+      },
+      "framework": "DATA  ·  OBSERVATION",
+      "room": "world",
+      "theme": "geopolitics",
+      "tier": "POLICY SIGNAL",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-3-awaiting-world-signal"
+    },
+    {
+      "n": 4,
+      "slug": "awaiting-risk-signal",
+      "slot": {
+        "day": "Tue",
+        "time": "17:00 GST"
+      },
+      "framework": "BAB  ·  ALERT",
+      "room": "risk",
+      "theme": "compliance_risk",
+      "tier": "GOVERNANCE SIGNAL",
+      "title": "Awaiting Risk signal",
+      "sourceUrl": "",
+      "filenameBase": "post-4-awaiting-risk-signal"
+    },
+    {
+      "n": 5,
+      "slug": "awaiting-capital-signal",
+      "slot": {
+        "day": "Wed",
+        "time": "09:00 GST"
+      },
+      "framework": "AIDA  ·  OBSERVATION",
+      "room": "capital",
+      "theme": "treasury_capital",
+      "tier": "TREASURY READ",
+      "title": "Awaiting Capital signal",
+      "sourceUrl": "",
+      "filenameBase": "post-5-awaiting-capital-signal"
+    },
+    {
+      "n": 6,
+      "slug": "awaiting-risk-signal",
+      "slot": {
+        "day": "Thu",
+        "time": "09:00 GST"
+      },
+      "framework": "BAB  ·  ALERT",
+      "room": "risk",
+      "theme": "compliance_risk",
+      "tier": "CONTROL DRIFT",
+      "title": "Awaiting Risk signal",
+      "sourceUrl": "",
+      "filenameBase": "post-6-awaiting-risk-signal"
+    },
+    {
+      "n": 7,
+      "slug": "awaiting-growth-signal",
+      "slot": {
+        "day": "Fri",
+        "time": "09:00 GST"
+      },
+      "framework": "AIDA  ·  OBSERVATION",
+      "room": "growth",
+      "theme": "growth_expansion",
+      "tier": "INVESTMENT-CYCLE SIGNAL",
+      "title": "Awaiting Growth signal",
+      "sourceUrl": "",
+      "filenameBase": "post-7-awaiting-growth-signal"
+    }
+  ]
+}
