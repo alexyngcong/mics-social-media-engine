@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-11T19:46:27.266Z",
+  "generatedAt": "2026-05-11T19:57:24.159Z",
   "minScore": 8,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,43 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 159,
-    "big4Rejected": 3,
-    "englishOnly": 156,
-    "withinRecency": 0,
-    "scored": 0,
-    "passed": 0
+    "afterDedup": 160,
+    "big4Rejected": 1,
+    "englishOnly": 159,
+    "withinRecency": 51,
+    "scored": 51,
+    "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUms3Q3RHQW1xeTBXS2RERmhibkRHM0l2RXpNV1BVRmRwV3VkZVNtOW45X0h6ek1UV3dFUzNVU25wUFM1R3Q5MUtCT2YtMzlsNnN5VGxhc2FqZmhaZEh4WnliVU9DSVRDMHlRQ1Y3LVpVc1pISW5pMzBaQjE4bm9XUGtraUdJQ0kxQ2dPRWNGdHNkLU5lWlJXMVUteVE4clVLb3pYdW9FdzA0bVJJYUJIWDBaVXBjbUJHcmF1R0JIZTJ0anV5dUhaRXRXU21scVR3Q1Rz?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-05-11",
+        "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
+        "hoursAgo": 9,
+        "score": 8,
+        "topic": "UAE/GCC Economy",
+        "origin": "google-news"
+      },
+      {
+        "title": "Flynas profit falls on higher fuel and maintenance costs",
+        "url": "https://www.agbi.com/aviation/2026/05/flynas-profit-falls-on-higher-fuel-and-maintenance-costs/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-11",
+        "description": "Net profit at Saudi budget airline Flynas took a hit in the first quarter of 2026 due to higher fuel and maintenance costs. The bottom line declined 20 percent to SAR118 million ($31.3 million) in the quarter ended March 31, from SAR148 million a year earlier, the carrier said in a statement to the Saudi stock [&#8230;]",
+        "hoursAgo": 11,
+        "score": 8,
+        "topic": "Market Trends",
+        "origin": "uae-rss"
+      }
+    ],
     "capital": [],
     "risk": [],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 2
 }
