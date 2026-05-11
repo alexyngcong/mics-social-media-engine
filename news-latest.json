@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 3,
+  "spec": "AI Business Intelligence Command Center v1.0",
+  "generatedAt": "2026-05-11T23:37:49.060Z",
+  "minScore": 6,
+  "maxScore": 14,
+  "cutoffHours": 72,
+  "sources": {
+    "gdelt": 9,
+    "googleNews": 150,
+    "reddit": 0,
+    "trends": 10,
+    "uaeRss": 10
+  },
+  "diagnostic": {
+    "totalFetched": 179,
+    "afterDedup": 164,
+    "big4Rejected": 1,
+    "englishOnly": 162,
+    "withinRecency": 60,
+    "scored": 60,
+    "passed": 7
+  },
+  "rooms": {
+    "growth": [],
+    "capital": [
+      {
+        "title": "Flynas profit falls on higher fuel and maintenance costs",
+        "url": "https://www.agbi.com/aviation/2026/05/flynas-profit-falls-on-higher-fuel-and-maintenance-costs/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-11",
+        "description": "Net profit at Saudi budget airline Flynas took a hit in the first quarter of 2026 due to higher fuel and maintenance costs. The bottom line declined 20 percent to SAR118 million ($31.3 million) in the quarter ended March 31, from SAR148 million a year earlier, the carrier said in a statement to the Saudi stock [&#8230;]",
+        "hoursAgo": 15,
+        "score": 8,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Higher finance costs weigh on Cenomi Retail earnings",
+        "url": "https://www.agbi.com/retail/2026/05/higher-finance-costs-weigh-on-cenomi-retail-earnings/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-11",
+        "description": "Saudi Arabian franchiser Cenomi Retail recorded a loss in the first quarter of 2026 due to higher finance costs and the absence of a prior-year non-recurring divestment gain. A net loss of SAR47.3 million ($13 million) in the quarter ending in March is in stark contrast to the SAR1.8 million net profit in the same period [&#8230;]",
+        "hoursAgo": 11,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Arada bought Reem Hospital to break revenue cycle, says CEO",
+        "url": "https://www.agbi.com/construction/2026/05/arada-bought-reem-hospital-to-break-revenue-cycle-says-ceo/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-11",
+        "description": "Developer Arada, co-owned by princes of the Sharjah and Saudi Arabian royal families, has bought a majority share in Reem Hospital, an Abu Dhabi medical facility and company. According to the developer’s CEO, it is part of a strategy to diversify from cyclical real estate sales towards sustainable recurring revenues. The developer spent AED2 billion [&#8230;]",
+        "hoursAgo": 14,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      }
+    ],
+    "risk": [
+      {
+        "title": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUms3Q3RHQW1xeTBXS2RERmhibkRHM0l2RXpNV1BVRmRwV3VkZVNtOW45X0h6ek1UV3dFUzNVU25wUFM1R3Q5MUtCT2YtMzlsNnN5VGxhc2FqZmhaZEh4WnliVU9DSVRDMHlRQ1Y3LVpVc1pISW5pMzBaQjE4bm9XUGtraUdJQ0kxQ2dPRWNGdHNkLU5lWlJXMVUteVE4clVLb3pYdW9FdzA0bVJJYUJIWDBaVXBjbUJHcmF1R0JIZTJ0anV5dUhaRXRXU21scVR3Q1Rz?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-05-11",
+        "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
+        "hoursAgo": 13,
+        "score": 8,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE e-invoicing deadline extended: What this means for businesses now - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQzdHZ0hkMWZIa3BVd29DVnJuUk1ZSHI4TWVXZVJKdWdCTFVUczkzWENaY3Q0eXlUNVVlVk5KdzlJSG5KN2JIWFItTUlnbWFsUjJaNEFTSXVMdFgzTDJNeWdWeGFSVjZSaHI1UEVnWkV4YVdINzhiVTh3Y3dpa25VMTA5b0NIOGRvT3Nydnh6ZHpnMWhtTlhKOXJ2VjZPM1BramQtaFBnTXNmbVRjS3RWaVRjSGFhT2k1Y2Y00gHOAUFVX3lxTFA5RlFaNmFhbDZwbXl5UlpLb2V4dG1GVzJVT1lHTUlRWG1NQ3ZBUHhvTzYtcUpxMlNJY1htM2w1VnhBcHhTeElxNkNhUlRZYjNOZ3FxTTNjZHJQWXVwX092Zmt2TDg2RjhVWkk3S0FqelFtMzN0cUVoTG5fbm1NMzdtd3JCZnFpNjRMVDBUZU4wQWJJS0NrQnVBVUV2ODh3OGtSZDJIYktGNld0eXVJZ3h4NHQtUXdMc1V1TkZpLTU5bWdQMWR2M0g3RnBXdHJ3?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-10",
+        "description": "UAE e-invoicing deadline extended: What this means for businesses now  Gulf News",
+        "hoursAgo": 24,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE extends e-invoicing provider deadline to Oct 30 - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaXAwLUJfcGJYMzlweWJ0R0E0VkNXZ1BBU2ZpY3JvR09ncll3QXdISVRuX2NfVExsSG1UQVBpbVVYWF9YSkJiY04xSER5RXZZSU5sdHRYR3NwN2xJeVNWVWJodGdHeFVKUXFHQ1d1Q3BBdV9kZVkycWhRbE9uSkJfU19ncWVNUHotU3lvRnhscGw4TWpweS1rSGQweWt5UQ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-11",
+        "description": "UAE extends e-invoicing provider deadline to Oct 30  Gulf Business",
+        "hoursAgo": 13,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE announces extension of e-invoicing provider deadline to October 2026 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2RHNHJtZGtkN2s1aG9hT3ZOWVB6ZElGd19hektnWERfSUxzZnBDSm9RTERQaWRzMG1XdndHeU1LdU9SamlKMmw3WEhIX2FOSVdVZ0gwTkhJa25ZZDdpUGpCY29tbnZTUnBNQXd4MXZWRkNwb3lNSFRCQklPaEp6S3ducnRSVk9kUUVjZmEwNTRsOWJpYzJLZ29uWThyUGh5OGRpUWVXSHBZNTJUcWV2V1Rqb9IBwwFBVV95cUxPY1NEWUY2UkhQei1CU0hjMnFpd1JtR2pvLXdrb0tiQ1k1OFFWZWdLdGU0a09yZkVRaEZrNzdCM080SWJhaFBBLWkyWnQ3ZzdGejl5SjJTcy0xdkE4ejQtV0RSeVJmbWJOeWc0aDhwV3k1MkxyM1RhTm5oVzJXR3N0cDc5X1FHdGtmcTMyRXlmdEtlcG9EbmtScGZKMEFjSUo2Y0wxdDJhVHp6SXNKMXJSQ0c4QzZ4OWF5eExxOE1jdGtzbEk?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-10",
+        "description": "UAE announces extension of e-invoicing provider deadline to October 2026  Gulf News",
+        "hoursAgo": 30,
+        "score": 6.5,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
+    "world": []
+  },
+  "totalCount": 7
+}
