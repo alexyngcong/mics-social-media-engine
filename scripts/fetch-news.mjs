@@ -29,7 +29,7 @@ import { writeFile } from 'node:fs/promises';
 // ═══════════════════════════════════════════════════════════════
 
 const MAX_AGE_HOURS = 72;
-const MIN_SCORE_THRESHOLD = 8; // of 14 max
+const MIN_SCORE_THRESHOLD = 6; // of 14 max — quality bar still meaningful
 const PER_ROOM_CAP = 25;
 
 const BIG4_EXCLUDED = [
