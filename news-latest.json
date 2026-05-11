@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-11T20:02:11.037Z",
+  "generatedAt": "2026-05-11T20:49:20.098Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 161,
-    "big4Rejected": 2,
-    "englishOnly": 159,
-    "withinRecency": 52,
-    "scored": 52,
-    "passed": 8
+    "totalFetched": 270,
+    "afterDedup": 199,
+    "big4Rejected": 1,
+    "englishOnly": 179,
+    "withinRecency": 78,
+    "scored": 78,
+    "passed": 9
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 9,
+        "hoursAgo": 10,
         "score": 8,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-05-11",
         "description": "Net profit at Saudi budget airline Flynas took a hit in the first quarter of 2026 due to higher fuel and maintenance costs. The bottom line declined 20 percent to SAR118 million ($31.3 million) in the quarter ended March 31, from SAR148 million a year earlier, the carrier said in a statement to the Saudi stock [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 12,
         "score": 8,
         "topic": "Market Trends",
         "origin": "uae-rss"
@@ -54,7 +54,7 @@
         "domain": "agbi.com",
         "date": "2026-05-11",
         "description": "Saudi Arabian franchiser Cenomi Retail recorded a loss in the first quarter of 2026 due to higher finance costs and the absence of a prior-year non-recurring divestment gain. A net loss of SAR47.3 million ($13 million) in the quarter ending in March is in stark contrast to the SAR1.8 million net profit in the same period [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Consumer & Retail",
         "origin": "uae-rss"
@@ -66,7 +66,7 @@
         "domain": "agbi.com",
         "date": "2026-05-11",
         "description": "Developer Arada, co-owned by princes of the Sharjah and Saudi Arabian royal families, has bought a majority share in Reem Hospital, an Abu Dhabi medical facility and company. According to the developer’s CEO, it is part of a strategy to diversify from cyclical real estate sales towards sustainable recurring revenues. The developer spent AED2 billion [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -78,7 +78,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "Abu Dhabi Infrastructure Summit unites developers and investors to advance $57 billion infrastructure agenda  Economy Middle East",
-        "hoursAgo": 7,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -91,9 +91,9 @@
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQzdHZ0hkMWZIa3BVd29DVnJuUk1ZSHI4TWVXZVJKdWdCTFVUczkzWENaY3Q0eXlUNVVlVk5KdzlJSG5KN2JIWFItTUlnbWFsUjJaNEFTSXVMdFgzTDJNeWdWeGFSVjZSaHI1UEVnWkV4YVdINzhiVTh3Y3dpa25VMTA5b0NIOGRvT3Nydnh6ZHpnMWhtTlhKOXJ2VjZPM1BramQtaFBnTXNmbVRjS3RWaVRjSGFhT2k1Y2Y00gHOAUFVX3lxTFA5RlFaNmFhbDZwbXl5UlpLb2V4dG1GVzJVT1lHTUlRWG1NQ3ZBUHhvTzYtcUpxMlNJY1htM2w1VnhBcHhTeElxNkNhUlRZYjNOZ3FxTTNjZHJQWXVwX092Zmt2TDg2RjhVWkk3S0FqelFtMzN0cUVoTG5fbm1NMzdtd3JCZnFpNjRMVDBUZU4wQWJJS0NrQnVBVUV2ODh3OGtSZDJIYktGNld0eXVJZ3h4NHQtUXdMc1V1TkZpLTU5bWdQMWR2M0g3RnBXdHJ3?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
-        "date": "2026-05-11",
+        "date": "2026-05-10",
         "description": "UAE e-invoicing deadline extended: What this means for businesses now  Gulf News",
-        "hoursAgo": 20,
+        "hoursAgo": 21,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -105,7 +105,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-11",
         "description": "UAE extends e-invoicing provider deadline to Oct 30  Gulf Business",
-        "hoursAgo": 10,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -117,13 +117,27 @@
         "domain": "gulfnews.com",
         "date": "2026-05-10",
         "description": "UAE announces extension of e-invoicing provider deadline to October 2026  Gulf News",
-        "hoursAgo": 26,
+        "hoursAgo": 27,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE e - Invoicing Deadline Extended to October 2026 : What Businesses Need to Do Now",
+        "url": "https://gulfnews.com/business/tax-news/uae-e-invoicing-deadline-extended-what-this-means-for-businesses-now-1.500535992",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-11",
+        "description": "UAE e - Invoicing Deadline Extended to October 2026 : What Businesses Need to Do Now",
+        "imageUrl": "https://gumlet-images.assettype.com/gulfnews%2F2024-11-18%2F8dhfgcht%2FUAEECONOMY2019_resources1_16a3106b387_original_ratio.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 15,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
+      }
+    ]
   },
-  "totalCount": 8
+  "totalCount": 9
 }
