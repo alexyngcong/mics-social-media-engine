@@ -1,0 +1,11 @@
+12 May 2026.
+
+UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million Economy Middle East.
+
+For UAE-regulated entities, DIFC and ADGM-licensed firms, and any group with downstream compliance exposure, the strategic read lands ahead of where headline coverage catches it. The pressure is at enforcement level. Non-compliance can trigger supervisory action, financial sanctions, and reputational exposure that compounds across multiple supervisory cycles. The immediate work is two-fold: audit the client-facing trails touching transaction data or KYC-adjacent flows, then brief the audit committee on the customer-experience implications.
+
+Read this alongside the existing control matrix, not in isolation. Refresh the risk register, lock the supervisory communication trail, and front-load the audit committee briefing before the cycle catches the firm cold.
+
+Retroactive compliance is always more expensive than ahead-of-curve readiness. The cost of moving inside the supervisory window is materially lower than the cost of catching up after the first finding.
+
+More to come as the picture fills in.

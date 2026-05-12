@@ -1,0 +1,11 @@
+12 May 2026.
+
+UAE extends e-invoicing provider deadline to Oct 30.
+
+For UAE-regulated entities, DIFC and ADGM-licensed firms, and any group with downstream compliance exposure, the strategic read lands ahead of where headline coverage catches it. Effective-date language matters here. Retroactive remediation is always more expensive than ahead-of-curve readiness. For groups with cross-border footprint, the documentation burden lands in finance and legal teams first, well before it reaches risk dashboards.
+
+Audit any client-facing trails that touch transaction data or KYC-adjacent flows. Migrate to compliant channels, brief the audit committee on customer-experience implications, and update the control matrix before the next supervisory cycle lands.
+
+Retroactive compliance is always more expensive than ahead-of-curve readiness. The cost of moving inside the supervisory window is materially lower than the cost of catching up after the first finding.
+
+Filing this and watching.

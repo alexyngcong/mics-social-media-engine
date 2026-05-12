@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="cinematic" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.85 0.05 0.05 0 0
+        0.1 0.55 0.1 0 0
+        0.1 0.1 0.55 0 0
+        0   0    0    1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="0.9" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="0.95" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="0.95" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+    <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.25"/>
+      <stop offset="35%" stop-color="#06060f" stop-opacity="0.55"/>
+      <stop offset="65%" stop-color="#06060f" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#06060f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="vignTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#06060f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <radialGradient id="vignCenter" cx="0.5" cy="0.5" r="0.65">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#06060f" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.95"/>
+    </radialGradient>
+    <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0%" stop-color="#EF5555" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#EF5555" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#EF5555" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassUnder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8926A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A8926A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A8926A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.75"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1080" height="1080" fill="#06060f"/>
+
+  <!-- Photo only fills left 55% via clip -->
+  <clipPath id="leftHalf"><rect x="0" y="0" width="595" height="1080"/></clipPath>
+  <g clip-path="url(#leftHalf)">
+    <image href="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="700" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <rect width="595" height="1080" fill="url(#darken)" opacity="0.55"/>
+    <rect width="595" height="1080" fill="url(#fadeRight)"/>
+  </g>
+
+  <!-- Right ink panel -->
+  <rect x="595" y="0" width="485" height="1080" fill="#0a0a18"/>
+  <rect x="595" y="0" width="485" height="1080" fill="url(#accentGlow)" opacity="0.7"/>
+
+  <!-- Vertical divider with room color -->
+  <rect x="593" y="80" width="2" height="920" fill="#EF5555" opacity="0.6"/>
+
+  <!-- Bottom room bar across whole width -->
+  <rect x="0" y="1078" width="1080" height="2" fill="#EF5555"/>
+
+  <!-- Top metadata on left photo side -->
+  <text x="60" y="92" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS</text>
+  <text x="60" y="128" font-size="14" letter-spacing="2" fill="rgba(234,230,222,0.7)" filter="url(#textShadow)">CFOs PRIVATE INSIGHTS CIRCLE</text>
+
+  <!-- Tier label on right panel -->
+  <line x1="640" y1="200" x2="760" y2="200" stroke="#EF5555" stroke-width="2"/>
+  <text x="640" y="245" font-size="19" font-weight="700" letter-spacing="5" fill="#EF5555">COMPLIANCE WINDOW</text>
+
+  <!-- Stat hero, right panel -->
+  <text x="640" y="520" font-family="'Cormorant Garamond','Georgia',serif" font-size="160" font-weight="500" fill="#ffffff">SIGNAL</text>
+  <text x="640" y="540" font-size="15" font-weight="600" letter-spacing="3" fill="#EF5555">RISK · COMPLIANCE</text>
+
+  <!-- Headline, right panel, smaller -->
+  <text x="640" y="660" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE">UAE e-invoicing deadline extended:</text>
+  <text x="640" y="700" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE">What this means for businesses now</text>
+
+  <!-- Service angle, right panel bottom -->
+  <text x="640" y="950" font-size="14" font-style="italic" fill="#B0AAB0">Tax · VAT · AML · Audit · Governance · Pillar 2</text>
+
+  <line x1="40" y1="40" x2="90" y2="40" stroke="#A8926A" stroke-width="2"/>
+  <line x1="40" y1="40" x2="40" y2="90" stroke="#A8926A" stroke-width="2"/>
+  <line x1="1040" y1="40" x2="990" y2="40" stroke="#A8926A" stroke-width="2"/>
+  <line x1="1040" y1="40" x2="1040" y2="90" stroke="#A8926A" stroke-width="2"/>
+  <line x1="40" y1="1040" x2="90" y2="1040" stroke="#A8926A" stroke-width="2"/>
+  <line x1="40" y1="1040" x2="40" y2="990" stroke="#A8926A" stroke-width="2"/>
+  <line x1="1040" y1="1040" x2="990" y2="1040" stroke="#A8926A" stroke-width="2"/>
+  <line x1="1040" y1="1040" x2="1040" y2="990" stroke="#A8926A" stroke-width="2"/>
+
+  <line x1="900" y1="50" x2="1040" y2="50" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
+  <line x1="1040" y1="50" x2="1040" y2="180" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="900" x2="40" y2="1040" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="1040" x2="180" y2="1040" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
+
+  <rect x="80" y="1000" width="920" height="1" fill="url(#brassUnder)"/>
+  <text x="540" y="1042" font-size="13" font-weight="700" letter-spacing="6" fill="rgba(168,146,106,0.7)" text-anchor="middle">MICS INTERNATIONAL</text>
+</svg>
