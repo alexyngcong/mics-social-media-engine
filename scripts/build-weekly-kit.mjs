@@ -802,87 +802,312 @@ function buildFactParagraph(item) {
 const UNSPLASH_PARAMS = 'w=1600&q=80&fit=crop&crop=entropy&auto=format';
 const U = (id) => `https://images.unsplash.com/${id}?${UNSPLASH_PARAMS}`;
 
+// Photo library — substantially expanded (60+ photos) covering every theme
+// likely to appear in UAE/GCC financial intelligence: oil & energy,
+// shipping & logistics, treasury & banking, compliance & regulation, AI &
+// data centres, real estate & construction, aviation, retail & consumer,
+// healthcare & pharma, telecoms, industrial / manufacturing, agriculture,
+// tourism & hospitality, geopolitics, EU / climate, UAE / Dubai skyline,
+// India / emerging-market growth, sovereign / family-office capital.
+//
+// Each photo is tagged with the SPECIFIC concepts it actually depicts so
+// the matcher can pick a photo that visibly relates to the article topic,
+// not just a same-room generic.
 const PHOTOS = [
-  // ── Energy / oil / shipping / Hormuz-adjacent ──
-  { url: U('photo-1513828583688-c52646db42da'), tags: ['oil', 'refinery', 'energy', 'petroleum', 'opec', 'brent', 'crude'] },
-  { url: U('photo-1532601224476-15c79f2f7a51'), tags: ['pipeline', 'oil', 'gas', 'energy', 'industrial'] },
-  { url: U('photo-1494412574643-ff11b0a5eb19'), tags: ['container', 'shipping', 'trade', 'logistics', 'port', 'hormuz', 'freight'] },
-  { url: U('photo-1521295121783-8a321d551ad2'), tags: ['shipping', 'port', 'trade', 'logistics', 'cargo'] },
+  // ── OIL · ENERGY · GAS · REFINING ──────────────────────────────
+  { url: U('photo-1513828583688-c52646db42da'), tags: ['oil', 'refinery', 'petroleum', 'opec', 'brent', 'crude', 'energy', 'industrial'] },
+  { url: U('photo-1532601224476-15c79f2f7a51'), tags: ['pipeline', 'oil', 'gas', 'lng', 'energy', 'industrial'] },
+  { url: U('photo-1610283003415-9d99b6d3d2cb'), tags: ['oil pump', 'drilling', 'oil rig', 'petroleum', 'opec'] },
+  { url: U('photo-1497435334941-8c899ee9e8e9'), tags: ['offshore', 'platform', 'oil rig', 'gas'] },
 
-  // ── Treasury / capital / gold / trading ──
-  { url: U('photo-1618044733300-9472054094ee'), tags: ['gold', 'bars', 'wealth', 'capital', 'reserve', 'treasury'] },
+  // ── SHIPPING · PORTS · LOGISTICS · MARITIME ────────────────────
+  { url: U('photo-1494412574643-ff11b0a5eb19'), tags: ['container', 'shipping', 'cargo', 'freight', 'port', 'hormuz', 'jebel ali', 'logistics', 'maritime', 'trade'] },
+  { url: U('photo-1521295121783-8a321d551ad2'), tags: ['shipping', 'port', 'tanker', 'logistics', 'cargo', 'maritime'] },
+  { url: U('photo-1577416412292-747c6607f055'), tags: ['cargo ship', 'tanker', 'shipping', 'maritime', 'sea'] },
+  { url: U('photo-1494412519320-aa613dfb7738'), tags: ['port', 'cranes', 'shipping', 'logistics', 'container'] },
+
+  // ── TREASURY · BANKING · GOLD · CAPITAL · TRADING ──────────────
+  { url: U('photo-1618044733300-9472054094ee'), tags: ['gold', 'bars', 'wealth', 'reserve', 'treasury', 'capital'] },
   { url: U('photo-1611974789855-9c2a0a7236a3'), tags: ['finance', 'abstract', 'markets', 'capital', 'bonds'] },
-  { url: U('photo-1554224155-8d04cb21cd6c'), tags: ['trading', 'screens', 'stock', 'markets', 'capital', 'bond'] },
-  { url: U('photo-1560520653-9e0e4c89eb11'), tags: ['stock', 'exchange', 'trading', 'ipo', 'capital', 'bonds'] },
-  { url: U('photo-1556742049-0cfed4f6a45d'), tags: ['bank', 'vault', 'banking', 'finance', 'capital'] },
+  { url: U('photo-1554224155-8d04cb21cd6c'), tags: ['trading', 'screens', 'stock', 'markets', 'bonds', 'bloomberg'] },
+  { url: U('photo-1560520653-9e0e4c89eb11'), tags: ['stock', 'exchange', 'trading', 'ipo', 'listing', 'capital'] },
+  { url: U('photo-1556742049-0cfed4f6a45d'), tags: ['bank', 'vault', 'banking', 'finance', 'cbuae', 'central bank'] },
+  { url: U('photo-1601597111158-2fceff292cdc'), tags: ['bank building', 'banking', 'cbuae', 'institutional', 'columns'] },
+  { url: U('photo-1607863680198-23d4b2565df0'), tags: ['sukuk', 'islamic finance', 'middle east', 'architecture'] },
+  { url: U('photo-1579532537598-459ecdaf39cc'), tags: ['currency', 'dollar', 'cash', 'fx', 'forex'] },
+  { url: U('photo-1607863680151-8c8a86eafc02'), tags: ['family office', 'wealth management', 'private banking'] },
 
-  // ── Compliance / regulation / governance / cyber ──
-  { url: U('photo-1454165804606-c3d57bc86b40'), tags: ['documents', 'legal', 'compliance', 'risk', 'audit', 'tax'] },
-  { url: U('photo-1589829545856-d10d557cf95f'), tags: ['gavel', 'law', 'regulation', 'risk', 'legal', 'enforcement'] },
-  { url: U('photo-1550751827-4bd374c3f58b'), tags: ['security', 'lock', 'cyber', 'risk', 'protection', 'whatsapp', 'data'] },
-  { url: U('photo-1633265486064-086b219458ec'), tags: ['shield', 'security', 'digital', 'risk', 'governance'] },
-  { url: U('photo-1554224154-26032ffc0d07'), tags: ['tax', 'documents', 'accounting', 'compliance', 'vat'] },
+  // ── COMPLIANCE · REGULATION · GAVEL · LEGAL · CYBER ────────────
+  { url: U('photo-1454165804606-c3d57bc86b40'), tags: ['documents', 'legal', 'compliance', 'audit', 'tax', 'paperwork'] },
+  { url: U('photo-1589829545856-d10d557cf95f'), tags: ['gavel', 'law', 'regulation', 'court', 'legal', 'enforcement', 'penalty'] },
+  { url: U('photo-1550751827-4bd374c3f58b'), tags: ['security', 'lock', 'cyber', 'data', 'whatsapp', 'protection', 'privacy'] },
+  { url: U('photo-1633265486064-086b219458ec'), tags: ['shield', 'security', 'digital', 'governance', 'protection'] },
+  { url: U('photo-1554224154-26032ffc0d07'), tags: ['tax', 'documents', 'accounting', 'vat', 'fta', 'returns'] },
+  { url: U('photo-1450101499163-c8848c66ca85'), tags: ['contract', 'signing', 'deal', 'legal', 'agreement'] },
+  { url: U('photo-1505664063603-28e48ca204eb'), tags: ['audit', 'paperwork', 'accountant', 'financial review'] },
+  { url: U('photo-1521791136064-7986c2920216'), tags: ['handshake', 'deal', 'agreement', 'mou', 'partnership'] },
+  { url: U('photo-1589994965851-a8f479c573a9'), tags: ['parliament', 'government', 'policy', 'regulation'] },
 
-  // ── UAE / GCC / skyline ──
-  { url: U('photo-1512453979798-5ea266f8880c'), tags: ['dubai', 'skyline', 'uae', 'city', 'growth'] },
-  { url: U('photo-1518684079-3c830dcef090'), tags: ['dubai', 'marina', 'towers', 'real-estate'] },
-  { url: U('photo-1582407947092-47f5835e3a28'), tags: ['abu-dhabi', 'skyline', 'uae'] },
-  { url: U('photo-1547483238-f400e65ccd56'), tags: ['dubai', 'aerial', 'city', 'infrastructure'] },
+  // ── AI · TECHNOLOGY · DATA CENTRES · CHIPS ─────────────────────
+  { url: U('photo-1677442136019-21780ecad995'), tags: ['ai', 'artificial-intelligence', 'machine learning', 'llm'] },
+  { url: U('photo-1518770660439-4636190af475'), tags: ['circuit', 'chip', 'semiconductor', 'gpu', 'silicon', 'capex'] },
+  { url: U('photo-1504868584819-f8e8b4b6d7e3'), tags: ['server', 'data-center', 'datacenter', 'infrastructure', 'cloud'] },
+  { url: U('photo-1488229297570-58520851e868'), tags: ['network', 'data', 'cloud', 'digital'] },
+  { url: U('photo-1620712943543-bcc4688e7485'), tags: ['ai chip', 'agentic ai', 'robot', 'automation'] },
 
-  // ── Global / world / geopolitics / satellite ──
-  { url: U('photo-1451187580459-43490279c0fa'), tags: ['earth', 'space', 'global', 'world', 'planet', 'satellite'] },
-  { url: U('photo-1526778548025-fa2f459cd5c1'), tags: ['world-map', 'digital', 'global', 'network', 'trade'] },
-  { url: U('photo-1558618666-fcd25c85f82e'), tags: ['network', 'connections', 'global', 'digital', 'macro'] },
-  { url: U('photo-1446776811953-b23d57bd21aa'), tags: ['earth', 'atmosphere', 'global', 'climate', 'macro'] },
+  // ── UAE · DUBAI · ABU DHABI · GCC SKYLINE ──────────────────────
+  { url: U('photo-1512453979798-5ea266f8880c'), tags: ['dubai', 'skyline', 'uae', 'difc', 'city'] },
+  { url: U('photo-1518684079-3c830dcef090'), tags: ['dubai marina', 'towers', 'real-estate', 'residential'] },
+  { url: U('photo-1582407947092-47f5835e3a28'), tags: ['abu dhabi', 'skyline', 'uae', 'adgm'] },
+  { url: U('photo-1547483238-f400e65ccd56'), tags: ['dubai aerial', 'city', 'infrastructure', 'uae'] },
+  { url: U('photo-1546412414-e1885259563a'), tags: ['burj khalifa', 'dubai', 'landmark', 'tourism'] },
+  { url: U('photo-1572252009286-268acec5ca0a'), tags: ['saudi arabia', 'riyadh', 'ksa', 'middle east'] },
 
-  // ── EU / CBAM / industrial Europe ──
-  { url: U('photo-1466611653911-95081537e5b7'), tags: ['wind', 'turbine', 'energy', 'renewable', 'green', 'cbam', 'climate'] },
-  { url: U('photo-1474314170901-f351b68f544f'), tags: ['solar', 'energy', 'renewable', 'green', 'climate', 'eu', 'ets'] },
+  // ── REAL ESTATE · CONSTRUCTION · INFRASTRUCTURE ────────────────
+  { url: U('photo-1496568816309-51d7c20e3b21'), tags: ['sunrise', 'real-estate', 'skyline', 'growth'] },
+  { url: U('photo-1545324418-cc1a3fa10c00'), tags: ['building', 'architecture', 'real-estate', 'commercial'] },
+  { url: U('photo-1479839672679-a46483c0e7c8'), tags: ['construction', 'crane', 'development', 'infrastructure'] },
+  { url: U('photo-1503387762-592deb58ef4e'), tags: ['residential', 'housing', 'real-estate', 'apartments'] },
 
-  // ── AI / Big Tech / data centres ──
-  { url: U('photo-1677442136019-21780ecad995'), tags: ['ai', 'artificial-intelligence', 'tech', 'robot', 'digital'] },
-  { url: U('photo-1518770660439-4636190af475'), tags: ['circuit', 'tech', 'chip', 'semiconductor', 'ai', 'capex'] },
-  { url: U('photo-1504868584819-f8e8b4b6d7e3'), tags: ['server', 'data-center', 'tech', 'infrastructure', 'ai'] },
-  { url: U('photo-1488229297570-58520851e868'), tags: ['network', 'data', 'tech', 'cloud', 'digital'] },
+  // ── AVIATION · AIRPORTS · AIRLINES ─────────────────────────────
+  { url: U('photo-1436491865332-7a61a109db05'), tags: ['airplane', 'aviation', 'airline', 'travel', 'flynas', 'emirates airline', 'etihad'] },
+  { url: U('photo-1556388158-158ea5ccacbd'), tags: ['airport', 'terminal', 'aviation', 'travel'] },
+  { url: U('photo-1569154941061-e231b4725ef1'), tags: ['airline', 'airplane', 'jet', 'aviation', 'fleet'] },
 
-  // ── Growth / expansion / India / emerging markets ──
-  { url: U('photo-1486406146926-c627a92ad1ab'), tags: ['office', 'tower', 'corporate', 'business', 'growth', 'india'] },
-  { url: U('photo-1496568816309-51d7c20e3b21'), tags: ['sunrise', 'city', 'real-estate', 'skyline', 'growth'] },
+  // ── RETAIL · CONSUMER · F&B ────────────────────────────────────
+  { url: U('photo-1481437156560-3205f6a55735'), tags: ['retail', 'shopping mall', 'store', 'cenomi', 'alshaya', 'consumer'] },
+  { url: U('photo-1567521464027-f127ff144326'), tags: ['shopping', 'retail', 'consumer goods', 'storefront'] },
+  { url: U('photo-1568901346375-23c9450c58cd'), tags: ['food', 'restaurant', 'hospitality', 'beverage'] },
+
+  // ── HEALTHCARE · PHARMA · BIOTECH ──────────────────────────────
+  { url: U('photo-1579684385127-1ef15d508118'), tags: ['healthcare', 'medical', 'pharma', 'science', 'hospital'] },
+  { url: U('photo-1576091160550-2173dba999ef'), tags: ['lab', 'research', 'science', 'biotech', 'pharmaceutical'] },
+
+  // ── TELECOMS · 5G · INFRASTRUCTURE ─────────────────────────────
+  { url: U('photo-1551193658-3bd7c4ef1ad8'), tags: ['cell tower', '5g', 'telecom', 'antenna', 'wireless'] },
+
+  // ── INDUSTRIAL · MANUFACTURING ─────────────────────────────────
+  { url: U('photo-1565793298595-6a879b1d9492'), tags: ['factory', 'manufacturing', 'industrial', 'moiat', 'production'] },
+  { url: U('photo-1556761175-b413da4baf72'), tags: ['warehouse', 'logistics', 'industrial', 'storage'] },
+  { url: U('photo-1581094271901-8022df4466f9'), tags: ['steel', 'metals', 'commodities', 'mining'] },
+
+  // ── EU · CBAM · CLIMATE · RENEWABLES ───────────────────────────
+  { url: U('photo-1466611653911-95081537e5b7'), tags: ['wind turbine', 'renewable', 'green energy', 'cbam', 'climate'] },
+  { url: U('photo-1474314170901-f351b68f544f'), tags: ['solar', 'renewable', 'green', 'climate', 'eu', 'ets'] },
+  { url: U('photo-1497436072909-60f360e1d4b1'), tags: ['nature', 'climate', 'esg', 'sustainability'] },
+
+  // ── GEOPOLITICS · WORLD · TRADE · MAPS ─────────────────────────
+  { url: U('photo-1451187580459-43490279c0fa'), tags: ['earth', 'space', 'global', 'satellite', 'planet'] },
+  { url: U('photo-1526778548025-fa2f459cd5c1'), tags: ['world map', 'digital', 'global', 'network'] },
+  { url: U('photo-1558618666-fcd25c85f82e'), tags: ['network', 'connections', 'global', 'macro'] },
+  { url: U('photo-1446776811953-b23d57bd21aa'), tags: ['earth', 'atmosphere', 'global', 'climate'] },
+
+  // ── INDIA · EMERGING MARKETS · GROWTH ──────────────────────────
+  { url: U('photo-1524492412937-b28074a5d7da'), tags: ['india', 'mumbai', 'emerging markets', 'sebi', 'asia'] },
+  { url: U('photo-1592978615499-bd0e64c8fbd9'), tags: ['family office', 'private equity', 'investment', 'allocation'] },
+  { url: U('photo-1486406146926-c627a92ad1ab'), tags: ['office tower', 'corporate', 'business', 'india'] },
+
+  // ── BIG TECH · CORPORATE · FORTUNE 500 ─────────────────────────
+  { url: U('photo-1560179707-f14e90ef3623'), tags: ['corporate', 'headquarters', 'tech', 'alphabet', 'amazon', 'big tech'] },
+  { url: U('photo-1497366216548-37526070297c'), tags: ['office', 'modern', 'corporate', 'startup', 'workplace'] },
 ];
 
 const ROOM_FALLBACK_TAGS = {
-  growth: ['dubai', 'skyline', 'corporate', 'growth', 'business', 'india'],
-  capital: ['gold', 'finance', 'trading', 'capital', 'markets', 'bonds', 'treasury'],
-  risk: ['security', 'risk', 'compliance', 'legal', 'cyber', 'governance', 'enforcement'],
+  growth: ['dubai', 'skyline', 'corporate', 'growth', 'business', 'india', 'emerging markets'],
+  capital: ['gold', 'finance', 'trading', 'capital', 'markets', 'bonds', 'treasury', 'bank'],
+  risk: ['security', 'compliance', 'legal', 'cyber', 'governance', 'enforcement', 'gavel'],
   world: ['earth', 'global', 'network', 'trade', 'shipping', 'macro', 'satellite'],
 };
 
-/** Find best-matching photo URL for an article's title + description + topic. */
+// ENTITY → IMPLIED TAGS map. When an article's title or description names
+// a specific company / regulator / topic, this map injects the right
+// visual tags into the matcher so the photo VISIBLY relates to the
+// subject — not just to a same-room generic.
+//
+// Pattern key matches regexp-style against the article text (case-insensitive).
+const ENTITY_TAGS = [
+  // Airlines / aviation
+  { test: /\b(flynas|emirates airline|etihad|saudia|qatar airways|gulf air|riyadh air|flydubai)\b/i,
+    tags: ['airplane', 'aviation', 'airline'] },
+  { test: /\b(boeing|airbus|aerospace|aircraft order|fleet|airport)\b/i,
+    tags: ['aviation', 'airplane', 'airport'] },
+
+  // Retail / consumer
+  { test: /\b(cenomi|alshaya|americana|landmark group|chalhoub|majid al futtaim|emaar mall|mall of)\b/i,
+    tags: ['retail', 'shopping', 'consumer goods'] },
+
+  // Banking / central banks
+  { test: /\b(cbuae|central bank of (the )?uae)\b/i,
+    tags: ['bank', 'banking', 'cbuae', 'central bank'] },
+  { test: /\b(saudi central bank|sama|qatar central bank|bahrain central bank)\b/i,
+    tags: ['bank', 'banking', 'central bank'] },
+  { test: /\b(emirates nbd|first abu dhabi bank|fab|adcb|enbd|adib|mashreq|dib|dubai islamic)\b/i,
+    tags: ['bank', 'banking'] },
+
+  // Regulators / tax / compliance
+  { test: /\b(dfsa|adgm fsra|fta|federal tax authority|moiat|mohre|mof|ministry of finance|sec|cma|sebi)\b/i,
+    tags: ['gavel', 'regulation', 'legal', 'compliance'] },
+  { test: /\b(aml|kyc|sanction|enforcement|penalty|fine|breach|violation)\b/i,
+    tags: ['gavel', 'compliance', 'legal', 'enforcement'] },
+  { test: /\b(audit|tax|vat|pillar 2|dmtt|einvoic|emiratisation)\b/i,
+    tags: ['tax', 'accounting', 'audit', 'paperwork'] },
+
+  // Energy / oil / commodities
+  { test: /\b(brent|wti|crude|opec|oil price|oil rally|oil shock|barrel|petroleum)\b/i,
+    tags: ['oil', 'refinery', 'petroleum', 'crude'] },
+  { test: /\b(natural gas|lng|pipeline|aramco|adnoc|qatar energy)\b/i,
+    tags: ['pipeline', 'gas', 'energy', 'industrial'] },
+  { test: /\b(refinery|refining|downstream)\b/i,
+    tags: ['refinery', 'industrial', 'petroleum'] },
+
+  // Shipping / logistics / supply chain
+  { test: /\b(shipping|cargo|freight|container|tanker|maritime|hormuz|red sea|suez|jebel ali|port)\b/i,
+    tags: ['shipping', 'cargo', 'container', 'maritime', 'port'] },
+  { test: /\b(supply chain|supplier|procurement|logistics)\b/i,
+    tags: ['shipping', 'logistics', 'cargo'] },
+
+  // Treasury / capital markets / debt
+  { test: /\b(sukuk|islamic bond|islamic finance|sharia)\b/i,
+    tags: ['sukuk', 'islamic finance', 'bonds'] },
+  { test: /\b(bond|treasury|yield|coupon|spread|debut issuance|tap)\b/i,
+    tags: ['bonds', 'trading', 'finance'] },
+  { test: /\b(ipo|listing|adx|dfm|tadawul|nasdaq dubai)\b/i,
+    tags: ['stock', 'exchange', 'ipo', 'listing'] },
+  { test: /\b(rate|interest rate|federal reserve|fed|ecb|cbuae rate|repo)\b/i,
+    tags: ['trading', 'bank', 'markets'] },
+  { test: /\b(currency|fx|forex|dirham|dollar|yen|euro)\b/i,
+    tags: ['currency', 'fx', 'dollar'] },
+  { test: /\b(family office|private credit|private equity|alternative|allocator)\b/i,
+    tags: ['family office', 'wealth management', 'private banking'] },
+
+  // AI / Big Tech / chips
+  { test: /\b(ai|artificial intelligence|machine learning|llm|genai|generative ai|agentic)\b/i,
+    tags: ['ai', 'artificial-intelligence', 'machine learning'] },
+  { test: /\b(nvidia|amd|tsmc|chip|semiconductor|gpu|silicon)\b/i,
+    tags: ['chip', 'semiconductor', 'gpu', 'silicon'] },
+  { test: /\b(data centre|data center|hyperscaler|cloud capex)\b/i,
+    tags: ['server', 'data-center', 'datacenter', 'infrastructure'] },
+  { test: /\b(alphabet|google|amazon|microsoft|meta|apple|big tech)\b/i,
+    tags: ['big tech', 'corporate', 'tech'] },
+
+  // Real estate / construction
+  { test: /\b(real estate|reit|property|residential|commercial|construction|mortgage|emaar|aldar|damac|sobha)\b/i,
+    tags: ['real-estate', 'building', 'construction', 'commercial'] },
+
+  // Healthcare / pharma
+  { test: /\b(pharma|drug|biotech|healthcare|hospital|nmc|aster|burjeel)\b/i,
+    tags: ['healthcare', 'pharma', 'medical', 'hospital'] },
+
+  // Telecoms
+  { test: /\b(telecom|5g|du|etisalat|stc|zain|fiber|broadband)\b/i,
+    tags: ['cell tower', '5g', 'telecom'] },
+
+  // Industrial / manufacturing
+  { test: /\b(factory|manufacturing|industrial|steel|aluminium|aluminum|emirates global aluminium|ega)\b/i,
+    tags: ['factory', 'manufacturing', 'industrial', 'steel'] },
+
+  // EU / CBAM / climate
+  { test: /\b(cbam|ets|carbon|emission|net zero|esg|climate)\b/i,
+    tags: ['wind turbine', 'solar', 'climate', 'renewable'] },
+
+  // India / emerging markets
+  { test: /\b(india|sebi|mumbai|bangalore|hyderabad|tata|reliance|adani)\b/i,
+    tags: ['india', 'emerging markets', 'mumbai'] },
+
+  // UAE / Dubai / Abu Dhabi context
+  { test: /\b(dubai|burj|difc|jbr|deira)\b/i,
+    tags: ['dubai', 'skyline', 'uae'] },
+  { test: /\b(abu dhabi|adgm|adq|mubadala)\b/i,
+    tags: ['abu dhabi', 'uae', 'adgm'] },
+
+  // Messaging / communications platforms
+  { test: /\b(whatsapp|telegram|signal|imessage|sms|messaging app)\b/i,
+    tags: ['cyber', 'security', 'data', 'protection', 'whatsapp'] },
+
+  // Sovereign wealth / state capital
+  { test: /\b(pif|public investment fund|sovereign wealth|aramco ipo)\b/i,
+    tags: ['gold', 'wealth', 'family office', 'capital'] },
+
+  // Crypto / digital assets
+  { test: /\b(bitcoin|crypto|blockchain|stablecoin|token|exchange listing|coinbase|binance)\b/i,
+    tags: ['ai', 'digital', 'cloud', 'cyber'] },
+
+  // Tourism / hospitality / events
+  { test: /\b(hospitality|hotel|tourism|world expo|cop|conference|summit|trade show)\b/i,
+    tags: ['burj khalifa', 'dubai', 'tourism', 'landmark'] },
+
+  // Sports / entertainment finance
+  { test: /\b(saudi pro league|liv golf|sports finance|f1|fifa|sponsorship)\b/i,
+    tags: ['saudi arabia', 'middle east', 'tourism'] },
+];
+
+/**
+ * Find best-matching photo for an article. Three-tier matching:
+ *
+ *   Tier 1 — ENTITY: Scan the article for known entities (regulators,
+ *            companies, topics). Photos matching those entity tags get
+ *            a heavy +5 score boost.
+ *   Tier 2 — KEYWORD: Score photos by overlap between their tags and
+ *            the article's title + description + topic field.
+ *   Tier 3 — ROOM FALLBACK: If no photo scores above zero, use any
+ *            photo tagged with the room's fallback themes.
+ *
+ * Returns the photo URL plus an optional diagnostic string showing
+ * which entities triggered which tags — useful for verifying matches.
+ */
 function pickPhoto(picked) {
   const { item, room } = picked;
   const roomMeta = ROOMS[room];
-  const topicText = item
-    ? `${item.title} ${item.description || ''} ${item.topic || ''}`.toLowerCase()
-    : roomMeta.label.toLowerCase();
-  const topicWords = topicText.split(/[\s,.\-/()]+/).filter(w => w.length > 2);
 
+  const topicText = item
+    ? `${item.title || ''} ${item.description || ''} ${item.topic || ''}`
+    : roomMeta.label;
+  const lower = topicText.toLowerCase();
+  const words = lower.split(/[\s,.\-/()]+/).filter(w => w.length > 2);
+
+  // Tier 1 — Collect entity-implied tags
+  const entityTags = new Set();
+  const matchedEntities = [];
+  for (const ent of ENTITY_TAGS) {
+    if (ent.test.test(topicText)) {
+      matchedEntities.push(ent.test.source.replace(/\\b|\(|\)|\?:/g, '').slice(0, 50));
+      ent.tags.forEach(t => entityTags.add(t));
+    }
+  }
+
+  // Score every photo
   const scored = PHOTOS.map((p, idx) => {
     let score = 0;
+    let entityHit = false;
     for (const tag of p.tags) {
-      if (topicText.includes(tag)) score += 3;
-      for (const w of topicWords) {
-        if (tag.includes(w) || w.includes(tag)) score += 1;
+      // Entity-implied tag — heavy weight
+      if (entityTags.has(tag)) { score += 5; entityHit = true; }
+      // Direct phrase match in article text
+      if (lower.includes(tag)) score += 3;
+      // Word-level match
+      for (const w of words) {
+        if (tag === w) score += 1.5;
+        else if (tag.includes(w) || w.includes(tag)) score += 0.6;
       }
-      if (ROOM_FALLBACK_TAGS[room].includes(tag)) score += 0.5;
+      // Room affinity bonus (small — entity/keyword should dominate)
+      if (ROOM_FALLBACK_TAGS[room].includes(tag)) score += 0.3;
     }
-    return { url: p.url, score, idx };
+    return { url: p.url, score, idx, entityHit, tags: p.tags };
   });
 
   scored.sort((a, b) => b.score - a.score || a.idx - b.idx);
-  const top = scored.filter(s => s.score > 0).slice(0, 5);
-  if (top.length > 0) return top[0].url;
+  const best = scored[0];
 
-  // Fallback: pick first room-matched photo
+  // Diagnostic log — visible in the GitHub Actions output so we can
+  // verify each banner is getting a topically-relevant photo
+  if (item) {
+    const title = (item.title || '').slice(0, 60);
+    console.log(`  [photo] ${title} → ${best.tags.slice(0, 3).join('/')} (score ${best.score.toFixed(1)}${matchedEntities.length ? `, entities: ${matchedEntities.slice(0, 2).join('|')}` : ''})`);
+  }
+
+  if (best.score > 0) return best.url;
+
+  // Tier 3 — Room fallback
   const roomPhotos = PHOTOS.filter(p => p.tags.some(t => ROOM_FALLBACK_TAGS[room].includes(t)));
   return roomPhotos[0]?.url || PHOTOS[0].url;
 }
@@ -962,11 +1187,22 @@ function svgDefs(color) {
         <feFuncB type="gamma" amplitude="1" exponent="0.9"  offset="0"/>
       </feComponentTransfer>
     </filter>
+    <!-- darken: gentle bottom-up scrim. Keeps the top 60% of the photo
+         bright and only darkens the lower 40% just enough for text. The
+         old version was 0.55–0.98 which buried the photo entirely. -->
     <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#06060f" stop-opacity="0.25"/>
-      <stop offset="35%" stop-color="#06060f" stop-opacity="0.55"/>
-      <stop offset="65%" stop-color="#06060f" stop-opacity="0.92"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0.08"/>
+      <stop offset="55%" stop-color="#06060f" stop-opacity="0.15"/>
+      <stop offset="78%" stop-color="#06060f" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.85"/>
+    </linearGradient>
+    <!-- textScrim: tight bottom-half scrim used by layouts that need a
+         stronger contrast band specifically behind the headline + stat
+         block, without darkening the photo's hero zone. -->
+    <linearGradient id="textScrim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#06060f" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.90"/>
     </linearGradient>
     <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
@@ -1362,14 +1598,18 @@ function pickNSeeded(arr, n, rng) {
 // PHOTO CAST FILTERS — 6 cinematic treatments
 // ═══════════════════════════════════════════════════════════════
 
+// PHOTO CASTS — much subtler color shifts now. The previous matrices were
+// crushing 30-45% of each channel, which destroyed photo vibrancy. These
+// preserve the original photo and just add a small theme tint. The hero
+// photo should remain the dominant visual; the tint is mood, not mask.
 const PHOTO_CASTS = {
-  'warm-amber':      { r: [0.85, 0.10, 0.05], g: [0.10, 0.7, 0.05], b: [0.05, 0.10, 0.55], gamma: [0.92, 0.95, 1.0] },
-  'cool-red':        { r: [0.85, 0.05, 0.05], g: [0.10, 0.55, 0.10], b: [0.10, 0.10, 0.55], gamma: [0.9, 0.95, 0.95] },
-  'gold-premium':    { r: [0.7, 0.15, 0.05], g: [0.15, 0.7, 0.05], b: [0.05, 0.10, 0.55], gamma: [0.92, 0.95, 1.0] },
-  'cyber-blue':      { r: [0.55, 0.05, 0.05], g: [0.05, 0.55, 0.10], b: [0.10, 0.15, 0.85], gamma: [0.95, 0.95, 0.85] },
-  'cool-cinematic':  { r: [0.55, 0.05, 0.10], g: [0.05, 0.65, 0.15], b: [0.10, 0.15, 0.85], gamma: [0.95, 0.95, 0.9] },
-  'sea-cool':        { r: [0.45, 0.10, 0.15], g: [0.10, 0.6, 0.15], b: [0.15, 0.20, 0.8], gamma: [0.95, 0.95, 0.92] },
-  'warm-vibrant':    { r: [0.65, 0.20, 0.10], g: [0.15, 0.8, 0.15], b: [0.10, 0.15, 0.55], gamma: [0.92, 0.9, 0.95] },
+  'warm-amber':      { r: [0.98, 0.05, 0.0], g: [0.02, 0.92, 0.02], b: [0.0,  0.02, 0.85], gamma: [0.95, 0.97, 1.0] },
+  'cool-red':        { r: [1.00, 0.02, 0.02], g: [0.02, 0.88, 0.02], b: [0.0,  0.02, 0.88], gamma: [0.95, 0.97, 0.97] },
+  'gold-premium':    { r: [0.98, 0.05, 0.0], g: [0.05, 0.95, 0.02], b: [0.0,  0.02, 0.85], gamma: [0.95, 0.97, 1.0] },
+  'cyber-blue':      { r: [0.85, 0.0,  0.05], g: [0.0,  0.92, 0.05], b: [0.05, 0.05, 1.05], gamma: [0.97, 0.97, 0.9] },
+  'cool-cinematic':  { r: [0.88, 0.0,  0.05], g: [0.0,  0.95, 0.05], b: [0.05, 0.05, 1.02], gamma: [0.97, 0.97, 0.95] },
+  'sea-cool':        { r: [0.80, 0.02, 0.08], g: [0.02, 0.92, 0.08], b: [0.05, 0.05, 1.0],  gamma: [0.97, 0.97, 0.95] },
+  'warm-vibrant':    { r: [0.95, 0.10, 0.05], g: [0.05, 0.98, 0.05], b: [0.02, 0.05, 0.85], gamma: [0.95, 0.95, 0.97] },
 };
 
 function photoFilterSVG(castKey) {
@@ -1485,11 +1725,22 @@ function svgWrapTheme(color, photoCast, body) {
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
   <defs>
     ${filterDef}
+    <!-- darken: gentle bottom-up scrim. Keeps the top 60% of the photo
+         bright and only darkens the lower 40% just enough for text. The
+         old version was 0.55–0.98 which buried the photo entirely. -->
     <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#06060f" stop-opacity="0.25"/>
-      <stop offset="35%" stop-color="#06060f" stop-opacity="0.55"/>
-      <stop offset="65%" stop-color="#06060f" stop-opacity="0.92"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0.08"/>
+      <stop offset="55%" stop-color="#06060f" stop-opacity="0.15"/>
+      <stop offset="78%" stop-color="#06060f" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.85"/>
+    </linearGradient>
+    <!-- textScrim: tight bottom-half scrim used by layouts that need a
+         stronger contrast band specifically behind the headline + stat
+         block, without darkening the photo's hero zone. -->
+    <linearGradient id="textScrim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#06060f" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.90"/>
     </linearGradient>
     <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>

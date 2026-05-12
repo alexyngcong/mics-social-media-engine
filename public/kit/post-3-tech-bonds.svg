@@ -2,16 +2,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
   <defs>
     <filter id="cinematic" x="0" y="0" width="100%" height="100%">
-      <feColorMatrix type="matrix" values="
-        0.7  0.15 0.05 0 0
-        0.15 0.7  0.05 0 0
-        0.05 0.10 0.55 0 0
+      <feColorMatrix type="matrix" values="        0.96 0.04 0.0  0 0
+        0.02 0.94 0.04 0 0
+        0.0  0.04 0.96 0 0
         0   0    0    1 0"/>
     </filter>
     <linearGradient id="vignTop" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#06060f" stop-opacity="0.6"/>
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.30"/>
       <stop offset="40%" stop-color="#06060f" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.50"/>
     </linearGradient>
     <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
       <stop offset="0%" stop-color="#F0C050" stop-opacity="0.45"/>
