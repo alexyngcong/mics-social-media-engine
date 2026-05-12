@@ -802,114 +802,94 @@ function buildFactParagraph(item) {
 const UNSPLASH_PARAMS = 'w=1600&q=80&fit=crop&crop=entropy&auto=format';
 const U = (id) => `https://images.unsplash.com/${id}?${UNSPLASH_PARAMS}`;
 
-// Photo library — substantially expanded (60+ photos) covering every theme
-// likely to appear in UAE/GCC financial intelligence: oil & energy,
-// shipping & logistics, treasury & banking, compliance & regulation, AI &
-// data centres, real estate & construction, aviation, retail & consumer,
-// healthcare & pharma, telecoms, industrial / manufacturing, agriculture,
-// tourism & hospitality, geopolitics, EU / climate, UAE / Dubai skyline,
-// India / emerging-market growth, sovereign / family-office capital.
+// Photo library — VERIFIED Unsplash IDs only.
+// Every ID here is also used in src/config/stockPhotos.ts which has been
+// proven to load in the in-app banner system. Adding unverified IDs causes
+// silent 404s (the SVG `<image>` fails and the banner falls back to a flat
+// gradient). If you want to add new categories, verify the URL loads in a
+// browser FIRST.
 //
-// Each photo is tagged with the SPECIFIC concepts it actually depicts so
-// the matcher can pick a photo that visibly relates to the article topic,
-// not just a same-room generic.
+// Tag vocabulary is rich so the entity matcher can route articles to the
+// most topically-relevant verified photo.
 const PHOTOS = [
-  // ── OIL · ENERGY · GAS · REFINING ──────────────────────────────
-  { url: U('photo-1513828583688-c52646db42da'), tags: ['oil', 'refinery', 'petroleum', 'opec', 'brent', 'crude', 'energy', 'industrial'] },
-  { url: U('photo-1532601224476-15c79f2f7a51'), tags: ['pipeline', 'oil', 'gas', 'lng', 'energy', 'industrial'] },
-  { url: U('photo-1610283003415-9d99b6d3d2cb'), tags: ['oil pump', 'drilling', 'oil rig', 'petroleum', 'opec'] },
-  { url: U('photo-1497435334941-8c899ee9e8e9'), tags: ['offshore', 'platform', 'oil rig', 'gas'] },
-
-  // ── SHIPPING · PORTS · LOGISTICS · MARITIME ────────────────────
-  { url: U('photo-1494412574643-ff11b0a5eb19'), tags: ['container', 'shipping', 'cargo', 'freight', 'port', 'hormuz', 'jebel ali', 'logistics', 'maritime', 'trade'] },
-  { url: U('photo-1521295121783-8a321d551ad2'), tags: ['shipping', 'port', 'tanker', 'logistics', 'cargo', 'maritime'] },
-  { url: U('photo-1577416412292-747c6607f055'), tags: ['cargo ship', 'tanker', 'shipping', 'maritime', 'sea'] },
-  { url: U('photo-1494412519320-aa613dfb7738'), tags: ['port', 'cranes', 'shipping', 'logistics', 'container'] },
-
-  // ── TREASURY · BANKING · GOLD · CAPITAL · TRADING ──────────────
-  { url: U('photo-1618044733300-9472054094ee'), tags: ['gold', 'bars', 'wealth', 'reserve', 'treasury', 'capital'] },
-  { url: U('photo-1611974789855-9c2a0a7236a3'), tags: ['finance', 'abstract', 'markets', 'capital', 'bonds'] },
-  { url: U('photo-1554224155-8d04cb21cd6c'), tags: ['trading', 'screens', 'stock', 'markets', 'bonds', 'bloomberg'] },
-  { url: U('photo-1560520653-9e0e4c89eb11'), tags: ['stock', 'exchange', 'trading', 'ipo', 'listing', 'capital'] },
-  { url: U('photo-1556742049-0cfed4f6a45d'), tags: ['bank', 'vault', 'banking', 'finance', 'cbuae', 'central bank'] },
-  { url: U('photo-1601597111158-2fceff292cdc'), tags: ['bank building', 'banking', 'cbuae', 'institutional', 'columns'] },
-  { url: U('photo-1607863680198-23d4b2565df0'), tags: ['sukuk', 'islamic finance', 'middle east', 'architecture'] },
-  { url: U('photo-1579532537598-459ecdaf39cc'), tags: ['currency', 'dollar', 'cash', 'fx', 'forex'] },
-  { url: U('photo-1607863680151-8c8a86eafc02'), tags: ['family office', 'wealth management', 'private banking'] },
-
-  // ── COMPLIANCE · REGULATION · GAVEL · LEGAL · CYBER ────────────
-  { url: U('photo-1454165804606-c3d57bc86b40'), tags: ['documents', 'legal', 'compliance', 'audit', 'tax', 'paperwork'] },
-  { url: U('photo-1589829545856-d10d557cf95f'), tags: ['gavel', 'law', 'regulation', 'court', 'legal', 'enforcement', 'penalty'] },
-  { url: U('photo-1550751827-4bd374c3f58b'), tags: ['security', 'lock', 'cyber', 'data', 'whatsapp', 'protection', 'privacy'] },
-  { url: U('photo-1633265486064-086b219458ec'), tags: ['shield', 'security', 'digital', 'governance', 'protection'] },
-  { url: U('photo-1554224154-26032ffc0d07'), tags: ['tax', 'documents', 'accounting', 'vat', 'fta', 'returns'] },
-  { url: U('photo-1450101499163-c8848c66ca85'), tags: ['contract', 'signing', 'deal', 'legal', 'agreement'] },
-  { url: U('photo-1505664063603-28e48ca204eb'), tags: ['audit', 'paperwork', 'accountant', 'financial review'] },
-  { url: U('photo-1521791136064-7986c2920216'), tags: ['handshake', 'deal', 'agreement', 'mou', 'partnership'] },
-  { url: U('photo-1589994965851-a8f479c573a9'), tags: ['parliament', 'government', 'policy', 'regulation'] },
-
-  // ── AI · TECHNOLOGY · DATA CENTRES · CHIPS ─────────────────────
-  { url: U('photo-1677442136019-21780ecad995'), tags: ['ai', 'artificial-intelligence', 'machine learning', 'llm'] },
-  { url: U('photo-1518770660439-4636190af475'), tags: ['circuit', 'chip', 'semiconductor', 'gpu', 'silicon', 'capex'] },
-  { url: U('photo-1504868584819-f8e8b4b6d7e3'), tags: ['server', 'data-center', 'datacenter', 'infrastructure', 'cloud'] },
-  { url: U('photo-1488229297570-58520851e868'), tags: ['network', 'data', 'cloud', 'digital'] },
-  { url: U('photo-1620712943543-bcc4688e7485'), tags: ['ai chip', 'agentic ai', 'robot', 'automation'] },
-
   // ── UAE · DUBAI · ABU DHABI · GCC SKYLINE ──────────────────────
-  { url: U('photo-1512453979798-5ea266f8880c'), tags: ['dubai', 'skyline', 'uae', 'difc', 'city'] },
+  { url: U('photo-1512453979798-5ea266f8880c'), tags: ['dubai', 'skyline', 'uae', 'difc', 'city', 'growth'] },
   { url: U('photo-1518684079-3c830dcef090'), tags: ['dubai marina', 'towers', 'real-estate', 'residential'] },
   { url: U('photo-1582407947092-47f5835e3a28'), tags: ['abu dhabi', 'skyline', 'uae', 'adgm'] },
   { url: U('photo-1547483238-f400e65ccd56'), tags: ['dubai aerial', 'city', 'infrastructure', 'uae'] },
   { url: U('photo-1546412414-e1885259563a'), tags: ['burj khalifa', 'dubai', 'landmark', 'tourism'] },
-  { url: U('photo-1572252009286-268acec5ca0a'), tags: ['saudi arabia', 'riyadh', 'ksa', 'middle east'] },
 
-  // ── REAL ESTATE · CONSTRUCTION · INFRASTRUCTURE ────────────────
+  // ── CORPORATE · BIG TECH · OFFICE · BOARDROOM ──────────────────
+  { url: U('photo-1486406146926-c627a92ad1ab'), tags: ['office tower', 'corporate', 'business', 'india', 'mumbai', 'emerging markets', 'asia'] },
+  { url: U('photo-1560179707-f14e90ef3623'), tags: ['corporate', 'headquarters', 'tech', 'alphabet', 'amazon', 'big tech', 'fortune 500'] },
+  { url: U('photo-1507679799987-c73779587ccf'), tags: ['executive', 'cfo', 'leadership', 'business', 'suit'] },
+  { url: U('photo-1556761175-5973dc0f32e7'), tags: ['boardroom', 'strategy', 'corporate', 'meeting', 'consulting'] },
+  { url: U('photo-1497366216548-37526070297c'), tags: ['office', 'modern', 'workspace', 'startup'] },
+
+  // ── TREASURY · BANKING · GOLD · CAPITAL · TRADING ──────────────
+  { url: U('photo-1618044733300-9472054094ee'), tags: ['gold', 'bars', 'wealth', 'reserve', 'treasury', 'capital', 'sukuk', 'islamic finance'] },
+  { url: U('photo-1611974789855-9c2a0a7236a3'), tags: ['finance', 'abstract', 'markets', 'capital', 'bonds'] },
+  { url: U('photo-1554224155-8d04cb21cd6c'), tags: ['trading', 'screens', 'stock', 'markets', 'bonds', 'bloomberg'] },
+  { url: U('photo-1642790106117-e829e14a795f'), tags: ['gold coins', 'investment', 'capital', 'wealth', 'family office'] },
+  { url: U('photo-1560520653-9e0e4c89eb11'), tags: ['stock exchange', 'trading', 'ipo', 'listing', 'capital', 'sebi'] },
+  { url: U('photo-1579532537598-459ecdaf39cc'), tags: ['currency', 'dollar', 'cash', 'fx', 'forex', 'dirham'] },
+  { url: U('photo-1621761191319-c6fb62004040'), tags: ['crypto', 'blockchain', 'digital asset', 'bitcoin'] },
+  { url: U('photo-1556742049-0cfed4f6a45d'), tags: ['bank', 'vault', 'banking', 'finance', 'cbuae', 'central bank'] },
+  { url: U('photo-1563013544-824ae1b704d3'), tags: ['payment', 'card', 'fintech', 'digital banking'] },
+  { url: U('photo-1559526324-4b87b5e36e44'), tags: ['atm', 'banking', 'cash', 'finance'] },
+
+  // ── DATA · CHARTS · ANALYTICS ──────────────────────────────────
+  { url: U('photo-1526304640581-d334cdbbf45e'), tags: ['chart', 'data', 'analytics', 'numbers', 'growth'] },
+  { url: U('photo-1504384308090-c894fdcc538d'), tags: ['tech', 'laptop', 'data', 'digital'] },
+  { url: U('photo-1551288049-bebda4e38f71'), tags: ['dashboard', 'data', 'analytics', 'metrics'] },
+  { url: U('photo-1460925895917-afdab827c52f'), tags: ['chart', 'screen', 'trading', 'markets', 'ppi', 'inflation'] },
+
+  // ── COMPLIANCE · REGULATION · GAVEL · LEGAL · CYBER ────────────
+  { url: U('photo-1454165804606-c3d57bc86b40'), tags: ['documents', 'legal', 'compliance', 'audit', 'tax', 'paperwork'] },
+  { url: U('photo-1589829545856-d10d557cf95f'), tags: ['gavel', 'law', 'regulation', 'court', 'legal', 'enforcement', 'penalty', 'sec', 'sebi'] },
+  { url: U('photo-1550751827-4bd374c3f58b'), tags: ['security', 'lock', 'cyber', 'data', 'whatsapp', 'protection', 'privacy', 'messaging'] },
+  { url: U('photo-1563986768609-322da13575f2'), tags: ['cybersecurity', 'hacker', 'threat', 'digital risk'] },
+  { url: U('photo-1633265486064-086b219458ec'), tags: ['shield', 'security', 'digital', 'governance', 'protection'] },
+  { url: U('photo-1507925921958-8a62f3d1a50d'), tags: ['fingerprint', 'biometric', 'identity', 'kyc'] },
+  { url: U('photo-1526374965328-7f61d4dc18c5'), tags: ['matrix', 'code', 'cyber', 'hacking', 'data breach'] },
+  { url: U('photo-1554224154-26032ffc0d07'), tags: ['tax', 'documents', 'accounting', 'vat', 'fta', 'returns'] },
+  { url: U('photo-1450101499163-c8848c66ca85'), tags: ['contract', 'signing', 'deal', 'agreement', 'mou'] },
+  { url: U('photo-1541872703-74c5e44368f9'), tags: ['parliament', 'government', 'policy', 'regulation', 'sec'] },
+
+  // ── REAL ESTATE · CONSTRUCTION ─────────────────────────────────
   { url: U('photo-1496568816309-51d7c20e3b21'), tags: ['sunrise', 'real-estate', 'skyline', 'growth'] },
   { url: U('photo-1545324418-cc1a3fa10c00'), tags: ['building', 'architecture', 'real-estate', 'commercial'] },
   { url: U('photo-1479839672679-a46483c0e7c8'), tags: ['construction', 'crane', 'development', 'infrastructure'] },
-  { url: U('photo-1503387762-592deb58ef4e'), tags: ['residential', 'housing', 'real-estate', 'apartments'] },
 
-  // ── AVIATION · AIRPORTS · AIRLINES ─────────────────────────────
-  { url: U('photo-1436491865332-7a61a109db05'), tags: ['airplane', 'aviation', 'airline', 'travel', 'flynas', 'emirates airline', 'etihad'] },
-  { url: U('photo-1556388158-158ea5ccacbd'), tags: ['airport', 'terminal', 'aviation', 'travel'] },
-  { url: U('photo-1569154941061-e231b4725ef1'), tags: ['airline', 'airplane', 'jet', 'aviation', 'fleet'] },
+  // ── GLOBAL · WORLD · GEOPOLITICS · TRADE ───────────────────────
+  { url: U('photo-1451187580459-43490279c0fa'), tags: ['earth', 'space', 'global', 'satellite', 'planet'] },
+  { url: U('photo-1526778548025-fa2f459cd5c1'), tags: ['world map', 'digital', 'global', 'network', 'trade'] },
+  { url: U('photo-1477959858617-67f85cf4f1df'), tags: ['city night', 'urban', 'world', 'lights'] },
+  { url: U('photo-1558618666-fcd25c85f82e'), tags: ['network', 'connections', 'global', 'digital macro'] },
+  { url: U('photo-1446776811953-b23d57bd21aa'), tags: ['earth atmosphere', 'global', 'climate'] },
+  { url: U('photo-1521295121783-8a321d551ad2'), tags: ['shipping', 'port', 'tanker', 'logistics', 'cargo', 'maritime', 'trade'] },
+  { url: U('photo-1462899006636-339e08d1844e'), tags: ['globe', 'world', 'map', 'geography', 'global'] },
+  { url: U('photo-1534723452862-4c874018d66d'), tags: ['airport', 'travel', 'global hub', 'aviation'] },
+  { url: U('photo-1494412574643-ff11b0a5eb19'), tags: ['container', 'shipping', 'cargo', 'freight', 'port', 'hormuz', 'jebel ali', 'logistics', 'maritime'] },
 
-  // ── RETAIL · CONSUMER · F&B ────────────────────────────────────
-  { url: U('photo-1481437156560-3205f6a55735'), tags: ['retail', 'shopping mall', 'store', 'cenomi', 'alshaya', 'consumer'] },
-  { url: U('photo-1567521464027-f127ff144326'), tags: ['shopping', 'retail', 'consumer goods', 'storefront'] },
-  { url: U('photo-1568901346375-23c9450c58cd'), tags: ['food', 'restaurant', 'hospitality', 'beverage'] },
+  // ── OIL · ENERGY · GAS · REFINING ──────────────────────────────
+  { url: U('photo-1513828583688-c52646db42da'), tags: ['oil', 'refinery', 'petroleum', 'opec', 'brent', 'crude', 'energy', 'industrial', 'factory', 'manufacturing'] },
+  { url: U('photo-1474314170901-f351b68f544f'), tags: ['solar', 'renewable', 'green', 'climate', 'eu', 'ets', 'sustainability'] },
+  { url: U('photo-1466611653911-95081537e5b7'), tags: ['wind turbine', 'renewable', 'green energy', 'cbam', 'climate'] },
+  { url: U('photo-1532601224476-15c79f2f7a51'), tags: ['pipeline', 'oil', 'gas', 'lng', 'energy', 'industrial', 'aramco', 'adnoc'] },
+
+  // ── AVIATION ───────────────────────────────────────────────────
+  { url: U('photo-1436491865332-7a61a109db05'), tags: ['airplane', 'aviation', 'airline', 'travel', 'flynas', 'emirates airline', 'etihad', 'fleet'] },
 
   // ── HEALTHCARE · PHARMA · BIOTECH ──────────────────────────────
-  { url: U('photo-1579684385127-1ef15d508118'), tags: ['healthcare', 'medical', 'pharma', 'science', 'hospital'] },
+  { url: U('photo-1579684385127-1ef15d508118'), tags: ['healthcare', 'medical', 'pharma', 'hospital', 'biotech'] },
   { url: U('photo-1576091160550-2173dba999ef'), tags: ['lab', 'research', 'science', 'biotech', 'pharmaceutical'] },
 
-  // ── TELECOMS · 5G · INFRASTRUCTURE ─────────────────────────────
-  { url: U('photo-1551193658-3bd7c4ef1ad8'), tags: ['cell tower', '5g', 'telecom', 'antenna', 'wireless'] },
-
-  // ── INDUSTRIAL · MANUFACTURING ─────────────────────────────────
-  { url: U('photo-1565793298595-6a879b1d9492'), tags: ['factory', 'manufacturing', 'industrial', 'moiat', 'production'] },
-  { url: U('photo-1556761175-b413da4baf72'), tags: ['warehouse', 'logistics', 'industrial', 'storage'] },
-  { url: U('photo-1581094271901-8022df4466f9'), tags: ['steel', 'metals', 'commodities', 'mining'] },
-
-  // ── EU · CBAM · CLIMATE · RENEWABLES ───────────────────────────
-  { url: U('photo-1466611653911-95081537e5b7'), tags: ['wind turbine', 'renewable', 'green energy', 'cbam', 'climate'] },
-  { url: U('photo-1474314170901-f351b68f544f'), tags: ['solar', 'renewable', 'green', 'climate', 'eu', 'ets'] },
-  { url: U('photo-1497436072909-60f360e1d4b1'), tags: ['nature', 'climate', 'esg', 'sustainability'] },
-
-  // ── GEOPOLITICS · WORLD · TRADE · MAPS ─────────────────────────
-  { url: U('photo-1451187580459-43490279c0fa'), tags: ['earth', 'space', 'global', 'satellite', 'planet'] },
-  { url: U('photo-1526778548025-fa2f459cd5c1'), tags: ['world map', 'digital', 'global', 'network'] },
-  { url: U('photo-1558618666-fcd25c85f82e'), tags: ['network', 'connections', 'global', 'macro'] },
-  { url: U('photo-1446776811953-b23d57bd21aa'), tags: ['earth', 'atmosphere', 'global', 'climate'] },
-
-  // ── INDIA · EMERGING MARKETS · GROWTH ──────────────────────────
-  { url: U('photo-1524492412937-b28074a5d7da'), tags: ['india', 'mumbai', 'emerging markets', 'sebi', 'asia'] },
-  { url: U('photo-1592978615499-bd0e64c8fbd9'), tags: ['family office', 'private equity', 'investment', 'allocation'] },
-  { url: U('photo-1486406146926-c627a92ad1ab'), tags: ['office tower', 'corporate', 'business', 'india'] },
-
-  // ── BIG TECH · CORPORATE · FORTUNE 500 ─────────────────────────
-  { url: U('photo-1560179707-f14e90ef3623'), tags: ['corporate', 'headquarters', 'tech', 'alphabet', 'amazon', 'big tech'] },
-  { url: U('photo-1497366216548-37526070297c'), tags: ['office', 'modern', 'corporate', 'startup', 'workplace'] },
+  // ── AI · TECHNOLOGY · DATA CENTRES ─────────────────────────────
+  { url: U('photo-1677442136019-21780ecad995'), tags: ['ai', 'artificial-intelligence', 'machine learning', 'llm', 'robot', 'automation'] },
+  { url: U('photo-1518770660439-4636190af475'), tags: ['circuit', 'chip', 'semiconductor', 'gpu', 'silicon', 'capex'] },
+  { url: U('photo-1504868584819-f8e8b4b6d7e3'), tags: ['server', 'data-center', 'datacenter', 'infrastructure', 'cloud'] },
+  { url: U('photo-1488229297570-58520851e868'), tags: ['network', 'data', 'cloud', 'digital', '5g', 'telecom'] },
 ];
 
 const ROOM_FALLBACK_TAGS = {

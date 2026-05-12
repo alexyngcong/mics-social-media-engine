@@ -37,8 +37,8 @@
   <rect width="1080" height="1080" fill="#06060f"/>
 
   <g clip-path="url(#leftHalf)">
-    <image href="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
-           xlink:href="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
+    <image href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
+           xlink:href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format"
            x="0" y="-40" width="700" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
     <rect width="595" height="1080" fill="url(#darken)" opacity="0.55"/>
     <rect width="595" height="1080" fill="url(#fadeRight)"/>
