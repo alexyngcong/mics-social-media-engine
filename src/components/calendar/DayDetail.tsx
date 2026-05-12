@@ -9,6 +9,7 @@ import { ROOMS } from '../../config/rooms';
 import { PLATFORMS } from '../../config/platforms';
 import { WhatsAppPreview } from '../preview/WhatsAppPreview';
 import { QABadge } from '../qa/QABadge';
+import { PostHeader } from '../common/PostHeader';
 import { Button } from '../ui/Button';
 import { Spinner } from '../ui/Spinner';
 
@@ -128,10 +129,18 @@ export function DayDetail() {
         </button>
       </div>
 
-      {/* Topic */}
+      {/* Topic — formatted header with 📌 emoji, room context, post type
+          line. Pulls the generated headline when available; falls back
+          to the calendar's planned topic when the post hasn't generated
+          yet. Same component is used by the WeeklyKit cards. */}
       <div className="px-4 py-3 border-b border-ink-border/50">
-        <div className="text-[9px] font-bold text-tx-ghost tracking-wider mb-1">TODAY'S TOPIC</div>
-        <div className="text-[12px] text-tx-mid leading-relaxed">{entry.topic}</div>
+        <PostHeader
+          title={entry.result?.headline || entry.topic}
+          room={entry.room}
+          subtitle={entry.topic && entry.topic !== entry.result?.headline ? entry.topic.split(/\s*[·—-]\s*/).pop() : undefined}
+          postType={(entry as unknown as { postType?: string }).postType || 'observation'}
+          slot={`${dayName.slice(0,3)} ${entry.postTimeLabel}`}
+        />
       </div>
 
       {/* Content area */}

@@ -24,6 +24,7 @@ import { Label, StepLabel } from '../ui/Label';
 import { useClipboard } from '../../hooks/useClipboard';
 import { KitBannerLive } from '../kit/KitBannerLive';
 import { BriefView } from '../kit/BriefView';
+import { PostHeader } from '../common/PostHeader';
 import type { RoomId } from '../../types';
 
 type KitViewMode = 'card' | 'brief';
@@ -294,32 +295,26 @@ function KitPostCard({ post }: KitPostCardProps) {
   const typeIcon = post.typeIcon || '';
   const isPoll = post.postType === 'poll';
 
+  // Pull a subtitle for the header from the room label (e.g.
+  // "RISK · UAE-SPECIFIC" → "UAE-Specific").
+  const subtitle = (() => {
+    const segments = (post.roomLabel || '').split(/\s*[·•]\s*/);
+    return segments.length > 1 ? segments[segments.length - 1] : undefined;
+  })();
+
   return (
     <Card className="!mb-3" accentColor={roomColor}>
-      {/* Meta row — room + post type + framework + scheduled slot */}
-      <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
-        <div className="flex items-center gap-1.5 flex-wrap text-[9px]">
-          <span
-            className="font-bold tracking-wider px-1.5 py-0.5 rounded border"
-            style={{ color: roomColor, background: `${roomColor}1A`, borderColor: `${roomColor}40` }}
-          >
-            {roomLabel}
-          </span>
-          <span
-            className="font-bold tracking-wider px-1.5 py-0.5 rounded border"
-            style={{ color: typeAccent, background: `${typeAccent}1A`, borderColor: `${typeAccent}40` }}
-            title={`Post type: ${typeLabel}`}
-          >
-            {typeIcon} {typeLabel}
-          </span>
-          <span className="text-tx-dim">POST {post.n}</span>
-          <span className="text-tx-ghost">·</span>
-          <span className="text-tx-ghost">{post.framework}</span>
-        </div>
-        <span className="text-[9px] text-bronze tracking-wide">
-          📅 {post.slot.day} {post.slot.time}
-        </span>
-      </div>
+      {/* Formatted PostHeader — same component used by calendar's DayDetail
+          so both surfaces share the visual vocabulary the user approved.
+          📌 Title (Room · subtitle) + Type: line + scheduled slot. */}
+      <PostHeader
+        title={post.title}
+        room={post.room}
+        subtitle={subtitle}
+        postType={post.postType}
+        framework={post.framework}
+        slot={`${post.slot.day} ${post.slot.time}`}
+      />
 
       {/* Banner preview — interactive React render. Photo guaranteed to
           load because we use a real <img> tag instead of SVG external
@@ -329,10 +324,21 @@ function KitPostCard({ post }: KitPostCardProps) {
         <KitBannerLive post={post} />
       </div>
 
-      {/* Title */}
-      <div className="text-[13px] font-semibold text-tx leading-snug mb-1">
-        {post.title}
+      {/* Light supplemental tag row under the banner */}
+      <div className="flex items-center gap-2 text-[10px] mb-2 flex-wrap">
+        <span className="text-tx-dim">POST {post.n}</span>
+        <span className="text-tx-ghost">·</span>
+        <span className="text-tx-ghost">{post.framework}</span>
+        <span
+          className="font-bold tracking-wider px-1.5 py-0.5 rounded border ml-auto"
+          style={{ color: typeAccent, background: `${typeAccent}1A`, borderColor: `${typeAccent}40` }}
+          title={`Post type: ${typeLabel}`}
+        >
+          {typeIcon} {typeLabel}
+        </span>
       </div>
+
+      {/* Tier line */}
       <div className="text-[10px] tracking-wider mb-2" style={{ color: roomColor }}>
         {post.tier}
       </div>
