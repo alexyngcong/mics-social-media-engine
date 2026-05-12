@@ -228,7 +228,7 @@ interface KitPostCardProps {
 
 function KitPostCard({ post }: KitPostCardProps) {
   const { copy } = useClipboard();
-  const { copiedLabel } = useAppStore();
+  const { copiedLabel, setPendingBannerDoc, setStep } = useAppStore();
   const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
   const svgUrl = `${base}/kit/${post.filenameBase}.svg`;
   const txtUrl = `${base}/kit/${post.filenameBase}.txt`;
@@ -258,6 +258,38 @@ function KitPostCard({ post }: KitPostCardProps) {
     a.href = svgUrl;
     a.download = `${post.filenameBase}.svg`;
     a.click();
+  };
+
+  // Build a BannerDoc from this kit post + route to the editor
+  const handleOpenInEditor = () => {
+    // Use the first 1-2 words of the title as headlineLine1, rest as headlineLine2
+    const cleanedTitle = (post.title || '')
+      .replace(/\s*[-|–—]\s*[A-Z][a-zA-Z &]+$/, '')
+      .trim();
+    const words = cleanedTitle.split(/\s+/);
+    const splitIdx = Math.min(2, Math.floor(words.length / 2));
+    const h1 = words.slice(0, splitIdx).join(' ') || cleanedTitle;
+    const h2 = words.slice(splitIdx).join(' ');
+    setPendingBannerDoc({
+      templateId: 'editorial-night',
+      fields: {
+        eyebrow: `MICS · CFOs PRIVATE INSIGHTS · ${(post.slot.day || '').toUpperCase()} ${post.slot.time || ''}`,
+        headlineLine1: h1,
+        headlineLine2: h2,
+        subline: `${roomLabel} · ${post.framework}`,
+        stats: post.stat ? [{ value: post.stat, label: 'KEY FIGURE' }] : [
+          { value: '—', label: 'STAT' },
+        ],
+        tagline: post.tier,
+        footer: 'MICS Group · CFOs Private Insights Circle',
+      },
+      photo: {
+        url: post.photoUrl || '',
+        treatment: 'fullbleed',
+      },
+      palette: { accent: roomColor, text: '#EAE6DE', bg: '#06060f' },
+    });
+    setStep(14);
   };
 
   const handleDownloadPng = async () => {
@@ -363,6 +395,13 @@ function KitPostCard({ post }: KitPostCardProps) {
           className="!py-1.5 !text-[11px] flex-1"
         >
           {copiedLabel === `kit-${post.n}` ? '✓ Copied' : '📋 Copy Caption'}
+        </Button>
+        <Button
+          variant="purple"
+          onClick={handleOpenInEditor}
+          className="!py-1.5 !text-[10px] !px-3"
+        >
+          🎨 Editor
         </Button>
         <Button
           variant="ghost"

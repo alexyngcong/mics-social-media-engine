@@ -3,6 +3,7 @@ import type {
   PlatformId, RoomId, PostTypeId, GeneratedPost, DeepDivePost, QAReport,
   ImportedBrief, BriefItem, IntelligenceItem,
 } from '../types';
+import type { BannerDoc } from '../components/editor/bannerTypes';
 
 interface AppState {
   step: number;
@@ -26,6 +27,8 @@ interface AppState {
   selectedBriefItem: BriefItem | null;
   /** Intelligence item the user clicked "Paste Response" on. Used by AIBriefPaste. */
   pendingIntelligenceItem: IntelligenceItem | null;
+  /** BannerDoc the user clicked "Open in editor" on (from a kit card). Used by BannerEditor. */
+  pendingBannerDoc: BannerDoc | null;
 
   setStep: (step: number) => void;
   setPlatform: (p: PlatformId) => void;
@@ -45,6 +48,7 @@ interface AppState {
   setBrief: (brief: ImportedBrief | null) => void;
   setSelectedBriefItem: (item: BriefItem | null) => void;
   setPendingIntelligenceItem: (item: IntelligenceItem | null) => void;
+  setPendingBannerDoc: (doc: BannerDoc | null) => void;
   clearBrief: () => void;
   reset: () => void;
 }
@@ -68,6 +72,7 @@ const initialState = {
   brief: null as ImportedBrief | null,
   selectedBriefItem: null as BriefItem | null,
   pendingIntelligenceItem: null as IntelligenceItem | null,
+  pendingBannerDoc: null as BannerDoc | null,
 };
 
 export const useAppStore = create<AppState>((set) => ({
@@ -92,6 +97,7 @@ export const useAppStore = create<AppState>((set) => ({
   setBrief: (brief) => set({ brief }),
   setSelectedBriefItem: (selectedBriefItem) => set({ selectedBriefItem }),
   setPendingIntelligenceItem: (pendingIntelligenceItem) => set({ pendingIntelligenceItem }),
+  setPendingBannerDoc: (pendingBannerDoc) => set({ pendingBannerDoc }),
   clearBrief: () => set({ brief: null, selectedBriefItem: null }),
   reset: () => set(initialState),
 }));

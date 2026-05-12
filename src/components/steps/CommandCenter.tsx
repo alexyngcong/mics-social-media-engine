@@ -95,6 +95,36 @@ export function CommandCenter({ history }: CommandCenterProps) {
         </Button>
       </Card>
 
+      {/* Banner Editor — in-app graphics editor for custom banner design.
+          3 templates (Editorial Night / Newspaper White / Dark Premium),
+          editable text + photo, PNG export. Modelled on the Claude-
+          generated banners the user approved. */}
+      <Card className="!bg-gradient-to-br !from-signal-purple/10 !to-ink-card !border-signal-purple/30 !mb-3">
+        <div className="flex items-center justify-between mb-1.5">
+          <div className="text-[10px] font-bold tracking-wider text-signal-purple">
+            🎨 BANNER EDITOR
+          </div>
+          <span className="text-[9px] tracking-wider px-1.5 py-0.5 rounded-full bg-bronze/10 border border-bronze/30 text-bronze font-bold">
+            3 TEMPLATES
+          </span>
+        </div>
+        <div className="text-tx text-[13px] font-semibold mb-1">
+          Design any banner with photo + custom text
+        </div>
+        <div className="text-tx-mid text-[11px] leading-relaxed mb-2.5">
+          Pick a template, swap the photo, edit every text field. Exports
+          as 1080 × 1080 PNG ready for WhatsApp / LinkedIn / Instagram.
+        </div>
+        <Button
+          variant="purple"
+          fullWidth
+          onClick={() => setStep(14)}
+          className="!py-2.5 !text-[12px]"
+        >
+          Open Banner Editor →
+        </Button>
+      </Card>
+
       {/* ━━━ PRIMARY VIEW — INTELLIGENCE FEED ━━━━━━━━━━━━━━━━━━━━
           Live items from the GitHub Actions news pipeline.
           Each card has a One-Click AI Brief button:
