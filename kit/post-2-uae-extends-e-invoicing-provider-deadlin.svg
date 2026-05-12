@@ -74,17 +74,18 @@
   <text x="80" y="128" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.6)" filter="url(#textShadow)">RISK · COMPLIANCE</text>
 
   <line x1="80" y1="610" x2="200" y2="610" stroke="#EF5555" stroke-width="2" opacity="0.85"/>
-  <text x="80" y="660" font-size="22" font-weight="700" letter-spacing="6" fill="#EF5555" filter="url(#textShadow)">STRUCTURAL SHIFT</text>
+  <text x="80" y="660" font-size="22" font-weight="700" letter-spacing="6" fill="#EF5555" filter="url(#textShadow)">REGULATORY SHIFT</text>
 
   <text x="80" y="780" font-family="'Cormorant Garamond','Georgia',serif" font-size="220" font-weight="500" fill="#ffffff" filter="url(#textShadow)">SIGNAL</text>
   <text x="80" y="830" font-size="18" font-weight="600" letter-spacing="3" fill="#EF5555" filter="url(#textShadow)">TAX · VAT · AML · AUDIT · GOVERNANCE · PILLAR 2</text>
 
-  <text x="80" y="888" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">UAE announces extension of e-invoicing</text>
-  <text x="80" y="934" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">provider deadline to October 2026</text>
+  <text x="80" y="888" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">UAE extends e-invoicing provider deadline to Oct 30</text>
+  <text x="80" y="934" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)"></text>
 
-  <line x1="1080" y1="0" x2="0" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.12"/>
-  <line x1="1080" y1="60" x2="60" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.08"/>
-  <line x1="1020" y1="0" x2="0" y2="1020" stroke="#A8926A" stroke-width="1" opacity="0.08"/>
+  <line x1="900" y1="50" x2="1040" y2="50" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
+  <line x1="1040" y1="50" x2="1040" y2="180" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="900" x2="40" y2="1040" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="1040" x2="180" y2="1040" stroke="#EF5555" stroke-width="3" opacity="0.8"/>
 
   <line x1="40" y1="40" x2="90" y2="40" stroke="#A8926A" stroke-width="2"/>
   <line x1="40" y1="40" x2="40" y2="90" stroke="#A8926A" stroke-width="2"/>
