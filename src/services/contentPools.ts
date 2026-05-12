@@ -245,6 +245,65 @@ export const CLOSERS: string[] = [
   "Keeping eyes on the next signal.",
 ];
 
+// Optional extra paragraphs — included only when the post is in LONG mode.
+// Each one is a tactical follow-through that deepens the strategic call
+// without restating it. Theme-keyed so the extra content reads on-topic.
+export const THEME_EXTRAS: Record<ThemeKey, string[]> = {
+  oil_energy: [
+    "Two transmission paths worth tracking specifically. First, hedge counterparty risk: at sustained current pricing the back-of-book trades stop being theoretical and start showing up as margin calls. Second, freight-rate stickiness: spot rates have moved but contract rates lag, and that gap shows up in landed cost over the next 60 days.",
+    "The historical playbook says one thing, the structure of this disruption says another. Closed-strait scenarios used to mean a 4-6 week premium that decayed; the current pattern suggests a structural floor 30-40% above pre-disruption baseline, which is a different cash-flow problem to model against.",
+    "Inside the GCC, the divergence is already visible. Producers with vertically-integrated logistics absorb the shock; net importers carry it. UAE corporates running mixed exposure should be modelling both sides of that split, not just the headline price.",
+  ],
+  compliance_risk: [
+    "Two follow-through items belong on next week's audit-committee agenda. First, the documentation review: every workpaper that touches the affected control area should be re-examined under the new posture, not just the ones that prompted the change. Second, the third-party perimeter: vendor agreements that reference the prior framework need a formal update before the next renewal cycle.",
+    "Voluntary disclosure timing is its own decision tree. The window typically narrows fastest in the four weeks after the supervisory communication lands; firms moving early stand inside it cleanly, firms moving late find the calculus shifts in the regulator's favour. The cost-of-action math is sharpest in the first thirty days.",
+    "Cross-border groups face an extra layer here. The same control matrix that satisfies one jurisdiction can fail in another after a regulatory shift like this. The firms running a single global control matrix with jurisdiction-specific overlays are positioned better than the ones running parallel matrices that haven't been reconciled in two cycles.",
+  ],
+  treasury_capital: [
+    "The duration question deserves a separate working session. Issuance windows for both AED and USD paper are opening at unusual angles right now, and the firms running comprehensive maturity-stack modelling are picking up basis points the desks are missing. The trade is real; the work is finding the slot.",
+    "Two operational tweaks pay for themselves quickly here. First, weekly cash-flow forecasts in place of monthly — the volatility profile rewards the shorter cadence. Second, a quarterly board-pack treasury section that explicitly maps issuance windows to capex pacing, not just to refinancing pipeline. The decision-cadence catches the cycle.",
+    "Family offices with private-credit exposure have a parallel set of questions. The same dynamic that's pushing public-market sukuk spreads tighter is opening private deal margins wider for borrowers who shopped early. Allocators with capacity in mandates with 60-day-or-less funding windows are seeing the cleanest cuts.",
+  ],
+  ai_tech: [
+    "Two structural items belong in the next capex board pack. First, the refinancing path for any tranche maturing inside the next 24 months — the cost-of-capital math shifts more than the issuance discussion typically acknowledges. Second, the cross-currency funding question: groups that can issue in two or three currencies have an optionality the single-currency issuers don't.",
+    "Data-centre infrastructure cost curves are running ahead of the capex models built two quarters ago. The firms refreshing total-cost-of-ownership numbers against current grid pricing — not against indexed assumptions — are the ones whose capex committee discussions actually move decisions forward.",
+  ],
+  geopolitics: [
+    "Three transmission channels worth modelling explicitly. Rates: the policy reaction precedes the price reaction by 30-60 days. Trade: corridor reshaping is faster than tariff coverage suggests. Energy: regional differentials matter more than headline price. CFOs aligning planning around all three see the inflection sooner than CFOs tracking just one.",
+    "Capital-flow shifts tell the cleanest story here. The dollar volume rotating across regions in the four weeks after a policy turn typically forecasts the operational impact a quarter ahead of policy implementation. The firms reading the flow signal — not just the announcement — get the timing right.",
+    "GCC-Asia and GCC-Europe corridors deserve separate scenario tracks now. The trade math, the funding math, and the regulatory math are all moving at different speeds, and the firms running a single 'rest-of-world' scenario are pricing the wrong risk.",
+  ],
+  shipping_logistics: [
+    "The procurement-treasury operating-rhythm question is doing more work than it usually does in this environment. Weekly working-capital reviews instead of monthly catch the timing of supplier repricing cycles. The CFOs aligning the two functions on a single calendar are the ones absorbing the shock without surprise.",
+    "Contract structure carries more weight than spot pricing right now. Firms with rolling short-cycle PO frameworks are absorbing the move at near-current rates; firms locked into annual price commitments are carrying margin compression for two to three quarters. The right structure varies by category — there's no single answer.",
+  ],
+  growth_expansion: [
+    "Two operational rhythm shifts make the difference between mapped and executing. First, weekly partner-pipeline reviews instead of quarterly — the deal flow signals are tighter than legacy cadence catches. Second, a 30-day commitment window for the GP bench, with a fast pass-through to operating-team capacity. The firms running this rhythm convert more of the funnel.",
+    "Side-letter negotiating leverage is its own asset class now. The funds that compress launch cycles can grant terms that previously required scarcity premium. Allocators with capacity sized for the faster cycle pick up the best terms before they normalise across the market.",
+  ],
+  real_estate: [
+    "Two stress-tests belong on the next development-committee agenda. First, dividend cover under sustained higher rates, modelled across an 18-month window. Second, refinancing scenarios that assume the supervisory benchmark — not the historical curve — is the relevant data point. Both arrive at the same conclusion faster than legacy assumptions suggest.",
+  ],
+  default: [
+    "Two operational follow-throughs deserve dedicated attention this cycle. First, the timing-window question — most strategic responses to this kind of signal have a 30-60 day optimal window, and the cost of acting late is consistently higher than the cost of moving early. Second, the cross-functional alignment piece — finance, ops, and risk should be working from the same scenario assumptions, not parallel ones.",
+    "The transmission timeline is faster than the framework assumes. The firms operating against the current-cycle baseline — not the prior-cycle one — are picking up advantage that compounds across the next two quarterly board cycles.",
+  ],
+};
+
+// LENGTH MODES drive how many paragraphs the composer emits. Seeded per
+// article so the same article always renders at the same length, but
+// across a week the kit produces a mix of ~500ch (short), ~800ch (medium),
+// and ~1100ch (long) posts for natural variation.
+export type LengthMode = 'short' | 'medium' | 'long';
+
+export function pickLengthMode(seedString: string): LengthMode {
+  const h = hashString(seedString + '::length');
+  const bucket = h % 100;
+  if (bucket < 30) return 'short';   // 30% short
+  if (bucket < 70) return 'medium';  // 40% medium
+  return 'long';                      // 30% long
+}
+
 // ─── HASH + SEEDED RNG (deterministic per-article output) ────────
 
 export function hashString(s: string): number {
@@ -359,10 +418,10 @@ export function composeStructuredPost(ctx: ComposeContext): string {
   const { item, room, postTypeId = 'observation' } = ctx;
   const theme = detectTheme(`${item.title || ''} ${item.description || ''}`, room);
 
-  const seed = hashString(`${item.url || ''}::${item.title || ''}::${room}::${postTypeId}`);
+  const seedString = `${item.url || ''}::${item.title || ''}::${room}::${postTypeId}`;
+  const seed = hashString(seedString);
   const rng = seededRng(seed);
 
-  const title = buildPostTitle(item);
   const date = todayLongEN();
   const factPara = buildFactParagraph(item);
   const bridge = THEME_BRIDGES[theme.key];
@@ -370,10 +429,49 @@ export function composeStructuredPost(ctx: ComposeContext): string {
   const strategicCall = pickSeeded(THEME_STRATEGIC_CALLS[theme.key], rng);
   const crossCycleTruth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key], rng);
   const closer = pickSeeded(CLOSERS, rng);
+  // The card UI already shows the title separately as the card heading.
+  void buildPostTitle;
 
-  return `${title}
+  // LENGTH MODE — seeded per article so the same article always renders
+  // at the same length, but across a week the kit shows variety:
+  //   short:  ~500 ch, 4 paragraphs (no cross-cycle truth, no extras)
+  //   medium: ~800 ch, 5 paragraphs (current baseline)
+  //   long:   ~1100 ch, 6 paragraphs (adds a tactical follow-through extra)
+  const mode = pickLengthMode(seedString);
+  const extra = pickSeeded(THEME_EXTRAS[theme.key] || THEME_EXTRAS.default, rng);
 
-${date}.
+  if (mode === 'short') {
+    return `${date}.
+
+${factPara}
+
+${bridge}, the strategic read lands ahead of where headline coverage catches it. ${implication}
+
+${strategicCall}
+
+${closer}
+`;
+  }
+
+  if (mode === 'long') {
+    return `${date}.
+
+${factPara}
+
+${bridge}, the strategic read lands ahead of where headline coverage catches it. ${implication}
+
+${strategicCall}
+
+${extra}
+
+${crossCycleTruth}
+
+${closer}
+`;
+  }
+
+  // medium (default)
+  return `${date}.
 
 ${factPara}
 

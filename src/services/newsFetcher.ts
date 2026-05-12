@@ -808,6 +808,35 @@ async function fetchFromStaticJson(room: RoomId): Promise<NewsArticle[]> {
   }
 }
 
+/**
+ * Rank cached articles by relevance to a custom topic string. Used when
+ * the calendar passes a planned daily topic (e.g. "FATF mutual evaluation
+ * — UAE AML compliance pressure") — instead of triggering a fresh CORS
+ * fetch (which is blocked on many networks), we re-score the static
+ * cached articles by token-overlap with the topic and return the best
+ * matches first.
+ */
+function rankByTopicRelevance(articles: NewsArticle[], topic: string): NewsArticle[] {
+  const topicTokens = new Set(
+    topic
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .split(/\s+/)
+      .filter(w => w.length > 3)
+  );
+  if (topicTokens.size === 0) return articles;
+  const scored = articles.map(a => {
+    const text = `${a.title || ''} ${a.description || ''}`.toLowerCase();
+    let score = 0;
+    for (const tok of topicTokens) {
+      if (text.includes(tok)) score += 2;
+    }
+    return { article: a, score };
+  });
+  scored.sort((a, b) => b.score - a.score);
+  return scored.map(s => s.article);
+}
+
 export async function fetchNews(room: RoomId, customTopic?: string): Promise<NewsArticle[]> {
   // AUDIT REFRESH — every call re-reads system time. No caching across calls.
   const auditStartMs = Date.now();
@@ -816,16 +845,20 @@ export async function fetchNews(room: RoomId, customTopic?: string): Promise<New
   // ── PRIMARY PATH: GitHub-Actions-prefetched JSON (same-origin, no CORS) ──
   // The /.github/workflows/fetch-news.yml workflow fetches GDELT every 4
   // hours server-side and commits the results to news-latest.json on the
-  // gh-pages branch. We read that file here. No browser CORS issues.
-  if (!customTopic) {
-    const cached = await fetchFromStaticJson(room);
-    if (cached.length > 0) {
-      lastFetchDiagnostic = { succeeded: true, proxyUsed: 'static-json', attemptedAt: Date.now() };
-      return cached;
-    }
+  // gh-pages branch. We ALWAYS try this first regardless of customTopic.
+  // (Previous logic skipped static JSON when customTopic was set, causing
+  // the calendar to hit blocked CORS proxies. Now we re-rank the static
+  // results by topic relevance instead.)
+  const cached = await fetchFromStaticJson(room);
+  if (cached.length > 0) {
+    lastFetchDiagnostic = { succeeded: true, proxyUsed: 'static-json', attemptedAt: Date.now() };
+    return customTopic ? rankByTopicRelevance(cached, customTopic) : cached;
   }
 
   // Custom topic path: route through CORS chain (direct + 5 proxies)
+  // — used only as a last-ditch attempt when static JSON has nothing.
+  // CORS proxies are blocked on most enterprise networks so this rarely
+  // succeeds; the static-JSON path above is the one that actually works.
   if (customTopic && customTopic.trim()) {
     try {
       const query = encodeURIComponent(`"${customTopic}" UAE`);

@@ -567,10 +567,10 @@ function generateStructuredPost(picked, dayIndex) {
   const { item, room } = picked;
   const theme = detectTheme(item, room);
   const date = todayLong();
-  const seed = hashString(`${item.url || ''}::${item.title || ''}::${room}::${dayIndex}`);
+  const seedString = `${item.url || ''}::${item.title || ''}::${room}::${dayIndex}`;
+  const seed = hashString(seedString);
   const rng = seededRng(seed);
 
-  const title = buildPostTitle(item);
   const opener = `${date}.`;
   const factPara = buildFactParagraph(item);
   const bridge = THEME_BRIDGES[theme.key] || THEME_BRIDGES.default;
@@ -580,9 +580,43 @@ function generateStructuredPost(picked, dayIndex) {
   const crossCycleTruth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
   const closer = pickSeeded(CLOSERS, rng);
 
-  return `${title}
+  // LENGTH VARIATION — 30% short / 40% medium / 30% long, seeded per
+  // article so same signal renders same length. Across a week the kit
+  // produces visible variety in caption length.
+  const lengthBucket = hashString(seedString + '::length') % 100;
+  const mode = lengthBucket < 30 ? 'short' : lengthBucket < 70 ? 'medium' : 'long';
+  const extra = pickSeeded(THEME_EXTRAS[theme.key] || THEME_EXTRAS.default, rng);
 
-${opener}
+  if (mode === 'short') {
+    return `${opener}
+
+${factPara}
+
+${regionalRead}
+
+${strategicCall}
+
+${closer}
+`;
+  }
+  if (mode === 'long') {
+    return `${opener}
+
+${factPara}
+
+${regionalRead}
+
+${strategicCall}
+
+${extra}
+
+${crossCycleTruth}
+
+${closer}
+`;
+  }
+  // medium (default)
+  return `${opener}
 
 ${factPara}
 
@@ -614,12 +648,13 @@ function generatePulsePost(picked, dayIndex) {
   const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
   const closer = pickSeeded(CLOSERS, rng);
 
+  void title; // card UI shows title separately as card heading
   const frames = [
-    `${title}\n\n*${date}.*\n\n${topic}.${statTag} Quiet on the wire, louder underneath.\n\n${truth}\n\n${closer}`,
-    `${title}\n\n*${date}.*\n\n${topic}.${statTag} Second-order effects matter more than the headline here.\n\n${truth}\n\n${closer}`,
-    `${title}\n\n*${date}.*\n\n${topic}.${statTag} The kind of move that prices in slowly.\n\n${truth}\n\n${closer}`,
-    `${title}\n\n*${date}.*\n\n${topic}.${statTag} Filing this before the cycle catches up.\n\n${truth}\n\n${closer}`,
-    `${title}\n\n*${date}.*\n\n${topic}.${statTag} The window for ahead-of-curve positioning narrows from here.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} Quiet on the wire, louder underneath.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} Second-order effects matter more than the headline here.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} The kind of move that prices in slowly.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} Filing this before the cycle catches up.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} The window for ahead-of-curve positioning narrows from here.\n\n${truth}\n\n${closer}`,
   ];
 
   return pickSeeded(frames, rng) + '\n';
@@ -694,11 +729,8 @@ function generatePollPost(picked, dayIndex) {
   const opts = options[room] || options.world;
   const letters = ['A', 'B', 'C', 'D'];
   const closer = pickSeeded(CLOSERS, rng);
-  const title = buildPostTitle(item);
 
-  return `${title}
-
-*${date}.*
+  return `*${date}.*
 
 ${topic}.${statTag}
 
@@ -738,10 +770,9 @@ function generateVoicenotePost(picked, dayIndex) {
   const themeImplication = pickSeeded(THEME_IMPLICATIONS[theme.key] || THEME_IMPLICATIONS.default, rng);
   const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
   const closer = pickSeeded(CLOSERS, rng);
+  void title; // card UI shows title separately
 
-  return `${title}
-
-*${date}.*
+  return `*${date}.*
 
 ${opener}
 
@@ -781,11 +812,8 @@ function generateExclusivePost(picked, dayIndex) {
   const strategicCall = pickSeeded(THEME_STRATEGIC_CALLS[theme.key] || THEME_STRATEGIC_CALLS.default, rng);
   const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
   const closer = pickSeeded(CLOSERS, rng);
-  const title = buildPostTitle(item);
 
-  return `${title}
-
-*${date}.*
+  return `*${date}.*
 
 ${opener}
 
@@ -1977,6 +2005,10 @@ async function main() {
     console.log(`  ✓ kit/${fileBase}.txt + .svg`);
 
     const typeMeta = POST_TYPE_LABELS[picked.plan.type] || POST_TYPE_LABELS.observation;
+    const fact = cleanFact(picked.item?.title || `Awaiting ${ROOMS[picked.room].label} signal`);
+    const stat = picked.item ? (extractStat(picked.item.title) || extractStat(picked.item.description) || '') : '';
+    const headlineLines = fact.length > 60 ? splitHeadline(fact) : [fact, ''];
+    const photoUrl = pickPhoto(picked);
     manifestPosts.push({
       n,
       slug,
@@ -1987,11 +2019,21 @@ async function main() {
       typeIcon: typeMeta.icon,
       typeAccent: typeMeta.accent,
       room: picked.room,
+      roomColor: ROOMS[picked.room].color,
+      roomLabel: ROOMS[picked.room].short,
       theme: theme.key,
       tier,
       title: picked.item?.title || `Awaiting ${ROOMS[picked.room].label} signal`,
       sourceUrl: picked.item?.url || '',
       filenameBase: fileBase,
+      // Extended banner data — lets the React WeeklyKit view render an
+      // interactive live banner without having to fetch + parse the SVG.
+      // The SVG file still exists for downloads.
+      photoUrl,
+      stat,
+      headlineLine1: headlineLines[0],
+      headlineLine2: headlineLines[1],
+      hoursAgo: picked.item?.hoursAgo ?? null,
     });
   }
 

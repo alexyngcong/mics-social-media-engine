@@ -22,7 +22,11 @@ import { Button } from '../ui/Button';
 import { Card } from '../ui/Card';
 import { Label, StepLabel } from '../ui/Label';
 import { useClipboard } from '../../hooks/useClipboard';
+import { KitBannerLive } from '../kit/KitBannerLive';
+import { BriefView } from '../kit/BriefView';
 import type { RoomId } from '../../types';
+
+type KitViewMode = 'card' | 'brief';
 
 interface KitPost {
   n: number;
@@ -34,11 +38,19 @@ interface KitPost {
   typeIcon?: string;
   typeAccent?: string;
   room: RoomId;
+  roomColor?: string;
+  roomLabel?: string;
   theme: string;
   tier: string;
   title: string;
   sourceUrl?: string;
   filenameBase: string;
+  // Extended banner-render fields (added in schema v2)
+  photoUrl?: string;
+  stat?: string;
+  headlineLine1?: string;
+  headlineLine2?: string;
+  hoursAgo?: number | null;
 }
 
 interface KitManifest {
@@ -68,6 +80,7 @@ export function WeeklyKit() {
   const [manifest, setManifest] = useState<KitManifest | null>(null);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
+  const [viewMode, setViewMode] = useState<KitViewMode>('card');
 
   useEffect(() => {
     let cancelled = false;
@@ -154,9 +167,45 @@ export function WeeklyKit() {
         </div>
       </Card>
 
-      {manifest.posts.map((post) => (
-        <KitPostCard key={post.slug} post={post} />
-      ))}
+      {/* View toggle — card grid (banners + captions) vs brief list
+          (📌 Post N — Title clean-list format the user prefers for bulk
+          paste-into-doc workflows). */}
+      <div className="flex gap-1.5 mb-3 p-1 rounded-card bg-ink-card border border-ink-border">
+        <button
+          onClick={() => setViewMode('card')}
+          className={`
+            flex-1 py-1.5 px-3 rounded-card text-[11px] font-semibold tracking-wide
+            transition-all
+            ${viewMode === 'card'
+              ? 'bg-bronze/20 text-bronze border border-bronze/40'
+              : 'text-tx-dim hover:text-tx-mid border border-transparent'
+            }
+          `}
+        >
+          🖼️ Card View
+        </button>
+        <button
+          onClick={() => setViewMode('brief')}
+          className={`
+            flex-1 py-1.5 px-3 rounded-card text-[11px] font-semibold tracking-wide
+            transition-all
+            ${viewMode === 'brief'
+              ? 'bg-bronze/20 text-bronze border border-bronze/40'
+              : 'text-tx-dim hover:text-tx-mid border border-transparent'
+            }
+          `}
+        >
+          📋 Brief View
+        </button>
+      </div>
+
+      {viewMode === 'card' ? (
+        manifest.posts.map((post) => (
+          <KitPostCard key={post.slug} post={post} />
+        ))
+      ) : (
+        <BriefView posts={manifest.posts} weekOf={manifest.weekOf} />
+      )}
 
       <Button
         variant="ghost"
@@ -272,14 +321,12 @@ function KitPostCard({ post }: KitPostCardProps) {
         </span>
       </div>
 
-      {/* Banner preview */}
-      <div className="bg-ink rounded-card overflow-hidden mb-2.5 border border-ink-border">
-        <img
-          src={svgUrl}
-          alt={`Banner for post ${post.n}`}
-          loading="lazy"
-          className="w-full h-auto block"
-        />
+      {/* Banner preview — interactive React render. Photo guaranteed to
+          load because we use a real <img> tag instead of SVG external
+          <image href> which some browsers block when SVG is loaded via
+          <img src>. Static SVG file still exists for downloads. */}
+      <div className="mb-2.5">
+        <KitBannerLive post={post} />
       </div>
 
       {/* Title */}

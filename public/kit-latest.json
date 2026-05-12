@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-05-11T12:00:00.000Z",
+  "generatedAt": "2026-05-12T08:00:00.000Z",
   "weekOf": "11 May 2026",
   "totalCount": 7,
   "posts": [
@@ -14,11 +14,18 @@
       "typeIcon": "🚨",
       "typeAccent": "#EF5555",
       "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · UAE-SPECIFIC",
       "theme": "compliance_risk",
       "tier": "ENFORCEMENT LIVE · ACT THIS WEEK",
       "title": "CBUAE closes WhatsApp window for licensed FIs",
       "sourceUrl": "https://www.centralbank.ae/",
-      "filenameBase": "post-6-cbuae-whatsapp"
+      "filenameBase": "post-6-cbuae-whatsapp",
+      "photoUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "AED 500K",
+      "headlineLine1": "CBUAE closed the WhatsApp",
+      "headlineLine2": "window for licensed FIs.",
+      "hoursAgo": 6
     },
     {
       "n": 1,
@@ -30,11 +37,18 @@
       "typeIcon": "🚨",
       "typeAccent": "#EF5555",
       "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
       "theme": "oil_energy",
       "tier": "STRUCTURAL SIGNAL · AHEAD OF CURVE",
       "title": "Hormuz oil shock — Brent above $105.70",
       "sourceUrl": "https://www.reuters.com/business/energy/",
-      "filenameBase": "post-1-hormuz"
+      "filenameBase": "post-1-hormuz",
+      "photoUrl": "https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "$105.70",
+      "headlineLine1": "Hormuz remains effectively closed",
+      "headlineLine2": "since 28 February.",
+      "hoursAgo": 4
     },
     {
       "n": 2,
@@ -46,11 +60,18 @@
       "typeIcon": "🔍",
       "typeAccent": "#A8926A",
       "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "PRINT OF THE DAY · 30-DAY WINDOW",
       "title": "China PPI 45-month high — 2.8%",
       "sourceUrl": "https://www.bloomberg.com/news/economics",
-      "filenameBase": "post-2-china-ppi"
+      "filenameBase": "post-2-china-ppi",
+      "photoUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "2.8%",
+      "headlineLine1": "Supply-side cost shock",
+      "headlineLine2": "passed to factory gates.",
+      "hoursAgo": 12
     },
     {
       "n": 4,
@@ -62,11 +83,18 @@
       "typeIcon": "🚨",
       "typeAccent": "#EF5555",
       "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
       "theme": "compliance_risk",
       "tier": "REGULATORY SHIFT · 60-DAY WINDOW",
       "title": "EU CO2 permit shift — €4B impact",
       "sourceUrl": "https://www.bloomberg.com/news/eu-cbam",
-      "filenameBase": "post-4-eu-co2"
+      "filenameBase": "post-4-eu-co2",
+      "photoUrl": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "€4B",
+      "headlineLine1": "CBAM math shifts twice",
+      "headlineLine2": "before the June decision.",
+      "hoursAgo": 18
     },
     {
       "n": 3,
@@ -78,11 +106,18 @@
       "typeIcon": "🔍",
       "typeAccent": "#A8926A",
       "room": "capital",
+      "roomColor": "#F0C050",
+      "roomLabel": "CAPITAL · CASH",
       "theme": "treasury_capital",
       "tier": "TREASURY READ · 60-DAY WINDOW",
       "title": "Alphabet ¥ + Amazon CHF bonds for AI capex",
       "sourceUrl": "https://www.bloomberg.com/news/markets",
-      "filenameBase": "post-3-tech-bonds"
+      "filenameBase": "post-3-tech-bonds",
+      "photoUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "$700B",
+      "headlineLine1": "Multi-currency funding",
+      "headlineLine2": "becomes board-level.",
+      "hoursAgo": 22
     },
     {
       "n": 5,
@@ -94,11 +129,18 @@
       "typeIcon": "🔍",
       "typeAccent": "#A8926A",
       "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · GOVERNANCE",
       "theme": "compliance_risk",
       "tier": "PATTERN MIGRATING · CROSS-CYCLE",
       "title": "E.ON acquires Ovo under Ofgem capital pressure",
       "sourceUrl": "https://www.ft.com/companies/energy",
-      "filenameBase": "post-5-eon-ovo"
+      "filenameBase": "post-5-eon-ovo",
+      "photoUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "9.6M",
+      "headlineLine1": "Capital-buffer rules drive",
+      "headlineLine2": "regulated-sector mergers.",
+      "hoursAgo": 36
     },
     {
       "n": 7,
@@ -110,11 +152,18 @@
       "typeIcon": "🔍",
       "typeAccent": "#A8926A",
       "room": "growth",
+      "roomColor": "#4ADE80",
+      "roomLabel": "GROWTH SIGNALS",
       "theme": "growth_expansion",
       "tier": "SPEED OF DEPLOYMENT · EARLY MOVER",
       "title": "India SEBI green-channel AIF approvals",
       "sourceUrl": "https://www.sebi.gov.in/",
-      "filenameBase": "post-7-india-sebi"
+      "filenameBase": "post-7-india-sebi",
+      "photoUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "",
+      "headlineLine1": "GP launch window",
+      "headlineLine2": "compresses materially.",
+      "hoursAgo": 48
     }
   ]
 }
