@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-11T23:39:34.193Z",
+  "generatedAt": "2026-05-12T00:15:42.966Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 29,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 199,
-    "afterDedup": 170,
-    "big4Rejected": 3,
-    "englishOnly": 166,
-    "withinRecency": 68,
-    "scored": 68,
-    "passed": 7
+    "totalFetched": 270,
+    "afterDedup": 202,
+    "big4Rejected": 2,
+    "englishOnly": 180,
+    "withinRecency": 78,
+    "scored": 78,
+    "passed": 8
   },
   "rooms": {
     "growth": [],
@@ -43,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-05-11",
         "description": "Saudi Arabian franchiser Cenomi Retail recorded a loss in the first quarter of 2026 due to higher finance costs and the absence of a prior-year non-recurring divestment gain. A net loss of SAR47.3 million ($13 million) in the quarter ending in March is in stark contrast to the SAR1.8 million net profit in the same period [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 12,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -55,7 +55,7 @@
         "domain": "agbi.com",
         "date": "2026-05-11",
         "description": "Developer Arada, co-owned by princes of the Sharjah and Saudi Arabian royal families, has bought a majority share in Reem Hospital, an Abu Dhabi medical facility and company. According to the developer’s CEO, it is part of a strategy to diversify from cyclical real estate sales towards sustainable recurring revenues. The developer spent AED2 billion [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -79,7 +79,7 @@
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQzdHZ0hkMWZIa3BVd29DVnJuUk1ZSHI4TWVXZVJKdWdCTFVUczkzWENaY3Q0eXlUNVVlVk5KdzlJSG5KN2JIWFItTUlnbWFsUjJaNEFTSXVMdFgzTDJNeWdWeGFSVjZSaHI1UEVnWkV4YVdINzhiVTh3Y3dpa25VMTA5b0NIOGRvT3Nydnh6ZHpnMWhtTlhKOXJ2VjZPM1BramQtaFBnTXNmbVRjS3RWaVRjSGFhT2k1Y2Y00gHOAUFVX3lxTFA5RlFaNmFhbDZwbXl5UlpLb2V4dG1GVzJVT1lHTUlRWG1NQ3ZBUHhvTzYtcUpxMlNJY1htM2w1VnhBcHhTeElxNkNhUlRZYjNOZ3FxTTNjZHJQWXVwX092Zmt2TDg2RjhVWkk3S0FqelFtMzN0cUVoTG5fbm1NMzdtd3JCZnFpNjRMVDBUZU4wQWJJS0NrQnVBVUV2ODh3OGtSZDJIYktGNld0eXVJZ3h4NHQtUXdMc1V1TkZpLTU5bWdQMWR2M0g3RnBXdHJ3?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
-        "date": "2026-05-10",
+        "date": "2026-05-11",
         "description": "UAE e-invoicing deadline extended: What this means for businesses now  Gulf News",
         "hoursAgo": 24,
         "score": 7,
@@ -93,7 +93,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-11",
         "description": "UAE extends e-invoicing provider deadline to Oct 30  Gulf Business",
-        "hoursAgo": 13,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -111,7 +111,21 @@
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE e - Invoicing Deadline Extended to October 2026 : What Businesses Need to Do Now",
+        "url": "https://gulfnews.com/business/tax-news/uae-e-invoicing-deadline-extended-what-this-means-for-businesses-now-1.500535992",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-11",
+        "description": "UAE e - Invoicing Deadline Extended to October 2026 : What Businesses Need to Do Now",
+        "imageUrl": "https://gumlet-images.assettype.com/gulfnews%2F2024-11-18%2F8dhfgcht%2FUAEECONOMY2019_resources1_16a3106b387_original_ratio.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 19,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
+      }
+    ]
   },
-  "totalCount": 7
+  "totalCount": 8
 }
