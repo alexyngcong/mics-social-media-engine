@@ -69,7 +69,7 @@
 
   <!-- Tier banner across the seam -->
   <rect x="60" y="565" width="960" height="60" fill="#06060f" stroke="#F0C050" stroke-width="2"/>
-  <text x="540" y="603" font-size="22" font-weight="700" letter-spacing="8" fill="#F0C050" text-anchor="middle">TREASURY READ</text>
+  <text x="540" y="603" font-size="22" font-weight="700" letter-spacing="8" fill="#F0C050" text-anchor="middle">CAPITAL READ</text>
 
   <!-- Top metadata, over photo -->
   <text x="80" y="80" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>

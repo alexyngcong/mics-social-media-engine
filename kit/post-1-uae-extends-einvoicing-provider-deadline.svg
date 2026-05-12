@@ -73,7 +73,7 @@
   <line x1="990" y1="880" x2="990" y2="850" stroke="#A8926A" stroke-width="2"/>
 
   <!-- Tier label inside card -->
-  <text x="540" y="350" font-size="20" font-weight="700" letter-spacing="6" fill="#EF5555" text-anchor="middle">ENFORCEMENT LIVE</text>
+  <text x="540" y="350" font-size="20" font-weight="700" letter-spacing="6" fill="#EF5555" text-anchor="middle">WEEK AHEAD</text>
 
   <!-- Centered stat inside card -->
   <text x="540" y="580" font-family="'Cormorant Garamond','Georgia',serif" font-size="160" font-weight="500" fill="#ffffff" text-anchor="middle">$13.6M</text>

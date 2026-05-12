@@ -3,14 +3,14 @@
   <defs>
     <filter id="cinematic" x="0" y="0" width="100%" height="100%">
       <feColorMatrix type="matrix" values="
-        0.85 0.05 0.05 0 0
-        0.1 0.55 0.1 0 0
-        0.1 0.1 0.55 0 0
+        0.55 0.05 0.1 0 0
+        0.05 0.65 0.15 0 0
+        0.1 0.15 0.85 0 0
         0   0    0    1 0"/>
       <feComponentTransfer>
-        <feFuncR type="gamma" amplitude="1" exponent="0.9" offset="0"/>
+        <feFuncR type="gamma" amplitude="1" exponent="0.95" offset="0"/>
         <feFuncG type="gamma" amplitude="1" exponent="0.95" offset="0"/>
-        <feFuncB type="gamma" amplitude="1" exponent="0.95" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="0.9" offset="0"/>
       </feComponentTransfer>
     </filter>
     <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
@@ -35,9 +35,9 @@
       <stop offset="100%" stop-color="#06060f" stop-opacity="0.95"/>
     </radialGradient>
     <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
-      <stop offset="0%" stop-color="#EF5555" stop-opacity="0.45"/>
-      <stop offset="60%" stop-color="#EF5555" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#EF5555" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#5B8DEE" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#5B8DEE" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#5B8DEE" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="brassUnder" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#A8926A" stop-opacity="0"/>
@@ -53,27 +53,40 @@
   </defs>
   <rect width="1080" height="1080" fill="#06060f"/>
 
-  <image href="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="1080" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
-  <rect width="1080" height="1080" fill="url(#darken)"/>
-  <rect width="1080" height="1080" fill="url(#accentGlow)"/>
-  <rect x="0" y="0" width="32" height="1080" fill="#EF5555"/>
-  <rect x="32" y="0" width="1048" height="2" fill="#EF5555" opacity="0.4"/>
+  <!-- Photo top region only -->
+  <clipPath id="topHalf"><rect x="0" y="0" width="1080" height="595"/></clipPath>
+  <g clip-path="url(#topHalf)">
+    <image href="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="1080" height="700" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <rect width="1080" height="595" fill="url(#vignTop)"/>
+    <rect width="1080" height="595" fill="url(#accentGlow)"/>
+  </g>
 
-  <text x="80" y="92" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
-  <text x="80" y="128" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.6)" filter="url(#textShadow)">RISK · COMPLIANCE</text>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1080" height="6" fill="#5B8DEE"/>
 
-  <line x1="80" y1="610" x2="200" y2="610" stroke="#EF5555" stroke-width="2" opacity="0.85"/>
-  <text x="80" y="660" font-size="22" font-weight="700" letter-spacing="6" fill="#EF5555" filter="url(#textShadow)">STRUCTURAL SHIFT</text>
+  <!-- Bottom ink panel -->
+  <rect x="0" y="595" width="1080" height="485" fill="#08081a"/>
 
-  <text x="80" y="780" font-family="'Cormorant Garamond','Georgia',serif" font-size="220" font-weight="500" fill="#ffffff" filter="url(#textShadow)">SIGNAL</text>
-  <text x="80" y="830" font-size="18" font-weight="600" letter-spacing="3" fill="#EF5555" filter="url(#textShadow)">TAX · VAT · AML · AUDIT · GOVERNANCE · PILLAR 2</text>
+  <!-- Tier banner across the seam -->
+  <rect x="60" y="565" width="960" height="60" fill="#06060f" stroke="#5B8DEE" stroke-width="2"/>
+  <text x="540" y="603" font-size="22" font-weight="700" letter-spacing="8" fill="#5B8DEE" text-anchor="middle">INSIDER MACRO</text>
 
-  <text x="80" y="888" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">UAE announces extension of e-invoicing</text>
-  <text x="80" y="934" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">provider deadline to October 2026</text>
+  <!-- Top metadata, over photo -->
+  <text x="80" y="80" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
+  <text x="80" y="116" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.65)" filter="url(#textShadow)">WORLD PULSE</text>
 
-  <line x1="1080" y1="0" x2="0" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.12"/>
-  <line x1="1080" y1="60" x2="60" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.08"/>
-  <line x1="1020" y1="0" x2="0" y2="1020" stroke="#A8926A" stroke-width="1" opacity="0.08"/>
+  <!-- HUGE stat in bottom panel, left side -->
+  <text x="80" y="810" font-family="'Cormorant Garamond','Georgia',serif" font-size="230" font-weight="500" fill="#ffffff">PENDING</text>
+  <text x="80" y="850" font-size="16" font-weight="600" letter-spacing="4" fill="#5B8DEE">INTERNATIONAL ADVISORY · CROSS-BORDER STRUCTURING</text>
+
+  <!-- Headline, right-aligned bottom -->
+  <text x="1000" y="900" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end">Awaiting World signal</text>
+  <text x="1000" y="942" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end"></text>
+
+  <rect x="120" y="180" width="60" height="2" fill="#5B8DEE" opacity="0.7"/>
+  <rect x="900" y="180" width="60" height="2" fill="#5B8DEE" opacity="0.7"/>
+  <rect x="120" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
+  <rect x="900" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
 
   <line x1="40" y1="40" x2="90" y2="40" stroke="#A8926A" stroke-width="2"/>
   <line x1="40" y1="40" x2="40" y2="90" stroke="#A8926A" stroke-width="2"/>

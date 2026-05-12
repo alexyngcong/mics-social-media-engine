@@ -1,9 +1,11 @@
-11 May 2026.
+12 May 2026.
 
 UAE announces extension of e-invoicing provider deadline to October 2026.
 
-For UAE-regulated entities and any group with downstream compliance exposure, the strategic implication lands ahead of where the headline cycle catches it. Audit any client-facing trails that touch transaction data or KYC-adjacent flows. Brief the audit committee before the next supervisory cycle.
+For UAE-regulated entities, DIFC and ADGM-licensed firms, and any group with downstream compliance exposure, the strategic read lands ahead of where headline coverage catches it. The pressure is at enforcement level. Non-compliance can trigger supervisory action, financial sanctions, and reputational exposure that compounds across multiple supervisory cycles. The immediate work is two-fold: audit the client-facing trails touching transaction data or KYC-adjacent flows, then brief the audit committee on the customer-experience implications.
 
-Voluntary-disclosure regimes reward first movers and penalise the rest. The advantage of acting inside the disclosure window before the enforcement posture firms up is usually material.
+Read this alongside the existing control matrix, not in isolation. Refresh the risk register, lock the supervisory communication trail, and front-load the audit committee briefing before the cycle catches the firm cold.
 
-One to keep on the radar.
+Retroactive compliance is always more expensive than ahead-of-curve readiness. The cost of moving inside the supervisory window is materially lower than the cost of catching up after the first finding.
+
+Keeping eyes on the next signal.
