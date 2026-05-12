@@ -86,8 +86,11 @@ function pickRandom<T>(arr: T[]): T {
 }
 
 function cleanTitle(title: string): string {
-  // Remove trailing source attribution ("... - Reuters", "... | Bloomberg")
-  return title.replace(/\s*[-|–]\s*[A-Z][a-zA-Z &]+$/, '').trim();
+  // Strip "Title:" / "Headline:" / "Breaking:" prefix labels (these used to
+  // leak into the body from imported Deep-Research briefs that prefixed
+  // every entry with "Title: ...") AND strip trailing news-outlet
+  // attribution ("... - Reuters", "... | Bloomberg").
+  return cleanArticleTitle(title);
 }
 
 function firstClause(text: string): string {
@@ -816,6 +819,8 @@ function pickArticle(articles: NewsArticle[]): NewsArticle {
 
 // ─── Main engine ────────────────────────────────────────────────
 
+import { composeStructuredPost, cleanArticleTitle } from './contentPools';
+
 export function generatePost(
   articles: NewsArticle[],
   room: RoomId,
@@ -831,36 +836,47 @@ export function generatePost(
     description: customTopic || '',
   };
 
-  // Load anti-repetition memory
+  // Load anti-repetition memory for layout / poll selection only.
+  // The 6-paragraph structured body uses its own seeded-RNG approach
+  // so the same article ALWAYS produces the same caption regardless of
+  // which surface (calendar / weekly kit) requested it.
   const mem = loadMemory();
 
-  // Detect UAE-specific context
-  const ctx = detectUAEContext(article);
-
-  // Extract stat
+  // Extract stat for banner display (stat-on-banner is a separate
+  // visual concern from caption composition — banner uses the .stat
+  // field, caption uses the composed paragraphs).
   const stat = extractStat(article.title, article.description);
 
-  // Generate headline (ALL CAPS, 4-6 words)
+  // Generate headline (ALL CAPS, 4-6 words) for banner display
   const headline = generateHeadline(article.title);
 
   // Build subline with date + stat ONLY.
-  // Source name is NOT displayed to viewers — it's internal reference only.
-  // The author can see the source in the in-app attribution panel; the
-  // banner that gets shared to WhatsApp keeps the source anonymous.
+  // Source name is NOT displayed to viewers — internal reference only.
   const subline = `${dateFormatted.short}${stat ? ` | ${stat.value}` : ''}`;
 
-  // Assemble text — guru-aware layout selection picks the best framework
+  // ─── CAPTION COMPOSITION ─────────────────────────────────────
+  // Polls keep the legacy 4-option assembler since that's a fundamentally
+  // different structure. Every other post type goes through the shared
+  // composeStructuredPost() which is the SAME composer the weekly kit
+  // uses — guaranteeing identical output across surfaces.
   let text: string;
   if (postTypeId === 'poll') {
     text = assemblePoll(article, room, mem);
     mem.layouts.push('poll');
   } else {
-    const layout = selectLayout(postTypeId, mem, article, room);
-    text = layout.fn(article, room, ctx, stat, mem);
-    mem.layouts.push(layout.id);
+    text = composeStructuredPost({
+      item: {
+        title: cleanArticleTitle(article.title),
+        description: article.description,
+        url: article.url,
+      },
+      room,
+      postTypeId,
+    });
   }
 
-  // Save memory
+  // Save memory (poll-only at this point — kept for legacy layout
+  // diagnostics, no longer drives caption generation for structured types)
   saveMemory(mem);
 
   // Normalise: replace any em-dashes with periods (banned)

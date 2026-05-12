@@ -10,10 +10,10 @@
     <linearGradient id="vignTop" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#06060f" stop-opacity="0.30"/>
       <stop offset="40%" stop-color="#06060f" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.25"/>
     </linearGradient>
     <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
-      <stop offset="0%" stop-color="#F0C050" stop-opacity="0.45"/>
+      <stop offset="0%" stop-color="#F0C050" stop-opacity="0.22"/>
       <stop offset="60%" stop-color="#F0C050" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#F0C050" stop-opacity="0"/>
     </radialGradient>

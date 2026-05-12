@@ -86,7 +86,19 @@
       "Bash(curl -sS \"https://api.github.com/repos/alexyngcong/mics-social-media-engine/commits?sha=gh-pages&per_page=5\")",
       "Bash(mkdir -p public/kit && cp daily-kit/post-*.txt daily-kit/post-*.svg public/kit/ 2>&1 && ls public/kit/ | wc -l && echo \"files copied to public/kit/\")",
       "Bash(awk 'NR>=1193 && NR<=1491 {next} {print}' scripts/build-weekly-kit.mjs)",
-      "Bash(mv /tmp/_build_clean.mjs scripts/build-weekly-kit.mjs)"
+      "Bash(mv /tmp/_build_clean.mjs scripts/build-weekly-kit.mjs)",
+      "Bash(curl -sS \"https://alexyngcong.github.io/mics-social-media-engine/kit-latest.json\")",
+      "Bash(python -c \"import json, sys; d = json.load\\(sys.stdin\\); [print\\(f'{r}: {len\\(d[\\\\\"rooms\\\\\"][r]\\)} articles'\\) for r in d['rooms']]; print\\(f'Total: {d[\\\\\"totalCount\\\\\"]}'\\)\")",
+      "Bash(curl -sS \"https://alexyngcong.github.io/mics-social-media-engine/kit/post-1-awaiting-risk-signal.svg\")",
+      "Bash(sed -i 's|photo-1521295121783-8a321d551ad2|photo-1565793298595-6a879b1d9492|g' public/kit/post-2-china-ppi.svg)",
+      "Bash(sed -i 's|photo-1496568816309-51d7c20e3b21|photo-1524492412937-b28074a5d7da|g' public/kit/post-7-india-sebi.svg)",
+      "Bash(cat > *)",
+      "Bash(sed -i 's|photo-1565793298595-6a879b1d9492|photo-1460925895917-afdab827c52f|g' public/kit/post-2-china-ppi.svg)",
+      "Bash(sed -i 's|photo-1524492412937-b28074a5d7da|photo-1486406146926-c627a92ad1ab|g' public/kit/post-7-india-sebi.svg)",
+      "Bash(curl -sSI \"https://alexyngcong.github.io/mics-social-media-engine/kit/post-1-hormuz.svg\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'schemaVersion: {d.get\\(\\\\\"schemaVersion\\\\\"\\)}'\\); print\\(f'totalCount: {d.get\\(\\\\\"totalCount\\\\\"\\)}'\\); print\\(f'first post slug: {d[\\\\\"posts\\\\\"][0].get\\(\\\\\"slug\\\\\"\\)}'\\); print\\(f'first post type: {d[\\\\\"posts\\\\\"][0].get\\(\\\\\"postType\\\\\", \\\\\"NOT SET\\\\\"\\)}'\\)\")",
+      "Bash(grep -E \"^\\(dist/|news-latest\\\\.json$\\)\")",
+      "Bash(git rm *)"
     ]
   }
 }

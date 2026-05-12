@@ -377,9 +377,46 @@ function dateForOffset(dayOffset) {
  * framework, type, AND room (the actual room used, may differ from preferRoom
  * if fallback was needed).
  */
+/**
+ * Token-set Jaccard similarity over normalised words (length > 3).
+ * 0.45+ means the two headlines are almost certainly the same story —
+ * used to prevent the picker from filling multiple slots with variants
+ * of the same article that arrived from different news sources.
+ */
+function titleSimilarity(a, b) {
+  const tokens = (s) => new Set(
+    String(s || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .split(/\s+/)
+      .filter(w => w.length > 3)
+  );
+  const A = tokens(a);
+  const B = tokens(b);
+  if (A.size === 0 || B.size === 0) return 0;
+  let inter = 0;
+  for (const t of A) if (B.has(t)) inter++;
+  const union = A.size + B.size - inter;
+  return union > 0 ? inter / union : 0;
+}
+
 function pickKit(feed) {
-  const used = new Set();
+  const used = new Set();      // urls already used
+  const usedTitles = [];        // titles of already-used articles, for dedup
   const kit = [];
+
+  // Helper that returns the next unused article from a room pool, skipping
+  // anything too similar to what's already in the kit (≥0.45 Jaccard).
+  const findFresh = (pool) => {
+    if (!pool) return null;
+    return pool.find(a => {
+      if (used.has(a.url)) return false;
+      for (const t of usedTitles) {
+        if (titleSimilarity(a.title, t) >= 0.45) return false;
+      }
+      return true;
+    }) || null;
+  };
 
   // Score sort within each room so we always pick top signals
   const roomPools = {};
@@ -391,25 +428,26 @@ function pickKit(feed) {
 
   for (const plan of WEEK_PLAN) {
     // 1. Try preferred room
-    let pick = roomPools[plan.preferRoom]?.find(a => !used.has(a.url));
+    let pick = findFresh(roomPools[plan.preferRoom]);
     let actualRoom = plan.preferRoom;
 
-    // 2. Fallback: any room with unused high-score items
+    // 2. Fallback: any room with unused, dissimilar items
     if (!pick) {
       const fallbackOrder = ['risk', 'world', 'capital', 'growth'].filter(r => r !== plan.preferRoom);
       for (const r of fallbackOrder) {
-        pick = roomPools[r]?.find(a => !used.has(a.url));
+        pick = findFresh(roomPools[r]);
         if (pick) { actualRoom = r; break; }
       }
     }
 
     if (pick) {
       used.add(pick.url);
+      usedTitles.push(pick.title);
       kit.push({ item: pick, plan, room: actualRoom });
     } else {
-      // Feed is too thin — generate a synthetic placeholder so the kit
-      // still has 7 slots. The HTML will mark these as "awaiting fresh
-      // signal" with a manual brief flow.
+      // Feed is too thin — emit placeholder. This is the honest signal
+      // when news is concentrated on one story and we'd otherwise repeat
+      // it across the entire week.
       kit.push({ item: null, plan, room: plan.preferRoom });
     }
   }
@@ -532,6 +570,7 @@ function generateStructuredPost(picked, dayIndex) {
   const seed = hashString(`${item.url || ''}::${item.title || ''}::${room}::${dayIndex}`);
   const rng = seededRng(seed);
 
+  const title = buildPostTitle(item);
   const opener = `${date}.`;
   const factPara = buildFactParagraph(item);
   const bridge = THEME_BRIDGES[theme.key] || THEME_BRIDGES.default;
@@ -541,7 +580,9 @@ function generateStructuredPost(picked, dayIndex) {
   const crossCycleTruth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
   const closer = pickSeeded(CLOSERS, rng);
 
-  return `${opener}
+  return `${title}
+
+${opener}
 
 ${factPara}
 
@@ -566,6 +607,7 @@ function generatePulsePost(picked, dayIndex) {
   const seed = hashString(`pulse::${item.url || ''}::${room}::${dayIndex}`);
   const rng = seededRng(seed);
 
+  const title = buildPostTitle(item);
   const topic = cleanFact(item.title);
   const stat = extractStat(item.title) || extractStat(item.description) || '';
   const statTag = stat ? ` *${stat}*.` : '';
@@ -573,11 +615,11 @@ function generatePulsePost(picked, dayIndex) {
   const closer = pickSeeded(CLOSERS, rng);
 
   const frames = [
-    `*${date}.*\n\n${topic}.${statTag} Quiet on the wire, louder underneath.\n\n${truth}\n\n${closer}`,
-    `*${date}.*\n\n${topic}.${statTag} Second-order effects matter more than the headline here.\n\n${truth}\n\n${closer}`,
-    `*${date}.*\n\n${topic}.${statTag} The kind of move that prices in slowly.\n\n${truth}\n\n${closer}`,
-    `*${date}.*\n\n${topic}.${statTag} Filing this before the cycle catches up.\n\n${truth}\n\n${closer}`,
-    `*${date}.*\n\n${topic}.${statTag} The window for ahead-of-curve positioning narrows from here.\n\n${truth}\n\n${closer}`,
+    `${title}\n\n*${date}.*\n\n${topic}.${statTag} Quiet on the wire, louder underneath.\n\n${truth}\n\n${closer}`,
+    `${title}\n\n*${date}.*\n\n${topic}.${statTag} Second-order effects matter more than the headline here.\n\n${truth}\n\n${closer}`,
+    `${title}\n\n*${date}.*\n\n${topic}.${statTag} The kind of move that prices in slowly.\n\n${truth}\n\n${closer}`,
+    `${title}\n\n*${date}.*\n\n${topic}.${statTag} Filing this before the cycle catches up.\n\n${truth}\n\n${closer}`,
+    `${title}\n\n*${date}.*\n\n${topic}.${statTag} The window for ahead-of-curve positioning narrows from here.\n\n${truth}\n\n${closer}`,
   ];
 
   return pickSeeded(frames, rng) + '\n';
@@ -652,8 +694,11 @@ function generatePollPost(picked, dayIndex) {
   const opts = options[room] || options.world;
   const letters = ['A', 'B', 'C', 'D'];
   const closer = pickSeeded(CLOSERS, rng);
+  const title = buildPostTitle(item);
 
-  return `*${date}.*
+  return `${title}
+
+*${date}.*
 
 ${topic}.${statTag}
 
@@ -686,6 +731,7 @@ function generateVoicenotePost(picked, dayIndex) {
   ];
   const opener = pickSeeded(personalOpeners, rng);
 
+  const title = buildPostTitle(item);
   const topic = cleanFact(item.title);
   const stat = extractStat(item.title) || extractStat(item.description) || '';
   const statLine = stat ? ` *${stat}* is the figure that stayed with me.` : '';
@@ -693,7 +739,9 @@ function generateVoicenotePost(picked, dayIndex) {
   const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
   const closer = pickSeeded(CLOSERS, rng);
 
-  return `*${date}.*
+  return `${title}
+
+*${date}.*
 
 ${opener}
 
@@ -733,8 +781,11 @@ function generateExclusivePost(picked, dayIndex) {
   const strategicCall = pickSeeded(THEME_STRATEGIC_CALLS[theme.key] || THEME_STRATEGIC_CALLS.default, rng);
   const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
   const closer = pickSeeded(CLOSERS, rng);
+  const title = buildPostTitle(item);
 
-  return `*${date}.*
+  return `${title}
+
+*${date}.*
 
 ${opener}
 
@@ -755,6 +806,32 @@ ${closer}
  * substantive sentence when available; falls back to the title.
  * Strips source-publication leaks and HTML entity artifacts.
  */
+/**
+ * Build the post's heading title. Sits at the very top of every caption,
+ * formatted as WhatsApp-bold (`*Title*`) — also works as visible bold in
+ * LinkedIn, X, and Slack. The title is derived from the article headline,
+ * with source-attribution suffixes (e.g. " - Reuters") stripped.
+ *
+ * Kept short (under 90 chars) so it fits on one or two lines in WhatsApp
+ * preview without wrapping awkwardly.
+ */
+function buildPostTitle(item) {
+  if (!item || !item.title) return '';
+  let t = cleanFact(item.title)
+    // Strip news-outlet attribution suffix
+    .replace(/\s*[-|–—]\s*(Reuters|Bloomberg|CNBC|FT|WSJ|Forbes|Al Jazeera|The National|Gulf News|Khaleej Times|Arabian Business|Zawya|AGBI|MEED|Mondaq|Lexology|BBC|Guardian|Associated Press|AP|Economy Middle East|Gulf Business|Argaam)\s*$/i, '')
+    // Strip trailing parenthetical attribution
+    .replace(/\s*\([^)]{1,40}\)\s*$/, '')
+    .trim();
+  // Trim if absurdly long; preserve full sentence boundary
+  if (t.length > 95) {
+    const cut = t.slice(0, 92);
+    const lastSpace = cut.lastIndexOf(' ');
+    t = (lastSpace > 60 ? cut.slice(0, lastSpace) : cut) + '…';
+  }
+  return `*${t}*`;
+}
+
 function buildFactParagraph(item) {
   const fact = cleanFact(item.title);
   const description = (item.description || '').replace(/&#8230;|&hellip;|…/g, '').slice(0, 500).trim();
@@ -1167,22 +1244,20 @@ function svgDefs(color) {
         <feFuncB type="gamma" amplitude="1" exponent="0.9"  offset="0"/>
       </feComponentTransfer>
     </filter>
-    <!-- darken: gentle bottom-up scrim. Keeps the top 60% of the photo
-         bright and only darkens the lower 40% just enough for text. The
-         old version was 0.55–0.98 which buried the photo entirely. -->
+    <!-- darken: now very light. Photo dominates; only a soft scrim at the
+         very bottom for text legibility. Earlier versions buried the photo. -->
     <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#06060f" stop-opacity="0.08"/>
-      <stop offset="55%" stop-color="#06060f" stop-opacity="0.15"/>
-      <stop offset="78%" stop-color="#06060f" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.85"/>
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0.0"/>
+      <stop offset="60%" stop-color="#06060f" stop-opacity="0.0"/>
+      <stop offset="80%" stop-color="#06060f" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.60"/>
     </linearGradient>
-    <!-- textScrim: tight bottom-half scrim used by layouts that need a
-         stronger contrast band specifically behind the headline + stat
-         block, without darkening the photo's hero zone. -->
+    <!-- textScrim: localized contrast band specifically behind text
+         clusters. Used by layouts that put text low in the canvas. -->
     <linearGradient id="textScrim" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"  stop-color="#06060f" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#06060f" stop-opacity="0.50"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.90"/>
+      <stop offset="50%" stop-color="#06060f" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.75"/>
     </linearGradient>
     <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
@@ -1250,8 +1325,11 @@ ${svgFooter()}
 // Photo full canvas, dark bottom gradient, all text left-aligned in
 // lower-third, 32px room bar at left edge. Original layout.
 function layoutHeroLeft(ctx) {
-  const { color, photoUrl, roomMeta, tier, stat, statSize, headline } = ctx;
+  const { color, photoUrl, roomMeta, tier, stat, hasStat, statSize, headline } = ctx;
   const statY = 800 - Math.max(0, statSize - 200);
+  // When there's no real stat, give the headline more breathing room
+  // by lifting it into the slot the stat would have occupied.
+  const headlineYStart = hasStat ? 888 : 760;
   return `
   ${svgImage(photoUrl)}
   <rect width="1080" height="1080" fill="url(#darken)"/>
@@ -1264,12 +1342,13 @@ function layoutHeroLeft(ctx) {
 
   <line x1="80" y1="610" x2="200" y2="610" stroke="${color}" stroke-width="2" opacity="0.85"/>
   <text x="80" y="660" font-size="22" font-weight="700" letter-spacing="6" fill="${color}" filter="url(#textShadow)">${svgEscape(tier)}</text>
-
+${hasStat ? `
   <text x="80" y="${statY}" font-family="'Cormorant Garamond','Georgia',serif" font-size="${statSize}" font-weight="500" fill="#ffffff" filter="url(#textShadow)">${svgEscape(stat)}</text>
-  <text x="80" y="830" font-size="18" font-weight="600" letter-spacing="3" fill="${color}" filter="url(#textShadow)">${svgEscape(roomMeta.serviceAngle.toUpperCase())}</text>
+  <text x="80" y="830" font-size="18" font-weight="600" letter-spacing="3" fill="${color}" filter="url(#textShadow)">${svgEscape(roomMeta.serviceAngle.toUpperCase())}</text>` : `
+  <text x="80" y="830" font-size="18" font-weight="600" letter-spacing="3" fill="${color}" filter="url(#textShadow)">${svgEscape(roomMeta.serviceAngle.toUpperCase())}</text>`}
 
-  <text x="80" y="888" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">${svgEscape(headline[0])}</text>
-  <text x="80" y="934" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">${svgEscape(headline[1])}</text>`;
+  <text x="80" y="${headlineYStart}" font-family="'Cormorant Garamond','Georgia',serif" font-size="${hasStat ? 42 : 54}" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">${svgEscape(headline[0])}</text>
+  <text x="80" y="${headlineYStart + (hasStat ? 46 : 62)}" font-family="'Cormorant Garamond','Georgia',serif" font-size="${hasStat ? 42 : 54}" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">${svgEscape(headline[1])}</text>`;
 }
 
 // ─── LAYOUT 2: SPLIT VERTICAL ───────────────────────────────────
@@ -1705,22 +1784,20 @@ function svgWrapTheme(color, photoCast, body) {
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
   <defs>
     ${filterDef}
-    <!-- darken: gentle bottom-up scrim. Keeps the top 60% of the photo
-         bright and only darkens the lower 40% just enough for text. The
-         old version was 0.55–0.98 which buried the photo entirely. -->
+    <!-- darken: now very light. Photo dominates; only a soft scrim at the
+         very bottom for text legibility. Earlier versions buried the photo. -->
     <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#06060f" stop-opacity="0.08"/>
-      <stop offset="55%" stop-color="#06060f" stop-opacity="0.15"/>
-      <stop offset="78%" stop-color="#06060f" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.85"/>
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0.0"/>
+      <stop offset="60%" stop-color="#06060f" stop-opacity="0.0"/>
+      <stop offset="80%" stop-color="#06060f" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.60"/>
     </linearGradient>
-    <!-- textScrim: tight bottom-half scrim used by layouts that need a
-         stronger contrast band specifically behind the headline + stat
-         block, without darkening the photo's hero zone. -->
+    <!-- textScrim: localized contrast band specifically behind text
+         clusters. Used by layouts that put text low in the canvas. -->
     <linearGradient id="textScrim" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"  stop-color="#06060f" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#06060f" stop-opacity="0.50"/>
-      <stop offset="100%" stop-color="#06060f" stop-opacity="0.90"/>
+      <stop offset="50%" stop-color="#06060f" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.75"/>
     </linearGradient>
     <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
@@ -1767,8 +1844,12 @@ function generateBanner(picked, dayIndex) {
   const color = roomMeta.color;
   const tier = pickTier(room, plan.type, dayIndex);
   const fact = cleanFact(item?.title || `Awaiting ${roomMeta.label} signal`);
-  const stat = item ? (extractStat(item.title) || extractStat(item.description) || 'SIGNAL') : 'PENDING';
-  const statSize = statFontSize(stat);
+  // Only show a hero stat if we actually extracted a meaningful number from
+  // the article. The previous fallback of "SIGNAL" / "PENDING" was rendering
+  // as a giant placeholder on banners where the article carried no figure.
+  const stat = item ? (extractStat(item.title) || extractStat(item.description) || '') : '';
+  const hasStat = !!stat;
+  const statSize = statFontSize(stat || 'XX');
   const headline = fact.length > 60 ? splitHeadline(fact) : [fact, ''];
   const photoUrl = pickPhoto(picked);
 
@@ -1794,7 +1875,7 @@ function generateBanner(picked, dayIndex) {
 
   // 5. Compose final SVG with theme-derived photo cast
   const ctx = {
-    color, photoUrl, roomMeta, tier, stat, statSize, headline,
+    color, photoUrl, roomMeta, tier, stat, hasStat, statSize, headline,
     plan, item, room, theme,
   };
   const body = layout.fn(ctx) + '\n' + accents;
