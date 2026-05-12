@@ -64,7 +64,7 @@
   </defs>
   <rect width="1080" height="1080" fill="#06060f"/>
 
-  <image href="https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="1080" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+  <image href="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="1080" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
   <rect width="1080" height="1080" fill="url(#darken)"/>
   <rect width="1080" height="1080" fill="url(#accentGlow)"/>
   <rect x="0" y="0" width="32" height="1080" fill="#4ADE80"/>

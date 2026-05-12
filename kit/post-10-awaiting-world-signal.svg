@@ -67,7 +67,7 @@
   <!-- Photo top region only -->
   <clipPath id="topHalf"><rect x="0" y="0" width="1080" height="595"/></clipPath>
   <g clip-path="url(#topHalf)">
-    <image href="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="1080" height="700" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <image href="https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="1080" height="700" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
     <rect width="1080" height="595" fill="url(#vignTop)"/>
     <rect width="1080" height="595" fill="url(#accentGlow)"/>
   </g>
