@@ -29,6 +29,10 @@ interface KitPost {
   slug: string;
   slot: { day: string; time: string };
   framework: string;
+  postType?: string;
+  typeLabel?: string;
+  typeIcon?: string;
+  typeAccent?: string;
   room: RoomId;
   theme: string;
   tier: string;
@@ -236,9 +240,14 @@ function KitPostCard({ post }: KitPostCardProps) {
     }
   };
 
+  const typeAccent = post.typeAccent || '#A8926A';
+  const typeLabel = post.typeLabel || 'OBSERVATION';
+  const typeIcon = post.typeIcon || '';
+  const isPoll = post.postType === 'poll';
+
   return (
     <Card className="!mb-3" accentColor={roomColor}>
-      {/* Meta row */}
+      {/* Meta row — room + post type + framework + scheduled slot */}
       <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
         <div className="flex items-center gap-1.5 flex-wrap text-[9px]">
           <span
@@ -246,6 +255,13 @@ function KitPostCard({ post }: KitPostCardProps) {
             style={{ color: roomColor, background: `${roomColor}1A`, borderColor: `${roomColor}40` }}
           >
             {roomLabel}
+          </span>
+          <span
+            className="font-bold tracking-wider px-1.5 py-0.5 rounded border"
+            style={{ color: typeAccent, background: `${typeAccent}1A`, borderColor: `${typeAccent}40` }}
+            title={`Post type: ${typeLabel}`}
+          >
+            {typeIcon} {typeLabel}
           </span>
           <span className="text-tx-dim">POST {post.n}</span>
           <span className="text-tx-ghost">·</span>
@@ -274,13 +290,14 @@ function KitPostCard({ post }: KitPostCardProps) {
         {post.tier}
       </div>
 
-      {/* Caption preview (scrollable) */}
+      {/* Caption preview — polls get extra visual emphasis on the answer options */}
       <div
-        className="
-          bg-ink border border-ink-border rounded-card px-3 py-2.5 mb-2.5
+        className={`
+          bg-ink border rounded-card px-3 py-2.5 mb-2.5
           text-[11px] text-tx-mid whitespace-pre-line leading-relaxed
-          max-h-[180px] overflow-y-auto font-mono
-        "
+          max-h-[220px] overflow-y-auto font-mono
+          ${isPoll ? 'border-signal-purple/30' : 'border-ink-border'}
+        `}
       >
         {caption}
       </div>

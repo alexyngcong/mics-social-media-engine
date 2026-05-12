@@ -65,18 +65,39 @@ const ROOMS = {
   },
 };
 
-// Day-by-day plan: which room slot fires on which day, in which framework.
-// Rooms rotate so no two consecutive posts share a room, frameworks rotate
-// so no two consecutive posts share a structural shape.
+// Full week posting plan. Covers EVERY post type relevant to a CFO
+// intelligence group:
+//   - exclusive  : Sunday "week ahead" insider signal (gold accent, top of week)
+//   - alert      : Morning urgency posts (PAS / BAB frameworks)
+//   - observation: Analytical reads (DATA / AIDA frameworks)
+//   - pulse      : Short midweek micro-post (200–400 chars)
+//   - poll       : Engagement post with 4 answer options
+//   - voicenote  : Weekend personal aside / insider tone
+//
+// Rooms + frameworks + types all rotate so no two consecutive posts share
+// the same structural shape or register.
 const WEEK_PLAN = [
+  { day: 'Sun', slot: '18:00 GST', preferRoom: 'world',   framework: 'HSO',  type: 'exclusive' },
   { day: 'Mon', slot: '08:00 GST', preferRoom: 'risk',    framework: 'PAS',  type: 'alert' },
   { day: 'Mon', slot: '17:00 GST', preferRoom: 'world',   framework: 'PAS',  type: 'alert' },
   { day: 'Tue', slot: '08:00 GST', preferRoom: 'world',   framework: 'DATA', type: 'observation' },
-  { day: 'Tue', slot: '17:00 GST', preferRoom: 'risk',    framework: 'BAB',  type: 'alert' },
+  { day: 'Tue', slot: '17:00 GST', preferRoom: 'capital', framework: 'BAB',  type: 'poll' },
   { day: 'Wed', slot: '09:00 GST', preferRoom: 'capital', framework: 'AIDA', type: 'observation' },
+  { day: 'Wed', slot: '15:00 GST', preferRoom: 'growth',  framework: 'AIDA', type: 'pulse' },
   { day: 'Thu', slot: '09:00 GST', preferRoom: 'risk',    framework: 'BAB',  type: 'observation' },
   { day: 'Fri', slot: '09:00 GST', preferRoom: 'growth',  framework: 'AIDA', type: 'observation' },
+  { day: 'Sat', slot: '10:00 GST', preferRoom: 'world',   framework: 'HSO',  type: 'voicenote' },
 ];
+
+// Human-readable label per post type — shown on the banner + in-app chip
+const POST_TYPE_LABELS = {
+  alert:       { label: 'ALERT',         icon: '🚨', accent: '#EF5555' },
+  observation: { label: 'OBSERVATION',   icon: '🔍', accent: '#A8926A' },
+  pulse:       { label: 'PULSE',         icon: '🎯', accent: '#F0C050' },
+  poll:        { label: 'POLL',          icon: '🗳️', accent: '#A78BFA' },
+  voicenote:   { label: 'INSIDER NOTE',  icon: '💬', accent: '#5B8DEE' },
+  exclusive:   { label: 'WEEK AHEAD',    icon: '🔒', accent: '#A8926A' },
+};
 
 // Intelligence-grade tier labels indexed by room + type.
 // These are NEVER news-labels ("BREAKING", "LATEST", "JUST IN").
@@ -85,18 +106,34 @@ const TIER_LABELS = {
   risk: {
     alert: ['ENFORCEMENT LIVE', 'REGULATORY SHIFT', 'COMPLIANCE WINDOW', 'GOVERNANCE SIGNAL'],
     observation: ['PATTERN MIGRATING', 'CONTROL DRIFT', 'AUDIT-SEASON SIGNAL', 'STRUCTURAL SHIFT'],
+    pulse: ['QUICK READ', 'SIGNAL CHECK', 'MIDWEEK PULSE'],
+    poll: ['ROOM CHECK', 'READING THE ROOM', 'PEER SIGNAL'],
+    voicenote: ['INSIDER NOTE', 'OFF-RECORD', 'PEER ASIDE'],
+    exclusive: ['WEEK AHEAD', 'INSIDER READ', 'FRONT-FOOT SIGNAL'],
   },
   world: {
     alert: ['STRUCTURAL SIGNAL', 'MACRO ALERT', 'TRANSMISSION RISK', 'GLOBAL PIVOT'],
     observation: ['PRINT OF THE DAY', 'CROSSOVER READ', 'POLICY SIGNAL', 'SECOND-ORDER READ'],
+    pulse: ['MACRO PULSE', 'POLICY CHECK', 'SIGNAL OF THE WEEK'],
+    poll: ['MACRO READ', 'POLICY POLL', 'PEER SIGNAL'],
+    voicenote: ['INSIDER MACRO', 'WEEKEND READ', 'PEER ASIDE'],
+    exclusive: ['WEEK AHEAD MACRO', 'INSIDER MACRO', 'FRONT-FOOT MACRO'],
   },
   capital: {
     alert: ['TREASURY ALERT', 'YIELD-CURVE SIGNAL', 'FUNDING WINDOW', 'LIQUIDITY READ'],
     observation: ['TREASURY READ', 'CAPITAL-MARKETS SIGNAL', 'ISSUANCE PRINT', 'CURRENCY-MIX SIGNAL'],
+    pulse: ['CAPITAL PULSE', 'YIELD CHECK', 'TREASURY PULSE'],
+    poll: ['TREASURY POLL', 'CAPITAL READ', 'PEER SIGNAL'],
+    voicenote: ['INSIDER TREASURY', 'PEER ASIDE', 'OFF-DESK NOTE'],
+    exclusive: ['WEEK AHEAD CAPITAL', 'FUNDING WINDOW', 'FRONT-FOOT TREASURY'],
   },
   growth: {
     alert: ['EXPANSION WINDOW', 'TIMING SIGNAL', 'STRUCTURAL OPENING'],
     observation: ['SPEED-OF-DEPLOYMENT', 'COMPETITIVE READ', 'INVESTMENT-CYCLE SIGNAL', 'FDI SHIFT'],
+    pulse: ['GROWTH PULSE', 'TIMING CHECK', 'OPPORTUNITY PULSE'],
+    poll: ['GROWTH POLL', 'PEER SIGNAL', 'TIMING READ'],
+    voicenote: ['INSIDER GROWTH', 'PEER ASIDE', 'WEEKEND READ'],
+    exclusive: ['WEEK AHEAD GROWTH', 'FRONT-FOOT EXPANSION', 'OPENING READ'],
   },
 };
 
@@ -122,58 +159,196 @@ const CLOSERS = [
   "Keeping eyes on the next signal.",
 ];
 
-// Generic strategic-implication body lines per room.
-// These apply the POSITIONING RULE: they don't restate the news, they
-// frame the UAE/GCC strategic implication. Used after the news-fact lead.
-const IMPLICATIONS = {
-  risk: [
-    "Retroactive compliance is always more expensive than ahead-of-curve readiness. The firms that get caught mid-cycle pay in remediation costs, advisory fees, and management bandwidth that compounds across multiple quarters.",
-    "Audit-season exposure is built in the quarters before audit, not during. The documentation trail, the control evidence, and the governance posture all need to be in place ahead of the window, not assembled retroactively.",
-    "Controls drift quietly, and documentation either catches up to that drift or it does not. The gap shows up first in audit findings, then in penalty exposure, then in board-level conversations.",
-    "Voluntary-disclosure regimes reward first movers and penalise the rest. The advantage of acting inside the disclosure window before the enforcement posture firms up is usually material.",
+// THEME-keyed paragraph pools (matches the detectTheme() taxonomy used by
+// the banner composer). Each theme has 6–10 substantive paragraphs that
+// frame the UAE/GCC strategic implication, naming a specific operational
+// lever — treasury sleeve, hedge book, control matrix, capex pacing,
+// supplier-mix, board agenda. The writing register is peer-CFO,
+// confident, dry, observational — the same register as the hand-crafted
+// seed posts.
+//
+// The composer picks one IMPLICATION + one STRATEGIC_CALL + one
+// CROSS_CYCLE_TRUTH per article, rotated deterministically by article
+// hash so the same signal always renders the same post.
+
+const THEME_BRIDGES = {
+  oil_energy: 'For UAE corporates routing through Jebel Ali, leaning on regional refining margins, or carrying logistics-heavy supply chains',
+  compliance_risk: 'For UAE-regulated entities, DIFC and ADGM-licensed firms, and any group with downstream compliance exposure',
+  treasury_capital: 'For UAE treasury teams, family offices managing multi-currency reserves, and CFOs sizing the next funding round',
+  ai_tech: 'For UAE corporates running AI-capex roadmaps and treasury teams sizing long-duration debt programmes',
+  geopolitics: 'For UAE corporates positioned across global trade corridors, energy channels, and cross-border funding lines',
+  shipping_logistics: 'For UAE importers, logistics-exposed groups, and treasury teams sizing freight-impacted working capital',
+  growth_expansion: 'For UAE founders, family offices mapping the next regional move, and CFOs reviewing expansion math',
+  real_estate: 'For UAE developers, REIT operators, and any group with material real-estate-collateralised debt exposure',
+  default: 'For UAE corporates positioned across the strategic transmission channels this signal opens',
+};
+
+const THEME_IMPLICATIONS = {
+  oil_energy: [
+    "The clock matters here. With energy prices repricing across the curve and freight risk re-pricing across regional logistics, fuel hedges set in the last quarter are well underwater and covenant headroom on energy- and logistics-exposed debt narrows quickly. The cash-flow stress test runs out faster than the news cycle suggests.",
+    "Hedge accounting under IFRS 9 turns on whether the original economic logic still holds. With the underlying market this far from the strike, marking-to-market lands on quarterly P&L rather than OCI, and that distinction shows up in covenant calculations before it shows up in commentary.",
+    "Freight insurance premiums are re-pricing faster than ocean-shipping spot rates. For UAE corporates running unhedged exposure to maritime supply chains, the second-order cost shows up in vendor pricing within 60 days, not in headline freight indices.",
+    "Refining margins across the region are sensitive to crude differentials more than headline price. The firms re-running their landed-cost models against Brent–Dubai spreads, not just Brent, are the ones reading the signal correctly.",
+    "Energy-shock pricing transmits through the regional non-oil economy via two channels: input costs to industry, and consumption demand via household budgets. Both move on a 30–60 day lag from the wellhead price, not a quarterly one.",
+    "The OPEC+ production posture sets the floor, but disruption risk sets the ceiling. Scenario models that assume the floor is the relevant data point underprice the volatility CFOs actually have to manage against.",
   ],
-  world: [
-    "Global rule changes hit UAE balance sheets through three channels: rates, trade flows, and energy markets. Scenario planning that ignores any one of those underprices regional exposure.",
-    "Scenario planning that uses last cycle's assumptions underprices the regional transmission. The Gulf sits at the crossover of monetary, energy, and trade policy in ways that compound rather than offset.",
-    "Multilateral policy turns translate into UAE compliance work faster than most expect. The time between announcement and operational impact has compressed materially in the last two cycles.",
-    "Capital flows respond to policy signals before they respond to underlying fundamentals. The firms reading the signal early are the ones positioned when the flows arrive.",
+  compliance_risk: [
+    "The pressure is at enforcement level. Non-compliance can trigger supervisory action, financial sanctions, and reputational exposure that compounds across multiple supervisory cycles. The immediate work is two-fold: audit the client-facing trails touching transaction data or KYC-adjacent flows, then brief the audit committee on the customer-experience implications.",
+    "Retroactive compliance is always more expensive than ahead-of-curve readiness. The firms that get caught mid-cycle pay in remediation costs, advisory fees, and management bandwidth that compounds across multiple quarters before the supervisory finding even closes.",
+    "Audit-season exposure is built in the quarters before audit, not during. The documentation trail, the control evidence, and the governance posture all need to be in place ahead of the window, not assembled retroactively under examiner pressure.",
+    "Controls drift quietly, and documentation either catches up to that drift or it does not. The gap shows up first in audit findings, then in penalty exposure, then in board-level conversations. The window to close it is always shorter than the rulebook suggests.",
+    "Voluntary-disclosure regimes reward first movers and penalise the rest. The advantage of acting inside the disclosure window — before enforcement posture firms up — is usually material in both penalty avoidance and supervisory standing.",
+    "Effective-date language matters here. Retroactive remediation is always more expensive than ahead-of-curve readiness. For groups with cross-border footprint, the documentation burden lands in finance and legal teams first, well before it reaches risk dashboards.",
+    "Supervisory expectations are migrating across the GCC faster than commentary admits. The CBUAE, DFSA, and ADGM FSRA posture on this category continues to firm up; the relevant benchmark for the next cycle is the current cycle, not the prior one.",
   ],
-  capital: [
-    "Funding-mix reviews need a quarterly cadence in this environment, not an annual one. Issuance windows, deposit beta, and refinancing pipelines are moving faster than legacy treasury policy frameworks anticipate.",
-    "Treasury policy that was right for 2024 will not be right for the next twelve months. The yield environment, regulatory expectations, and funding-mix options have all shifted in ways that warrant a quarterly review.",
-    "The cost of inaction on reserve structuring usually shows up too late. By the time the inefficiency is visible in the numbers, the optimal restructuring window has already closed.",
-    "Yield-curve positioning is a board-level conversation now, not a treasury-desk one. The implications cross into capex pacing, dividend policy, and balance-sheet structuring.",
+  treasury_capital: [
+    "Funding-mix reviews need a quarterly cadence in this environment, not an annual one. Issuance windows, deposit beta, and refinancing pipelines are moving faster than legacy treasury policy frameworks anticipate, and the cost of operating against last year's framework shows up in pricing within a single rate cycle.",
+    "Treasury policy that was right for the last rate regime will not be right for the next twelve months. The yield environment, regulatory expectations, and funding-mix options have all shifted in ways that warrant a quarterly review with the board, not an annual one with the auditor.",
+    "The cost of inaction on reserve structuring usually shows up too late. By the time the inefficiency is visible in the numbers, the optimal restructuring window has already closed, and the cost of catching up is materially higher than the cost of moving early.",
+    "Yield-curve positioning is a board-level conversation now, not a treasury-desk one. The implications cross into capex pacing, dividend policy, and balance-sheet structuring in ways that touch every major capital-allocation decision in the cycle.",
+    "Multi-currency funding has moved from fringe treasury tactic to mainstream board agenda. The JPY and CHF investor base is absorbing long-duration paper at acceptable spreads, and that opens a usable benchmark for any UAE issuer sizing programme against ADQ, Mubadala, or MoIAT pipelines.",
+    "Sukuk issuance momentum continues to reward issuers who locked in early in the cycle. DIFC- and ADGM-listed paper is trading inside swap on relative-value terms across many tenors, and the spread reflects continued demand for hard-currency GCC sovereign and quasi-sovereign exposure.",
+    "Private credit deployment in DIFC and ADGM continues to outpace bank lending for a second consecutive quarter. The alternative-credit sleeve is gaining structural share as bank balance sheets stay constrained — and the relative-value math for borrowers is shifting accordingly.",
   ],
-  growth: [
-    "Mainland and free-zone setup choices get harder to reverse from here. The cost of restructuring later usually exceeds the cost of getting it right the first time.",
-    "Expansion timing in the UAE is structural, not opportunistic. The firms that map their next move now will be the ones executing while the rest are still in feasibility.",
-    "Capital allocation across the next two quarters is where the alpha sits. Decisions made under the current setup compound through the entire next investment cycle.",
-    "Operating-model choices made now will define competitive position through the next investment cycle. The window for unforced structural decisions narrows quickly.",
+  ai_tech: [
+    "AI-capex restructuring is moving from operational planning into balance-sheet territory. Multi-currency funding programmes that absorb long-duration debt across JPY, CHF, EUR, and CAD prints are setting the benchmark for any large UAE issuer with industrial-financing pipeline ambitions.",
+    "The signal underneath the headline capex number: long-duration debt is being absorbed at spreads that look manageable on the surface but compound across the maturity stack. CFOs sizing AI-related programmes need to model the refinancing path, not just the issuance window.",
+    "For UAE corporates building agentic-AI capability into operating models, the capex math is now interleaved with operating-leverage assumptions. Decisions made in this cycle compound through the next investment cycle.",
+    "Data-centre infrastructure investment in the region tracks both grid capacity and sovereign capital allocation. The firms reading both signals together get the timing math correct; the ones reading only the press releases miss the constraint.",
+    "Chip supply chain volatility transmits into project finance through schedule risk, not just unit cost. CFOs working against industrial-strategy timelines should model schedule contingency at the high end, not the mid-point.",
+  ],
+  geopolitics: [
+    "Global rule changes hit UAE balance sheets through three channels: rates, trade flows, and energy markets. Scenario planning that ignores any one of those underprices regional exposure, and the firms operating with current-cycle assumptions are the ones positioned when the flows arrive.",
+    "Scenario planning that uses last cycle's assumptions underprices the regional transmission. The Gulf sits at the crossover of monetary, energy, and trade policy in ways that compound rather than offset across cycles.",
+    "Multilateral policy turns translate into UAE compliance and treasury work faster than most expect. The time between announcement and operational impact has compressed materially in the last two cycles; the operating lead time is now weeks, not quarters.",
+    "Capital flows respond to policy signals before they respond to underlying fundamentals. The firms reading the signal early are the ones positioned when the flows arrive — and the cost of reading late is usually visible in valuation, not in the income statement.",
+    "Currency-mix, supplier-mix, and funding-mix all need a second look against this. The Gulf's role as a connector economy means transmission timing matters more than transmission magnitude; the firms positioned for the inflection capture both the upside and the optionality.",
+    "Trade-corridor fragmentation is shifting GCC-Asia and GCC-Europe flows faster than legacy supplier frameworks anticipate. The procurement teams that haven't cycled through their top suppliers with revised assumptions are running on stale inputs.",
+  ],
+  shipping_logistics: [
+    "Freight risk is re-pricing across regional logistics faster than commentary admits. For UAE importers and logistics-exposed groups, the operational read is to refresh landed-cost assumptions on a weekly cadence and pre-position for trapped working capital before the next quarter-end close.",
+    "Procurement teams that have not cycled through their top suppliers with revised cost models in the last sixty days are running on stale assumptions. Tightening PO frequency, locking spot where contracts allow, and re-modelling landed cost on a USD basis are the table-stakes moves.",
+    "Supply chain volatility transmits to UAE corporate margins through two channels: direct vendor pricing, and indirect competitive repositioning by faster-moving peers. Margin defence has to come from contract structure rather than from passing it forward.",
+    "Logistics-side cost shocks compound when treasury and procurement run on different cadences. The firms aligning the two operating rhythms — weekly working-capital review against monthly procurement signoff — are the ones absorbing the shock without surprises at quarter-end.",
+  ],
+  growth_expansion: [
+    "Mainland and free-zone setup choices get harder to reverse from here. The cost of restructuring later usually exceeds the cost of getting it right the first time, and the early-mover advantage compounds through the entire next investment cycle.",
+    "Expansion timing in the UAE is structural, not opportunistic. The firms that map their next move now will be the ones executing while the rest are still in feasibility — and the gap between mapped and executing is where the alpha sits.",
+    "Capital allocation across the next two quarters is where the differential return lives. Decisions made under the current setup compound through the entire next investment cycle, both for upside capture and for downside protection.",
+    "Operating-model choices made now will define competitive position through the next investment cycle. The window for unforced structural decisions narrows quickly, and the cost of acting later is higher than the headline math suggests.",
+    "For UAE family offices and growth-stage allocators, the operational rhythm question matters more than the thesis question right now. Speed of deployment, side-letter terms, and capacity allocation are where the real negotiating leverage lives.",
+    "The transmission from cross-border policy shift to UAE advisory-room conversation is faster than most assume. The strategic repositioning has already started for those reading the signal correctly; the cost of confirmation bias is now visible in valuation gaps.",
+  ],
+  real_estate: [
+    "Property-collateralised lending math shifts twice when supervisory expectations move: once on the loan-to-value assumption, and again on the capital charge applied to the residual exposure. The CFOs running ahead of both are the ones not caught in the next supervisory cycle.",
+    "REIT operators carrying GCC retail and industrial exposure should re-stress dividend cover at the new rate baseline before the next quarterly board pack lands. The math compounds quickly under sustained refinancing pressure.",
+    "Construction-phase financing assumptions made under the prior rate regime do not survive the next cycle untouched. The development pipelines being sized today should already reflect the higher cost of capital, not the legacy curve.",
+  ],
+  default: [
+    "Global rule changes hit UAE balance sheets through three channels: rates, trade flows, and energy markets. Scenario planning that ignores any one of those underprices regional exposure across the next operating cycle.",
+    "The transmission from announcement to advisory-room conversation is faster than most assume. The firms reading the signal early are the ones positioned when the flows arrive, not the ones playing catch-up at the next board pack.",
+    "Operating-model choices made now will define competitive position through the next investment cycle. The window for unforced structural decisions narrows quickly when peer firms start moving on the same signal.",
   ],
 };
 
-// Strategic-call body lines (the "what to do" line) per room.
-const STRATEGIC_CALLS = {
-  risk: [
-    "Audit any client-facing trails that touch transaction data or KYC-adjacent flows. Brief the audit committee before the next supervisory cycle.",
-    "Treat this as a control-matrix update, not a one-off remediation. The workpaper trail starts now, not after the first finding.",
-    "Read this alongside your existing control matrix, not in isolation. The downstream documentation burden lands in finance and legal first.",
+const THEME_STRATEGIC_CALLS = {
+  oil_energy: [
+    "The firms re-running their hedge book against a sustained price baseline over a 30–90 day horizon, refreshing freight assumptions on a weekly cadence, and pre-positioning for trapped working capital are the ones that will not be surprised at quarter-end.",
+    "Treasury teams should stress the working-capital cycle against a 20% input-cost shock and re-confirm covenant headroom on energy-exposed debt before the next quarterly close. The cost of doing this late is materially higher than the cost of doing it now.",
+    "Procurement, treasury, and risk should be operating against the same baseline this cycle. The firms running aligned working-capital reviews on a weekly cadence are the ones absorbing the shock without surprises.",
   ],
-  world: [
+  compliance_risk: [
+    "Audit any client-facing trails that touch transaction data or KYC-adjacent flows. Migrate to compliant channels, brief the audit committee on customer-experience implications, and update the control matrix before the next supervisory cycle lands.",
+    "Treat this as a control-matrix update, not a one-off remediation. The workpaper trail starts now, the documentation burden lands in finance and legal first, and the supervisory benchmark for next cycle is the current cycle.",
+    "The firms moving inside the voluntary-disclosure window — before the enforcement posture firms up — are the ones that arrive at the next audit with cleaner standing and lower remediation cost.",
+    "Read this alongside the existing control matrix, not in isolation. Refresh the risk register, lock the supervisory communication trail, and front-load the audit committee briefing before the cycle catches the firm cold.",
+  ],
+  treasury_capital: [
+    "The sleeve worth modelling now: short-duration AED paper paired against medium-duration USD, with optionality on the funding-mix question. Reserve policies reviewed under a different rate regime are the ones most exposed to the next cycle's structural shift.",
+    "Two things to watch this cycle: deposit beta on the AED side, and refinancing pipeline on the USD side. The relative-value question across UAE instruments keeps tightening, and the firms pre-positioning capture both the carry and the optionality.",
+    "Funding-mix reviews should be on a quarterly cadence in this environment, not annual. The CFOs treating issuance windows, deposit beta, and refinancing as discrete monthly signals are the ones reading the curve correctly.",
+    "For UAE issuers sizing programmes against sovereign or quasi-sovereign benchmarks, the multi-currency funding question is now structural rather than tactical. The currency-mix conversation belongs in the board pack, not the treasury desk note.",
+  ],
+  ai_tech: [
+    "Treasury teams sizing long-duration AI-capex programmes against benchmark currencies should be modelling the refinancing path on a 5–10 year horizon, not just the issuance window. The spread compounds across the maturity stack.",
+    "For UAE corporates building agentic-AI capability into operating models, the capex math is now interleaved with operating-leverage assumptions. The decisions made in this cycle compound through the next investment cycle, both ways.",
+  ],
+  geopolitics: [
+    "Currency-mix, supplier-mix, and funding-mix all need a second look against this. Refresh scenario assumptions on a weekly cadence, watch the policy reaction rather than the price reaction, and align procurement and treasury on a single working-capital baseline.",
     "The firms re-running their assumptions at the new baseline, refreshing inputs on a weekly cadence, and pre-positioning for the transmission window are the ones that will not be surprised at quarter-end.",
-    "Currency-mix, supplier-mix, and funding-mix all need a second look against this. Watch the policy reaction, not the price reaction.",
-    "If your scenario planning still uses last cycle's assumptions, this is the prompt to refresh them. Energy markets and policy markets are coupled more than the headlines admit.",
+    "Energy markets and policy markets are coupled more than the headlines admit. The CFOs reading both signals together — and refreshing their cross-border treasury structure accordingly — are the ones positioned for the inflection.",
   ],
-  capital: [
-    "The sleeve nobody is talking about: short-duration AED paper paired against medium-duration USD. If your reserve policy was last reviewed under a different rate regime, this is the moment.",
-    "Two things to watch: deposit beta on the AED side, and refinancing pipeline on the USD side. Capital is signalling.",
-    "DIFC and ADGM private-credit allocators have been the quiet beneficiaries of bank-lending tightening. The relative-value question across UAE instruments keeps tightening.",
+  shipping_logistics: [
+    "Procurement teams should cycle through their top 20 suppliers with revised cost models inside 30 days, tighten PO frequency, lock spot where contracts allow, and re-model landed cost on a USD basis. Hoping it passes is not the move.",
+    "The firms aligning treasury and procurement operating rhythms — weekly working-capital review against monthly procurement signoff — are the ones absorbing the shock without quarter-end surprises.",
   ],
-  growth: [
-    "The early movers are not waiting for confirmation. What is interesting is not the headline number. It is the composition.",
-    "Founders running feasibility on the GCC just got a cleaner input variable. If your expansion model still assumes 2023 economics, this is a useful moment to revisit the inputs.",
-    "The transmission from announcement to advisory-room conversation is faster than most assume. The strategic repositioning has already started for those reading it correctly.",
+  growth_expansion: [
+    "Refresh the bench of GPs and partners being tracked, revisit the timing assumptions in the commitment plan, and pre-position the operating model for the faster cycle. The firms adapting to the new rhythm pull more GCC capital faster than the ones holding the old framework.",
+    "Founders running feasibility on the GCC just got a cleaner input variable. Models built on prior-cycle economics should be refreshed against the current setup before the next board meeting.",
+    "The early movers are not waiting for confirmation. The strategic repositioning has already started for those reading the signal correctly — the cost of reading late shows up first in valuation, then in capital availability.",
   ],
+  real_estate: [
+    "REIT operators and developers should stress-test dividend cover and refinancing assumptions at the new rate baseline before the next quarterly board pack. The math compounds quickly under sustained pressure.",
+  ],
+  default: [
+    "The firms re-running their assumptions at the new baseline, refreshing inputs on a weekly cadence, and pre-positioning for the transmission window are the ones that will not be surprised at quarter-end.",
+    "Read this alongside the current operating plan, not in isolation. The implications cross into capex pacing, treasury structure, and board-agenda items that take more than one cycle to reposition.",
+  ],
+};
+
+// Cross-cycle truth — one or two-sentence wisdom that closes the strategic
+// reading. Theme-keyed but kept generic enough to apply to most signals
+// inside the theme. Comes right before the observational closer.
+const CROSS_CYCLE_TRUTHS = {
+  oil_energy: [
+    "Energy shocks transmit through balance sheets faster than they transmit through headlines. The firms reading the curve early are the ones not caught at quarter-end.",
+    "Hedge books built for the last cycle are the most expensive ones to carry into the next one. The repositioning math doesn't get easier from here.",
+  ],
+  compliance_risk: [
+    "Audit-season exposure is built in the quarters before audit, not during. The documentation trail, the control evidence, and the governance posture all need to be in place ahead of the window.",
+    "Retroactive compliance is always more expensive than ahead-of-curve readiness. The cost of moving inside the supervisory window is materially lower than the cost of catching up after the first finding.",
+  ],
+  treasury_capital: [
+    "Treasury policy that was right for the last rate regime will not be right for the next twelve months. Quarterly review is the operating cadence now, not annual.",
+    "Funding-mix decisions made under stale assumptions show up in pricing within a single rate cycle. The cost of running on last year's framework compounds quickly.",
+  ],
+  ai_tech: [
+    "Capex programmes sized in this cycle compound through the next investment cycle. The decisions made now define competitive position for years, not quarters.",
+  ],
+  geopolitics: [
+    "Global rule changes hit UAE balance sheets through three channels: rates, trade flows, and energy markets. Scenario planning that ignores any one of those underprices regional exposure.",
+    "Capital flows respond to policy signals before they respond to underlying fundamentals. Reading the signal early is the differential — confirmation bias is the cost.",
+  ],
+  shipping_logistics: [
+    "Supply-side cost shocks compound when treasury and procurement run on different cadences. The firms aligning the two operating rhythms are the ones absorbing the shock without surprises.",
+  ],
+  growth_expansion: [
+    "Expansion timing in the UAE is structural, not opportunistic. The firms mapping their next move now are the ones executing while the rest are still in feasibility.",
+    "Mainland and free-zone setup choices get harder to reverse from here. The cost of restructuring later usually exceeds the cost of getting it right the first time.",
+  ],
+  real_estate: [
+    "Property-collateralised lending math shifts twice when supervisory expectations move: once on LTV, and again on the capital charge. CFOs running ahead of both are the ones not caught in the next supervisory cycle.",
+  ],
+  default: [
+    "Global rule changes hit UAE balance sheets through three channels: rates, trade flows, and energy markets. Scenario planning that ignores any one of those underprices regional exposure.",
+    "The transmission from announcement to advisory-room conversation is faster than most assume. The firms reading the signal early are the ones positioned when the flows arrive.",
+  ],
+};
+
+// Legacy room-keyed pools — kept for backward compatibility with any code
+// path that still references them, but the active composition path uses
+// the theme-keyed pools above.
+const IMPLICATIONS = {
+  risk: THEME_IMPLICATIONS.compliance_risk,
+  world: THEME_IMPLICATIONS.geopolitics,
+  capital: THEME_IMPLICATIONS.treasury_capital,
+  growth: THEME_IMPLICATIONS.growth_expansion,
+};
+const STRATEGIC_CALLS = {
+  risk: THEME_STRATEGIC_CALLS.compliance_risk,
+  world: THEME_STRATEGIC_CALLS.geopolitics,
+  capital: THEME_STRATEGIC_CALLS.treasury_capital,
+  growth: THEME_STRATEGIC_CALLS.growth_expansion,
 };
 
 // Date helpers — always live, never cached
@@ -303,64 +478,68 @@ function cleanFact(title) {
  * positioning rule (UAE/GCC implication lead, no news-summary tone,
  * observational closer).
  */
+/**
+ * Generate the post caption in Claude-style peer-CFO prose.
+ *
+ * Dispatches by post type:
+ *   alert / observation / exclusive  → 6-paragraph structured analysis
+ *   pulse                            → short 3-line micro-post
+ *   poll                             → question + 4 answer options
+ *   voicenote                        → personal insider aside (4 paragraphs)
+ *
+ * All variants use the same theme-keyed paragraph pools and seeded RNG
+ * (article URL hash) so the same signal always renders the same post.
+ */
 function generatePost(picked, dayIndex) {
   const { item, plan, room } = picked;
   const roomMeta = ROOMS[room];
   const date = todayLong();
 
+  // Awaiting-signal placeholder — kept terse on purpose
   if (!item) {
-    // Awaiting fresh signal placeholder
     return `${date}.
 
-The intelligence feed had no fresh ${roomMeta.label.toLowerCase()} signal at the cutoff that cleared the strategic-signal threshold. Rather than serve recycled commentary, the slot is held.
+No signal cleared the strategic-signal threshold for the ${roomMeta.label.toLowerCase()} room at the cutoff for this slot. Rather than serve recycled commentary, the slot is held until something worth flagging lands.
 
-Use the AI Brief flow on the live feed to generate a polished post if a relevant signal has landed since this kit was assembled.
+Open the Intelligence Feed inside the app and use the AI Brief flow on any live item to produce a polished post on demand.
 
 ${pickByDay(CLOSERS, dayIndex)}
 `;
   }
 
-  const fact = cleanFact(item.title);
-  const description = (item.description || '').slice(0, 400);
-  const closer = pickByDay(CLOSERS, dayIndex);
-  const implication = pickByDay(IMPLICATIONS[room], dayIndex);
-  const strategicCall = pickByDay(STRATEGIC_CALLS[room], dayIndex);
-
-  // STRUCTURE:
-  // 1. Date stamp (peer-room signal of when this lands)
-  // 2. Fact paragraph (one sentence) — what happened, no source name
-  // 3. UAE/GCC implication paragraph (the "why this matters here")
-  // 4. Strategic call paragraph (what to do — peer-CFO frame)
-  // 5. Generic-but-strong room implication (the cross-cycle truth)
-  // 6. Observational closer
-
-  // Open with date for time-stamped intelligence feel
-  const opener = `${date}.`;
-
-  // Fact paragraph — extract first usable sentence from description, else use title
-  let factPara = fact;
-  if (description.length > 80) {
-    const firstSentence = description.split(/(?<=[.!?])\s+/)[0];
-    if (firstSentence && firstSentence.length > 40 && firstSentence.length < 280) {
-      factPara = firstSentence;
-    } else {
-      factPara = `${fact}. ${description.slice(0, 200).trim()}`;
-    }
+  // Dispatch to the type-specific generator. Each one uses the same
+  // theme-keyed paragraph pools, just composes them differently.
+  switch (plan.type) {
+    case 'pulse':     return generatePulsePost(picked, dayIndex);
+    case 'poll':      return generatePollPost(picked, dayIndex);
+    case 'voicenote': return generateVoicenotePost(picked, dayIndex);
+    case 'exclusive': return generateExclusivePost(picked, dayIndex);
+    case 'alert':
+    case 'observation':
+    default:          return generateStructuredPost(picked, dayIndex);
   }
-  // Strip source-name leaks
-  factPara = factPara.replace(/\b(reuters|bloomberg|cnbc|ft|wsj|forbes|al jazeera|the national|gulf news|khaleej times|arabian business|zawya|agbi|meed|mondaq|lexology|bbc|guardian|associated press|ap)\b\s*[:,]?\s*/gi, '').trim();
-  if (factPara && !/[.!?]$/.test(factPara)) factPara += '.';
+}
 
-  // UAE/GCC implication — bridge from the fact to the regional read
-  const bridges = {
-    risk: 'For UAE-regulated entities and any group with downstream compliance exposure',
-    world: 'For UAE corporates positioned across global trade and energy channels',
-    capital: 'For UAE treasury and capital-allocation teams',
-    growth: 'For UAE founders and family offices mapping the next expansion move',
-  };
-  const bridge = bridges[room];
+/**
+ * STANDARD STRUCTURED POST — alert / observation / default
+ * 6 paragraphs: date → fact → UAE implication → strategic call →
+ * cross-cycle truth → observational closer.
+ */
+function generateStructuredPost(picked, dayIndex) {
+  const { item, room } = picked;
+  const theme = detectTheme(item, room);
+  const date = todayLong();
+  const seed = hashString(`${item.url || ''}::${item.title || ''}::${room}::${dayIndex}`);
+  const rng = seededRng(seed);
 
-  const regionalRead = `${bridge}, the strategic implication lands ahead of where the headline cycle catches it. ${strategicCall}`;
+  const opener = `${date}.`;
+  const factPara = buildFactParagraph(item);
+  const bridge = THEME_BRIDGES[theme.key] || THEME_BRIDGES.default;
+  const themeImplication = pickSeeded(THEME_IMPLICATIONS[theme.key] || THEME_IMPLICATIONS.default, rng);
+  const regionalRead = `${bridge}, the strategic read lands ahead of where headline coverage catches it. ${themeImplication}`;
+  const strategicCall = pickSeeded(THEME_STRATEGIC_CALLS[theme.key] || THEME_STRATEGIC_CALLS.default, rng);
+  const crossCycleTruth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
+  const closer = pickSeeded(CLOSERS, rng);
 
   return `${opener}
 
@@ -368,10 +547,248 @@ ${factPara}
 
 ${regionalRead}
 
-${implication}
+${strategicCall}
+
+${crossCycleTruth}
 
 ${closer}
 `;
+}
+
+/**
+ * PULSE POST — short midweek micro-read, 200–400 chars.
+ * Date + tight fact + cross-cycle one-liner + closer.
+ */
+function generatePulsePost(picked, dayIndex) {
+  const { item, room } = picked;
+  const theme = detectTheme(item, room);
+  const date = todayLong();
+  const seed = hashString(`pulse::${item.url || ''}::${room}::${dayIndex}`);
+  const rng = seededRng(seed);
+
+  const topic = cleanFact(item.title);
+  const stat = extractStat(item.title) || extractStat(item.description) || '';
+  const statTag = stat ? ` *${stat}*.` : '';
+  const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
+  const closer = pickSeeded(CLOSERS, rng);
+
+  const frames = [
+    `*${date}.*\n\n${topic}.${statTag} Quiet on the wire, louder underneath.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} Second-order effects matter more than the headline here.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} The kind of move that prices in slowly.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} Filing this before the cycle catches up.\n\n${truth}\n\n${closer}`,
+    `*${date}.*\n\n${topic}.${statTag} The window for ahead-of-curve positioning narrows from here.\n\n${truth}\n\n${closer}`,
+  ];
+
+  return pickSeeded(frames, rng) + '\n';
+}
+
+/**
+ * POLL POST — engagement post with a CFO question + 4 answer options.
+ * Options are graded by readiness so they feel like answers a CFO would
+ * actually pick.
+ */
+function generatePollPost(picked, dayIndex) {
+  const { item, room } = picked;
+  const date = todayLong();
+  const seed = hashString(`poll::${item.url || ''}::${room}::${dayIndex}`);
+  const rng = seededRng(seed);
+
+  const topic = cleanFact(item.title);
+  const stat = extractStat(item.title) || extractStat(item.description) || '';
+  const statTag = stat ? ` *${stat}*.` : '';
+
+  const questions = {
+    risk: [
+      'Where is your team on this one?',
+      'How prepared is the audit committee for this?',
+      'How does this read against your current control matrix?',
+    ],
+    capital: [
+      'How is your treasury positioned for this?',
+      'What does this do to your funding-mix conversation?',
+      'Where does this land in your reserve policy review?',
+    ],
+    growth: [
+      'How does this shift your expansion math?',
+      'What does this open for your next allocation cycle?',
+      'Where does this land in your feasibility queue?',
+    ],
+    world: [
+      'How are you reading the transmission to the GCC?',
+      'What does this change in your scenario plan?',
+      'Where does this land in your cross-border structuring conversation?',
+    ],
+  };
+
+  const options = {
+    risk: [
+      'Already aligned — control matrix updated',
+      'In progress — audit committee briefed',
+      'Aware but not started',
+      'Hearing about this first time',
+    ],
+    capital: [
+      'Restructured in the last six months',
+      'Reviewing but not moved yet',
+      'Comfortable with current allocation',
+      'Not on the agenda yet',
+    ],
+    growth: [
+      'Already moving on this',
+      'Reviewing but waiting for clarity',
+      'Consolidating current positions first',
+      'New, not yet evaluated',
+    ],
+    world: [
+      'Already adjusted regional positioning',
+      'Monitoring closely, ready to pivot',
+      'Still assessing the impact',
+      "Don't see direct exposure",
+    ],
+  };
+
+  const question = pickSeeded(questions[room] || questions.world, rng);
+  const opts = options[room] || options.world;
+  const letters = ['A', 'B', 'C', 'D'];
+  const closer = pickSeeded(CLOSERS, rng);
+
+  return `*${date}.*
+
+${topic}.${statTag}
+
+${question}
+
+${opts.map((o, i) => `${letters[i]}. ${o}`).join('\n')}
+
+${closer}
+`;
+}
+
+/**
+ * VOICENOTE POST — personal insider aside. Weekend register: 4 paragraphs,
+ * personal opener, lighter on the strategic-call structure.
+ */
+function generateVoicenotePost(picked, dayIndex) {
+  const { item, room } = picked;
+  const theme = detectTheme(item, room);
+  const date = todayLong();
+  const seed = hashString(`voicenote::${item.url || ''}::${room}::${dayIndex}`);
+  const rng = seededRng(seed);
+
+  const personalOpeners = [
+    'Quick thought before the week starts.',
+    'Something crossed the desk this weekend.',
+    "Been turning this over since it landed.",
+    "Sharing this here first — not making a big public thing of it.",
+    "One I want to put in front of this group early.",
+    "Quiet observation while the rest of the cycle catches up.",
+  ];
+  const opener = pickSeeded(personalOpeners, rng);
+
+  const topic = cleanFact(item.title);
+  const stat = extractStat(item.title) || extractStat(item.description) || '';
+  const statLine = stat ? ` *${stat}* is the figure that stayed with me.` : '';
+  const themeImplication = pickSeeded(THEME_IMPLICATIONS[theme.key] || THEME_IMPLICATIONS.default, rng);
+  const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
+  const closer = pickSeeded(CLOSERS, rng);
+
+  return `*${date}.*
+
+${opener}
+
+${topic}.${statLine}
+
+${themeImplication}
+
+${truth}
+
+${closer}
+`;
+}
+
+/**
+ * EXCLUSIVE / WEEK-AHEAD POST — Sunday format. Frames the signal as
+ * what's coming next week, with a confident insider tone.
+ */
+function generateExclusivePost(picked, dayIndex) {
+  const { item, room } = picked;
+  const theme = detectTheme(item, room);
+  const date = todayLong();
+  const seed = hashString(`exclusive::${item.url || ''}::${room}::${dayIndex}`);
+  const rng = seededRng(seed);
+
+  const openers = [
+    'Setting the tone for the week.',
+    'Top of mind heading into the new week.',
+    'The signal worth carrying into Monday.',
+    'Filing the week-ahead read.',
+    "What I'd watch through the next five trading days.",
+  ];
+  const opener = pickSeeded(openers, rng);
+
+  const factPara = buildFactParagraph(item);
+  const bridge = THEME_BRIDGES[theme.key] || THEME_BRIDGES.default;
+  const themeImplication = pickSeeded(THEME_IMPLICATIONS[theme.key] || THEME_IMPLICATIONS.default, rng);
+  const strategicCall = pickSeeded(THEME_STRATEGIC_CALLS[theme.key] || THEME_STRATEGIC_CALLS.default, rng);
+  const truth = pickSeeded(CROSS_CYCLE_TRUTHS[theme.key] || CROSS_CYCLE_TRUTHS.default, rng);
+  const closer = pickSeeded(CLOSERS, rng);
+
+  return `*${date}.*
+
+${opener}
+
+${factPara}
+
+${bridge}, the strategic implication lands ahead of where headline coverage catches it. ${themeImplication}
+
+${strategicCall}
+
+${truth}
+
+${closer}
+`;
+}
+
+/**
+ * Build the fact paragraph. Uses the article description's first
+ * substantive sentence when available; falls back to the title.
+ * Strips source-publication leaks and HTML entity artifacts.
+ */
+function buildFactParagraph(item) {
+  const fact = cleanFact(item.title);
+  const description = (item.description || '').replace(/&#8230;|&hellip;|…/g, '').slice(0, 500).trim();
+
+  // Try to find the best sentence in the description: prefer one with
+  // a number, a UAE/GCC reference, or a named regulator/organization.
+  let factPara = fact;
+  if (description.length > 60) {
+    const sentences = description.split(/(?<=[.!?])\s+/).filter(s => s.length > 30 && s.length < 320);
+    if (sentences.length > 0) {
+      // Score sentences: number/% +3, UAE/GCC ref +2, regulator +2, long-enough +1
+      const scored = sentences.map(s => {
+        let score = 1;
+        if (/\d+[\d,.]*\s*(%|million|billion|trillion|bn|m\b)/i.test(s)) score += 3;
+        if (/\b(uae|dubai|abu dhabi|emirates|gulf|gcc|saudi|qatar|bahrain|oman|kuwait|difc|adgm)\b/i.test(s)) score += 2;
+        if (/\b(cbuae|fta|mof|dfsa|mohre|moiat|sec|fed|ecb|oecd|imf|opec)\b/i.test(s)) score += 2;
+        if (s.length > 120 && s.length < 240) score += 1;
+        return { s, score };
+      });
+      scored.sort((a, b) => b.score - a.score);
+      factPara = scored[0].s;
+    }
+  }
+
+  // Strip source-publication name leaks. The body never names the news outlet —
+  // the link preview handles attribution.
+  factPara = factPara
+    .replace(/\b(reuters|bloomberg|cnbc|ft\.com|wall street journal|wsj|forbes|al jazeera|the national|gulf news|khaleej times|arabian business|zawya|agbi|meed|mondaq|lexology|bbc|guardian|associated press|\bap\b|economymiddleeast|gulf business)\b\s*[:,—–]?\s*/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/^[\s,;:]+/, '')
+    .trim();
+
+  if (factPara && !/[.!?]$/.test(factPara)) factPara += '.';
+  return factPara;
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1247,11 +1664,16 @@ async function main() {
     await writeFile(`kit/${fileBase}.svg`, bannerSvg, 'utf8');
     console.log(`  ✓ kit/${fileBase}.txt + .svg`);
 
+    const typeMeta = POST_TYPE_LABELS[picked.plan.type] || POST_TYPE_LABELS.observation;
     manifestPosts.push({
       n,
       slug,
       slot: { day: picked.plan.day, time: picked.plan.slot },
       framework: FRAMEWORK_LABELS[picked.plan.framework] || picked.plan.framework,
+      postType: picked.plan.type,
+      typeLabel: typeMeta.label,
+      typeIcon: typeMeta.icon,
+      typeAccent: typeMeta.accent,
       room: picked.room,
       theme: theme.key,
       tier,
