@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-13T18:01:28.214Z",
+  "generatedAt": "2026-05-13T21:25:00.748Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 29,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 158,
-    "big4Rejected": 3,
-    "englishOnly": 155,
-    "withinRecency": 66,
-    "scored": 66,
-    "passed": 9
+    "totalFetched": 199,
+    "afterDedup": 174,
+    "big4Rejected": 2,
+    "englishOnly": 170,
+    "withinRecency": 79,
+    "scored": 79,
+    "passed": 8
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "Gulf Hotels Group&#8217;s net profit halved in the first quarter after an Iranian strike damaged one of its prime properties in Manama. Net profit dropped to BD1.2 million ($3.2 million) in the quarter ended March 31, from BD2.5 million a year earlier, the hospitality company said in a statement to the Bahrain Bourse. Revenue fell [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,7 +43,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 32,
+        "hoursAgo": 35,
         "score": 6.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -57,7 +57,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 55,
+        "hoursAgo": 59,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -69,21 +69,9 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 7,
         "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE announces extension of e-invoicing provider deadline to October 2026 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2RHNHJtZGtkN2s1aG9hT3ZOWVB6ZElGd19hektnWERfSUxzZnBDSm9RTERQaWRzMG1XdndHeU1LdU9SamlKMmw3WEhIX2FOSVdVZ0gwTkhJa25ZZDdpUGpCY29tbnZTUnBNQXd4MXZWRkNwb3lNSFRCQklPaEp6S3ducnRSVk9kUUVjZmEwNTRsOWJpYzJLZ29uWThyUGh5OGRpUWVXSHBZNTJUcWV2V1Rqb9IBwwFBVV95cUxPY1NEWUY2UkhQei1CU0hjMnFpd1JtR2pvLXdrb0tiQ1k1OFFWZWdLdGU0a09yZkVRaEZrNzdCM080SWJhaFBBLWkyWnQ3ZzdGejl5SjJTcy0xdkE4ejQtV0RSeVJmbWJOeWc0aDhwV3k1MkxyM1RhTm5oVzJXR3N0cDc5X1FHdGtmcTMyRXlmdEtlcG9EbmtScGZKMEFjSUo2Y0wxdDJhVHp6SXNKMXJSQ0c4QzZ4OWF5eExxOE1jdGtzbEk?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-10",
-        "description": "UAE announces extension of e-invoicing provider deadline to October 2026  Gulf News",
-        "hoursAgo": 72,
-        "score": 6,
-        "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
@@ -93,7 +81,7 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "Dubai Taxi Company, a subsidiary of the emirate’s transport regulator, has agreed to buy National Taxi, which operates in Dubai, Abu Dhabi and Al Ain. The deal is valued at AED1.45 billion ($395 million). It will be funded through new bank debt facilities without any new equity issuance, DTC said in a statement to the [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -105,7 +93,7 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "TruKKer, the Abu Dhabi-based logistics company, has secured up to $300 million to help grow its trucking and digital business. The funding from Abu Dhabi Commercial Bank is tied to money TruKKer is owed by customers for completed deliveries and will be used to expand its network of transport operators and technology platform. The financial [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -117,7 +105,7 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "Morocco is allocating MAD3 billion ($330 million) per month to subsidise spiralling energy prices following Iran&#8217;s effective closure of the Strait of Hormuz. The country is almost entirely reliant on oil and gas imports and the allocations are putting great pressure on the national coffers, budget minister Fouzi Lekjaa said. But he told parliament that the [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -131,12 +119,12 @@
         "domain": "gulfnews.com",
         "date": "2026-05-13",
         "description": "ThinkProp launches UAE’s first AI Academy for real estate professionals  Gulf News",
-        "hoursAgo": 8,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 9
+  "totalCount": 8
 }
