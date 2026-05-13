@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-12T21:19:31.530Z",
+  "generatedAt": "2026-05-13T02:54:38.328Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 201,
-    "big4Rejected": 4,
-    "englishOnly": 173,
-    "withinRecency": 78,
-    "scored": 78,
-    "passed": 14
+    "totalFetched": 170,
+    "afterDedup": 153,
+    "big4Rejected": 1,
+    "englishOnly": 152,
+    "withinRecency": 63,
+    "scored": 63,
+    "passed": 13
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "A subsidiary of Dubai Holding has become Emaar Properties&#8217; largest shareholder after acquiring the Investment Corporation of Dubai’s (ICD) entire stake. Following completion of the deal,&#160;Dubai Holding has increased its share of Emaar to nearly 30 percent, having taken ICD’s 22.27 percent holding. Dubai Holding subsidiary Emirates Power Investment now owns 22.27 percent, while EITL [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "zawya.com",
         "date": "2026-05-12",
         "description": "Dubai Holding and ICD announce completion of strategic transaction in Emaar Properties  ZAWYA",
-        "hoursAgo": 6,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -54,7 +54,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Abu Dhabi sovereign wealth fund Mubadala will invest $325 million (AED1.2 billion) in an offshore wind farm in the United Kingdom as part of its strategy to take stakes in high-quality global infrastructure assets. The investment in Hornsea 3, developed by Danish energy company Ørsted, is being channelled through a consortium led by New York-based Apollo-managed [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "uae-rss"
@@ -68,7 +68,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Dubai Electricity and Water Authority (Dewa) said revenue hit a new high in the first quarter, driving net earnings up by almost 90 percent despite the Iran war. Revenue rose over 8 percent to AED8.2 billion ($2.2 billion) in the three months ending on March 31, driven by sustained demand for electricity, water and cooling [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 14,
         "score": 9,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -80,7 +80,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -92,7 +92,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Earnings at Dubai toll operator Salik during March fell due to less traffic, with total revenue falling 3 percent year on year to AED729 million ($199 million). However the company added that the Iran war&#8217;s impact on March performance was partly offset by a growth in tag activation fees and other revenue streams. Revenue from [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -104,7 +104,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Dubai real estate company Deyaar Development said revenue increased in the first quarter of 2026, as growth in property and facility management offset a slowdown in the hospitality segment. The top line rose just over 3 percent year on year to AED447 million ($122 million), the developer said in a statement to the Dubai Financial [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -116,7 +116,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-12",
         "description": "UAE labour market keeps booming with 2.5% workforce growth  Gulf News",
-        "hoursAgo": 5,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -128,7 +128,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "The Saudi budget stands to benefit from an increase in oil revenues, economists say, following bullish statements by state-owned oil giant Aramco. The company reported its highest quarterly profit in three years for the first quarter and expects second-quarter earnings to be even higher. While shipping disruption in the Strait of Hormuz has curbed export [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -142,7 +142,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 34,
+        "hoursAgo": 40,
         "score": 7.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -154,19 +154,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Middle East oil producers are accelerating investment plans despite regional conflict and shipping disruption, with Gulf states pushing ahead on major upstream expansion projects aimed at boosting energy security and diversifying export infrastructure. Oilfield services company National Energy Services Reunited (NESR) said its customers across Saudi Arabia, the UAE, Kuwait and North Africa had maintained [&#8230;]",
-        "hoursAgo": 12,
-        "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Saudi crude exports to China set for record low",
-        "url": "https://www.agbi.com/energy/2026/05/saudi-crude-exports-to-china-set-for-record-low/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-12",
-        "description": "Saudi Arabia&#8217;s crude exports to China were expected to fall again in June after buyers cut nominations because prices stayed high during the US-Iran conflict, trade sources said. State energy company Saudi Aramco was set to ship about 10 million barrels of oil to customers in China next month, or about 333,000 barrels per day [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 18,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -178,7 +166,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-10",
         "description": "UAE announces extension of e-invoicing provider deadline to October 2026  Gulf News",
-        "hoursAgo": 51,
+        "hoursAgo": 57,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -192,12 +180,12 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Jordan has signed an agreement with a joint UAE-Polish venture to build its first green ammonia plant at a cost of about $1 billion. The Jordan Green Ammonia Company, which is owned by the UAE-based developer Fidelity industrial and Poland’s Hynfra, will construct the plant in the southern port of Aqaba. The project has a [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 16,
         "score": 8,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 14
+  "totalCount": 13
 }
