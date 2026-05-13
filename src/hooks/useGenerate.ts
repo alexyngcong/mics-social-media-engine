@@ -41,7 +41,13 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
 
   const generate = useCallback(
     async (customTopic?: string) => {
-      const { room, postType, platform } = store;
+      // Read LIVE state at call time — the captured `store` snapshot can be
+      // stale when callers set state and then trigger generate via setTimeout
+      // (e.g. ServicePicker sets room/postType/customTopic then defers
+      // generate). Reading from the global Zustand store avoids that.
+      const live = useAppStore.getState();
+      const { room, postType, platform } = live;
+      const topicToUse = customTopic ?? live.customTopic ?? undefined;
       if (!room) return;
 
       store.setLoading(true);
@@ -61,10 +67,10 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
         //     generate directly from the brief — bypasses news fetch
         //     and uses the brief's CFO implication as body content.
         //   - Otherwise: fetch live news from approved sources.
-        const briefItem = store.selectedBriefItem;
+        const briefItem = live.selectedBriefItem;
         const parsed = briefItem
           ? await generateFromBrief(briefItem, room, postTypeId)
-          : await generateContent(room, postTypeId, customTopic);
+          : await generateContent(room, postTypeId, topicToUse);
 
         if (!parsed.text && !parsed.headline) {
           store.setError('No content generated. Try a different topic.');
@@ -130,7 +136,9 @@ export function useGenerate(addHistoryItem: (item: HistoryItem) => void) {
       }
       store.setLoading(false);
     },
-    [store.room, store.postType, store.platform, addHistoryItem]
+    // Deps reduced — generate reads live state via useAppStore.getState()
+    // so it doesn't need to re-create when room/postType/platform change.
+    [addHistoryItem]
   );
 
   return { generate };
