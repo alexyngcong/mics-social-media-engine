@@ -1,42 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-13T10:26:19.904Z",
+  "generatedAt": "2026-05-13T14:29:48.748Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
-    "uaeRss": 0
+    "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 150,
-    "big4Rejected": 4,
-    "englishOnly": 146,
-    "withinRecency": 53,
-    "scored": 53,
-    "passed": 6
+    "totalFetched": 270,
+    "afterDedup": 215,
+    "big4Rejected": 5,
+    "englishOnly": 180,
+    "withinRecency": 88,
+    "scored": 88,
+    "passed": 10
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Dubai Holding and ICD announce completion of strategic transaction in Emaar Properties - ZAWYA",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxON2gwSDlBUF9mbjlyWEc5cjRHalpiQkFaTzk0eUhaRWQ1b2JZNjRDWmsxMmJGaEFleHdxX01rWVc4NHRGbVNveGNlTWRkTEZaX2huWktWbGx4SXF5NTJNdlZTS3Z0b3pRUExadXVxUjAydzBWNnR2OFdPWi10Um0tVjRMZE5zaHVaQnhIUmdjdzlwMV9UcThjWWx4Q1pNQU1nTHpYSnAzQkdRMVRCV0dtLUxZcG0ya0lRclJwXzk3ZFJXNkJkQmZlVnJCUGQ5ZGt0V29QT3hqbmp1cjBQS1NvUVVkOA?oc=5",
-        "source": "ZAWYA",
-        "domain": "zawya.com",
-        "date": "2026-05-12",
-        "description": "Dubai Holding and ICD announce completion of strategic transaction in Emaar Properties  ZAWYA",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [
+      {
+        "title": "Gulf Hotels’ profit drops after Iranian airstrike on Manama",
+        "url": "https://www.agbi.com/leisure-hospitality/2026/05/gulf-hotels-profit-drops-after-closure-on-iran-strike/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-13",
+        "description": "Gulf Hotels Group&#8217;s net profit halved in the first quarter after an Iranian strike damaged one of its prime properties in Manama. Net profit dropped to BD1.2 million ($3.2 million) in the quarter ended March 31, from BD2.5 million a year earlier, the hospitality company said in a statement to the Bahrain Bourse. Revenue fell [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
       {
         "title": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai - Emirates 24|7",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQ2cwcm5WenNPMTdXbUhXbk9nREM5RUVNejZzZ01NeGxXZkR5VnhGb29TRmtlYjJXWXUyYm45d1ItUjZDSENoek9kdGJYNjZMSGlJdF9iTDlNM1NZWC0yZUN5RWdBcWQ0MnNDUm9YeVJjYWpYR3JkeEItOWhFaXZRdzljMWUxSjl2VDNTdmx5YnB2cDZMcDU2R3h0eTlGS1NoTDItN0o1bjc0UGPSAcYBQVVfeXFMTzF6eklHc3JQU21xYTNRYkczR1Vpa2N5eXdvcHQzQXFPTkExMnFOYlV0V1JfZWxfT0VPTFRHRzFCMkQ3bFpYQ2V2NXF3UXROUHFvOG5BdHZqd21pZGNwaHR5bzd1b0ZfYmxtX0pOVEVicUdhbUF3NlNXTDNEU2dtQlVnTDluZWllUGRTdGRnS0t6RmFybVpYQk1FOGJub050cDgyWHRIZG5yZmFSd3NudzlWNjNsQUZKdkd5WmhfdmZMZWF4VG9n?oc=5",
@@ -44,8 +43,8 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 24,
-        "score": 7,
+        "hoursAgo": 29,
+        "score": 6.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
       },
@@ -56,7 +55,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-12",
         "description": "UAE labour market keeps booming with 2.5% workforce growth  Gulf News",
-        "hoursAgo": 18,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -70,9 +69,21 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 48,
-        "score": 7.5,
+        "hoursAgo": 52,
+        "score": 7,
         "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdk1LaXFaR1pIZXBTSk5iZVB5RGFrN3F1eGhHQUd6OFltN0dXVWxmWlNFS3VwRUVCYkdnV0xadjV2ak83cVZneU40UXVkUFUwUS13NDZaaVpXY3hSMldNZldzUFc3RTJVd1pNazVWWjRMZVNLQWhWWG91NjM5QVpJWUU0eWpwbTcwdFk1ZTdhUExVNFQxYzJsSUZ0Qk8wTnVWTlF6ek5ZSkhYTG9UTEF5bDVDaDZxQVE?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-05-13",
+        "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
+        "hoursAgo": 3,
+        "score": 7,
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       },
       {
@@ -82,10 +93,46 @@
         "domain": "gulfnews.com",
         "date": "2026-05-10",
         "description": "UAE announces extension of e-invoicing provider deadline to October 2026  Gulf News",
-        "hoursAgo": 64,
+        "hoursAgo": 69,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
+      },
+      {
+        "title": "Dubai Taxi buys rival for $395m",
+        "url": "https://www.agbi.com/transport/2026/05/dubai-taxi-buys-rival-for-395m/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-13",
+        "description": "Dubai Taxi Company, a subsidiary of the emirate’s transport regulator, has agreed to buy National Taxi, which operates in Dubai, Abu Dhabi and Al Ain. The deal is valued at AED1.45 billion ($395 million). It will be funded through new bank debt facilities without any new equity issuance, DTC said in a statement to the [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "TruKKer secures $300m to drive network expansion",
+        "url": "https://www.agbi.com/logistics/2026/05/trukker-secures-300m-to-drive-network-expansion/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-13",
+        "description": "TruKKer, the Abu Dhabi-based logistics company, has secured up to $300 million to help grow its trucking and digital business. The funding from Abu Dhabi Commercial Bank is tied to money TruKKer is owed by customers for completed deliveries and will be used to expand its network of transport operators and technology platform. The financial [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Supply Chain Disruption",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Iran war costing Morocco $330m a month in energy subsidies",
+        "url": "https://www.agbi.com/oil-and-gas/2026/05/iran-war-costing-morocco-330m-a-month-in-energy-subsidies/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-13",
+        "description": "Morocco is allocating MAD3 billion ($330 million) per month to subsidise spiralling energy prices following Iran&#8217;s effective closure of the Strait of Hormuz. The country is almost entirely reliant on oil and gas imports and the allocations are putting great pressure on the national coffers, budget minister Fouzi Lekjaa said. But he told parliament that the [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
       }
     ],
     "world": [
@@ -96,12 +143,12 @@
         "domain": "gulfnews.com",
         "date": "2026-05-13",
         "description": "ThinkProp launches UAE’s first AI Academy for real estate professionals  Gulf News",
-        "hoursAgo": 1,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 10
 }
