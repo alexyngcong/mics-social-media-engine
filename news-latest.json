@@ -1,40 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-13T02:54:38.328Z",
+  "generatedAt": "2026-05-13T06:46:48.400Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 153,
-    "big4Rejected": 1,
-    "englishOnly": 152,
-    "withinRecency": 63,
-    "scored": 63,
-    "passed": 13
+    "totalFetched": 270,
+    "afterDedup": 204,
+    "big4Rejected": 4,
+    "englishOnly": 172,
+    "withinRecency": 82,
+    "scored": 82,
+    "passed": 14
   },
   "rooms": {
     "growth": [
-      {
-        "title": "Dubai Holding becomes Emaar&#8217;s largest stakeholder",
-        "url": "https://www.agbi.com/real-estate/2026/05/dubai-holding-becomes-emaars-largest-stakeholder/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-12",
-        "description": "A subsidiary of Dubai Holding has become Emaar Properties&#8217; largest shareholder after acquiring the Investment Corporation of Dubai’s (ICD) entire stake. Following completion of the deal,&#160;Dubai Holding has increased its share of Emaar to nearly 30 percent, having taken ICD’s 22.27 percent holding. Dubai Holding subsidiary Emirates Power Investment now owns 22.27 percent, while EITL [&#8230;]",
-        "hoursAgo": 19,
-        "score": 7,
-        "topic": "Real Estate & Construction",
-        "origin": "uae-rss"
-      },
       {
         "title": "Dubai Holding and ICD announce completion of strategic transaction in Emaar Properties - ZAWYA",
         "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxON2gwSDlBUF9mbjlyWEc5cjRHalpiQkFaTzk0eUhaRWQ1b2JZNjRDWmsxMmJGaEFleHdxX01rWVc4NHRGbVNveGNlTWRkTEZaX2huWktWbGx4SXF5NTJNdlZTS3Z0b3pRUExadXVxUjAydzBWNnR2OFdPWi10Um0tVjRMZE5zaHVaQnhIUmdjdzlwMV9UcThjWWx4Q1pNQU1nTHpYSnAzQkdRMVRCV0dtLUxZcG0ya0lRclJwXzk3ZFJXNkJkQmZlVnJCUGQ5ZGt0V29QT3hqbmp1cjBQS1NvUVVkOA?oc=5",
@@ -42,7 +30,7 @@
         "domain": "zawya.com",
         "date": "2026-05-12",
         "description": "Dubai Holding and ICD announce completion of strategic transaction in Emaar Properties  ZAWYA",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -54,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Abu Dhabi sovereign wealth fund Mubadala will invest $325 million (AED1.2 billion) in an offshore wind farm in the United Kingdom as part of its strategy to take stakes in high-quality global infrastructure assets. The investment in Hornsea 3, developed by Danish energy company Ørsted, is being channelled through a consortium led by New York-based Apollo-managed [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "uae-rss"
@@ -62,13 +50,25 @@
     ],
     "capital": [
       {
+        "title": "Alba’s sales hit by Iran war but profit up 316%",
+        "url": "https://www.agbi.com/finance/2026/05/albas-sales-hit-by-iran-war-but-profit-up-316/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-13",
+        "description": "Aluminum Bahrain (Alba) said sales volume fell in the first quarter of 2026 due to the Iran conflict, which disrupted shipping routes through the Strait of Hormuz. However, profit attributable to equity holders rose 316 percent year on year to BD75 million ($200 million) in the quarter ended March 31, after average prices surged 22 [&#8230;]",
+        "hoursAgo": 1,
+        "score": 9,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Dewa profit doubles as revenue crosses $2bn",
         "url": "https://www.agbi.com/utilities/2026/05/dewa-profit-doubles-as-revenue-crosses-2bn/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Dubai Electricity and Water Authority (Dewa) said revenue hit a new high in the first quarter, driving net earnings up by almost 90 percent despite the Iran war. Revenue rose over 8 percent to AED8.2 billion ($2.2 billion) in the three months ending on March 31, driven by sustained demand for electricity, water and cooling [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 9,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -80,10 +80,22 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
+      },
+      {
+        "title": "New service stations fuel Adnoc Distribution profit jump",
+        "url": "https://www.agbi.com/energy/2026/05/new-service-stations-fuel-adnoc-distribution-profit-jump/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-13",
+        "description": "Adnoc Distribution, the Abu Dhabi-based fuel and convenience retailer, said net profit jumped in the first quarter of 2026, supported by new service stations and fuel volume growth. Net profit rose by 21 percent year on year to AED771 million ($210 million) between January and March, as revenue rose 14 percent annually to AED8.8 billion, [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
       },
       {
         "title": "Salik&#8217;s revenue falls 3% with lower Dubai traffic in March",
@@ -92,19 +104,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Earnings at Dubai toll operator Salik during March fell due to less traffic, with total revenue falling 3 percent year on year to AED729 million ($199 million). However the company added that the Iran war&#8217;s impact on March performance was partly offset by a growth in tag activation fees and other revenue streams. Revenue from [&#8230;]",
-        "hoursAgo": 19,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Deyaar revenue rises 3% despite hospitality slump",
-        "url": "https://www.agbi.com/real-estate/2026/05/deyaar-revenue-rises-3-despite-hospitality-slump/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-12",
-        "description": "Dubai real estate company Deyaar Development said revenue increased in the first quarter of 2026, as growth in property and facility management offset a slowdown in the hospitality segment. The top line rose just over 3 percent year on year to AED447 million ($122 million), the developer said in a statement to the Dubai Financial [&#8230;]",
-        "hoursAgo": 20,
+        "hoursAgo": 23,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -116,7 +116,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-12",
         "description": "UAE labour market keeps booming with 2.5% workforce growth  Gulf News",
-        "hoursAgo": 10,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -128,7 +128,7 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "The Saudi budget stands to benefit from an increase in oil revenues, economists say, following bullish statements by state-owned oil giant Aramco. The company reported its highest quarterly profit in three years for the first quarter and expects second-quarter earnings to be even higher. While shipping disruption in the Strait of Hormuz has curbed export [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -142,7 +142,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 40,
+        "hoursAgo": 44,
         "score": 7.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -154,10 +154,22 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Middle East oil producers are accelerating investment plans despite regional conflict and shipping disruption, with Gulf states pushing ahead on major upstream expansion projects aimed at boosting energy security and diversifying export infrastructure. Oilfield services company National Energy Services Reunited (NESR) said its customers across Saudi Arabia, the UAE, Kuwait and North Africa had maintained [&#8230;]",
-        "hoursAgo": 18,
+        "hoursAgo": 22,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
+      },
+      {
+        "title": "UAE e-invoicing deadline extended: What this means for businesses now - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQzdHZ0hkMWZIa3BVd29DVnJuUk1ZSHI4TWVXZVJKdWdCTFVUczkzWENaY3Q0eXlUNVVlVk5KdzlJSG5KN2JIWFItTUlnbWFsUjJaNEFTSXVMdFgzTDJNeWdWeGFSVjZSaHI1UEVnWkV4YVdINzhiVTh3Y3dpa25VMTA5b0NIOGRvT3Nydnh6ZHpnMWhtTlhKOXJ2VjZPM1BramQtaFBnTXNmbVRjS3RWaVRjSGFhT2k1Y2Y00gHOAUFVX3lxTFA5RlFaNmFhbDZwbXl5UlpLb2V4dG1GVzJVT1lHTUlRWG1NQ3ZBUHhvTzYtcUpxMlNJY1htM2w1VnhBcHhTeElxNkNhUlRZYjNOZ3FxTTNjZHJQWXVwX092Zmt2TDg2RjhVWkk3S0FqelFtMzN0cUVoTG5fbm1NMzdtd3JCZnFpNjRMVDBUZU4wQWJJS0NrQnVBVUV2ODh3OGtSZDJIYktGNld0eXVJZ3h4NHQtUXdMc1V1TkZpLTU5bWdQMWR2M0g3RnBXdHJ3?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-10",
+        "description": "UAE e-invoicing deadline extended: What this means for businesses now  Gulf News",
+        "hoursAgo": 55,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
       },
       {
         "title": "UAE announces extension of e-invoicing provider deadline to October 2026 - Gulf News",
@@ -166,7 +178,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-10",
         "description": "UAE announces extension of e-invoicing provider deadline to October 2026  Gulf News",
-        "hoursAgo": 57,
+        "hoursAgo": 61,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -180,12 +192,12 @@
         "domain": "agbi.com",
         "date": "2026-05-12",
         "description": "Jordan has signed an agreement with a joint UAE-Polish venture to build its first green ammonia plant at a cost of about $1 billion. The Jordan Green Ammonia Company, which is owned by the UAE-based developer Fidelity industrial and Poland’s Hynfra, will construct the plant in the southern port of Aqaba. The project has a [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 8,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 13
+  "totalCount": 14
 }
