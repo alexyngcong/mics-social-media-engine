@@ -29,6 +29,8 @@ interface AppState {
   pendingIntelligenceItem: IntelligenceItem | null;
   /** BannerDoc the user clicked "Open in editor" on (from a kit card). Used by BannerEditor. */
   pendingBannerDoc: BannerDoc | null;
+  /** Service-picker preset to apply when ServicePicker mounts (e.g. 'compliance'). */
+  pendingServicePreset: 'compliance' | 'corporate_finance' | 'wealth_management' | null;
 
   setStep: (step: number) => void;
   setPlatform: (p: PlatformId) => void;
@@ -49,6 +51,7 @@ interface AppState {
   setSelectedBriefItem: (item: BriefItem | null) => void;
   setPendingIntelligenceItem: (item: IntelligenceItem | null) => void;
   setPendingBannerDoc: (doc: BannerDoc | null) => void;
+  setPendingServicePreset: (p: AppState['pendingServicePreset']) => void;
   clearBrief: () => void;
   reset: () => void;
 }
@@ -73,6 +76,7 @@ const initialState = {
   selectedBriefItem: null as BriefItem | null,
   pendingIntelligenceItem: null as IntelligenceItem | null,
   pendingBannerDoc: null as BannerDoc | null,
+  pendingServicePreset: null as AppState['pendingServicePreset'],
 };
 
 export const useAppStore = create<AppState>((set) => ({
@@ -98,6 +102,7 @@ export const useAppStore = create<AppState>((set) => ({
   setSelectedBriefItem: (selectedBriefItem) => set({ selectedBriefItem }),
   setPendingIntelligenceItem: (pendingIntelligenceItem) => set({ pendingIntelligenceItem }),
   setPendingBannerDoc: (pendingBannerDoc) => set({ pendingBannerDoc }),
+  setPendingServicePreset: (pendingServicePreset) => set({ pendingServicePreset }),
   clearBrief: () => set({ brief: null, selectedBriefItem: null }),
   reset: () => set(initialState),
 }));

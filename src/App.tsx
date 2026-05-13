@@ -19,6 +19,7 @@ import { BriefImport } from './components/steps/BriefImport';
 import { AIBriefPaste } from './components/steps/AIBriefPaste';
 import { WeeklyKit } from './components/steps/WeeklyKit';
 import { BannerEditor } from './components/editor/BannerEditor';
+import { ServicePicker } from './components/steps/ServicePicker';
 import { CalendarView } from './components/calendar/CalendarView';
 import { DayDetail } from './components/calendar/DayDetail';
 import { Button } from './components/ui/Button';
@@ -35,6 +36,7 @@ function getStepTitle(step: number): string {
     case 12: return 'Paste AI Brief Response';
     case 13: return 'Weekly Posting Kit';
     case 14: return 'Banner Editor';
+    case 15: return 'Generate by Service';
     default: return '';
   }
 }
@@ -94,6 +96,7 @@ export default function App() {
         {store.step === 12 && <AIBriefPaste />}
         {store.step === 13 && <WeeklyKit />}
         {store.step === 14 && <BannerEditor />}
+        {store.step === 15 && <ServicePicker onGenerate={() => generate(store.customTopic)} />}
 
         {store.step === 3 && store.loading && <LoadingState />}
 

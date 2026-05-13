@@ -98,7 +98,10 @@
       "Bash(curl -sSI \"https://alexyngcong.github.io/mics-social-media-engine/kit/post-1-hormuz.svg\")",
       "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'schemaVersion: {d.get\\(\\\\\"schemaVersion\\\\\"\\)}'\\); print\\(f'totalCount: {d.get\\(\\\\\"totalCount\\\\\"\\)}'\\); print\\(f'first post slug: {d[\\\\\"posts\\\\\"][0].get\\(\\\\\"slug\\\\\"\\)}'\\); print\\(f'first post type: {d[\\\\\"posts\\\\\"][0].get\\(\\\\\"postType\\\\\", \\\\\"NOT SET\\\\\"\\)}'\\)\")",
       "Bash(grep -E \"^\\(dist/|news-latest\\\\.json$\\)\")",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(ls -lh /c/Users/Admin/Desktop/ 2>&1 | grep -iE \"growth|capital|risk|world|zip\" | head -20 *)",
+      "Bash(unzip -l \"{Growth_Signals,Capital_Treasury,Risk_Compliance,World_Pulse}.zip\")",
+      "PowerShell($env:Path = \"C:\\\\Users\\\\Admin\\\\nodejs\\\\node-v20.18.1-win-x64;\" + $env:Path; npx vite build 2>&1 | Select-Object -Last 30)"
     ]
   }
 }

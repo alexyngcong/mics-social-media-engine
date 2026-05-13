@@ -125,6 +125,53 @@ export function CommandCenter({ history }: CommandCenterProps) {
         </Button>
       </Card>
 
+      {/* Generate by Service — service-led post generation. Opens the
+          ServicePicker (step 15) where the user picks any combination of
+          the 42 canonical MICS services. Topic + room + advisory anchor
+          are synthesized from the selection. Two fast paths: pick freely
+          ("Customize") or one-click the full Operational Compliance pillar
+          ("All Compliance"). */}
+      <Card className="!bg-gradient-to-br !from-signal-red/10 !to-ink-card !border-signal-red/30 !mb-3">
+        <div className="flex items-center justify-between mb-1.5">
+          <div className="text-[10px] font-bold tracking-wider text-signal-red">
+            🎯 GENERATE BY SERVICE
+          </div>
+          <span className="text-[9px] tracking-wider px-1.5 py-0.5 rounded-full bg-bronze/10 border border-bronze/30 text-bronze font-bold">
+            42 SERVICES
+          </span>
+        </div>
+        <div className="text-tx text-[13px] font-semibold mb-1">
+          Pick the services. We&rsquo;ll build the post.
+        </div>
+        <div className="text-tx-mid text-[11px] leading-relaxed mb-2.5">
+          Choose one or many services from the MICS catalog &mdash; the engine fetches
+          relevant live news, routes to the right room, and anchors the post
+          on the strongest matching track record.
+        </div>
+        <div className="grid grid-cols-2 gap-2">
+          <Button
+            variant="ghost"
+            onClick={() => {
+              useAppStore.getState().setPendingServicePreset(null);
+              startFresh(15);
+            }}
+            className="!py-2.5 !text-[12px] !border-bronze/40 !text-bronze hover:!bg-bronze/10"
+          >
+            🎯 Customize →
+          </Button>
+          <Button
+            variant="danger"
+            onClick={() => {
+              useAppStore.getState().setPendingServicePreset('compliance');
+              startFresh(15);
+            }}
+            className="!py-2.5 !text-[12px]"
+          >
+            🛡️ All Compliance →
+          </Button>
+        </div>
+      </Card>
+
       {/* ━━━ PRIMARY VIEW — INTELLIGENCE FEED ━━━━━━━━━━━━━━━━━━━━
           Live items from the GitHub Actions news pipeline.
           Each card has a One-Click AI Brief button:
