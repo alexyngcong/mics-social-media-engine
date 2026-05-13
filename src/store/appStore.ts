@@ -4,6 +4,7 @@ import type {
   ImportedBrief, BriefItem, IntelligenceItem,
 } from '../types';
 import type { BannerDoc } from '../components/editor/bannerTypes';
+import type { ImportPayload } from '../services/importHandler';
 
 interface AppState {
   step: number;
@@ -31,6 +32,8 @@ interface AppState {
   pendingBannerDoc: BannerDoc | null;
   /** Service-picker preset to apply when ServicePicker mounts (e.g. 'compliance'). */
   pendingServicePreset: 'compliance' | 'corporate_finance' | 'wealth_management' | null;
+  /** Payload received via the Claude.ai bookmarklet — auto-fills AIBriefPaste. */
+  pendingImportPayload: ImportPayload | null;
 
   setStep: (step: number) => void;
   setPlatform: (p: PlatformId) => void;
@@ -52,6 +55,7 @@ interface AppState {
   setPendingIntelligenceItem: (item: IntelligenceItem | null) => void;
   setPendingBannerDoc: (doc: BannerDoc | null) => void;
   setPendingServicePreset: (p: AppState['pendingServicePreset']) => void;
+  setPendingImportPayload: (p: ImportPayload | null) => void;
   clearBrief: () => void;
   reset: () => void;
 }
@@ -77,6 +81,7 @@ const initialState = {
   pendingIntelligenceItem: null as IntelligenceItem | null,
   pendingBannerDoc: null as BannerDoc | null,
   pendingServicePreset: null as AppState['pendingServicePreset'],
+  pendingImportPayload: null as ImportPayload | null,
 };
 
 export const useAppStore = create<AppState>((set) => ({
@@ -103,6 +108,7 @@ export const useAppStore = create<AppState>((set) => ({
   setPendingIntelligenceItem: (pendingIntelligenceItem) => set({ pendingIntelligenceItem }),
   setPendingBannerDoc: (pendingBannerDoc) => set({ pendingBannerDoc }),
   setPendingServicePreset: (pendingServicePreset) => set({ pendingServicePreset }),
+  setPendingImportPayload: (pendingImportPayload) => set({ pendingImportPayload }),
   clearBrief: () => set({ brief: null, selectedBriefItem: null }),
   reset: () => set(initialState),
 }));

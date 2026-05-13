@@ -13,7 +13,7 @@
  * `## LINKEDIN POST`, etc.) and extracts the 17 fields defined in AIBrief.
  */
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useAppStore } from '../../store/appStore';
 import { parseAIBriefResponse, getBriefCompleteness } from '../../services/aiResponseParser';
 import { autoFixPost, validatePost } from '../../services/qaValidator';
@@ -22,7 +22,8 @@ import { Card } from '../ui/Card';
 import { Label, StepLabel } from '../ui/Label';
 import { TEMPLATE_COUNT } from '../banner/templates';
 import { ROOMS } from '../../config/rooms';
-import type { AIBrief, GeneratedPost, RoomId } from '../../types';
+import { dateFormatted } from '../../config/brand';
+import type { AIBrief, GeneratedPost, IntelligenceItem, RoomId } from '../../types';
 
 const PASTE_HINT = `Paste the FULL Claude response here.
 
@@ -37,11 +38,51 @@ extra formatting, blank lines, and minor variations.`;
 
 export function AIBriefPaste() {
   const store = useAppStore();
-  const item = store.pendingIntelligenceItem;
+  const importPayload = store.pendingImportPayload;
+
+  // If a bookmarklet import landed without an intelligence-item context,
+  // synthesize a placeholder item so the rest of the component (which
+  // expects `item`) keeps working.
+  const fallbackItem: IntelligenceItem | null = importPayload
+    ? {
+        title: importPayload.title || 'Imported Claude brief',
+        url: '',
+        source: 'Claude.ai',
+        domain: 'claude.ai',
+        date: dateFormatted.short,
+        description: 'Imported via Claude.ai bookmarklet',
+        hoursAgo: 0,
+        score: 0,
+        topic: '',
+        origin: 'claude-import',
+      }
+    : null;
+
+  const item: IntelligenceItem | null = store.pendingIntelligenceItem || fallbackItem;
 
   const [raw, setRaw] = useState('');
   const [parseError, setParseError] = useState('');
   const [previewBrief, setPreviewBrief] = useState<AIBrief | null>(null);
+  // Track whether we've already consumed a payload to avoid loops.
+  const autoFilledRef = useRef(false);
+
+  // Auto-fill + auto-parse when a bookmarklet payload is waiting.
+  useEffect(() => {
+    if (!importPayload || autoFilledRef.current) return;
+    autoFilledRef.current = true;
+    setRaw(importPayload.raw);
+    // Clear so a back-nav doesn't re-trigger
+    store.setPendingImportPayload(null);
+    // Defer parse to next tick so `raw` state has flushed
+    setTimeout(() => {
+      const brief = parseAIBriefResponse(importPayload.raw);
+      const { found } = getBriefCompleteness(brief);
+      if (found > 0 && (brief.whatsappUpdate || brief.linkedinPost || brief.executiveSummary)) {
+        setPreviewBrief(brief);
+      }
+    }, 50);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [importPayload]);
 
   if (!item) {
     return (
@@ -51,7 +92,8 @@ export function AIBriefPaste() {
           <div className="text-[12px] text-tx-mid">
             No intelligence item selected. Go back to the home screen and
             click "🤖 Generate AI Brief" on an article first, then return
-            here to paste Claude's response.
+            here to paste Claude's response. (Or set up the Claude.ai
+            bookmarklet from Settings to skip the paste step entirely.)
           </div>
           <Button
             variant="ghost"

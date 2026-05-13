@@ -1,5 +1,6 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useAppStore } from './store/appStore';
+import { readImportFromUrl } from './services/importHandler';
 
 // Build timestamp injected by vite at compile time. If this string in the
 // UI footer doesn't match the time you just deployed, your browser is
@@ -20,6 +21,7 @@ import { AIBriefPaste } from './components/steps/AIBriefPaste';
 import { WeeklyKit } from './components/steps/WeeklyKit';
 import { BannerEditor } from './components/editor/BannerEditor';
 import { ServicePicker } from './components/steps/ServicePicker';
+import { Settings } from './components/steps/Settings';
 import { CalendarView } from './components/calendar/CalendarView';
 import { DayDetail } from './components/calendar/DayDetail';
 import { Button } from './components/ui/Button';
@@ -37,6 +39,7 @@ function getStepTitle(step: number): string {
     case 13: return 'Weekly Posting Kit';
     case 14: return 'Banner Editor';
     case 15: return 'Generate by Service';
+    case 16: return 'Settings';
     default: return '';
   }
 }
@@ -51,6 +54,21 @@ export default function App() {
     store.setStep(3);
     setTimeout(() => generate(), 200);
   };
+
+  // Claude.ai bookmarklet ingestion — on mount, check ?import= in the URL.
+  // If present, decode + stash on the store + route to AIBriefPaste (step 12)
+  // where the auto-fill effect runs the parser.
+  useEffect(() => {
+    (async () => {
+      const payload = await readImportFromUrl();
+      if (payload) {
+        store.setPendingImportPayload(payload);
+        store.setStep(12);
+      }
+    })();
+    // Mount-only — URL params are read once at boot
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="min-h-screen bg-ink font-sans text-tx max-w-[480px] mx-auto flex flex-col">
@@ -97,6 +115,7 @@ export default function App() {
         {store.step === 13 && <WeeklyKit />}
         {store.step === 14 && <BannerEditor />}
         {store.step === 15 && <ServicePicker onGenerate={() => generate(store.customTopic)} />}
+        {store.step === 16 && <Settings />}
 
         {store.step === 3 && store.loading && <LoadingState />}
 

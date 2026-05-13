@@ -327,6 +327,17 @@ export function CommandCenter({ history }: CommandCenterProps) {
         </div>
       </Card>
 
+      {/* Settings & Integrations — discreet footer entry. The Settings
+          page hosts the Claude.ai bookmarklet so the home screen stays
+          uncluttered. */}
+      <button
+        onClick={() => setStep(16)}
+        className="w-full mt-3 px-3 py-2.5 text-left text-[11px] text-tx-dim hover:text-tx-mid border border-ink-border rounded-card hover:border-bronze/30 transition-all flex items-center justify-between"
+      >
+        <span>⚙️ Settings &amp; Integrations</span>
+        <span className="text-[10px] text-tx-ghost">Claude.ai bookmarklet, etc.</span>
+      </button>
+
       {/* History */}
       {history.length > 0 && (
         <div className="mt-4 pt-3.5 border-t border-ink-border">
