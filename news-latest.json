@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-14T14:08:14.770Z",
+  "generatedAt": "2026-05-14T17:49:21.759Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 158,
+    "totalFetched": 270,
+    "afterDedup": 213,
     "big4Rejected": 3,
-    "englishOnly": 155,
-    "withinRecency": 65,
-    "scored": 65,
+    "englishOnly": 177,
+    "withinRecency": 84,
+    "scored": 84,
     "passed": 10
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Aldar, Abu Dhabi’s largest developer, has acquired a residential and community retail development in Dubai Studio City from SRG, a private developer, for AED1.1 billion ($300 million). The project includes six mid-rise buildings featuring 312 residential units, retail, recreational and food and beverage outlets and is set for completion in 2028, the developer said in [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -44,19 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Net profit at Orascom Construction profit more than doubled in the first quarter, supported by new projects. These included data centres in the US and an industrial wastewater treatment facility in Saudi Arabia. Consolidated revenue rose 73 percent year on year to $1.5 billion in the quarter ended March 31, the contractor said in a [&#8230;]",
-        "hoursAgo": 7,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Adnoc L&#038;S revenue slides but net profit higher",
-        "url": "https://www.agbi.com/logistics/2026/05/adnoc-ls-revenues-slide-but-profit-remains-up/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "Adnoc Logistics &#38; Services&#160;(Adnoc L&#38;S) reported a slip in revenue in the first quarter of 2026 but remained in the black despite the Iran conflict. The company reported lower utilisation and reduced day rates across its floating barges. Revenue fell 10 percent year on year to AED4 billion ($1.1 billion), driven by a 23 percent [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -68,7 +56,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 52,
+        "hoursAgo": 56,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -80,7 +68,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Oman India Fertiliser Company (Omifco) is reportedly planning to float on the Muscat stock exchange by next month. The Omani-Indian joint venture has a target valuation of at least $2.5 billion and is planning to sell a 25 percent stake on the local bourse, Bloomberg reported. The company was seeking proposals from banks for its [&#8230;]",
-        "hoursAgo": 0,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -94,19 +82,19 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 26,
+        "hoursAgo": 30,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       },
       {
         "title": "UAE Corporate Tax penalty waiver benefits 68,600 businesses - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQXhKNTFhVENnYzVwZjVyZWhJQXFNY044S1p0eTA5TVBtV19nSFctUEZOOXQzdTR2aXRRU2M1bUJwdlQ0TDlldURzTmFOWEREUlNnNTNmQW1iVlJ2Sl9KRnRoM3Ryc2RUUWxqVl9LeUxrTkg0T0hKNElhRUpZVXF0WXEyQzB4cVBGTGlwMHVXSG9OVkRhVDRuV1VLV3d4Nkgwd2c?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ2pFVWJlbHEwRzFUTkIzSXBzdE94cGhWZFF1c2hTRmROZ0pOeDFWSlFkdUZqalUtUWJfNmQxNTB3cVZQcTI2QmF5Vl9Nb09aYjQ5N21nOWx0ZW16RU43MkhpSHQ0SnpEdmprWGhNTlZVbWNUTFBqSlVKcmJsRmdxbXE1WHpPbFNBMUxLNzY1OFRZUFJtLVN4MC1BbkVPbGNE?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-05-14",
         "description": "UAE Corporate Tax penalty waiver benefits 68,600 businesses  Gulf Business",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -118,7 +106,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-14",
         "description": "UAE corporate tax penalty waiver may benefit 91,000 businesses  Gulf News",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -130,7 +118,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Iraq intends to appoint an independent foreign auditor to oversee compliance by local banks with new capital requirements and the ongoing restructuring of the country’s ailing banking sector. The Central Bank of Iraq (CBI) said it is pushing ahead with reforms as part of a “strategic vision” to strengthen the financial system and enhance the [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -138,13 +126,25 @@
     ],
     "world": [
       {
+        "title": "UAE tops Jordan&#8217;s $1bn expat remittance inflows",
+        "url": "https://www.agbi.com/finance/2026/05/uae-tops-jordans-expat-remittance-inflows/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-14",
+        "description": "The UAE has emerged as the largest source of expat remittances to Jordan in the first quarter of 2026. Total remittances from the Emirates were $276 million, or 23 percent of the $1.2 billion received during the quarter up to the end of March, up 12 percent year on year, the state-run Jordan News Agency [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Abu Dhabi seeks $30bn infrastructure deals with global partners",
         "url": "https://www.agbi.com/infrastructure/2026/05/abu-dhabi-seeks-30bn-infrastructure-deals-with-global-partners/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Abu Dhabi’s wealth fund L’imad and the state-backed Abu Dhabi National Oil Company (Adnoc) have joined forces with two global companies in a plan to invest $30 billion in the infrastructure sector across the GCC and Central Asia. The proposed partnership with US investment company BlackRock’s Global Infrastructure Partners and Singapore’s Temasek will focus on [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
