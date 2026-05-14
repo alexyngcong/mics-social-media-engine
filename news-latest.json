@@ -1,38 +1,50 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-14T06:45:01.320Z",
+  "generatedAt": "2026-05-14T10:14:12.074Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 11,
+    "gdelt": 29,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 181,
-    "afterDedup": 166,
-    "big4Rejected": 3,
-    "englishOnly": 163,
-    "withinRecency": 63,
-    "scored": 63,
-    "passed": 9
+    "totalFetched": 199,
+    "afterDedup": 177,
+    "big4Rejected": 2,
+    "englishOnly": 173,
+    "withinRecency": 78,
+    "scored": 78,
+    "passed": 8
   },
   "rooms": {
     "growth": [],
     "capital": [
       {
-        "title": "An eyebrow-raising set of results for the Gulf sceptics",
-        "url": "https://www.agbi.com/finance/2026/05/an-eyebrow-raising-set-of-results-for-the-gulf-sceptics/",
+        "title": "New projects help to double Orascom Construction net profit",
+        "url": "https://www.agbi.com/construction/2026/05/new-projects-help-to-double-orascom-construction-net-profit/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-13",
-        "description": "Results from some of the big corporate players in the Gulf have flowed in this week. They were perhaps not what we were expecting. In the UAE, developer Emaar said UAE property sales in the first quarter were up over a fifth year on year – despite a month of conflict in those three. Profit [&#8230;]",
-        "hoursAgo": 8,
-        "score": 8,
+        "date": "2026-05-14",
+        "description": "Net profit at Orascom Construction profit more than doubled in the first quarter, supported by new projects. These included data centres in the US and an industrial wastewater treatment facility in Saudi Arabia. Consolidated revenue rose 73 percent year on year to $1.5 billion in the quarter ended March 31, the contractor said in a [&#8230;]",
+        "hoursAgo": 3,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Adnoc L&#038;S revenue slides but net profit higher",
+        "url": "https://www.agbi.com/logistics/2026/05/adnoc-ls-revenues-slide-but-profit-remains-up/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-14",
+        "description": "Adnoc Logistics &#38; Services&#160;(Adnoc L&#38;S) reported a slip in revenue in the first quarter of 2026 but remained in the black despite the Iran conflict. The company reported lower utilisation and reduced day rates across its floating barges. Revenue fell 10 percent year on year to AED4 billion ($1.1 billion), driven by a 23 percent [&#8230;]",
+        "hoursAgo": 4,
+        "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
@@ -42,8 +54,8 @@
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-14",
-        "description": "Kuwait-listed Jazeera Airways swung to a loss after revenue fell in the first quarter due to the closure of Kuwait International Airport. The airport was closed for 57 days, the longest closure of any airport in the region, after an Iranian drone hit the radar system on March 15. The airline reported a net loss [&#8230;]",
-        "hoursAgo": 2,
+        "description": "Kuwait-listed Jazeera Airways swung to a loss after revenue fell in the first quarter due to the closure of Kuwait International Airport. Kuwait International shut for 57 days, the longest closure of any airport in the region, after an Iranian drone hit the radar system on March 15. The airline reported a net loss of [&#8230;]",
+        "hoursAgo": 5,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -55,7 +67,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Drake &#38; Scull International (DSI) said revenue more than doubled in the first quarter, supported by the accelerated execution of projects across its infrastructure and water treatment portfolios. The top line surged 152 percent to AED77 million ($21 million) in the quarter ended March, compared to AED30 million a year earlier, the Dubai-listed engineering and [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -67,7 +79,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 45,
+        "hoursAgo": 48,
         "score": 6.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -81,7 +93,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 68,
+        "hoursAgo": 71,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -93,21 +105,9 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 19,
+        "hoursAgo": 22,
         "score": 7,
         "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE extends e-invoicing provider deadline to Oct 30 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaXAwLUJfcGJYMzlweWJ0R0E0VkNXZ1BBU2ZpY3JvR09ncll3QXdISVRuX2NfVExsSG1UQVBpbVVYWF9YSkJiY04xSER5RXZZSU5sdHRYR3NwN2xJeVNWVWJodGdHeFVKUXFHQ1d1Q3BBdV9kZVkycWhRbE9uSkJfU19ncWVNUHotU3lvRnhscGw4TWpweS1rSGQweWt5UQ?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-05-11",
-        "description": "UAE extends e-invoicing provider deadline to Oct 30  Gulf Business",
-        "hoursAgo": 68,
-        "score": 6,
-        "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
@@ -117,25 +117,13 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Adnoc Drilling is accelerating the expansion of its Gulf fleet despite the geopolitical crisis – and calling for global investment in oil and gas capacity, its chief financial officer has told AGBI. The Abu Dhabi-listed company has accelerated rig deliveries in the UAE, Oman and Kuwait since the Emirates left Opec on May 1. The [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Emerging Risks",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Dubai Taxi buys rival for $395m",
-        "url": "https://www.agbi.com/transport/2026/05/dubai-taxi-buys-rival-for-395m/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-13",
-        "description": "Dubai Taxi Company, a subsidiary of the emirate’s transport regulator, has agreed to buy National Taxi, which operates in Dubai, Abu Dhabi and Al Ain. The deal is valued at AED1.45 billion ($395 million). It will be funded through new bank debt facilities without any new equity issuance, DTC said in a statement to the [&#8230;]",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "Tax & Regulatory",
         "origin": "uae-rss"
       }
     ],
     "world": []
   },
-  "totalCount": 9
+  "totalCount": 8
 }
