@@ -1,29 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-13T21:25:00.748Z",
+  "generatedAt": "2026-05-14T02:55:41.626Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 29,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 199,
-    "afterDedup": 174,
-    "big4Rejected": 2,
-    "englishOnly": 170,
+    "totalFetched": 270,
+    "afterDedup": 210,
+    "big4Rejected": 3,
+    "englishOnly": 173,
     "withinRecency": 79,
     "scored": 79,
-    "passed": 8
+    "passed": 9
   },
   "rooms": {
     "growth": [],
     "capital": [
+      {
+        "title": "An eyebrow-raising set of results for the Gulf sceptics",
+        "url": "https://www.agbi.com/finance/2026/05/an-eyebrow-raising-set-of-results-for-the-gulf-sceptics/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-13",
+        "description": "Results from some of the big corporate players in the Gulf have flowed in this week. They were perhaps not what we were expecting. In the UAE, developer Emaar said UAE property sales in the first quarter were up over a fifth year on year – despite a month of conflict in those three. Profit [&#8230;]",
+        "hoursAgo": 4,
+        "score": 8,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
       {
         "title": "Gulf Hotels’ profit drops after Iranian airstrike on Manama",
         "url": "https://www.agbi.com/leisure-hospitality/2026/05/gulf-hotels-profit-drops-after-closure-on-iran-strike/",
@@ -31,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "Gulf Hotels Group&#8217;s net profit halved in the first quarter after an Iranian strike damaged one of its prime properties in Manama. Net profit dropped to BD1.2 million ($3.2 million) in the quarter ended March 31, from BD2.5 million a year earlier, the hospitality company said in a statement to the Bahrain Bourse. Revenue fell [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,7 +55,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 35,
+        "hoursAgo": 41,
         "score": 6.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -57,7 +69,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 59,
+        "hoursAgo": 64,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -69,10 +81,22 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
+      },
+      {
+        "title": "Crisis is a ‘call to double down’, says Adnoc Drilling CFO",
+        "url": "https://www.agbi.com/oil-and-gas/2026/05/crisis-is-a-call-to-double-down-says-adnoc-drilling-cfo-youssef-salem/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-14",
+        "description": "Adnoc Drilling is accelerating the expansion of its Gulf fleet despite the geopolitical crisis – and calling for global investment in oil and gas capacity, its chief financial officer has told AGBI. The Abu Dhabi-listed company has accelerated rig deliveries in the UAE, Oman and Kuwait since the Emirates left Opec on May 1. The [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Emerging Risks",
+        "origin": "uae-rss"
       },
       {
         "title": "Dubai Taxi buys rival for $395m",
@@ -81,7 +105,7 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "Dubai Taxi Company, a subsidiary of the emirate’s transport regulator, has agreed to buy National Taxi, which operates in Dubai, Abu Dhabi and Al Ain. The deal is valued at AED1.45 billion ($395 million). It will be funded through new bank debt facilities without any new equity issuance, DTC said in a statement to the [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -93,21 +117,9 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "TruKKer, the Abu Dhabi-based logistics company, has secured up to $300 million to help grow its trucking and digital business. The funding from Abu Dhabi Commercial Bank is tied to money TruKKer is owed by customers for completed deliveries and will be used to expand its network of transport operators and technology platform. The financial [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Iran war costing Morocco $330m a month in energy subsidies",
-        "url": "https://www.agbi.com/oil-and-gas/2026/05/iran-war-costing-morocco-330m-a-month-in-energy-subsidies/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-13",
-        "description": "Morocco is allocating MAD3 billion ($330 million) per month to subsidise spiralling energy prices following Iran&#8217;s effective closure of the Strait of Hormuz. The country is almost entirely reliant on oil and gas imports and the allocations are putting great pressure on the national coffers, budget minister Fouzi Lekjaa said. But he told parliament that the [&#8230;]",
-        "hoursAgo": 11,
-        "score": 6,
-        "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
@@ -119,12 +131,12 @@
         "domain": "gulfnews.com",
         "date": "2026-05-13",
         "description": "ThinkProp launches UAE’s first AI Academy for real estate professionals  Gulf News",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 9
 }
