@@ -1,28 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-14T10:14:12.074Z",
+  "generatedAt": "2026-05-14T14:08:14.770Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 29,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 199,
-    "afterDedup": 177,
-    "big4Rejected": 2,
-    "englishOnly": 173,
-    "withinRecency": 78,
-    "scored": 78,
-    "passed": 8
+    "totalFetched": 170,
+    "afterDedup": 158,
+    "big4Rejected": 3,
+    "englishOnly": 155,
+    "withinRecency": 65,
+    "scored": 65,
+    "passed": 10
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Aldar buys project in Dubai Studio City for $300m",
+        "url": "https://www.agbi.com/construction/2026/05/aldar-buys-project-in-dubai-studio-city-for-300m/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-14",
+        "description": "Aldar, Abu Dhabi’s largest developer, has acquired a residential and community retail development in Dubai Studio City from SRG, a private developer, for AED1.1 billion ($300 million). The project includes six mid-rise buildings featuring 312 residential units, retail, recreational and food and beverage outlets and is set for completion in 2028, the developer said in [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "uae-rss"
+      }
+    ],
     "capital": [
       {
         "title": "New projects help to double Orascom Construction net profit",
@@ -31,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Net profit at Orascom Construction profit more than doubled in the first quarter, supported by new projects. These included data centres in the US and an industrial wastewater treatment facility in Saudi Arabia. Consolidated revenue rose 73 percent year on year to $1.5 billion in the quarter ended March 31, the contractor said in a [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,31 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Adnoc Logistics &#38; Services&#160;(Adnoc L&#38;S) reported a slip in revenue in the first quarter of 2026 but remained in the black despite the Iran conflict. The company reported lower utilisation and reduced day rates across its floating barges. Revenue fell 10 percent year on year to AED4 billion ($1.1 billion), driven by a 23 percent [&#8230;]",
-        "hoursAgo": 4,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Jazeera Airways turns to loss after Kuwait airport closure",
-        "url": "https://www.agbi.com/aviation/2026/05/jazeera-airways-turns-to-loss-after-kuwait-airport-closure/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "Kuwait-listed Jazeera Airways swung to a loss after revenue fell in the first quarter due to the closure of Kuwait International Airport. Kuwait International shut for 57 days, the longest closure of any airport in the region, after an Iranian drone hit the radar system on March 15. The airline reported a net loss of [&#8230;]",
-        "hoursAgo": 5,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Drake &#038; Scull revenue more than doubles on project execution",
-        "url": "https://www.agbi.com/construction/2026/05/drake-scull-revenue-more-than-doubles-on-project-execution/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "Drake &#38; Scull International (DSI) said revenue more than doubled in the first quarter, supported by the accelerated execution of projects across its infrastructure and water treatment portfolios. The top line surged 152 percent to AED77 million ($21 million) in the quarter ended March, compared to AED30 million a year earlier, the Dubai-listed engineering and [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 7,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -79,25 +68,25 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 48,
-        "score": 6.5,
+        "hoursAgo": 52,
+        "score": 6,
         "topic": "Corporate Finance",
         "origin": "google-news"
+      },
+      {
+        "title": "Oman India Fertiliser Co aims for $2.5bn valuation",
+        "url": "https://www.agbi.com/agriculture/2026/05/oman-india-fertiliser-co-aims-for-2-5bn-valuation/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-14",
+        "description": "Oman India Fertiliser Company (Omifco) is reportedly planning to float on the Muscat stock exchange by next month. The Omani-Indian joint venture has a target valuation of at least $2.5 billion and is planning to sell a 25 percent stake on the local bourse, Bloomberg reported. The company was seeking proposals from banks for its [&#8230;]",
+        "hoursAgo": 0,
+        "score": 6,
+        "topic": "IPO & M&A",
+        "origin": "uae-rss"
       }
     ],
     "risk": [
-      {
-        "title": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUms3Q3RHQW1xeTBXS2RERmhibkRHM0l2RXpNV1BVRmRwV3VkZVNtOW45X0h6ek1UV3dFUzNVU25wUFM1R3Q5MUtCT2YtMzlsNnN5VGxhc2FqZmhaZEh4WnliVU9DSVRDMHlRQ1Y3LVpVc1pISW5pMzBaQjE4bm9XUGtraUdJQ0kxQ2dPRWNGdHNkLU5lWlJXMVUteVE4clVLb3pYdW9FdzA0bVJJYUJIWDBaVXBjbUJHcmF1R0JIZTJ0anV5dUhaRXRXU21scVR3Q1Rz?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-05-11",
-        "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 71,
-        "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
       {
         "title": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans - Economy Middle East",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdk1LaXFaR1pIZXBTSk5iZVB5RGFrN3F1eGhHQUd6OFltN0dXVWxmWlNFS3VwRUVCYkdnV0xadjV2ak83cVZneU40UXVkUFUwUS13NDZaaVpXY3hSMldNZldzUFc3RTJVd1pNazVWWjRMZVNLQWhWWG91NjM5QVpJWUU0eWpwbTcwdFk1ZTdhUExVNFQxYzJsSUZ0Qk8wTnVWTlF6ek5ZSkhYTG9UTEF5bDVDaDZxQVE?oc=5",
@@ -105,25 +94,62 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 22,
-        "score": 7,
+        "hoursAgo": 26,
+        "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       },
       {
-        "title": "Crisis is a ‘call to double down’, says Adnoc Drilling CFO",
-        "url": "https://www.agbi.com/oil-and-gas/2026/05/crisis-is-a-call-to-double-down-says-adnoc-drilling-cfo-youssef-salem/",
+        "title": "UAE Corporate Tax penalty waiver benefits 68,600 businesses - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQXhKNTFhVENnYzVwZjVyZWhJQXFNY044S1p0eTA5TVBtV19nSFctUEZOOXQzdTR2aXRRU2M1bUJwdlQ0TDlldURzTmFOWEREUlNnNTNmQW1iVlJ2Sl9KRnRoM3Ryc2RUUWxqVl9LeUxrTkg0T0hKNElhRUpZVXF0WXEyQzB4cVBGTGlwMHVXSG9OVkRhVDRuV1VLV3d4Nkgwd2c?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-14",
+        "description": "UAE Corporate Tax penalty waiver benefits 68,600 businesses  Gulf Business",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE corporate tax penalty waiver may benefit 91,000 businesses - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMzJCbzBjV2FIdnJtbk9pTGwtYzl1dV9yNWhDSTVmdlpMUDdDdnNIRS1XejBuTHdGMk8wUzdvN1F0Q1Y3RW9yMFBCdFNPWUV2U0JsRW1aQUJpRVZXeG1ZTnNCY0tmMFg0bThGRi0yMGItLVV1NjZZeHB6cld5UzdGb0NJS1VvZTdCNWpZTmJCY0hMRHNyRUNMNXZvRi1UU2JpODQybnFXcW16eWlDaktETk90elkxTmtjMWphckhMR1htN0RhM2R0cUE2Y9IBywFBVV95cUxOMzJCbzBjV2FIdnJtbk9pTGwtYzl1dV9yNWhDSTVmdlpMUDdDdnNIRS1XejBuTHdGMk8wUzdvN1F0Q1Y3RW9yMFBCdFNPWUV2U0JsRW1aQUJpRVZXeG1ZTnNCY0tmMFg0bThGRi0yMGItLVV1NjZZeHB6cld5UzdGb0NJS1VvZTdCNWpZTmJCY0hMRHNyRUNMNXZvRi1UU2JpODQybnFXcW16eWlDaktETk90elkxTmtjMWphckhMR1htN0RhM2R0cUE2Yw?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-14",
+        "description": "UAE corporate tax penalty waiver may benefit 91,000 businesses  Gulf News",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "Iraq to hire foreign auditor to help with banking reforms",
+        "url": "https://www.agbi.com/banking-finance/2026/05/iraq-to-hire-foreign-auditor-to-help-with-banking-reforms/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-14",
-        "description": "Adnoc Drilling is accelerating the expansion of its Gulf fleet despite the geopolitical crisis – and calling for global investment in oil and gas capacity, its chief financial officer has told AGBI. The Abu Dhabi-listed company has accelerated rig deliveries in the UAE, Oman and Kuwait since the Emirates left Opec on May 1. The [&#8230;]",
-        "hoursAgo": 8,
+        "description": "Iraq intends to appoint an independent foreign auditor to oversee compliance by local banks with new capital requirements and the ongoing restructuring of the country’s ailing banking sector. The Central Bank of Iraq (CBI) said it is pushing ahead with reforms as part of a “strategic vision” to strengthen the financial system and enhance the [&#8230;]",
+        "hoursAgo": 3,
         "score": 6,
-        "topic": "Emerging Risks",
+        "topic": "Tax & Regulatory",
         "origin": "uae-rss"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "Abu Dhabi seeks $30bn infrastructure deals with global partners",
+        "url": "https://www.agbi.com/infrastructure/2026/05/abu-dhabi-seeks-30bn-infrastructure-deals-with-global-partners/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-14",
+        "description": "Abu Dhabi’s wealth fund L’imad and the state-backed Abu Dhabi National Oil Company (Adnoc) have joined forces with two global companies in a plan to invest $30 billion in the infrastructure sector across the GCC and Central Asia. The proposed partnership with US investment company BlackRock’s Global Infrastructure Partners and Singapore’s Temasek will focus on [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
+        "origin": "uae-rss"
+      }
+    ]
   },
-  "totalCount": 8
+  "totalCount": 10
 }
