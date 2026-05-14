@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-14T17:49:21.759Z",
+  "generatedAt": "2026-05-14T21:09:26.847Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 270,
-    "afterDedup": 213,
+    "afterDedup": 212,
     "big4Rejected": 3,
-    "englishOnly": 177,
-    "withinRecency": 84,
-    "scored": 84,
+    "englishOnly": 176,
+    "withinRecency": 87,
+    "scored": 87,
     "passed": 10
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Aldar, Abu Dhabi’s largest developer, has acquired a residential and community retail development in Dubai Studio City from SRG, a private developer, for AED1.1 billion ($300 million). The project includes six mid-rise buildings featuring 312 residential units, retail, recreational and food and beverage outlets and is set for completion in 2028, the developer said in [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Net profit at Orascom Construction profit more than doubled in the first quarter, supported by new projects. These included data centres in the US and an industrial wastewater treatment facility in Saudi Arabia. Consolidated revenue rose 73 percent year on year to $1.5 billion in the quarter ended March 31, the contractor said in a [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 56,
+        "hoursAgo": 59,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -68,7 +68,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Oman India Fertiliser Company (Omifco) is reportedly planning to float on the Muscat stock exchange by next month. The Omani-Indian joint venture has a target valuation of at least $2.5 billion and is planning to sell a 25 percent stake on the local bourse, Bloomberg reported. The company was seeking proposals from banks for its [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -82,7 +82,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 30,
+        "hoursAgo": 33,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -94,7 +94,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-14",
         "description": "UAE Corporate Tax penalty waiver benefits 68,600 businesses  Gulf Business",
-        "hoursAgo": 8,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -106,7 +106,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-14",
         "description": "UAE corporate tax penalty waiver may benefit 91,000 businesses  Gulf News",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -118,7 +118,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Iraq intends to appoint an independent foreign auditor to oversee compliance by local banks with new capital requirements and the ongoing restructuring of the country’s ailing banking sector. The Central Bank of Iraq (CBI) said it is pushing ahead with reforms as part of a “strategic vision” to strengthen the financial system and enhance the [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -132,7 +132,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "The UAE has emerged as the largest source of expat remittances to Jordan in the first quarter of 2026. Total remittances from the Emirates were $276 million, or 23 percent of the $1.2 billion received during the quarter up to the end of March, up 12 percent year on year, the state-run Jordan News Agency [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -144,7 +144,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Abu Dhabi’s wealth fund L’imad and the state-backed Abu Dhabi National Oil Company (Adnoc) have joined forces with two global companies in a plan to invest $30 billion in the infrastructure sector across the GCC and Central Asia. The proposed partnership with US investment company BlackRock’s Global Infrastructure Partners and Singapore’s Temasek will focus on [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
