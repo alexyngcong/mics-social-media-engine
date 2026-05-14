@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-14T02:55:41.626Z",
+  "generatedAt": "2026-05-14T06:45:01.320Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 210,
+    "totalFetched": 181,
+    "afterDedup": 166,
     "big4Rejected": 3,
-    "englishOnly": 173,
-    "withinRecency": 79,
-    "scored": 79,
+    "englishOnly": 163,
+    "withinRecency": 63,
+    "scored": 63,
     "passed": 9
   },
   "rooms": {
@@ -31,19 +31,31 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "Results from some of the big corporate players in the Gulf have flowed in this week. They were perhaps not what we were expecting. In the UAE, developer Emaar said UAE property sales in the first quarter were up over a fifth year on year – despite a month of conflict in those three. Profit [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
       {
-        "title": "Gulf Hotels’ profit drops after Iranian airstrike on Manama",
-        "url": "https://www.agbi.com/leisure-hospitality/2026/05/gulf-hotels-profit-drops-after-closure-on-iran-strike/",
+        "title": "Jazeera Airways turns to loss after Kuwait airport closure",
+        "url": "https://www.agbi.com/aviation/2026/05/jazeera-airways-turns-to-loss-after-kuwait-airport-closure/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-13",
-        "description": "Gulf Hotels Group&#8217;s net profit halved in the first quarter after an Iranian strike damaged one of its prime properties in Manama. Net profit dropped to BD1.2 million ($3.2 million) in the quarter ended March 31, from BD2.5 million a year earlier, the hospitality company said in a statement to the Bahrain Bourse. Revenue fell [&#8230;]",
-        "hoursAgo": 14,
+        "date": "2026-05-14",
+        "description": "Kuwait-listed Jazeera Airways swung to a loss after revenue fell in the first quarter due to the closure of Kuwait International Airport. The airport was closed for 57 days, the longest closure of any airport in the region, after an Iranian drone hit the radar system on March 15. The airline reported a net loss [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Drake &#038; Scull revenue more than doubles on project execution",
+        "url": "https://www.agbi.com/construction/2026/05/drake-scull-revenue-more-than-doubles-on-project-execution/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-14",
+        "description": "Drake &#38; Scull International (DSI) said revenue more than doubled in the first quarter, supported by the accelerated execution of projects across its infrastructure and water treatment portfolios. The top line surged 152 percent to AED77 million ($21 million) in the quarter ended March, compared to AED30 million a year earlier, the Dubai-listed engineering and [&#8230;]",
+        "hoursAgo": 2,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -55,7 +67,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-12",
         "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 41,
+        "hoursAgo": 45,
         "score": 6.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -69,7 +81,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-11",
         "description": "UAE extends eInvoicing provider deadline to October 30, 2026 for firms with revenues over $13.6 million  Economy Middle East",
-        "hoursAgo": 64,
+        "hoursAgo": 68,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -81,9 +93,21 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE extends e-invoicing provider deadline to Oct 30 - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaXAwLUJfcGJYMzlweWJ0R0E0VkNXZ1BBU2ZpY3JvR09ncll3QXdISVRuX2NfVExsSG1UQVBpbVVYWF9YSkJiY04xSER5RXZZSU5sdHRYR3NwN2xJeVNWVWJodGdHeFVKUXFHQ1d1Q3BBdV9kZVkycWhRbE9uSkJfU19ncWVNUHotU3lvRnhscGw4TWpweS1rSGQweWt5UQ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-11",
+        "description": "UAE extends e-invoicing provider deadline to Oct 30  Gulf Business",
+        "hoursAgo": 68,
+        "score": 6,
+        "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
@@ -93,7 +117,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "Adnoc Drilling is accelerating the expansion of its Gulf fleet despite the geopolitical crisis – and calling for global investment in oil and gas capacity, its chief financial officer has told AGBI. The Abu Dhabi-listed company has accelerated rig deliveries in the UAE, Oman and Kuwait since the Emirates left Opec on May 1. The [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Emerging Risks",
         "origin": "uae-rss"
@@ -105,38 +129,13 @@
         "domain": "agbi.com",
         "date": "2026-05-13",
         "description": "Dubai Taxi Company, a subsidiary of the emirate’s transport regulator, has agreed to buy National Taxi, which operates in Dubai, Abu Dhabi and Al Ain. The deal is valued at AED1.45 billion ($395 million). It will be funded through new bank debt facilities without any new equity issuance, DTC said in a statement to the [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
-      },
-      {
-        "title": "TruKKer secures $300m to drive network expansion",
-        "url": "https://www.agbi.com/logistics/2026/05/trukker-secures-300m-to-drive-network-expansion/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-13",
-        "description": "TruKKer, the Abu Dhabi-based logistics company, has secured up to $300 million to help grow its trucking and digital business. The funding from Abu Dhabi Commercial Bank is tied to money TruKKer is owed by customers for completed deliveries and will be used to expand its network of transport operators and technology platform. The financial [&#8230;]",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
       }
     ],
-    "world": [
-      {
-        "title": "ThinkProp launches UAE’s first AI Academy for real estate professionals - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTEJXaUpwcHphXzhMWGw4OFJtUFRzVHRuY2JFelRjTHpodWtBQjNtTEljbGpUdUw1N2M4STBoRnJWcERnNE5BU1NMMGIxVWFzWUlHY3psX3A4TmVZT1lJR01aZmJCbjQ4ZFJMcXZWWDZ0Z3NnVFE3VW9waDdEbTA5MjFFRGVQTVQ5N200akhiNHVNXzhaaVZVekNSXzdraWlyQURoWHFyd3NNdkZfZmxtWWY3anhTc3JK0gHLAUFVX3lxTE1KaHlYTHdPbW8xVHlrRHJFR25WTGZKd3N1MlMzQVEwRFM4WGtoLUlaZ2pnWVh4dmZPVWRmYkx1ZU15MWRMdlM0eGpXNkVtOXpnS1cwbUoySjNaNHdKaHhWSFFvSEZSSUxlcXlUY25kUnhnUEFfcTJleF9zUW9kTUg3OXhUdS1hQ2R2NXI2TWRzUERlYU9uRk5kd2V4VFRVS3JvNFdrWFg5Zkl6SF95RDNLZUdOeUVDYkY4MVRYa1ZESS01TEp0NGNSUm1z?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-13",
-        "description": "ThinkProp launches UAE’s first AI Academy for real estate professionals  Gulf News",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "AI & Technology",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
   "totalCount": 9
 }
