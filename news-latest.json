@@ -1,28 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-15T10:22:14.086Z",
+  "generatedAt": "2026-05-15T14:04:02.522Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 16,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 210,
-    "big4Rejected": 3,
-    "englishOnly": 176,
-    "withinRecency": 84,
-    "scored": 84,
-    "passed": 9
+    "totalFetched": 186,
+    "afterDedup": 167,
+    "big4Rejected": 1,
+    "englishOnly": 164,
+    "withinRecency": 68,
+    "scored": 68,
+    "passed": 8
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Abu Dhabi’s ambition tests strained construction sector",
+        "url": "https://www.agbi.com/construction/2026/05/abu-dhabis-ambition-tests-strained-construction-sector/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-15",
+        "description": "Ambitious construction targets unveiled by Abu Dhabi this week may prove difficult to deliver at the pace envisaged, according to industry figures. While the UAE capital has outlined about $57 billion of infrastructure projects, shortages of contractors and skilled workers, alongside broader concerns, may complicate delivery of the emirate’s plans. “I still don’t think Abu [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "uae-rss"
+      }
+    ],
     "capital": [
       {
         "title": "Conflict hits profit at remittance company Al Ansari",
@@ -31,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "UAE remittance and foreign exchange house Al Ansari Financial Services said net profit was hit in the first quarter of 2026 as the Iran conflict affected tourism across all the GCC markets. Net profit after tax dropped 29 percent year on year to AED77 million ($21 million) between January and March. Profit was also affected by [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 10,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -42,8 +55,8 @@
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-15",
-        "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil &#38; gas segment amid the ongoing regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March 2026, compared to AED14.1 billion a year ago, the company said in [&#8230;]",
-        "hoursAgo": 1,
+        "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
+        "hoursAgo": 5,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -55,7 +68,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Shuaa Capital reported a loss in the first quarter, driven by a decline in management fee income and zero contribution from its advisory business. The company reported a net loss attributable to shareholders of AED10 million ($2.7 million), versus a net profit of AED196 million in the same period last year, the company said in [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -69,22 +82,10 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdk1LaXFaR1pIZXBTSk5iZVB5RGFrN3F1eGhHQUd6OFltN0dXVWxmWlNFS3VwRUVCYkdnV0xadjV2ak83cVZneU40UXVkUFUwUS13NDZaaVpXY3hSMldNZldzUFc3RTJVd1pNazVWWjRMZVNLQWhWWG91NjM5QVpJWUU0eWpwbTcwdFk1ZTdhUExVNFQxYzJsSUZ0Qk8wTnVWTlF6ek5ZSkhYTG9UTEF5bDVDaDZxQVE?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-05-13",
-        "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 47,
-        "score": 6.5,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
       },
       {
         "title": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000 - Economy Middle East",
@@ -93,50 +94,38 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-15",
         "description": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000  Economy Middle East",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
-        "title": "UAE corporate tax penalty waiver may benefit 91,000 businesses - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMzJCbzBjV2FIdnJtbk9pTGwtYzl1dV9yNWhDSTVmdlpMUDdDdnNIRS1XejBuTHdGMk8wUzdvN1F0Q1Y3RW9yMFBCdFNPWUV2U0JsRW1aQUJpRVZXeG1ZTnNCY0tmMFg0bThGRi0yMGItLVV1NjZZeHB6cld5UzdGb0NJS1VvZTdCNWpZTmJCY0hMRHNyRUNMNXZvRi1UU2JpODQybnFXcW16eWlDaktETk90elkxTmtjMWphckhMR1htN0RhM2R0cUE2Y9IBywFBVV95cUxOMzJCbzBjV2FIdnJtbk9pTGwtYzl1dV9yNWhDSTVmdlpMUDdDdnNIRS1XejBuTHdGMk8wUzdvN1F0Q1Y3RW9yMFBCdFNPWUV2U0JsRW1aQUJpRVZXeG1ZTnNCY0tmMFg0bThGRi0yMGItLVV1NjZZeHB6cld5UzdGb0NJS1VvZTdCNWpZTmJCY0hMRHNyRUNMNXZvRi1UU2JpODQybnFXcW16eWlDaktETk90elkxTmtjMWphckhMR1htN0RhM2R0cUE2Yw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-14",
-        "description": "UAE corporate tax penalty waiver may benefit 91,000 businesses  Gulf News",
-        "hoursAgo": 24,
+        "title": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdk1LaXFaR1pIZXBTSk5iZVB5RGFrN3F1eGhHQUd6OFltN0dXVWxmWlNFS3VwRUVCYkdnV0xadjV2ak83cVZneU40UXVkUFUwUS13NDZaaVpXY3hSMldNZldzUFc3RTJVd1pNazVWWjRMZVNLQWhWWG91NjM5QVpJWUU0eWpwbTcwdFk1ZTdhUExVNFQxYzJsSUZ0Qk8wTnVWTlF6ek5ZSkhYTG9UTEF5bDVDaDZxQVE?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-05-13",
+        "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
+        "hoursAgo": 50,
         "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE Corporate Tax penalty waiver benefits 68,600 businesses - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ2pFVWJlbHEwRzFUTkIzSXBzdE94cGhWZFF1c2hTRmROZ0pOeDFWSlFkdUZqalUtUWJfNmQxNTB3cVZQcTI2QmF5Vl9Nb09aYjQ5N21nOWx0ZW16RU43MkhpSHQ0SnpEdmprWGhNTlZVbWNUTFBqSlVKcmJsRmdxbXE1WHpPbFNBMUxLNzY1OFRZUFJtLVN4MC1BbkVPbGNE?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-05-14",
-        "description": "UAE Corporate Tax penalty waiver benefits 68,600 businesses  Gulf Business",
-        "hoursAgo": 24,
-        "score": 6,
-        "topic": "Tax & Regulatory",
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
     "world": [
       {
-        "title": "UAE tops Jordan&#8217;s $1bn expat remittance inflows",
-        "url": "https://www.agbi.com/finance/2026/05/uae-tops-jordans-expat-remittance-inflows/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "The UAE has emerged as the largest source of expat remittances to Jordan in the first quarter of 2026. Total remittances from the Emirates were $276 million, or 23 percent of the $1.2 billion received during the quarter up to the end of March, up 12 percent year on year, the state-run Jordan News Agency [&#8230;]",
-        "hoursAgo": 19,
+        "title": "Dubai property prices record second monthly decline, villa capital values sees increase - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUEtXb0RIZzNNSHdrc3hhWklUdGRQUmtXWmtkMUhnVzdJMWF0eUJTNExyWGdsaFR2dWVYOFZ6ZktXYVgwV3Fzd3VYSk5xeEphcnBzRDRSTERaMnQ0azVxSmlDenE3NjIyeUdtT3NYU0VEOXFnZGdGVFhCV3NJN1pkRjc0N1BRM3A4ckxqNWpLYXA5Zm1kbTJSRnp6N2s0aE1lWV83eXgxcTAwZmpsb2lfTXI4ZTZRRkVfemFSOVhWbVBxQ0RQRFRGT1N3?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-05-15",
+        "description": "Dubai property prices record second monthly decline, villa capital values sees increase  Arabian Business",
+        "hoursAgo": 2,
         "score": 6,
         "topic": "Global Economic Signals",
-        "origin": "uae-rss"
+        "origin": "google-news"
       }
     ]
   },
-  "totalCount": 9
+  "totalCount": 8
 }
