@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-15T14:04:02.522Z",
+  "generatedAt": "2026-05-15T17:26:51.475Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 16,
+    "gdelt": 42,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 186,
-    "afterDedup": 167,
-    "big4Rejected": 1,
-    "englishOnly": 164,
-    "withinRecency": 68,
-    "scored": 68,
-    "passed": 8
+    "totalFetched": 212,
+    "afterDedup": 182,
+    "big4Rejected": 2,
+    "englishOnly": 177,
+    "withinRecency": 81,
+    "scored": 81,
+    "passed": 9
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Ambitious construction targets unveiled by Abu Dhabi this week may prove difficult to deliver at the pace envisaged, according to industry figures. While the UAE capital has outlined about $57 billion of infrastructure projects, shortages of contractors and skilled workers, alongside broader concerns, may complicate delivery of the emirate’s plans. “I still don’t think Abu [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -38,25 +38,13 @@
     ],
     "capital": [
       {
-        "title": "Conflict hits profit at remittance company Al Ansari",
-        "url": "https://www.agbi.com/finance/2026/05/conflict-hits-profit-at-remittance-company-al-ansari/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "UAE remittance and foreign exchange house Al Ansari Financial Services said net profit was hit in the first quarter of 2026 as the Iran conflict affected tourism across all the GCC markets. Net profit after tax dropped 29 percent year on year to AED77 million ($21 million) between January and March. Profit was also affected by [&#8230;]",
-        "hoursAgo": 18,
-        "score": 10,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
         "title": "Taqa ups capital spend by 46% despite revenue fall",
         "url": "https://www.agbi.com/energy/2026/05/taqa-ups-capital-spend-by-46-despite-revenue-fall/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -68,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Shuaa Capital reported a loss in the first quarter, driven by a decline in management fee income and zero contribution from its advisory business. The company reported a net loss attributable to shareholders of AED10 million ($2.7 million), versus a net profit of AED196 million in the same period last year, the company said in [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -82,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -94,7 +82,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-15",
         "description": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000  Economy Middle East",
-        "hoursAgo": 7,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -106,13 +94,37 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 50,
+        "hoursAgo": 54,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
+      },
+      {
+        "title": "UAE signs off Modi visit with $5bn India investment pledge",
+        "url": "https://www.agbi.com/economy/2026/05/uae-signs-off-modi-visit-with-5bn-india-investment-pledge/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-15",
+        "description": "The UAE has agreed to invest $5 billion in India covering energy, defence, infrastructure, shipping and advanced technology. Indian prime minister Narendra Modi met UAE President Mohamed bin Zayed Al Nahyan on Friday to discuss expanding cooperation under the two countries’ comprehensive strategic partnership and trade agreement. India and the UAE agreed on a strategic [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Supply Chain Disruption",
+        "origin": "uae-rss"
       }
     ],
     "world": [
+      {
+        "title": "India, UAE sign major energy and defence deals; Abu Dhabi pledges $5 billion investment - Firstpost",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdlk2SGgwekNEWUV3UUlESFNULTdEZVpHQlUzU3k4aEFpSkdHNWVMV1pNaWtSdkpRWElXOUpSVzFQZ2lkbkx0Y1AyT2FKbUFSVFVBYUVxRmNtT3pYSkVBdFlEeGppWHdPcGVrNGxEWUFMMWlWUkdNN2JZX2lFeWh6NHhnWWRMWko5YlE3THE4c255VXNPR3B3ODFTeW9zbG56U0kzcTJNYXF6WlFXYXdUV1RKNlROci05OUhxTC1NY0tWbW4zSHFVTVlB0gHPAUFVX3lxTFBCUTNpZzJyQmFtSmFKVTFESUFHSGE5bjZjS2FGYjZ2UTJLclJkN3RBR3YyMUsxSlFDY1IxX0RneHVFeEVJd2ptQXljNXZnQ0lOT2VGeVFUVXpvRjFMN1Exd0QxUklTSk1pVFJLc29hVUktNUhDWVlhLXpHYk5nZ3VCdHVFNm95N05EY0d6cW5MTU94Sl9lV3RXN2lwNEtmZ0piT1Q5WFNLd2prUXZkcENkWG9VUHpzMjlGYmxTam91czM5c0xIdGdsd19jSkVOVQ?oc=5",
+        "source": "Firstpost",
+        "domain": "firstpost.com",
+        "date": "2026-05-15",
+        "description": "India, UAE sign major energy and defence deals; Abu Dhabi pledges $5 billion investment  Firstpost",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
       {
         "title": "Dubai property prices record second monthly decline, villa capital values sees increase - Arabian Business",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUEtXb0RIZzNNSHdrc3hhWklUdGRQUmtXWmtkMUhnVzdJMWF0eUJTNExyWGdsaFR2dWVYOFZ6ZktXYVgwV3Fzd3VYSk5xeEphcnBzRDRSTERaMnQ0azVxSmlDenE3NjIyeUdtT3NYU0VEOXFnZGdGVFhCV3NJN1pkRjc0N1BRM3A4ckxqNWpLYXA5Zm1kbTJSRnp6N2s0aE1lWV83eXgxcTAwZmpsb2lfTXI4ZTZRRkVfemFSOVhWbVBxQ0RQRFRGT1N3?oc=5",
@@ -120,12 +132,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-05-15",
         "description": "Dubai property prices record second monthly decline, villa capital values sees increase  Arabian Business",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 9
 }
