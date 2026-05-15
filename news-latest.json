@@ -1,80 +1,79 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-15T06:55:07.168Z",
+  "generatedAt": "2026-05-15T10:22:14.086Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 16,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 186,
-    "afterDedup": 166,
-    "big4Rejected": 2,
-    "englishOnly": 161,
-    "withinRecency": 69,
-    "scored": 69,
-    "passed": 11
+    "totalFetched": 270,
+    "afterDedup": 210,
+    "big4Rejected": 3,
+    "englishOnly": 176,
+    "withinRecency": 84,
+    "scored": 84,
+    "passed": 9
   },
   "rooms": {
-    "growth": [
+    "growth": [],
+    "capital": [
       {
-        "title": "Aldar buys project in Dubai Studio City for $300m",
-        "url": "https://www.agbi.com/construction/2026/05/aldar-buys-project-in-dubai-studio-city-for-300m/",
+        "title": "Conflict hits profit at remittance company Al Ansari",
+        "url": "https://www.agbi.com/finance/2026/05/conflict-hits-profit-at-remittance-company-al-ansari/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-14",
-        "description": "Aldar, Abu Dhabi’s largest developer, has acquired a residential and community retail development in Dubai Studio City from SRG, a private developer, for AED1.1 billion ($300 million). The project includes six mid-rise buildings featuring 312 residential units, retail, recreational and food and beverage outlets and is set for completion in 2028, the developer said in [&#8230;]",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "uae-rss"
-      }
-    ],
-    "capital": [
-      {
-        "title": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQ2cwcm5WenNPMTdXbUhXbk9nREM5RUVNejZzZ01NeGxXZkR5VnhGb29TRmtlYjJXWXUyYm45d1ItUjZDSENoek9kdGJYNjZMSGlJdF9iTDlNM1NZWC0yZUN5RWdBcWQ0MnNDUm9YeVJjYWpYR3JkeEItOWhFaXZRdzljMWUxSjl2VDNTdmx5YnB2cDZMcDU2R3h0eTlGS1NoTDItN0o1bjc0UGPSAcYBQVVfeXFMTzF6eklHc3JQU21xYTNRYkczR1Vpa2N5eXdvcHQzQXFPTkExMnFOYlV0V1JfZWxfT0VPTFRHRzFCMkQ3bFpYQ2V2NXF3UXROUHFvOG5BdHZqd21pZGNwaHR5bzd1b0ZfYmxtX0pOVEVicUdhbUF3NlNXTDNEU2dtQlVnTDluZWllUGRTdGRnS0t6RmFybVpYQk1FOGJub050cDgyWHRIZG5yZmFSd3NudzlWNjNsQUZKdkd5WmhfdmZMZWF4VG9n?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-05-12",
-        "description": "DEWA reports record Q1 2026 revenue and 90% profit growth in Dubai  Emirates 24|7",
-        "hoursAgo": 69,
-        "score": 6,
+        "description": "UAE remittance and foreign exchange house Al Ansari Financial Services said net profit was hit in the first quarter of 2026 as the Iran conflict affected tourism across all the GCC markets. Net profit after tax dropped 29 percent year on year to AED77 million ($21 million) between January and March. Profit was also affected by [&#8230;]",
+        "hoursAgo": 14,
+        "score": 10,
         "topic": "Corporate Finance",
-        "origin": "google-news"
+        "origin": "uae-rss"
       },
       {
-        "title": "Shuaa swings to loss as revenue falls",
-        "url": "https://www.agbi.com/finance/2026/05/shuaa-swings-to-loss-as-revenue-falls/",
+        "title": "Taqa ups capital spend by 46% despite revenue fall",
+        "url": "https://www.agbi.com/energy/2026/05/taqa-ups-capital-spend-by-46-despite-revenue-fall/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-15",
-        "description": "Shuaa Capital swung to a loss in the first quarter, driven by a decline in management fee income and zero contribution from its advisory business. The company reported a net loss attributable to shareholders of AED10 million ($2.7 million), versus a net profit of AED196 million in the same period last year, the company said [&#8230;]",
-        "hoursAgo": 2,
-        "score": 6,
+        "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil &#38; gas segment amid the ongoing regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March 2026, compared to AED14.1 billion a year ago, the company said in [&#8230;]",
+        "hoursAgo": 1,
+        "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
       {
-        "title": "Oman India Fertiliser Co aims for $2.5bn valuation",
-        "url": "https://www.agbi.com/agriculture/2026/05/oman-india-fertiliser-co-aims-for-2-5bn-valuation/",
+        "title": "Shuaa swings to loss as revenue falls",
+        "url": "https://www.agbi.com/banking-finance/2026/05/shuaa-swings-to-loss-as-revenue-falls/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "Oman India Fertiliser Company (Omifco) is reportedly planning to float on the Muscat stock exchange by next month. The Omani-Indian joint venture has a target valuation of at least $2.5 billion and is planning to sell a 25 percent stake on the local bourse, Bloomberg reported. The company was seeking proposals from banks for its [&#8230;]",
-        "hoursAgo": 17,
+        "date": "2026-05-15",
+        "description": "Shuaa Capital reported a loss in the first quarter, driven by a decline in management fee income and zero contribution from its advisory business. The company reported a net loss attributable to shareholders of AED10 million ($2.7 million), versus a net profit of AED196 million in the same period last year, the company said in [&#8230;]",
+        "hoursAgo": 5,
         "score": 6,
-        "topic": "IPO & M&A",
+        "topic": "Corporate Finance",
         "origin": "uae-rss"
       }
     ],
     "risk": [
+      {
+        "title": "Shariah-compliant investors sharpen focus on halal gold",
+        "url": "https://www.agbi.com/finance/2026/05/shariah-compliant-investors-sharpen-focus-on-halal-gold/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-15",
+        "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
       {
         "title": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans - Economy Middle East",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdk1LaXFaR1pIZXBTSk5iZVB5RGFrN3F1eGhHQUd6OFltN0dXVWxmWlNFS3VwRUVCYkdnV0xadjV2ak83cVZneU40UXVkUFUwUS13NDZaaVpXY3hSMldNZldzUFc3RTJVd1pNazVWWjRMZVNLQWhWWG91NjM5QVpJWUU0eWpwbTcwdFk1ZTdhUExVNFQxYzJsSUZ0Qk8wTnVWTlF6ek5ZSkhYTG9UTEF5bDVDaDZxQVE?oc=5",
@@ -82,9 +81,21 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 43,
+        "hoursAgo": 47,
         "score": 6.5,
         "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000 - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZnZucUZrX3RvWllGTzhWdXRvLWx4VUcta0ZPZVpCU08xQnhGckVsRG5saW56VFBwY2tCZ0FRQnQxMExBVTMzWDdGS0RzZWJvOU5pbGl2Wjd5eF9IeEs2U18zWkdYcEI2RE9lR1VXcHFjXzhsLV9aWEFUaTA0S3ZiWWt4YjM3djFhdkRtVndTLVNyUmhWeUZ0MXNfX2tzbF9UMUdVVElhMDRyODJ2WmcxQVZnUlQybk1oWVFnNHpZYkhKTk0yX3Y5aWMxc2o2WnZqR000bVVEQnBaeG5Sb3d3?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-05-15",
+        "description": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000  Economy Middle East",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
@@ -94,7 +105,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-14",
         "description": "UAE corporate tax penalty waiver may benefit 91,000 businesses  Gulf News",
-        "hoursAgo": 20,
+        "hoursAgo": 24,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -106,37 +117,13 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-14",
         "description": "UAE Corporate Tax penalty waiver benefits 68,600 businesses  Gulf Business",
-        "hoursAgo": 21,
+        "hoursAgo": 24,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
-      },
-      {
-        "title": "Iraq to hire foreign auditor to help with banking reforms",
-        "url": "https://www.agbi.com/banking-finance/2026/05/iraq-to-hire-foreign-auditor-to-help-with-banking-reforms/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "Iraq intends to appoint an independent foreign auditor to oversee compliance by local banks with new capital requirements and the ongoing restructuring of the country’s ailing banking sector. The Central Bank of Iraq (CBI) said it is pushing ahead with reforms as part of a “strategic vision” to strengthen the financial system and enhance the [&#8230;]",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "uae-rss"
       }
     ],
     "world": [
-      {
-        "title": "Boli.ae conducts UAE’s first fully digital property auction, closing City Walk asset within 7 days - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMEV2Vlh6TGNBSTg4cldiaG1ON05nUVdReWF3a1hZQkVCQ0l6VGJQd2cxeFZLZXhBRl9JYlUwemdsUWVPYjR6T3JXSHE5THJqaEdJTjdFT18zTDJMYjZ0U0NoXzNaekR6VERHejFtcE9FcnB2MWZIMlJ5bFc1UUdETjNwYzdhZXJ1bXlHbGV6MHpmSWJTV2h3ZTZZSkdsTC1hNUZSWXU3VTlJbk9WTzVnQXpIOXY4UnZhSEFNa0d0NmR4d2Q2WEtwWWdFTFVnMmJzNnNTZWNJN0RvUTl0TjJj0gHyAUFVX3lxTFBLc0s3SXRodGVPNGlPVktWRDhYVlE3RHptX2xrM3pSTThXN2l3UWJHSzNrZ2prNWtLeU5QcjVGSUhTdmdTRXgxaXE3eEVJS3o5TV90cDJyYnd1MVJib1dwNld0TU5CS1Z2Y093ZVdDa3p2MEFLU0p0NkdXLUh0MUY4WDE5OWhTbDU0SUdKWXZzY2RpMmRPczN6UkdkVVJDY3U0RDhCOFZiS3U5cWRFMUxKX2RYNnVGTjBrNlZtaVU4N0lOQ3JROV9meXFWZG5mcXIwd3NSYWJzYWFteUpWeHg0MEoxdzZIN1JuZWxJZFNRVFV3?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-15",
-        "description": "Boli.ae conducts UAE’s first fully digital property auction, closing City Walk asset within 7 days  Gulf News",
-        "hoursAgo": 4,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
       {
         "title": "UAE tops Jordan&#8217;s $1bn expat remittance inflows",
         "url": "https://www.agbi.com/finance/2026/05/uae-tops-jordans-expat-remittance-inflows/",
@@ -144,24 +131,12 @@
         "domain": "agbi.com",
         "date": "2026-05-14",
         "description": "The UAE has emerged as the largest source of expat remittances to Jordan in the first quarter of 2026. Total remittances from the Emirates were $276 million, or 23 percent of the $1.2 billion received during the quarter up to the end of March, up 12 percent year on year, the state-run Jordan News Agency [&#8230;]",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Abu Dhabi seeks $30bn infrastructure deals with global partners",
-        "url": "https://www.agbi.com/infrastructure/2026/05/abu-dhabi-seeks-30bn-infrastructure-deals-with-global-partners/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-14",
-        "description": "Abu Dhabi’s wealth fund L’imad and the state-backed Abu Dhabi National Oil Company (Adnoc) have joined forces with two global companies in a plan to invest $30 billion in the infrastructure sector across the GCC and Central Asia. The proposed partnership with US investment company BlackRock’s Global Infrastructure Partners and Singapore’s Temasek will focus on [&#8230;]",
         "hoursAgo": 19,
         "score": 6,
-        "topic": "Oil & Energy Markets",
+        "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 11
+  "totalCount": 9
 }
