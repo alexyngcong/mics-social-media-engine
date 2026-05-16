@@ -1,41 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-16T09:29:09.113Z",
+  "generatedAt": "2026-05-16T13:18:59.117Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 36,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 206,
-    "afterDedup": 175,
-    "big4Rejected": 1,
-    "englishOnly": 171,
-    "withinRecency": 72,
-    "scored": 72,
-    "passed": 5
+    "totalFetched": 170,
+    "afterDedup": 156,
+    "big4Rejected": 2,
+    "englishOnly": 154,
+    "withinRecency": 54,
+    "scored": 54,
+    "passed": 3
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Abu Dhabi’s ambition tests strained construction sector",
-        "url": "https://www.agbi.com/construction/2026/05/abu-dhabis-ambition-tests-strained-construction-sector/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-15",
-        "description": "Ambitious construction targets unveiled by Abu Dhabi this week may prove difficult to deliver at the pace envisaged, according to industry figures. While the UAE capital has outlined about $57 billion of infrastructure projects, shortages of contractors and skilled workers, alongside broader concerns, may complicate delivery of the emirate’s plans. “I still don’t think Abu [&#8230;]",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "uae-rss"
-      }
-    ],
+    "growth": [],
     "capital": [
       {
         "title": "Taqa ups capital spend by 46% despite revenue fall",
@@ -44,8 +31,8 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 24,
-        "score": 8,
+        "hoursAgo": 28,
+        "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       }
@@ -58,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 26,
+        "hoursAgo": 29,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -70,26 +57,13 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "The UAE has agreed to invest $5 billion in India covering energy, defence, infrastructure, shipping and advanced technology. Indian prime minister Narendra Modi met UAE President Mohamed bin Zayed Al Nahyan on Friday to discuss expanding cooperation under the two countries’ comprehensive strategic partnership and trade agreement. India and the UAE agreed on a strategic [&#8230;]",
-        "hoursAgo": 18,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
       }
     ],
-    "world": [
-      {
-        "title": "Dubai property prices record second monthly decline, villa capital values sees increase - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUEtXb0RIZzNNSHdrc3hhWklUdGRQUmtXWmtkMUhnVzdJMWF0eUJTNExyWGdsaFR2dWVYOFZ6ZktXYVgwV3Fzd3VYSk5xeEphcnBzRDRSTERaMnQ0azVxSmlDenE3NjIyeUdtT3NYU0VEOXFnZGdGVFhCV3NJN1pkRjc0N1BRM3A4ckxqNWpLYXA5Zm1kbTJSRnp6N2s0aE1lWV83eXgxcTAwZmpsb2lfTXI4ZTZRRkVfemFSOVhWbVBxQ0RQRFRGT1N3?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-05-15",
-        "description": "Dubai property prices record second monthly decline, villa capital values sees increase  Arabian Business",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 5
+  "totalCount": 3
 }
