@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-16T13:18:59.117Z",
+  "generatedAt": "2026-05-16T16:58:06.216Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 8,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 156,
-    "big4Rejected": 2,
-    "englishOnly": 154,
-    "withinRecency": 54,
-    "scored": 54,
+    "totalFetched": 178,
+    "afterDedup": 163,
+    "big4Rejected": 3,
+    "englishOnly": 159,
+    "withinRecency": 56,
+    "scored": 56,
     "passed": 3
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 28,
+        "hoursAgo": 32,
         "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -45,25 +45,26 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 29,
+        "hoursAgo": 33,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "UAE signs off Modi visit with $5bn India investment pledge",
-        "url": "https://www.agbi.com/economy/2026/05/uae-signs-off-modi-visit-with-5bn-india-investment-pledge/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-15",
-        "description": "The UAE has agreed to invest $5 billion in India covering energy, defence, infrastructure, shipping and advanced technology. Indian prime minister Narendra Modi met UAE President Mohamed bin Zayed Al Nahyan on Friday to discuss expanding cooperation under the two countries’ comprehensive strategic partnership and trade agreement. India and the UAE agreed on a strategic [&#8230;]",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "Sharjah secures Dhs7.74bn in FDI in 2025 as project numbers jump 45% - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeW81cW1GWDh2eGZBYWtVYlJDNWREcURaV19VZzEwUlJmQnFCdmc1SDVXalpERDA2WHFfTUtFdkdWRHl4NFNVUkx1Y0xBZFBUdzB6T181ekZjTm5fR2tuektIRVEwcGdjcGhpMnh1M0dKejZDSWlhamdGZ2ZSaXJCNUFURmVqTFV2?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-16",
+        "description": "Sharjah secures Dhs7.74bn in FDI in 2025 as project numbers jump 45%  Gulf Business",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
   "totalCount": 3
 }
