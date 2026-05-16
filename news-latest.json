@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-16T02:44:25.226Z",
+  "generatedAt": "2026-05-16T06:21:46.093Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 9,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 222,
+    "totalFetched": 179,
+    "afterDedup": 161,
     "big4Rejected": 1,
-    "englishOnly": 199,
-    "withinRecency": 107,
-    "scored": 107,
-    "passed": 8
+    "englishOnly": 160,
+    "withinRecency": 66,
+    "scored": 66,
+    "passed": 7
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Ambitious construction targets unveiled by Abu Dhabi this week may prove difficult to deliver at the pace envisaged, according to industry figures. While the UAE capital has outlined about $57 billion of infrastructure projects, shortages of contractors and skilled workers, alongside broader concerns, may complicate delivery of the emirate’s plans. “I still don’t think Abu [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -44,20 +44,8 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 18,
-        "score": 8,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Shuaa swings to loss as revenue falls",
-        "url": "https://www.agbi.com/banking-finance/2026/05/shuaa-swings-to-loss-as-revenue-falls/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-15",
-        "description": "Shuaa Capital reported a loss in the first quarter, driven by a decline in management fee income and zero contribution from its advisory business. The company reported a net loss attributable to shareholders of AED10 million ($2.7 million), versus a net profit of AED196 million in the same period last year, the company said in [&#8230;]",
         "hoursAgo": 21,
-        "score": 6,
+        "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       }
@@ -70,7 +58,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 22,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -82,7 +70,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-15",
         "description": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000  Economy Middle East",
-        "hoursAgo": 20,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -94,7 +82,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-13",
         "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 63,
+        "hoursAgo": 67,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -106,7 +94,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "The UAE has agreed to invest $5 billion in India covering energy, defence, infrastructure, shipping and advanced technology. Indian prime minister Narendra Modi met UAE President Mohamed bin Zayed Al Nahyan on Friday to discuss expanding cooperation under the two countries’ comprehensive strategic partnership and trade agreement. India and the UAE agreed on a strategic [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -120,12 +108,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-05-15",
         "description": "Dubai property prices record second monthly decline, villa capital values sees increase  Arabian Business",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 7
 }
