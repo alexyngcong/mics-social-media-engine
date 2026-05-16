@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-16T06:21:46.093Z",
+  "generatedAt": "2026-05-16T09:29:09.113Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 9,
+    "gdelt": 36,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 179,
-    "afterDedup": 161,
+    "totalFetched": 206,
+    "afterDedup": 175,
     "big4Rejected": 1,
-    "englishOnly": 160,
-    "withinRecency": 66,
-    "scored": 66,
-    "passed": 7
+    "englishOnly": 171,
+    "withinRecency": 72,
+    "scored": 72,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Ambitious construction targets unveiled by Abu Dhabi this week may prove difficult to deliver at the pace envisaged, according to industry figures. While the UAE capital has outlined about $57 billion of infrastructure projects, shortages of contractors and skilled workers, alongside broader concerns, may complicate delivery of the emirate’s plans. “I still don’t think Abu [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 21,
+        "hoursAgo": 24,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -58,34 +58,10 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 22,
-        "score": 7,
+        "hoursAgo": 26,
+        "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000 - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZnZucUZrX3RvWllGTzhWdXRvLWx4VUcta0ZPZVpCU08xQnhGckVsRG5saW56VFBwY2tCZ0FRQnQxMExBVTMzWDdGS0RzZWJvOU5pbGl2Wjd5eF9IeEs2U18zWkdYcEI2RE9lR1VXcHFjXzhsLV9aWEFUaTA0S3ZiWWt4YjM3djFhdkRtVndTLVNyUmhWeUZ0MXNfX2tzbF9UMUdVVElhMDRyODJ2WmcxQVZnUlQybk1oWVFnNHpZYkhKTk0yX3Y5aWMxc2o2WnZqR000bVVEQnBaeG5Sb3d3?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-05-15",
-        "description": "UAE’s FTA: Over 68,600 taxpayers benefit from corporate tax penalty waiver; beneficiaries expected to exceed 91,000  Economy Middle East",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdk1LaXFaR1pIZXBTSk5iZVB5RGFrN3F1eGhHQUd6OFltN0dXVWxmWlNFS3VwRUVCYkdnV0xadjV2ak83cVZneU40UXVkUFUwUS13NDZaaVpXY3hSMldNZldzUFc3RTJVd1pNazVWWjRMZVNLQWhWWG91NjM5QVpJWUU0eWpwbTcwdFk1ZTdhUExVNFQxYzJsSUZ0Qk8wTnVWTlF6ek5ZSkhYTG9UTEF5bDVDaDZxQVE?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-05-13",
-        "description": "UAE launches nation’s first real estate AI academy with GCC, China expansion plans  Economy Middle East",
-        "hoursAgo": 67,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
       },
       {
         "title": "UAE signs off Modi visit with $5bn India investment pledge",
@@ -94,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "The UAE has agreed to invest $5 billion in India covering energy, defence, infrastructure, shipping and advanced technology. Indian prime minister Narendra Modi met UAE President Mohamed bin Zayed Al Nahyan on Friday to discuss expanding cooperation under the two countries’ comprehensive strategic partnership and trade agreement. India and the UAE agreed on a strategic [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -108,12 +84,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-05-15",
         "description": "Dubai property prices record second monthly decline, villa capital values sees increase  Arabian Business",
-        "hoursAgo": 18,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 7
+  "totalCount": 5
 }
