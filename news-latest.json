@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-16T16:58:06.216Z",
+  "generatedAt": "2026-05-16T20:43:23.801Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 178,
-    "afterDedup": 163,
-    "big4Rejected": 3,
-    "englishOnly": 159,
-    "withinRecency": 56,
-    "scored": 56,
-    "passed": 3
+    "afterDedup": 159,
+    "big4Rejected": 2,
+    "englishOnly": 156,
+    "withinRecency": 55,
+    "scored": 55,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 32,
+        "hoursAgo": 36,
         "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -45,26 +45,13 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 33,
+        "hoursAgo": 37,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
-    "world": [
-      {
-        "title": "Sharjah secures Dhs7.74bn in FDI in 2025 as project numbers jump 45% - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeW81cW1GWDh2eGZBYWtVYlJDNWREcURaV19VZzEwUlJmQnFCdmc1SDVXalpERDA2WHFfTUtFdkdWRHl4NFNVUkx1Y0xBZFBUdzB6T181ekZjTm5fR2tuektIRVEwcGdjcGhpMnh1M0dKejZDSWlhamdGZ2ZSaXJCNUFURmVqTFV2?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-05-16",
-        "description": "Sharjah secures Dhs7.74bn in FDI in 2025 as project numbers jump 45%  Gulf Business",
-        "hoursAgo": 6,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 3
+  "totalCount": 2
 }
