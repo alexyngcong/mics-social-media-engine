@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-17T09:45:59.024Z",
+  "generatedAt": "2026-05-17T13:17:16.252Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 4,
     "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
+    "totalFetched": 164,
+    "afterDedup": 149,
     "big4Rejected": 2,
-    "englishOnly": 151,
-    "withinRecency": 49,
-    "scored": 49,
+    "englishOnly": 146,
+    "withinRecency": 45,
+    "scored": 45,
     "passed": 2
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 49,
+        "hoursAgo": 52,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-05-15",
         "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 50,
+        "hoursAgo": 53,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
