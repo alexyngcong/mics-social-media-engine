@@ -1,50 +1,124 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-18T08:02:26.773Z",
+  "generatedAt": "2026-05-18T15:30:14.347Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 217,
-    "big4Rejected": 2,
-    "englishOnly": 194,
-    "withinRecency": 85,
-    "scored": 85,
-    "passed": 2
+    "totalFetched": 170,
+    "afterDedup": 156,
+    "big4Rejected": 5,
+    "englishOnly": 151,
+    "withinRecency": 52,
+    "scored": 52,
+    "passed": 8
   },
   "rooms": {
-    "growth": [],
-    "capital": [],
+    "growth": [
+      {
+        "title": "Investcorp Capital adds more US industrial properties",
+        "url": "https://www.agbi.com/real-estate/2026/05/investcorp-capital-adds-more-us-industrial-properties/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-18",
+        "description": "Investcorp Capital has added 19 industrial real estate assets in the US to its global portfolio. The Abu Dhabi-listed alternative investment company acquired the properties, totaling 1.4 million square feet, across Dallas-Fort Worth, Chicago, Indianapolis and Cincinnati for more than $200 million. The US portfolio is almost 97 percent occupied and leased to a diversified [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "uae-rss"
+      }
+    ],
+    "capital": [
+      {
+        "title": "UAE sets monthly salary deadline for private sector from June 1 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOXzRObVIyUENGd1BDei1SVW1UU2h0cVdkR25tLXNseVY3MW9FbWxTRVRwV0Yxc2xfZTlhajJHOExIRmxrRFpGbnpTSTFiUlhaZzVvcTh6SWlHcXNHUFl4amN0eC1JRUVXSXJQQWNvSXVlZXhwVUdZNTBaYlBZaFVxdklhWkIySFRCODRnYmE2NlhLbVphYi0zczNxZmtpcmhUZHczY0RnclA2U0ptLVZRbNIBwwFBVV95cUxNTXFYSlRiTTRwRlVUVVY1YnhrWGtzQ2FCaWVYeUlrN3NMU0ExVHdMWnNvd01KbnY2RExNZEF3Y3pjZWRnVDNZWjJxTVR5cUFkaU80NV9xODBNSUNtLU5DUjlCZlZBNmlJVmZzdjRZYUo2ZmVWYXY1anhoZklhbFBqNXZVZHpJWTBqVlplZmRtT3FaUDZ3ekZfVV93dkFyUTRMS0RfbWMxV2hsSFJoUnI4elNpeVpRVzFBc1NrM0xDejhLS00?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-18",
+        "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
+        "hoursAgo": 7,
+        "score": 7,
+        "topic": "Workforce & HR",
+        "origin": "google-news"
+      },
+      {
+        "title": "Retail tranche of first Saudi IPO since war in demand",
+        "url": "https://www.agbi.com/markets/2026/05/retail-tranche-of-first-saudi-ipo-since-war-is-in-demand/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-18",
+        "description": "The retail tranche of Dar Albalad for Business Solutions Company’s initial public offering was 376 percent oversubscribed, with orders totalling SAR231 million ($62 million). More than 90,000 individuals subscribed at a final price of SAR9.75 per share, the IT services provider said in a statement to the Saudi Exchange (Tadawul). Each subscriber is set to [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "IPO & M&A",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "UAE sets unified salary deadline for private sector from June 1, 2026 - Khaleej Times",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNnFPMEpiU1hTNThldjItNmtFVGxadFoyWUxmaEt5NEZLWU1FRXp1VmRjZFlkQWp5czBrM19HV2ZDQ0VYeF9DS3NLdXVsU1Nnam1NSnVrWWczR3kzcmQ2T0RpbE9IeWs5VHZsbDdMMURSaFhZblhXQ1duMWJCSENYY3ZzNVB0eDdiVDl5OFBaLVhyMmcyUWZiWXZsd9IBowFBVV95cUxQSDJlVHBBRHF1RmlZNFVVYkRpVEhIMUZ3RlU4M1Z5ek8xckVTSzl5VDVmc1hVLVp2dUgzWTZuQkw5QzVnTkl0OUhZakRIUzYxSmpSZXhjWTRtdEVRUWlnOXVSQlZPemF4TW51TzR0ZnJXb2ZwaTlPWTg5R0h0Z1VIMVZZUm5mcWk4OXllY2t5U2ltbEFVWDJtaHowQkZqbkFPOWM0?oc=5",
+        "source": "Khaleej Times",
+        "domain": "khaleejtimes.com",
+        "date": "2026-05-18",
+        "description": "UAE sets unified salary deadline for private sector from June 1, 2026  Khaleej Times",
+        "hoursAgo": 8,
+        "score": 6,
+        "topic": "Workforce & HR",
+        "origin": "google-news"
+      }
+    ],
     "risk": [
       {
-        "title": "Dubai, UAE, Unveils Middle East’s First Museum of Digital Art in DIFC as Cultural Tourism and Immersive Travel Experiences Surge Across the UAE—What Global Travelers Should Expect - Travel And Tour World",
-        "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQdUgwOVhNS1JTRUc5dUstaEZPVzFEbWgzaXJqMEFHeDcyeEM4NXlEdmI3QnNORFBudFNLRldrc2l0NTg5LXFGX0lZdVcwX1hFMmlsV3J4cWFQajF3alhqYWNoS1JhdHk1UkFNNHlUMnlHUnR5T01Zd0w0dWxCSWNTRkdwa2lFbUJ0TG5Da21jTkNXUENjYThHbGVPUXdmT203eVpjZ2FiWldEd2phTE5LY0Y0RTNyVzVNdHI1UVd2Nm03TG1WY20teHZZVnVUOXZUZEpEcldUS1N3Q3J5bHJvZ00wdVNZQnJUUWxvS29zZEFlYVZHdzFzRzVzSjYyR1VBaFF5dExDc0d3Wm5UeVZ5TXB2VWptY09KVHRDdmZrLXlVNU4xVkJVd1VhRk5MaWZCNjNxWmlKaTdpYmNjcm5IZ21wektDX2Y3?oc=5",
-        "source": "Travel And Tour World",
-        "domain": "travelandtourworld.com",
+        "title": "A UAE property launch party in the shadow of war - Arabian Gulf Business Insight | AGBI",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSlg1dlRub2laUy1FMlhiSFR0WHJZdktiQ2RJdEtVZkRJTnpYWTVrbVppLUgteVVhUkZaZ1oycGRTMlk4QTZ0eFZTWUxHNEZ1Tmowc3FlNEY0cGdkNHlDa0d5WXFFdExwaFNIc2lBQUNESnAyV1hPWEFSVVBWQ0pCWjVPazhTeTIxSlUzTW5GSTBueGZ2eUVlQQ?oc=5",
+        "source": "Arabian Gulf Business Insight | AGBI",
+        "domain": "agbi.com",
         "date": "2026-05-18",
-        "description": "Dubai, UAE, Unveils Middle East’s First Museum of Digital Art in DIFC as Cultural Tourism and Immersive Travel Experiences Surge Across the UAE—What Global Travelers Should Expect  Travel And Tour World",
-        "hoursAgo": 4,
+        "description": "A UAE property launch party in the shadow of war  Arabian Gulf Business Insight | AGBI",
+        "hoursAgo": 12,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "ADGM attracts more registrations despite Iran war",
+        "url": "https://www.agbi.com/finance/2026/05/adgm-attracts-more-registrations-despite-iran-war/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-18",
+        "description": "Company registrations at the Abu Dhabi Global Market financial free zone rose in March, despite increased Iranian strikes across the GCC over the month. New active licences increased by 5 percent year-on-year, the state-run Abu Dhabi Media Office reported, quoting an ADGM statement. Total active licences crossed 13,300 after 961 companies registered in the first [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Dubai Holding partners with Microsoft to deliver first enterprise-scale AI deployment of its kind in the region - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPRVRPVFFQZEFVZV9YcFRFbHVFRmdTZWktV3BCUnhTeXE2YXFyVUgyMEZfWjBCUGxpcENSTi0xMVFtQXBKMG9HdHQ3V2k5QmJ2RWZnTHRvRnVwT0xPdzAwbWs4QkwwS2lYemZqSU5uaEw5dXBZYUVqSzJTcVZmZUlSRTR4VG5mRTV6bzRNMnFGTGNabzA2Z1lIRlJBTzNVZ3RkcmhCWkdJNjdMZzVDR2pZeFA1WWdvQmM3RnZEWU1fVW1XU2NQWUotTG9CTnBORGkzaGwwaXVTX3FmVjdP?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-05-18",
+        "description": "Dubai Holding partners with Microsoft to deliver first enterprise-scale AI deployment of its kind in the region  Economy Middle East",
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       },
       {
-        "title": "A UAE property launch party in the shadow of war",
-        "url": "https://www.agbi.com/construction/2026/05/a-dubai-property-launch-party-in-the-shadow-of-war/",
+        "title": "Iran war saddles global companies with $25bn bill",
+        "url": "https://www.agbi.com/industry/2026/05/iran-war-saddles-global-companies-with-25bn-bill/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-18",
-        "description": "Giant screens with walkthroughs of chandeliered villas, a glowing scale model of a master development and thousands of brokers crowding the floor in an arena-turned-ballroom – it was just like Dubai’s pre-war property boom. But when Rizwan Sajan took the stage, the chairman of developer Danube Group offered something less familiar in the emirate’s real [&#8230;]",
-        "hoursAgo": 4,
+        "description": "The US-Israeli war with Iran has already cost companies around the world at least $25 billion – and the bill is climbing, according to a Reuters analysis. A review of corporate statements since the start of the conflict by companies listed in the US, Europe and Asia offers a sobering look at the fallout. Businesses [&#8230;]",
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -52,5 +126,5 @@
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 8
 }
