@@ -1,51 +1,50 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-18T03:32:23.258Z",
+  "generatedAt": "2026-05-18T08:02:26.773Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 160,
-    "big4Rejected": 3,
-    "englishOnly": 157,
-    "withinRecency": 48,
-    "scored": 48,
+    "totalFetched": 270,
+    "afterDedup": 217,
+    "big4Rejected": 2,
+    "englishOnly": 194,
+    "withinRecency": 85,
+    "scored": 85,
     "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Taqa ups capital spend by 46% despite revenue fall",
-        "url": "https://www.agbi.com/energy/2026/05/taqa-ups-capital-spend-by-46-despite-revenue-fall/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-15",
-        "description": "Abu Dhabi National Energy Company (Taqa) said revenue fell in the first quarter due to lower sales in the oil and gas segment amid the regional conflict. Its top line declined 3 percent to AED13.7 billion ($3.7 billion) between January and March, compared to AED14.1 billion a year earlier, the company said in a statement [&#8230;]",
-        "hoursAgo": 67,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      }
-    ],
+    "capital": [],
     "risk": [
       {
-        "title": "Shariah-compliant investors sharpen focus on halal gold",
-        "url": "https://www.agbi.com/finance/2026/05/shariah-compliant-investors-sharpen-focus-on-halal-gold/",
+        "title": "Dubai, UAE, Unveils Middle East’s First Museum of Digital Art in DIFC as Cultural Tourism and Immersive Travel Experiences Surge Across the UAE—What Global Travelers Should Expect - Travel And Tour World",
+        "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQdUgwOVhNS1JTRUc5dUstaEZPVzFEbWgzaXJqMEFHeDcyeEM4NXlEdmI3QnNORFBudFNLRldrc2l0NTg5LXFGX0lZdVcwX1hFMmlsV3J4cWFQajF3alhqYWNoS1JhdHk1UkFNNHlUMnlHUnR5T01Zd0w0dWxCSWNTRkdwa2lFbUJ0TG5Da21jTkNXUENjYThHbGVPUXdmT203eVpjZ2FiWldEd2phTE5LY0Y0RTNyVzVNdHI1UVd2Nm03TG1WY20teHZZVnVUOXZUZEpEcldUS1N3Q3J5bHJvZ00wdVNZQnJUUWxvS29zZEFlYVZHdzFzRzVzSjYyR1VBaFF5dExDc0d3Wm5UeVZ5TXB2VWptY09KVHRDdmZrLXlVNU4xVkJVd1VhRk5MaWZCNjNxWmlKaTdpYmNjcm5IZ21wektDX2Y3?oc=5",
+        "source": "Travel And Tour World",
+        "domain": "travelandtourworld.com",
+        "date": "2026-05-18",
+        "description": "Dubai, UAE, Unveils Middle East’s First Museum of Digital Art in DIFC as Cultural Tourism and Immersive Travel Experiences Surge Across the UAE—What Global Travelers Should Expect  Travel And Tour World",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "A UAE property launch party in the shadow of war",
+        "url": "https://www.agbi.com/construction/2026/05/a-dubai-property-launch-party-in-the-shadow-of-war/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-15",
-        "description": "Gold is increasingly being marketed as both a safe-haven asset and a sharia-compliant investment across the Gulf, as geopolitical tensions and record-high prices drive fresh demand among Islamic investors. The surge comes as gold prices remain near historic highs following months of regional instability linked to the Iran conflict. The situation has prompted wealthy Gulf [&#8230;]",
-        "hoursAgo": 68,
+        "date": "2026-05-18",
+        "description": "Giant screens with walkthroughs of chandeliered villas, a glowing scale model of a master development and thousands of brokers crowding the floor in an arena-turned-ballroom – it was just like Dubai’s pre-war property boom. But when Rizwan Sajan took the stage, the chairman of developer Danube Group offered something less familiar in the emirate’s real [&#8230;]",
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
