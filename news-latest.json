@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-18T21:11:47.826Z",
+  "generatedAt": "2026-05-19T03:24:50.321Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 6,
+    "gdelt": 7,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 176,
-    "afterDedup": 161,
+    "totalFetched": 177,
+    "afterDedup": 163,
     "big4Rejected": 3,
-    "englishOnly": 156,
-    "withinRecency": 55,
-    "scored": 55,
+    "englishOnly": 158,
+    "withinRecency": 58,
+    "scored": 58,
     "passed": 9
   },
   "rooms": {
@@ -30,9 +30,21 @@
         "domain": "emirates247.com",
         "date": "2026-05-18",
         "description": "Dubai real estate transactions hit record AED 4.5 billion at start of the week  Emirates 24|7",
-        "hoursAgo": 7,
+        "hoursAgo": 13,
         "score": 7,
         "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      },
+      {
+        "title": "Why UAE residents will still see one of the world’s lowest inflation rates in 2026 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbFlTRmg4RTlwZ0hsQ2hnQ0lNeTI0TVRjbkpEVHJwUHE3ZlEydzV5YkRXWkVwSmV0NXNjaFd4YnR4UVllbFJpcExNVDZJNk00V2pqZFphTTJGbmdkYkZKWHJKWjhyV1FhZEtmOEsxY2t4REVsYVdSNk1KMVZZOVVlQXhBbEt0cXBQZWRlTjB6M09iTklGM0lMSzJaU1p6SmpmTHVMUmlzTmZOTXp4a3JMRmtwNE5yX2w4d2lQdVotSVJwRVYxaW9mQUhB0gHcAUFVX3lxTE5CSGpqYWhQbG10OEZMRi1oOVROV0JDeFJKVnV1azJFX19obTRjc3REZ1FPNm1fY1ZFcGdILWczRjVNdWpqTWFpeHFFTWhpeEVMbFhUaWdFTEtCYWJLU25pUjdKd0xhQUxlWS1KSGE4QVFCM2g3bXR1d0Y3UXFWdGo5OU5uLVplRVladl9tN1YtYUFtZThaaWRrZGRxTk02azdfTlgxb2p4OTkyZjZwWXJrTmlpU1N1WUticzRYWld5WW9UbXZDakVkeHFnOVAyMVhTemg1ejBtT1BWcGo?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-19",
+        "description": "Why UAE residents will still see one of the world’s lowest inflation rates in 2026  Gulf News",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "UAE/GCC Economy",
         "origin": "google-news"
       },
       {
@@ -42,7 +54,7 @@
         "domain": "agbi.com",
         "date": "2026-05-18",
         "description": "Investcorp Capital has added 19 industrial real estate assets in the US to its global portfolio. The Abu Dhabi-listed alternative investment company acquired the properties, totaling 1.4 million square feet, across Dallas-Fort Worth, Chicago, Indianapolis and Cincinnati for more than $200 million. The US portfolio is almost 97 percent occupied and leased to a diversified [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -56,7 +68,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-18",
         "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
-        "hoursAgo": 13,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -68,7 +80,7 @@
         "domain": "agbi.com",
         "date": "2026-05-18",
         "description": "The retail tranche of Dar Albalad for Business Solutions Company’s initial public offering was 376 percent oversubscribed, with orders totalling SAR231 million ($62 million). More than 90,000 individuals subscribed at a final price of SAR9.75 per share, the IT services provider said in a statement to the Saudi Exchange (Tadawul). Each subscriber is set to [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -80,7 +92,7 @@
         "domain": "khaleejtimes.com",
         "date": "2026-05-18",
         "description": "UAE sets unified salary deadline for private sector from June 1, 2026  Khaleej Times",
-        "hoursAgo": 14,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -88,25 +100,13 @@
     ],
     "risk": [
       {
-        "title": "A UAE property launch party in the shadow of war - Arabian Gulf Business Insight | AGBI",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSlg1dlRub2laUy1FMlhiSFR0WHJZdktiQ2RJdEtVZkRJTnpYWTVrbVppLUgteVVhUkZaZ1oycGRTMlk4QTZ0eFZTWUxHNEZ1Tmowc3FlNEY0cGdkNHlDa0d5WXFFdExwaFNIc2lBQUNESnAyV1hPWEFSVVBWQ0pCWjVPazhTeTIxSlUzTW5GSTBueGZ2eUVlQQ?oc=5",
-        "source": "Arabian Gulf Business Insight | AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-18",
-        "description": "A UAE property launch party in the shadow of war  Arabian Gulf Business Insight | AGBI",
-        "hoursAgo": 18,
-        "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
         "title": "ADGM attracts more registrations despite Iran war",
         "url": "https://www.agbi.com/finance/2026/05/adgm-attracts-more-registrations-despite-iran-war/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-18",
         "description": "Company registrations at the Abu Dhabi Global Market financial free zone rose in March, despite increased Iranian strikes across the GCC over the month. New active licences increased by 5 percent year-on-year, the state-run Abu Dhabi Media Office reported, quoting an ADGM statement. Total active licences crossed 13,300 after 961 companies registered in the first [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -118,7 +118,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-18",
         "description": "Dubai Holding partners with Microsoft to deliver first enterprise-scale AI deployment of its kind in the region  Economy Middle East",
-        "hoursAgo": 12,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -130,7 +130,7 @@
         "domain": "agbi.com",
         "date": "2026-05-18",
         "description": "The US-Israeli war with Iran has already cost companies around the world at least $25 billion – and the bill is climbing, according to a Reuters analysis. A review of corporate statements since the start of the conflict by companies listed in the US, Europe and Asia offers a sobering look at the fallout. Businesses [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
