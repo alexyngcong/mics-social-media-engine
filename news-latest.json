@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-19T11:17:16.878Z",
+  "generatedAt": "2026-05-19T14:58:40.865Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 155,
-    "big4Rejected": 2,
-    "englishOnly": 153,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 8
+    "afterDedup": 162,
+    "big4Rejected": 4,
+    "englishOnly": 158,
+    "withinRecency": 53,
+    "scored": 53,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,8 +30,8 @@
         "domain": "emirates247.com",
         "date": "2026-05-18",
         "description": "Dubai real estate transactions hit record AED 4.5 billion at start of the week  Emirates 24|7",
-        "hoursAgo": 21,
-        "score": 7,
+        "hoursAgo": 25,
+        "score": 6.5,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
       },
@@ -40,39 +40,27 @@
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbFlTRmg4RTlwZ0hsQ2hnQ0lNeTI0TVRjbkpEVHJwUHE3ZlEydzV5YkRXWkVwSmV0NXNjaFd4YnR4UVllbFJpcExNVDZJNk00V2pqZFphTTJGbmdkYkZKWHJKWjhyV1FhZEtmOEsxY2t4REVsYVdSNk1KMVZZOVVlQXhBbEt0cXBQZWRlTjB6M09iTklGM0lMSzJaU1p6SmpmTHVMUmlzTmZOTXp4a3JMRmtwNE5yX2w4d2lQdVotSVJwRVYxaW9mQUhB0gHcAUFVX3lxTE5CSGpqYWhQbG10OEZMRi1oOVROV0JDeFJKVnV1azJFX19obTRjc3REZ1FPNm1fY1ZFcGdILWczRjVNdWpqTWFpeHFFTWhpeEVMbFhUaWdFTEtCYWJLU25pUjdKd0xhQUxlWS1KSGE4QVFCM2g3bXR1d0Y3UXFWdGo5OU5uLVplRVladl9tN1YtYUFtZThaaWRrZGRxTk02azdfTlgxb2p4OTkyZjZwWXJrTmlpU1N1WUticzRYWld5WW9UbXZDakVkeHFnOVAyMVhTemg1ejBtT1BWcGo?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
-        "date": "2026-05-19",
+        "date": "2026-05-18",
         "description": "Why UAE residents will still see one of the world’s lowest inflation rates in 2026  Gulf News",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
       },
       {
-        "title": "Investcorp Capital adds more US industrial properties",
-        "url": "https://www.agbi.com/real-estate/2026/05/investcorp-capital-adds-more-us-industrial-properties/",
+        "title": "Majid Al Futtaim launches mega project in Dubai South",
+        "url": "https://www.agbi.com/construction/2026/05/majid-al-futtaim-launches-mega-project-in-dubai-south/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-18",
-        "description": "Investcorp Capital has added 19 industrial real estate assets in the US to its global portfolio. The Abu Dhabi-listed alternative investment company acquired the properties, totaling 1.4 million square feet, across Dallas-Fort Worth, Chicago, Indianapolis and Cincinnati for more than $200 million. The US portfolio is almost 97 percent occupied and leased to a diversified [&#8230;]",
-        "hoursAgo": 22,
+        "date": "2026-05-19",
+        "description": "Dubai-based conglomerate Majid Al Futtaim and state-backed Dubai South have announced a mega mixed-use community located near Al Maktoum International Airport. Spanning 22 million square feet, the upcoming city in Dubai South is estimated to cost AED62 billion ($17 billion) to build. The project, anchored by a large shopping mall, will feature a mix of [&#8230;]",
+        "hoursAgo": 3,
         "score": 6,
-        "topic": "Real Estate & Construction",
+        "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
       }
     ],
     "capital": [
-      {
-        "title": "Rising revenue pushes Omantel profit higher",
-        "url": "https://www.agbi.com/telecoms/2026/05/rising-revenues-push-omantel-profit-higher/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-19",
-        "description": "Oman Telecommunications Company (Omantel) reported a rise in net profit for the first quarter of this year, supported by revenue growth from domestic operations and Zain Group, its Kuwaiti subsidiary. Net profit attributable to shareholders jumped 23 percent year on year to OMR21 million ($55 million) in the quarter ended March 31, primarily driven by [&#8230;]",
-        "hoursAgo": 5,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
       {
         "title": "UAE sets monthly salary deadline for private sector from June 1 - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOXzRObVIyUENGd1BDei1SVW1UU2h0cVdkR25tLXNseVY3MW9FbWxTRVRwV0Yxc2xfZTlhajJHOExIRmxrRFpGbnpTSTFiUlhaZzVvcTh6SWlHcXNHUFl4amN0eC1JRUVXSXJQQWNvSXVlZXhwVUdZNTBaYlBZaFVxdklhWkIySFRCODRnYmE2NlhLbVphYi0zczNxZmtpcmhUZHczY0RnclA2U0ptLVZRbNIBwwFBVV95cUxNTXFYSlRiTTRwRlVUVVY1YnhrWGtzQ2FCaWVYeUlrN3NMU0ExVHdMWnNvd01KbnY2RExNZEF3Y3pjZWRnVDNZWjJxTVR5cUFkaU80NV9xODBNSUNtLU5DUjlCZlZBNmlJVmZzdjRZYUo2ZmVWYXY1anhoZklhbFBqNXZVZHpJWTBqVlplZmRtT3FaUDZ3ekZfVV93dkFyUTRMS0RfbWMxV2hsSFJoUnI4elNpeVpRVzFBc1NrM0xDejhLS00?oc=5",
@@ -80,52 +68,26 @@
         "domain": "gulfnews.com",
         "date": "2026-05-18",
         "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
-        "hoursAgo": 27,
+        "hoursAgo": 31,
         "score": 6.5,
         "topic": "Workforce & HR",
         "origin": "google-news"
-      }
-    ],
-    "risk": [
-      {
-        "title": "Red Sea Global opens resort on centrepiece Shura Island",
-        "url": "https://www.agbi.com/leisure-hospitality/2026/05/red-sea-global-kingdom-holding-jv-opening-shura-island-resort/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-19",
-        "description": "The first joint-venture resort on Shura Island, the dolphin-shaped centrepiece of Saudi Arabia’s Red Sea giga-project, will open this week. The SAR2.6 billion ($690 million) Four Seasons Resort and Residences Red Sea, developed by Red Sea Global (RSG) and Kingdom Holding Company, will welcome guests from May 20. “We are significantly scaling the capacity and [&#8230;]",
-        "hoursAgo": 6,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
-      }
-    ],
-    "world": [
-      {
-        "title": "UAE hookah company seesaws on Nasdaq launch",
-        "url": "https://www.agbi.com/finance/2026/05/uae-hookah-company-seesaws-on-nasdaq-launch/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-19",
-        "description": "Shares in flavoured tobacco company AIR Global fluctuated significantly during the company’s first day of trading on the Nasdaq in New York on Monday. The Dubai-based manufacturer of hookahs, vape products and molasses swung between a high of nearly $13.40 and a low of $9.40, closing the day at $10.50. The stock regained ground in [&#8230;]",
-        "hoursAgo": 0,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
       },
       {
-        "title": "Oman signs major renewables power deal to curb gas reliance",
-        "url": "https://www.agbi.com/renewable-energy/2026/05/oman-signs-major-renewables-power-deal-to-curb-gas-reliance/",
+        "title": "OIA reports profit increase of 86% for 2025",
+        "url": "https://www.agbi.com/finance/2026/05/oia-reports-profit-increase-of-86-for-2025/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-19",
-        "description": "Oman has signed a major contract for a non-stop renewable energy project that combines wind, solar and battery storage, as it accelerates efforts to reduce its reliance on gas. Nama Power and Water Procurement, the sole purchaser of electricity from independent power plants in Oman, has awarded a power purchase agreement to state-backed O-Green, which [&#8230;]",
-        "hoursAgo": 8,
+        "description": "Oman Investment Authority (OIA) reported a jump in profit last year, as its assets under management reached OMR23 billion ($60 billion). Annual profit amounted to OMR2.9 billion, up 86 percent from OMR1.6 billion in 2024. Return on investment stood at 14.6 percent, placing it among the world’s top-performing sovereign investors, OIA said in a statement. [&#8230;]",
+        "hoursAgo": 4,
         "score": 6,
-        "topic": "Global Economic Signals",
+        "topic": "Corporate Finance",
         "origin": "uae-rss"
       }
-    ]
+    ],
+    "risk": [],
+    "world": []
   },
-  "totalCount": 8
+  "totalCount": 5
 }
