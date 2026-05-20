@@ -1,40 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-20T10:49:46.828Z",
+  "generatedAt": "2026-05-20T14:59:50.031Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 16,
+    "gdelt": 17,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 186,
-    "afterDedup": 166,
-    "big4Rejected": 4,
-    "englishOnly": 159,
-    "withinRecency": 62,
-    "scored": 62,
+    "totalFetched": 187,
+    "afterDedup": 169,
+    "big4Rejected": 3,
+    "englishOnly": 163,
+    "withinRecency": 70,
+    "scored": 70,
     "passed": 9
   },
   "rooms": {
     "growth": [
-      {
-        "title": "Dubai real estate transactions hit record AED 4.5 billion at start of the week - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZ0FZelZGd2cxQlVuY19ITnktS1pob2V1UHNDUFhmOVQ0UHhQTnlDbjFXWEpQbEh3cUM5OWhVT0REaFhOTlZOMW9hdXQ3VnJ0TnRxY084TVljT3RuWnpHdC00Q3lQcjJQRURLbmpDWkNrSVZFMlVnZXo2VmlUREp3bFNLYUJ6UjZnT0xBMmFCQmtHdDlfNldZOGpTZnR4MnJBWDRSMnE1VTg0ODNDWEZyazU0V1pqSjBEN3ZV0gHWAUFVX3lxTE1ySG9kbzZOeXJUeUJlV0JOSERVSkh1d3huWWZvTV9TeDFHNGdiSldTck9JeVpmQ29RUGFCbTh4Nll3SERPdzdubzZfc0dNdXhENENvTWtqZG9xdFQ4WTlvVTB2Q2g1LWJnOTBfRnZHTldZWW56cGo3eGtHQ0d0VVhRbVUxZnBsTWVqdnplQkx5aDN3TGtDR3A3SDdpcXJNYWNyNXhsLTVEQUpnLTRoYk9lRFY5azhXOXdueF9mQW1jS1RlTVd6MnU0eUcySFduOW05RWttVkE?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-05-18",
-        "description": "Dubai real estate transactions hit record AED 4.5 billion at start of the week  Emirates 24|7",
-        "hoursAgo": 45,
-        "score": 6.5,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      },
       {
         "title": "Dubai Real Estate Price Index records 9.81% growth in 2025 - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLUlFYXhqUGltdW5XVmRrT2FYNFVBd2Q4eDlwaThycWRnQjhEeUVKRFBVOGh5NUJRZTFxM0FHUkstckY0QnFrNklYdG5wTmlzcTVqQWZpb3VhcFFJSVl6eGk2eGRsXzYyY1NWS2hiTk4zZUNTNElJeFNNZXZ4M3pFZFNYekxZWW9GQ0Z6NmpwbTVucDhsdndxdHlZOG5iWXl2d3V2NlZiOWhxNmvSAb4BQVVfeXFMT01RazVfMmdTY2VWaGwwVlZjcUc5SktWenZJQkE2N3VHYVljNmt6RHZJWDhQWkNUYnMybnNyTzNSbFBPNzJFNGhDbVdfckNYbktEWm1IbTJaWHR5LTVzTVk0Y3RHb1VqQ2hhWFlLeEhkZlJsT1U3b01ybkpCNmRUWmFsMVNoV2ZyN1cxbS1lSGRjdmtuZ25lREdKTnJTNHV6b25ZOVEzc2tKcTg4YnNtdnJfT0U2QVNLWWc0NTlpQQ?oc=5",
@@ -42,7 +30,19 @@
         "domain": "gulfnews.com",
         "date": "2026-05-19",
         "description": "Dubai Real Estate Price Index records 9.81% growth in 2025  Gulf News",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      },
+      {
+        "title": "Abu Dhabi, Dubai drive UAE real estate surge in Q1 2026 Colliers report - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPR1NnYS1GMHJDT1p3VXRhSGZHX2JtQU8xbVAwTnRXYkVoc0xaQnNDeFhQTTZlNm41R0tub3cwcWc2WHhDSGxYWVpxTkxZaUVBVDlqczJTZGNRWWg5SmlhNzRMZTREUDBLeEg3ZTQ3c3M5a25xazlBWDlOSU5ZVWl3MUs3TDRFLWVkUm5vNElRbGo0TFQzT2l3TjBSc0tlUlBqZDVPVl9pNmhJN3l2bUZTNVlhQWZoOTJCdmdVdDN30gHQAUFVX3lxTE92U2JqbG1zZUxmTDRLTTJxOUlSdUdaQmwzNGVWSmFUdzJhMU51ampYc1c1Z1d6cFZ2M2FRbW5jLUdpd29hOWRwaEtKT1kwVUEyblNTMDhldEpKUHRwU1R5RXFlS2VReXZEcF9vSHFQYU1IbTQ4alNGMnVLdW9rdmp0YW1yMHctRk1YNF9jV2I1SEFjUzl1QXN5aGh0STFKZW12amdtNFhzTmozTENyVDU0QVNiaGphMnRMVE1RNUplU1plZktJQ08za3h6R29wY1I?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-20",
+        "description": "Abu Dhabi, Dubai drive UAE real estate surge in Q1 2026 Colliers report  Gulf News",
+        "hoursAgo": 2,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -54,21 +54,9 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Lunate, the Abu Dhabi-based alternative investment manager, has backed a JD50 million ($70 million) investment fund to support startups in Jordan. The sharia-compliant fund, called Manara Ventures, was launched by the Jordan Capital and Investment Fund (JCIF) and is registered in the Abu Dhabi Global Market. The new fund has secured backing from several other regional [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Investment & Funding",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Majid Al Futtaim launches mega project in Dubai South",
-        "url": "https://www.agbi.com/construction/2026/05/majid-al-futtaim-launches-mega-project-in-dubai-south/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-19",
-        "description": "Dubai-based conglomerate Majid Al Futtaim and state-backed Dubai South have announced a mega mixed-use community located near Al Maktoum International Airport. Spanning 22 million square feet, the upcoming city in Dubai South is estimated to cost AED62 billion ($17 billion) to build. The project, anchored by a large shopping mall, will feature a mix of [&#8230;]",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
       }
     ],
@@ -80,10 +68,22 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Qatar Airways reported a decline in yearly profits and passengers carried, but the flag carrier is aiming to rebuild its operations following the impact of the Iran war. The airline reported post-tax profit of QAR7.1 billion ($1.94 billion) for 2025-26, down about 9 percent from a record QAR7.8 billion in the previous year. The number [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 5,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
+      },
+      {
+        "title": "New salary rule in UAE: Unified wage deadline set for private sector employers - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNHJaVlA5MjEwODF6MkpoUmtKeTJvdE80cHg1MjE2X2pJT0FPd1doeEFsenp1TXlRN1JhaXFGWHE0OUFYUEhyRU16elRQWGF2X1VxS1RqOXBvVTdnQ2V2MjNRak43OTZiRTFZUVNpZGhBWFNXeTg2azNkOS0yZko4LWtZakxzTEVFemN1YmpFdHlCYzBZQUdMTFZtdGFIS2NodWQwRlhfX0lzZl95Y0tYOXh3?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-19",
+        "description": "New salary rule in UAE: Unified wage deadline set for private sector employers  Gulf Business",
+        "hoursAgo": 30,
+        "score": 6.5,
+        "topic": "Workforce & HR",
+        "origin": "google-news"
       },
       {
         "title": "UAE sets monthly salary deadline for private sector from June 1 - Gulf News",
@@ -92,7 +92,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-18",
         "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
-        "hoursAgo": 51,
+        "hoursAgo": 55,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -100,14 +100,14 @@
     ],
     "risk": [
       {
-        "title": "DP World says investments in Jafza hit $230m despite war",
-        "url": "https://www.agbi.com/trade/2026/05/dp-world-says-investments-in-jafza-hit-230m-despite-iran-conflict/",
+        "title": "Middle Eastern airlines &#8216;rebound to almost 75% capacity&#8217;",
+        "url": "https://www.agbi.com/aviation/2026/05/middle-eastern-airlines-rebound-to-almost-75-capacity/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-20",
-        "description": "Global ports operator DP World secured AED854 million ($230 million) in investment across Dubai&#8217;s Jebel Ali Free Zone (Jafza) in the first four months of 2026. More than 43 percent of the committed investments were finalised in March and April, after the February 28 start of the US-Israeli war on Iran, the UAE state-run Wam [&#8230;]",
-        "hoursAgo": 6,
-        "score": 8,
+        "description": "Middle Eastern airlines have recovered almost 75 percent of their operational capacity despite being the hardest hit during the Iran war, a senior International Air Transport Association (Iata) official has said. Airlines in the region were the most affected because of the region’s heavy reliance on transit and connecting flights, which were both hit by [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
@@ -118,7 +118,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Operations at flag carrier EgyptAir fell by almost a quarter after the start of the US-Israeli war with Iran, while the surge in jet fuel prices led to higher airfares. The airline has resumed most of its operations, but services to Kuwait, Bahrain and Iraq (Baghdad and Erbil) remain under review, EgyptAir Holding Company chairman [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -126,14 +126,14 @@
     ],
     "world": [
       {
-        "title": "GCC and UK to sign free trade deal as negotiations end",
-        "url": "https://www.agbi.com/trade/2026/05/gcc-and-uk-to-sign-free-trade-deal-as-negotiations-end/",
+        "title": "Edge and Italy&#8217;s Leonardo sign Kuwait navy combat systems deal",
+        "url": "https://www.agbi.com/defence/2026/05/edge-and-italys-leonardo-sign-kuwait-navy-combat-systems-deal/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-20",
-        "description": "The Gulf Cooperation Council and the United Kingdom will sign a free trade agreement on Wednesday after concluding negotiations, GCC secretary-general Jasem Albudaiwi said. The deal aims to bolster the strategic partnership between the two sides and elevate economic, commercial and investment ties, the Saudi Press Agency quoted Albudaiwi as saying. He said the agreement [&#8230;]",
-        "hoursAgo": 5,
-        "score": 6,
+        "description": "Italian defence company Leonardo has signed a €320 million ($371 million) contract with Abu Dhabi Ship Building, the naval arm of Emirati defence conglomerate Edge Group, to supply combat systems for the Kuwaiti navy. The deal covers combat systems for the Falaj 3-class vessels ordered by the Kuwaiti navy and deepens cooperation between Leonardo and [&#8230;]",
+        "hoursAgo": 3,
+        "score": 7,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
