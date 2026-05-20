@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-20T07:42:24.475Z",
+  "generatedAt": "2026-05-20T10:49:46.828Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 16,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 212,
-    "big4Rejected": 3,
-    "englishOnly": 182,
-    "withinRecency": 80,
-    "scored": 80,
+    "totalFetched": 186,
+    "afterDedup": 166,
+    "big4Rejected": 4,
+    "englishOnly": 159,
+    "withinRecency": 62,
+    "scored": 62,
     "passed": 9
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "emirates247.com",
         "date": "2026-05-18",
         "description": "Dubai real estate transactions hit record AED 4.5 billion at start of the week  Emirates 24|7",
-        "hoursAgo": 42,
+        "hoursAgo": 45,
         "score": 6.5,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -42,7 +42,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-19",
         "description": "Dubai Real Estate Price Index records 9.81% growth in 2025  Gulf News",
-        "hoursAgo": 8,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -54,7 +54,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Lunate, the Abu Dhabi-based alternative investment manager, has backed a JD50 million ($70 million) investment fund to support startups in Jordan. The sharia-compliant fund, called Manara Ventures, was launched by the Jordan Capital and Investment Fund (JCIF) and is registered in the Abu Dhabi Global Market. The new fund has secured backing from several other regional [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
@@ -66,7 +66,7 @@
         "domain": "agbi.com",
         "date": "2026-05-19",
         "description": "Dubai-based conglomerate Majid Al Futtaim and state-backed Dubai South have announced a mega mixed-use community located near Al Maktoum International Airport. Spanning 22 million square feet, the upcoming city in Dubai South is estimated to cost AED62 billion ($17 billion) to build. The project, anchored by a large shopping mall, will feature a mix of [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -74,28 +74,28 @@
     ],
     "capital": [
       {
+        "title": "Qatar Airways profit and passenger numbers dented",
+        "url": "https://www.agbi.com/aviation/2026/05/qatar-airways-profit-and-passenger-numbers-dented/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-20",
+        "description": "Qatar Airways reported a decline in yearly profits and passengers carried, but the flag carrier is aiming to rebuild its operations following the impact of the Iran war. The airline reported post-tax profit of QAR7.1 billion ($1.94 billion) for 2025-26, down about 9 percent from a record QAR7.8 billion in the previous year. The number [&#8230;]",
+        "hoursAgo": 1,
+        "score": 8,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
         "title": "UAE sets monthly salary deadline for private sector from June 1 - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOXzRObVIyUENGd1BDei1SVW1UU2h0cVdkR25tLXNseVY3MW9FbWxTRVRwV0Yxc2xfZTlhajJHOExIRmxrRFpGbnpTSTFiUlhaZzVvcTh6SWlHcXNHUFl4amN0eC1JRUVXSXJQQWNvSXVlZXhwVUdZNTBaYlBZaFVxdklhWkIySFRCODRnYmE2NlhLbVphYi0zczNxZmtpcmhUZHczY0RnclA2U0ptLVZRbNIBwwFBVV95cUxNTXFYSlRiTTRwRlVUVVY1YnhrWGtzQ2FCaWVYeUlrN3NMU0ExVHdMWnNvd01KbnY2RExNZEF3Y3pjZWRnVDNZWjJxTVR5cUFkaU80NV9xODBNSUNtLU5DUjlCZlZBNmlJVmZzdjRZYUo2ZmVWYXY1anhoZklhbFBqNXZVZHpJWTBqVlplZmRtT3FaUDZ3ekZfVV93dkFyUTRMS0RfbWMxV2hsSFJoUnI4elNpeVpRVzFBc1NrM0xDejhLS00?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-05-18",
         "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
-        "hoursAgo": 48,
-        "score": 6.5,
+        "hoursAgo": 51,
+        "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
-      },
-      {
-        "title": "OIA reports profit increase of 86% for 2025",
-        "url": "https://www.agbi.com/finance/2026/05/oia-reports-profit-increase-of-86-for-2025/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-19",
-        "description": "Oman Investment Authority (OIA) reported a jump in profit last year, as its assets under management reached OMR23 billion ($60 billion). Annual profit amounted to OMR2.9 billion, up 86 percent from OMR1.6 billion in 2024. Return on investment stood at 14.6 percent, placing it among the world’s top-performing sovereign investors, OIA said in a statement. [&#8230;]",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
       }
     ],
     "risk": [
@@ -106,7 +106,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Global ports operator DP World secured AED854 million ($230 million) in investment across Dubai&#8217;s Jebel Ali Free Zone (Jafza) in the first four months of 2026. More than 43 percent of the committed investments were finalised in March and April, after the February 28 start of the US-Israeli war on Iran, the UAE state-run Wam [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -118,7 +118,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Operations at flag carrier EgyptAir fell by almost a quarter after the start of the US-Israeli war with Iran, while the surge in jet fuel prices led to higher airfares. The airline has resumed most of its operations, but services to Kuwait, Bahrain and Iraq (Baghdad and Erbil) remain under review, EgyptAir Holding Company chairman [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -132,7 +132,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "The Gulf Cooperation Council and the United Kingdom will sign a free trade agreement on Wednesday after concluding negotiations, GCC secretary-general Jasem Albudaiwi said. The deal aims to bolster the strategic partnership between the two sides and elevate economic, commercial and investment ties, the Saudi Press Agency quoted Albudaiwi as saying. He said the agreement [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
