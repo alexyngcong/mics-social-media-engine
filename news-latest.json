@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-21T07:50:57.072Z",
+  "generatedAt": "2026-05-21T11:22:42.118Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,29 +14,40 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 158,
+    "afterDedup": 154,
     "big4Rejected": 1,
-    "englishOnly": 157,
-    "withinRecency": 58,
-    "scored": 58,
-    "passed": 10
+    "englishOnly": 153,
+    "withinRecency": 50,
+    "scored": 50,
+    "passed": 8
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Abu Dhabi, Dubai drive UAE real estate surge in Q1 2026 Colliers report - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPR1NnYS1GMHJDT1p3VXRhSGZHX2JtQU8xbVAwTnRXYkVoc0xaQnNDeFhQTTZlNm41R0tub3cwcWc2WHhDSGxYWVpxTkxZaUVBVDlqczJTZGNRWWg5SmlhNzRMZTREUDBLeEg3ZTQ3c3M5a25xazlBWDlOSU5ZVWl3MUs3TDRFLWVkUm5vNElRbGo0TFQzT2l3TjBSc0tlUlBqZDVPVl9pNmhJN3l2bUZTNVlhQWZoOTJCdmdVdDN30gHQAUFVX3lxTE92U2JqbG1zZUxmTDRLTTJxOUlSdUdaQmwzNGVWSmFUdzJhMU51ampYc1c1Z1d6cFZ2M2FRbW5jLUdpd29hOWRwaEtKT1kwVUEyblNTMDhldEpKUHRwU1R5RXFlS2VReXZEcF9vSHFQYU1IbTQ4alNGMnVLdW9rdmp0YW1yMHctRk1YNF9jV2I1SEFjUzl1QXN5aGh0STFKZW12amdtNFhzTmozTENyVDU0QVNiaGphMnRMVE1RNUplU1plZktJQ08za3h6R29wY1I?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-20",
-        "description": "Abu Dhabi, Dubai drive UAE real estate surge in Q1 2026 Colliers report  Gulf News",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [
+      {
+        "title": "Kuwait turns to debt markets as Hormuz disruption hits revenue",
+        "url": "https://www.agbi.com/markets/2026/05/kuwait-turns-to-debt-markets-as-hormuz-disruption-hits-revenue/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "Kuwait is stepping up borrowing in local and international debt markets as disruptions to crude exports through the Strait of Hormuz threaten to widen an already large fiscal deficit and increase pressure on state finances. Kuwait exported more than 2 million barrels per day of crude through the strait before war between Iran and the [&#8230;]",
+        "hoursAgo": 1,
+        "score": 8,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Dar Al Arkan sukuk raises $600m",
+        "url": "https://www.agbi.com/markets/2026/05/dar-al-arkan-sukuk-raises-600m/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "The order book for Saudi real estate investor Dar Al Arkan’s Islamic bond (sukuk) sale – the first since the start of the Iran war – exceeded $1.5 billion, driven by regional and international investors. The developer raised SAR2.25 billion ($600 million) through the sale, which is to be used for general corporate purposes. The [&#8230;]",
+        "hoursAgo": 3,
+        "score": 8,
+        "topic": "Banking & Rates",
+        "origin": "uae-rss"
+      },
       {
         "title": "Egypt issues $1bn bond to support development",
         "url": "https://www.agbi.com/finance/2026/05/egypt-issues-1bn-bond-to-support-development/",
@@ -44,7 +55,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Egypt has issued the first sovereign bond in the Middle East and North Africa since the start of the Iran conflict in an effort to support development. The $1 billion issuance will expand Cairo&#8217;s investor base and the proceeds will go towards financing projects in healthcare and education, the cabinet said, citing a finance ministry [&#8230;]",
-        "hoursAgo": 0,
+        "hoursAgo": 4,
         "score": 7,
         "topic": "Banking & Rates",
         "origin": "uae-rss"
@@ -56,19 +67,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-19",
         "description": "New salary rule in UAE: Unified wage deadline set for private sector employers  Gulf Business",
-        "hoursAgo": 47,
-        "score": 6.5,
-        "topic": "Workforce & HR",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE sets monthly salary deadline for private sector from June 1 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOXzRObVIyUENGd1BDei1SVW1UU2h0cVdkR25tLXNseVY3MW9FbWxTRVRwV0Yxc2xfZTlhajJHOExIRmxrRFpGbnpTSTFiUlhaZzVvcTh6SWlHcXNHUFl4amN0eC1JRUVXSXJQQWNvSXVlZXhwVUdZNTBaYlBZaFVxdklhWkIySFRCODRnYmE2NlhLbVphYi0zczNxZmtpcmhUZHczY0RnclA2U0ptLVZRbNIBwwFBVV95cUxNTXFYSlRiTTRwRlVUVVY1YnhrWGtzQ2FCaWVYeUlrN3NMU0ExVHdMWnNvd01KbnY2RExNZEF3Y3pjZWRnVDNZWjJxTVR5cUFkaU80NV9xODBNSUNtLU5DUjlCZlZBNmlJVmZzdjRZYUo2ZmVWYXY1anhoZklhbFBqNXZVZHpJWTBqVlplZmRtT3FaUDZ3ekZfVV93dkFyUTRMS0RfbWMxV2hsSFJoUnI4elNpeVpRVzFBc1NrM0xDejhLS00?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-18",
-        "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
-        "hoursAgo": 72,
+        "hoursAgo": 50,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -76,25 +75,25 @@
     ],
     "risk": [
       {
-        "title": "UAE&#8217;s Al Jaber says oil supply will take months to recover",
+        "title": "Al Jaber says oil supply will take months to recover",
         "url": "https://www.agbi.com/oil-and-gas/2026/05/uaes-al-jaber-says-oil-supply-will-take-months-to-recover/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Global oil flows will take four months to return to 80 percent of typical levels if the Middle East war ends tomorrow, and will not be back at full capacity until the first or second quarter of 2027, UAE industry minister Sultan Al Jaber said. Damage from Iranian attacks to the facilities of state-owned Abu [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
       {
-        "title": "Iran war shows who ‘real friends’ are, says Emirati trade minister",
+        "title": "Iran war shows who ‘real friends’ are, says UAE minister",
         "url": "https://www.agbi.com/trade/2026/05/uae-trade-minister-wants-to-do-business-with-countrys-real-friends/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The UAE is fundamentally recalibrating its trade strategy in response to the Iran war, capping reliance on any single country for its imports while deepening ties with those the country’s minister of foreign trade calls “real friends”. The US-Israeli attacks on Iran have forced a wholesale rethink of logistics after the effective closure of the [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -106,19 +105,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The UAE is tightening salary payment rules as businesses grapple with the economic fallout of the US-Israeli war on Iran and some are forced to cut jobs or wages. From June 1 private sector employers must pay salaries on the first day of each month. The previous Wage Protection System allowed a grace period of [&#8230;]",
-        "hoursAgo": 4,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Middle Eastern airlines &#8216;rebound to almost 75% capacity&#8217;",
-        "url": "https://www.agbi.com/aviation/2026/05/middle-eastern-airlines-rebound-to-almost-75-capacity/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-20",
-        "description": "Middle Eastern airlines have recovered almost 75 percent of their operational capacity despite being the hardest hit during the Iran war, a senior International Air Transport Association (Iata) official has said. Airlines in the region were the most affected because of the region’s heavy reliance on transit and connecting flights, which were both hit by [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -132,24 +119,12 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The UK and Gulf Cooperation Council finalised a long-delayed free trade agreement on Wednesday, concluding four years of negotiations and putting in place a framework which the parties hope will bolster trade and protect investments. Annual bilateral trade between the UK and the six GCC states &#8212; Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain and [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "The Gulf needs carbon taxes, not just capture, to reach net zero",
-        "url": "https://www.agbi.com/energy/2026/05/the-gulf-needs-carbon-taxes-not-just-capture-to-reach-net-zero-gcc/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-21",
-        "description": "The clock is running down. Most Gulf countries have set explicit targets to achieve net zero carbon emissions, despite in normal times being major exporters of oil and gas. Oman and the UAE are committed to net zero by 2050; Saudi Arabia, Kuwait and Bahrain by 2060. Qatar, previously the world&#8217;s largest exporter of liquefied [&#8230;]",
-        "hoursAgo": 7,
-        "score": 6,
-        "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 10
+  "totalCount": 8
 }
