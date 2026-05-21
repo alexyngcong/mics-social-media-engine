@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-20T21:52:29.659Z",
+  "generatedAt": "2026-05-21T03:31:31.874Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,27 +14,15 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 157,
-    "big4Rejected": 2,
+    "afterDedup": 158,
+    "big4Rejected": 3,
     "englishOnly": 155,
-    "withinRecency": 59,
-    "scored": 59,
-    "passed": 10
+    "withinRecency": 57,
+    "scored": 57,
+    "passed": 8
   },
   "rooms": {
     "growth": [
-      {
-        "title": "Dubai Real Estate Price Index records 9.81% growth in 2025 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLUlFYXhqUGltdW5XVmRrT2FYNFVBd2Q4eDlwaThycWRnQjhEeUVKRFBVOGh5NUJRZTFxM0FHUkstckY0QnFrNklYdG5wTmlzcTVqQWZpb3VhcFFJSVl6eGk2eGRsXzYyY1NWS2hiTk4zZUNTNElJeFNNZXZ4M3pFZFNYekxZWW9GQ0Z6NmpwbTVucDhsdndxdHlZOG5iWXl2d3V2NlZiOWhxNmvSAb4BQVVfeXFMT01RazVfMmdTY2VWaGwwVlZjcUc5SktWenZJQkE2N3VHYVljNmt6RHZJWDhQWkNUYnMybnNyTzNSbFBPNzJFNGhDbVdfckNYbktEWm1IbTJaWHR5LTVzTVk0Y3RHb1VqQ2hhWFlLeEhkZlJsT1U3b01ybkpCNmRUWmFsMVNoV2ZyN1cxbS1lSGRjdmtuZ25lREdKTnJTNHV6b25ZOVEzc2tKcTg4YnNtdnJfT0U2QVNLWWc0NTlpQQ?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-19",
-        "description": "Dubai Real Estate Price Index records 9.81% growth in 2025  Gulf News",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      },
       {
         "title": "Abu Dhabi, Dubai drive UAE real estate surge in Q1 2026 Colliers report - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPR1NnYS1GMHJDT1p3VXRhSGZHX2JtQU8xbVAwTnRXYkVoc0xaQnNDeFhQTTZlNm41R0tub3cwcWc2WHhDSGxYWVpxTkxZaUVBVDlqczJTZGNRWWg5SmlhNzRMZTREUDBLeEg3ZTQ3c3M5a25xazlBWDlOSU5ZVWl3MUs3TDRFLWVkUm5vNElRbGo0TFQzT2l3TjBSc0tlUlBqZDVPVl9pNmhJN3l2bUZTNVlhQWZoOTJCdmdVdDN30gHQAUFVX3lxTE92U2JqbG1zZUxmTDRLTTJxOUlSdUdaQmwzNGVWSmFUdzJhMU51ampYc1c1Z1d6cFZ2M2FRbW5jLUdpd29hOWRwaEtKT1kwVUEyblNTMDhldEpKUHRwU1R5RXFlS2VReXZEcF9vSHFQYU1IbTQ4alNGMnVLdW9rdmp0YW1yMHctRk1YNF9jV2I1SEFjUzl1QXN5aGh0STFKZW12amdtNFhzTmozTENyVDU0QVNiaGphMnRMVE1RNUplU1plZktJQ08za3h6R29wY1I?oc=5",
@@ -42,34 +30,10 @@
         "domain": "gulfnews.com",
         "date": "2026-05-20",
         "description": "Abu Dhabi, Dubai drive UAE real estate surge in Q1 2026 Colliers report  Gulf News",
-        "hoursAgo": 9,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      },
-      {
-        "title": "Dubai real estate transactions hit record AED 4.5 billion at start of the week - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZ0FZelZGd2cxQlVuY19ITnktS1pob2V1UHNDUFhmOVQ0UHhQTnlDbjFXWEpQbEh3cUM5OWhVT0REaFhOTlZOMW9hdXQ3VnJ0TnRxY084TVljT3RuWnpHdC00Q3lQcjJQRURLbmpDWkNrSVZFMlVnZXo2VmlUREp3bFNLYUJ6UjZnT0xBMmFCQmtHdDlfNldZOGpTZnR4MnJBWDRSMnE1VTg0ODNDWEZyazU0V1pqSjBEN3ZV0gHWAUFVX3lxTE1ySG9kbzZOeXJUeUJlV0JOSERVSkh1d3huWWZvTV9TeDFHNGdiSldTck9JeVpmQ29RUGFCbTh4Nll3SERPdzdubzZfc0dNdXhENENvTWtqZG9xdFQ4WTlvVTB2Q2g1LWJnOTBfRnZHTldZWW56cGo3eGtHQ0d0VVhRbVUxZnBsTWVqdnplQkx5aDN3TGtDR3A3SDdpcXJNYWNyNXhsLTVEQUpnLTRoYk9lRFY5azhXOXdueF9mQW1jS1RlTVd6MnU0eUcySFduOW05RWttVkE?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-05-18",
-        "description": "Dubai real estate transactions hit record AED 4.5 billion at start of the week  Emirates 24|7",
-        "hoursAgo": 56,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE’s Lunate backs $70m Jordanian technology fund",
-        "url": "https://www.agbi.com/finance/2026/05/uaes-lunate-backs-70m-jordanian-technology-fund/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-20",
-        "description": "Lunate, the Abu Dhabi-based alternative investment manager, has backed a JD50 million ($70 million) investment fund to support startups in Jordan. The sharia-compliant fund, called Manara Ventures, was launched by the Jordan Capital and Investment Fund (JCIF) and is registered in the Abu Dhabi Global Market. The new fund has secured backing from several other regional [&#8230;]",
         "hoursAgo": 15,
         "score": 6,
-        "topic": "Investment & Funding",
-        "origin": "uae-rss"
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
       }
     ],
     "capital": [
@@ -80,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Qatar Airways reported a decline in yearly profits and passengers carried, but the flag carrier is aiming to rebuild its operations following the impact of the Iran war. The airline reported post-tax profit of QAR7.1 billion ($1.94 billion) for 2025-26, down about 9 percent from a record QAR7.8 billion in the previous year. The number [&#8230;]",
-        "hoursAgo": 12,
+        "hoursAgo": 18,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -92,7 +56,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-19",
         "description": "New salary rule in UAE: Unified wage deadline set for private sector employers  Gulf Business",
-        "hoursAgo": 37,
+        "hoursAgo": 42,
         "score": 6.5,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -104,7 +68,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-18",
         "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
-        "hoursAgo": 62,
+        "hoursAgo": 67,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -118,7 +82,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Middle Eastern airlines have recovered almost 75 percent of their operational capacity despite being the hardest hit during the Iran war, a senior International Air Transport Association (Iata) official has said. Airlines in the region were the most affected because of the region’s heavy reliance on transit and connecting flights, which were both hit by [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -130,7 +94,7 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Operations at flag carrier EgyptAir fell by almost a quarter after the start of the US-Israeli war with Iran, while the surge in jet fuel prices led to higher airfares. The airline has resumed most of its operations, but services to Kuwait, Bahrain and Iraq (Baghdad and Erbil) remain under review, EgyptAir Holding Company chairman [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -144,12 +108,24 @@
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Italian defence company Leonardo has signed a €320 million ($371 million) contract with Abu Dhabi Ship Building, the naval arm of Emirati defence conglomerate Edge Group, to supply combat systems for the Kuwaiti navy. The deal covers combat systems for the Falaj 3-class vessels ordered by the Kuwaiti navy and deepens cooperation between Leonardo and [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "The Gulf needs carbon taxes, not just capture, to reach net zero",
+        "url": "https://www.agbi.com/energy/2026/05/the-gulf-needs-carbon-taxes-not-just-capture-to-reach-net-zero-gcc/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "The clock is running down. Most Gulf countries have set explicit targets to achieve net zero carbon emissions, despite in normal times being major exporters of oil and gas. Oman and the UAE are committed to net zero by 2050; Saudi Arabia, Kuwait and Bahrain by 2060. Qatar, previously the world&#8217;s largest exporter of liquefied [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 10
+  "totalCount": 8
 }
