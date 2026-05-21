@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-21T11:22:42.118Z",
+  "generatedAt": "2026-05-21T15:21:45.212Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -19,7 +19,7 @@
     "englishOnly": 153,
     "withinRecency": 50,
     "scored": 50,
-    "passed": 8
+    "passed": 9
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Kuwait is stepping up borrowing in local and international debt markets as disruptions to crude exports through the Strait of Hormuz threaten to widen an already large fiscal deficit and increase pressure on state finances. Kuwait exported more than 2 million barrels per day of crude through the strait before war between Iran and the [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 5,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The order book for Saudi real estate investor Dar Al Arkan’s Islamic bond (sukuk) sale – the first since the start of the Iran war – exceeded $1.5 billion, driven by regional and international investors. The developer raised SAR2.25 billion ($600 million) through the sale, which is to be used for general corporate purposes. The [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 8,
         "topic": "Banking & Rates",
         "origin": "uae-rss"
@@ -55,7 +55,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Egypt has issued the first sovereign bond in the Middle East and North Africa since the start of the Iran conflict in an effort to support development. The $1 billion issuance will expand Cairo&#8217;s investor base and the proceeds will go towards financing projects in healthcare and education, the cabinet said, citing a finance ministry [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Banking & Rates",
         "origin": "uae-rss"
@@ -67,7 +67,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-19",
         "description": "New salary rule in UAE: Unified wage deadline set for private sector employers  Gulf Business",
-        "hoursAgo": 50,
+        "hoursAgo": 54,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -75,43 +75,55 @@
     ],
     "risk": [
       {
-        "title": "Al Jaber says oil supply will take months to recover",
-        "url": "https://www.agbi.com/oil-and-gas/2026/05/uaes-al-jaber-says-oil-supply-will-take-months-to-recover/",
+        "title": "Dubai offers further support for businesses hit by Iran war",
+        "url": "https://www.agbi.com/economy/2026/05/dubai-launches-second-support-package-for-businesses-hit-by-iran-war/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-21",
-        "description": "Global oil flows will take four months to return to 80 percent of typical levels if the Middle East war ends tomorrow, and will not be back at full capacity until the first or second quarter of 2027, UAE industry minister Sultan Al Jaber said. Damage from Iranian attacks to the facilities of state-owned Abu [&#8230;]",
-        "hoursAgo": 6,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Iran war shows who ‘real friends’ are, says UAE minister",
-        "url": "https://www.agbi.com/trade/2026/05/uae-trade-minister-wants-to-do-business-with-countrys-real-friends/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-21",
-        "description": "The UAE is fundamentally recalibrating its trade strategy in response to the Iran war, capping reliance on any single country for its imports while deepening ties with those the country’s minister of foreign trade calls “real friends”. The US-Israeli attacks on Iran have forced a wholesale rethink of logistics after the effective closure of the [&#8230;]",
-        "hoursAgo": 8,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "UAE tightens salary rules as pressure on jobs market mounts",
-        "url": "https://www.agbi.com/employment/2026/05/uae-tightens-salary-rules-as-pressure-on-jobs-market-mounts/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-21",
-        "description": "The UAE is tightening salary payment rules as businesses grapple with the economic fallout of the US-Israeli war on Iran and some are forced to cut jobs or wages. From June 1 private sector employers must pay salaries on the first day of each month. The previous Wage Protection System allowed a grace period of [&#8230;]",
-        "hoursAgo": 8,
-        "score": 6,
+        "description": "Dubai has announced a second economic incentive programme worth AED1.5 billion ($408 million), just two months after unveiling the first AED1 billion package, to support businesses impacted by the Iran conflict. The latest offer, approved by Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, includes 33 initiatives to be implemented during the next [&#8230;]",
+        "hoursAgo": 2,
+        "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
     "world": [
+      {
+        "title": "Dubai’s new Dh1.5bn support plan: These key sectors will get major incentives - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObFJrc3pWdmh4NXdvbXhSMlNYM3h1Y2FxS2tOaHVFQ3RYLXVjUDZVU2c4b3EtOEYxT3JLanhnQ2J6cExjazhCT1JvZnF5ejd5QmZYcWVpcHdYc0k4T0N5QW4tZ3NRQWtMY0RRY3pvUy1tQWRNOWIzZzJCQm5KMnZIemZuVDZoQXduREhwWUpzMTh1Vi1kdFBpQTFsWTM4akpjWjY0RkNzWU16SkVHWkxlNmxQbHU?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-21",
+        "description": "Dubai’s new Dh1.5bn support plan: These key sectors will get major incentives  Gulf Business",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE’s Core42 raises $550m to scale AI deployment in Europe and US",
+        "url": "https://www.agbi.com/ai/2026/05/uaes-core42-raises-550m-to-scale-ai-deployment-in-europe-and-us/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "Core42, a subsidiary of Emirati-owned G42 that specialises in sovereign cloud and artificial intelligence (AI) infrastructure, has raised $550 million to accelerate its expansion across the US and Europe. The funding has been secured through two structured trade finance facilities of $240 million (AED880 million) and $310 million in February and May from HSBC, Core42 [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "AI & Technology",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Oman slashes budget deficit on higher hydrocarbon revenues",
+        "url": "https://www.agbi.com/economy/2026/05/oman-slashes-budget-deficit-on-higher-hydrocarbon-revenues/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "Oman increased spending by 8.6 percent in the first quarter of 2026 but reported an annual deficit cut of 82 percent thanks to higher hydrocarbon income, the ministry of finance said. The sultanate recorded spending of OMR3 billion ($7.8 billion) while revenues increased 13 percent to OMR2.98 billion resulting in a budget deficit of OMR25 [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
       {
         "title": "UK-GCC pact to boost trade by a fifth, officials say",
         "url": "https://www.agbi.com/trade/2026/05/uk-gcc-pact-to-boost-bilateral-trade-by-a-fifth-officials-say/",
@@ -119,12 +131,12 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The UK and Gulf Cooperation Council finalised a long-delayed free trade agreement on Wednesday, concluding four years of negotiations and putting in place a framework which the parties hope will bolster trade and protect investments. Annual bilateral trade between the UK and the six GCC states &#8212; Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain and [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 9
 }
