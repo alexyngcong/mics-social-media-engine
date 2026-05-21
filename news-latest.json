@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-21T03:31:31.874Z",
+  "generatedAt": "2026-05-21T07:50:57.072Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,11 +15,11 @@
   "diagnostic": {
     "totalFetched": 170,
     "afterDedup": 158,
-    "big4Rejected": 3,
-    "englishOnly": 155,
-    "withinRecency": 57,
-    "scored": 57,
-    "passed": 8
+    "big4Rejected": 1,
+    "englishOnly": 157,
+    "withinRecency": 58,
+    "scored": 58,
+    "passed": 10
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-20",
         "description": "Abu Dhabi, Dubai drive UAE real estate surge in Q1 2026 Colliers report  Gulf News",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -38,15 +38,15 @@
     ],
     "capital": [
       {
-        "title": "Qatar Airways profit and passenger numbers dented",
-        "url": "https://www.agbi.com/aviation/2026/05/qatar-airways-profit-and-passenger-numbers-dented/",
+        "title": "Egypt issues $1bn bond to support development",
+        "url": "https://www.agbi.com/finance/2026/05/egypt-issues-1bn-bond-to-support-development/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-20",
-        "description": "Qatar Airways reported a decline in yearly profits and passengers carried, but the flag carrier is aiming to rebuild its operations following the impact of the Iran war. The airline reported post-tax profit of QAR7.1 billion ($1.94 billion) for 2025-26, down about 9 percent from a record QAR7.8 billion in the previous year. The number [&#8230;]",
-        "hoursAgo": 18,
-        "score": 8,
-        "topic": "Corporate Finance",
+        "date": "2026-05-21",
+        "description": "Egypt has issued the first sovereign bond in the Middle East and North Africa since the start of the Iran conflict in an effort to support development. The $1 billion issuance will expand Cairo&#8217;s investor base and the proceeds will go towards financing projects in healthcare and education, the cabinet said, citing a finance ministry [&#8230;]",
+        "hoursAgo": 0,
+        "score": 7,
+        "topic": "Banking & Rates",
         "origin": "uae-rss"
       },
       {
@@ -56,7 +56,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-19",
         "description": "New salary rule in UAE: Unified wage deadline set for private sector employers  Gulf Business",
-        "hoursAgo": 42,
+        "hoursAgo": 47,
         "score": 6.5,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -68,7 +68,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-18",
         "description": "UAE sets monthly salary deadline for private sector from June 1  Gulf News",
-        "hoursAgo": 67,
+        "hoursAgo": 72,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -76,25 +76,49 @@
     ],
     "risk": [
       {
+        "title": "UAE&#8217;s Al Jaber says oil supply will take months to recover",
+        "url": "https://www.agbi.com/oil-and-gas/2026/05/uaes-al-jaber-says-oil-supply-will-take-months-to-recover/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "Global oil flows will take four months to return to 80 percent of typical levels if the Middle East war ends tomorrow, and will not be back at full capacity until the first or second quarter of 2027, UAE industry minister Sultan Al Jaber said. Damage from Iranian attacks to the facilities of state-owned Abu [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Iran war shows who ‘real friends’ are, says Emirati trade minister",
+        "url": "https://www.agbi.com/trade/2026/05/uae-trade-minister-wants-to-do-business-with-countrys-real-friends/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "The UAE is fundamentally recalibrating its trade strategy in response to the Iran war, capping reliance on any single country for its imports while deepening ties with those the country’s minister of foreign trade calls “real friends”. The US-Israeli attacks on Iran have forced a wholesale rethink of logistics after the effective closure of the [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "UAE tightens salary rules as pressure on jobs market mounts",
+        "url": "https://www.agbi.com/employment/2026/05/uae-tightens-salary-rules-as-pressure-on-jobs-market-mounts/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-21",
+        "description": "The UAE is tightening salary payment rules as businesses grapple with the economic fallout of the US-Israeli war on Iran and some are forced to cut jobs or wages. From June 1 private sector employers must pay salaries on the first day of each month. The previous Wage Protection System allowed a grace period of [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Middle Eastern airlines &#8216;rebound to almost 75% capacity&#8217;",
         "url": "https://www.agbi.com/aviation/2026/05/middle-eastern-airlines-rebound-to-almost-75-capacity/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-20",
         "description": "Middle Eastern airlines have recovered almost 75 percent of their operational capacity despite being the hardest hit during the Iran war, a senior International Air Transport Association (Iata) official has said. Airlines in the region were the most affected because of the region’s heavy reliance on transit and connecting flights, which were both hit by [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "EgyptAir in &#8216;healthy&#8217; position despite war impact",
-        "url": "https://www.agbi.com/aviation/2026/05/egyptair-in-healthy-position-despite-impact-of-iran-war/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-20",
-        "description": "Operations at flag carrier EgyptAir fell by almost a quarter after the start of the US-Israeli war with Iran, while the surge in jet fuel prices led to higher airfares. The airline has resumed most of its operations, but services to Kuwait, Bahrain and Iraq (Baghdad and Erbil) remain under review, EgyptAir Holding Company chairman [&#8230;]",
-        "hoursAgo": 21,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -102,14 +126,14 @@
     ],
     "world": [
       {
-        "title": "Edge and Italy&#8217;s Leonardo sign Kuwait navy combat systems deal",
-        "url": "https://www.agbi.com/defence/2026/05/edge-and-italys-leonardo-sign-kuwait-navy-combat-systems-deal/",
+        "title": "UK-GCC pact to boost trade by a fifth, officials say",
+        "url": "https://www.agbi.com/trade/2026/05/uk-gcc-pact-to-boost-bilateral-trade-by-a-fifth-officials-say/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-20",
-        "description": "Italian defence company Leonardo has signed a €320 million ($371 million) contract with Abu Dhabi Ship Building, the naval arm of Emirati defence conglomerate Edge Group, to supply combat systems for the Kuwaiti navy. The deal covers combat systems for the Falaj 3-class vessels ordered by the Kuwaiti navy and deepens cooperation between Leonardo and [&#8230;]",
-        "hoursAgo": 15,
-        "score": 7,
+        "date": "2026-05-21",
+        "description": "The UK and Gulf Cooperation Council finalised a long-delayed free trade agreement on Wednesday, concluding four years of negotiations and putting in place a framework which the parties hope will bolster trade and protect investments. Annual bilateral trade between the UK and the six GCC states &#8212; Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain and [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       },
@@ -120,12 +144,12 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The clock is running down. Most Gulf countries have set explicit targets to achieve net zero carbon emissions, despite in normal times being major exporters of oil and gas. Oman and the UAE are committed to net zero by 2050; Saudi Arabia, Kuwait and Bahrain by 2060. Qatar, previously the world&#8217;s largest exporter of liquefied [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 10
 }
