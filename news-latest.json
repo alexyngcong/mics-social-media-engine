@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-21T21:27:31.508Z",
+  "generatedAt": "2026-05-22T03:30:52.670Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,15 +14,28 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 156,
+    "afterDedup": 158,
     "big4Rejected": 2,
-    "englishOnly": 154,
-    "withinRecency": 51,
-    "scored": 51,
-    "passed": 8
+    "englishOnly": 156,
+    "withinRecency": 54,
+    "scored": 54,
+    "passed": 9
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "UAE report links obesity intervention to $51 billion GDP boost by 2031 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcGg3Z21DLU83MGZaeWF3QUdpMF9oRUVYbTBKMXZyRDdFZHVrZS1WUzlWQmhvRk45TWpoeHlpanVlN0QzRnJLUURGc3VaeS10V0JhdXIyODN5MW1ySkhXMURlaUtBS2pmRlh6NkhsWFJnU1ZGMmt2UUFxV3BZcEZZczR5Z3A4WW44Vl8yRTRId0phZVNFVU5NYmNEbDFVclhXUTdzYTFqQ3N4aUh6N04wREp4Z9IBxgFBVV95cUxORUl1LXNWVG5ER2dvRWYzSGtxZ1dxd2xNZThqWUFGYmZWWURFelVMbDZwRmQ5dGc3UXo4MXo4M0lVQklHd0dPZzFzNWM2b2Q0TGROQWdqUGdYUVcxMUlWeElENUlmY3IwVFo1amZPRldfZGtJTHFQMW15eFlsZEJnZlIxVjY0MVkzWTY3bEgwcy0yVG9zR05VdHV5ajBFbW5LQlpFcUxHNU9NS0dNNDU2dDRWTUJWNnN1S01URUZZOXBrWk12X2c?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-21",
+        "description": "UAE report links obesity intervention to $51 billion GDP boost by 2031  Gulf News",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "UAE/GCC Economy",
+        "origin": "google-news"
+      }
+    ],
     "capital": [
       {
         "title": "Kuwait turns to debt markets as Hormuz disruption hits revenue",
@@ -31,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Kuwait is stepping up borrowing in local and international debt markets as disruptions to crude exports through the Strait of Hormuz threaten to widen an already large fiscal deficit and increase pressure on state finances. Kuwait exported more than 2 million barrels per day of crude through the strait before war between Iran and the [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The order book for Saudi real estate investor Dar Al Arkan’s Islamic bond (sukuk) sale – the first since the start of the Iran war – exceeded $1.5 billion, driven by regional and international investors. The developer raised SAR2.25 billion ($600 million) through the sale, which is to be used for general corporate purposes. The [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 19,
         "score": 8,
         "topic": "Banking & Rates",
         "origin": "uae-rss"
@@ -55,7 +68,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Egypt has issued the first sovereign bond in the Middle East and North Africa since the start of the Iran conflict in an effort to support development. The $1 billion issuance will expand Cairo&#8217;s investor base and the proceeds will go towards financing projects in healthcare and education, the cabinet said, citing a finance ministry [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 20,
         "score": 7,
         "topic": "Banking & Rates",
         "origin": "uae-rss"
@@ -69,7 +82,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Dubai has announced a second economic incentive programme worth AED1.5 billion ($408 million), just two months after unveiling the first AED1 billion package, to support businesses impacted by the Iran conflict. The latest offer, approved by Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, includes 33 initiatives to be implemented during the next [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -77,13 +90,13 @@
     ],
     "world": [
       {
-        "title": "Sheikh Hamdan approves Dhs1.5bn boost: These key Dubai sectors will get major incentives - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObFJrc3pWdmh4NXdvbXhSMlNYM3h1Y2FxS2tOaHVFQ3RYLXVjUDZVU2c4b3EtOEYxT3JLanhnQ2J6cExjazhCT1JvZnF5ejd5QmZYcWVpcHdYc0k4T0N5QW4tZ3NRQWtMY0RRY3pvUy1tQWRNOWIzZzJCQm5KMnZIemZuVDZoQXduREhwWUpzMTh1Vi1kdFBpQTFsWTM4akpjWjY0RkNzWU16SkVHWkxlNmxQbHU?oc=5",
+        "title": "Dubai’s new Dh1.5bn support plan: These key sectors will get major incentives - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQnY0THJfZzJMYlMwZWc3RjNmTDQ5Mk5sQWJMN0pyLUFVU2t0YV9oMzl2VEVOQmNsMnRuVkZCanpYY2Rwbmc4RmtidHpwc2lkbHRoRXJCU3FmQkVySlB0MnNubVlmRHN5VHN4aDBrb3Z4amplOWJOeTdkRUwyNHJQTmctWi1NQWJCT1FlalJrZGdhdG1xcEZfZkREa3p1VkwyRkFTdHBRNV8wWEtYSTNjRlY4cw?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-05-21",
-        "description": "Sheikh Hamdan approves Dhs1.5bn boost: These key Dubai sectors will get major incentives  Gulf Business",
-        "hoursAgo": 8,
+        "description": "Dubai’s new Dh1.5bn support plan: These key sectors will get major incentives  Gulf Business",
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -95,7 +108,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Core42, a subsidiary of Emirati-owned G42 that specialises in sovereign cloud and artificial intelligence (AI) infrastructure, has raised $550 million to accelerate its expansion across the US and Europe. The funding has been secured through two structured trade finance facilities of $240 million (AED880 million) and $310 million in February and May from HSBC, Core42 [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "uae-rss"
@@ -107,7 +120,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Oman increased spending by 8.6 percent in the first quarter of 2026 but reported an annual deficit cut of 82 percent thanks to higher hydrocarbon income, the ministry of finance said. The sultanate recorded spending of OMR3 billion ($7.8 billion) while revenues increased 13 percent to OMR2.98 billion resulting in a budget deficit of OMR25 [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -119,12 +132,12 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "The UK and Gulf Cooperation Council finalised a long-delayed free trade agreement on Wednesday, concluding four years of negotiations and putting in place a framework which the parties hope will bolster trade and protect investments. Annual bilateral trade between the UK and the six GCC states &#8212; Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain and [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 9
 }
