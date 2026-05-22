@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-22T17:51:36.582Z",
+  "generatedAt": "2026-05-22T21:08:42.269Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 35,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 221,
+    "totalFetched": 205,
+    "afterDedup": 181,
     "big4Rejected": 4,
-    "englishOnly": 191,
-    "withinRecency": 88,
-    "scored": 88,
-    "passed": 7
+    "englishOnly": 173,
+    "withinRecency": 71,
+    "scored": 71,
+    "passed": 6
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Saudi Arabia’s Public Investment Fund (PIF), which controls more than $1 trillion in assets, is considering merging its ports, rail and shipping assets into a single entity to overcome supply chain issues caused by the Iran war, according to reports. Discussions have been held on a possible asset merger to create a logistics giant which [&#8230;]",
-        "hoursAgo": 12,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -58,22 +58,10 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 17,
         "score": 9,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "Dubai’s $102.6m land deal at peak of regional crisis signals ultra-wealthy’s rush for UAE trophy assets – EXCLUSIVE - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNUWVRZmNBWU9EbUtGSjBJZE1qOXNuSGpCT1ZRSGJJZWI0OWptLUI5Z2pCRGdkSE45em5RT1FnRDRobDVfd0tVQm14OFFMU2puMmhPNHlFLTR4ZHg2WVIxUnZLQlRoS3Z3TzdoVU9uRDhYZw?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-05-22",
-        "description": "Dubai’s $102.6m land deal at peak of regional crisis signals ultra-wealthy’s rush for UAE trophy assets – EXCLUSIVE  Arabian Business",
-        "hoursAgo": 7,
-        "score": 7,
-        "topic": "Emerging Risks",
-        "origin": "google-news"
       },
       {
         "title": "Dubai’s Salik, Parkin fees to increase with 5% VAT rollout - Gulf Business",
@@ -82,7 +70,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-22",
         "description": "Dubai’s Salik, Parkin fees to increase with 5% VAT rollout  Gulf Business",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -96,7 +84,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-22",
         "description": "ISNR 2026 concludes in Abu Dhabi with record attendance and global participation  Gulf News",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -108,12 +96,12 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Two consortia of Omani and Saudi companies have secured contracts worth OMR74 million ($192 million) to develop infrastructure in an economic zone near the Oman-Saudi border. Data from the state-owned Public Authority for Special Economic Zones and Free Zones (Opaz) revealed that trade across the border has reached record levels as companies reroute goods overland to [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 7
+  "totalCount": 6
 }
