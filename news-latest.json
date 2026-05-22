@@ -1,28 +1,53 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-22T10:50:08.344Z",
+  "generatedAt": "2026-05-22T14:36:28.359Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 8,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 213,
-    "big4Rejected": 4,
-    "englishOnly": 180,
-    "withinRecency": 80,
-    "scored": 80,
-    "passed": 5
+    "totalFetched": 178,
+    "afterDedup": 170,
+    "big4Rejected": 3,
+    "englishOnly": 165,
+    "withinRecency": 65,
+    "scored": 65,
+    "passed": 7
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Kuwait awards PPP deal to build digital telecom network",
+        "url": "https://www.agbi.com/telecoms/2026/05/kuwait-awards-ppp-deal-to-build-digital-telecom-network/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-22",
+        "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Infrastructure & Logistics",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "UAE report links obesity intervention to $51 billion GDP boost by 2031 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcGg3Z21DLU83MGZaeWF3QUdpMF9oRUVYbTBKMXZyRDdFZHVrZS1WUzlWQmhvRk45TWpoeHlpanVlN0QzRnJLUURGc3VaeS10V0JhdXIyODN5MW1ySkhXMURlaUtBS2pmRlh6NkhsWFJnU1ZGMmt2UUFxV3BZcEZZczR5Z3A4WW44Vl8yRTRId0phZVNFVU5NYmNEbDFVclhXUTdzYTFqQ3N4aUh6N04wREp4Z9IBxgFBVV95cUxORUl1LXNWVG5ER2dvRWYzSGtxZ1dxd2xNZThqWUFGYmZWWURFelVMbDZwRmQ5dGc3UXo4MXo4M0lVQklHd0dPZzFzNWM2b2Q0TGROQWdqUGdYUVcxMUlWeElENUlmY3IwVFo1amZPRldfZGtJTHFQMW15eFlsZEJnZlIxVjY0MVkzWTY3bEgwcy0yVG9zR05VdHV5ajBFbW5LQlpFcUxHNU9NS0dNNDU2dDRWTUJWNnN1S01URUZZOXBrWk12X2c?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-21",
+        "description": "UAE report links obesity intervention to $51 billion GDP boost by 2031  Gulf News",
+        "hoursAgo": 19,
+        "score": 6,
+        "topic": "UAE/GCC Economy",
+        "origin": "google-news"
+      }
+    ],
     "capital": [
       {
         "title": "PIF explores merging logistics assets into single entity",
@@ -31,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Saudi Arabia’s Public Investment Fund (PIF), which controls more than $1 trillion in assets, is considering merging its ports, rail and shipping assets into a single entity to overcome supply chain issues caused by the Iran war, according to reports. Discussions have been held on a possible asset merger to create a logistics giant which [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -45,33 +70,33 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 9,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
       {
-        "title": "Dubai offers further support for businesses hit by Iran war",
-        "url": "https://www.agbi.com/economy/2026/05/dubai-launches-second-support-package-for-businesses-hit-by-iran-war/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-21",
-        "description": "Dubai has announced a second economic incentive programme worth AED1.5 billion ($408 million), just two months after unveiling the first AED1 billion package, to support businesses impacted by the Iran conflict. The latest offer, approved by Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, includes 33 initiatives to be implemented during the next [&#8230;]",
-        "hoursAgo": 22,
-        "score": 8,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
+        "title": "Using Salik in Dubai? New 5% VAT rule starts June 1 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOclFxNlp3ZWJfd2NTWEZkQkVJM1RsdjI4OEdXRXZXSHk3THQxZzFBbWlFTE1OdDJ4WDR6clF2NXRlOGlmT1I0eFJOVGpOY2hXcDdYdkY1eTVKSzFxMi1scm1jTmxQdFhZVG5XeklGSmp4SVpHR0NfU1hXQ21mOXR3MWFDODJtSjlJWHFOeVVxamlqS2U4bURoNlJaR1M?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-22",
+        "description": "Using Salik in Dubai? New 5% VAT rule starts June 1  Gulf News",
+        "hoursAgo": 9,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
       }
     ],
     "world": [
       {
-        "title": "Dubai’s new Dh1.5bn support plan: These key sectors will get major incentives - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQnY0THJfZzJMYlMwZWc3RjNmTDQ5Mk5sQWJMN0pyLUFVU2t0YV9oMzl2VEVOQmNsMnRuVkZCanpYY2Rwbmc4RmtidHpwc2lkbHRoRXJCU3FmQkVySlB0MnNubVlmRHN5VHN4aDBrb3Z4amplOWJOeTdkRUwyNHJQTmctWi1NQWJCT1FlalJrZGdhdG1xcEZfZkREa3p1VkwyRkFTdHBRNV8wWEtYSTNjRlY4cw?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-05-21",
-        "description": "Dubai’s new Dh1.5bn support plan: These key sectors will get major incentives  Gulf Business",
-        "hoursAgo": 22,
+        "title": "ISNR 2026 concludes in Abu Dhabi with record attendance and global participation - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRmxYalowbUNKR2FRLThwRXRKOWVuNWp6OTRzZFRQZDN6MnBHQTRJV2JFVVQtUENZWmJNR2p4eEdGd3FWTDJjUHQtaEtJdWh0S1pQQ2VCX1hyUGJOMDVxS1dPZllXMzU5ZUUyUWpRRnluaFpyNzEtM3ktVWljcTRhQlI1WkQyUXQzTnB5REl0aE12eV9vSWw0cXAwck1ValNZTnh3Z2UyMGo4R2RYa1c3eE5IWUVmWUpP0gHIAUFVX3lxTE0tYUJ0VDdYZnY5UmJMYTZMQXBsRndacTJOVWVPNmItdDVPLTZMbk1vYXMxUUY2UmtGYVlKbzBsVzdac2lEWmpwYlc2YWJOX2xWQXV0Ym40b1dublY0MEZ3eGlBSVNsRE1KTkhWSUt6X3BIYXpONm9BSFRPVDFVZC1aQm5rT2FrQm9JSWl6Xzl6ZmZ0b29XZ2tvU3Y4Ym5DR2Zrcy1xWjlvejR3TGZLSTBJTFBIalAtcm41Z29XOWVjMl9IX19MWk5O?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-22",
+        "description": "ISNR 2026 concludes in Abu Dhabi with record attendance and global participation  Gulf News",
+        "hoursAgo": 3,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -83,12 +108,12 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Two consortia of Omani and Saudi companies have secured contracts worth OMR74 million ($192 million) to develop infrastructure in an economic zone near the Oman-Saudi border. Data from the state-owned Public Authority for Special Economic Zones and Free Zones (Opaz) revealed that trade across the border has reached record levels as companies reroute goods overland to [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 7
 }
