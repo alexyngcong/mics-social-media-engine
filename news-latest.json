@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-22T03:30:52.670Z",
+  "generatedAt": "2026-05-22T07:43:34.779Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 158,
-    "big4Rejected": 2,
-    "englishOnly": 156,
+    "afterDedup": 161,
+    "big4Rejected": 3,
+    "englishOnly": 158,
     "withinRecency": 54,
     "scored": 54,
-    "passed": 9
+    "passed": 10
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-21",
         "description": "UAE report links obesity intervention to $51 billion GDP boost by 2031  Gulf News",
-        "hoursAgo": 7,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -44,37 +44,37 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Kuwait is stepping up borrowing in local and international debt markets as disruptions to crude exports through the Strait of Hormuz threaten to widen an already large fiscal deficit and increase pressure on state finances. Kuwait exported more than 2 million barrels per day of crude through the strait before war between Iran and the [&#8230;]",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
       {
-        "title": "Dar Al Arkan sukuk raises $600m",
-        "url": "https://www.agbi.com/markets/2026/05/dar-al-arkan-sukuk-raises-600m/",
+        "title": "PIF explores merging logistics assets into single entity",
+        "url": "https://www.agbi.com/logistics/2026/05/pif-explores-merging-logistics-assets-into-single-entity/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-21",
-        "description": "The order book for Saudi real estate investor Dar Al Arkan’s Islamic bond (sukuk) sale – the first since the start of the Iran war – exceeded $1.5 billion, driven by regional and international investors. The developer raised SAR2.25 billion ($600 million) through the sale, which is to be used for general corporate purposes. The [&#8230;]",
-        "hoursAgo": 19,
-        "score": 8,
-        "topic": "Banking & Rates",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Egypt issues $1bn bond to support development",
-        "url": "https://www.agbi.com/finance/2026/05/egypt-issues-1bn-bond-to-support-development/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-21",
-        "description": "Egypt has issued the first sovereign bond in the Middle East and North Africa since the start of the Iran conflict in an effort to support development. The $1 billion issuance will expand Cairo&#8217;s investor base and the proceeds will go towards financing projects in healthcare and education, the cabinet said, citing a finance ministry [&#8230;]",
-        "hoursAgo": 20,
-        "score": 7,
-        "topic": "Banking & Rates",
+        "date": "2026-05-22",
+        "description": "Saudi Arabia’s Public Investment Fund (PIF), which controls more than $1 trillion in assets, is considering merging its ports, rail and shipping assets into a single entity to overcome supply chain issues caused by the Iran war, according to reports. Discussions have been held on a possible asset merger to create a logistics giant which [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
     ],
     "risk": [
+      {
+        "title": "‘The scars will remain&#8217;: Petrochem’s founder counts cost of war",
+        "url": "https://www.agbi.com/petrochemicals/2026/05/the-scars-will-remain-petrochems-founder-counts-cost-of-war/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-22",
+        "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
+        "hoursAgo": 4,
+        "score": 9,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
       {
         "title": "Dubai offers further support for businesses hit by Iran war",
         "url": "https://www.agbi.com/economy/2026/05/dubai-launches-second-support-package-for-businesses-hit-by-iran-war/",
@@ -82,10 +82,22 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Dubai has announced a second economic incentive programme worth AED1.5 billion ($408 million), just two months after unveiling the first AED1 billion package, to support businesses impacted by the Iran conflict. The latest offer, approved by Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, includes 33 initiatives to be implemented during the next [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
+      },
+      {
+        "title": "Using Salik in Dubai? New 5% VAT rule starts June 1 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOclFxNlp3ZWJfd2NTWEZkQkVJM1RsdjI4OEdXRXZXSHk3THQxZzFBbWlFTE1OdDJ4WDR6clF2NXRlOGlmT1I0eFJOVGpOY2hXcDdYdkY1eTVKSzFxMi1scm1jTmxQdFhZVG5XeklGSmp4SVpHR0NfU1hXQ21mOXR3MWFDODJtSjlJWHFOeVVxamlqS2U4bURoNlJaR1M?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-22",
+        "description": "Using Salik in Dubai? New 5% VAT rule starts June 1  Gulf News",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
       }
     ],
     "world": [
@@ -96,10 +108,22 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-21",
         "description": "Dubai’s new Dh1.5bn support plan: These key sectors will get major incentives  Gulf Business",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
+      },
+      {
+        "title": "$200m contracts awarded for Saudi-Oman trade zone",
+        "url": "https://www.agbi.com/trade/2026/05/200m-contracts-awarded-for-saudi-oman-trade-zone/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-22",
+        "description": "Two consortia of Omani and Saudi companies have secured contracts worth OMR74 million ($192 million) to develop infrastructure in an economic zone near the Oman-Saudi border. Data from the state-owned Public Authority for Special Economic Zones and Free Zones (Opaz) revealed that trade across the border has reached record levels as companies reroute goods overland to [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
       },
       {
         "title": "UAE’s Core42 raises $550m to scale AI deployment in Europe and US",
@@ -108,7 +132,7 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Core42, a subsidiary of Emirati-owned G42 that specialises in sovereign cloud and artificial intelligence (AI) infrastructure, has raised $550 million to accelerate its expansion across the US and Europe. The funding has been secured through two structured trade finance facilities of $240 million (AED880 million) and $310 million in February and May from HSBC, Core42 [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "uae-rss"
@@ -120,18 +144,6 @@
         "domain": "agbi.com",
         "date": "2026-05-21",
         "description": "Oman increased spending by 8.6 percent in the first quarter of 2026 but reported an annual deficit cut of 82 percent thanks to higher hydrocarbon income, the ministry of finance said. The sultanate recorded spending of OMR3 billion ($7.8 billion) while revenues increased 13 percent to OMR2.98 billion resulting in a budget deficit of OMR25 [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "UK-GCC pact to boost trade by a fifth, officials say",
-        "url": "https://www.agbi.com/trade/2026/05/uk-gcc-pact-to-boost-bilateral-trade-by-a-fifth-officials-say/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-21",
-        "description": "The UK and Gulf Cooperation Council finalised a long-delayed free trade agreement on Wednesday, concluding four years of negotiations and putting in place a framework which the parties hope will bolster trade and protect investments. Annual bilateral trade between the UK and the six GCC states &#8212; Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain and [&#8230;]",
         "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
@@ -139,5 +151,5 @@
       }
     ]
   },
-  "totalCount": 9
+  "totalCount": 10
 }
