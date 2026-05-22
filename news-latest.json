@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-22T14:36:28.359Z",
+  "generatedAt": "2026-05-22T17:51:36.582Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 8,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 178,
-    "afterDedup": 170,
-    "big4Rejected": 3,
-    "englishOnly": 165,
-    "withinRecency": 65,
-    "scored": 65,
+    "totalFetched": 270,
+    "afterDedup": 221,
+    "big4Rejected": 4,
+    "englishOnly": 191,
+    "withinRecency": 88,
+    "scored": 88,
     "passed": 7
   },
   "rooms": {
@@ -30,22 +30,10 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 7,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
-      },
-      {
-        "title": "UAE report links obesity intervention to $51 billion GDP boost by 2031 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcGg3Z21DLU83MGZaeWF3QUdpMF9oRUVYbTBKMXZyRDdFZHVrZS1WUzlWQmhvRk45TWpoeHlpanVlN0QzRnJLUURGc3VaeS10V0JhdXIyODN5MW1ySkhXMURlaUtBS2pmRlh6NkhsWFJnU1ZGMmt2UUFxV3BZcEZZczR5Z3A4WW44Vl8yRTRId0phZVNFVU5NYmNEbDFVclhXUTdzYTFqQ3N4aUh6N04wREp4Z9IBxgFBVV95cUxORUl1LXNWVG5ER2dvRWYzSGtxZ1dxd2xNZThqWUFGYmZWWURFelVMbDZwRmQ5dGc3UXo4MXo4M0lVQklHd0dPZzFzNWM2b2Q0TGROQWdqUGdYUVcxMUlWeElENUlmY3IwVFo1amZPRldfZGtJTHFQMW15eFlsZEJnZlIxVjY0MVkzWTY3bEgwcy0yVG9zR05VdHV5ajBFbW5LQlpFcUxHNU9NS0dNNDU2dDRWTUJWNnN1S01URUZZOXBrWk12X2c?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-21",
-        "description": "UAE report links obesity intervention to $51 billion GDP boost by 2031  Gulf News",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "UAE/GCC Economy",
-        "origin": "google-news"
       }
     ],
     "capital": [
@@ -56,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Saudi Arabia’s Public Investment Fund (PIF), which controls more than $1 trillion in assets, is considering merging its ports, rail and shipping assets into a single entity to overcome supply chain issues caused by the Iran war, according to reports. Discussions have been held on a possible asset merger to create a logistics giant which [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -70,20 +58,32 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 9,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
       {
-        "title": "Using Salik in Dubai? New 5% VAT rule starts June 1 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOclFxNlp3ZWJfd2NTWEZkQkVJM1RsdjI4OEdXRXZXSHk3THQxZzFBbWlFTE1OdDJ4WDR6clF2NXRlOGlmT1I0eFJOVGpOY2hXcDdYdkY1eTVKSzFxMi1scm1jTmxQdFhZVG5XeklGSmp4SVpHR0NfU1hXQ21mOXR3MWFDODJtSjlJWHFOeVVxamlqS2U4bURoNlJaR1M?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
+        "title": "Dubai’s $102.6m land deal at peak of regional crisis signals ultra-wealthy’s rush for UAE trophy assets – EXCLUSIVE - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNUWVRZmNBWU9EbUtGSjBJZE1qOXNuSGpCT1ZRSGJJZWI0OWptLUI5Z2pCRGdkSE45em5RT1FnRDRobDVfd0tVQm14OFFMU2puMmhPNHlFLTR4ZHg2WVIxUnZLQlRoS3Z3TzdoVU9uRDhYZw?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
         "date": "2026-05-22",
-        "description": "Using Salik in Dubai? New 5% VAT rule starts June 1  Gulf News",
-        "hoursAgo": 9,
+        "description": "Dubai’s $102.6m land deal at peak of regional crisis signals ultra-wealthy’s rush for UAE trophy assets – EXCLUSIVE  Arabian Business",
+        "hoursAgo": 7,
         "score": 7,
+        "topic": "Emerging Risks",
+        "origin": "google-news"
+      },
+      {
+        "title": "Dubai’s Salik, Parkin fees to increase with 5% VAT rollout - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSzhXVm5uRzhmemU5akNBUmRRZ29mMkVQUU1PdUtQUUdEVEZ5UEVtMnRDQWkwbXlnZWZhd0xZZ3ZOQUpYTHlkTjQtTWZfdEc0Q3B5LW9pUVgtZXozQzkwRXktVmVMRzVvTjd5dVA0RGYwaWEteHoxT0VoNDBYMC1ldVFKcWJsdlRQOEVxTVBqUmFZSXNRVTVSanZiNUtNRGtNdWlTNnB3M0Rkdmp1Nk9YMFBsaGY?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-22",
+        "description": "Dubai’s Salik, Parkin fees to increase with 5% VAT rollout  Gulf Business",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -96,7 +96,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-22",
         "description": "ISNR 2026 concludes in Abu Dhabi with record attendance and global participation  Gulf News",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -108,7 +108,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Two consortia of Omani and Saudi companies have secured contracts worth OMR74 million ($192 million) to develop infrastructure in an economic zone near the Oman-Saudi border. Data from the state-owned Public Authority for Special Economic Zones and Free Zones (Opaz) revealed that trade across the border has reached record levels as companies reroute goods overland to [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
