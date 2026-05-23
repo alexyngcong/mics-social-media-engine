@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-23T16:57:44.630Z",
+  "generatedAt": "2026-05-23T20:50:02.196Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 177,
-    "afterDedup": 164,
+    "afterDedup": 161,
     "big4Rejected": 4,
-    "englishOnly": 158,
-    "withinRecency": 48,
-    "scored": 48,
+    "englishOnly": 156,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 2
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
-        "hoursAgo": 28,
+        "hoursAgo": 32,
         "score": 6.5,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
-        "hoursAgo": 37,
+        "hoursAgo": 41,
         "score": 8.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
