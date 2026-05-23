@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-22T21:08:42.269Z",
+  "generatedAt": "2026-05-23T02:48:59.163Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 35,
+    "gdelt": 7,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 205,
-    "afterDedup": 181,
+    "totalFetched": 177,
+    "afterDedup": 167,
     "big4Rejected": 4,
-    "englishOnly": 173,
-    "withinRecency": 71,
-    "scored": 71,
-    "passed": 6
+    "englishOnly": 161,
+    "withinRecency": 61,
+    "scored": 61,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Saudi Arabia’s Public Investment Fund (PIF), which controls more than $1 trillion in assets, is considering merging its ports, rail and shipping assets into a single entity to overcome supply chain issues caused by the Iran war, according to reports. Discussions have been held on a possible asset merger to create a logistics giant which [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -58,22 +58,10 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
-        "hoursAgo": 17,
+        "hoursAgo": 23,
         "score": 9,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "Dubai’s Salik, Parkin fees to increase with 5% VAT rollout - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSzhXVm5uRzhmemU5akNBUmRRZ29mMkVQUU1PdUtQUUdEVEZ5UEVtMnRDQWkwbXlnZWZhd0xZZ3ZOQUpYTHlkTjQtTWZfdEc0Q3B5LW9pUVgtZXozQzkwRXktVmVMRzVvTjd5dVA0RGYwaWEteHoxT0VoNDBYMC1ldVFKcWJsdlRQOEVxTVBqUmFZSXNRVTVSanZiNUtNRGtNdWlTNnB3M0Rkdmp1Nk9YMFBsaGY?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-05-22",
-        "description": "Dubai’s Salik, Parkin fees to increase with 5% VAT rollout  Gulf Business",
-        "hoursAgo": 5,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
       }
     ],
     "world": [
@@ -84,7 +72,7 @@
         "domain": "gulfnews.com",
         "date": "2026-05-22",
         "description": "ISNR 2026 concludes in Abu Dhabi with record attendance and global participation  Gulf News",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -96,12 +84,12 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Two consortia of Omani and Saudi companies have secured contracts worth OMR74 million ($192 million) to develop infrastructure in an economic zone near the Oman-Saudi border. Data from the state-owned Public Authority for Special Economic Zones and Free Zones (Opaz) revealed that trade across the border has reached record levels as companies reroute goods overland to [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 5
 }
