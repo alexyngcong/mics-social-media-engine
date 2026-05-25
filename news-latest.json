@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-24T20:54:44.220Z",
+  "generatedAt": "2026-05-25T03:38:42.472Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,9 +14,9 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 158,
+    "afterDedup": 156,
     "big4Rejected": 5,
-    "englishOnly": 153,
+    "englishOnly": 151,
     "withinRecency": 31,
     "scored": 31,
     "passed": 2
@@ -24,33 +24,32 @@
   "rooms": {
     "growth": [
       {
+        "title": "Istanbul airport VIP terminal launched by Jetex",
+        "url": "https://www.agbi.com/aviation/2026/05/istanbul-airport-vip-terminal-launched-by-jetex/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-25",
+        "description": "UAE aviation company Jetex has launched the world’s largest VIP terminal at Istanbul International Airport, seeking to cash in on the growing demand for top-end travel in the region. The new 5,000 square metre facility, operated in conjunction with the airport’s management company IGA (Istanbul Grand Airport), was formally opened on May 5, adding to [&#8230;]",
+        "hoursAgo": 0,
+        "score": 6,
+        "topic": "Infrastructure & Logistics",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Kuwait awards PPP deal to build digital telecom network",
         "url": "https://www.agbi.com/telecoms/2026/05/kuwait-awards-ppp-deal-to-build-digital-telecom-network/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
-        "hoursAgo": 56,
+        "hoursAgo": 63,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
       }
     ],
     "capital": [],
-    "risk": [
-      {
-        "title": "‘The scars will remain&#8217;: Petrochem’s founder counts cost of war",
-        "url": "https://www.agbi.com/petrochemicals/2026/05/the-scars-will-remain-petrochems-founder-counts-cost-of-war/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-22",
-        "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
-        "hoursAgo": 65,
-        "score": 8,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      }
-    ],
+    "risk": [],
     "world": []
   },
   "totalCount": 2
