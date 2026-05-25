@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-25T03:38:42.472Z",
+  "generatedAt": "2026-05-25T08:20:36.618Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 156,
-    "big4Rejected": 5,
-    "englishOnly": 151,
-    "withinRecency": 31,
-    "scored": 31,
-    "passed": 2
+    "afterDedup": 159,
+    "big4Rejected": 4,
+    "englishOnly": 155,
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 3
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-25",
         "description": "UAE aviation company Jetex has launched the world’s largest VIP terminal at Istanbul International Airport, seeking to cash in on the growing demand for top-end travel in the region. The new 5,000 square metre facility, operated in conjunction with the airport’s management company IGA (Istanbul Grand Airport), was formally opened on May 5, adding to [&#8230;]",
-        "hoursAgo": 0,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -42,15 +42,28 @@
         "domain": "agbi.com",
         "date": "2026-05-22",
         "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
-        "hoursAgo": 63,
+        "hoursAgo": 67,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
       }
     ],
-    "capital": [],
+    "capital": [
+      {
+        "title": "Bahrain’s Mumtalakat sees earnings jump 87% in 2025",
+        "url": "https://www.agbi.com/finance/2026/05/bahrains-mumtalakat-sees-earnings-jump-87-in-2025/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-25",
+        "description": "Bahrain&#8216;s sovereign wealth fund,&#160;Mumtalakat, said net earnings spiked by 87 percent in 2025, supported by the strong performance of subsidiaries such as McLaren Racing and Aluminium Bahrain. Consolidated net profit attributable to shareholders rose to BHD593 million ($1.6 billion), from BHD317 million in 2024, Mumtalakat said in a statement. Revenue gained 14 percent to BHD2.5 [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      }
+    ],
     "risk": [],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
