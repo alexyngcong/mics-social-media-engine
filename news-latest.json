@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-25T08:20:36.618Z",
+  "generatedAt": "2026-05-25T14:51:41.541Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 159,
+    "afterDedup": 152,
     "big4Rejected": 4,
-    "englishOnly": 155,
-    "withinRecency": 33,
-    "scored": 33,
+    "englishOnly": 148,
+    "withinRecency": 26,
+    "scored": 26,
     "passed": 3
   },
   "rooms": {
@@ -30,19 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-25",
         "description": "UAE aviation company Jetex has launched the world’s largest VIP terminal at Istanbul International Airport, seeking to cash in on the growing demand for top-end travel in the region. The new 5,000 square metre facility, operated in conjunction with the airport’s management company IGA (Istanbul Grand Airport), was formally opened on May 5, adding to [&#8230;]",
-        "hoursAgo": 5,
-        "score": 6,
-        "topic": "Infrastructure & Logistics",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Kuwait awards PPP deal to build digital telecom network",
-        "url": "https://www.agbi.com/telecoms/2026/05/kuwait-awards-ppp-deal-to-build-digital-telecom-network/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-22",
-        "description": "Kuwait has selected Bahrain’s Beyon Group&#160;to develop the country’s fixed telecommunications network through a public-private partnership (PPP). The project is one of the largest digital infrastructure initiatives in Kuwait, with total investment expected at around KD825 million ($2.7 billion) over the 50-year partnership term, Beyon said in a statement. The contract was awarded by Kuwait’s [&#8230;]",
-        "hoursAgo": 67,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -50,13 +38,25 @@
     ],
     "capital": [
       {
+        "title": "Qatar budget deficit nears $3bn as revenue drops 24%",
+        "url": "https://www.agbi.com/economy/2026/05/qatar-budget-deficit-nears-3bn-as-revenue-drops-24/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-25",
+        "description": "Qatar reported a fiscal deficit of QAR10.3 billion ($2.8 billion) in the first quarter of 2026, the finance ministry said on Monday. Total revenue declined 24 percent year on year to QAR38 billion, as total expenditure fell nearly 4 percent to QAR48 billion, the finance ministry said in a post on X. Government tenders and [&#8230;]",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Bahrain’s Mumtalakat sees earnings jump 87% in 2025",
         "url": "https://www.agbi.com/finance/2026/05/bahrains-mumtalakat-sees-earnings-jump-87-in-2025/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-25",
         "description": "Bahrain&#8216;s sovereign wealth fund,&#160;Mumtalakat, said net earnings spiked by 87 percent in 2025, supported by the strong performance of subsidiaries such as McLaren Racing and Aluminium Bahrain. Consolidated net profit attributable to shareholders rose to BHD593 million ($1.6 billion), from BHD317 million in 2024, Mumtalakat said in a statement. Revenue gained 14 percent to BHD2.5 [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
