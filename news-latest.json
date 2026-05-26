@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-25T21:05:20.635Z",
+  "generatedAt": "2026-05-26T02:57:57.917Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 154,
+    "totalFetched": 270,
+    "afterDedup": 197,
     "big4Rejected": 3,
-    "englishOnly": 151,
-    "withinRecency": 30,
-    "scored": 30,
+    "englishOnly": 175,
+    "withinRecency": 55,
+    "scored": 55,
     "passed": 3
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-05-25",
         "description": "UAE aviation company Jetex has launched the world’s largest VIP terminal at Istanbul International Airport, seeking to cash in on the growing demand for top-end travel in the region. The new 5,000 square metre facility, operated in conjunction with the airport’s management company IGA (Istanbul Grand Airport), was formally opened on May 5, adding to [&#8230;]",
-        "hoursAgo": 18,
+        "hoursAgo": 24,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-25",
         "description": "Qatar reported a fiscal deficit of QAR10.3 billion ($2.8 billion) in the first quarter of 2026, the finance ministry said on Monday. Total revenue declined 24 percent year on year to QAR38 billion, as total expenditure fell nearly 4 percent to QAR48 billion, the finance ministry said in a post on X. Government tenders and [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 13,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-05-25",
         "description": "Bahrain&#8216;s sovereign wealth fund,&#160;Mumtalakat, said net earnings spiked by 87 percent in 2025, supported by the strong performance of subsidiaries such as McLaren Racing and Aluminium Bahrain. Consolidated net profit attributable to shareholders rose to BHD593 million ($1.6 billion), from BHD317 million in 2024, Mumtalakat said in a statement. Revenue gained 14 percent to BHD2.5 [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
