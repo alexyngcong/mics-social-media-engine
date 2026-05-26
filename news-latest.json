@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-26T07:44:21.322Z",
+  "generatedAt": "2026-05-26T15:22:27.521Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 153,
-    "big4Rejected": 2,
+    "afterDedup": 156,
+    "big4Rejected": 5,
     "englishOnly": 151,
-    "withinRecency": 30,
-    "scored": 30,
-    "passed": 4
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -31,51 +31,39 @@
         "domain": "agbi.com",
         "date": "2026-05-26",
         "description": "Qatar Investment Authority (QIA)&#160;has backed&#160;the Greek state-owned Public Power Corporation’s (PPC) capital offering as an&#160;anchor&#160;investor. The offering was oversubscribed, raising €4.3 billion ($5 billion) from primary shares and €250 million through a secondary placement of treasury shares, the Qatari sovereign wealth fund said in a statement. PPC is Greece&#8217;s largest electric utility and a supplier [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 10,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
       {
-        "title": "Qatar budget deficit nears $3bn as revenue drops 24%",
-        "url": "https://www.agbi.com/economy/2026/05/qatar-budget-deficit-nears-3bn-as-revenue-drops-24/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-25",
-        "description": "Qatar reported a fiscal deficit of QAR10.3 billion ($2.8 billion) in the first quarter of 2026, the finance ministry said on Monday. Total revenue declined 24 percent year on year to QAR38 billion, as total expenditure fell nearly 4 percent to QAR48 billion, the finance ministry said in a post on X. Government tenders and [&#8230;]",
-        "hoursAgo": 18,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
+        "title": "Abu Dhabi’s Etihad Airways aims to announce IPO this week - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVGl3cV96YnJieW1VcktkU0N4eGNuV0pJeUtaVEwtSlhTUEp1YjBlbUxVWHAxYW1MYk9XZ1hsdWxlSk92VmZ5WVY1cVUydklCT2t0bDZkTmNNdFJzUDRNYWQ1SURSZUNUeXE5akY5M181Wks2Ti16MGw5TzF5TU1sbXBYMmZ1ckFURjBteXlhZzN2bVkxMmk1YTE2ZzhOUHhV?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-05-26",
+        "description": "Abu Dhabi’s Etihad Airways aims to announce IPO this week  Gulf Business",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "IPO & M&A",
+        "origin": "google-news"
       }
     ],
     "risk": [
       {
-        "title": "Gulf oil spill ‘would rival Exxon Valdez disaster’",
-        "url": "https://www.agbi.com/shipping/2026/05/gulf-oil-spill-would-rival-exxon-valdez-disaster/",
+        "title": "Oman&#8217;s Eid trade with UAE fired up by Hormuz disruption",
+        "url": "https://www.agbi.com/trade/2026/05/omans-eid-trade-with-uae-fired-up-by-hormuz-disruption/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-05-26",
-        "description": "An environmental catastrophe in the Gulf could rival the Exxon Valdez disaster, shipping analysts warned, as ageing tankers and a double blockade threaten the region’s fragile marine network. Attention has focused primarily on the impact of the US-Israel-Iran war on oil exports, freight disruption and energy prices. But vessel-tracking experts warned ecological risks are mounting [&#8230;]",
-        "hoursAgo": 4,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Saudi oil exports rise 37% in March",
-        "url": "https://www.agbi.com/oil-and-gas/2026/05/saudi-oil-exports-rise-37-in-march/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-26",
-        "description": "Saudi Arabia’s oil exports showed a 37 percent year-on-year increase in March while non-oil exports fell, according to official figures. Oil shipments&#8217; share of total exports rose to 80 percent, from 71 percent a year earlier, the General Authority for Statistics said in a report. The US-Israeli war with Iran began on February 28 and [&#8230;]",
-        "hoursAgo": 4,
-        "score": 6,
+        "description": "Omani traders are experiencing a surge in Eid al-Adha sales to the UAE as the Iran conflict drives up activity on the country&#8217;s overland border routes. Shipping restrictions caused by the situation in the Strait of Hormuz have boosted demand for livestock and other goods to be delivered by road, an industry official said. Live [&#8230;]",
+        "hoursAgo": 7,
+        "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
     "world": []
   },
-  "totalCount": 4
+  "totalCount": 3
 }
