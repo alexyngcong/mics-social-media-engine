@@ -1,42 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-26T02:57:57.917Z",
+  "generatedAt": "2026-05-26T07:44:21.322Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 197,
-    "big4Rejected": 3,
-    "englishOnly": 175,
-    "withinRecency": 55,
-    "scored": 55,
-    "passed": 3
+    "totalFetched": 170,
+    "afterDedup": 153,
+    "big4Rejected": 2,
+    "englishOnly": 151,
+    "withinRecency": 30,
+    "scored": 30,
+    "passed": 4
   },
   "rooms": {
-    "growth": [
+    "growth": [],
+    "capital": [
       {
-        "title": "Istanbul airport VIP terminal launched by Jetex",
-        "url": "https://www.agbi.com/aviation/2026/05/istanbul-airport-vip-terminal-launched-by-jetex/",
+        "title": "QIA backs Greek utility&#8217;s $5bn capital top-up",
+        "url": "https://www.agbi.com/renewable-energy/2026/05/qia-backs-greek-utilitys-5bn-capital-top-up/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-25",
-        "description": "UAE aviation company Jetex has launched the world’s largest VIP terminal at Istanbul International Airport, seeking to cash in on the growing demand for top-end travel in the region. The new 5,000 square metre facility, operated in conjunction with the airport’s management company IGA (Istanbul Grand Airport), was formally opened on May 5, adding to [&#8230;]",
-        "hoursAgo": 24,
-        "score": 6,
-        "topic": "Infrastructure & Logistics",
+        "date": "2026-05-26",
+        "description": "Qatar Investment Authority (QIA)&#160;has backed&#160;the Greek state-owned Public Power Corporation’s (PPC) capital offering as an&#160;anchor&#160;investor. The offering was oversubscribed, raising €4.3 billion ($5 billion) from primary shares and €250 million through a secondary placement of treasury shares, the Qatari sovereign wealth fund said in a statement. PPC is Greece&#8217;s largest electric utility and a supplier [&#8230;]",
+        "hoursAgo": 2,
+        "score": 8,
+        "topic": "Corporate Finance",
         "origin": "uae-rss"
-      }
-    ],
-    "capital": [
+      },
       {
         "title": "Qatar budget deficit nears $3bn as revenue drops 24%",
         "url": "https://www.agbi.com/economy/2026/05/qatar-budget-deficit-nears-3bn-as-revenue-drops-24/",
@@ -44,26 +43,39 @@
         "domain": "agbi.com",
         "date": "2026-05-25",
         "description": "Qatar reported a fiscal deficit of QAR10.3 billion ($2.8 billion) in the first quarter of 2026, the finance ministry said on Monday. Total revenue declined 24 percent year on year to QAR38 billion, as total expenditure fell nearly 4 percent to QAR48 billion, the finance ministry said in a post on X. Government tenders and [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Bahrain’s Mumtalakat sees earnings jump 87% in 2025",
-        "url": "https://www.agbi.com/finance/2026/05/bahrains-mumtalakat-sees-earnings-jump-87-in-2025/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-05-25",
-        "description": "Bahrain&#8216;s sovereign wealth fund,&#160;Mumtalakat, said net earnings spiked by 87 percent in 2025, supported by the strong performance of subsidiaries such as McLaren Racing and Aluminium Bahrain. Consolidated net profit attributable to shareholders rose to BHD593 million ($1.6 billion), from BHD317 million in 2024, Mumtalakat said in a statement. Revenue gained 14 percent to BHD2.5 [&#8230;]",
-        "hoursAgo": 20,
-        "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Gulf oil spill ‘would rival Exxon Valdez disaster’",
+        "url": "https://www.agbi.com/shipping/2026/05/gulf-oil-spill-would-rival-exxon-valdez-disaster/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-26",
+        "description": "An environmental catastrophe in the Gulf could rival the Exxon Valdez disaster, shipping analysts warned, as ageing tankers and a double blockade threaten the region’s fragile marine network. Attention has focused primarily on the impact of the US-Israel-Iran war on oil exports, freight disruption and energy prices. But vessel-tracking experts warned ecological risks are mounting [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Saudi oil exports rise 37% in March",
+        "url": "https://www.agbi.com/oil-and-gas/2026/05/saudi-oil-exports-rise-37-in-march/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-05-26",
+        "description": "Saudi Arabia’s oil exports showed a 37 percent year-on-year increase in March while non-oil exports fell, according to official figures. Oil shipments&#8217; share of total exports rose to 80 percent, from 71 percent a year earlier, the General Authority for Statistics said in a report. The US-Israeli war with Iran began on February 28 and [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      }
+    ],
     "world": []
   },
-  "totalCount": 3
+  "totalCount": 4
 }
