@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-26T21:44:25.404Z",
+  "generatedAt": "2026-05-27T03:37:52.461Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 202,
-    "big4Rejected": 5,
-    "englishOnly": 174,
-    "withinRecency": 60,
-    "scored": 60,
+    "totalFetched": 170,
+    "afterDedup": 151,
+    "big4Rejected": 4,
+    "englishOnly": 147,
+    "withinRecency": 33,
+    "scored": 33,
     "passed": 4
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-05-26",
         "description": "Qatar Investment Authority (QIA)&#160;has backed&#160;the Greek state-owned Public Power Corporation’s (PPC) capital offering as an&#160;anchor&#160;investor. The offering was oversubscribed, raising €4.3 billion ($5 billion) from primary shares and €250 million through a secondary placement of treasury shares, the Qatari sovereign wealth fund said in a statement. PPC is Greece&#8217;s largest electric utility and a supplier [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 22,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,7 +43,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-05-26",
         "description": "Abu Dhabi’s Etihad Airways aims to announce IPO this week  Gulf Business",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "google-news"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-05-26",
         "description": "Omani traders are experiencing a surge in Eid al-Adha sales to the UAE as the Iran conflict drives up activity on the country&#8217;s overland border routes. Shipping restrictions caused by the situation in the Strait of Hormuz have boosted demand for livestock and other goods to be delivered by road, an industry official said. Live [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -69,7 +69,7 @@
         "domain": "middleeastbriefing.com",
         "date": "2026-05-26",
         "description": "UAE E-Invoicing Update: ASP Appointment Deadline Extended to October 2026  Middle East Briefing",
-        "hoursAgo": 6,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
