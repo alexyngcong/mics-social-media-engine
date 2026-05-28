@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-28T18:36:03.230Z",
+  "generatedAt": "2026-05-28T21:54:31.972Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 150,
+    "gdelt": 15,
+    "googleNews": 130,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 159,
-    "big4Rejected": 5,
-    "englishOnly": 154,
-    "withinRecency": 39,
-    "scored": 39,
+    "totalFetched": 165,
+    "afterDedup": 153,
+    "big4Rejected": 6,
+    "englishOnly": 146,
+    "withinRecency": 36,
+    "scored": 36,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "agbi.com",
         "date": "2026-05-28",
         "description": "Vineet Bhatia, the first chef of Indian origin to receive a Michelin star, opened a new restaurant in Dubai last week. But with the UAE still on alert for occasional drone and missile attacks, and Dubai reeling from a drop in visitors, the timing may seem strange. The 58-year-old celebrity chef, who is best known [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
