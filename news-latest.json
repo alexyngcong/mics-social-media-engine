@@ -1,44 +1,30 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-28T15:49:45.082Z",
+  "generatedAt": "2026-05-28T18:36:03.230Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 209,
-    "big4Rejected": 6,
-    "englishOnly": 182,
-    "withinRecency": 68,
-    "scored": 68,
-    "passed": 2
+    "totalFetched": 170,
+    "afterDedup": 159,
+    "big4Rejected": 5,
+    "englishOnly": 154,
+    "withinRecency": 39,
+    "scored": 39,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Why Trump Warned Oman Over Iran Strait of Hormuz Fee Plans | US Policy , Maritime Law and Gulf Tensions Explained",
-        "url": "https://gulfnews.com/world/mena/why-trump-warned-oman-over-irans-strait-of-hormuz-fee-plans-1.500555361",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-05-28",
-        "description": "Why Trump Warned Oman Over Iran Strait of Hormuz Fee Plans | US Policy , Maritime Law and Gulf Tensions Explained",
-        "imageUrl": "https://gumlet-images.assettype.com/gulfnews%2F2026-05-18%2Fel65de2l%2Fnewsml_afp_com_20260518T095129Z_doc_b3734g3.jpeg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 13,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "gdelt"
-      }
-    ],
+    "risk": [],
     "world": [
       {
         "title": "Vineet Bhatia pushes ahead with new dining concept in Dubai",
@@ -47,12 +33,12 @@
         "domain": "agbi.com",
         "date": "2026-05-28",
         "description": "Vineet Bhatia, the first chef of Indian origin to receive a Michelin star, opened a new restaurant in Dubai last week. But with the UAE still on alert for occasional drone and missile attacks, and Dubai reeling from a drop in visitors, the timing may seem strange. The 58-year-old celebrity chef, who is best known [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
