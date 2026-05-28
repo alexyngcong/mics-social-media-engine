@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-28T07:56:06.370Z",
+  "generatedAt": "2026-05-28T11:38:20.156Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 4,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 174,
-    "afterDedup": 163,
-    "big4Rejected": 5,
-    "englishOnly": 158,
-    "withinRecency": 44,
-    "scored": 44,
+    "totalFetched": 170,
+    "afterDedup": 157,
+    "big4Rejected": 6,
+    "englishOnly": 151,
+    "withinRecency": 38,
+    "scored": 38,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "agbi.com",
         "date": "2026-05-27",
         "description": "On the first day of the Iran war, Nilesh Ved called senior government figures with a question that mattered to retailers across Dubai: Would the malls stay open? Within two minutes, they rang back with a reply. “Business as usual,” he was told. For Ved, founder and chairman of the multi-billion-dollar AppCorp Holding – whose [&#8230;]",
-        "hoursAgo": 28,
+        "hoursAgo": 32,
         "score": 7.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -46,7 +46,7 @@
         "domain": "agbi.com",
         "date": "2026-05-28",
         "description": "Vineet Bhatia, the first chef of Indian origin to receive a Michelin star, opened a new restaurant in Dubai last week. But with the UAE still on alert for occasional drone and missile attacks, and Dubai reeling from a drop in visitors, the timing may seem strange. The 58-year-old celebrity chef, who is best known [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
