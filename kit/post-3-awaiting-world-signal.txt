@@ -1,7 +1,7 @@
-11 May 2026.
+28 May 2026.
 
-The intelligence feed had no fresh world signal at the cutoff that cleared the strategic-signal threshold. Rather than serve recycled commentary, the slot is held.
+No signal cleared the strategic-signal threshold for the world room at the cutoff for this slot. Rather than serve recycled commentary, the slot is held until something worth flagging lands.
 
-Use the AI Brief flow on the live feed to generate a polished post if a relevant signal has landed since this kit was assembled.
+Open the Intelligence Feed inside the app and use the AI Brief flow on any live item to produce a polished post on demand.
 
 On the watchlist from here.

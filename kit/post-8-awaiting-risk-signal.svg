@@ -65,7 +65,7 @@
   <!-- Photo only fills left 55% via clip -->
   <clipPath id="leftHalf"><rect x="0" y="0" width="595" height="1080"/></clipPath>
   <g clip-path="url(#leftHalf)">
-    <image href="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" xlink:href="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&amp;q=80&amp;fit=crop&amp;crop=entropy&amp;auto=format" x="0" y="-40" width="700" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <image href="/mics-social-media-engine/photos/risk/09_risk_analysis.jpg" xlink:href="/mics-social-media-engine/photos/risk/09_risk_analysis.jpg" x="0" y="-40" width="700" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
     <rect width="595" height="1080" fill="url(#darken)" opacity="0.55"/>
     <rect width="595" height="1080" fill="url(#fadeRight)"/>
   </g>
