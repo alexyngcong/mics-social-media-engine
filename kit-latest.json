@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T11:28:06.313Z",
+  "generatedAt": "2026-05-29T15:23:21.918Z",
   "weekOf": "29 May 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "gulf-backed-anthropic-overtakes-openai-i",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "room": "capital",
+      "roomColor": "#F0C050",
+      "roomLabel": "CAPITAL · CASH",
+      "theme": "ai_tech",
+      "tier": "WEEK AHEAD CAPITAL",
+      "title": "Gulf-backed Anthropic overtakes OpenAI in race to $1trn valuation",
+      "sourceUrl": "https://www.agbi.com/ai/2026/05/gulf-backed-anthropic-overtakes-openai-in-race-to-1tn-valuation/",
+      "filenameBase": "post-1-gulf-backed-anthropic-overtakes-openai-i",
+      "photoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "$1t",
+      "headlineLine1": "Gulf-backed Anthropic overtakes",
+      "headlineLine2": "OpenAI in race to $1trn valuation",
+      "hoursAgo": 3
     },
     {
       "n": 2,
