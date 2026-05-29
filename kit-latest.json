@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T03:26:07.055Z",
+  "generatedAt": "2026-05-29T07:54:31.367Z",
   "weekOf": "29 May 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "vineet-bhatia-pushes-ahead-with-new-dini",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Vineet Bhatia pushes ahead with new dining concept in Dubai",
-      "sourceUrl": "https://www.agbi.com/leisure-hospitality/2026/05/vineet-bhatia-pushes-ahead-with-new-dining-concept-in-dubai/",
-      "filenameBase": "post-1-vineet-bhatia-pushes-ahead-with-new-dini",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Vineet Bhatia pushes ahead with new dining concept in Dubai",
+      "headlineLine1": "Awaiting World signal",
       "headlineLine2": "",
-      "hoursAgo": 23
+      "hoursAgo": null
     },
     {
       "n": 2,
