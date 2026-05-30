@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-30T09:59:49.191Z",
+  "generatedAt": "2026-05-30T13:26:06.734Z",
   "weekOf": "30 May 2026",
   "totalCount": 10,
   "posts": [
@@ -28,7 +28,7 @@
       "stat": "$1t",
       "headlineLine1": "Gulf-backed Anthropic overtakes",
       "headlineLine2": "OpenAI in race to $1trn valuation",
-      "hoursAgo": 22
+      "hoursAgo": 25
     },
     {
       "n": 2,
