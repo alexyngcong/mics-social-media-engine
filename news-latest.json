@@ -1,28 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-30T13:25:52.055Z",
+  "generatedAt": "2026-05-30T17:02:33.012Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 11,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 181,
-    "afterDedup": 167,
-    "big4Rejected": 5,
-    "englishOnly": 161,
-    "withinRecency": 46,
-    "scored": 46,
-    "passed": 1
+    "totalFetched": 170,
+    "afterDedup": 162,
+    "big4Rejected": 4,
+    "englishOnly": 158,
+    "withinRecency": 39,
+    "scored": 39,
+    "passed": 3
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "UAE economy expands 6.2%, with GDP rising to Dh1.9 trillion in 2025 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOE42QkFwZTlKUDNHalBmZEs1RVNBOU5zQVFxckMtZGZmakFtSlhlc3NWdHUwWFVUZkpTaVJIekZHYWNFbkZ2NjVyTlM1dmhxNDZYSXBRb0ZDOE5fd1JjNkU0MjNPYlFaVUdOR24yRXYzUXVDZHRMazM0T2N4WGFZV0VIS1dXZFN2MlFSOUdXME1scEJOSHhCMG5lUW9LVmp4UG45bVFxU0dVVk5KQjhwUNIBwwFBVV95cUxOdGttN29xUWp6emxtdTZTdXp5T3RIWXpXMUgxekFaVEVIV3N0UUx0VjZTaV92a0hUYnJxaS1VTEE2M0c1TWY5enNLZENCdi0yU3VwRUtoRGIxSTAwNnBZYjR2U3FpU3JOcjU5QUotMXFoMEZBV3JHQnVjYUs2eExCSlc4MXhaOU1WdDRSY3Z4VTlxckRzSFVKQktxVWZJNXhMcllRa2FwajFrWGR2RW43Q0JXWWlCNC1FeWZjZmktZHd5UUk?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-05-30",
+        "description": "UAE economy expands 6.2%, with GDP rising to Dh1.9 trillion in 2025  Gulf News",
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "UAE/GCC Economy",
+        "origin": "google-news"
+      }
+    ],
     "capital": [
       {
         "title": "Gulf-backed Anthropic overtakes OpenAI in race to $1trn valuation",
@@ -31,14 +44,27 @@
         "domain": "agbi.com",
         "date": "2026-05-29",
         "description": "US artificial intelligence company Anthropic has raised $65 billion in a funding round that trebles the startup’s valuation to almost $1 trillion, leapfrogging rival OpenAI as the world’s most valuable AI developer. The deal highlights the breakneck pace of investment flowing into AI, with investors betting that demand for the technology’s advanced tools will continue [&#8230;]",
-        "hoursAgo": 25,
+        "hoursAgo": 29,
         "score": 6.5,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE's Al Zeyoudi commits to stronger EAEU ties as bilateral non-oil trade surpasses $33.3 billion - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPek5OUVBFRHo0bzNpTlBrSFF5QUNaZTAtbDRRZUlBQnNYb3NSNjVwY01pSFRtRzl4d1luMW1ia1pvWXBPQjdTTVVIZVBQd3M0dUVmdzhmRVdDRmdtVmNMV2JUazVaRjZON3dKdklicjlMZlAxUFNISUxsUlFMYWpVcTNPdGxxdlRJMnQ2VkUxMm1KZDFaTUg5LW1EWHN4NUhSUldabEZnaGJVYnVBcVFEQ3NuRHRvVEJZb0QyT190NDE0enpqdlQxVllwQQ?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-05-30",
+        "description": "UAE's Al Zeyoudi commits to stronger EAEU ties as bilateral non-oil trade surpasses $33.3 billion  Economy Middle East",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 3
 }
