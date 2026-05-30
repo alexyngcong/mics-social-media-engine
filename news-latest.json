@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-30T17:02:33.012Z",
+  "generatedAt": "2026-05-30T20:55:09.750Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,8 +14,8 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 162,
-    "big4Rejected": 4,
+    "afterDedup": 163,
+    "big4Rejected": 5,
     "englishOnly": 158,
     "withinRecency": 39,
     "scored": 39,
@@ -24,13 +24,13 @@
   "rooms": {
     "growth": [
       {
-        "title": "UAE economy expands 6.2%, with GDP rising to Dh1.9 trillion in 2025 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOE42QkFwZTlKUDNHalBmZEs1RVNBOU5zQVFxckMtZGZmakFtSlhlc3NWdHUwWFVUZkpTaVJIekZHYWNFbkZ2NjVyTlM1dmhxNDZYSXBRb0ZDOE5fd1JjNkU0MjNPYlFaVUdOR24yRXYzUXVDZHRMazM0T2N4WGFZV0VIS1dXZFN2MlFSOUdXME1scEJOSHhCMG5lUW9LVmp4UG45bVFxU0dVVk5KQjhwUNIBwwFBVV95cUxOdGttN29xUWp6emxtdTZTdXp5T3RIWXpXMUgxekFaVEVIV3N0UUx0VjZTaV92a0hUYnJxaS1VTEE2M0c1TWY5enNLZENCdi0yU3VwRUtoRGIxSTAwNnBZYjR2U3FpU3JOcjU5QUotMXFoMEZBV3JHQnVjYUs2eExCSlc4MXhaOU1WdDRSY3Z4VTlxckRzSFVKQktxVWZJNXhMcllRa2FwajFrWGR2RW43Q0JXWWlCNC1FeWZjZmktZHd5UUk?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
+        "title": "UAE GDP reaches Dhs1.9 trillion, grows 6.2% in 2025 - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVm4yck1GcHFSa19XdnJuamR0OWZ4VDVsNkhhVF9uQll0ZDZUQ095RXExZXhWck9sN2tDX0ZzTFFYbFZIWkZqZHljdEoxVWF1U0llWENQVnY3X19jbWlSck5Pc1ZJcXRtTnBRMUt4MkNQQ0FYaU1EUWJZQkZpMHFXS005d0UtSkFvaUdJYlVfZ19sWThjRFQw?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
         "date": "2026-05-30",
-        "description": "UAE economy expands 6.2%, with GDP rising to Dh1.9 trillion in 2025  Gulf News",
-        "hoursAgo": 9,
+        "description": "UAE GDP reaches Dhs1.9 trillion, grows 6.2% in 2025  Gulf Today",
+        "hoursAgo": 5,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-29",
         "description": "US artificial intelligence company Anthropic has raised $65 billion in a funding round that trebles the startup’s valuation to almost $1 trillion, leapfrogging rival OpenAI as the world’s most valuable AI developer. The deal highlights the breakneck pace of investment flowing into AI, with investors betting that demand for the technology’s advanced tools will continue [&#8230;]",
-        "hoursAgo": 29,
+        "hoursAgo": 33,
         "score": 6.5,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -58,7 +58,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-05-30",
         "description": "UAE's Al Zeyoudi commits to stronger EAEU ties as bilateral non-oil trade surpasses $33.3 billion  Economy Middle East",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
