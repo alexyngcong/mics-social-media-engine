@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-30T02:53:55.237Z",
+  "generatedAt": "2026-05-30T06:44:20.424Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 4,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 201,
+    "totalFetched": 174,
+    "afterDedup": 166,
     "big4Rejected": 5,
-    "englishOnly": 183,
-    "withinRecency": 63,
-    "scored": 63,
+    "englishOnly": 160,
+    "withinRecency": 42,
+    "scored": 42,
     "passed": 1
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-05-29",
         "description": "US artificial intelligence company Anthropic has raised $65 billion in a funding round that trebles the startup’s valuation to almost $1 trillion, leapfrogging rival OpenAI as the world’s most valuable AI developer. The deal highlights the breakneck pace of investment flowing into AI, with investors betting that demand for the technology’s advanced tools will continue [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
