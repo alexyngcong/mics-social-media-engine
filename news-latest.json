@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-31T07:44:42.757Z",
+  "generatedAt": "2026-05-31T10:14:14.594Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,8 +17,8 @@
     "afterDedup": 165,
     "big4Rejected": 4,
     "englishOnly": 160,
-    "withinRecency": 38,
-    "scored": 38,
+    "withinRecency": 39,
+    "scored": 39,
     "passed": 2
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-05-30",
         "description": "UAE GDP reaches Dhs1.9 trillion, grows 6.2% in 2025  Gulf Today",
-        "hoursAgo": 16,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-05-29",
         "description": "US artificial intelligence company Anthropic has raised $65 billion in a funding round that trebles the startup’s valuation to almost $1 trillion, leapfrogging rival OpenAI as the world’s most valuable AI developer. The deal highlights the breakneck pace of investment flowing into AI, with investors betting that demand for the technology’s advanced tools will continue [&#8230;]",
-        "hoursAgo": 44,
+        "hoursAgo": 46,
         "score": 6.5,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
