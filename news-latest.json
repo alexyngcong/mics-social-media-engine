@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-05-31T03:38:14.585Z",
+  "generatedAt": "2026-05-31T07:44:42.757Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,11 +15,11 @@
   "diagnostic": {
     "totalFetched": 182,
     "afterDedup": 165,
-    "big4Rejected": 5,
-    "englishOnly": 159,
-    "withinRecency": 44,
-    "scored": 44,
-    "passed": 3
+    "big4Rejected": 4,
+    "englishOnly": 160,
+    "withinRecency": 38,
+    "scored": 38,
+    "passed": 2
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-05-30",
         "description": "UAE GDP reaches Dhs1.9 trillion, grows 6.2% in 2025  Gulf Today",
-        "hoursAgo": 11,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -44,27 +44,14 @@
         "domain": "agbi.com",
         "date": "2026-05-29",
         "description": "US artificial intelligence company Anthropic has raised $65 billion in a funding round that trebles the startup’s valuation to almost $1 trillion, leapfrogging rival OpenAI as the world’s most valuable AI developer. The deal highlights the breakneck pace of investment flowing into AI, with investors betting that demand for the technology’s advanced tools will continue [&#8230;]",
-        "hoursAgo": 40,
+        "hoursAgo": 44,
         "score": 6.5,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
     ],
-    "risk": [
-      {
-        "title": "UAE's Al Zeyoudi commits to stronger EAEU ties as bilateral non-oil trade surpasses $33.3 billion - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPek5OUVBFRHo0bzNpTlBrSFF5QUNaZTAtbDRRZUlBQnNYb3NSNjVwY01pSFRtRzl4d1luMW1ia1pvWXBPQjdTTVVIZVBQd3M0dUVmdzhmRVdDRmdtVmNMV2JUazVaRjZON3dKdklicjlMZlAxUFNISUxsUlFMYWpVcTNPdGxxdlRJMnQ2VkUxMm1KZDFaTUg5LW1EWHN4NUhSUldabEZnaGJVYnVBcVFEQ3NuRHRvVEJZb0QyT190NDE0enpqdlQxVllwQQ?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-05-30",
-        "description": "UAE's Al Zeyoudi commits to stronger EAEU ties as bilateral non-oil trade surpasses $33.3 billion  Economy Middle East",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 3
+  "totalCount": 2
 }
