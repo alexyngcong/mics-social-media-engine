@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-01T09:25:48.032Z",
+  "generatedAt": "2026-06-01T17:36:29.901Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,24 +17,36 @@
     "afterDedup": 159,
     "big4Rejected": 5,
     "englishOnly": 154,
-    "withinRecency": 40,
-    "scored": 40,
-    "passed": 2
+    "withinRecency": 44,
+    "scored": 44,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
       {
-        "title": "UAE cuts diesel prices two months after 70% hike",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/uae-cuts-diesel-prices-two-months-after-70-hike/",
+        "title": "Turkish growth slows – and it&#8217;s not just the war to blame",
+        "url": "https://www.agbi.com/economy/2026/06/turkish-growth-slows-and-its-not-just-the-war-to-blame/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-01",
-        "description": "The&#160;UAE has lowered diesel prices for June, having raised them by more than 70 percent in April due to the impact of the Iran war. Diesel prices fell 8 percent to AED4.33 ($1.18) per litre from AED4.69 in May, the UAE state-run Wam news agency reported. Prices remained unchanged in May following the steep hike [&#8230;]",
+        "description": "Turkey’s economy came close to stalling in the first quarter as its manufacturers were buffeted by disruption linked to the Gulf conflict and deeper structural challenges. GDP expanded by just 0.1 percent quarter on quarter in January to March, according to data released by the statistics agency TurkStat on Monday. Year-on-year growth slowed to 2.5 [&#8230;]",
         "hoursAgo": 4,
         "score": 6,
         "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "DP World to expand free trade zone in Dominican Republic",
+        "url": "https://www.agbi.com/logistics/2026/06/dp-world-to-expand-free-trade-zone-in-dominican-republic/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-01",
+        "description": "Dubai&#8217;s DP World, one of the world&#8217;s largest port operators, will invest another $100 million to expand its logistics and warehousing infrastructure at the Caucedo free trade zone on the southern coast of the Dominican Republic. The investment is in addition to the $760 million committed in May 2025 to expand the Caucedo port and [&#8230;]",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
       }
     ],
@@ -46,12 +58,12 @@
         "domain": "agbi.com",
         "date": "2026-06-01",
         "description": "UAE telecommunications company&#160;e&#38; has agreed to sell a 12.5 percent stake in Dubai-based Careem Technologies, the parent of a regional &#8220;super app&#8221;, to US&#160;ride-hailing company Uber. The telco will generate $100 million in cash from the stake divestment, but will retain a 37.53 percent stake in Careem Technologies, e&#38; said in a statement to the [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
