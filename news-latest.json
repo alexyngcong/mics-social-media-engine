@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-01T03:53:05.771Z",
+  "generatedAt": "2026-06-01T09:25:48.032Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,44 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 160,
+    "afterDedup": 159,
     "big4Rejected": 5,
-    "englishOnly": 155,
-    "withinRecency": 34,
-    "scored": 34,
-    "passed": 1
+    "englishOnly": 154,
+    "withinRecency": 40,
+    "scored": 40,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [
+    "capital": [],
+    "risk": [
       {
-        "title": "Gulf-backed Anthropic overtakes OpenAI in race to $1trn valuation",
-        "url": "https://www.agbi.com/ai/2026/05/gulf-backed-anthropic-overtakes-openai-in-race-to-1tn-valuation/",
+        "title": "UAE cuts diesel prices two months after 70% hike",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/uae-cuts-diesel-prices-two-months-after-70-hike/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-05-29",
-        "description": "US artificial intelligence company Anthropic has raised $65 billion in a funding round that trebles the startup’s valuation to almost $1 trillion, leapfrogging rival OpenAI as the world’s most valuable AI developer. The deal highlights the breakneck pace of investment flowing into AI, with investors betting that demand for the technology’s advanced tools will continue [&#8230;]",
-        "hoursAgo": 64,
+        "date": "2026-06-01",
+        "description": "The&#160;UAE has lowered diesel prices for June, having raised them by more than 70 percent in April due to the impact of the Iran war. Diesel prices fell 8 percent to AED4.33 ($1.18) per litre from AED4.69 in May, the UAE state-run Wam news agency reported. Prices remained unchanged in May following the steep hike [&#8230;]",
+        "hoursAgo": 4,
         "score": 6,
-        "topic": "IPO & M&A",
+        "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
-    "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Sale of stake in Careem app brings e&#038; $100m",
+        "url": "https://www.agbi.com/telecoms/2026/06/sale-of-stake-in-careem-app-brings-e-100m/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-01",
+        "description": "UAE telecommunications company&#160;e&#38; has agreed to sell a 12.5 percent stake in Dubai-based Careem Technologies, the parent of a regional &#8220;super app&#8221;, to US&#160;ride-hailing company Uber. The telco will generate $100 million in cash from the stake divestment, but will retain a 37.53 percent stake in Careem Technologies, e&#38; said in a statement to the [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      }
+    ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
