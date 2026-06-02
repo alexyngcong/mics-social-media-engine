@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-01T22:33:25.906Z",
+  "generatedAt": "2026-06-02T03:44:50.712Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 4,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 174,
-    "afterDedup": 164,
-    "big4Rejected": 4,
-    "englishOnly": 159,
-    "withinRecency": 44,
-    "scored": 44,
+    "totalFetched": 170,
+    "afterDedup": 160,
+    "big4Rejected": 5,
+    "englishOnly": 155,
+    "withinRecency": 42,
+    "scored": 42,
     "passed": 3
   },
   "rooms": {
@@ -26,13 +26,25 @@
     "capital": [],
     "risk": [
       {
+        "title": "Oman starts work on agricultural city with focus on food security",
+        "url": "https://www.agbi.com/agriculture/2026/06/oman-starts-work-on-agricultural-city-with-focus-on-food-security/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-02",
+        "description": "Oman has broken ground on a $4.2 billion agricultural city in the north of the country as part of its wider food security strategy. The sultanate is aiming to reduce reliance on imports, strengthen domestic production and shield itself from shocks linked to regional conflict and volatile global markets. A contract has been awarded to [&#8230;]",
+        "hoursAgo": 0,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Turkish growth slows – and it&#8217;s not just the war to blame",
         "url": "https://www.agbi.com/economy/2026/06/turkish-growth-slows-and-its-not-just-the-war-to-blame/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-01",
         "description": "Turkey’s economy came close to stalling in the first quarter as its manufacturers were buffeted by disruption linked to the Gulf conflict and deeper structural challenges. GDP expanded by just 0.1 percent quarter on quarter in January to March, according to data released by the statistics agency TurkStat on Monday. Year-on-year growth slowed to 2.5 [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -44,26 +56,13 @@
         "domain": "agbi.com",
         "date": "2026-06-01",
         "description": "Dubai&#8217;s DP World, one of the world&#8217;s largest port operators, will invest another $100 million to expand its logistics and warehousing infrastructure at the Caucedo free trade zone on the southern coast of the Dominican Republic. The investment is in addition to the $760 million committed in May 2025 to expand the Caucedo port and [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
       }
     ],
-    "world": [
-      {
-        "title": "Sale of stake in Careem app brings e&#038; $100m",
-        "url": "https://www.agbi.com/telecoms/2026/06/sale-of-stake-in-careem-app-brings-e-100m/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-01",
-        "description": "UAE telecommunications company&#160;e&#38; has agreed to sell a 12.5 percent stake in Dubai-based Careem Technologies, the parent of a regional &#8220;super app&#8221;, to US&#160;ride-hailing company Uber. The telco will generate $100 million in cash from the stake divestment, but will retain a 37.53 percent stake in Careem Technologies, e&#38; said in a statement to the [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      }
-    ]
+    "world": []
   },
   "totalCount": 3
 }
