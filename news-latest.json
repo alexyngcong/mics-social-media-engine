@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-02T16:20:58.484Z",
+  "generatedAt": "2026-06-02T22:22:24.397Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 11,
-    "googleNews": 150,
+    "gdelt": 100,
+    "googleNews": 140,
     "reddit": 0,
-    "trends": 10,
+    "trends": 0,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 181,
-    "afterDedup": 169,
+    "totalFetched": 250,
+    "afterDedup": 180,
     "big4Rejected": 5,
-    "englishOnly": 162,
-    "withinRecency": 50,
-    "scored": 50,
+    "englishOnly": 163,
+    "withinRecency": 61,
+    "scored": 61,
     "passed": 2
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "agbi.com",
         "date": "2026-06-02",
         "description": "Lunate, the Abu Dhabi-based investment manager, said its first GCC sharia-compliant, dividend-paying exchange-traded fund is due to list on the Abu Dhabi Securities Exchange on June 23. The ETF will track the Solactive GCC shariah dividend index, which comprises dividend-paying, sharia-compliant equities from across the Gulf Cooperation Council. The index includes companies from the UAE, [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-06-02",
         "description": "Turkey has secured supplies of 33 billion cubic metres (bcm) of natural gas from Azerbaijan over 15 years, the Turkish energy ministry said. State-owned Turkish Petroleum Pipeline Corporation (Botas) signed a deal with Azerbaijan’s Socar, the UAE’s Abu Dhabi National Oil Company (Adnoc) and France’s TotalEnergies on the sidelines of Baku Energy Week to obtain [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
