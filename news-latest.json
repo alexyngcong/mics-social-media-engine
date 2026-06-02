@@ -1,82 +1,56 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-02T08:28:18.143Z",
+  "generatedAt": "2026-06-02T16:20:58.484Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 157,
-    "big4Rejected": 4,
-    "englishOnly": 153,
-    "withinRecency": 43,
-    "scored": 43,
-    "passed": 4
+    "totalFetched": 181,
+    "afterDedup": 169,
+    "big4Rejected": 5,
+    "englishOnly": 162,
+    "withinRecency": 50,
+    "scored": 50,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [
+    "capital": [],
+    "risk": [],
+    "world": [
       {
-        "title": "Alabbar and IHC show interest in debt-hit IFFCO",
-        "url": "https://www.agbi.com/finance/2026/06/alabbar-and-ihc-show-interest-in-debt-hit-iffco/",
+        "title": "Lunate launches its first sharia-compliant, dividend-paying ETF",
+        "url": "https://www.agbi.com/markets/2026/06/lunate-launches-its-first-global-sharia-compliant-dividend-etf/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-02",
-        "description": "Emaar founder Mohamed Alabbar and Abu Dhabi-listed International Holding Company (IHC) are reportedly among several bidders showing preliminary interest in acquiring Dubai-based IFFCO Group or some of its assets. The assets could be worth several billion dollars, Bloomberg reported, quoting unidentified sources. Buyers interested in IFFCO’s assets have not made formal offers, and any decisions [&#8230;]",
-        "hoursAgo": 4,
+        "description": "Lunate, the Abu Dhabi-based investment manager, said its first GCC sharia-compliant, dividend-paying exchange-traded fund is due to list on the Abu Dhabi Securities Exchange on June 23. The ETF will track the Solactive GCC shariah dividend index, which comprises dividend-paying, sharia-compliant equities from across the Gulf Cooperation Council. The index includes companies from the UAE, [&#8230;]",
+        "hoursAgo": 7,
         "score": 6,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      }
-    ],
-    "risk": [
-      {
-        "title": "Oman starts work on agricultural city with focus on food security",
-        "url": "https://www.agbi.com/agriculture/2026/06/oman-starts-work-on-agricultural-city-with-focus-on-food-security/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-02",
-        "description": "Oman has broken ground on a $4.2 billion agricultural city in the north of the country as part of a wider food security strategy. The sultanate aims to reduce reliance on imports, strengthen domestic production and shield itself from shocks linked to regional conflict and volatile global markets. A contract has been awarded to a [&#8230;]",
-        "hoursAgo": 5,
-        "score": 7,
-        "topic": "Geopolitical Risk",
+        "topic": "Global Economic Signals",
         "origin": "uae-rss"
       },
-      {
-        "title": "Turkish growth slows – and it&#8217;s not just the war to blame",
-        "url": "https://www.agbi.com/economy/2026/06/turkish-growth-slows-and-its-not-just-the-war-to-blame/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-01",
-        "description": "Turkey’s economy came close to stalling in the first quarter as its manufacturers were buffeted by disruption linked to the Gulf conflict and deeper structural challenges. GDP expanded by just 0.1 percent quarter on quarter in January to March, according to data released by the statistics agency TurkStat on Monday. Year-on-year growth slowed to 2.5 [&#8230;]",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      }
-    ],
-    "world": [
       {
         "title": "Turkey strikes natural gas supply deal with Azerbaijan",
         "url": "https://www.agbi.com/oil-and-gas/2026/06/turkey-strikes-natural-gas-supply-deal-with-azerbaijan/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-02",
-        "description": "Turkey has secured a supply of 33 billion cubic metres (bcm) of natural gas from Azerbaijan over 15 years, according to the country’s energy ministry. State-owned Turkish Petroleum Pipeline Corporation (Botas) has signed a deal with Azerbaijan’s Socar, the UAE’s Abu Dhabi National Oil Company (Adnoc) and France’s TotalEnergies on the sidelines of Baku Energy [&#8230;]",
-        "hoursAgo": 2,
+        "description": "Turkey has secured supplies of 33 billion cubic metres (bcm) of natural gas from Azerbaijan over 15 years, the Turkish energy ministry said. State-owned Turkish Petroleum Pipeline Corporation (Botas) signed a deal with Azerbaijan’s Socar, the UAE’s Abu Dhabi National Oil Company (Adnoc) and France’s TotalEnergies on the sidelines of Baku Energy Week to obtain [&#8230;]",
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 2
 }
