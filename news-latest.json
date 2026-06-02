@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-02T03:44:50.712Z",
+  "generatedAt": "2026-06-02T08:28:18.143Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,16 +14,29 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 160,
-    "big4Rejected": 5,
-    "englishOnly": 155,
-    "withinRecency": 42,
-    "scored": 42,
-    "passed": 3
+    "afterDedup": 157,
+    "big4Rejected": 4,
+    "englishOnly": 153,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
-    "capital": [],
+    "capital": [
+      {
+        "title": "Alabbar and IHC show interest in debt-hit IFFCO",
+        "url": "https://www.agbi.com/finance/2026/06/alabbar-and-ihc-show-interest-in-debt-hit-iffco/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-02",
+        "description": "Emaar founder Mohamed Alabbar and Abu Dhabi-listed International Holding Company (IHC) are reportedly among several bidders showing preliminary interest in acquiring Dubai-based IFFCO Group or some of its assets. The assets could be worth several billion dollars, Bloomberg reported, quoting unidentified sources. Buyers interested in IFFCO’s assets have not made formal offers, and any decisions [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      }
+    ],
     "risk": [
       {
         "title": "Oman starts work on agricultural city with focus on food security",
@@ -31,8 +44,8 @@
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-02",
-        "description": "Oman has broken ground on a $4.2 billion agricultural city in the north of the country as part of its wider food security strategy. The sultanate is aiming to reduce reliance on imports, strengthen domestic production and shield itself from shocks linked to regional conflict and volatile global markets. A contract has been awarded to [&#8230;]",
-        "hoursAgo": 0,
+        "description": "Oman has broken ground on a $4.2 billion agricultural city in the north of the country as part of a wider food security strategy. The sultanate aims to reduce reliance on imports, strengthen domestic production and shield itself from shocks linked to regional conflict and volatile global markets. A contract has been awarded to a [&#8230;]",
+        "hoursAgo": 5,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -44,25 +57,26 @@
         "domain": "agbi.com",
         "date": "2026-06-01",
         "description": "Turkey’s economy came close to stalling in the first quarter as its manufacturers were buffeted by disruption linked to the Gulf conflict and deeper structural challenges. GDP expanded by just 0.1 percent quarter on quarter in January to March, according to data released by the statistics agency TurkStat on Monday. Year-on-year growth slowed to 2.5 [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "DP World to expand free trade zone in Dominican Republic",
-        "url": "https://www.agbi.com/logistics/2026/06/dp-world-to-expand-free-trade-zone-in-dominican-republic/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-01",
-        "description": "Dubai&#8217;s DP World, one of the world&#8217;s largest port operators, will invest another $100 million to expand its logistics and warehousing infrastructure at the Caucedo free trade zone on the southern coast of the Dominican Republic. The investment is in addition to the $760 million committed in May 2025 to expand the Caucedo port and [&#8230;]",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "Turkey strikes natural gas supply deal with Azerbaijan",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/turkey-strikes-natural-gas-supply-deal-with-azerbaijan/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-02",
+        "description": "Turkey has secured a supply of 33 billion cubic metres (bcm) of natural gas from Azerbaijan over 15 years, according to the country’s energy ministry. State-owned Turkish Petroleum Pipeline Corporation (Botas) has signed a deal with Azerbaijan’s Socar, the UAE’s Abu Dhabi National Oil Company (Adnoc) and France’s TotalEnergies on the sidelines of Baku Energy [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
+        "origin": "uae-rss"
+      }
+    ]
   },
-  "totalCount": 3
+  "totalCount": 4
 }
