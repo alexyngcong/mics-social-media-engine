@@ -1,30 +1,42 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-03T16:45:42.992Z",
+  "generatedAt": "2026-06-03T22:28:01.934Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 8,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 178,
-    "afterDedup": 164,
-    "big4Rejected": 5,
-    "englishOnly": 159,
-    "withinRecency": 64,
-    "scored": 64,
-    "passed": 4
+    "totalFetched": 170,
+    "afterDedup": 159,
+    "big4Rejected": 7,
+    "englishOnly": 152,
+    "withinRecency": 56,
+    "scored": 56,
+    "passed": 5
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
+      {
+        "title": "UAE, Italy elevate strategic partnership with record-breaking trade, heightened investments, and historic high-level visits in 2026 - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOQzZwZ3c1cW1scld1QUZxenlJa0xTbzN0RmU1OUR3VFJMTmRNTmdodzR5T1g2Q2p4OGI3a0F3aVp3QlV0VWlpNUtaRW05N24tdnRPQUdVcDlOMVNITDdTMUpwYXBldGxwT1lUNHRkU3lxb2t0RnVDeTRtR3VDTU9pTXRtYzRJb1A0MUI4cVNvbUJVUU9fS1pXUk1hSG9lTUwwQ3ktcU4wVlhrYkV4WkZqeGlMcHpVYlJkd3REeHRDYWJPX2dzRlZRZE1TUmxjaWdoalZkN1pnX0cxbVo4a1BUNVRNYmVBU2huSjEyMUE3LXhEUEw2VWVj?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-06-03",
+        "description": "UAE, Italy elevate strategic partnership with record-breaking trade, heightened investments, and historic high-level visits in 2026  Economy Middle East",
+        "hoursAgo": 8,
+        "score": 8,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
       {
         "title": "Adnoc resumes naphtha exports via alternative Oman route",
         "url": "https://www.agbi.com/oil-and-gas/2026/06/adnoc-resumes-naphtha-exports-via-alternative-oman-route/",
@@ -32,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-06-03",
         "description": "Asia&#8217;s naphtha prices tumbled to their lowest since early March as Abu Dhabi National Oil Company (Adnoc) resumed exports in May via the Omani port of Sohar, traders said. By establishing an alternative route, it could ease the supply crunch caused by the US-Israeli war on Iran. Adnoc halted exports of about 1 million metric [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -46,7 +58,7 @@
         "domain": "oilprice.com",
         "date": "2026-06-02",
         "description": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027  Crude Oil Prices Today | OilPrice.com",
-        "hoursAgo": 25,
+        "hoursAgo": 31,
         "score": 6.5,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
@@ -58,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-06-03",
         "description": "Emirates Integrated Telecommunications, operator of the&#160;Du brand in the UAE,&#160;has launched a venture capital fund to help scale up regional startups. The $50 million fund will be managed by Abu Dhabi-based Shorooq. It will focus on companies across fintech, artificial intelligence, cybersecurity, cloud, loyalty, gaming, enterprise software and customer service technologies in the UAE and [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "uae-rss"
@@ -70,12 +82,12 @@
         "domain": "agbi.com",
         "date": "2026-06-03",
         "description": "SAB Invest, the investment arm of Saudi Awwal Bank (SAB), and Saudi developer Retal have set up a fund worth SAR1.9 billion ($500 million) to develop a mixed-use project in Riyadh. SAB will contribute up to 50 percent to the fund, the lender said in a statement. The Capital Market Authority-regulated fund is designed to [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 5
 }
