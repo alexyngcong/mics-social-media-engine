@@ -1,42 +1,29 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-03T08:54:49.493Z",
+  "generatedAt": "2026-06-03T16:45:42.992Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 8,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 161,
-    "big4Rejected": 4,
-    "englishOnly": 157,
-    "withinRecency": 57,
-    "scored": 57,
-    "passed": 5
+    "totalFetched": 178,
+    "afterDedup": 164,
+    "big4Rejected": 5,
+    "englishOnly": 159,
+    "withinRecency": 64,
+    "scored": 64,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Kuwaiti online retailer Boutiqaat targets $1bn valuation for IPO",
-        "url": "https://www.agbi.com/markets/2026/06/kuwaiti-online-retailer-boutiqaat-targeting-1bn-ipo/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-03",
-        "description": "Kuwaiti online beauty and fashion retailer Boutiqaat is reportedly seeking a listing on the local bourse in the first quarter of 2027. Goldman Sachs is working on a potential initial public offering that would be the US investment bank’s first listing mandate in the GCC region, Bloomberg reported, citing unidentified sources. Boutiqaat is targeting a [&#8230;]",
-        "hoursAgo": 2,
-        "score": 6,
-        "topic": "IPO & M&A",
-        "origin": "uae-rss"
-      }
-    ],
+    "capital": [],
     "risk": [
       {
         "title": "Adnoc resumes naphtha exports via alternative Oman route",
@@ -44,33 +31,9 @@
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-03",
-        "description": "Asia&#8217;s naphtha prices tumbled to their lowest since early March as the Abu Dhabi National Oil Company (Adnoc) resumed exports in May via the Omani port of Sohar, traders said, establishing an alternative route that could ease the supply crunch caused by the US-Israeli war on Iran. Adnoc halted exports of about 1 million metric [&#8230;]",
-        "hoursAgo": 2,
+        "description": "Asia&#8217;s naphtha prices tumbled to their lowest since early March as Abu Dhabi National Oil Company (Adnoc) resumed exports in May via the Omani port of Sohar, traders said. By establishing an alternative route, it could ease the supply crunch caused by the US-Israeli war on Iran. Adnoc halted exports of about 1 million metric [&#8230;]",
+        "hoursAgo": 10,
         "score": 8,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "CargoX gets $250m to expand driverless delivery in UAE",
-        "url": "https://www.agbi.com/logistics/2026/06/uaes-cargox-gets-250m-to-expand-driverless-delivery/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-03",
-        "description": "CargoX, a UAE-headquartered autonomous delivery company, has raised $250 million to support its domestic and global expansion. The funding was secured from an investor group led by BlueFive Capital, an Abu Dhabi-based asset manager. The company deploys driverless delivery vehicles across last-mile, middle-mile and long-haul logistics routes, which have already been piloted on public roads [&#8230;]",
-        "hoursAgo": 3,
-        "score": 7,
-        "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Humain partners with Nvidia to launch robotaxis",
-        "url": "https://www.agbi.com/tech/2026/06/humain-partners-with-nvidia-for-robotaxi-launch/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-03",
-        "description": "Humain, the Saudi&#160;Public Investment Fund&#160;(PIF) artificial intelligence company, is partnering with US chip maker Nvidia to launch robotaxis in the Middle East. The collaboration will help to enable the infrastructure, intelligence and operational scale required for level-four-ready autonomous transportation across Saudi Arabia, Humain said in a social media post. “Autonomous mobility will become one of [&#8230;]",
-        "hoursAgo": 3,
-        "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
@@ -83,12 +46,36 @@
         "domain": "oilprice.com",
         "date": "2026-06-02",
         "description": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027  Crude Oil Prices Today | OilPrice.com",
-        "hoursAgo": 17,
-        "score": 7,
+        "hoursAgo": 25,
+        "score": 6.5,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
+      },
+      {
+        "title": "Du in $50m push to expand regional startups",
+        "url": "https://www.agbi.com/finance/2026/06/du-in-50m-push-to-expand-regional-startups/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-03",
+        "description": "Emirates Integrated Telecommunications, operator of the&#160;Du brand in the UAE,&#160;has launched a venture capital fund to help scale up regional startups. The $50 million fund will be managed by Abu Dhabi-based Shorooq. It will focus on companies across fintech, artificial intelligence, cybersecurity, cloud, loyalty, gaming, enterprise software and customer service technologies in the UAE and [&#8230;]",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "AI & Technology",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Fund set up to build $500m mixed-use project in Riyadh",
+        "url": "https://www.agbi.com/real-estate/2026/06/new-fund-set-up-to-build-500m-mixed-use-project-in-riyadh/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-03",
+        "description": "SAB Invest, the investment arm of Saudi Awwal Bank (SAB), and Saudi developer Retal have set up a fund worth SAR1.9 billion ($500 million) to develop a mixed-use project in Riyadh. SAB will contribute up to 50 percent to the fund, the lender said in a statement. The Capital Market Authority-regulated fund is designed to [&#8230;]",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 4
 }
