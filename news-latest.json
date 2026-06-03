@@ -1,30 +1,80 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-03T03:54:54.065Z",
+  "generatedAt": "2026-06-03T08:54:49.493Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 18,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
-    "uaeRss": 0
+    "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 178,
-    "afterDedup": 159,
-    "big4Rejected": 5,
-    "englishOnly": 152,
-    "withinRecency": 47,
-    "scored": 47,
-    "passed": 1
+    "totalFetched": 170,
+    "afterDedup": 161,
+    "big4Rejected": 4,
+    "englishOnly": 157,
+    "withinRecency": 57,
+    "scored": 57,
+    "passed": 5
   },
   "rooms": {
     "growth": [],
-    "capital": [],
-    "risk": [],
+    "capital": [
+      {
+        "title": "Kuwaiti online retailer Boutiqaat targets $1bn valuation for IPO",
+        "url": "https://www.agbi.com/markets/2026/06/kuwaiti-online-retailer-boutiqaat-targeting-1bn-ipo/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-03",
+        "description": "Kuwaiti online beauty and fashion retailer Boutiqaat is reportedly seeking a listing on the local bourse in the first quarter of 2027. Goldman Sachs is working on a potential initial public offering that would be the US investment bank’s first listing mandate in the GCC region, Bloomberg reported, citing unidentified sources. Boutiqaat is targeting a [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "IPO & M&A",
+        "origin": "uae-rss"
+      }
+    ],
+    "risk": [
+      {
+        "title": "Adnoc resumes naphtha exports via alternative Oman route",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/adnoc-resumes-naphtha-exports-via-alternative-oman-route/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-03",
+        "description": "Asia&#8217;s naphtha prices tumbled to their lowest since early March as the Abu Dhabi National Oil Company (Adnoc) resumed exports in May via the Omani port of Sohar, traders said, establishing an alternative route that could ease the supply crunch caused by the US-Israeli war on Iran. Adnoc halted exports of about 1 million metric [&#8230;]",
+        "hoursAgo": 2,
+        "score": 8,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "CargoX gets $250m to expand driverless delivery in UAE",
+        "url": "https://www.agbi.com/logistics/2026/06/uaes-cargox-gets-250m-to-expand-driverless-delivery/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-03",
+        "description": "CargoX, a UAE-headquartered autonomous delivery company, has raised $250 million to support its domestic and global expansion. The funding was secured from an investor group led by BlueFive Capital, an Abu Dhabi-based asset manager. The company deploys driverless delivery vehicles across last-mile, middle-mile and long-haul logistics routes, which have already been piloted on public roads [&#8230;]",
+        "hoursAgo": 3,
+        "score": 7,
+        "topic": "Supply Chain Disruption",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Humain partners with Nvidia to launch robotaxis",
+        "url": "https://www.agbi.com/tech/2026/06/humain-partners-with-nvidia-for-robotaxi-launch/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-03",
+        "description": "Humain, the Saudi&#160;Public Investment Fund&#160;(PIF) artificial intelligence company, is partnering with US chip maker Nvidia to launch robotaxis in the Middle East. The collaboration will help to enable the infrastructure, intelligence and operational scale required for level-four-ready autonomous transportation across Saudi Arabia, Humain said in a social media post. “Autonomous mobility will become one of [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      }
+    ],
     "world": [
       {
         "title": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027 - Crude Oil Prices Today | OilPrice.com",
@@ -33,12 +83,12 @@
         "domain": "oilprice.com",
         "date": "2026-06-02",
         "description": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027  Crude Oil Prices Today | OilPrice.com",
-        "hoursAgo": 12,
+        "hoursAgo": 17,
         "score": 7,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 5
 }
