@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="'Figtree','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="cinematic" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.98 0.05 0 0 0
+        0.02 0.92 0.02 0 0
+        0 0.02 0.85 0 0
+        0   0    0    1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="0.95" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="0.97" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="1" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+    <!-- darken: now very light. Photo dominates; only a soft scrim at the
+         very bottom for text legibility. Earlier versions buried the photo. -->
+    <linearGradient id="darken" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0.0"/>
+      <stop offset="60%" stop-color="#06060f" stop-opacity="0.0"/>
+      <stop offset="80%" stop-color="#06060f" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.60"/>
+    </linearGradient>
+    <!-- textScrim: localized contrast band specifically behind text
+         clusters. Used by layouts that put text low in the canvas. -->
+    <linearGradient id="textScrim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#06060f" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#06060f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="vignTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#06060f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.98"/>
+    </linearGradient>
+    <radialGradient id="vignCenter" cx="0.5" cy="0.5" r="0.65">
+      <stop offset="0%" stop-color="#06060f" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#06060f" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#06060f" stop-opacity="0.95"/>
+    </radialGradient>
+    <radialGradient id="accentGlow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0%" stop-color="#5B8DEE" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#5B8DEE" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#5B8DEE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassUnder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8926A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A8926A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A8926A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.75"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1080" height="1080" fill="#06060f"/>
+
+  <!-- Photo top 70% -->
+  <clipPath id="topStrip"><rect x="0" y="0" width="1080" height="755"/></clipPath>
+  <g clip-path="url(#topStrip)">
+    <image href="/mics-social-media-engine/photos/world/08_oil_sea.jpg" xlink:href="/mics-social-media-engine/photos/world/08_oil_sea.jpg" x="0" y="0" width="1080" height="800" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+    <rect width="1080" height="755" fill="url(#darken)" opacity="0.5"/>
+    <rect width="1080" height="755" fill="url(#accentGlow)"/>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1080" height="4" fill="#5B8DEE"/>
+
+  <!-- Bottom strip -->
+  <rect x="0" y="755" width="1080" height="325" fill="#06060f"/>
+  <rect x="0" y="753" width="1080" height="2" fill="#5B8DEE"/>
+
+  <!-- Top metadata -->
+  <text x="80" y="80" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
+  <text x="80" y="116" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.65)" filter="url(#textShadow)">WORLD PULSE</text>
+
+  <!-- Big "Insight" word over the photo as visual anchor (replaces the missing stat hero) -->
+  <text x="80" y="690" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-style="italic" font-weight="600" fill="rgba(234,230,222,0.85)" filter="url(#textShadow)">"Iraq, UAE, Saudi Arabia All Set for …"</text>
+
+  <!-- LEFT COLUMN — tier + room -->
+  <line x1="80" y1="800" x2="180" y2="800" stroke="#5B8DEE" stroke-width="2"/>
+  <text x="80" y="845" font-size="18" font-weight="700" letter-spacing="5" fill="#5B8DEE">WEEK AHEAD MACRO</text>
+  <text x="80" y="885" font-size="14" letter-spacing="3" fill="#B0AAB0">WORLD PULSE</text>
+  <text x="80" y="918" font-size="12" font-style="italic" fill="#6A6478">International Advisory · Cross-border Structuring</text>
+
+  <!-- VERTICAL DIVIDER between columns -->
+  <line x1="430" y1="785" x2="430" y2="975" stroke="#5B8DEE" stroke-width="1" opacity="0.4"/>
+
+  <!-- CENTER COLUMN — stat -->
+  <text x="540" y="902.5" font-family="'Cormorant Garamond','Georgia',serif" font-size="130" font-weight="500" fill="#ffffff" text-anchor="middle"></text>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="650" y1="785" x2="650" y2="975" stroke="#5B8DEE" stroke-width="1" opacity="0.4"/>
+
+  <!-- RIGHT COLUMN — headline -->
+  <text x="1000" y="845" font-family="'Cormorant Garamond','Georgia',serif" font-size="30" font-weight="600" fill="#EAE6DE" text-anchor="end">Iraq, UAE, Saudi Arabia All Set for …</text>
+  <text x="1000" y="885" font-family="'Cormorant Garamond','Georgia',serif" font-size="30" font-weight="600" fill="#EAE6DE" text-anchor="end">Surge in 2027 - Crude Oil Prices Tod…</text>
+
+  <rect x="120" y="180" width="60" height="2" fill="#5B8DEE" opacity="0.7"/>
+  <rect x="900" y="180" width="60" height="2" fill="#5B8DEE" opacity="0.7"/>
+  <rect x="120" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
+  <rect x="900" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
+
+  <line x1="900" y1="50" x2="1040" y2="50" stroke="#5B8DEE" stroke-width="3" opacity="0.8"/>
+  <line x1="1040" y1="50" x2="1040" y2="180" stroke="#5B8DEE" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="900" x2="40" y2="1040" stroke="#5B8DEE" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="1040" x2="180" y2="1040" stroke="#5B8DEE" stroke-width="3" opacity="0.8"/>
+
+  <rect x="80" y="1000" width="920" height="1" fill="url(#brassUnder)"/>
+  <text x="540" y="1042" font-size="13" font-weight="700" letter-spacing="6" fill="rgba(168,146,106,0.7)" text-anchor="middle">MICS INTERNATIONAL</text>
+</svg>
