@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-02T22:22:24.397Z",
+  "generatedAt": "2026-06-03T03:54:54.065Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
-    "googleNews": 140,
+    "gdelt": 18,
+    "googleNews": 150,
     "reddit": 0,
-    "trends": 0,
-    "uaeRss": 10
+    "trends": 10,
+    "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 250,
-    "afterDedup": 180,
+    "totalFetched": 178,
+    "afterDedup": 159,
     "big4Rejected": 5,
-    "englishOnly": 163,
-    "withinRecency": 61,
-    "scored": 61,
-    "passed": 2
+    "englishOnly": 152,
+    "withinRecency": 47,
+    "scored": 47,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
@@ -27,30 +27,18 @@
     "risk": [],
     "world": [
       {
-        "title": "Lunate launches its first sharia-compliant, dividend-paying ETF",
-        "url": "https://www.agbi.com/markets/2026/06/lunate-launches-its-first-global-sharia-compliant-dividend-etf/",
-        "source": "AGBI",
-        "domain": "agbi.com",
+        "title": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027 - Crude Oil Prices Today | OilPrice.com",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQN2FidzE2RXR0VTJCRnE0SVFBUThub3RUWVRkbGVJUWhTTzRTcFF6YWk0Z0ZuVV9YMFE2ck14TnZVNGhPamt0WkV6dFpmd0pTZEZISTlhamE4dHV1WUxTa21Ib3RnS3A0SW1KMlBjSDNSZUktYjY1a19LSFBCNk5PQ0QxRUtkTGZBcUx4bG5CVHVDTXhBTUp2X0pWUlFBaG9DV1A4TWZvb2s5RUF6TUUteVhSbDhVRkpuS29wR9IBwgFBVV95cUxPU1FjTnJIdzhOQlllUlNnSGpFckFZQkxVVmQ0ZWJVZkp3WDZPRlpOSW5YbkhJY3JnZnE1bjJ3S01wTmlES2Y3UG5kLTBKYk9BSW5MRWhydTJ2ZkNWWEVLVFUyajBQMlRlNjFWRWJ3VG5EX3BCeHNqVi1wSDVILU5ocFVGVjlCZkhrb3UxVkRlamhhU1Z0MHY0OTlkSTkyMmQ4QVllSlgwX3JxYUlIci15a3JCd2pLZUtKYzlZVVlwSWpLUQ?oc=5",
+        "source": "Crude Oil Prices Today | OilPrice.com",
+        "domain": "oilprice.com",
         "date": "2026-06-02",
-        "description": "Lunate, the Abu Dhabi-based investment manager, said its first GCC sharia-compliant, dividend-paying exchange-traded fund is due to list on the Abu Dhabi Securities Exchange on June 23. The ETF will track the Solactive GCC shariah dividend index, which comprises dividend-paying, sharia-compliant equities from across the Gulf Cooperation Council. The index includes companies from the UAE, [&#8230;]",
-        "hoursAgo": 13,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Turkey strikes natural gas supply deal with Azerbaijan",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/turkey-strikes-natural-gas-supply-deal-with-azerbaijan/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-02",
-        "description": "Turkey has secured supplies of 33 billion cubic metres (bcm) of natural gas from Azerbaijan over 15 years, the Turkish energy ministry said. State-owned Turkish Petroleum Pipeline Corporation (Botas) signed a deal with Azerbaijan’s Socar, the UAE’s Abu Dhabi National Oil Company (Adnoc) and France’s TotalEnergies on the sidelines of Baku Energy Week to obtain [&#8230;]",
-        "hoursAgo": 16,
-        "score": 6,
+        "description": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027  Crude Oil Prices Today | OilPrice.com",
+        "hoursAgo": 12,
+        "score": 7,
         "topic": "Oil & Energy Markets",
-        "origin": "uae-rss"
+        "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
