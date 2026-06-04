@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-04T14:56:23.202Z",
+  "generatedAt": "2026-06-04T18:14:17.186Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 157,
+    "totalFetched": 181,
+    "afterDedup": 169,
     "big4Rejected": 6,
-    "englishOnly": 151,
-    "withinRecency": 62,
-    "scored": 62,
+    "englishOnly": 162,
+    "withinRecency": 72,
+    "scored": 72,
     "passed": 5
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-04",
         "description": "Ora Developers has awarded a AED1.9 billion ($517 million) contract to Dubai-based United Engineering Construction (Unec) for the first phase of the Bayn waterfront masterplan in Ghantoot, located between Dubai and Abu Dhabi. Unec will develop 614 residential units, including townhouses and villas. The work scope includes associated infrastructure and landscaping, the developer said in [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-04",
         "description": "UAE remittance and foreign-exchange house Al Ansari Financial Services has agreed to acquire a stake in Mustafa Sultan Exchange in Oman as part of a regional expansion plan. The value of the undisclosed stake stands at AED23 million ($6.3 million), Al Ansari said in a statement to the Abu Dhabi Securities Exchange. The move will allow Al [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-06-04",
         "description": "Bahrain has reportedly raised $1 billion through a new bond issuance, with orders crossing $3.2 billion amid the Iran war. The funds were raised hours after Bahraini defence forces intercepted and destroyed three missiles and several drones launched from Iran on Wednesday, Bloomberg reported, quoting unidentified sources. The yield on the 10-year notes — the [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Banking & Rates",
         "origin": "uae-rss"
@@ -64,13 +64,13 @@
     ],
     "risk": [
       {
-        "title": "Seidor launches UAE eInvoicing compliance solution ahead of October deadline - ZAWYA",
+        "title": "SEIDOR launches UAE eInvoicing compliance solution ahead of October deadline - ZAWYA",
         "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONnN3M016eFdLbnJ5d3NvdFdNYTFwS2FpTjJLQ1R3VTE4LTcwdGstcThiak04TktkTGxvQnotTlNUNVNpOGJpSHpDbkJNQnFhMi1ydjVsWFZiN2I5NUR5VWk1Uk82cFluaGRRSUhjQm5GLXR3cE5pQ1BZdi1JM3FROGhHR3R0RnVXRklTT3E0aWIwZnBBdkE4V19sUXFWaGN5RXBaeVAxc0Y4QkdIYVpDc0wyNVhZejJDTHh1X3dxOExGSkJiTlA0bngzdlhjb0NfRXlIenhB?oc=5",
         "source": "ZAWYA",
         "domain": "zawya.com",
         "date": "2026-06-04",
-        "description": "Seidor launches UAE eInvoicing compliance solution ahead of October deadline  ZAWYA",
-        "hoursAgo": 5,
+        "description": "SEIDOR launches UAE eInvoicing compliance solution ahead of October deadline  ZAWYA",
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -84,8 +84,8 @@
         "domain": "oilprice.com",
         "date": "2026-06-02",
         "description": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027  Crude Oil Prices Today | OilPrice.com",
-        "hoursAgo": 47,
-        "score": 6.5,
+        "hoursAgo": 51,
+        "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
       }
