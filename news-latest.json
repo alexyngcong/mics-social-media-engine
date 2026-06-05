@@ -1,28 +1,40 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-05T03:35:38.804Z",
+  "generatedAt": "2026-06-05T08:06:17.877Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 30,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 200,
-    "afterDedup": 178,
+    "totalFetched": 270,
+    "afterDedup": 192,
     "big4Rejected": 6,
-    "englishOnly": 170,
-    "withinRecency": 78,
-    "scored": 78,
-    "passed": 5
+    "englishOnly": 173,
+    "withinRecency": 79,
+    "scored": 79,
+    "passed": 7
   },
   "rooms": {
     "growth": [
+      {
+        "title": "Safeen Drydocks wins $354m vessel contracts",
+        "url": "https://www.agbi.com/shipping/2026/06/safeen-drydocks-wins-354m-vessel-building-contracts/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-05",
+        "description": "Safeen Drydocks, an Abu Dhabi-based shipbuilding, repair and maintenance company, has secured two vessel construction contracts valued at AED1.3 billion ($354 million). This is the largest award secured by Safeen, a joint venture between AD Ports Group and Dubai-based Premier Marine Engineering Services, to date, the UAE state-run Wam news agency reported. The first project [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "uae-rss"
+      },
       {
         "title": "Unec wins $500m contract for UAE waterfront project",
         "url": "https://www.agbi.com/real-estate/2026/06/unec-wins-500m-contract-for-uae-waterfront-project/",
@@ -30,53 +42,67 @@
         "domain": "agbi.com",
         "date": "2026-06-04",
         "description": "Ora Developers has awarded a AED1.9 billion ($517 million) contract to Dubai-based United Engineering Construction (Unec) for the first phase of the Bayn waterfront masterplan in Ghantoot, located between Dubai and Abu Dhabi. Unec will develop 614 residential units, including townhouses and villas. The work scope includes associated infrastructure and landscaping, the developer said in [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Real Estate & Construction",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "UAE’s Al Ansari to buy stake in Omani exchange house",
-        "url": "https://www.agbi.com/banking-finance/2026/06/uaes-al-ansari-to-buy-stake-in-omani-exchange-house/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-04",
-        "description": "UAE remittance and foreign-exchange house Al Ansari Financial Services has agreed to acquire a stake in Mustafa Sultan Exchange in Oman as part of a regional expansion plan. The value of the undisclosed stake stands at AED23 million ($6.3 million), Al Ansari said in a statement to the Abu Dhabi Securities Exchange. The move will allow Al [&#8230;]",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Business Expansion",
         "origin": "uae-rss"
       }
     ],
     "capital": [
       {
-        "title": "Bahrain’s $1bn bond issuance oversubscribed",
-        "url": "https://www.agbi.com/finance/2026/06/bahrains-1bn-bond-issuance-oversubscribed/",
+        "title": "Gulf-backed Innio jumps in latest AI-related IPO",
+        "url": "https://www.agbi.com/markets/2026/06/gulf-backed-innio-jumps-in-latest-ai-related-ipo/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-04",
-        "description": "Bahrain has reportedly raised $1 billion through a new bond issuance, with orders crossing $3.2 billion amid the Iran war. The funds were raised hours after Bahraini defence forces intercepted and destroyed three missiles and several drones launched from Iran on Wednesday, Bloomberg reported, quoting unidentified sources. The yield on the 10-year notes — the [&#8230;]",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Banking & Rates",
+        "date": "2026-06-05",
+        "description": "Innio, a UAE-backed maker of power-generation engines, rose on its Nasdaq debut, highlighting growing Gulf investment in companies supplying critical infrastructure for the AI boom. The company opened at $31 per share on Thursday and closed above $33. That’s nearly 23 percent above its set start price of $27, giving it a $25 billion valuation. [&#8230;]",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
     ],
     "risk": [
       {
-        "title": "SEIDOR launches UAE eInvoicing compliance solution ahead of October deadline - ZAWYA",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONnN3M016eFdLbnJ5d3NvdFdNYTFwS2FpTjJLQ1R3VTE4LTcwdGstcThiak04TktkTGxvQnotTlNUNVNpOGJpSHpDbkJNQnFhMi1ydjVsWFZiN2I5NUR5VWk1Uk82cFluaGRRSUhjQm5GLXR3cE5pQ1BZdi1JM3FROGhHR3R0RnVXRklTT3E0aWIwZnBBdkE4V19sUXFWaGN5RXBaeVAxc0Y4QkdIYVpDc0wyNVhZejJDTHh1X3dxOExGSkJiTlA0bngzdlhjb0NfRXlIenhB?oc=5",
-        "source": "ZAWYA",
-        "domain": "zawya.com",
-        "date": "2026-06-04",
-        "description": "SEIDOR launches UAE eInvoicing compliance solution ahead of October deadline  ZAWYA",
-        "hoursAgo": 18,
+        "title": "Major Setback for US : Saudi Arabia and UAE Block American Strikes on Iran",
+        "url": "https://www.ibtimes.co.uk/gulf-allies-block-us-strikes-iran-1800881",
+        "source": "Ibtimes",
+        "domain": "ibtimes.co.uk",
+        "date": "2026-06-05",
+        "description": "Major Setback for US : Saudi Arabia and UAE Block American Strikes on Iran",
+        "imageUrl": "https://d.ibtimes.co.uk/en/full/1811137/saudi-uae-block-us-strikes.png",
+        "hoursAgo": 1,
         "score": 6,
-        "topic": "Tax & Regulatory",
+        "topic": "Geopolitical Risk",
+        "origin": "gdelt"
+      },
+      {
+        "title": "South Africa’s investments in Dubai surpass $294 million over five years - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZ1ZzUHBjMUpCRXNSS3lDOW4xd1JPMXM4emwyWk5RNmxGRWt2QkI2U25QeDdfeTdOTVVicHVEYm1GSkRpME95aW1RenJQSVJDNGdlWENaQzRJMzNHb25nd040bi1HYUJKR0ZLaF96R2x0WVVxQ1g2OXRGbmRYX0JfR2JtT2VNSjFLeFZLdFAyZWJZRnJuckxVRzRDaDFPZFRkTGhWZUZMR3g5UQ?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-06-05",
+        "description": "South Africa’s investments in Dubai surpass $294 million over five years  Economy Middle East",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
     "world": [
+      {
+        "title": "No more late salaries ? UAE sees 151 % jump in payroll processing as private - sector firms rush to meet new deadline",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/no-more-late-salaries-uae-sees-151-jump-in-payroll-processing-as-private-sector-firms-rush-to-meet-new-deadline/articleshow/131508623.cms",
+        "source": "Timesofindia",
+        "domain": "timesofindia.indiatimes.com",
+        "date": "2026-06-04",
+        "description": "No more late salaries ? UAE sees 151 % jump in payroll processing as private - sector firms rush to meet new deadline",
+        "imageUrl": "https://static.toiimg.com/thumb/msid-131508940,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+        "hoursAgo": 17,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
+      },
       {
         "title": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027 - Crude Oil Prices Today | OilPrice.com",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQN2FidzE2RXR0VTJCRnE0SVFBUThub3RUWVRkbGVJUWhTTzRTcFF6YWk0Z0ZuVV9YMFE2ck14TnZVNGhPamt0WkV6dFpmd0pTZEZISTlhamE4dHV1WUxTa21Ib3RnS3A0SW1KMlBjSDNSZUktYjY1a19LSFBCNk5PQ0QxRUtkTGZBcUx4bG5CVHVDTXhBTUp2X0pWUlFBaG9DV1A4TWZvb2s5RUF6TUUteVhSbDhVRkpuS29wR9IBwgFBVV95cUxPU1FjTnJIdzhOQlllUlNnSGpFckFZQkxVVmQ0ZWJVZkp3WDZPRlpOSW5YbkhJY3JnZnE1bjJ3S01wTmlES2Y3UG5kLTBKYk9BSW5MRWhydTJ2ZkNWWEVLVFUyajBQMlRlNjFWRWJ3VG5EX3BCeHNqVi1wSDVILU5ocFVGVjlCZkhrb3UxVkRlamhhU1Z0MHY0OTlkSTkyMmQ4QVllSlgwX3JxYUlIci15a3JCd2pLZUtKYzlZVVlwSWpLUQ?oc=5",
@@ -84,12 +110,12 @@
         "domain": "oilprice.com",
         "date": "2026-06-02",
         "description": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027  Crude Oil Prices Today | OilPrice.com",
-        "hoursAgo": 60,
+        "hoursAgo": 65,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 7
 }
