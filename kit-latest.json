@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T17:11:59.706Z",
+  "generatedAt": "2026-06-06T21:03:07.498Z",
   "weekOf": "6 Jun 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "gulf-backed-innio-jumps-in-latest-ai-rel",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "capital",
-      "roomColor": "#F0C050",
-      "roomLabel": "CAPITAL · CASH",
-      "theme": "ai_tech",
-      "tier": "WEEK AHEAD CAPITAL",
-      "title": "Gulf-backed Innio jumps in latest AI-related IPO",
-      "sourceUrl": "https://www.agbi.com/markets/2026/06/gulf-backed-innio-jumps-in-latest-ai-related-ipo/",
-      "filenameBase": "post-1-gulf-backed-innio-jumps-in-latest-ai-rel",
-      "photoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80&fit=crop&crop=entropy&auto=format",
-      "stat": "$31",
-      "headlineLine1": "Gulf-backed Innio jumps in latest AI-related IPO",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
       "headlineLine2": "",
-      "hoursAgo": 34
+      "hoursAgo": null
     },
     {
       "n": 2,
