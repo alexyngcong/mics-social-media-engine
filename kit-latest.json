@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-03T03:55:07.275Z",
-  "weekOf": "3 Jun 2026",
+  "generatedAt": "2026-06-06T02:56:23.190Z",
+  "weekOf": "6 Jun 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "iraq-uae-saudi-arabia-all-set-for-major-",
+      "slug": "gulf-backed-innio-jumps-in-latest-ai-rel",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "oil_energy",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Iraq, UAE, Saudi Arabia All Set for Major Oil Output Surge in 2027 - Crude Oil Prices Today | OilPrice.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQN2FidzE2RXR0VTJCRnE0SVFBUThub3RUWVRkbGVJUWhTTzRTcFF6YWk0Z0ZuVV9YMFE2ck14TnZVNGhPamt0WkV6dFpmd0pTZEZISTlhamE4dHV1WUxTa21Ib3RnS3A0SW1KMlBjSDNSZUktYjY1a19LSFBCNk5PQ0QxRUtkTGZBcUx4bG5CVHVDTXhBTUp2X0pWUlFBaG9DV1A4TWZvb2s5RUF6TUUteVhSbDhVRkpuS29wR9IBwgFBVV95cUxPU1FjTnJIdzhOQlllUlNnSGpFckFZQkxVVmQ0ZWJVZkp3WDZPRlpOSW5YbkhJY3JnZnE1bjJ3S01wTmlES2Y3UG5kLTBKYk9BSW5MRWhydTJ2ZkNWWEVLVFUyajBQMlRlNjFWRWJ3VG5EX3BCeHNqVi1wSDVILU5ocFVGVjlCZkhrb3UxVkRlamhhU1Z0MHY0OTlkSTkyMmQ4QVllSlgwX3JxYUlIci15a3JCd2pLZUtKYzlZVVlwSWpLUQ?oc=5",
-      "filenameBase": "post-1-iraq-uae-saudi-arabia-all-set-for-major-",
-      "photoUrl": "/mics-social-media-engine/photos/world/08_oil_sea.jpg",
-      "stat": "",
-      "headlineLine1": "Iraq, UAE, Saudi Arabia All Set for …",
-      "headlineLine2": "Surge in 2027 - Crude Oil Prices Tod…",
-      "hoursAgo": 12
+      "room": "capital",
+      "roomColor": "#F0C050",
+      "roomLabel": "CAPITAL · CASH",
+      "theme": "ai_tech",
+      "tier": "WEEK AHEAD CAPITAL",
+      "title": "Gulf-backed Innio jumps in latest AI-related IPO",
+      "sourceUrl": "https://www.agbi.com/markets/2026/06/gulf-backed-innio-jumps-in-latest-ai-related-ipo/",
+      "filenameBase": "post-1-gulf-backed-innio-jumps-in-latest-ai-rel",
+      "photoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "$31",
+      "headlineLine1": "Gulf-backed Innio jumps in latest AI-related IPO",
+      "headlineLine2": "",
+      "hoursAgo": 20
     },
     {
       "n": 2,
