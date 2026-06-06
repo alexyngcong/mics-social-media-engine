@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-06T17:11:46.275Z",
+  "generatedAt": "2026-06-06T21:02:56.269Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 1,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
-    "uaeRss": 10
+    "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 199,
-    "big4Rejected": 5,
-    "englishOnly": 183,
-    "withinRecency": 71,
-    "scored": 71,
-    "passed": 1
+    "totalFetched": 161,
+    "afterDedup": 151,
+    "big4Rejected": 6,
+    "englishOnly": 144,
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Gulf-backed Innio jumps in latest AI-related IPO",
-        "url": "https://www.agbi.com/markets/2026/06/gulf-backed-innio-jumps-in-latest-ai-related-ipo/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-05",
-        "description": "Innio, a UAE-backed maker of power-generation engines, rose on its Nasdaq debut, highlighting growing Gulf investment in companies supplying critical infrastructure for the AI boom. The company opened at $31 per share on Thursday and closed above $33. That’s nearly 23 percent above its set start price of $27, giving it a $25 billion valuation. [&#8230;]",
-        "hoursAgo": 34,
-        "score": 6.5,
-        "topic": "IPO & M&A",
-        "origin": "uae-rss"
-      }
-    ],
+    "capital": [],
     "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
