@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-07T17:15:31.170Z",
+  "generatedAt": "2026-06-07T21:11:13.954Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 8,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 162,
-    "big4Rejected": 9,
-    "englishOnly": 153,
-    "withinRecency": 36,
-    "scored": 36,
+    "totalFetched": 178,
+    "afterDedup": 165,
+    "big4Rejected": 8,
+    "englishOnly": 155,
+    "withinRecency": 37,
+    "scored": 37,
     "passed": 2
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-06-05",
         "description": "Innio, a UAE-backed maker of power-generation engines, rose on its Nasdaq debut, highlighting growing Gulf investment in companies supplying critical infrastructure for the AI boom. The company opened at $31 per share on Thursday and closed above $33. That’s nearly 23 percent above its set start price of $27, giving it a $25 billion valuation. [&#8230;]",
-        "hoursAgo": 58,
+        "hoursAgo": 62,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -46,7 +46,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-07",
         "description": "UAE tops global property investment appeal as stability and regulation drive demand  Gulf News",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
