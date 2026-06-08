@@ -1,56 +1,54 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-08T03:49:56.084Z",
+  "generatedAt": "2026-06-08T08:53:53.620Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 201,
-    "big4Rejected": 8,
-    "englishOnly": 178,
-    "withinRecency": 60,
-    "scored": 60,
-    "passed": 4
+    "totalFetched": 181,
+    "afterDedup": 168,
+    "big4Rejected": 7,
+    "englishOnly": 159,
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 6
   },
   "rooms": {
     "growth": [
       {
-        "title": "UAE Retail Market Forecast to Hit $227 Billion by 2033 on Tourism Boom",
-        "url": "https://gulfnews.com/business/retail/uae-retail-market-forecast-to-hit-227-billion-by-2033-on-tourism-boom-1.500566170",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-06-07",
-        "description": "UAE Retail Market Forecast to Hit $227 Billion by 2033 on Tourism Boom",
-        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-06-07%2Fyaxiu1dz%2F05i04e011ka0opzpn.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 18,
-        "score": 6,
-        "topic": "Consumer & Retail",
-        "origin": "gdelt"
-      }
-    ],
-    "capital": [
-      {
-        "title": "Gulf-backed Innio jumps in latest AI-related IPO",
-        "url": "https://www.agbi.com/markets/2026/06/gulf-backed-innio-jumps-in-latest-ai-related-ipo/",
+        "title": "Alec unit wins $500m GCC construction contracts",
+        "url": "https://www.agbi.com/construction/2026/06/alec-unit-wins-500m-gcc-construction-contracts/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-05",
-        "description": "Innio, a UAE-backed maker of power-generation engines, rose on its Nasdaq debut, highlighting growing Gulf investment in companies supplying critical infrastructure for the AI boom. The company opened at $31 per share on Thursday and closed above $33. That’s nearly 23 percent above its set start price of $27, giving it a $25 billion valuation. [&#8230;]",
-        "hoursAgo": 68,
+        "date": "2026-06-08",
+        "description": "Alec Holdings, the Dubai government-owned construction company, has said a subsidiary has won three construction contracts across the GCC. The engineering, procurement and construction (EPC) contracts, worth $500 million, were awarded to Target Engineering Construction Company, Alec said in a statement to Dubai Financial Market. The projects are due to be completed in 10, 21 and [&#8230;]",
+        "hoursAgo": 2,
         "score": 6,
-        "topic": "IPO & M&A",
+        "topic": "Real Estate & Construction",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Omani fund allocates $1.5bn for priority sectors",
+        "url": "https://www.agbi.com/finance/2026/06/omani-fund-allocates-1-5bn-for-priority-sectors/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-08",
+        "description": "Future Fund Oman (FFO) is to invest OMR570 million ($1.5 billion) in several vital sectors in the sultanate. The package, to be unveiled on Tuesday, will focus on renewable energy, industry and technology, healthcare, tourism and adventure, and food security, the state-run Oman News Agency reported. Seven direct projects and a portfolio of local strategic [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Consumer & Retail",
         "origin": "uae-rss"
       }
     ],
+    "capital": [],
     "risk": [
       {
         "title": "‘The scars will remain&#8217;: Petrochem’s founder counts cost of war",
@@ -59,13 +57,37 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
-        "hoursAgo": 0,
+        "hoursAgo": 5,
         "score": 9,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Oil rises nearly 4% on renewed Middle East conflict",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/oil-rises-nearly-4-on-renewed-middle-east-conflict/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-08",
+        "description": "The price of crude oil rose almost 4 percent on Monday morning after Israel and Iran renewed attacks, jeopardising the possibility of a peace deal and the reopening of the Strait of Hormuz. US crude futures (WTI) increased 3.6 percent to $93.83 a barrel as of 03:40 GMT. Brent futures gained 3.7 percent to reach [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
     "world": [
+      {
+        "title": "UAE company to fund $2bn New Botswana City",
+        "url": "https://www.agbi.com/real-estate/2026/06/uae-company-to-fund-2bn-new-botswana-city/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-08",
+        "description": "The Botswana Development Corporation (BDC) has signed a deal valued at around $2 billion with Dubai-based&#160;Albaddad Group to build a mixed-use urban development in the southern African country, its managing director, Oteng Keabetswe, has said. The project is part of the African nation’s plan to attract foreign investment and increase private sector participation in major [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
       {
         "title": "UAE tops global property investment appeal as stability and regulation drive demand - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOFNPLU8ycnRpcGJEOVJyakRaeVpPRGhhWURpZFRoeUFZVVZ5SnVlQ09GNndfUndVaEZBbDJsTjdaVmZXeXRVbjVXY2xTUVBfVHh4aUR4WVRmVFlXSU9QS3kyWVJCcXN4eExRWFhCU0pjcGF5OXZkQmpqdnlzY1YyMmpFdGFMN1FBbWJKZTRaLXIyWUFWM09PUXlaTk0tdDl3NXdua20yT3VycW4tT3NFc3ppakg0ZVhaRzlUby02d0R4ajJPWkljVWJwaW5adG_SAeIBQVVfeXFMTVNIc29FcDFzOE10aF94MlczcC13SVVtcjVTY1FnQ0o3NEFvYXdzcUJwbUdOVEN6YXEyLWhBWGNkS2ltU1lnUVZHUDItUFN4dlZ2R3o3NVVWLTZWV3doTEhHUHJVRVBtakRES25IdHctVzlMT2RROVZ2dEQ0ZUFWUzNSRGlqWEJoZ2RYaFZnTjdZS05aLWRRc01nY2FEMW0xekE4NmR2RGt4Y05od2VWa3VfOFVYT29RYkIyenBhNFpEZ2VkVHZBTEI1RXA4YmpVR1dnRXZtT1FoQ0gyYjhoVGFvZw?oc=5",
@@ -73,12 +95,12 @@
         "domain": "gulfnews.com",
         "date": "2026-06-07",
         "description": "UAE tops global property investment appeal as stability and regulation drive demand  Gulf News",
-        "hoursAgo": 12,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 6
 }
