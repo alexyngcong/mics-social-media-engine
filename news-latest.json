@@ -1,28 +1,42 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-07T21:11:13.954Z",
+  "generatedAt": "2026-06-08T03:49:56.084Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 8,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 178,
-    "afterDedup": 165,
+    "totalFetched": 270,
+    "afterDedup": 201,
     "big4Rejected": 8,
-    "englishOnly": 155,
-    "withinRecency": 37,
-    "scored": 37,
-    "passed": 2
+    "englishOnly": 178,
+    "withinRecency": 60,
+    "scored": 60,
+    "passed": 4
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "UAE Retail Market Forecast to Hit $227 Billion by 2033 on Tourism Boom",
+        "url": "https://gulfnews.com/business/retail/uae-retail-market-forecast-to-hit-227-billion-by-2033-on-tourism-boom-1.500566170",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-06-07",
+        "description": "UAE Retail Market Forecast to Hit $227 Billion by 2033 on Tourism Boom",
+        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-06-07%2Fyaxiu1dz%2F05i04e011ka0opzpn.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 18,
+        "score": 6,
+        "topic": "Consumer & Retail",
+        "origin": "gdelt"
+      }
+    ],
     "capital": [
       {
         "title": "Gulf-backed Innio jumps in latest AI-related IPO",
@@ -31,13 +45,26 @@
         "domain": "agbi.com",
         "date": "2026-06-05",
         "description": "Innio, a UAE-backed maker of power-generation engines, rose on its Nasdaq debut, highlighting growing Gulf investment in companies supplying critical infrastructure for the AI boom. The company opened at $31 per share on Thursday and closed above $33. That’s nearly 23 percent above its set start price of $27, giving it a $25 billion valuation. [&#8230;]",
-        "hoursAgo": 62,
+        "hoursAgo": 68,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "‘The scars will remain&#8217;: Petrochem’s founder counts cost of war",
+        "url": "https://www.agbi.com/petrochemicals/2026/06/the-scars-will-remain-petrochems-founder-counts-cost-of-war/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-08",
+        "description": "“Frustration, insecurity, anxiety…” These are some of the words that illustrate how veteran UAE businessman Yogesh Mehta feels about the US-Israeli war with Iran that has crippled trade around the globe. For 36 years, Mehta has watched Dubai’s transformation from a fishing village to a metropolis, through the Gulf War, the 2008 crash, the Arab [&#8230;]",
+        "hoursAgo": 0,
+        "score": 9,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      }
+    ],
     "world": [
       {
         "title": "UAE tops global property investment appeal as stability and regulation drive demand - Gulf News",
@@ -46,12 +73,12 @@
         "domain": "gulfnews.com",
         "date": "2026-06-07",
         "description": "UAE tops global property investment appeal as stability and regulation drive demand  Gulf News",
-        "hoursAgo": 6,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 4
 }
