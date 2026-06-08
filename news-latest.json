@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-08T15:47:57.049Z",
+  "generatedAt": "2026-06-08T18:24:56.199Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 8,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 178,
-    "afterDedup": 167,
-    "big4Rejected": 6,
-    "englishOnly": 160,
-    "withinRecency": 49,
-    "scored": 49,
+    "totalFetched": 170,
+    "afterDedup": 160,
+    "big4Rejected": 4,
+    "englishOnly": 156,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 4
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "Alec Holdings, the Dubai government-owned construction company,&#160;has said a subsidiary has won three construction contracts across the GCC. The engineering, procurement and construction (EPC) contracts, worth $500 million, were awarded to Target Engineering Construction Company, Alec said in a statement to the Dubai Financial Market. The projects are due to be completed in 10, 21 [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "Future Fund Oman (FFO) is to invest OMR570 million ($1.5 billion) in several vital sectors in the sultanate. The package, to be unveiled on Tuesday, will focus on renewable energy, industry and technology, healthcare, tourism and adventure, and food security, the state-run Oman News Agency reported. Seven direct projects and a portfolio of local strategic [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Consumer & Retail",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "The price of crude oil rose almost 4 percent in early Monday trade after Israel and Iran renewed attacks, jeopardising the possibility of a peace deal and a reopening of the Strait of Hormuz. US crude futures (WTI) increased 3.6 percent to $93.83 a barrel as of 03:40 GMT. Brent futures gained 3.7 percent to [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -71,7 +71,7 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "The Botswana Development Corporation (BDC) has signed a deal valued at around $2 billion with Dubai-based Albaddad Group to build a mixed-use urban development in the southern African country, BDC managing director Oteng Keabetswe has said. The project is part of the African nation’s plan to attract foreign investment and increase private-sector participation in major developments. [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
