@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-09T07:44:54.284Z",
+  "generatedAt": "2026-06-09T10:58:57.526Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 205,
-    "big4Rejected": 8,
-    "englishOnly": 182,
-    "withinRecency": 79,
-    "scored": 79,
-    "passed": 4
+    "totalFetched": 170,
+    "afterDedup": 158,
+    "big4Rejected": 7,
+    "englishOnly": 151,
+    "withinRecency": 47,
+    "scored": 47,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,13 +30,26 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Oman has signed 10 agreements and memoranda of understanding, drawing investments worth nearly OMR3 billion ($7.5 billion) to establish new projects within its Duqm special economic zone. The agreements were signed by the Public Authority for Special Economic Zones and Free Zones (Opaz), the state-owned Oman News Agency reported. Among the largest investments is the [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
       }
     ],
-    "capital": [],
+    "capital": [
+      {
+        "title": "Saudi IPO woes continue as contractor withdraws offering",
+        "url": "https://www.agbi.com/markets/2026/06/saudi-ipo-woes-continue-as-contractor-withdraws-offering/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-09",
+        "description": "Saudi contractor Mutlaq Al-Ghowairi Contracting Company (MGC) has withdrawn an initial public offering that could have raised $800 million. The IPO, which stood to be the third on the main market this year, would have been easily the largest so far. The number of new offerings has slumped following the outbreak of the Iran war. [&#8230;]",
+        "hoursAgo": 0,
+        "score": 7,
+        "topic": "IPO & M&A",
+        "origin": "uae-rss"
+      }
+    ],
     "risk": [],
     "world": [
       {
@@ -46,7 +59,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-09",
         "description": "Dubai World Trade Centre delivers record Dhs25b in economic output  Gulf Today",
-        "hoursAgo": 1,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -58,7 +71,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-08",
         "description": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth  Arabian Business",
-        "hoursAgo": 12,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -70,12 +83,12 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Riyadh Air will launch its first commercial flight on Wednesday June 10, jetting to London in what is a major milestone for the Saudi airline startup. The carrier has unveiled the inaugural destinations in a network planned to reach more than 100 cities by the end of the decade. The airline, backed by Saudi Arabia’s [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 5
 }
