@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-08T21:49:15.274Z",
+  "generatedAt": "2026-06-09T02:54:55.680Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 16,
-    "googleNews": 140,
+    "gdelt": 100,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 176,
-    "afterDedup": 161,
-    "big4Rejected": 7,
-    "englishOnly": 150,
-    "withinRecency": 48,
-    "scored": 48,
-    "passed": 4
+    "totalFetched": 270,
+    "afterDedup": 208,
+    "big4Rejected": 8,
+    "englishOnly": 184,
+    "withinRecency": 75,
+    "scored": 75,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "Alec Holdings, the Dubai government-owned construction company,&#160;has said a subsidiary has won three construction contracts across the GCC. The engineering, procurement and construction (EPC) contracts, worth $500 million, were awarded to Target Engineering Construction Company, Alec said in a statement to the Dubai Financial Market. The projects are due to be completed in 10, 21 [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "Future Fund Oman (FFO) is to invest OMR570 million ($1.5 billion) in several vital sectors in the sultanate. The package, to be unveiled on Tuesday, will focus on renewable energy, industry and technology, healthcare, tourism and adventure, and food security, the state-run Oman News Agency reported. Seven direct projects and a portfolio of local strategic [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Consumer & Retail",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "The price of crude oil rose almost 4 percent in early Monday trade after Israel and Iran renewed attacks, jeopardising the possibility of a peace deal and a reopening of the Strait of Hormuz. US crude futures (WTI) increased 3.6 percent to $93.83 a barrel as of 03:40 GMT. Brent futures gained 3.7 percent to [&#8230;]",
-        "hoursAgo": 17,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -71,12 +71,24 @@
         "domain": "agbi.com",
         "date": "2026-06-08",
         "description": "The Botswana Development Corporation (BDC) has signed a deal valued at around $2 billion with Dubai-based Albaddad Group to build a mixed-use urban development in the southern African country, BDC managing director Oteng Keabetswe has said. The project is part of the African nation’s plan to attract foreign investment and increase private-sector participation in major developments. [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
+      },
+      {
+        "title": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUm0xcHFsRTNJcXJfRFFZN0ZYam5mcFJTZkUyV0JSM1BPOG1TS1ptOHY3RXMwcGZ3MXh6NXA1SjBQOFRrcXFaT1BBX2dSSGwtVEZaV0huaGxDR0prZ2pfaTFvY2tjUEZaNENnVzhBVFVIMFJGNGVJeVNfZ1FhZVVRT0xmdl9zR1JtRzBYYmRqTnpvRmtlSnlUcExLaVRVXzd6MVFRb0xHSTRham8yVXpHaE1EM192VjB1dENjam5sZ29qdV9CMGhIMg?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-06-08",
+        "description": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth  Arabian Business",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 5
 }
