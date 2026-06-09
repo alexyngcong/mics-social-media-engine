@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-09T18:03:20.487Z",
+  "generatedAt": "2026-06-09T21:46:57.730Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 165,
-    "big4Rejected": 7,
-    "englishOnly": 158,
-    "withinRecency": 55,
-    "scored": 55,
-    "passed": 6
+    "totalFetched": 270,
+    "afterDedup": 213,
+    "big4Rejected": 8,
+    "englishOnly": 185,
+    "withinRecency": 84,
+    "scored": 84,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Qatar Investment Authority (QIA) has invested in Finnish microsatellite manufacturer and operator Iceye’s €1 billion ($1.2 billion) fundraising round. The sovereign wealth fund did not disclose the size of its investment. The Finnish startup is now valued at more than €10 billion, it said in a statement. The series F funding round was led by [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Saudi contractor Mutlaq Al-Ghowairi Contracting Company (MGC) has withdrawn an initial public offering that could have raised $800 million. The IPO, which stood to be the third on the main market this year, would have been easily the largest so far. The number of new offerings has slumped following the outbreak of the Iran war. [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -58,7 +58,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Emirates president Tim Clark has warned that weaker airlines could fail if the war involving Iran drags on, with budget carriers most exposed. &#8220;If this crisis goes on for too long there will be casualties, likely in the budget airline sector first,&#8221; Clark said of financial pressure caused by the conflict, echoing comments by Iata chief Willie [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -70,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Egypt’s ready-made garment exports surged by nearly 15 percent in the first four months of 2026 and are projected to climb to a record level through the year. The increase was driven by a surge in exports to Turkey, the US and Europe. Despite the Iran war and concerns about soaring energy prices, Egypt’s garment [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -84,24 +84,12 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-09",
         "description": "Dubai World Trade Centre delivers record Dhs25b in economic output  Gulf Today",
-        "hoursAgo": 12,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
-        "title": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUm0xcHFsRTNJcXJfRFFZN0ZYam5mcFJTZkUyV0JSM1BPOG1TS1ptOHY3RXMwcGZ3MXh6NXA1SjBQOFRrcXFaT1BBX2dSSGwtVEZaV0huaGxDR0prZ2pfaTFvY2tjUEZaNENnVzhBVFVIMFJGNGVJeVNfZ1FhZVVRT0xmdl9zR1JtRzBYYmRqTnpvRmtlSnlUcExLaVRVXzd6MVFRb0xHSTRham8yVXpHaE1EM192VjB1dENjam5sZ29qdV9CMGhIMg?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-06-08",
-        "description": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth  Arabian Business",
-        "hoursAgo": 22,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 5
 }
