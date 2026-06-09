@@ -1,38 +1,38 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-09T10:58:57.526Z",
+  "generatedAt": "2026-06-09T14:47:05.950Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 158,
-    "big4Rejected": 7,
-    "englishOnly": 151,
-    "withinRecency": 47,
-    "scored": 47,
-    "passed": 5
+    "totalFetched": 160,
+    "afterDedup": 155,
+    "big4Rejected": 6,
+    "englishOnly": 149,
+    "withinRecency": 52,
+    "scored": 52,
+    "passed": 6
   },
   "rooms": {
     "growth": [
       {
-        "title": "Oman’s Duqm special economic zone draws $7.5bn investment",
-        "url": "https://www.agbi.com/finance/2026/06/omans-duqm-special-economic-zone-draws-7-5bn-investment/",
+        "title": "QIA invests in microsatellite manufacturer Iceye",
+        "url": "https://www.agbi.com/finance/2026/06/qia-invests-in-microsatellite-manufacturer-iceye/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-09",
-        "description": "Oman has signed 10 agreements and memoranda of understanding, drawing investments worth nearly OMR3 billion ($7.5 billion) to establish new projects within its Duqm special economic zone. The agreements were signed by the Public Authority for Special Economic Zones and Free Zones (Opaz), the state-owned Oman News Agency reported. Among the largest investments is the [&#8230;]",
-        "hoursAgo": 6,
+        "description": "Qatar Investment Authority (QIA) has invested in Finnish microsatellite manufacturer and operator Iceye’s €1 billion ($1.2 billion) fundraising round. The sovereign wealth fund did not disclose the size of its investment. The Finnish startup is now valued at more than €10 billion, it said in a statement. The series F funding round was led by [&#8230;]",
+        "hoursAgo": 2,
         "score": 6,
-        "topic": "Business Expansion",
+        "topic": "Investment & Funding",
         "origin": "uae-rss"
       }
     ],
@@ -44,13 +44,38 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Saudi contractor Mutlaq Al-Ghowairi Contracting Company (MGC) has withdrawn an initial public offering that could have raised $800 million. The IPO, which stood to be the third on the main market this year, would have been easily the largest so far. The number of new offerings has slumped following the outbreak of the Iran war. [&#8230;]",
-        "hoursAgo": 0,
+        "hoursAgo": 4,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Budget airlines &#8216;could be first casualties&#8217; if Iran war drags on",
+        "url": "https://www.agbi.com/aviation/2026/06/budget-airlines-could-be-first-casualties-if-iran-war-drags-on/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-09",
+        "description": "Emirates president Tim Clark has warned that weaker airlines could fail if the war involving Iran drags on, with budget carriers most exposed. &#8220;If this crisis goes on for too long there will be casualties, likely in the budget airline sector first,&#8221; Clark said of financial pressure caused by the conflict, echoing comments by Iata chief Willie [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Egypt reports 15% annual rise in garment exports",
+        "url": "https://www.agbi.com/trade/2026/06/egypt-reports-15-annual-rise-in-garment-exports/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-09",
+        "description": "Egypt’s ready-made garment exports surged by nearly 15 percent in the first four months of 2026 and are projected to climb to a record level through the year. The increase was driven by a surge in exports to Turkey, the US and Europe. Despite the Iran war and concerns about soaring energy prices, Egypt’s garment [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      }
+    ],
     "world": [
       {
         "title": "Dubai World Trade Centre delivers record Dhs25b in economic output - Gulf Today",
@@ -59,7 +84,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-09",
         "description": "Dubai World Trade Centre delivers record Dhs25b in economic output  Gulf Today",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -71,24 +96,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-08",
         "description": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth  Arabian Business",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
-      },
-      {
-        "title": "Riyadh Air brings forward debut London flight",
-        "url": "https://www.agbi.com/aviation/2026/06/riyadh-air-brings-forward-debut-london-flight/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-09",
-        "description": "Riyadh Air will launch its first commercial flight on Wednesday June 10, jetting to London in what is a major milestone for the Saudi airline startup. The carrier has unveiled the inaugural destinations in a network planned to reach more than 100 cities by the end of the decade. The airline, backed by Saudi Arabia’s [&#8230;]",
-        "hoursAgo": 7,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 6
 }
