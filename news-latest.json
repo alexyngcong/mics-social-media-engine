@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-09T02:54:55.680Z",
+  "generatedAt": "2026-06-09T07:44:54.284Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,67 +14,42 @@
   },
   "diagnostic": {
     "totalFetched": 270,
-    "afterDedup": 208,
+    "afterDedup": 205,
     "big4Rejected": 8,
-    "englishOnly": 184,
-    "withinRecency": 75,
-    "scored": 75,
-    "passed": 5
+    "englishOnly": 182,
+    "withinRecency": 79,
+    "scored": 79,
+    "passed": 4
   },
   "rooms": {
     "growth": [
       {
-        "title": "Alec unit wins $500m GCC construction contracts",
-        "url": "https://www.agbi.com/construction/2026/06/alec-unit-wins-500m-gcc-construction-contracts/",
+        "title": "Oman’s Duqm special economic zone draws $7.5bn investment",
+        "url": "https://www.agbi.com/finance/2026/06/omans-duqm-special-economic-zone-draws-7-5bn-investment/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-08",
-        "description": "Alec Holdings, the Dubai government-owned construction company,&#160;has said a subsidiary has won three construction contracts across the GCC. The engineering, procurement and construction (EPC) contracts, worth $500 million, were awarded to Target Engineering Construction Company, Alec said in a statement to the Dubai Financial Market. The projects are due to be completed in 10, 21 [&#8230;]",
-        "hoursAgo": 20,
+        "date": "2026-06-09",
+        "description": "Oman has signed 10 agreements and memoranda of understanding, drawing investments worth nearly OMR3 billion ($7.5 billion) to establish new projects within its Duqm special economic zone. The agreements were signed by the Public Authority for Special Economic Zones and Free Zones (Opaz), the state-owned Oman News Agency reported. Among the largest investments is the [&#8230;]",
+        "hoursAgo": 3,
         "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Omani fund allocates $1.5bn for priority sectors",
-        "url": "https://www.agbi.com/finance/2026/06/omani-fund-allocates-1-5bn-for-priority-sectors/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-08",
-        "description": "Future Fund Oman (FFO) is to invest OMR570 million ($1.5 billion) in several vital sectors in the sultanate. The package, to be unveiled on Tuesday, will focus on renewable energy, industry and technology, healthcare, tourism and adventure, and food security, the state-run Oman News Agency reported. Seven direct projects and a portfolio of local strategic [&#8230;]",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Consumer & Retail",
+        "topic": "Business Expansion",
         "origin": "uae-rss"
       }
     ],
     "capital": [],
-    "risk": [
-      {
-        "title": "Oil rises nearly 4% on renewed Middle East conflict",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/oil-rises-nearly-4-on-renewed-middle-east-conflict/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-08",
-        "description": "The price of crude oil rose almost 4 percent in early Monday trade after Israel and Iran renewed attacks, jeopardising the possibility of a peace deal and a reopening of the Strait of Hormuz. US crude futures (WTI) increased 3.6 percent to $93.83 a barrel as of 03:40 GMT. Brent futures gained 3.7 percent to [&#8230;]",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      }
-    ],
+    "risk": [],
     "world": [
       {
-        "title": "UAE company to fund $2bn New Botswana City",
-        "url": "https://www.agbi.com/real-estate/2026/06/uae-company-to-fund-2bn-new-botswana-city/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-08",
-        "description": "The Botswana Development Corporation (BDC) has signed a deal valued at around $2 billion with Dubai-based Albaddad Group to build a mixed-use urban development in the southern African country, BDC managing director Oteng Keabetswe has said. The project is part of the African nation’s plan to attract foreign investment and increase private-sector participation in major developments. [&#8230;]",
-        "hoursAgo": 20,
-        "score": 7,
+        "title": "Dubai World Trade Centre delivers record Dhs25b in economic output - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORHJPaWFKQm9IOGYxZXJfSldzRTdaNnFpb3NyUkNrVHhTbG9uaWpVd3FKWWZOTTY4cF9ybjMzMjdhSXIxQlJXeDRzb3lqYjV2Rld6WnZNRGs3WmE4a1FTRnJJQnZKSWpiY0ZDNFhWYkZVc2xpUDZjQjlyMEZCQ1dTTTc0aEdOcnNBNGJNTXluWG9QUDRCWEpTVnBqekZCSFU0WWZ6SnI0OFItdzROSjRoVA?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-06-09",
+        "description": "Dubai World Trade Centre delivers record Dhs25b in economic output  Gulf Today",
+        "hoursAgo": 1,
+        "score": 6,
         "topic": "Global Economic Signals",
-        "origin": "uae-rss"
+        "origin": "google-news"
       },
       {
         "title": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth - Arabian Business",
@@ -83,12 +58,24 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-08",
         "description": "Dubai free zones hit record $133.7bn trade as DIEZ posts fifth consecutive year of growth  Arabian Business",
-        "hoursAgo": 7,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
+      },
+      {
+        "title": "Riyadh Air brings forward debut London flight",
+        "url": "https://www.agbi.com/aviation/2026/06/riyadh-air-brings-forward-debut-london-flight/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-09",
+        "description": "Riyadh Air will launch its first commercial flight on Wednesday June 10, jetting to London in what is a major milestone for the Saudi airline startup. The carrier has unveiled the inaugural destinations in a network planned to reach more than 100 cities by the end of the decade. The airline, backed by Saudi Arabia’s [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 4
 }
