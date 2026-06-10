@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-10T08:07:05.583Z",
+  "generatedAt": "2026-06-10T15:31:05.909Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,40 +15,16 @@
   "diagnostic": {
     "totalFetched": 170,
     "afterDedup": 163,
-    "big4Rejected": 8,
-    "englishOnly": 155,
-    "withinRecency": 54,
-    "scored": 54,
-    "passed": 4
+    "big4Rejected": 9,
+    "englishOnly": 154,
+    "withinRecency": 64,
+    "scored": 64,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
-      {
-        "title": "Budget airlines &#8216;could be first casualties&#8217; if Iran war drags on",
-        "url": "https://www.agbi.com/aviation/2026/06/budget-airlines-could-be-first-casualties-if-iran-war-drags-on/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-09",
-        "description": "Emirates president Tim Clark has warned that weaker airlines could fail if the war involving Iran drags on, with budget carriers most exposed. &#8220;If this crisis goes on for too long there will be casualties, likely in the budget airline sector first,&#8221; Clark said of financial pressure caused by the conflict, echoing comments by Iata chief Willie [&#8230;]",
-        "hoursAgo": 20,
-        "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Egypt reports 15% annual rise in garment exports",
-        "url": "https://www.agbi.com/trade/2026/06/egypt-reports-15-annual-rise-in-garment-exports/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-09",
-        "description": "Egypt’s ready-made garment exports surged by nearly 15 percent in the first four months of 2026 and are projected to climb to a record level through the year. The increase was driven by a surge in exports to Turkey, the US and Europe. Despite the Iran war and concerns about soaring energy prices, Egypt’s garment [&#8230;]",
-        "hoursAgo": 20,
-        "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
       {
         "title": "Budget Saudi confirms mobile app data leak",
         "url": "https://www.agbi.com/cybersecurity/2026/06/budget-saudi-confirms-data-leak-via-its-mobile-app/",
@@ -56,19 +32,7 @@
         "domain": "agbi.com",
         "date": "2026-06-10",
         "description": "Budget Saudi, one of the largest vehicle leasing companies in the Middle East and North Africa, has confirmed that some customer data was leaked through its mobile application. “The cybersecurity incident resulted in unauthorised access to a limited portion of the data of certain customers through the mobile app,” the company said in a statement [&#8230;]",
-        "hoursAgo": 2,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "UAE bars and restaurants ready for late‑night World Cup fever",
-        "url": "https://www.agbi.com/food-drink/2026/06/uae-bars-and-restaurants-ready-for-late-night-world-cup-fever/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-10",
-        "description": "Giant screens are flickering to life, fan zones are ready to fill up and sports bars across the UAE are bracing for weeks of sleepless nights as the World Cup begins on Thursday. A record number of teams from the Middle East and North Africa have qualified for the Fifa tournament taking place in the [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -76,5 +40,5 @@
     ],
     "world": []
   },
-  "totalCount": 4
+  "totalCount": 1
 }
