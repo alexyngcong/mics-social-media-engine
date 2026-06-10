@@ -1,55 +1,29 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-10T03:33:21.348Z",
+  "generatedAt": "2026-06-10T08:07:05.583Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 226,
+    "totalFetched": 170,
+    "afterDedup": 163,
     "big4Rejected": 8,
-    "englishOnly": 194,
-    "withinRecency": 91,
-    "scored": 91,
-    "passed": 5
+    "englishOnly": 155,
+    "withinRecency": 54,
+    "scored": 54,
+    "passed": 4
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "QIA invests in microsatellite manufacturer Iceye",
-        "url": "https://www.agbi.com/finance/2026/06/qia-invests-in-microsatellite-manufacturer-iceye/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-09",
-        "description": "Qatar Investment Authority (QIA) has invested in Finnish microsatellite manufacturer and operator Iceye’s €1 billion ($1.2 billion) fundraising round. The sovereign wealth fund did not disclose the size of its investment. The Finnish startup is now valued at more than €10 billion, it said in a statement. The series F funding round was led by [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Investment & Funding",
-        "origin": "uae-rss"
-      }
-    ],
-    "capital": [
-      {
-        "title": "Saudi IPO woes continue as contractor withdraws offering",
-        "url": "https://www.agbi.com/markets/2026/06/saudi-ipo-woes-continue-as-contractor-withdraws-offering/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-09",
-        "description": "Saudi contractor Mutlaq Al-Ghowairi Contracting Company (MGC) has withdrawn an initial public offering that could have raised $800 million. The IPO, which stood to be the third on the main market this year, would have been easily the largest so far. The number of new offerings has slumped following the outbreak of the Iran war. [&#8230;]",
-        "hoursAgo": 17,
-        "score": 7,
-        "topic": "IPO & M&A",
-        "origin": "uae-rss"
-      }
-    ],
+    "growth": [],
+    "capital": [],
     "risk": [
       {
         "title": "Budget airlines &#8216;could be first casualties&#8217; if Iran war drags on",
@@ -58,7 +32,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Emirates president Tim Clark has warned that weaker airlines could fail if the war involving Iran drags on, with budget carriers most exposed. &#8220;If this crisis goes on for too long there will be casualties, likely in the budget airline sector first,&#8221; Clark said of financial pressure caused by the conflict, echoing comments by Iata chief Willie [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -70,26 +44,37 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Egypt’s ready-made garment exports surged by nearly 15 percent in the first four months of 2026 and are projected to climb to a record level through the year. The increase was driven by a surge in exports to Turkey, the US and Europe. Despite the Iran war and concerns about soaring energy prices, Egypt’s garment [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Budget Saudi confirms mobile app data leak",
+        "url": "https://www.agbi.com/cybersecurity/2026/06/budget-saudi-confirms-data-leak-via-its-mobile-app/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-10",
+        "description": "Budget Saudi, one of the largest vehicle leasing companies in the Middle East and North Africa, has confirmed that some customer data was leaked through its mobile application. “The cybersecurity incident resulted in unauthorised access to a limited portion of the data of certain customers through the mobile app,” the company said in a statement [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "UAE bars and restaurants ready for late‑night World Cup fever",
+        "url": "https://www.agbi.com/food-drink/2026/06/uae-bars-and-restaurants-ready-for-late-night-world-cup-fever/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-10",
+        "description": "Giant screens are flickering to life, fan zones are ready to fill up and sports bars across the UAE are bracing for weeks of sleepless nights as the World Cup begins on Thursday. A record number of teams from the Middle East and North Africa have qualified for the Fifa tournament taking place in the [&#8230;]",
+        "hoursAgo": 5,
+        "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
-    "world": [
-      {
-        "title": "Dubai World Trade Centre delivers record Dhs25b in economic output - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORHJPaWFKQm9IOGYxZXJfSldzRTdaNnFpb3NyUkNrVHhTbG9uaWpVd3FKWWZOTTY4cF9ybjMzMjdhSXIxQlJXeDRzb3lqYjV2Rld6WnZNRGs3WmE4a1FTRnJJQnZKSWpiY0ZDNFhWYkZVc2xpUDZjQjlyMEZCQ1dTTTc0aEdOcnNBNGJNTXluWG9QUDRCWEpTVnBqekZCSFU0WWZ6SnI0OFItdzROSjRoVA?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-06-09",
-        "description": "Dubai World Trade Centre delivers record Dhs25b in economic output  Gulf Today",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 5
+  "totalCount": 4
 }
