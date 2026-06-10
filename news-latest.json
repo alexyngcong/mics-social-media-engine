@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-09T21:46:57.730Z",
+  "generatedAt": "2026-06-10T03:33:21.348Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 270,
-    "afterDedup": 213,
+    "afterDedup": 226,
     "big4Rejected": 8,
-    "englishOnly": 185,
-    "withinRecency": 84,
-    "scored": 84,
+    "englishOnly": 194,
+    "withinRecency": 91,
+    "scored": 91,
     "passed": 5
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Qatar Investment Authority (QIA) has invested in Finnish microsatellite manufacturer and operator Iceye’s €1 billion ($1.2 billion) fundraising round. The sovereign wealth fund did not disclose the size of its investment. The Finnish startup is now valued at more than €10 billion, it said in a statement. The series F funding round was led by [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Saudi contractor Mutlaq Al-Ghowairi Contracting Company (MGC) has withdrawn an initial public offering that could have raised $800 million. The IPO, which stood to be the third on the main market this year, would have been easily the largest so far. The number of new offerings has slumped following the outbreak of the Iran war. [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -58,7 +58,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Emirates president Tim Clark has warned that weaker airlines could fail if the war involving Iran drags on, with budget carriers most exposed. &#8220;If this crisis goes on for too long there will be casualties, likely in the budget airline sector first,&#8221; Clark said of financial pressure caused by the conflict, echoing comments by Iata chief Willie [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -70,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-06-09",
         "description": "Egypt’s ready-made garment exports surged by nearly 15 percent in the first four months of 2026 and are projected to climb to a record level through the year. The increase was driven by a surge in exports to Turkey, the US and Europe. Despite the Iran war and concerns about soaring energy prices, Egypt’s garment [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -84,7 +84,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-09",
         "description": "Dubai World Trade Centre delivers record Dhs25b in economic output  Gulf Today",
-        "hoursAgo": 15,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
