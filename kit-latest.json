@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-07T13:48:54.656Z",
-  "weekOf": "7 Jun 2026",
+  "generatedAt": "2026-06-10T18:30:00.297Z",
+  "weekOf": "10 Jun 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "gulf-backed-innio-jumps-in-latest-ai-rel",
+      "slug": "budget-saudi-confirms-mobile-app-data-le",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "capital",
-      "roomColor": "#F0C050",
-      "roomLabel": "CAPITAL · CASH",
-      "theme": "ai_tech",
-      "tier": "WEEK AHEAD CAPITAL",
-      "title": "Gulf-backed Innio jumps in latest AI-related IPO",
-      "sourceUrl": "https://www.agbi.com/markets/2026/06/gulf-backed-innio-jumps-in-latest-ai-related-ipo/",
-      "filenameBase": "post-1-gulf-backed-innio-jumps-in-latest-ai-rel",
-      "photoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80&fit=crop&crop=entropy&auto=format",
-      "stat": "$31",
-      "headlineLine1": "Gulf-backed Innio jumps in latest AI-related IPO",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "Budget Saudi confirms mobile app data leak",
+      "sourceUrl": "https://www.agbi.com/cybersecurity/2026/06/budget-saudi-confirms-data-leak-via-its-mobile-app/",
+      "filenameBase": "post-1-budget-saudi-confirms-mobile-app-data-le",
+      "photoUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "",
+      "headlineLine1": "Budget Saudi confirms mobile app data leak",
       "headlineLine2": "",
-      "hoursAgo": 54
+      "hoursAgo": 13
     },
     {
       "n": 2,
