@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-11T03:45:10.167Z",
+  "generatedAt": "2026-06-11T08:46:33.552Z",
   "weekOf": "11 Jun 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "budget-saudi-confirms-mobile-app-data-le",
+      "slug": "gulf-producers-plug-nearly-half-pre-war-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "risk",
       "roomColor": "#EF5555",
       "roomLabel": "RISK · COMPLIANCE",
-      "theme": "compliance_risk",
+      "theme": "oil_energy",
       "tier": "WEEK AHEAD",
-      "title": "Budget Saudi confirms mobile app data leak",
-      "sourceUrl": "https://www.agbi.com/cybersecurity/2026/06/budget-saudi-confirms-data-leak-via-its-mobile-app/",
-      "filenameBase": "post-1-budget-saudi-confirms-mobile-app-data-le",
-      "photoUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "title": "Gulf producers plug nearly half pre-war oil output",
+      "sourceUrl": "https://www.agbi.com/oil-and-gas/2026/06/hormuz-forces-gulf-oil-producers-to-plug-nearly-half-pre-war-output/",
+      "filenameBase": "post-1-gulf-producers-plug-nearly-half-pre-war-",
+      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
       "stat": "",
-      "headlineLine1": "Budget Saudi confirms mobile app data leak",
+      "headlineLine1": "Gulf producers plug nearly half pre-war oil output",
       "headlineLine2": "",
-      "hoursAgo": 22
+      "hoursAgo": 5
     },
     {
       "n": 2,
