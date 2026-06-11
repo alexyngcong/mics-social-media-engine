@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-11T03:44:58.343Z",
+  "generatedAt": "2026-06-11T08:46:14.701Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 161,
-    "big4Rejected": 8,
-    "englishOnly": 153,
-    "withinRecency": 61,
-    "scored": 61,
+    "afterDedup": 164,
+    "big4Rejected": 9,
+    "englishOnly": 155,
+    "withinRecency": 64,
+    "scored": 64,
     "passed": 1
   },
   "rooms": {
@@ -26,13 +26,13 @@
     "capital": [],
     "risk": [
       {
-        "title": "Budget Saudi confirms mobile app data leak",
-        "url": "https://www.agbi.com/cybersecurity/2026/06/budget-saudi-confirms-data-leak-via-its-mobile-app/",
+        "title": "Gulf producers plug nearly half pre-war oil output",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/hormuz-forces-gulf-oil-producers-to-plug-nearly-half-pre-war-output/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-10",
-        "description": "Budget Saudi, one of the largest vehicle leasing companies in the Middle East and North Africa, has confirmed that some customer data was leaked through its mobile application. “The cybersecurity incident resulted in unauthorised access to a limited portion of the data of certain customers through the mobile app,” the company said in a statement [&#8230;]",
-        "hoursAgo": 22,
+        "date": "2026-06-11",
+        "description": "More than a 10th of the world’s daily crude supply is trapped underground as shipping disruptions through the Strait of Hormuz have forced six Gulf states to plug wells, analysts estimate. Sites that would typically produce 11.8 million barrels per day of oil have been “shut in” after exports ground to a halt and storage [&#8230;]",
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
