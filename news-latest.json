@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-10T22:01:18.261Z",
+  "generatedAt": "2026-06-11T03:44:58.343Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 157,
-    "big4Rejected": 7,
-    "englishOnly": 150,
-    "withinRecency": 56,
-    "scored": 56,
+    "afterDedup": 161,
+    "big4Rejected": 8,
+    "englishOnly": 153,
+    "withinRecency": 61,
+    "scored": 61,
     "passed": 1
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "agbi.com",
         "date": "2026-06-10",
         "description": "Budget Saudi, one of the largest vehicle leasing companies in the Middle East and North Africa, has confirmed that some customer data was leaked through its mobile application. “The cybersecurity incident resulted in unauthorised access to a limited portion of the data of certain customers through the mobile app,” the company said in a statement [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
