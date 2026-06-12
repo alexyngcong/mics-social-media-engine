@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-11T22:03:24.149Z",
+  "generatedAt": "2026-06-12T03:44:00.747Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 15,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 202,
-    "big4Rejected": 8,
-    "englishOnly": 180,
-    "withinRecency": 96,
-    "scored": 96,
-    "passed": 5
+    "totalFetched": 185,
+    "afterDedup": 175,
+    "big4Rejected": 7,
+    "englishOnly": 168,
+    "withinRecency": 82,
+    "scored": 82,
+    "passed": 6
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Abu Dhabi Investment Council (ADIC), a sovereign wealth fund, has reportedly invested in a $2 billion fundraising round by US hedge fund ExodusPoint Capital. The new capital has increased the hedge fund’s total assets to $14.5 billion, Bloomberg reported, citing unidentified sources. ADIC is wholly owned by Mubadala Investment Company. No details on ADIC’s investment [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Malaysian low-cost airline AirAsia has pushed back the launch of its Middle East base in Bahrain because of the US-Israeli war with Iran. Operations are now likely to start in August or September, subject to market conditions, the airline said in a statement. The route connecting Kuala Lumpur to Bahrain and onward to London’s Gatwick [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "cnbc.com",
         "date": "2026-06-11",
         "description": "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal  CNBC",
-        "hoursAgo": 5,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -69,7 +69,7 @@
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Surging oil prices earned Libya bumper revenues in May, making the north African country a beneficiary of the Strait of Hormuz crisis caused by the Iran conflict. Prices averaged $120 in April, nearly double their level before Iran effectively closed the strait, boosting Libya’s oil income to $3.4 billion in May, the state-owned National Oil [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -77,18 +77,30 @@
     ],
     "world": [
       {
+        "title": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb1ZoZTJGcDBJYms3QVhDVlprZDZuT3VYQXlsR0xDQkx0cmUzNFpROEFycEZuNlRHX29yaHpFZUprSGdFclY5VHNWZ1dRZDYzanduX0JjUkNiOHVnMS1PMjl1S2dyV3UwaVZOVEVBbTZqU0FUeEtxVmpqdVVlb3ZIcFJvWllwNF9nWkZlYk40TGhqcDVncTZ1YkZ1MnAwdDZIZHR0b1pDS1NpZw?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-06-12",
+        "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
         "title": "Kuwait joins launch of $10bn AI infrastructure venture",
         "url": "https://www.agbi.com/tech/2026/06/kuwait-joins-launch-of-10bn-ai-infrastructure-venture/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Kuwait Investment Authority (KIA) has joined the quartet led by&#160;US asset manager KKR&#160;to launch a new company to provide infrastructure for&#160;artificial intelligence (AI) hyperscalers. The other partners in the $10 billion venture, called Helix Digital Infrastructure, are chip maker Nvidia and Vistra, a power generation company, KKR said in a statement. Nvidia will advise Helix [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 6
 }
