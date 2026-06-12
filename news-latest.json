@@ -1,50 +1,37 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-12T14:54:38.469Z",
+  "generatedAt": "2026-06-12T18:06:06.708Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 12,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 182,
-    "afterDedup": 172,
-    "big4Rejected": 6,
-    "englishOnly": 166,
-    "withinRecency": 71,
-    "scored": 71,
-    "passed": 10
+    "totalFetched": 170,
+    "afterDedup": 161,
+    "big4Rejected": 8,
+    "englishOnly": 153,
+    "withinRecency": 61,
+    "scored": 61,
+    "passed": 6
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Emaar to develop $55 billion real estate project in Dubai, founder says - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbEk4NHFxUHRSRVRQbUhYREQ3d0VnWElDM1NCaV9wSnFKdGc4bDhQTERra1l4NndaSnJJWG4tWGxTWENjWkJFbnc4Y0RnT2lQa2hxdF9MbExid0lTYS1FNi0wYmJVVG1RLUh3a2RWQ01vaV9hYTJWSmpzMkdBdUNMRTNlZm1zYzJBdWtxY01uNjE5WF9XalkzUHpsOU4yeXY3b2VkNTdhQUZsa1dEMTlkRFlKX01WLUZW?oc=5",
-        "source": "Reuters",
-        "domain": "reuters.com",
-        "date": "2026-06-11",
-        "description": "Emaar to develop $55 billion real estate project in Dubai, founder says  Reuters",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [
       {
-        "title": "Record SpaceX IPO set to deliver billions for Gulf investors",
-        "url": "https://www.agbi.com/tech/2026/06/record-spacex-ipo-set-to-deliver-billions-for-gulf-investors/",
+        "title": "Record SpaceX IPO delivers billions for Gulf investors",
+        "url": "https://www.agbi.com/tech/2026/06/record-spacex-ipo-delivers-billions-for-gulf-investors/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-12",
-        "description": "Gulf investors stand to book billions of dollars in paper gains after Elon Musk&#8217;s SpaceX completed the largest initial public offering in history at a valuation of about $1.8 trillion. The $75 billion flotation, which is due to start trading on Friday, nearly triples the $26 billion raised by oil giant Saudi Aramco in 2019. The share [&#8230;]",
-        "hoursAgo": 2,
+        "description": "Gulf investors booked billions of dollars in paper gains after Elon Musk&#8217;s SpaceX completed the largest initial public offering in history at a valuation of about $1.8 trillion. The $75 billion flotation, which started trading on Friday, opened at $150, 11 percent above the IPO price of $135. The share performance of the rocket and satellite [&#8230;]",
+        "hoursAgo": 5,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -56,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Egypt’s revenue from tourism rose nearly 15 percent in the first nine months of its current fiscal year, as the Arab country presses ahead with plans to maintain its position as one of the world’s largest tourism destinations. From around $12.5 billion during July-March of the 2024-2025 fiscal year, Egypt’s tourism income increased to nearly [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -70,34 +57,10 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Turkish farmers are to receive higher subsidies this year to offset sharp cost increases, notably for fuel and fertilisers, caused by the Iran war. President Recep Tayyip Erdoğan told a meeting of his ruling Justice and Development Party earlier this week that despite the positive outlook for many crops after recent drought-breaking rains, the country’s [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "Investopia announces strategic partners for 2026 and launch its fifth edition in Abu Dhabi on March 31 - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMVVMMTZjcEZVM2I5MDFuZ1lzd0dPOFM0eDFRLWpUMERfWkYwdUVtamZ2YUtrN3NnX0dwT3U3TVBha3VTS1VKd2NNNFRiaTQtUUtqckROZUk2bE9VV1ZTMjRIT2VrYlE4YmNfb0dFdnpIaFJiVTFjZTVQcmwwSjdwR0lnbGp5cXVxTFpkaFlGMWNQSXVIUGRJQmNhcUt3UkRjamVnOUdtbWZHVEJOdFZfbjBjc2xRaDMtNU1LaVZsZHROenVuNjlSdFRKcTdzZW5tS0UzbQ?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-06-11",
-        "description": "Investopia announces strategic partners for 2026 and launch its fifth edition in Abu Dhabi on March 31  Economy Middle East",
-        "hoursAgo": 32,
-        "score": 6.5,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
-        "title": "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal - CNBC",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNM19GR2Uwa21JMmFCNEMyZmZuODJGcndQRWFFbGNXdW9YVDNYZy1NYzlfX05relBEYjdaUXJwSmJaVzhPcnpnZDlOWG9yeHZIaVhpeVJmLWFxekV5bGxlYlJDc1Z5b0F4WmE5a1hKYmVCdFNPa0o0My1ZMUFZZjJ5dXFmY19nV1F2WXZNb9IBkgFBVV95cUxPNzh1RUIwZDhDWm9vOG5Ra2lTZ1NWMzV4ZDZrempmNEY2RENBUEx2MUVoaElWUERZUlpqeFBMQjBRbkZvYU1vSFBuMklyVFdjWmJaMmJXNUZxamRqTjFwdlAtWHVVRWVfU3BKMjNJdndFdGU4NFlaUmZHNEpNWXNuR0VLOFMwMUJxdFR2YW95Y3h6QQ?oc=5",
-        "source": "CNBC",
-        "domain": "cnbc.com",
-        "date": "2026-06-11",
-        "description": "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal  CNBC",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
       },
       {
         "title": "Oil prices fall to two-month low on Iran peace deal hopes",
@@ -106,7 +69,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Oil prices fell to their lowest in two months on Friday on news of a possible breakthrough in talks between the US and Iran that could bring an end to the conflict in the Middle East. Brent crude has dropped more than 4 percent during the week to about $89 a barrel, while US West [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -120,7 +83,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-12",
         "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
-        "hoursAgo": 13,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -132,24 +95,12 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Turkish Airlines has been among the many losers in a near month-long slump on Istanbul’s bourse, as investors fret over the impact of soaring fuel costs on the country’s flag carrier. Yet the airline’s long-term prospects remain undimmed, thanks to Turkey’s geographic location and a fast-growing cargo business, according to Çağla Meryem Değer, an Istanbul-based equities analyst. [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Kuwait joins launch of $10bn AI infrastructure venture",
-        "url": "https://www.agbi.com/tech/2026/06/kuwait-joins-launch-of-10bn-ai-infrastructure-venture/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-11",
-        "description": "Kuwait Investment Authority (KIA) has joined the quartet led by&#160;US asset manager KKR&#160;to launch a new company to provide infrastructure for&#160;artificial intelligence (AI) hyperscalers. The other partners in the $10 billion venture, called Helix Digital Infrastructure, are chip maker Nvidia and Vistra, a power generation company, KKR said in a statement. Nvidia will advise Helix [&#8230;]",
-        "hoursAgo": 24,
-        "score": 6,
-        "topic": "AI & Technology",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 10
+  "totalCount": 6
 }
