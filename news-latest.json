@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-12T18:06:06.708Z",
+  "generatedAt": "2026-06-12T21:42:19.754Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 28,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 161,
+    "totalFetched": 198,
+    "afterDedup": 189,
     "big4Rejected": 8,
-    "englishOnly": 153,
-    "withinRecency": 61,
-    "scored": 61,
+    "englishOnly": 180,
+    "withinRecency": 89,
+    "scored": 89,
     "passed": 6
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Gulf investors booked billions of dollars in paper gains after Elon Musk&#8217;s SpaceX completed the largest initial public offering in history at a valuation of about $1.8 trillion. The $75 billion flotation, which started trading on Friday, opened at $150, 11 percent above the IPO price of $135. The share performance of the rocket and satellite [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -43,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Egypt’s revenue from tourism rose nearly 15 percent in the first nine months of its current fiscal year, as the Arab country presses ahead with plans to maintain its position as one of the world’s largest tourism destinations. From around $12.5 billion during July-March of the 2024-2025 fiscal year, Egypt’s tourism income increased to nearly [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Turkish farmers are to receive higher subsidies this year to offset sharp cost increases, notably for fuel and fertilisers, caused by the Iran war. President Recep Tayyip Erdoğan told a meeting of his ruling Justice and Development Party earlier this week that despite the positive outlook for many crops after recent drought-breaking rains, the country’s [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -69,7 +69,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Oil prices fell to their lowest in two months on Friday on news of a possible breakthrough in talks between the US and Iran that could bring an end to the conflict in the Middle East. Brent crude has dropped more than 4 percent during the week to about $89 a barrel, while US West [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -83,7 +83,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-12",
         "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -95,7 +95,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Turkish Airlines has been among the many losers in a near month-long slump on Istanbul’s bourse, as investors fret over the impact of soaring fuel costs on the country’s flag carrier. Yet the airline’s long-term prospects remain undimmed, thanks to Turkey’s geographic location and a fast-growing cargo business, according to Çağla Meryem Değer, an Istanbul-based equities analyst. [&#8230;]",
-        "hoursAgo": 12,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
