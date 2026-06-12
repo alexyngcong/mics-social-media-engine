@@ -1,28 +1,40 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-12T03:44:00.747Z",
+  "generatedAt": "2026-06-12T08:24:16.010Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 15,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 185,
-    "afterDedup": 175,
-    "big4Rejected": 7,
-    "englishOnly": 168,
-    "withinRecency": 82,
-    "scored": 82,
-    "passed": 6
+    "totalFetched": 170,
+    "afterDedup": 164,
+    "big4Rejected": 5,
+    "englishOnly": 159,
+    "withinRecency": 70,
+    "scored": 70,
+    "passed": 12
   },
   "rooms": {
     "growth": [
+      {
+        "title": "Emaar to develop $55 billion real estate project in Dubai, founder says - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbEk4NHFxUHRSRVRQbUhYREQ3d0VnWElDM1NCaV9wSnFKdGc4bDhQTERra1l4NndaSnJJWG4tWGxTWENjWkJFbnc4Y0RnT2lQa2hxdF9MbExid0lTYS1FNi0wYmJVVG1RLUh3a2RWQ01vaV9hYTJWSmpzMkdBdUNMRTNlZm1zYzJBdWtxY01uNjE5WF9XalkzUHpsOU4yeXY3b2VkNTdhQUZsa1dEMTlkRFlKX01WLUZW?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
+        "date": "2026-06-11",
+        "description": "Emaar to develop $55 billion real estate project in Dubai, founder says  Reuters",
+        "hoursAgo": 17,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      },
       {
         "title": "Mubadala&#8217;s ADIC invests in US hedge fund’s $2bn capital raise",
         "url": "https://www.agbi.com/banking-finance/2026/06/mubadalas-adic-invests-in-us-hedge-funds-2bn-capital-raise/",
@@ -30,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Abu Dhabi Investment Council (ADIC), a sovereign wealth fund, has reportedly invested in a $2 billion fundraising round by US hedge fund ExodusPoint Capital. The new capital has increased the hedge fund’s total assets to $14.5 billion, Bloomberg reported, citing unidentified sources. ADIC is wholly owned by Mubadala Investment Company. No details on ADIC’s investment [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
@@ -39,16 +51,40 @@
     "capital": [],
     "risk": [
       {
+        "title": "Turkey to boost subsidies for embattled farmers",
+        "url": "https://www.agbi.com/agriculture/2026/06/turkey-to-increase-subsidies-to-support-farmers/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-12",
+        "description": "Turkish farmers are to receive higher subsidies this year to offset sharp cost increases, notably for fuel and fertilisers, caused by the Iran war. President Recep Tayyip Erdoğan told a meeting of his ruling Justice and Development Party earlier this week that despite the positive outlook for many crops after recent drought-breaking rains, the country’s [&#8230;]",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
         "title": "AirAsia delays opening of Bahrain base",
         "url": "https://www.agbi.com/aviation/2026/06/airasia-delays-opening-of-bahrain-base/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Malaysian low-cost airline AirAsia has pushed back the launch of its Middle East base in Bahrain because of the US-Israeli war with Iran. Operations are now likely to start in August or September, subject to market conditions, the airline said in a statement. The route connecting Kuala Lumpur to Bahrain and onward to London’s Gatwick [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
+      },
+      {
+        "title": "Investopia announces strategic partners for 2026 and launch its fifth edition in Abu Dhabi on March 31 - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMVVMMTZjcEZVM2I5MDFuZ1lzd0dPOFM0eDFRLWpUMERfWkYwdUVtamZ2YUtrN3NnX0dwT3U3TVBha3VTS1VKd2NNNFRiaTQtUUtqckROZUk2bE9VV1ZTMjRIT2VrYlE4YmNfb0dFdnpIaFJiVTFjZTVQcmwwSjdwR0lnbGp5cXVxTFpkaFlGMWNQSXVIUGRJQmNhcUt3UkRjamVnOUdtbWZHVEJOdFZfbjBjc2xRaDMtNU1LaVZsZHROenVuNjlSdFRKcTdzZW5tS0UzbQ?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-06-11",
+        "description": "Investopia announces strategic partners for 2026 and launch its fifth edition in Abu Dhabi on March 31  Economy Middle East",
+        "hoursAgo": 26,
+        "score": 6.5,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
       },
       {
         "title": "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal - CNBC",
@@ -57,10 +93,22 @@
         "domain": "cnbc.com",
         "date": "2026-06-11",
         "description": "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal  CNBC",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
+      },
+      {
+        "title": "Oil prices fall to two-month low on Iran peace deal hopes",
+        "url": "https://www.agbi.com/markets/2026/06/oil-prices-fall-to-two-month-low-on-iran-peace-deal-hopes/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-12",
+        "description": "Oil prices fell to their lowest in two months on Friday on news of a possible breakthrough in talks between the US and Iran that could bring an end to the conflict in the Middle East. Brent crude has dropped more than 4 percent during the week to about $89 a barrel, while US West [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
       },
       {
         "title": "Libya&#8217;s oil income rises in May on stronger crude prices",
@@ -69,7 +117,7 @@
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Surging oil prices earned Libya bumper revenues in May, making the north African country a beneficiary of the Strait of Hormuz crisis caused by the Iran conflict. Prices averaged $120 in April, nearly double their level before Iran effectively closed the strait, boosting Libya’s oil income to $3.4 billion in May, the state-owned National Oil [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -78,15 +126,39 @@
     "world": [
       {
         "title": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb1ZoZTJGcDBJYms3QVhDVlprZDZuT3VYQXlsR0xDQkx0cmUzNFpROEFycEZuNlRHX29yaHpFZUprSGdFclY5VHNWZ1dRZDYzanduX0JjUkNiOHVnMS1PMjl1S2dyV3UwaVZOVEVBbTZqU0FUeEtxVmpqdVVlb3ZIcFJvWllwNF9nWkZlYk40TGhqcDVncTZ1YkZ1MnAwdDZIZHR0b1pDS1NpZw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUjFBSHByeXNwR2FDM0xpTTdpYmxGWlZZWkswbjl0SVlqYldQNndvUXNIUWxPbk9Gd0pFaVVMcjB6Tk1rdTdJSE1pQkU5ZmJkMzl2NlFHWmhoU3JGYTZ0SVh3c0xWZUJucUs2Q1dlNS1hUkktNDFGcHFsY0NFbWtvSnpjR3BuRE5DdHNBTUtRS2dBSnN3Q2hJMXlPSnM0OXdDWHQ4aUpwS0Y?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-06-12",
         "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
+      },
+      {
+        "title": "Abu Dhabi Chamber and Shanghai Foreign Investment Development Board sign MoU - ZAWYA",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUjdGd3IwanNzMS10VlBXX09id0tKSmt1VHBpT3BVdEctS2dVNXJNdnlHZmdRczJfMTdnNzZZV1h3Mjc5eWliNy1Jdnk2Z3FLOW05WERwa0RCRUItSkk1NXI5WnAwWkdyanZkVVgwbks0VVFGUndLR0NzRDZGWGdPczNwMEx1MHJtMDRKRkVmTWU5MFRrU2dMVlg5am42LUh4MHlFeHNieGdYZWliNUViYTlkMURqYUlsbGFMa1dVbTVjUkJHeFphSmFKM1pTMHFOLVJmWGxrRQ?oc=5",
+        "source": "ZAWYA",
+        "domain": "zawya.com",
+        "date": "2026-06-12",
+        "description": "Abu Dhabi Chamber and Shanghai Foreign Investment Development Board sign MoU  ZAWYA",
+        "hoursAgo": 0,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Turkish Airlines upbeat despite fuel cost surge and stock price fall",
+        "url": "https://www.agbi.com/aviation/2026/06/turkish-airlines-upbeat-despite-fuel-cost-surge-and-stock-price-slump/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-12",
+        "description": "Turkish Airlines has been among the many losers in a near month-long slump on Istanbul’s bourse, as investors fret over the impact of soaring fuel costs on the country’s flag carrier. Yet the airline’s long-term prospects remain undimmed, thanks to Turkey’s geographic location and a fast-growing cargo business, according to Çağla Meryem Değer, an Istanbul-based equities analyst. [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
       },
       {
         "title": "Kuwait joins launch of $10bn AI infrastructure venture",
@@ -95,12 +167,12 @@
         "domain": "agbi.com",
         "date": "2026-06-11",
         "description": "Kuwait Investment Authority (KIA) has joined the quartet led by&#160;US asset manager KKR&#160;to launch a new company to provide infrastructure for&#160;artificial intelligence (AI) hyperscalers. The other partners in the $10 billion venture, called Helix Digital Infrastructure, are chip maker Nvidia and Vistra, a power generation company, KKR said in a statement. Nvidia will advise Helix [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 12
 }
