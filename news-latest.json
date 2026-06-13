@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-13T10:27:07.092Z",
+  "generatedAt": "2026-06-13T13:56:05.622Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 209,
-    "big4Rejected": 7,
-    "englishOnly": 177,
-    "withinRecency": 82,
-    "scored": 82,
+    "totalFetched": 170,
+    "afterDedup": 159,
+    "big4Rejected": 6,
+    "englishOnly": 153,
+    "withinRecency": 57,
+    "scored": 57,
     "passed": 2
   },
   "rooms": {
@@ -30,9 +30,9 @@
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-12",
-        "description": "Gulf investors booked billions of dollars in paper gains after Elon Musk&#8217;s SpaceX completed the largest initial public offering in history at a valuation of about $1.8 trillion. The $75 billion flotation, which started trading on Friday, opened at $150, 11 percent above the IPO price of $135. The share performance of the rocket and satellite [&#8230;]",
-        "hoursAgo": 21,
-        "score": 7,
+        "description": "Gulf investors booked billions of dollars in paper gains after Elon Musk&#8217;s SpaceX completed the largest initial public offering in history at a valuation of about $2.1 trillion. The $75 billion flotation, which started trading on Friday, opened at $150, 11 percent above the IPO price of $135. The group&#8217;s shares closed at $160.95. The share [&#8230;]",
+        "hoursAgo": 25,
+        "score": 6.5,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Turkish farmers are to receive higher subsidies this year to offset sharp cost increases, notably for fuel and fertilisers, caused by the Iran war. President Recep Tayyip Erdoğan told a meeting of his ruling Justice and Development Party earlier this week that despite the positive outlook for many crops after recent drought-breaking rains, the country’s [&#8230;]",
-        "hoursAgo": 28,
+        "hoursAgo": 31,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
