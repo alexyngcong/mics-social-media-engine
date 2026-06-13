@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-13T07:44:36.670Z",
+  "generatedAt": "2026-06-13T10:27:07.092Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 160,
+    "totalFetched": 270,
+    "afterDedup": 209,
     "big4Rejected": 7,
-    "englishOnly": 153,
-    "withinRecency": 60,
-    "scored": 60,
-    "passed": 3
+    "englishOnly": 177,
+    "withinRecency": 82,
+    "scored": 82,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -31,21 +31,9 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Gulf investors booked billions of dollars in paper gains after Elon Musk&#8217;s SpaceX completed the largest initial public offering in history at a valuation of about $1.8 trillion. The $75 billion flotation, which started trading on Friday, opened at $150, 11 percent above the IPO price of $135. The share performance of the rocket and satellite [&#8230;]",
-        "hoursAgo": 18,
+        "hoursAgo": 21,
         "score": 7,
         "topic": "IPO & M&A",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Egypt reports 15% rise in tourism income",
-        "url": "https://www.agbi.com/leisure-hospitality/2026/06/egypt-reports-15-rise-in-tourism-income/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-12",
-        "description": "Egypt’s revenue from tourism rose nearly 15 percent in the first nine months of its current fiscal year, as the Arab country presses ahead with plans to maintain its position as one of the world’s largest tourism destinations. From around $12.5 billion during July-March of the 2024-2025 fiscal year, Egypt’s tourism income increased to nearly [&#8230;]",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Corporate Finance",
         "origin": "uae-rss"
       }
     ],
@@ -57,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Turkish farmers are to receive higher subsidies this year to offset sharp cost increases, notably for fuel and fertilisers, caused by the Iran war. President Recep Tayyip Erdoğan told a meeting of his ruling Justice and Development Party earlier this week that despite the positive outlook for many crops after recent drought-breaking rains, the country’s [&#8230;]",
-        "hoursAgo": 25,
+        "hoursAgo": 28,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -65,5 +53,5 @@
     ],
     "world": []
   },
-  "totalCount": 3
+  "totalCount": 2
 }
