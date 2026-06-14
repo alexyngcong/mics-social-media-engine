@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-14T03:52:44.614Z",
+  "generatedAt": "2026-06-14T08:15:34.370Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 1,
-    "googleNews": 0,
+    "gdelt": 100,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 21,
-    "afterDedup": 21,
-    "big4Rejected": 0,
-    "englishOnly": 21,
-    "withinRecency": 21,
-    "scored": 21,
-    "passed": 2
+    "totalFetched": 270,
+    "afterDedup": 200,
+    "big4Rejected": 6,
+    "englishOnly": 176,
+    "withinRecency": 70,
+    "scored": 70,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Gulf investors booked billions of dollars in paper gains after Elon Musk&#8217;s SpaceX completed the largest initial public offering in history at a valuation of about $2.1 trillion. The $75 billion flotation, which started trading on Friday, opened at $150, 11 percent above the IPO price of $135. The group&#8217;s shares closed at $160.95. The share [&#8230;]",
-        "hoursAgo": 39,
+        "hoursAgo": 43,
         "score": 6.5,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -39,19 +39,45 @@
     ],
     "risk": [
       {
+        "title": "UAE reportedly struck a deal to release billions to Iran after months of attacks , but the Gulf state says the allegations are  entirely false  ",
+        "url": "https://attackofthefanboy.com/politics/uae-reportedly-struck-a-deal-to-release-billions-to-iran-after-months-of-attacks-but-the-gulf-state-says-the-allegations-are-entirely-false/",
+        "source": "Attackofthefanboy",
+        "domain": "attackofthefanboy.com",
+        "date": "2026-06-13",
+        "description": "UAE reportedly struck a deal to release billions to Iran after months of attacks , but the Gulf state says the allegations are  entirely false  ",
+        "imageUrl": "https://attackofthefanboy.com/wp-content/uploads/2026/06/Photo-by-Olgaozik_1781330944683.jpg",
+        "hoursAgo": 17,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "gdelt"
+      },
+      {
         "title": "Turkey to boost subsidies for embattled farmers",
         "url": "https://www.agbi.com/agriculture/2026/06/turkey-to-increase-subsidies-to-support-farmers/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-12",
         "description": "Turkish farmers are to receive higher subsidies this year to offset sharp cost increases, notably for fuel and fertilisers, caused by the Iran war. President Recep Tayyip Erdoğan told a meeting of his ruling Justice and Development Party earlier this week that despite the positive outlook for many crops after recent drought-breaking rains, the country’s [&#8230;]",
-        "hoursAgo": 45,
-        "score": 6.5,
+        "hoursAgo": 50,
+        "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE and Shanghai sign business deal to boost mutual investments - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTXI2dzBJVkJIRVh0V2JBU3pJOW9qaV9Ua3BmNVd0bjFLeHdTblhZaGJCODhEcnRZRjRjNVRHX3M1OG1TU1F4T2pUX0pfSHU1V0NOSlFockJteVFDcnlKam9qR29KUjAzYUFiZEJGVktsVTVPWWlpeURFN2JEYUV1aGFiWHlxVGNpTHVYRE5zN3hHVHVPc25JQkV2ODVaaVlxdnZ2SkpKWnhWWFdX?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-06-13",
+        "description": "UAE and Shanghai sign business deal to boost mutual investments  Gulf Today",
+        "hoursAgo": 16,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 2
+  "totalCount": 4
 }
