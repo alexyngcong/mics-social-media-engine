@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-16T16:48:11.985Z",
+  "generatedAt": "2026-06-16T22:10:57.047Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 10,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 180,
-    "afterDedup": 168,
-    "big4Rejected": 9,
-    "englishOnly": 158,
-    "withinRecency": 52,
-    "scored": 52,
+    "totalFetched": 270,
+    "afterDedup": 204,
+    "big4Rejected": 10,
+    "englishOnly": 175,
+    "withinRecency": 69,
+    "scored": 69,
     "passed": 7
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-16",
         "description": "Luxury ‘heavily overused’ term in real estate, Aman CEO says as Dubai prime property buyers move beyond labels – EXCLUSIVE  Arabian Business",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -38,13 +38,25 @@
     ],
     "capital": [
       {
+        "title": "Frozen Kiing Targets AED 20 Million Revenue as It Accelerates Retail Expansion Across UAE and GCC Markets",
+        "url": "https://aninews.in/news/business/frozen-kiing-targets-aed-20-million-revenue-as-it-accelerates-retail-expansion-across-uae-and-gcc-markets20260616174359/",
+        "source": "Aninews",
+        "domain": "aninews.in",
+        "date": "2026-06-16",
+        "description": "Frozen Kiing Targets AED 20 Million Revenue as It Accelerates Retail Expansion Across UAE and GCC Markets",
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "Corporate Finance",
+        "origin": "gdelt"
+      },
+      {
         "title": "Omifco aims for $675m as Oman IPO opens",
         "url": "https://www.agbi.com/agriculture/2026/06/omifco-aims-for-675m-as-oman-ipo-opens/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-16",
         "description": "Oman India Fertiliser Company (Omifco) aims to raise OMR260 million ($675 million) from its IPO, which opened for subscription on Tuesday. The subscription offers 1.672 billion shares, representing 25 percent of the company’s issued share capital, according to a statement from the country’s&#160;Financial Services Authority&#160;(FSA). OQ, the state-run energy company, owns 50 percent of the [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -52,26 +64,13 @@
     ],
     "risk": [
       {
-        "title": "U . S .- Iran interim deal : What could a Gulf bounce back look like ? ",
-        "url": "https://fortune.com/2026/06/16/us-iran-interim-deal-gulf-bounce-back-spacex-private-credit-firms/",
-        "source": "Fortune",
-        "domain": "fortune.com",
-        "date": "2026-06-16",
-        "description": "U . S .- Iran interim deal : What could a Gulf bounce back look like ? ",
-        "imageUrl": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2281240082-e1781601855388.jpg",
-        "hoursAgo": 7,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "gdelt"
-      },
-      {
         "title": "UAE’s 2025 tax revenue increases 15%",
         "url": "https://www.agbi.com/tax/2026/06/uaes-2025-tax-revenue-increases-15/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-16",
         "description": "The UAE collected more than AED46 billion ($12.5 billion) in value-added tax (VAT) and excise tax in 2025, up 15 percent from AED41 billion in 2024, the finance ministry has said. The taxes were distributed among federal and local governments, Mohamed bin Hadi Al Hussaini, minister of state for financial affairs, said in a statement. [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -83,7 +82,7 @@
         "domain": "agbi.com",
         "date": "2026-06-16",
         "description": "The shipping industry has reacted cautiously to the US-Iran agreement to reopen the Strait of Hormuz, warning that moving hundreds of vessels through the chokepoint presents a major logistical challenge. Executives are now tasked with unwinding three months of disruption. About 500 crude tankers, container ships and commercial vessels still need to transit the strait, [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -95,7 +94,7 @@
         "domain": "agbi.com",
         "date": "2026-06-16",
         "description": "Saudi Arabia’s residential housing market cooled in the first half of this year due to the economic fallout from the Iran war, affordability pressures and a drop in mortgage issuances, new data shows. Residential transaction volumes fell by half in the first quarter compared to the same period last year, according to a survey conducted [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -104,12 +103,12 @@
     "world": [
       {
         "title": "New boost for entrepreneurs in UAE: du brings digital-first connectivity to ‘SME in a Box’ - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM1lFQmdaSzd0ajZmUXYzQzdISnRsd2tMNFlfdUNhTHctLUdFVWR1eWlHemMwdl9PdjNlTEpaZzN3a0NPcDdJVnVFVldIZGpRTnNhRzVMYzRjNGZHZ1BPX3ZWOVhteFhLZGRYRHNrd0V4S1pyTHVUUXN1RjRXOU1LODFPa1FxNkE5dTAyNUM2U1VQWm96ZFZjTVJiak5RakZQT3ZKQ2tMVmxOdS1GWTg1OHpZLUpZX3AtZzVJbkZ5VXhyVjlqUHM3Zw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYmJRLUVDeDVzNnE4eGNud2swZTV0Sy1VYVBBTGoyQVZ5azhVUTVUMEtoYlJwLUZnYkJzbEkxdVpsQkJ6a0tKSk5IYnVPQkdYZkFmNHVETThMTEhQX056VkNXakZyWGFLQXhNLVdCcWtIZFNjcmxrbzg4V0lfZGFibnVsUkZYQmtLMTBYUlQwWnhDUTEzaktZb2thbnBvcU5DcWJrTFFvSzhXeGhCQmc3REdVNy1GcVp3ZG4ySVVyVlFiTHgwZFRyQy1n?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-06-16",
         "description": "New boost for entrepreneurs in UAE: du brings digital-first connectivity to ‘SME in a Box’  Gulf Business",
-        "hoursAgo": 10,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
