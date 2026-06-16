@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-15T22:18:17.615Z",
+  "generatedAt": "2026-06-16T03:54:46.705Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 191,
-    "big4Rejected": 6,
-    "englishOnly": 172,
-    "withinRecency": 61,
-    "scored": 61,
+    "totalFetched": 170,
+    "afterDedup": 162,
+    "big4Rejected": 7,
+    "englishOnly": 155,
+    "withinRecency": 46,
+    "scored": 46,
     "passed": 5
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-15",
         "description": "The first phase of the revamped Al Maktoum International Airport in Dubai will open in 2032, according to Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum. Work on the $35 billion airport expansion continues according to the approved timeline, he said in a social media post. Contracts worth AED13 billion ($3.5 billion) are [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-15",
         "description": "Property prices in Oman jumped in the first quarter of 2026, driven by a surge in residential and industrial land values, official data shows. The residential property price index increased nearly 18 percent year on year, driven by a 21 percent gain in residential land prices, a 9 percent rise in villa prices and a [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-15",
         "description": "Qiddiya, the Saudi Public Investment Fund-backed $40 billion &#8220;city for play&#8221;, is positioning Saudi Arabia as a future destination for international tennis. Qiddiya Investment Company (QIC) has announced plans to build the National Tennis Centre within the giga-project located 45km west of Riyadh. The Middle East’s largest tennis centre, designed by US-based sports designer Populous, [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -71,7 +71,7 @@
         "domain": "agbi.com",
         "date": "2026-06-15",
         "description": "Oman’s trade with the UAE rose 13 percent to almost $3.8 billion in the first quarter of this year, making up more than a quarter (27 percent) of the sultanate’s non-oil commerce. Oman&#8217;s Gulf neighbour was its top trading partner for both imports and exports, according to Oman’s National Center for Statistical Information (NCSI). Imports [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 16,
         "score": 7,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
@@ -83,7 +83,7 @@
         "domain": "agbi.com",
         "date": "2026-06-15",
         "description": "China’s Rox Motor will produce its own branded cars in Egypt under an agreement signed with Ezz Elarab &#38; Elsewedy Capital Holding (ESAF) in Cairo. Industry minister Khaled Hashim, who oversaw the deal with Rox, said it reflects the success of the national strategy for the automotive industry in Egypt. “After years of intensive efforts [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
