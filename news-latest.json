@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-16T03:54:46.705Z",
+  "generatedAt": "2026-06-16T09:26:10.694Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,81 +14,94 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 162,
-    "big4Rejected": 7,
+    "afterDedup": 164,
+    "big4Rejected": 9,
     "englishOnly": 155,
-    "withinRecency": 46,
-    "scored": 46,
-    "passed": 5
+    "withinRecency": 49,
+    "scored": 49,
+    "passed": 6
   },
   "rooms": {
     "growth": [
       {
-        "title": "Al Maktoum airport expansion on track for 2032 opening",
-        "url": "https://www.agbi.com/construction/2026/06/al-maktoum-airport-expansion-on-track-for-2032-opening/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-15",
-        "description": "The first phase of the revamped Al Maktoum International Airport in Dubai will open in 2032, according to Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum. Work on the $35 billion airport expansion continues according to the approved timeline, he said in a social media post. Contracts worth AED13 billion ($3.5 billion) are [&#8230;]",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Infrastructure & Logistics",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Oman property prices soar as land value rises",
-        "url": "https://www.agbi.com/real-estate/2026/06/oman-property-prices-soar-as-land-value-rises/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-15",
-        "description": "Property prices in Oman jumped in the first quarter of 2026, driven by a surge in residential and industrial land values, official data shows. The residential property price index increased nearly 18 percent year on year, driven by a 21 percent gain in residential land prices, a 9 percent rise in villa prices and a [&#8230;]",
-        "hoursAgo": 21,
+        "title": "Luxury ‘heavily overused’ term in real estate, Aman CEO says as Dubai prime property buyers move beyond labels – EXCLUSIVE - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdDVQUXZJY1lRbW5vclpJcDlycjcxZW5sM2doQkVRQ2ZnSlNhMENqajRVWXBfbkpGOEdtT1VjNTk2elljVXR2T1FJMkhZRk9yQ2owbC1kN3k0UHk3dXJzYnV6cG51WV9qX1BaeDBwZGVMb0JYV1JXcHYxamwtSk0xd2xma3Z0ZjExbmdpa0J1ZHdpMHktbTY2UC1yR1Y4RWpRVlNHVWV0MmQ1Y0xENEFXT1JIYUxLTksxeGxTOTZMT25sMjcxVDBGbEJCT1k1TWtlMWhjSkhWOGM4enMtUlI1UFhCZkJGeVZ3Yl8wOQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-06-16",
+        "description": "Luxury ‘heavily overused’ term in real estate, Aman CEO says as Dubai prime property buyers move beyond labels – EXCLUSIVE  Arabian Business",
+        "hoursAgo": 1,
         "score": 6,
         "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
+    "capital": [
+      {
+        "title": "Omifco aims for $675m as Oman IPO opens",
+        "url": "https://www.agbi.com/agriculture/2026/06/omifco-aims-for-675m-as-oman-ipo-opens/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-16",
+        "description": "Oman India Fertiliser Company (Omifco) aims to raise OMR260 million ($675 million) from its IPO, which opened for subscription on Tuesday. The subscription offers 1.672 billion shares, representing 25 percent of the company’s issued share capital, according to a statement from the country’s&#160;Financial Services Authority&#160;(FSA). OQ, the state-run energy company, owns 50 percent of the [&#8230;]",
+        "hoursAgo": 0,
+        "score": 6,
+        "topic": "IPO & M&A",
         "origin": "uae-rss"
       }
     ],
-    "capital": [],
     "risk": [
       {
-        "title": "Qiddiya targets elite tennis circuits with 30-court centre",
-        "url": "https://www.agbi.com/giga-projects/2026/06/qiddiya-targets-elite-tennis-circuits-with-30-court-centre/",
+        "title": "Saudi housing sector cools as buyers wait for better times",
+        "url": "https://www.agbi.com/real-estate/2026/06/saudi-housing-sector-cools-as-buyers-wait-for-better-times/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-15",
-        "description": "Qiddiya, the Saudi Public Investment Fund-backed $40 billion &#8220;city for play&#8221;, is positioning Saudi Arabia as a future destination for international tennis. Qiddiya Investment Company (QIC) has announced plans to build the National Tennis Centre within the giga-project located 45km west of Riyadh. The Middle East’s largest tennis centre, designed by US-based sports designer Populous, [&#8230;]",
-        "hoursAgo": 14,
-        "score": 7,
+        "date": "2026-06-16",
+        "description": "Saudi Arabia’s residential housing market cooled in the first half of this year due to the economic fallout from the Iran war, affordability pressures and a drop in mortgage issuances, new data shows. Residential transaction volumes fell by half in the first quarter compared to the same period last year, according to a survey conducted [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Projects awarded in Saudi Arabia hit $8bn in May",
+        "url": "https://www.agbi.com/construction/2026/06/projects-awarded-in-saudi-arabia-hit-8bn-in-may/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-16",
+        "description": "Projects awarded in Saudi Arabia in May were worth in excess of SAR30 billion ($8 billion), more than double April’s SAR12 billion, according to a Saudi Contractors Authority (SCA) report. Despite the jump in total value, the number of contracts awarded slipped to 18 from 23 over the same period. Infrastructure accounted for 55 percent [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Tax & Regulatory",
         "origin": "uae-rss"
       }
     ],
     "world": [
       {
-        "title": "UAE strengthens position as Oman’s top trading partner",
-        "url": "https://www.agbi.com/trade/2026/06/uae-strengthens-position-as-omans-top-trading-partner/",
+        "title": "Oman’s luxury hotel segment hit by 16% fall in visitors",
+        "url": "https://www.agbi.com/tourism/2026/06/omans-luxury-hotel-segment-hit-by-16-fall-in-visitor-numbers/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-15",
-        "description": "Oman’s trade with the UAE rose 13 percent to almost $3.8 billion in the first quarter of this year, making up more than a quarter (27 percent) of the sultanate’s non-oil commerce. Oman&#8217;s Gulf neighbour was its top trading partner for both imports and exports, according to Oman’s National Center for Statistical Information (NCSI). Imports [&#8230;]",
-        "hoursAgo": 16,
+        "date": "2026-06-16",
+        "description": "Revenues at Oman’s luxury hotels dropped 12 percent year on year to OMR96 million ($250 million) by the end of April, government data shows. The number of guests staying at three- to five-star hotels declined 16 percent annually to 830,000 in the first four months of the year, the state-run&#160;Oman News Agency reported, citing the [&#8230;]",
+        "hoursAgo": 2,
         "score": 7,
-        "topic": "Oil & Energy Markets",
+        "topic": "Global Economic Signals",
         "origin": "uae-rss"
       },
       {
-        "title": "China’s Rox Motor signs deal to build cars in Egypt",
-        "url": "https://www.agbi.com/manufacturing/2026/06/chinas-rox-motor-signs-deal-to-build-cars-in-egypt/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-15",
-        "description": "China’s Rox Motor will produce its own branded cars in Egypt under an agreement signed with Ezz Elarab &#38; Elsewedy Capital Holding (ESAF) in Cairo. Industry minister Khaled Hashim, who oversaw the deal with Rox, said it reflects the success of the national strategy for the automotive industry in Egypt. “After years of intensive efforts [&#8230;]",
-        "hoursAgo": 17,
+        "title": "New boost for entrepreneurs in UAE: du brings digital-first connectivity to ‘SME in a Box’ - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYmJRLUVDeDVzNnE4eGNud2swZTV0Sy1VYVBBTGoyQVZ5azhVUTVUMEtoYlJwLUZnYkJzbEkxdVpsQkJ6a0tKSk5IYnVPQkdYZkFmNHVETThMTEhQX056VkNXakZyWGFLQXhNLVdCcWtIZFNjcmxrbzg4V0lfZGFibnVsUkZYQmtLMTBYUlQwWnhDUTEzaktZb2thbnBvcU5DcWJrTFFvSzhXeGhCQmc3REdVNy1GcVp3ZG4ySVVyVlFiTHgwZFRyQy1n?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-06-16",
+        "description": "New boost for entrepreneurs in UAE: du brings digital-first connectivity to ‘SME in a Box’  Gulf Business",
+        "hoursAgo": 3,
         "score": 6,
         "topic": "Global Economic Signals",
-        "origin": "uae-rss"
+        "origin": "google-news"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 6
 }
