@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-16T09:26:10.694Z",
+  "generatedAt": "2026-06-16T16:48:11.985Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 10,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 164,
+    "totalFetched": 180,
+    "afterDedup": 168,
     "big4Rejected": 9,
-    "englishOnly": 155,
-    "withinRecency": 49,
-    "scored": 49,
-    "passed": 6
+    "englishOnly": 158,
+    "withinRecency": 52,
+    "scored": 52,
+    "passed": 7
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-16",
         "description": "Luxury ‘heavily overused’ term in real estate, Aman CEO says as Dubai prime property buyers move beyond labels – EXCLUSIVE  Arabian Business",
-        "hoursAgo": 1,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-06-16",
         "description": "Oman India Fertiliser Company (Omifco) aims to raise OMR260 million ($675 million) from its IPO, which opened for subscription on Tuesday. The subscription offers 1.672 billion shares, representing 25 percent of the company’s issued share capital, according to a statement from the country’s&#160;Financial Services Authority&#160;(FSA). OQ, the state-run energy company, owns 50 percent of the [&#8230;]",
-        "hoursAgo": 0,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -52,56 +52,69 @@
     ],
     "risk": [
       {
+        "title": "U . S .- Iran interim deal : What could a Gulf bounce back look like ? ",
+        "url": "https://fortune.com/2026/06/16/us-iran-interim-deal-gulf-bounce-back-spacex-private-credit-firms/",
+        "source": "Fortune",
+        "domain": "fortune.com",
+        "date": "2026-06-16",
+        "description": "U . S .- Iran interim deal : What could a Gulf bounce back look like ? ",
+        "imageUrl": "https://fortune.com/img-assets/wp-content/uploads/2026/06/GettyImages-2281240082-e1781601855388.jpg",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "gdelt"
+      },
+      {
+        "title": "UAE’s 2025 tax revenue increases 15%",
+        "url": "https://www.agbi.com/tax/2026/06/uaes-2025-tax-revenue-increases-15/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-16",
+        "description": "The UAE collected more than AED46 billion ($12.5 billion) in value-added tax (VAT) and excise tax in 2025, up 15 percent from AED41 billion in 2024, the finance ministry has said. The taxes were distributed among federal and local governments, Mohamed bin Hadi Al Hussaini, minister of state for financial affairs, said in a statement. [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Shipping industry urges caution on Hormuz reopening",
+        "url": "https://www.agbi.com/shipping/2026/06/shipping-industry-urges-caution-on-hormuz-reopening/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-16",
+        "description": "The shipping industry has reacted cautiously to the US-Iran agreement to reopen the Strait of Hormuz, warning that moving hundreds of vessels through the chokepoint presents a major logistical challenge. Executives are now tasked with unwinding three months of disruption. About 500 crude tankers, container ships and commercial vessels still need to transit the strait, [&#8230;]",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Saudi housing sector cools as buyers wait for better times",
         "url": "https://www.agbi.com/real-estate/2026/06/saudi-housing-sector-cools-as-buyers-wait-for-better-times/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-16",
         "description": "Saudi Arabia’s residential housing market cooled in the first half of this year due to the economic fallout from the Iran war, affordability pressures and a drop in mortgage issuances, new data shows. Residential transaction volumes fell by half in the first quarter compared to the same period last year, according to a survey conducted [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Projects awarded in Saudi Arabia hit $8bn in May",
-        "url": "https://www.agbi.com/construction/2026/06/projects-awarded-in-saudi-arabia-hit-8bn-in-may/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-16",
-        "description": "Projects awarded in Saudi Arabia in May were worth in excess of SAR30 billion ($8 billion), more than double April’s SAR12 billion, according to a Saudi Contractors Authority (SCA) report. Despite the jump in total value, the number of contracts awarded slipped to 18 from 23 over the same period. Infrastructure accounted for 55 percent [&#8230;]",
-        "hoursAgo": 4,
-        "score": 6,
-        "topic": "Tax & Regulatory",
         "origin": "uae-rss"
       }
     ],
     "world": [
       {
-        "title": "Oman’s luxury hotel segment hit by 16% fall in visitors",
-        "url": "https://www.agbi.com/tourism/2026/06/omans-luxury-hotel-segment-hit-by-16-fall-in-visitor-numbers/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-16",
-        "description": "Revenues at Oman’s luxury hotels dropped 12 percent year on year to OMR96 million ($250 million) by the end of April, government data shows. The number of guests staying at three- to five-star hotels declined 16 percent annually to 830,000 in the first four months of the year, the state-run&#160;Oman News Agency reported, citing the [&#8230;]",
-        "hoursAgo": 2,
-        "score": 7,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
         "title": "New boost for entrepreneurs in UAE: du brings digital-first connectivity to ‘SME in a Box’ - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYmJRLUVDeDVzNnE4eGNud2swZTV0Sy1VYVBBTGoyQVZ5azhVUTVUMEtoYlJwLUZnYkJzbEkxdVpsQkJ6a0tKSk5IYnVPQkdYZkFmNHVETThMTEhQX056VkNXakZyWGFLQXhNLVdCcWtIZFNjcmxrbzg4V0lfZGFibnVsUkZYQmtLMTBYUlQwWnhDUTEzaktZb2thbnBvcU5DcWJrTFFvSzhXeGhCQmc3REdVNy1GcVp3ZG4ySVVyVlFiTHgwZFRyQy1n?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM1lFQmdaSzd0ajZmUXYzQzdISnRsd2tMNFlfdUNhTHctLUdFVWR1eWlHemMwdl9PdjNlTEpaZzN3a0NPcDdJVnVFVldIZGpRTnNhRzVMYzRjNGZHZ1BPX3ZWOVhteFhLZGRYRHNrd0V4S1pyTHVUUXN1RjRXOU1LODFPa1FxNkE5dTAyNUM2U1VQWm96ZFZjTVJiak5RakZQT3ZKQ2tMVmxOdS1GWTg1OHpZLUpZX3AtZzVJbkZ5VXhyVjlqUHM3Zw?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-06-16",
         "description": "New boost for entrepreneurs in UAE: du brings digital-first connectivity to ‘SME in a Box’  Gulf Business",
-        "hoursAgo": 3,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 7
 }
