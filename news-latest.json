@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-17T15:23:40.572Z",
+  "generatedAt": "2026-06-17T18:15:06.934Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 22,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 192,
-    "afterDedup": 175,
+    "totalFetched": 170,
+    "afterDedup": 166,
     "big4Rejected": 8,
-    "englishOnly": 166,
-    "withinRecency": 59,
-    "scored": 59,
+    "englishOnly": 158,
+    "withinRecency": 53,
+    "scored": 53,
     "passed": 7
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-06-17",
         "description": "Bahrain-based Investcorp has acquired what it calls a “strategic” stake in Metra, a UAE-headquartered IT distributor. The deal is the fourth investment by the Investcorp Saudi Pre-IPO Growth Fund, the alternative investment company said in a statement. Financial terms were not disclosed. The partnership supports the expansion of Metra, a third-generation family business, across the [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-06-17",
         "description": "Oil production and exports from GCC countries will recover gradually if the US-Iran peace deal holds, potentially creating a significant surplus in 2027, the International Energy Agency (IEA) said. Oil supplies are expected to surge by about 8 million barrels per day (bpd) to 110 million bpd, leading to a “significant overhang emerging next year,” [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-17",
         "description": "Australia has eased its travel advice for four GCC countries following the signing of a peace deal by the US and Iran. Travel advice for the UAE, Bahrain, Kuwait and Qatar has been lowered from Level 4 &#8220;Do not travel&#8221; to Level 3 &#8220;Reconsider your need to travel&#8221;, Australia’s foreign affairs minister Penny Wong said. [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -69,7 +69,7 @@
         "domain": "cnbc.com",
         "date": "2026-06-17",
         "description": "Strait of Hormuz threat level downgraded after Iran deal, says U.S.-led maritime security group  CNBC",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -81,7 +81,7 @@
         "domain": "agbi.com",
         "date": "2026-06-17",
         "description": "One of Dubai’s largest free zones has continued to attract new businesses during the Iran conflict, with companies from Europe, the UK and India choosing to set up there despite regional instability, according to its chair. Ahmed Bin Sulayem, executive chair and chief executive of the Dubai Multi Commodities Centre (DMCC), said company registrations fell [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -93,7 +93,7 @@
         "domain": "agbi.com",
         "date": "2026-06-17",
         "description": "Emirates has launched travel insurance covering conflict-related disruption, becoming the first major carrier to offer protection against a risk that has reshaped travel to and through the Middle East since the US-Israeli war with Iran began in February. The Dubai-based carrier said the policy, developed with insurer Travel Guard, includes medical cover for conflict-related incidents, [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -107,7 +107,7 @@
         "domain": "agbi.com",
         "date": "2026-06-17",
         "description": "Dubai’s DP World is in talks to develop and operate a container terminal in the US, its first in two decades. The negotiation period will focus on terminal design, capacity planning and investment structure, the global ports operator said in a statement. It would be DP World’s first container terminal development on the US Gulf [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
