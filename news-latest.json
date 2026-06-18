@@ -1,57 +1,94 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-18T08:46:17.848Z",
+  "generatedAt": "2026-06-18T15:20:16.939Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
-    "googleNews": 150,
+    "gdelt": 11,
+    "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 204,
+    "totalFetched": 171,
+    "afterDedup": 163,
     "big4Rejected": 10,
-    "englishOnly": 174,
-    "withinRecency": 71,
-    "scored": 71,
-    "passed": 2
+    "englishOnly": 153,
+    "withinRecency": 61,
+    "scored": 61,
+    "passed": 5
   },
   "rooms": {
     "growth": [],
-    "capital": [],
+    "capital": [
+      {
+        "title": "Emirates NBD shares gain after upping RBL Bank holding to 60%",
+        "url": "https://www.agbi.com/banking-finance/2026/06/emirates-nbd-shares-gain-after-upping-rbl-bank-holding-to-60/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-18",
+        "description": "Shares in Emirates NBD, Dubai’s largest bank by assets,&#160;rose more than 7 percent on Thursday after it completed the acquisition of a majority stake in RBL Bank, an Indian private lender. The share price closed at AED32.4, according to Dubai Financial Market data, compared with a 3.4 percent gain in the emirate&#8217;s financial subindex. Following [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "IPO & M&A",
+        "origin": "uae-rss"
+      }
+    ],
     "risk": [
       {
-        "title": "Strait of Hormuz threat level downgraded after Iran deal, says U.S.-led maritime security group - CNBC",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNU2IzR2MyWnBEM3d3TDh0cjhpM3h2T1c1ZU5sQWpabDhqRFU2RmF0VVZRMXNOUjlXUFBsWmVHNjMzYTI5QWgwd0VUNnFHcU9JTVhwTUNzRUIyeFZ3ZWxxTGRXaGtjNGIyQXNNclF5ZkVxZ19zdXBSRUZ2TF92UHJXMFlJLVbSAYoBQVVfeXFMTzltVHJGMnlSSk1Vbk41aGVpMF82T2pmME9GaHhoak1MRWJnU3huakNWdGlzcDdIcUdEOTZGR1h2dnQzSWNIbzVGNFRrM1d6MzFVVVBzVkotaS1sLUo3NWl6TTBUemQ2Tm9Cb210LWwzelNrUzlOY01HY1dXTkpPRUtyQ0hqZzJTWE1n?oc=5",
-        "source": "CNBC",
-        "domain": "cnbc.com",
-        "date": "2026-06-17",
-        "description": "Strait of Hormuz threat level downgraded after Iran deal, says U.S.-led maritime security group  CNBC",
-        "hoursAgo": 19,
+        "title": "Three Saudi-flagged supertankers sail through Hormuz after Iran deal signed, data shows - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOWdZLXp2TVRxbkY3elZISTVjUE15c3EtXy1LM1pCbWlGWDVGUGxOYnlHNlpBTkExeDlpUFRsaERpNHBpNFdhTG81TDdOaVB3NlRTVjVOX3lrZmtGVHZDamFDR3hFS3FsaGw5SElCUGFqaVdKMktUd1FnZ1hzR1ZNS19fRjFHQVY2XzBEc0s2LWR6aHk2OUZGN2dSdEZJMTBtdzdiRTdNOW4zQ1FZRnFSVVVGa1pNSVJUdVkwa3RNckhCMWJGQzlMSExXMjc5WkE?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
+        "date": "2026-06-18",
+        "description": "Three Saudi-flagged supertankers sail through Hormuz after Iran deal signed, data shows  Reuters",
+        "hoursAgo": 1,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
+      },
+      {
+        "title": "Qatar Airways is back to 85% of pre-war capacity",
+        "url": "https://www.agbi.com/aviation/2026/06/qatar-airways-is-back-to-85-of-pre-war-capacity/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-18",
+        "description": "Qatar Airways has restored 85 percent of its network capacity after the Iran war grounded many of its flights. The airline&#8217;s summer 2026 schedule begins this week and will see the state-backed carrier operate 140 daily departures from Doha to more than 160 global destinations, it said in a statement. Earlier this month, Qatar Airways [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "PIF governor promises new oil storage and criticises EU law",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/pif-governor-promises-new-oil-storage-and-criticises-eu-law/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-18",
+        "description": "Saudi Aramco plans to expand its international oil storage facilities in response to oil market turbulence and the Iran war, its chairman said. Speaking at an investment event in Rome today, Yasir Al-Rumayyan said the state-owned oil company remained resilient throughout the recent regional conflict partly because of its existing storage facilities. “Aramco has storage [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
       }
     ],
     "world": [
       {
-        "title": "DP World in talks to run first US container port in decades",
-        "url": "https://www.agbi.com/logistics/2026/06/dp-world-in-talks-to-run-first-us-container-port-in-decades/",
+        "title": "UAE bans children under 15 from using social media",
+        "url": "https://www.agbi.com/media/2026/06/uae-bans-children-under-15-from-using-social-media/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-17",
-        "description": "Dubai’s DP World is in talks to develop and operate a container terminal in the US, its first in two decades. The negotiation period will focus on terminal design, capacity planning and investment structure, the global ports operator said in a statement. It would be DP World’s first container terminal development on the US Gulf [&#8230;]",
-        "hoursAgo": 18,
+        "date": "2026-06-18",
+        "description": "The UAE has become the first Arab country to introduce social media restrictions for children. The Emirates has set a minimum age of 15 for social media use, creating a new framework to protect children online, state-run news agency Wam reported. A resolution approved by UAE vice president and prime minister Sheikh Mohammed bin Rashid [&#8230;]",
+        "hoursAgo": 2,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 5
 }
