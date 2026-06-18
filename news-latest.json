@@ -1,42 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-18T18:25:53.137Z",
+  "generatedAt": "2026-06-18T22:06:50.394Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 213,
+    "totalFetched": 170,
+    "afterDedup": 161,
     "big4Rejected": 10,
-    "englishOnly": 182,
-    "withinRecency": 83,
-    "scored": 83,
+    "englishOnly": 151,
+    "withinRecency": 53,
+    "scored": 53,
     "passed": 5
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "GCC Economy to Contract in 2026 Then Surge 8 . 1 % in 2027 as Energy Routes , Tourism and Investment Recover : ICAEW – Oxford Economics Report",
-        "url": "https://gulfnews.com/business/economy/gcc-economy-to-shrink-in-2026-before-81-growth-rebound-in-2027-report-says-1.500577378",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-06-18",
-        "description": "GCC Economy to Contract in 2026 Then Surge 8 . 1 % in 2027 as Energy Routes , Tourism and Investment Recover : ICAEW – Oxford Economics Report",
-        "imageUrl": "https://media.assettype.com/gulfnews%2F2025-08-14%2Fwgk6ehtl%2FSTOCK-DUBAI-SKYLINE-UAE-ECONOMY-1.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 14,
-        "score": 6,
-        "topic": "Consumer & Retail",
-        "origin": "gdelt"
-      }
-    ],
+    "growth": [],
     "capital": [
       {
         "title": "Emirates NBD shares gain after upping RBL Bank holding to 60%",
@@ -45,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-06-18",
         "description": "Shares in Emirates NBD, Dubai’s largest bank by assets,&#160;rose more than 7 percent on Thursday after it completed the acquisition of a majority stake in RBL Bank, an Indian private lender. The share price closed at AED32.4, according to Dubai Financial Market data, compared with a 3.4 percent gain in the emirate&#8217;s financial subindex. Following [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -59,7 +45,7 @@
         "domain": "reuters.com",
         "date": "2026-06-18",
         "description": "Three Saudi-flagged supertankers sail through Hormuz after Iran deal signed, data shows  Reuters",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -71,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-18",
         "description": "Qatar Airways has restored 85 percent of its network capacity after the Iran war grounded many of its flights. The airline&#8217;s summer 2026 schedule begins this week and will see the state-backed carrier operate 140 daily departures from Doha to more than 160 global destinations, it said in a statement. Earlier this month, Qatar Airways [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -83,13 +69,26 @@
         "domain": "agbi.com",
         "date": "2026-06-18",
         "description": "Saudi Aramco plans to expand its international oil storage facilities in response to oil market turbulence and the Iran war, its chairman said. Speaking at an investment event in Rome today, Yasir Al-Rumayyan said the state-owned oil company remained resilient throughout the recent regional conflict partly because of its existing storage facilities. “Aramco has storage [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE bans children under 15 from using social media",
+        "url": "https://www.agbi.com/media/2026/06/uae-bans-children-under-15-from-using-social-media/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-18",
+        "description": "The UAE has become the first Arab country to introduce social media restrictions for children. The Emirates has set a minimum age of 15 for social media use, creating a new framework to protect children online, state-run news agency Wam reported. A resolution approved by UAE vice president and prime minister Sheikh Mohammed bin Rashid [&#8230;]",
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      }
+    ]
   },
   "totalCount": 5
 }
