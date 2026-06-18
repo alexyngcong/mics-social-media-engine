@@ -1,55 +1,30 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-18T03:43:26.073Z",
+  "generatedAt": "2026-06-18T08:46:17.848Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 100,
-    "googleNews": 140,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 197,
-    "big4Rejected": 8,
-    "englishOnly": 169,
-    "withinRecency": 70,
-    "scored": 70,
-    "passed": 6
+    "totalFetched": 270,
+    "afterDedup": 204,
+    "big4Rejected": 10,
+    "englishOnly": 174,
+    "withinRecency": 71,
+    "scored": 71,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Investcorp takes stake in UAE IT distributor Metra",
-        "url": "https://www.agbi.com/tech/2026/06/investcorp-takes-stake-in-uae-it-distributor-metra/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-17",
-        "description": "Bahrain-based Investcorp has acquired what it calls a “strategic” stake in Metra, a UAE-headquartered IT distributor. The deal is the fourth investment by the Investcorp Saudi Pre-IPO Growth Fund, the alternative investment company said in a statement. Financial terms were not disclosed. The partnership supports the expansion of Metra, a third-generation family business, across the [&#8230;]",
-        "hoursAgo": 14,
-        "score": 7,
-        "topic": "IPO & M&A",
-        "origin": "uae-rss"
-      }
-    ],
+    "capital": [],
     "risk": [
-      {
-        "title": "IEA sees 2027 oil surplus after Hormuz recovery",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/higher-gcc-oil-output-may-create-surplus-next-year-says-iea/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-17",
-        "description": "Oil production and exports from GCC countries will recover gradually if the US-Iran peace deal holds, potentially creating a significant surplus in 2027, the International Energy Agency (IEA) said. Oil supplies are expected to surge by about 8 million barrels per day (bpd) to 110 million bpd, leading to a “significant overhang emerging next year,” [&#8230;]",
-        "hoursAgo": 15,
-        "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
       {
         "title": "Strait of Hormuz threat level downgraded after Iran deal, says U.S.-led maritime security group - CNBC",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNU2IzR2MyWnBEM3d3TDh0cjhpM3h2T1c1ZU5sQWpabDhqRFU2RmF0VVZRMXNOUjlXUFBsWmVHNjMzYTI5QWgwd0VUNnFHcU9JTVhwTUNzRUIyeFZ3ZWxxTGRXaGtjNGIyQXNNclF5ZkVxZ19zdXBSRUZ2TF92UHJXMFlJLVbSAYoBQVVfeXFMTzltVHJGMnlSSk1Vbk41aGVpMF82T2pmME9GaHhoak1MRWJnU3huakNWdGlzcDdIcUdEOTZGR1h2dnQzSWNIbzVGNFRrM1d6MzFVVVBzVkotaS1sLUo3NWl6TTBUemQ2Tm9Cb210LWwzelNrUzlOY01HY1dXTkpPRUtyQ0hqZzJTWE1n?oc=5",
@@ -57,34 +32,10 @@
         "domain": "cnbc.com",
         "date": "2026-06-17",
         "description": "Strait of Hormuz threat level downgraded after Iran deal, says U.S.-led maritime security group  CNBC",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
-      },
-      {
-        "title": "&#8216;War opened doors for us&#8217;, says Dubai trade chief",
-        "url": "https://www.agbi.com/trade/2026/06/war-opened-doors-for-us-says-dubai-trade-chief/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-17",
-        "description": "One of Dubai’s largest free zones has continued to attract new businesses during the Iran conflict, with companies from Europe, the UK and India choosing to set up there despite regional instability, according to its chair. Ahmed Bin Sulayem, executive chair and chief executive of the Dubai Multi Commodities Centre (DMCC), said company registrations fell [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Emirates launches conflict-related travel insurance",
-        "url": "https://www.agbi.com/aviation/2026/06/emirates-launches-conflict-related-travel-insurance/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-17",
-        "description": "Emirates has launched travel insurance covering conflict-related disruption, becoming the first major carrier to offer protection against a risk that has reshaped travel to and through the Middle East since the US-Israeli war with Iran began in February. The Dubai-based carrier said the policy, developed with insurer Travel Guard, includes medical cover for conflict-related incidents, [&#8230;]",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
       }
     ],
     "world": [
@@ -95,12 +46,12 @@
         "domain": "agbi.com",
         "date": "2026-06-17",
         "description": "Dubai’s DP World is in talks to develop and operate a container terminal in the US, its first in two decades. The negotiation period will focus on terminal design, capacity planning and investment structure, the global ports operator said in a statement. It would be DP World’s first container terminal development on the US Gulf [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 2
 }
