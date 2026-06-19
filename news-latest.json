@@ -1,37 +1,62 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-19T04:07:04.936Z",
+  "generatedAt": "2026-06-19T12:05:11.599Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 30,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 200,
-    "afterDedup": 187,
-    "big4Rejected": 7,
-    "englishOnly": 179,
-    "withinRecency": 74,
-    "scored": 74,
+    "totalFetched": 181,
+    "afterDedup": 175,
+    "big4Rejected": 9,
+    "englishOnly": 164,
+    "withinRecency": 59,
+    "scored": 59,
     "passed": 6
   },
   "rooms": {
-    "growth": [],
-    "capital": [
+    "growth": [
       {
-        "title": "Emirates NBD shares gain after upping RBL Bank holding to 60%",
-        "url": "https://www.agbi.com/banking-finance/2026/06/emirates-nbd-shares-gain-after-upping-rbl-bank-holding-to-60/",
+        "title": "UAE’s Altérra enters Latin America with Peru investment",
+        "url": "https://www.agbi.com/renewable-energy/2026/06/uaes-alterra-enters-latin-america-with-peru-investment/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-18",
-        "description": "Shares in Emirates NBD, Dubai’s largest bank by assets,&#160;rose more than 7 percent on Thursday after it completed the acquisition of a majority stake in RBL Bank, an Indian private lender. The share price closed at AED32.4, according to Dubai Financial Market data, compared with a 3.4 percent gain in the emirate&#8217;s financial subindex. Following [&#8230;]",
-        "hoursAgo": 16,
+        "date": "2026-06-19",
+        "description": "Altérra, the UAE’s $30 billion climate investment fund, has bought into Inkia Energy, Peru’s largest independent power producer, as the Gulf entity seeks to expand its global portfolio. This is Altérra’s first direct investment in Latin America, completed through a fund managed by US private equity firm I Squared Capital and the Canada Pension Plan Investment [&#8230;]",
+        "hoursAgo": 6,
+        "score": 8,
+        "topic": "Investment & Funding",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Amanat completes buyout of Cambridge Health Group",
+        "url": "https://www.agbi.com/health/2026/06/amanat-completes-buyout-of-cambridge-health-group/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-19",
+        "description": "Amanat Holdings, a Dubai-listed investment company, has taken full ownership of Cambridge Health Group (CHG) after acquiring the remaining 10.03 percent stake in the company for AED105 million ($28.6 million). The move will accelerate CHG’s expansion to more than 1,000 beds across GCC countries from the current 700, Dubai Financial Market-listed Amanat said in a [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Business Expansion",
+        "origin": "uae-rss"
+      }
+    ],
+    "capital": [
+      {
+        "title": "Turkey clears Uber takeover of Getir&#8217;s delivery arm",
+        "url": "https://www.agbi.com/retail/2026/06/turkey-clears-uber-takeover-of-getirs-delivery-arm/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-19",
+        "description": "The Turkish competition authority has cleared Uber’s acquisition of Getir’s delivery business from Mubadala, the Abu Dhabi wealth fund and controlling shareholder, according to a&#160;statement. Uber&#160;agreed&#160;in February to buy Getir’s delivery arm, expanding its Turkish footprint. New York Stock Exchange-listed Uber plans to combine Getir with Turkey’s Trendyol Go. The company said the deal would [&#8230;]",
+        "hoursAgo": 3,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -39,68 +64,43 @@
     ],
     "risk": [
       {
+        "title": "Kuwait to increase oil output and cancel force majeure",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/kuwait-to-increase-oil-output-and-lift-force-majeure-notices/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-19",
+        "description": "Kuwait is increasing oil production as an interim US-Iran peace deal begins a reopening of the Strait of Hormuz. Kuwait Petroleum Corporation aims to ramp up production to 2 million barrels per day within a week, coinciding with the unblocking of the waterway, state-owned Kuna news agency reported, quoting KPC CEO Sheikh Nawaf Saud Al-Sabah. [&#8230;]",
+        "hoursAgo": 5,
+        "score": 8,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Three Saudi-flagged supertankers sail through Hormuz after Iran deal signed, data shows - Reuters",
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOWdZLXp2TVRxbkY3elZISTVjUE15c3EtXy1LM1pCbWlGWDVGUGxOYnlHNlpBTkExeDlpUFRsaERpNHBpNFdhTG81TDdOaVB3NlRTVjVOX3lrZmtGVHZDamFDR3hFS3FsaGw5SElCUGFqaVdKMktUd1FnZ1hzR1ZNS19fRjFHQVY2XzBEc0s2LWR6aHk2OUZGN2dSdEZJMTBtdzdiRTdNOW4zQ1FZRnFSVVVGa1pNSVJUdVkwa3RNckhCMWJGQzlMSExXMjc5WkE?oc=5",
         "source": "Reuters",
         "domain": "reuters.com",
         "date": "2026-06-18",
         "description": "Three Saudi-flagged supertankers sail through Hormuz after Iran deal signed, data shows  Reuters",
-        "hoursAgo": 13,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       },
       {
-        "title": "Domestic holidays kept Saudi tourism hot during war",
-        "url": "https://www.agbi.com/tourism/2026/06/domestic-visitors-boost-saudi-tourism-during-war/",
+        "title": "Arab countries make up almost half of Egypt’s food exports",
+        "url": "https://www.agbi.com/industry/2026/06/arab-countries-make-up-almost-half-of-egypts-food-exports/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-19",
-        "description": "Saudi Arabia’s tourism minister and executives behind the kingdom’s giga-projects said visitor numbers stayed resilient throughout the Iran war, largely because domestic tourism increased. Speaking at the Future Investment Initiative Priority in Rome this week, Ahmed Al-Khateeb said the country had a very strong first quarter and that Red Sea resorts were fully booked over [&#8230;]",
+        "description": "Arab countries were the top destination for Egyptian processed food exports in the first four months of 2026, accounting for nearly half of total shipments, the Food Export Council (FEC) said. Exports to Arab countries rose 5 percent year on year to $1.1 billion between January and April. This came despite the Middle East being [&#8230;]",
         "hoursAgo": 3,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Qatar Airways is back to 85% of pre-war capacity",
-        "url": "https://www.agbi.com/aviation/2026/06/qatar-airways-is-back-to-85-of-pre-war-capacity/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-18",
-        "description": "Qatar Airways has restored 85 percent of its network capacity after the Iran war grounded many of its flights. The airline&#8217;s summer 2026 schedule begins this week and will see the state-backed carrier operate 140 daily departures from Doha to more than 160 global destinations, it said in a statement. Earlier this month, Qatar Airways [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "PIF governor promises new oil storage and criticises EU law",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/pif-governor-promises-new-oil-storage-and-criticises-eu-law/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-18",
-        "description": "Saudi Aramco plans to expand its international oil storage facilities in response to oil market turbulence and the Iran war, its chairman said. Speaking at an investment event in Rome today, Yasir Al-Rumayyan said the state-owned oil company remained resilient throughout the recent regional conflict partly because of its existing storage facilities. “Aramco has storage [&#8230;]",
-        "hoursAgo": 17,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
-    "world": [
-      {
-        "title": "UAE bans children under 15 from using social media",
-        "url": "https://www.agbi.com/media/2026/06/uae-bans-children-under-15-from-using-social-media/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-18",
-        "description": "The UAE has become the first Arab country to introduce social media restrictions for children. The Emirates has set a minimum age of 15 for social media use, creating a new framework to protect children online, state-run news agency Wam reported. A resolution approved by UAE vice president and prime minister Sheikh Mohammed bin Rashid [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      }
-    ]
+    "world": []
   },
   "totalCount": 6
 }
