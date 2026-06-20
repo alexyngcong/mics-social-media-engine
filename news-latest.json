@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-20T03:30:34.961Z",
+  "generatedAt": "2026-06-20T07:49:13.635Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 167,
-    "big4Rejected": 8,
-    "englishOnly": 159,
-    "withinRecency": 51,
-    "scored": 51,
+    "afterDedup": 166,
+    "big4Rejected": 9,
+    "englishOnly": 157,
+    "withinRecency": 50,
+    "scored": 50,
     "passed": 6
   },
   "rooms": {
@@ -30,8 +30,8 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Altérra, the UAE’s $30 billion climate investment fund, has bought into Inkia Energy, Peru’s largest independent power producer, as the Gulf entity seeks to expand its global portfolio. This is Altérra’s first direct investment in Latin America, completed through a fund managed by US private equity firm I Squared Capital and the Canada Pension Plan Investment [&#8230;]",
-        "hoursAgo": 21,
-        "score": 8,
+        "hoursAgo": 25,
+        "score": 7.5,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
       },
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Amanat Holdings, a Dubai-listed investment company, has taken full ownership of Cambridge Health Group (CHG) after acquiring the remaining 10.03 percent stake in the company for AED105 million ($28.6 million). The move will accelerate CHG’s expansion to more than 1,000 beds across GCC countries from the current 700, Dubai Financial Market-listed Amanat said in a [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "The Turkish competition authority has cleared Uber’s acquisition of Getir’s delivery business from Mubadala, the Abu Dhabi wealth fund and controlling shareholder, according to a&#160;statement. Uber&#160;agreed&#160;in February to buy Getir’s delivery arm, expanding its Turkish footprint. New York Stock Exchange-listed Uber plans to combine Getir with Turkey’s Trendyol Go. The company said the deal would [&#8230;]",
-        "hoursAgo": 18,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "uae-rss"
@@ -70,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Digital banking giant Revolut has secured regulatory approval to launch in the UAE, marking a significant step in its expansion across the Gulf and wider Middle East. The company said it has received so-called stored value facilities and retail payment services licences from the UAE Central Bank (CBUAE), completing a regulatory process that began with [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 8,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -82,8 +82,8 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Kuwait is increasing oil production as an interim US-Iran peace deal begins a reopening of the Strait of Hormuz. Kuwait Petroleum Corporation aims to ramp up production to 2 million barrels per day within a week, coinciding with the unblocking of the waterway, state-owned Kuna news agency reported, quoting KPC CEO Sheikh Nawaf Saud Al-Sabah. [&#8230;]",
-        "hoursAgo": 20,
-        "score": 8,
+        "hoursAgo": 25,
+        "score": 7.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
@@ -94,7 +94,7 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Arab countries were the top destination for Egyptian processed food exports in the first four months of 2026, accounting for nearly half of total shipments, the Food Export Council (FEC) said. Exports to Arab countries rose 5 percent year on year to $1.1 billion between January and April. This came despite the Middle East being [&#8230;]",
-        "hoursAgo": 18,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
