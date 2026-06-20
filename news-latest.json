@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-20T10:32:23.196Z",
+  "generatedAt": "2026-06-20T13:58:47.601Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 167,
+    "totalFetched": 160,
+    "afterDedup": 159,
     "big4Rejected": 10,
-    "englishOnly": 157,
+    "englishOnly": 149,
     "withinRecency": 46,
     "scored": 46,
     "passed": 3
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Altérra, the UAE’s $30 billion climate investment fund, has bought into Inkia Energy, Peru’s largest independent power producer, as the Gulf entity seeks to expand its global portfolio. This is Altérra’s first direct investment in Latin America, completed through a fund managed by US private equity firm I Squared Capital and the Canada Pension Plan Investment [&#8230;]",
-        "hoursAgo": 28,
+        "hoursAgo": 31,
         "score": 7.5,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
@@ -45,8 +45,8 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Digital banking giant Revolut has secured regulatory approval to launch in the UAE, marking a significant step in its expansion across the Gulf and wider Middle East. The company said it has received so-called stored value facilities and retail payment services licences from the UAE Central Bank (CBUAE), completing a regulatory process that began with [&#8230;]",
-        "hoursAgo": 21,
-        "score": 8,
+        "hoursAgo": 25,
+        "score": 7.5,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
       },
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-19",
         "description": "Kuwait is increasing oil production as an interim US-Iran peace deal begins a reopening of the Strait of Hormuz. Kuwait Petroleum Corporation aims to ramp up production to 2 million barrels per day within a week, coinciding with the unblocking of the waterway, state-owned Kuna news agency reported, quoting KPC CEO Sheikh Nawaf Saud Al-Sabah. [&#8230;]",
-        "hoursAgo": 27,
+        "hoursAgo": 31,
         "score": 7.5,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
