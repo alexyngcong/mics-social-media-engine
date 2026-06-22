@@ -1,55 +1,55 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-22T13:34:11.035Z",
+  "generatedAt": "2026-06-22T19:24:22.013Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 16,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
+    "totalFetched": 186,
     "afterDedup": 166,
-    "big4Rejected": 5,
-    "englishOnly": 161,
-    "withinRecency": 48,
-    "scored": 48,
-    "passed": 4
+    "big4Rejected": 8,
+    "englishOnly": 157,
+    "withinRecency": 59,
+    "scored": 59,
+    "passed": 7
   },
   "rooms": {
     "growth": [],
     "capital": [
       {
-        "title": "MoHRE warns UAE firms ahead of Emiratisation deadline - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMlRyNzNGU1VzMFUxVHBldmVnbFNYVG11aHRiOFVYT1dfZWdDVzQ1MVAxbUZpWkxYeU9sY2pJMkFuZ3ZQcUQ0RjlRX01mTDVXMEJCZEZEd1daQndNZXpJOU5XakdTdHloY19qLTBjWWQzdGgwd0Vkbk1vUkhMR3lyTGYxSlJjc204bVotVmh2VHJNTmdh0gGkAUFVX3lxTFB0UGF2VVNvMlg1YU9od0tuMWU2a1hrZ2tFcjRhNzFsWkJsNU1EOXdubTBvb1hJZ3U5YmxhRnhWdHM3bXJTcE1tWlJIOU03VHdMOHpLc0tKOEh0bXAxWnV4SnppQnExNTFMaWRnMzZIcGtwbU1KVUhWdHQxMUNIRlBlVHJtTU0wdHBsU3dfU1JEVVpFMGFaRzB3ZkpoNERxZTVaLWdU?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
+        "title": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxON05pWXlFTWVaa1F1YlQ2ZzVkVmNpZUdtY0lBaE9WbWJjR3hNR0FJRnJzWG51M1c1RkNwd3U4T0NSMGJOd0lqcGJWR25DSTlUZ3l4UDdmZmlXTm45SmtpMFpDUXUxcXhSZEx2NE9aMUphaUZ1NV9EUE1oQW1Wb1l4aDhtbHFHM0gzUjFFV2NWQkJyTFpiRFNKdnlVbmNnUkRDcWdleGdtV09EMnAwMDlGUU5DVWwzcXBrS1ZFMzlR?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
         "date": "2026-06-22",
-        "description": "MoHRE warns UAE firms ahead of Emiratisation deadline  Gulf News",
-        "hoursAgo": 6,
+        "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
+        "hoursAgo": 1,
         "score": 7,
-        "topic": "Workforce & HR",
-        "origin": "google-news"
-      },
-      {
-        "title": "MoHRE confirms 30 June deadline for private sector Emiratisation targets - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbXg3clhUVUx6dWdwUkhoQlpQZVB5eGtnMGRBRjE3OEhLbEFybVRqWGR1Tml1TDV0U2NOUERWRGxZbWFXeGRsVS0yVXo3dHFTaTI0a3VuNEJFcDdPeDFGZ3lDQ21sc2NYZ3hJektMVFdPSEdXMWZYWkV4ZTZjdVVraXZ5TGRjanlrNUtFald6VzlZNFB5d3dnRU5QSXRwX2ZBY2NMOFlQbEFwOWFuM2fSAcgBQVVfeXFMTUpzNFRPbUFYbFA2czhZbU8zWHNKOUFSMmJHeUxORWdpNXl6dGgweDJkRjdVLUdGMV96Nk9qWGI2UlVDU09ocHFJV1Ztak9PSEdaSGhyWHlRZHYxSVQ4Wk5OUkJ6cUZ0bnZTTVVlWERvOWRGRGJMTlRjS3BiTVlQMGFnajhkLTk2d2tWTGJPb1gwMDVSWmVKWl9SQWNLUE5yQW9LRHNMUVV3WmVxaElxRlhuanFVVTFFclRUdERuekpCU2hDMklkbW0?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-06-22",
-        "description": "MoHRE confirms 30 June deadline for private sector Emiratisation targets  Emirates 24|7",
-        "hoursAgo": 6,
-        "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
     "risk": [
+      {
+        "title": "MoHRE Warns UAE Firms Ahead Of Emiratisation Deadline - MEP Middle East",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQak9wWDdMVlNHODRNTEZCczAxSGZVN3JfX2lCUmxjNWlPdEFoSzNoMnNyMkpzQmJneTlBb1dvanhLc2VXWV9fMW1XUVJhb2I4c1p4dVNVYXVXZmRITUZzMW81ZUEtMnB6MG9LdW85NkdJTllxMzNxU29WNS1LOWdYNGZ3TE84YVFyRXBKQ1V0eGs0UQ?oc=5",
+        "source": "MEP Middle East",
+        "domain": "mepmiddleeast.com",
+        "date": "2026-06-22",
+        "description": "MoHRE Warns UAE Firms Ahead Of Emiratisation Deadline  MEP Middle East",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
       {
         "title": "UAE issues fresh Emiratisation warning ahead of next deadline - Arabian Business",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4ySmN3ZWVuRThYZFJIUmFBLXdvSjBYQTJGTGZNcDJ6aHM4ZnNDaHJCSlZTcWFlMmdqWkJIcXFtVnNZdWhJc0lqNlhRZ0Z2TDJTNE9JRU95N25WMWxrN2EyQVFEV21LUkUxdVFZNEt1d2hrLWp5X3p6bw?oc=5",
@@ -57,13 +57,49 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-22",
         "description": "UAE issues fresh Emiratisation warning ahead of next deadline  Arabian Business",
-        "hoursAgo": 3,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Emerging Risks",
         "origin": "google-news"
+      },
+      {
+        "title": "Abu Dhabi’s economic licences increase in first quarter",
+        "url": "https://www.agbi.com/finance/2026/06/abu-dhabis-economic-licences-increase-in-first-quarter/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-22",
+        "description": "The number of new economic licences issued in the emirate of Abu Dhabi jumped by more than one fifth year on year in the first quarter of 2026 despite the Iran war, according to official government data. Al Ain had the largest increase, by 58 percent, followed by a 28 percent rise in Al Dhafra [&#8230;]",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
       }
     ],
     "world": [
+      {
+        "title": "Kingdom Holding to pay $266m in interim dividend",
+        "url": "https://www.agbi.com/markets/2026/06/kingdom-holding-to-pay-266m-in-interim-dividend/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-22",
+        "description": "Saudi Arabia’s&#160;Kingdom Holding Company (KHC), majority owned by Prince Alwaleed bin Talal,&#160;said it will pay an interim cash dividend of SAR1 billion ($266.40 million) for the first half of 2026. The interim dividend will be in addition to the annual cash dividend of SAR1.3 billion or SAR0.28 per share for 2025, which shareholders approved on [&#8230;]",
+        "hoursAgo": 5,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcnYtSTNZLUY0T0xwbG1ZYTF5TEpwTDMwQTRMUUZsOHN0WnNEOVR1d1NRVXp1bHdZS1F0bWRvQmdhenE5NU5oaGRlUW5TM25CcHJ3bFRCX1BuZmN5VjFRaGJ1VFBsR0lkWC1Xd1paVVJCS0NvcTdSRzZtQzA1NzlGU1FaWWdrZGRHQUZzU3BUQ3pWVHNaOUUzOGlCYlZMN2FUZG8weTR3?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-06-22",
+        "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
       {
         "title": "Oman&#8217;s GDP grows by 3% as non-oil trade rises",
         "url": "https://www.agbi.com/economy/2026/06/omans-gdp-grows-by-3-as-non-oil-trade-rises/",
@@ -71,12 +107,12 @@
         "domain": "agbi.com",
         "date": "2026-06-22",
         "description": "Oman&#8217;s economy and public finances strengthened at the start of the year, supported by growth beyond the oil sector and higher energy revenues. The country’s GDP rose nearly 3 percent year on year to OMR9.6 billion ($25 billion) in the first three months of 2026, with non-oil trade outpacing oil income, according to official government [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 7
 }
