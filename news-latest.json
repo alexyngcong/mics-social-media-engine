@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-22T19:24:22.013Z",
+  "generatedAt": "2026-06-22T22:02:03.433Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 16,
-    "googleNews": 150,
+    "gdelt": 0,
+    "googleNews": 130,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 186,
-    "afterDedup": 166,
-    "big4Rejected": 8,
-    "englishOnly": 157,
-    "withinRecency": 59,
-    "scored": 59,
+    "totalFetched": 150,
+    "afterDedup": 140,
+    "big4Rejected": 7,
+    "englishOnly": 133,
+    "withinRecency": 53,
+    "scored": 53,
     "passed": 7
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-22",
         "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 7,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -45,7 +45,7 @@
         "domain": "mepmiddleeast.com",
         "date": "2026-06-22",
         "description": "MoHRE Warns UAE Firms Ahead Of Emiratisation Deadline  MEP Middle East",
-        "hoursAgo": 7,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -57,7 +57,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-22",
         "description": "UAE issues fresh Emiratisation warning ahead of next deadline  Arabian Business",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Emerging Risks",
         "origin": "google-news"
@@ -69,7 +69,7 @@
         "domain": "agbi.com",
         "date": "2026-06-22",
         "description": "The number of new economic licences issued in the emirate of Abu Dhabi jumped by more than one fifth year on year in the first quarter of 2026 despite the Iran war, according to official government data. Al Ain had the largest increase, by 58 percent, followed by a 28 percent rise in Al Dhafra [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -83,7 +83,7 @@
         "domain": "agbi.com",
         "date": "2026-06-22",
         "description": "Saudi Arabia’s&#160;Kingdom Holding Company (KHC), majority owned by Prince Alwaleed bin Talal,&#160;said it will pay an interim cash dividend of SAR1 billion ($266.40 million) for the first half of 2026. The interim dividend will be in addition to the annual cash dividend of SAR1.3 billion or SAR0.28 per share for 2025, which shareholders approved on [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -95,7 +95,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-22",
         "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
-        "hoursAgo": 4,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -107,7 +107,7 @@
         "domain": "agbi.com",
         "date": "2026-06-22",
         "description": "Oman&#8217;s economy and public finances strengthened at the start of the year, supported by growth beyond the oil sector and higher energy revenues. The country’s GDP rose nearly 3 percent year on year to OMR9.6 billion ($25 billion) in the first three months of 2026, with non-oil trade outpacing oil income, according to official government [&#8230;]",
-        "hoursAgo": 12,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
