@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-22T04:02:42.590Z",
+  "generatedAt": "2026-06-22T13:34:11.035Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,55 +15,68 @@
   "diagnostic": {
     "totalFetched": 170,
     "afterDedup": 166,
-    "big4Rejected": 7,
-    "englishOnly": 159,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 3
+    "big4Rejected": 5,
+    "englishOnly": 161,
+    "withinRecency": 48,
+    "scored": 48,
+    "passed": 4
   },
   "rooms": {
-    "growth": [
+    "growth": [],
+    "capital": [
       {
-        "title": "UAE’s Altérra enters Latin America with Peru investment",
-        "url": "https://www.agbi.com/renewable-energy/2026/06/uaes-alterra-enters-latin-america-with-peru-investment/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-19",
-        "description": "Altérra, the UAE’s $30 billion climate investment fund, has bought into Inkia Energy, Peru’s largest independent power producer, as the Gulf entity seeks to expand its global portfolio. This is Altérra’s first direct investment in Latin America, completed through a fund managed by US private equity firm I Squared Capital and the Canada Pension Plan Investment [&#8230;]",
-        "hoursAgo": 69,
+        "title": "MoHRE warns UAE firms ahead of Emiratisation deadline - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMlRyNzNGU1VzMFUxVHBldmVnbFNYVG11aHRiOFVYT1dfZWdDVzQ1MVAxbUZpWkxYeU9sY2pJMkFuZ3ZQcUQ0RjlRX01mTDVXMEJCZEZEd1daQndNZXpJOU5XakdTdHloY19qLTBjWWQzdGgwd0Vkbk1vUkhMR3lyTGYxSlJjc204bVotVmh2VHJNTmdh0gGkAUFVX3lxTFB0UGF2VVNvMlg1YU9od0tuMWU2a1hrZ2tFcjRhNzFsWkJsNU1EOXdubTBvb1hJZ3U5YmxhRnhWdHM3bXJTcE1tWlJIOU03VHdMOHpLc0tKOEh0bXAxWnV4SnppQnExNTFMaWRnMzZIcGtwbU1KVUhWdHQxMUNIRlBlVHJtTU0wdHBsU3dfU1JEVVpFMGFaRzB3ZkpoNERxZTVaLWdU?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-06-22",
+        "description": "MoHRE warns UAE firms ahead of Emiratisation deadline  Gulf News",
+        "hoursAgo": 6,
         "score": 7,
-        "topic": "Investment & Funding",
-        "origin": "uae-rss"
-      }
-    ],
-    "capital": [],
-    "risk": [
-      {
-        "title": "Revolut cleared for UAE launch after central bank approval",
-        "url": "https://www.agbi.com/banking-finance/2026/06/revolut-cleared-for-uae-launch-after-central-bank-approval/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-19",
-        "description": "Digital banking giant Revolut has secured regulatory approval to launch in the UAE, marking a significant step in its expansion across the Gulf and wider Middle East. The company said it has received so-called stored value facilities and retail payment services licences from the UAE Central Bank (CBUAE), completing a regulatory process that began with [&#8230;]",
-        "hoursAgo": 63,
-        "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "uae-rss"
+        "topic": "Workforce & HR",
+        "origin": "google-news"
       },
       {
-        "title": "Kuwait to increase oil output and cancel force majeure",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/kuwait-to-increase-oil-output-and-lift-force-majeure-notices/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-19",
-        "description": "Kuwait is increasing oil production as an interim US-Iran peace deal begins a reopening of the Strait of Hormuz. Kuwait Petroleum Corporation aims to ramp up production to 2 million barrels per day within a week, coinciding with the unblocking of the waterway, state-owned Kuna news agency reported, quoting KPC CEO Sheikh Nawaf Saud Al-Sabah. [&#8230;]",
-        "hoursAgo": 69,
-        "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
+        "title": "MoHRE confirms 30 June deadline for private sector Emiratisation targets - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbXg3clhUVUx6dWdwUkhoQlpQZVB5eGtnMGRBRjE3OEhLbEFybVRqWGR1Tml1TDV0U2NOUERWRGxZbWFXeGRsVS0yVXo3dHFTaTI0a3VuNEJFcDdPeDFGZ3lDQ21sc2NYZ3hJektMVFdPSEdXMWZYWkV4ZTZjdVVraXZ5TGRjanlrNUtFald6VzlZNFB5d3dnRU5QSXRwX2ZBY2NMOFlQbEFwOWFuM2fSAcgBQVVfeXFMTUpzNFRPbUFYbFA2czhZbU8zWHNKOUFSMmJHeUxORWdpNXl6dGgweDJkRjdVLUdGMV96Nk9qWGI2UlVDU09ocHFJV1Ztak9PSEdaSGhyWHlRZHYxSVQ4Wk5OUkJ6cUZ0bnZTTVVlWERvOWRGRGJMTlRjS3BiTVlQMGFnajhkLTk2d2tWTGJPb1gwMDVSWmVKWl9SQWNLUE5yQW9LRHNMUVV3WmVxaElxRlhuanFVVTFFclRUdERuekpCU2hDMklkbW0?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-06-22",
+        "description": "MoHRE confirms 30 June deadline for private sector Emiratisation targets  Emirates 24|7",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Workforce & HR",
+        "origin": "google-news"
       }
     ],
-    "world": []
+    "risk": [
+      {
+        "title": "UAE issues fresh Emiratisation warning ahead of next deadline - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4ySmN3ZWVuRThYZFJIUmFBLXdvSjBYQTJGTGZNcDJ6aHM4ZnNDaHJCSlZTcWFlMmdqWkJIcXFtVnNZdWhJc0lqNlhRZ0Z2TDJTNE9JRU95N25WMWxrN2EyQVFEV21LUkUxdVFZNEt1d2hrLWp5X3p6bw?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-06-22",
+        "description": "UAE issues fresh Emiratisation warning ahead of next deadline  Arabian Business",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Emerging Risks",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
+      {
+        "title": "Oman&#8217;s GDP grows by 3% as non-oil trade rises",
+        "url": "https://www.agbi.com/economy/2026/06/omans-gdp-grows-by-3-as-non-oil-trade-rises/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-22",
+        "description": "Oman&#8217;s economy and public finances strengthened at the start of the year, supported by growth beyond the oil sector and higher energy revenues. The country’s GDP rose nearly 3 percent year on year to OMR9.6 billion ($25 billion) in the first three months of 2026, with non-oil trade outpacing oil income, according to official government [&#8230;]",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
+        "origin": "uae-rss"
+      }
+    ]
   },
-  "totalCount": 3
+  "totalCount": 4
 }
