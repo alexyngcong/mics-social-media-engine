@@ -1,28 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-23T02:59:06.203Z",
+  "generatedAt": "2026-06-23T07:47:07.888Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 16,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 186,
-    "afterDedup": 163,
+    "totalFetched": 170,
+    "afterDedup": 161,
     "big4Rejected": 5,
-    "englishOnly": 157,
-    "withinRecency": 59,
-    "scored": 59,
-    "passed": 7
+    "englishOnly": 156,
+    "withinRecency": 58,
+    "scored": 58,
+    "passed": 10
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Mubadala Capital targets French tourism company",
+        "url": "https://www.agbi.com/tourism/2026/06/mubadala-capital-targets-french-tourism-company/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-23",
+        "description": "Mubadala Capital, the wholly owned asset management subsidiary of Abu Dhabi’s Mubadala Investment Company,&#160;has made a binding offer to acquire French tourism company Pierre &#38; Vacances-Center Parcs for €1 billion ($1.1 billion). Mubadala is offering €1.90 per share, with a possible top-up of €0.10 per share if it succeeds in squeezing out all shareholders to delist [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Consumer & Retail",
+        "origin": "uae-rss"
+      }
+    ],
     "capital": [
       {
         "title": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets - Gulf Today",
@@ -31,7 +44,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-22",
         "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 7,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -45,7 +58,7 @@
         "domain": "mepmiddleeast.com",
         "date": "2026-06-22",
         "description": "MoHRE Warns UAE Firms Ahead Of Emiratisation Deadline  MEP Middle East",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -57,7 +70,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-22",
         "description": "UAE issues fresh Emiratisation warning ahead of next deadline  Arabian Business",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Emerging Risks",
         "origin": "google-news"
@@ -69,7 +82,7 @@
         "domain": "agbi.com",
         "date": "2026-06-22",
         "description": "The number of new economic licences issued in the emirate of Abu Dhabi jumped by more than one fifth year on year in the first quarter of 2026 despite the Iran war, according to official government data. Al Ain had the largest increase, by 58 percent, followed by a 28 percent rise in Al Dhafra [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -77,13 +90,37 @@
     ],
     "world": [
       {
+        "title": "Germany&#8217;s Knauf makes bid to delist United Mining",
+        "url": "https://www.agbi.com/construction/2026/06/germanys-knauf-makes-bid-to-delist-united-mining/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-23",
+        "description": "United Mining&#160;Industries Company (UMI)&#160;said Knauf International, its major shareholder, has made a firm intention to take the company private and delist from the Saudi stock exchange. Germany’s Knauf acquired 63.2 percent of the Saudi producer of gypsum board and cement board products in May for SAR505 million ($135 million) in a private transaction, according to [&#8230;]",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Algeria to share oil output in deal with Saudi company",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/algeria-to-share-oil-output-in-deal-with-saudi-company/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-23",
+        "description": "Algeria will share oil and gas production with Saudi Arabia’s Midad Energy North Africa in line with a $5.4 billion contract they signed in late 2025. Algeria’s energy minister Mohamed Arkab discussed launching the project at talks with Midad’s chairman Sheikh Abdulelah Mohammed Al Aiban in the capital Algiers this week. The talks covered cooperation [&#8230;]",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "Oil & Energy Markets",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Kingdom Holding to pay $266m in interim dividend",
         "url": "https://www.agbi.com/markets/2026/06/kingdom-holding-to-pay-266m-in-interim-dividend/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-22",
         "description": "Saudi Arabia’s&#160;Kingdom Holding Company (KHC), majority owned by Prince Alwaleed bin Talal,&#160;said it will pay an interim cash dividend of SAR1 billion ($266.40 million) for the first half of 2026. The interim dividend will be in addition to the annual cash dividend of SAR1.3 billion or SAR0.28 per share for 2025, which shareholders approved on [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 17,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -95,24 +132,24 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-22",
         "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
-        "hoursAgo": 11,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       },
       {
-        "title": "Oman&#8217;s GDP grows by 3% as non-oil trade rises",
-        "url": "https://www.agbi.com/economy/2026/06/omans-gdp-grows-by-3-as-non-oil-trade-rises/",
+        "title": "Libya’s NOC says oil output near 1.5m bpd target",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/libyas-noc-says-oil-output-near-1-5m-bpd-target/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-22",
-        "description": "Oman&#8217;s economy and public finances strengthened at the start of the year, supported by growth beyond the oil sector and higher energy revenues. The country’s GDP rose nearly 3 percent year on year to OMR9.6 billion ($25 billion) in the first three months of 2026, with non-oil trade outpacing oil income, according to official government [&#8230;]",
-        "hoursAgo": 19,
+        "date": "2026-06-23",
+        "description": "Libya’s oil production has hit its highest since 2013, the state-backed National Oil Corporation (NOC) said, nearing the official target of 1.5 million barrels per day (bpd). Crude oil production reached 1.4 million bpd on June 21, while condensate output stood at around 49,000 bpd, NOC said in a statement. NOC chairman Massoud Suleman said [&#8230;]",
+        "hoursAgo": 2,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 7
+  "totalCount": 10
 }
