@@ -1,50 +1,38 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-23T11:14:39.070Z",
+  "generatedAt": "2026-06-23T14:44:05.333Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 30,
+    "gdelt": 8,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 200,
-    "afterDedup": 171,
+    "totalFetched": 178,
+    "afterDedup": 166,
     "big4Rejected": 6,
-    "englishOnly": 164,
-    "withinRecency": 70,
-    "scored": 70,
-    "passed": 12
+    "englishOnly": 160,
+    "withinRecency": 67,
+    "scored": 67,
+    "passed": 7
   },
   "rooms": {
     "growth": [
       {
-        "title": "Iraq’s Al Qahwaji rolls out fine-dining brand Avoca and plans Gulf launch",
-        "url": "https://www.agbi.com/food-drink/2026/06/iraqs-al-qahwaji-rolls-out-fine-dining-brand-avoca/",
+        "title": "Qatar backs $380m fundraising for Dutch chip equipment startup",
+        "url": "https://www.agbi.com/tech/2026/06/qatar-backs-380m-fundraising-for-dutch-chip-equipment-startup/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-23",
-        "description": "Baghdad-based hospitality company Al Qahwaji Group is embarking on its next phase of growth, with plans to expand its newest brand Avoca, a fine-dining concept fusing Iraqi and international cuisine, into the Gulf, starting with the UAE. Founder and chief executive Dhurgham Hneis talks to AGBI about his vision.&#160; How did you become a restaurateur? [&#8230;]",
+        "description": "Qatar Investment Authority (QIA) has backed Nearfield Instruments, a Dutch chip equipment startup, in its latest $380 million fundraising round. The series D round was led by US-based Fidelity, alongside Singapore’s Temasek, Walden Catalyst, European VC Innovation Industries, M&#38;G Investments, and Invest-NL. QIA joined as a new investor, the Rotterdam-based company said in a statement, [&#8230;]",
         "hoursAgo": 2,
-        "score": 7,
-        "topic": "Consumer & Retail",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Mubadala Capital targets French tourism company",
-        "url": "https://www.agbi.com/tourism/2026/06/mubadala-capital-targets-french-tourism-company/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-23",
-        "description": "Mubadala Capital, the wholly owned asset management subsidiary of Abu Dhabi’s Mubadala Investment Company,&#160;has made a binding offer to acquire French tourism company Pierre &#38; Vacances-Center Parcs for €1 billion ($1.1 billion). Mubadala is offering&#160;€1.90 per share, with a possible top-up of €0.10 per share if it succeeds in squeezing out all shareholders to delist [&#8230;]",
-        "hoursAgo": 5,
         "score": 6,
-        "topic": "Consumer & Retail",
+        "topic": "Investment & Funding",
         "origin": "uae-rss"
       }
     ],
@@ -56,7 +44,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-22",
         "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
-        "hoursAgo": 17,
+        "hoursAgo": 20,
         "score": 7,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -70,7 +58,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-23",
         "description": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study  Gulf Business",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -82,7 +70,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-06-23",
         "description": "UAE real GDP growth to reach 6 percent in 2027-2029 amid plans to expand oil production to 5 million bpd  Economy Middle East",
-        "hoursAgo": 1,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -94,19 +82,7 @@
         "domain": "travelandtourworld.com",
         "date": "2026-06-23",
         "description": "Dubai, Abu Dhabi, Doha, Riyadh and Kuwait City See AI Travel Planning Surge as Gulf Tourists Abandon Traditional Agencies for Real-Time Personalised Itineraries, Could Artificial Intelligence Become the New Travel Agent for the Middle East?  Travel And Tour World",
-        "hoursAgo": 6,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
-        "title": "MoHRE Warns UAE Firms Ahead Of Emiratisation Deadline - MEP Middle East",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQak9wWDdMVlNHODRNTEZCczAxSGZVN3JfX2lCUmxjNWlPdEFoSzNoMnNyMkpzQmJneTlBb1dvanhLc2VXWV9fMW1XUVJhb2I4c1p4dVNVYXVXZmRITUZzMW81ZUEtMnB6MG9LdW85NkdJTllxMzNxU29WNS1LOWdYNGZ3TE84YVFyRXBKQ1V0eGs0UQ?oc=5",
-        "source": "MEP Middle East",
-        "domain": "mepmiddleeast.com",
-        "date": "2026-06-22",
-        "description": "MoHRE Warns UAE Firms Ahead Of Emiratisation Deadline  MEP Middle East",
-        "hoursAgo": 23,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -114,37 +90,13 @@
     ],
     "world": [
       {
-        "title": "Germany&#8217;s Knauf makes bid to delist United Mining",
-        "url": "https://www.agbi.com/construction/2026/06/germanys-knauf-makes-bid-to-delist-united-mining/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-23",
-        "description": "United Mining&#160;Industries Company (UMI)&#160;said Knauf International, its major shareholder, has made a firm intention to take the company private and delist from the Saudi stock exchange. Germany’s Knauf acquired 63.2 percent of the Saudi producer of gypsum board and cement board products in May for SAR505 million ($135 million) in a private transaction, according to [&#8230;]",
-        "hoursAgo": 5,
-        "score": 7,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Algeria to share oil output in deal with Saudi company",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/algeria-to-share-oil-output-in-deal-with-saudi-company/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-23",
-        "description": "Algeria will share oil and gas production with Saudi Arabia’s Midad Energy North Africa in line with a $5.4 billion contract they signed in late 2025. Algeria’s energy minister Mohamed Arkab discussed launching the project at talks with Midad’s chairman Sheikh Abdulelah Mohammed Al Aiban in the capital Algiers this week. The talks covered cooperation [&#8230;]",
-        "hoursAgo": 7,
-        "score": 7,
-        "topic": "Oil & Energy Markets",
-        "origin": "uae-rss"
-      },
-      {
         "title": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses - Gulf Business",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcnYtSTNZLUY0T0xwbG1ZYTF5TEpwTDMwQTRMUUZsOHN0WnNEOVR1d1NRVXp1bHdZS1F0bWRvQmdhenE5NU5oaGRlUW5TM25CcHJ3bFRCX1BuZmN5VjFRaGJ1VFBsR0lkWC1Xd1paVVJCS0NvcTdSRzZtQzA1NzlGU1FaWWdrZGRHQUZzU3BUQ3pWVHNaOUUzOGlCYlZMN2FUZG8weTR3?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-06-22",
         "description": "Dubai Insurance launches exclusive offering for Abu Dhabi businesses  Gulf Business",
-        "hoursAgo": 20,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -156,24 +108,12 @@
         "domain": "agbi.com",
         "date": "2026-06-23",
         "description": "A UAE artificial intelligence infrastructure company is tripling the size of a major US data centre as the Gulf country races to secure the computing power driving the global AI boom. Core42, a provider of sovereign cloud and advanced computing services, is expanding its Lake Mariner facility in Buffalo, New York, from 18 megawatts to [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "AI & Technology",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Libya’s NOC says oil output near 1.5m bpd target",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/libyas-noc-says-oil-output-near-1-5m-bpd-target/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-23",
-        "description": "Libya’s oil production has hit its highest since 2013, the state-backed National Oil Corporation (NOC) said, nearing the official target of 1.5 million barrels per day (bpd). Crude oil production reached 1.4 million bpd on June 21, while condensate output stood at around 49,000 bpd, NOC said in a statement. NOC chairman Massoud Suleman said [&#8230;]",
-        "hoursAgo": 6,
-        "score": 6,
-        "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 12
+  "totalCount": 7
 }
