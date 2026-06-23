@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-23T17:52:10.041Z",
+  "generatedAt": "2026-06-23T21:42:25.440Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 10,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 160,
-    "big4Rejected": 5,
-    "englishOnly": 155,
-    "withinRecency": 61,
-    "scored": 61,
-    "passed": 6
+    "totalFetched": 180,
+    "afterDedup": 171,
+    "big4Rejected": 7,
+    "englishOnly": 164,
+    "withinRecency": 77,
+    "scored": 77,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,35 +30,22 @@
         "domain": "agbi.com",
         "date": "2026-06-23",
         "description": "Qatar Investment Authority (QIA) has backed Nearfield Instruments, a Dutch chip equipment startup, in its latest $380 million fundraising round. The series D round was led by US-based Fidelity, alongside Singapore’s Temasek, Walden Catalyst, European VC Innovation Industries, M&#38;G Investments, and Invest-NL. QIA joined as a new investor, the Rotterdam-based company said in a statement, [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
       }
     ],
-    "capital": [
-      {
-        "title": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxON05pWXlFTWVaa1F1YlQ2ZzVkVmNpZUdtY0lBaE9WbWJjR3hNR0FJRnJzWG51M1c1RkNwd3U4T0NSMGJOd0lqcGJWR25DSTlUZ3l4UDdmZmlXTm45SmtpMFpDUXUxcXhSZEx2NE9aMUphaUZ1NV9EUE1oQW1Wb1l4aDhtbHFHM0gzUjFFV2NWQkJyTFpiRFNKdnlVbmNnUkRDcWdleGdtV09EMnAwMDlGUU5DVWwzcXBrS1ZFMzlR?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-06-22",
-        "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
-        "hoursAgo": 23,
-        "score": 7,
-        "topic": "Workforce & HR",
-        "origin": "google-news"
-      }
-    ],
+    "capital": [],
     "risk": [
       {
         "title": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQd0MtLWlEZlhLbS1WTWNXczl5cUdSdkxYTHBRVGM3TnZHQTM0eHh0SzBScm50Yl9DVDdUdTdWRFJFYTJzay1QaHFaS21QWUhia0hDMDJYbTdHcUFBVTJ3TVZSUzdBcVJ2WmZ5akNsVTI0Vzlwd2sweFN6RHhlMzJXYVNlQ1dLT0xYWG9taV92TXNxbFZ4NEVvdHg4TW1FdkxLX0JhcVRCVG0xejBkQXR3LVNVQk5mSHF1ckpObGllYk5RQ3lKT0VGNXlra3cxcnFWTGlaSFlaNnZXcFBDRGZxclBQdw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdEN2NkNmQ1d6cnVPT2pVWmRfcDQtRk5YMVYxSmVYNm14TnQ0Q0VsZFJKNkdoR0xzLTROQzYwLTFiYmlqT19temEzSTNKNHRwMUljeVpjX1pXUUhneUFJV1dXdUZzSmlDYTg2QmJRaktjb0FTZGhzYmtza0JNTWJpMlhiSjRycjV6S1p6ZFhoMUdBaTdJSlkxdXFINnlfNGNIZGo0ajFQMm5weXRzSktXd3dKQUNYSFJDUUphSV9MdWVxYno4YnYtWmQyTlROcUJoVF9UQkpYelB3RHlCTFJIRUln?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-06-23",
         "description": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study  Gulf Business",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -70,19 +57,19 @@
         "domain": "economymiddleeast.com",
         "date": "2026-06-23",
         "description": "UAE real GDP growth to reach 6 percent in 2027-2029 amid plans to expand oil production to 5 million bpd  Economy Middle East",
-        "hoursAgo": 8,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       },
       {
-        "title": "Dubai, Abu Dhabi, Doha, Riyadh and Kuwait City See AI Travel Planning Surge as Gulf Tourists Abandon Traditional Agencies for Real-Time Personalised Itineraries, Could Artificial Intelligence Become the New Travel Agent for the Middle East? - travelandtourworld.com",
+        "title": "Dubai, Abu Dhabi, Doha, Riyadh and Kuwait City See AI Travel Planning Surge as Gulf Tourists Abandon Traditional Agencies for Real-Time Personalised Itineraries, Could Artificial Intelligence Become the New Travel Agent for the Middle East? - Travel And Tour World",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5aRGRjSXFUVzNQLV9WOEJJbkRtdjNvbzNkWjdPU1ZOSnJpR0N6YVdpb1lkT09aSUdwTW4tMjRfa0RCaHNQUWhZWHg2WXlWdm9ROGJoSGlNaHBGRjQ1aFNKSGtuQVduTFJJZEFOTWxR?oc=5",
-        "source": "travelandtourworld.com",
+        "source": "Travel And Tour World",
         "domain": "travelandtourworld.com",
         "date": "2026-06-23",
-        "description": "Dubai, Abu Dhabi, Doha, Riyadh and Kuwait City See AI Travel Planning Surge as Gulf Tourists Abandon Traditional Agencies for Real-Time Personalised Itineraries, Could Artificial Intelligence Become the New Travel Agent for the Middle East?  travelandtourworld.com",
-        "hoursAgo": 12,
+        "description": "Dubai, Abu Dhabi, Doha, Riyadh and Kuwait City See AI Travel Planning Surge as Gulf Tourists Abandon Traditional Agencies for Real-Time Personalised Itineraries, Could Artificial Intelligence Become the New Travel Agent for the Middle East?  Travel And Tour World",
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -96,12 +83,12 @@
         "domain": "agbi.com",
         "date": "2026-06-23",
         "description": "A UAE artificial intelligence infrastructure company is tripling the size of a major US data centre as the Gulf country races to secure the computing power driving the global AI boom. Core42, a provider of sovereign cloud and advanced computing services, is expanding its Lake Mariner facility in Buffalo, New York, from 18 megawatts to [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 5
 }
