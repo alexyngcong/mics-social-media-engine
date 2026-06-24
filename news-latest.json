@@ -1,41 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-24T07:38:41.679Z",
+  "generatedAt": "2026-06-24T10:47:50.640Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 10,
+    "gdelt": 34,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 180,
-    "afterDedup": 168,
-    "big4Rejected": 4,
-    "englishOnly": 163,
-    "withinRecency": 75,
-    "scored": 75,
-    "passed": 7
+    "totalFetched": 204,
+    "afterDedup": 177,
+    "big4Rejected": 5,
+    "englishOnly": 170,
+    "withinRecency": 77,
+    "scored": 77,
+    "passed": 8
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Qatar backs $380m fundraising for Dutch chip equipment startup",
-        "url": "https://www.agbi.com/tech/2026/06/qatar-backs-380m-fundraising-for-dutch-chip-equipment-startup/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-23",
-        "description": "Qatar Investment Authority (QIA) has backed Nearfield Instruments, a Dutch chip equipment startup, in its latest $380 million fundraising round. The series D round was led by US-based Fidelity, alongside Singapore’s Temasek, Walden Catalyst, European VC Innovation Industries, M&#38;G Investments, and Invest-NL. QIA joined as a new investor, the Rotterdam-based company said in a statement, [&#8230;]",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Investment & Funding",
-        "origin": "uae-rss"
-      }
-    ],
+    "growth": [],
     "capital": [
       {
         "title": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate - Gulf News",
@@ -44,7 +31,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 19,
+        "hoursAgo": 22,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -52,16 +39,40 @@
     ],
     "risk": [
       {
-        "title": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdEN2NkNmQ1d6cnVPT2pVWmRfcDQtRk5YMVYxSmVYNm14TnQ0Q0VsZFJKNkdoR0xzLTROQzYwLTFiYmlqT19temEzSTNKNHRwMUljeVpjX1pXUUhneUFJV1dXdUZzSmlDYTg2QmJRaktjb0FTZGhzYmtza0JNTWJpMlhiSjRycjV6S1p6ZFhoMUdBaTdJSlkxdXFINnlfNGNIZGo0ajFQMm5weXRzSktXd3dKQUNYSFJDUUphSV9MdWVxYno4YnYtWmQyTlROcUJoVF9UQkpYelB3RHlCTFJIRUln?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-06-23",
-        "description": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study  Gulf Business",
-        "hoursAgo": 23,
+        "title": "Saudi Arabia opens up property market to foreigners",
+        "url": "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-24",
+        "description": "Saudi Arabia has begun accepting applications by non-Saudis to purchase property after the cabinet approved the law and designated geographic areas for ownership. The decision came days after the US and Iran concluded the first round of peace talks at the Swiss mountain resort of Burgenstock. In a statement, the Real Estate General Authority (Rega) [&#8230;]",
+        "hoursAgo": 0,
         "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "FTA meets UAE businesses to improve VAT services and compliance - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQR2pSUHVwa2hEeG9OYVNlajB3MG5FOTZ4NnBYYWNENE0taE5qTUNFRy1VNHljZ2thbjhkR3ZNaWlWWi1RUnowSTZYR2d1RGRWRVZYVHkybDE0cjREOUVqVmZFcmNJa1lGV2dMLU9ab2R3eUlGaWt5LTg5M3dLZlJFQUNlMlZJZGtlRW9TNktJWlc2SzJ6S015bjJnS0NmNEZydmptZ1p1aWlVdWhnNEJCa1lDTWNZelkwMDdsUE1qOS1TSG1KVWJz0gHHAUFVX3lxTFBHalJQdXBraER4b05hU2VqMHcwbkU5Nng2cFhhY0Q0TS1oTmpNQ0VHLVU0eWNna2FuOGRHdk1paVZaLVFSejBJNlhHZ3VEZFZFVlhUeTJsMTRyNEQ5RWpWZkVyY0lrWUZXZ0wtT1pvZHd5SUZpa3ktODkzd0tmUkVBQ2UyVklka2VFb1M2S0laVzZLMnpLTXluMmdLQ2Y0RnJ2am1nWnVpaVV1aGc0QkJrWUNNY1l6WTAwN2xQTWo5LVNIbUpVYnM?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-06-24",
+        "description": "FTA meets UAE businesses to improve VAT services and compliance  Gulf News",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
+      },
+      {
+        "title": "Etihad Energy’s Fujairah refinery to cost up to $350m",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/etihad-energys-fujairah-refinery-to-cost-up-to-350m/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-24",
+        "description": "Etihad Energy Holding’s planned refinery in Fujairah is expected to cost between $300 million and $350 million. The Dubai-listed company is pushing ahead with plans to expand beyond fuel storage and logistics into refining. Front-end engineering design has begun in cooperation with the Italian engineering and contracting company PEG and the US-based petroleum refining technology [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Supply Chain Disruption",
+        "origin": "uae-rss"
       },
       {
         "title": "TotalEnergies must invest in ways to bypass Hormuz, CEO says",
@@ -70,7 +81,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "French oil major TotalEnergies needs to prioritise the building of pipelines that could export oil and gas from the Middle East without ships going through the Strait of Hormuz, CEO Patrick Pouyanne said at an energy conference in Paris on Tuesday. Pouyanne was asked what lessons he had learned from the past three months of [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -82,7 +93,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "AD Ports Group has increased its stake in Dubai-based Global Feeder Shipping (GFS) to 81 percent. The Abu Dhabi state-backed global ports operator exercised its call option to acquire an additional 30 percent in GFS for AED1 billion ($300 million). AD Ports had acquired a 51 percent stake in GFS, the world’s fourth-largest container feeder [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -96,7 +107,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-24",
         "description": "UAE tax: Major reform to be rolled out within days  Arabian Business",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -108,12 +119,12 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Oman is seeking companies to build two solar power plants with a combined generation capacity of 1,500 megawatts. The state-run Nama Power and Water Procurement Company (PWP) has issued a request for qualification for Adam and Sinaw solar independent power projects. The two projects are expected to cost OMR398 million ($1 billion), PWP said in [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 7
+  "totalCount": 8
 }
