@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-24T17:53:36.567Z",
+  "generatedAt": "2026-06-24T21:21:55.908Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 39,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 209,
-    "afterDedup": 174,
-    "big4Rejected": 3,
-    "englishOnly": 169,
-    "withinRecency": 82,
-    "scored": 82,
-    "passed": 10
+    "totalFetched": 270,
+    "afterDedup": 221,
+    "big4Rejected": 5,
+    "englishOnly": 193,
+    "withinRecency": 109,
+    "scored": 109,
+    "passed": 9
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 29,
+        "hoursAgo": 33,
         "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -43,7 +43,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Banking & Rates",
         "origin": "google-news"
@@ -57,34 +57,23 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Saudi Arabia has begun accepting applications by non-Saudis to purchase property after the cabinet approved the law and designated geographic areas for ownership. The decision came days after the US and Iran concluded the first round of peace talks at the Swiss mountain resort of Burgenstock. In a statement, the Real Estate General Authority (Rega) [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
       {
-        "title": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdEN2NkNmQ1d6cnVPT2pVWmRfcDQtRk5YMVYxSmVYNm14TnQ0Q0VsZFJKNkdoR0xzLTROQzYwLTFiYmlqT19temEzSTNKNHRwMUljeVpjX1pXUUhneUFJV1dXdUZzSmlDYTg2QmJRaktjb0FTZGhzYmtza0JNTWJpMlhiSjRycjV6S1p6ZFhoMUdBaTdJSlkxdXFINnlfNGNIZGo0ajFQMm5weXRzSktXd3dKQUNYSFJDUUphSV9MdWVxYno4YnYtWmQyTlROcUJoVF9UQkpYelB3RHlCTFJIRUln?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-06-23",
-        "description": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study  Gulf Business",
-        "hoursAgo": 33,
-        "score": 6.5,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "FTA meets UAE businesses to improve VAT services and compliance - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGhqcnVoODExbUxQVHRreTg1VjBUekk2bl9rVmlGanJfNGI2OHhOYVgyNXlMR3hZYVZHeW5ObnFJNlY3SFNBbVQwN0w5bGRFQThuek56UjUtME5ocENWa2tSd1Q1WXlGektrbDluRW92R2JobFlqaE1QNHg2X3RSSFpHSldVZmR0UXVFWWVxU3gwNzVLVzFGSF9FOHZwZ1N2U242cnV5SXVQcGUwX0dXaFFydznSAccBQVVfeXFMUEdqUlB1cGtoRHhvTmFTZWowdzBuRTk2eDZwWGFjRDRNLWhOak1DRUctVTR5Y2drYW44ZEd2TWlpVlotUVJ6MEk2WEdndURkVkVWWFR5MmwxNHI0RDlFalZmRXJjSWtZRldnTC1PWm9kd3lJRmlreS04OTN3S2ZSRUFDZTJWSWRrZUVvUzZLSVpXNksyektNeW4yZ0tDZjRGcnZqbWdadWlpVXVoZzRCQmtZQ01jWXpZMDA3bFBNajktU0htSlVicw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
+        "title": "UAE oil exports rebound to 85 % of pre - war levels as Gulf supply routes adapt : IEA",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/uae-oil-exports-rebound-to-85-of-pre-war-levels-as-gulf-supply-routes-adapt-iea/articleshow/131953081.cms",
+        "source": "Economictimes",
+        "domain": "economictimes.indiatimes.com",
         "date": "2026-06-24",
-        "description": "FTA meets UAE businesses to improve VAT services and compliance  Gulf News",
-        "hoursAgo": 9,
+        "description": "UAE oil exports rebound to 85 % of pre - war levels as Gulf supply routes adapt : IEA",
+        "imageUrl": "https://img.etimg.com/thumb/msid-131953101,width-1200,height-630,imgsize-76316,overlay-economictimes/articleshow.jpg",
+        "hoursAgo": 18,
         "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
+        "topic": "Geopolitical Risk",
+        "origin": "gdelt"
       },
       {
         "title": "Etihad Energy’s Fujairah refinery to cost up to $350m",
@@ -93,7 +82,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Etihad Energy Holding’s planned refinery in Fujairah is expected to cost between $300 million and $350 million. The Dubai-listed company is pushing ahead with plans to expand beyond fuel storage and logistics into refining. Front-end engineering design has begun in cooperation with the Italian engineering and contracting company PEG and the US-based petroleum refining technology [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -105,7 +94,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "French oil major TotalEnergies needs to prioritise the building of pipelines that could export oil and gas from the Middle East without ships going through the Strait of Hormuz, CEO Patrick Pouyanne said at an energy conference in Paris on Tuesday. Pouyanne was asked what lessons he had learned from the past three months of [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -117,7 +106,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "AD Ports Group has increased its stake in Dubai-based Global Feeder Shipping (GFS) to 81 percent. The Abu Dhabi state-backed global ports operator exercised its call option to acquire an additional 30 percent in GFS for AED1 billion ($300 million). AD Ports had acquired a 51 percent stake in GFS, the world’s fourth-largest container feeder [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -131,7 +120,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-24",
         "description": "UAE tax: Major reform to be rolled out within days  Arabian Business",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -143,12 +132,12 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Oman is seeking companies to build two solar power plants with a combined generation capacity of 1,500 megawatts. The state-run Nama Power and Water Procurement Company (PWP) has issued a request for qualification for Adam and Sinaw solar independent power projects. The two projects are expected to cost OMR398 million ($1 billion), PWP said in [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 10
+  "totalCount": 9
 }
