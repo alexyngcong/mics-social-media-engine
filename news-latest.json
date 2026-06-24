@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-24T10:47:50.640Z",
+  "generatedAt": "2026-06-24T14:26:14.048Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 34,
+    "gdelt": 13,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 204,
-    "afterDedup": 177,
+    "totalFetched": 183,
+    "afterDedup": 167,
     "big4Rejected": 5,
-    "englishOnly": 170,
-    "withinRecency": 77,
-    "scored": 77,
-    "passed": 8
+    "englishOnly": 160,
+    "withinRecency": 74,
+    "scored": 74,
+    "passed": 10
   },
   "rooms": {
     "growth": [],
@@ -31,33 +31,57 @@
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 22,
-        "score": 8,
+        "hoursAgo": 26,
+        "score": 7.5,
         "topic": "Corporate Finance",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQd2pEeW1yejhLTDNIdWJER3kwVFNlQlpqVEl5UGRTclNoMHNTX2sxYXhSUGpHOW55Sm4zRjVUODJYWU01ZmdKQ1hSX1BlSDZqRC0tbjV1Ql9ab25Pa1hadzFQRUtzMGtodk9YbXdjaWZQTFp5OVRjMnM1M01DZXZCcEZvWnFnVWZicVJ0RUZMOHpKMFdDUFY0QUNVQzlfSEZ1ZHpySDZJU05SWXRhVjVsZk5ad0ROX1JXM2o2V1BrMVl4SXNMMlRLUmJ4UGFFWG8?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-06-24",
+        "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Banking & Rates",
         "origin": "google-news"
       }
     ],
     "risk": [
       {
-        "title": "Saudi Arabia opens up property market to foreigners",
+        "title": "Saudi Arabia opens property market to foreigners",
         "url": "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Saudi Arabia has begun accepting applications by non-Saudis to purchase property after the cabinet approved the law and designated geographic areas for ownership. The decision came days after the US and Iran concluded the first round of peace talks at the Swiss mountain resort of Burgenstock. In a statement, the Real Estate General Authority (Rega) [&#8230;]",
-        "hoursAgo": 0,
+        "hoursAgo": 4,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
       {
         "title": "FTA meets UAE businesses to improve VAT services and compliance - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQR2pSUHVwa2hEeG9OYVNlajB3MG5FOTZ4NnBYYWNENE0taE5qTUNFRy1VNHljZ2thbjhkR3ZNaWlWWi1RUnowSTZYR2d1RGRWRVZYVHkybDE0cjREOUVqVmZFcmNJa1lGV2dMLU9ab2R3eUlGaWt5LTg5M3dLZlJFQUNlMlZJZGtlRW9TNktJWlc2SzJ6S015bjJnS0NmNEZydmptZ1p1aWlVdWhnNEJCa1lDTWNZelkwMDdsUE1qOS1TSG1KVWJz0gHHAUFVX3lxTFBHalJQdXBraER4b05hU2VqMHcwbkU5Nng2cFhhY0Q0TS1oTmpNQ0VHLVU0eWNna2FuOGRHdk1paVZaLVFSejBJNlhHZ3VEZFZFVlhUeTJsMTRyNEQ5RWpWZkVyY0lrWUZXZ0wtT1pvZHd5SUZpa3ktODkzd0tmUkVBQ2UyVklka2VFb1M2S0laVzZLMnpLTXluMmdLQ2Y0RnJ2am1nWnVpaVV1aGc0QkJrWUNNY1l6WTAwN2xQTWo5LVNIbUpVYnM?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGhqcnVoODExbUxQVHRreTg1VjBUekk2bl9rVmlGanJfNGI2OHhOYVgyNXlMR3hZYVZHeW5ObnFJNlY3SFNBbVQwN0w5bGRFQThuek56UjUtME5ocENWa2tSd1Q1WXlGektrbDluRW92R2JobFlqaE1QNHg2X3RSSFpHSldVZmR0UXVFWWVxU3gwNzVLVzFGSF9FOHZwZ1N2U242cnV5SXVQcGUwX0dXaFFydznSAccBQVVfeXFMUEdqUlB1cGtoRHhvTmFTZWowdzBuRTk2eDZwWGFjRDRNLWhOak1DRUctVTR5Y2drYW44ZEd2TWlpVlotUVJ6MEk2WEdndURkVkVWWFR5MmwxNHI0RDlFalZmRXJjSWtZRldnTC1PWm9kd3lJRmlreS04OTN3S2ZSRUFDZTJWSWRrZUVvUzZLSVpXNksyektNeW4yZ0tDZjRGcnZqbWdadWlpVXVoZzRCQmtZQ01jWXpZMDA3bFBNajktU0htSlVicw?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-06-24",
         "description": "FTA meets UAE businesses to improve VAT services and compliance  Gulf News",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "BCL Globiz reports surge in corporate tax compliance requests ahead of July 31 FTA deadline - Khaleej Times",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQk11TmRwaFFkdF84ODZGUnYtNnQwWlJXSk5Ddm9OazY4dlhaV2NBaUhYWVV0N0hHZ1FQc18wQWsxTzc5cGlNR3lMbi1YdHJBY0RDQzZXMFdXNkk5R0tVVm0tOEZjRFhFcXBNMjluSnA3dVFDNDVucVBrbUVYREh6eHVfazFNTFF2YUM4ZEdyNVNsdmg3N1hNejU0b2JJV2ZFdlA1WXdvT19MYTJCREd5MVlHOFN2YXJ3R3RUZzIzekNkMnpGbjh1dWJpb9IB0wFBVV95cUxNb1o2N1Zwa3JNV2k5V2tJTzB1MmRxNnA4REJHaS1MMkh6M1dEMjBZVlZ5Q2JiWWYtUFpLMHRmT0xsZ1pZd1hVMTB6UUVKLTFhSjR1RERCM0xTclpQWHZWYkswUWtQRG9mNmd0M2swRUdJcW9QMUEyLVdRejJwZ2pOeXN6S1FGQWNhdFp4RFJLaFhsTFM2a2Nta2hvRWNjQWlWZ3haTkdJUVhzblVRcWg1VUFHQS1EdWtCcWo4Tnc0NnpjUnlua1o5VDBfak5DUzBPZUFF?oc=5",
+        "source": "Khaleej Times",
+        "domain": "khaleejtimes.com",
+        "date": "2026-06-24",
+        "description": "BCL Globiz reports surge in corporate tax compliance requests ahead of July 31 FTA deadline  Khaleej Times",
+        "hoursAgo": 3,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -69,7 +93,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Etihad Energy Holding’s planned refinery in Fujairah is expected to cost between $300 million and $350 million. The Dubai-listed company is pushing ahead with plans to expand beyond fuel storage and logistics into refining. Front-end engineering design has begun in cooperation with the Italian engineering and contracting company PEG and the US-based petroleum refining technology [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -81,7 +105,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "French oil major TotalEnergies needs to prioritise the building of pipelines that could export oil and gas from the Middle East without ships going through the Strait of Hormuz, CEO Patrick Pouyanne said at an energy conference in Paris on Tuesday. Pouyanne was asked what lessons he had learned from the past three months of [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -93,7 +117,7 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "AD Ports Group has increased its stake in Dubai-based Global Feeder Shipping (GFS) to 81 percent. The Abu Dhabi state-backed global ports operator exercised its call option to acquire an additional 30 percent in GFS for AED1 billion ($300 million). AD Ports had acquired a 51 percent stake in GFS, the world’s fourth-largest container feeder [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -107,7 +131,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-24",
         "description": "UAE tax: Major reform to be rolled out within days  Arabian Business",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -119,12 +143,12 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Oman is seeking companies to build two solar power plants with a combined generation capacity of 1,500 megawatts. The state-run Nama Power and Water Procurement Company (PWP) has issued a request for qualification for Adam and Sinaw solar independent power projects. The two projects are expected to cost OMR398 million ($1 billion), PWP said in [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 10
 }
