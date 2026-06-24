@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-24T03:25:14.970Z",
+  "generatedAt": "2026-06-24T07:38:41.679Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 10,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 160,
+    "totalFetched": 180,
+    "afterDedup": 168,
     "big4Rejected": 4,
-    "englishOnly": 156,
-    "withinRecency": 68,
-    "scored": 68,
-    "passed": 5
+    "englishOnly": 163,
+    "withinRecency": 75,
+    "scored": 75,
+    "passed": 7
   },
   "rooms": {
     "growth": [
@@ -30,13 +30,26 @@
         "domain": "agbi.com",
         "date": "2026-06-23",
         "description": "Qatar Investment Authority (QIA) has backed Nearfield Instruments, a Dutch chip equipment startup, in its latest $380 million fundraising round. The series D round was led by US-based Fidelity, alongside Singapore’s Temasek, Walden Catalyst, European VC Innovation Industries, M&#38;G Investments, and Invest-NL. QIA joined as a new investor, the Rotterdam-based company said in a statement, [&#8230;]",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Investment & Funding",
         "origin": "uae-rss"
       }
     ],
-    "capital": [],
+    "capital": [
+      {
+        "title": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbWNhTTRYaTFDVlB3VXBCMzN1UFhtbDlSc3NXTnNOdVV5aC1za1ozMDktampWbXpXa0ZBQnd6WmR5bF9xdFlyNTZaNm1HcFVMV3FJbGFVc2lkTHFXb0lFS2F1Y2pHdXNBNEx0QTNFM3ptQlg2VkUyVkdpU0NNUDJ4MnRmc0NZWV8tOHQ1MTJwREVMT1JUcEF3ejItRlNkTl91dl9adFpmOUQ3STU0a0hOYm130gHEAUFVX3lxTFBQbEhWVkZ0ME1TSDN4NnpicFZqMXN6T3I3UHFYVU5xYmZvcXBvelJHck1JYVZRd0lJelpfN1B5Z1RWeXhyTHhiN1hTTk5zZXZMMHM0VEt4R0Zkd2JuZVdLTUFkaFJ0WnFWZW1aR2hFNDVUaS1GWElkQXY1VmpGaXNMLVB0V1dSOFJTTXAwQ0JzZnAyVzhsQmJaVEd6RUVORnBVM3RPMWdTejAzdTJ5NDVoNnJ0SmdQRXF0Z0JyaG1wX0o0Tmk?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-06-23",
+        "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
+        "hoursAgo": 19,
+        "score": 8,
+        "topic": "Corporate Finance",
+        "origin": "google-news"
+      }
+    ],
     "risk": [
       {
         "title": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study - Gulf Business",
@@ -45,50 +58,62 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-23",
         "description": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study  Gulf Business",
-        "hoursAgo": 19,
+        "hoursAgo": 23,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
-        "title": "UAE real GDP growth to reach 6 percent in 2027-2029 amid plans to expand oil production to 5 million bpd - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY3gzelR2UXd2MFlPdFpaVjd3YWpFbkVUMXVqMWR3T3VlZkQ2Snp4cTlVckowNTlfSGczSGZYd2xkd2tLbjNiaFVCZnBqbk1UV0dCbHc0N2lnc2t4bEgtZVJrdW1ZNHFKcF9seHRVQTM4bWF1M3NRX1pNUEpCQ2pURUNKeHFnTVJUcElMQWJTQXVNclduZmVnY1JkOWVQNTY0N1RJRGVEcWtZb0tfLUQ3d2diMGJDbmsxZHVWZVpzdWxLNXpzY2Z5UXFHWnVIQlRVUkp0S0gwTQ?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-06-23",
-        "description": "UAE real GDP growth to reach 6 percent in 2027-2029 amid plans to expand oil production to 5 million bpd  Economy Middle East",
-        "hoursAgo": 18,
+        "title": "TotalEnergies must invest in ways to bypass Hormuz, CEO says",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/totalenergies-must-invest-in-ways-to-bypass-hormuz-ceo-says/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-24",
+        "description": "French oil major TotalEnergies needs to prioritise the building of pipelines that could export oil and gas from the Middle East without ships going through the Strait of Hormuz, CEO Patrick Pouyanne said at an energy conference in Paris on Tuesday. Pouyanne was asked what lessons he had learned from the past three months of [&#8230;]",
+        "hoursAgo": 1,
         "score": 6,
         "topic": "Geopolitical Risk",
-        "origin": "google-news"
+        "origin": "uae-rss"
       },
       {
-        "title": "Dubai, Abu Dhabi, Doha, Riyadh and Kuwait City See AI Travel Planning Surge as Gulf Tourists Abandon Traditional Agencies for Real-Time Personalised Itineraries, Could Artificial Intelligence Become the New Travel Agent for the Middle East? - Travel And Tour World",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5aRGRjSXFUVzNQLV9WOEJJbkRtdjNvbzNkWjdPU1ZOSnJpR0N6YVdpb1lkT09aSUdwTW4tMjRfa0RCaHNQUWhZWHg2WXlWdm9ROGJoSGlNaHBGRjQ1aFNKSGtuQVduTFJJZEFOTWxR?oc=5",
-        "source": "Travel And Tour World",
-        "domain": "travelandtourworld.com",
-        "date": "2026-06-23",
-        "description": "Dubai, Abu Dhabi, Doha, Riyadh and Kuwait City See AI Travel Planning Surge as Gulf Tourists Abandon Traditional Agencies for Real-Time Personalised Itineraries, Could Artificial Intelligence Become the New Travel Agent for the Middle East?  Travel And Tour World",
-        "hoursAgo": 22,
+        "title": "AD Ports spends $300m raising stake in Dubai shipper GFS",
+        "url": "https://www.agbi.com/shipping/2026/06/ad-ports-spends-300m-raising-stake-in-dubai-shipper-gfs/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-24",
+        "description": "AD Ports Group has increased its stake in Dubai-based Global Feeder Shipping (GFS) to 81 percent. The Abu Dhabi state-backed global ports operator exercised its call option to acquire an additional 30 percent in GFS for AED1 billion ($300 million). AD Ports had acquired a 51 percent stake in GFS, the world’s fourth-largest container feeder [&#8230;]",
+        "hoursAgo": 1,
         "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
+        "topic": "Supply Chain Disruption",
+        "origin": "uae-rss"
       }
     ],
     "world": [
       {
-        "title": "Core42 expands US footprint as UAE pursues AI ambitions",
-        "url": "https://www.agbi.com/ai/2026/06/core42-expands-us-footprint-as-uae-pursues-ai-ambitions/",
+        "title": "UAE tax: Major reform to be rolled out within days - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQdW5DWWdLZnVhSlBlSklmQ1ZZMlpEQ2lpWGpCOUdlWXQ0bjdVUVYtcTN1eHpmaElPVTZ1Z1d5ZWVPcXM2ZHRZcG54WFdBX3V6T2dtTngzY0FpMW5EVllnVS1mNmlPMm5oSUFCMnJPbkQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-06-24",
+        "description": "UAE tax: Major reform to be rolled out within days  Arabian Business",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Oman seeks developers for 1,500MW solar power plants",
+        "url": "https://www.agbi.com/renewable-energy/2026/06/oman-seeks-developers-for-1500mw-solar-power-plants/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-23",
-        "description": "A UAE artificial intelligence infrastructure company is tripling the size of a major US data centre as the Gulf country races to secure the computing power driving the global AI boom. Core42, a provider of sovereign cloud and advanced computing services, is expanding its Lake Mariner facility in Buffalo, New York, from 18 megawatts to [&#8230;]",
-        "hoursAgo": 18,
+        "date": "2026-06-24",
+        "description": "Oman is seeking companies to build two solar power plants with a combined generation capacity of 1,500 megawatts. The state-run Nama Power and Water Procurement Company (PWP) has issued a request for qualification for Adam and Sinaw solar independent power projects. The two projects are expected to cost OMR398 million ($1 billion), PWP said in [&#8230;]",
+        "hoursAgo": 1,
         "score": 6,
-        "topic": "AI & Technology",
+        "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 7
 }
