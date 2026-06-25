@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-25T18:09:08.140Z",
+  "generatedAt": "2026-06-25T21:41:57.075Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 222,
+    "totalFetched": 181,
+    "afterDedup": 170,
     "big4Rejected": 4,
-    "englishOnly": 196,
-    "withinRecency": 101,
-    "scored": 101,
+    "englishOnly": 164,
+    "withinRecency": 71,
+    "scored": 71,
     "passed": 7
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "The Royal Commission for Riyadh City (RCRC) has launched the final phase of a road expansion project in the Saudi capital. Spending on phase four of the main and ring road development in Riyadh will reach SAR9.8 billion ($2.6 billion), RCRC said in a statement. The project includes the development of four major road corridors [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "The UAE&#8217;s first intercity passenger railway service will begin operating between Fujairah and Abu Dhabi on June 30, but attention is already turning to the network’s most anticipated route: the link between Abu Dhabi and Dubai, due to open in September. The September service will connect Abu Dhabi&#8217;s Mohamed bin Zayed City station with a [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 53,
+        "hoursAgo": 57,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -68,25 +68,26 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 30,
+        "hoursAgo": 33,
         "score": 6.5,
         "topic": "Banking & Rates",
         "origin": "google-news"
-      },
+      }
+    ],
+    "risk": [
       {
-        "title": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxON05pWXlFTWVaa1F1YlQ2ZzVkVmNpZUdtY0lBaE9WbWJjR3hNR0FJRnJzWG51M1c1RkNwd3U4T0NSMGJOd0lqcGJWR25DSTlUZ3l4UDdmZmlXTm45SmtpMFpDUXUxcXhSZEx2NE9aMUphaUZ1NV9EUE1oQW1Wb1l4aDhtbHFHM0gzUjFFV2NWQkJyTFpiRFNKdnlVbmNnUkRDcWdleGdtV09EMnAwMDlGUU5DVWwzcXBrS1ZFMzlR?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-06-22",
-        "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
-        "hoursAgo": 72,
+        "title": "Exclusive | Iran Attacks Cargo Ship, Testing Trump’s Deal to Reopen Strait - WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUjg1OGdZT3JUNkFvb1UwSURFSDJHVXowZVItTUpmZnl6TWRFeVNab1RXcVM5ckFKREs4eWVzSDF1Q1RTWkRQZDhtVTVSaDJNUUdkVjdXQU9wVl9mYnMxRWkyNlNmRU5BbGpxM3ZJV1NpTFBTay1sWWYzVGJReTFWbnBFaERwTl85dXU2SHhlcS1HYlc2aW0zTWw2THBLWFBEazZ2SzI2QUZWWU0?oc=5",
+        "source": "WSJ",
+        "domain": "wsj.com",
+        "date": "2026-06-25",
+        "description": "Exclusive | Iran Attacks Cargo Ship, Testing Trump’s Deal to Reopen Strait  WSJ",
+        "hoursAgo": 1,
         "score": 6,
-        "topic": "Workforce & HR",
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "risk": [],
     "world": [
       {
         "title": "Dubai’s Gems Education to scale up presence in India",
@@ -95,7 +96,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "Gems Education, part of the Dubai-based Varkey Group, is reportedly planning to invest up to $30 million in India over the next three to five years. The strategy includes the development of more than 30 Gems-operated schools, a nationwide network of more than 1,000 Gems partner schools and the establishment of a dedicated school for [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -107,7 +108,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "Silvio Berlusconi&#8217;s heirs have agreed to sell the former Italian prime minister&#8217;s luxury Sardinian retreat, Villa Certosa, to a company linked to Qatar&#8217;s ruling family, a source with knowledge of the matter said. Sheikh Jassim bin Hamad al Thani&#8217;s Constellation Hotels Holding Ltd paid €350 million ($395 million) for the sprawling estate on Sardinia&#8217;s exclusive [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
