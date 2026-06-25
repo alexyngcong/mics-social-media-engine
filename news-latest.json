@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-25T10:41:26.334Z",
+  "generatedAt": "2026-06-25T14:29:18.578Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 163,
-    "big4Rejected": 3,
-    "englishOnly": 160,
-    "withinRecency": 70,
-    "scored": 70,
+    "afterDedup": 164,
+    "big4Rejected": 5,
+    "englishOnly": 159,
+    "withinRecency": 67,
+    "scored": 67,
     "passed": 8
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "The Royal Commission for Riyadh City (RCRC) has launched the final phase of a road expansion project in the Saudi capital. Spending on phase four of the main and ring road development in Riyadh will reach SAR9.8 billion ($2.6 billion), RCRC said in a statement. The project includes the development of four major road corridors [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 7,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -38,26 +38,14 @@
     ],
     "capital": [
       {
-        "title": "PIF seeks EU nod to complete $55bn Electronic Arts deal",
-        "url": "https://www.agbi.com/gaming/2026/06/pif-seeks-eu-nod-to-complete-55bn-electronic-arts-deal/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-25",
-        "description": "Saudi Arabia’s Public Investment Fund has applied for European Union subsidy and antitrust clearance to complete its $55 billion acquisition of videogame developer Electronic Arts. The European Commission has set a provisional deadline of July 30 to decide on the subsidy component of the deal, according to a filing with the EU&#8217;s executive arm. The [&#8230;]",
-        "hoursAgo": 6,
-        "score": 8,
-        "topic": "IPO & M&A",
-        "origin": "uae-rss"
-      },
-      {
         "title": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbWNhTTRYaTFDVlB3VXBCMzN1UFhtbDlSc3NXTnNOdVV5aC1za1ozMDktampWbXpXa0ZBQnd6WmR5bF9xdFlyNTZaNm1HcFVMV3FJbGFVc2lkTHFXb0lFS2F1Y2pHdXNBNEx0QTNFM3ptQlg2VkUyVkdpU0NNUDJ4MnRmc0NZWV8tOHQ1MTJwREVMT1JUcEF3ejItRlNkTl91dl9adFpmOUQ3STU0a0hOYm130gHEAUFVX3lxTFBQbEhWVkZ0ME1TSDN4NnpicFZqMXN6T3I3UHFYVU5xYmZvcXBvelJHck1JYVZRd0lJelpfN1B5Z1RWeXhyTHhiN1hTTk5zZXZMMHM0VEt4R0Zkd2JuZVdLTUFkaFJ0WnFWZW1aR2hFNDVUaS1GWElkQXY1VmpGaXNMLVB0V1dSOFJTTXAwQ0JzZnAyVzhsQmJaVEd6RUVORnBVM3RPMWdTejAzdTJ5NDVoNnJ0SmdQRXF0Z0JyaG1wX0o0Tmk?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 46,
-        "score": 7.5,
+        "hoursAgo": 50,
+        "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
       },
@@ -68,8 +56,8 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 22,
-        "score": 7,
+        "hoursAgo": 26,
+        "score": 6.5,
         "topic": "Banking & Rates",
         "origin": "google-news"
       },
@@ -80,7 +68,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-22",
         "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
-        "hoursAgo": 64,
+        "hoursAgo": 68,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -88,19 +76,31 @@
     ],
     "risk": [
       {
-        "title": "Oil prices hit lowest since start of Iran war",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/oil-prices-hit-lowest-since-start-of-iran-war/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-25",
-        "description": "Oil prices dropped in early Thursday trade to their lowest since the start of the Iran conflict after the US said flows through the Strait of Hormuz were close to pre-war levels. Brent crude futures fell 1.65 percent to $72.52 a barrel as of 03:37 GMT, while US West Texas Intermediate&#160;declined 1.45 percent to $69.32 [&#8230;]",
-        "hoursAgo": 4,
+        "title": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUWtsa01QMlh1NTN0ZENsQk5SVTFnSzAtTjhUZEtoTUl3Yzc3TWtSRTN2STNOMWxQNl95SGk3ZEUwaXdSZ29SVU1VS1VzNjJaSGUyMEpmZURoZFJIVUtzWEh5NDg4Zmo3VWFQeTFIR3lBYUZQT1gtXzlsVF9MQ25EcWp1eHZrZmZoT3F5N3pEdnI2MTMteTk0QTlDSkZKY19fMTFRY2I3UkFrbndDOUJpWU1pSWptMUtJWlBLV1NSX2R0WWFfZk96ZW4xNFpOWHpscnhRYi1jVUJVbm1RanNJ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-06-23",
+        "description": "UAE businesses move from planning to implementation as e-invoicing deadline approaches, shows ClearTax study  Gulf Business",
+        "hoursAgo": 54,
         "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
       }
     ],
     "world": [
+      {
+        "title": "Dubai’s Gems Education to scale up presence in India",
+        "url": "https://www.agbi.com/education/2026/06/dubais-gems-education-to-scale-up-presence-in-india/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-25",
+        "description": "Gems Education, part of the Dubai-based Varkey Group, is reportedly planning to invest up to $30 million in India over the next three to five years. The strategy includes the development of more than 30 Gems-operated schools, a nationwide network of more than 1,000 Gems partner schools and the establishment of a dedicated school for [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
       {
         "title": "Berlusconi heirs sell Sardinian party palace to Qatari sheikh",
         "url": "https://www.agbi.com/real-estate/2026/06/berlusconi-heirs-sell-sardinian-party-palace-to-qatari-sheikh/",
@@ -108,7 +108,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "Silvio Berlusconi&#8217;s heirs have agreed to sell the former Italian prime minister&#8217;s luxury Sardinian retreat, Villa Certosa, to a company linked to Qatar&#8217;s ruling family, a source with knowledge of the matter said. Sheikh Jassim bin Hamad al Thani&#8217;s Constellation Hotels Holding Ltd paid €350 million ($395 million) for the sprawling estate on Sardinia&#8217;s exclusive [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -120,7 +120,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "Acwa Power is reportedly working to increase the capacity of its wind power plant and enter the seawater desalination business in Morocco. The Saudi-listed company secured a new permit to increase the Khalladi wind project’s production capacity by 40 megawatts, at an estimated cost of MAD550 million ($60 million), Asharq Business reported, quoting Acwa’s general [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
