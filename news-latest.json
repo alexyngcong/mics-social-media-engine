@@ -1,29 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-25T03:23:11.244Z",
+  "generatedAt": "2026-06-25T07:41:40.850Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 41,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 211,
-    "afterDedup": 179,
+    "totalFetched": 270,
+    "afterDedup": 217,
     "big4Rejected": 4,
-    "englishOnly": 173,
-    "withinRecency": 83,
-    "scored": 83,
-    "passed": 8
+    "englishOnly": 192,
+    "withinRecency": 100,
+    "scored": 100,
+    "passed": 7
   },
   "rooms": {
     "growth": [],
     "capital": [
+      {
+        "title": "PIF seeks EU nod to complete $55bn Electronic Arts deal",
+        "url": "https://www.agbi.com/gaming/2026/06/pif-seeks-eu-nod-to-complete-55bn-electronic-arts-deal/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-25",
+        "description": "Saudi Arabia’s Public Investment Fund has applied for European Union subsidy and antitrust clearance to complete its $55 billion acquisition of videogame developer Electronic Arts. The European Commission has set a provisional deadline of July 30 to decide on the subsidy component of the deal, according to a filing with the EU&#8217;s executive arm. The [&#8230;]",
+        "hoursAgo": 3,
+        "score": 8,
+        "topic": "IPO & M&A",
+        "origin": "uae-rss"
+      },
       {
         "title": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbWNhTTRYaTFDVlB3VXBCMzN1UFhtbDlSc3NXTnNOdVV5aC1za1ozMDktampWbXpXa0ZBQnd6WmR5bF9xdFlyNTZaNm1HcFVMV3FJbGFVc2lkTHFXb0lFS2F1Y2pHdXNBNEx0QTNFM3ptQlg2VkUyVkdpU0NNUDJ4MnRmc0NZWV8tOHQ1MTJwREVMT1JUcEF3ejItRlNkTl91dl9adFpmOUQ3STU0a0hOYm130gHEAUFVX3lxTFBQbEhWVkZ0ME1TSDN4NnpicFZqMXN6T3I3UHFYVU5xYmZvcXBvelJHck1JYVZRd0lJelpfN1B5Z1RWeXhyTHhiN1hTTk5zZXZMMHM0VEt4R0Zkd2JuZVdLTUFkaFJ0WnFWZW1aR2hFNDVUaS1GWElkQXY1VmpGaXNMLVB0V1dSOFJTTXAwQ0JzZnAyVzhsQmJaVEd6RUVORnBVM3RPMWdTejAzdTJ5NDVoNnJ0SmdQRXF0Z0JyaG1wX0o0Tmk?oc=5",
@@ -31,7 +43,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 39,
+        "hoursAgo": 43,
         "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -43,7 +55,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Banking & Rates",
         "origin": "google-news"
@@ -55,7 +67,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-22",
         "description": "UAE Ministry reaffirms June 30 deadline for private sector Emiratisation targets  Gulf Today",
-        "hoursAgo": 57,
+        "hoursAgo": 61,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -69,62 +81,38 @@
         "domain": "agbi.com",
         "date": "2026-06-24",
         "description": "Saudi Arabia has begun accepting applications by non-Saudis to purchase property after the cabinet approved the law and designated geographic areas for ownership. The decision came days after the US and Iran concluded the first round of peace talks at the Swiss mountain resort of Burgenstock. In a statement, the Real Estate General Authority (Rega) [&#8230;]",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
       {
-        "title": "Etihad Energy’s Fujairah refinery to cost up to $350m",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/etihad-energys-fujairah-refinery-to-cost-up-to-350m/",
+        "title": "Oil prices hit lowest since start of Iran war",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/oil-prices-hit-lowest-since-start-of-iran-war/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-24",
-        "description": "Etihad Energy Holding’s planned refinery in Fujairah is expected to cost between $300 million and $350 million. The Dubai-listed company is pushing ahead with plans to expand beyond fuel storage and logistics into refining. Front-end engineering design has begun in cooperation with the Italian engineering and contracting company PEG and the US-based petroleum refining technology [&#8230;]",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "TotalEnergies must invest in ways to bypass Hormuz, CEO says",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/totalenergies-must-invest-in-ways-to-bypass-hormuz-ceo-says/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-24",
-        "description": "French oil major TotalEnergies needs to prioritise the building of pipelines that could export oil and gas from the Middle East without ships going through the Strait of Hormuz, CEO Patrick Pouyanne said at an energy conference in Paris on Tuesday. Pouyanne was asked what lessons he had learned from the past three months of [&#8230;]",
-        "hoursAgo": 20,
+        "date": "2026-06-25",
+        "description": "Oil prices dropped in early Thursday trade to their lowest since the start of the Iran conflict after the US said flows through the Strait of Hormuz were close to pre-war levels. Brent crude futures fell 1.65 percent to $72.52 a barrel as of 03:37 GMT, while US West Texas Intermediate&#160;declined 1.45 percent to $69.32 [&#8230;]",
+        "hoursAgo": 1,
         "score": 6,
         "topic": "Geopolitical Risk",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "AD Ports spends $300m raising stake in Dubai shipper GFS",
-        "url": "https://www.agbi.com/shipping/2026/06/ad-ports-spends-300m-raising-stake-in-dubai-shipper-gfs/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-24",
-        "description": "AD Ports Group has increased its stake in Dubai-based Global Feeder Shipping (GFS) to 81 percent. The Abu Dhabi state-backed global ports operator exercised its call option to acquire an additional 30 percent in GFS for AED1 billion ($300 million). AD Ports had acquired a 51 percent stake in GFS, the world’s fourth-largest container feeder [&#8230;]",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
       }
     ],
     "world": [
       {
-        "title": "Oman seeks developers for 1,500MW solar power plants",
-        "url": "https://www.agbi.com/renewable-energy/2026/06/oman-seeks-developers-for-1500mw-solar-power-plants/",
+        "title": "Acwa to expand Khalladi wind power plant in Morocco",
+        "url": "https://www.agbi.com/renewable-energy/2026/06/acwa-to-expand-khalladi-wind-power-plant-in-morocco/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-24",
-        "description": "Oman is seeking companies to build two solar power plants with a combined generation capacity of 1,500 megawatts. The state-run Nama Power and Water Procurement Company (PWP) has issued a request for qualification for Adam and Sinaw solar independent power projects. The two projects are expected to cost OMR398 million ($1 billion), PWP said in [&#8230;]",
-        "hoursAgo": 21,
+        "date": "2026-06-25",
+        "description": "Acwa Power is reportedly working to increase the capacity of its wind power plant and enter the seawater desalination business in Morocco. The Saudi-listed company secured a new permit to increase the Khalladi wind project’s production capacity by 40 megawatts, estimated to cost MAD550 million ($60 million), Asharq Business reported, quoting Acwa’s general manager for [&#8230;]",
+        "hoursAgo": 1,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 8
+  "totalCount": 7
 }
