@@ -1,37 +1,37 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-26T03:31:43.373Z",
+  "generatedAt": "2026-06-26T07:51:27.307Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 33,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 203,
-    "afterDedup": 180,
+    "totalFetched": 270,
+    "afterDedup": 210,
     "big4Rejected": 3,
-    "englishOnly": 174,
-    "withinRecency": 80,
-    "scored": 80,
-    "passed": 6
+    "englishOnly": 186,
+    "withinRecency": 91,
+    "scored": 91,
+    "passed": 7
   },
   "rooms": {
     "growth": [
       {
-        "title": "Riyadh begins final phase of road network upgrade",
-        "url": "https://www.agbi.com/infrastructure/2026/06/riyadh-begins-final-phase-of-road-network-upgrade/",
+        "title": "Oman funding to drive expansion of Vietnam’s hospitality sector",
+        "url": "https://www.agbi.com/leisure-hospitality/2026/06/oman-funding-to-drive-expansion-of-vietnams-hospitality-sector/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-25",
-        "description": "The Royal Commission for Riyadh City (RCRC) has launched the final phase of a road expansion project in the Saudi capital. Spending on phase four of the main and ring road development in Riyadh will reach SAR9.8 billion ($2.6 billion), RCRC said in a statement. The project includes the development of four major road corridors [&#8230;]",
-        "hoursAgo": 20,
-        "score": 7,
+        "date": "2026-06-26",
+        "description": "Oman Investment Authority (OIA) has invested in Vietnam-based Vingroup’s $255 million private credit financing to support the growth of the Vietnamese hospitality sector. Other investors include Singapore’s investment company Temasek and Vietnam Oman Investment, a joint venture between OIA and the State Capital Investment Corporation of Vietnam, Vingroup said in a statement. The investment provides [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
       },
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "The UAE&#8217;s first intercity passenger railway service will begin operating between Fujairah and Abu Dhabi on June 30, but attention is already turning to the network’s most anticipated route: the link between Abu Dhabi and Dubai, due to open in September. The September service will connect Abu Dhabi&#8217;s Mohamed bin Zayed City station with a [&#8230;]",
-        "hoursAgo": 12,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 63,
+        "hoursAgo": 67,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -68,7 +68,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 39,
+        "hoursAgo": 44,
         "score": 6.5,
         "topic": "Banking & Rates",
         "origin": "google-news"
@@ -77,13 +77,26 @@
     "risk": [],
     "world": [
       {
+        "title": "Sharjah Police arrest 4 , 757 suspects , seize Dh392 . 8 million in major anti - drug operations",
+        "url": "https://gulfnews.com/uae/crime/sharjah-police-arrest-4757-seize-dh3928m-in-major-drug-busts-1.500586966",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-06-25",
+        "description": "Sharjah Police arrest 4 , 757 suspects , seize Dh392 . 8 million in major anti - drug operations",
+        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-06-25%2Fy45th046%2FSharjah-Police-forum-9.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 10,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
+      },
+      {
         "title": "Dubai’s Gems Education to scale up presence in India",
         "url": "https://www.agbi.com/education/2026/06/dubais-gems-education-to-scale-up-presence-in-india/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "Gems Education, part of the Dubai-based Varkey Group, is reportedly planning to invest up to $30 million in India over the next three to five years. The strategy includes the development of more than 30 Gems-operated schools, a nationwide network of more than 1,000 Gems partner schools and the establishment of a dedicated school for [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -95,12 +108,12 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "Silvio Berlusconi&#8217;s heirs have agreed to sell the former Italian prime minister&#8217;s luxury Sardinian retreat, Villa Certosa, to a company linked to Qatar&#8217;s ruling family, a source with knowledge of the matter said. Sheikh Jassim bin Hamad al Thani&#8217;s Constellation Hotels Holding Ltd paid €350 million ($395 million) for the sprawling estate on Sardinia&#8217;s exclusive [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 7
 }
