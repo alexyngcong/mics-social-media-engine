@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-26T14:21:52.561Z",
+  "generatedAt": "2026-06-26T17:46:28.149Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 206,
-    "big4Rejected": 3,
-    "englishOnly": 184,
-    "withinRecency": 84,
-    "scored": 84,
-    "passed": 7
+    "totalFetched": 170,
+    "afterDedup": 165,
+    "big4Rejected": 2,
+    "englishOnly": 163,
+    "withinRecency": 64,
+    "scored": 64,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,19 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "Oman Investment Authority (OIA) has invested in Vietnam-based Vingroup’s $255 million private credit financing to support the growth of the Vietnamese hospitality sector. Other investors include Singapore’s investment company Temasek and Vietnam Oman Investment, a joint venture between OIA and the State Capital Investment Corporation of Vietnam, Vingroup said in a statement. The investment provides [&#8230;]",
-        "hoursAgo": 8,
-        "score": 6,
-        "topic": "Business Expansion",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Excitement builds for Etihad Rail’s Abu Dhabi-Dubai launch",
-        "url": "https://www.agbi.com/transport/2026/06/early-excitement-for-etihad-rails-dubai-route/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-25",
-        "description": "The UAE&#8217;s first intercity passenger railway service begins operating between Fujairah and Abu Dhabi on June 30, but attention is already turning to the network’s most anticipated route: a link between Abu Dhabi and Dubai, due to open in September. The September service will connect Abu Dhabi&#8217;s Mohamed bin Zayed City station with a new [&#8230;]",
-        "hoursAgo": 22,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -56,7 +44,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "UAE healthcare provider Burjeel Holdings has raised $500 million through its inaugural dollar sukuk after attracting more than three times that amount in investor orders, as demand for Gulf corporate debt continues to recover. The Abu Dhabi-listed company priced the five-year sukuk with a 7 percent profit rate, after demand reached about $1.6 billion. Investor [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -68,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "Iraq posted a fiscal deficit of ID6.7 trillion ($5 billion) in the first four months of 2026 after the Iran war dented oil export revenue, underlining the need for government approval of a new state budget. The Iraqi government has been spending a monthly average of just over 8 percent of last year’s expenditure, even [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -80,7 +68,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 50,
+        "hoursAgo": 54,
         "score": 6,
         "topic": "Banking & Rates",
         "origin": "google-news"
@@ -88,25 +76,13 @@
     ],
     "risk": [
       {
-        "title": "Iran reasserts its right to control shipping in Strait of Hormuz after ship hit near Oman - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcFRwZHY1bnhkUUxWazNxYUNVdjlHV2RFN2RBc0ZnS2ZMc1JKQmtSMkRzQ0lIZkN6aXFMeENhTkJ2UURUcnJTNnZRZmdiQWdHcGdHYl9IbmdLa2tmT0VOUDN4Y1dRU0dQWkFNZkNuX2Q4VFVKUE5MUjBEaGpud3czTzdJR2Jrbzl1X2x2VkZsR1lyVjN3dDFnUHhMUXN0M3pmVFdiZnJidUF6ZFViSVpkWXB1V2t1S3d4OGpwQmdhd0ZwODVQN2NF?oc=5",
-        "source": "Reuters",
-        "domain": "reuters.com",
-        "date": "2026-06-26",
-        "description": "Iran reasserts its right to control shipping in Strait of Hormuz after ship hit near Oman  Reuters",
-        "hoursAgo": 2,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
         "title": "UAE launches first enterprise IT hardware manufacturing facility in Dubai Silicon Oasis - Economy Middle East",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWXp4UktvRWlYNXIzdjFPVmcxekh2dE53ZlBaeHJLYkZJUU5KZzJZaXRyU09kRlpRYklFV2hRRVFLc2FUdlZEUEw3WFJGZGxFbl9XVk4xNVdwaDgyN2RZZV9RckNVSldUT3RnVkU0eDVzWHZzOGtkc1hiV3BKSEJhNzZ3UDF2U2tvYTR0WGtueU5GQVFfeEc1aktUREozSldIa0UzLUpxUEQwcW5wRmJiNEVwTjhkYjB1LXBOZlE2REw?oc=5",
         "source": "Economy Middle East",
         "domain": "economymiddleeast.com",
         "date": "2026-06-26",
         "description": "UAE launches first enterprise IT hardware manufacturing facility in Dubai Silicon Oasis  Economy Middle East",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -114,5 +90,5 @@
     ],
     "world": []
   },
-  "totalCount": 7
+  "totalCount": 5
 }
