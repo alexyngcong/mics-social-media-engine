@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-26T07:51:27.307Z",
+  "generatedAt": "2026-06-26T10:50:14.858Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 270,
-    "afterDedup": 210,
+    "afterDedup": 204,
     "big4Rejected": 3,
-    "englishOnly": 186,
-    "withinRecency": 91,
-    "scored": 91,
+    "englishOnly": 183,
+    "withinRecency": 88,
+    "scored": 88,
     "passed": 7
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "Oman Investment Authority (OIA) has invested in Vietnam-based Vingroup’s $255 million private credit financing to support the growth of the Vietnamese hospitality sector. Other investors include Singapore’s investment company Temasek and Vietnam Oman Investment, a joint venture between OIA and the State Capital Investment Corporation of Vietnam, Vingroup said in a statement. The investment provides [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "The UAE&#8217;s first intercity passenger railway service will begin operating between Fujairah and Abu Dhabi on June 30, but attention is already turning to the network’s most anticipated route: the link between Abu Dhabi and Dubai, due to open in September. The September service will connect Abu Dhabi&#8217;s Mohamed bin Zayed City station with a [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-23",
         "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 67,
+        "hoursAgo": 70,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -68,13 +68,26 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 44,
+        "hoursAgo": 47,
         "score": 6.5,
         "topic": "Banking & Rates",
         "origin": "google-news"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE launches first enterprise IT hardware manufacturing facility in Dubai Silicon Oasis - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWXp4UktvRWlYNXIzdjFPVmcxekh2dE53ZlBaeHJLYkZJUU5KZzJZaXRyU09kRlpRYklFV2hRRVFLc2FUdlZEUEw3WFJGZGxFbl9XVk4xNVdwaDgyN2RZZV9RckNVSldUT3RnVkU0eDVzWHZzOGtkc1hiV3BKSEJhNzZ3UDF2U2tvYTR0WGtueU5GQVFfeEc1aktUREozSldIa0UzLUpxUEQwcW5wRmJiNEVwTjhkYjB1LXBOZlE2REw?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-06-26",
+        "description": "UAE launches first enterprise IT hardware manufacturing facility in Dubai Silicon Oasis  Economy Middle East",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
         "title": "Sharjah Police arrest 4 , 757 suspects , seize Dh392 . 8 million in major anti - drug operations",
@@ -84,7 +97,7 @@
         "date": "2026-06-25",
         "description": "Sharjah Police arrest 4 , 757 suspects , seize Dh392 . 8 million in major anti - drug operations",
         "imageUrl": "https://media.assettype.com/gulfnews%2F2026-06-25%2Fy45th046%2FSharjah-Police-forum-9.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 10,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "gdelt"
@@ -96,18 +109,6 @@
         "domain": "agbi.com",
         "date": "2026-06-25",
         "description": "Gems Education, part of the Dubai-based Varkey Group, is reportedly planning to invest up to $30 million in India over the next three to five years. The strategy includes the development of more than 30 Gems-operated schools, a nationwide network of more than 1,000 Gems partner schools and the establishment of a dedicated school for [&#8230;]",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Berlusconi heirs sell Sardinian party palace to Qatari sheikh",
-        "url": "https://www.agbi.com/real-estate/2026/06/berlusconi-heirs-sell-sardinian-party-palace-to-qatari-sheikh/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-25",
-        "description": "Silvio Berlusconi&#8217;s heirs have agreed to sell the former Italian prime minister&#8217;s luxury Sardinian retreat, Villa Certosa, to a company linked to Qatar&#8217;s ruling family, a source with knowledge of the matter said. Sheikh Jassim bin Hamad al Thani&#8217;s Constellation Hotels Holding Ltd paid €350 million ($395 million) for the sprawling estate on Sardinia&#8217;s exclusive [&#8230;]",
         "hoursAgo": 23,
         "score": 6,
         "topic": "Global Economic Signals",
