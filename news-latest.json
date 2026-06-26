@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-26T10:50:14.858Z",
+  "generatedAt": "2026-06-26T14:21:52.561Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 270,
-    "afterDedup": 204,
+    "afterDedup": 206,
     "big4Rejected": 3,
-    "englishOnly": 183,
-    "withinRecency": 88,
-    "scored": 88,
+    "englishOnly": 184,
+    "withinRecency": 84,
+    "scored": 84,
     "passed": 7
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "Oman Investment Authority (OIA) has invested in Vietnam-based Vingroup’s $255 million private credit financing to support the growth of the Vietnamese hospitality sector. Other investors include Singapore’s investment company Temasek and Vietnam Oman Investment, a joint venture between OIA and the State Capital Investment Corporation of Vietnam, Vingroup said in a statement. The investment provides [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -41,8 +41,8 @@
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-25",
-        "description": "The UAE&#8217;s first intercity passenger railway service will begin operating between Fujairah and Abu Dhabi on June 30, but attention is already turning to the network’s most anticipated route: the link between Abu Dhabi and Dubai, due to open in September. The September service will connect Abu Dhabi&#8217;s Mohamed bin Zayed City station with a [&#8230;]",
-        "hoursAgo": 19,
+        "description": "The UAE&#8217;s first intercity passenger railway service begins operating between Fujairah and Abu Dhabi on June 30, but attention is already turning to the network’s most anticipated route: a link between Abu Dhabi and Dubai, due to open in September. The September service will connect Abu Dhabi&#8217;s Mohamed bin Zayed City station with a new [&#8230;]",
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Business Expansion",
         "origin": "uae-rss"
@@ -50,16 +50,28 @@
     ],
     "capital": [
       {
-        "title": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbWNhTTRYaTFDVlB3VXBCMzN1UFhtbDlSc3NXTnNOdVV5aC1za1ozMDktampWbXpXa0ZBQnd6WmR5bF9xdFlyNTZaNm1HcFVMV3FJbGFVc2lkTHFXb0lFS2F1Y2pHdXNBNEx0QTNFM3ptQlg2VkUyVkdpU0NNUDJ4MnRmc0NZWV8tOHQ1MTJwREVMT1JUcEF3ejItRlNkTl91dl9adFpmOUQ3STU0a0hOYm130gHEAUFVX3lxTFBQbEhWVkZ0ME1TSDN4NnpicFZqMXN6T3I3UHFYVU5xYmZvcXBvelJHck1JYVZRd0lJelpfN1B5Z1RWeXhyTHhiN1hTTk5zZXZMMHM0VEt4R0Zkd2JuZVdLTUFkaFJ0WnFWZW1aR2hFNDVUaS1GWElkQXY1VmpGaXNMLVB0V1dSOFJTTXAwQ0JzZnAyVzhsQmJaVEd6RUVORnBVM3RPMWdTejAzdTJ5NDVoNnJ0SmdQRXF0Z0JyaG1wX0o0Tmk?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-06-23",
-        "description": "UAE's first retail T-Sukuk opens: Dh1,000 minimum, 4.30% profit rate  Gulf News",
-        "hoursAgo": 70,
+        "title": "Burjeel prices $500m sukuk as Gulf debt issuance gathers pace",
+        "url": "https://www.agbi.com/markets/2026/06/burjeel-prices-500m-sukuk-as-gulf-debt-issuance-gathers-pace/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-26",
+        "description": "UAE healthcare provider Burjeel Holdings has raised $500 million through its inaugural dollar sukuk after attracting more than three times that amount in investor orders, as demand for Gulf corporate debt continues to recover. The Abu Dhabi-listed company priced the five-year sukuk with a 7 percent profit rate, after demand reached about $1.6 billion. Investor [&#8230;]",
+        "hoursAgo": 3,
+        "score": 8,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Iraq posts $5bn budget gap as oil revenue slumps during Iran war",
+        "url": "https://www.agbi.com/economy/2026/06/iraq-posts-5bn-budget-deficit-as-oil-revenue-slumps-after-iran-war/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-26",
+        "description": "Iraq posted a fiscal deficit of ID6.7 trillion ($5 billion) in the first four months of 2026 after the Iran war dented oil export revenue, underlining the need for government approval of a new state budget. The Iraqi government has been spending a monthly average of just over 8 percent of last year’s expenditure, even [&#8230;]",
+        "hoursAgo": 3,
         "score": 7,
         "topic": "Corporate Finance",
-        "origin": "google-news"
+        "origin": "uae-rss"
       },
       {
         "title": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors - Gulf Business",
@@ -68,13 +80,25 @@
         "domain": "gulfbusiness.com",
         "date": "2026-06-24",
         "description": "UAE opens first-ever retail T-Sukuk subscription, offering 4.3% returns to investors  Gulf Business",
-        "hoursAgo": 47,
-        "score": 6.5,
+        "hoursAgo": 50,
+        "score": 6,
         "topic": "Banking & Rates",
         "origin": "google-news"
       }
     ],
     "risk": [
+      {
+        "title": "Iran reasserts its right to control shipping in Strait of Hormuz after ship hit near Oman - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcFRwZHY1bnhkUUxWazNxYUNVdjlHV2RFN2RBc0ZnS2ZMc1JKQmtSMkRzQ0lIZkN6aXFMeENhTkJ2UURUcnJTNnZRZmdiQWdHcGdHYl9IbmdLa2tmT0VOUDN4Y1dRU0dQWkFNZkNuX2Q4VFVKUE5MUjBEaGpud3czTzdJR2Jrbzl1X2x2VkZsR1lyVjN3dDFnUHhMUXN0M3pmVFdiZnJidUF6ZFViSVpkWXB1V2t1S3d4OGpwQmdhd0ZwODVQN2NF?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
+        "date": "2026-06-26",
+        "description": "Iran reasserts its right to control shipping in Strait of Hormuz after ship hit near Oman  Reuters",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
       {
         "title": "UAE launches first enterprise IT hardware manufacturing facility in Dubai Silicon Oasis - Economy Middle East",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWXp4UktvRWlYNXIzdjFPVmcxekh2dE53ZlBaeHJLYkZJUU5KZzJZaXRyU09kRlpRYklFV2hRRVFLc2FUdlZEUEw3WFJGZGxFbl9XVk4xNVdwaDgyN2RZZV9RckNVSldUT3RnVkU0eDVzWHZzOGtkc1hiV3BKSEJhNzZ3UDF2U2tvYTR0WGtueU5GQVFfeEc1aktUREozSldIa0UzLUpxUEQwcW5wRmJiNEVwTjhkYjB1LXBOZlE2REw?oc=5",
@@ -82,39 +106,13 @@
         "domain": "economymiddleeast.com",
         "date": "2026-06-26",
         "description": "UAE launches first enterprise IT hardware manufacturing facility in Dubai Silicon Oasis  Economy Middle East",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "Sharjah Police arrest 4 , 757 suspects , seize Dh392 . 8 million in major anti - drug operations",
-        "url": "https://gulfnews.com/uae/crime/sharjah-police-arrest-4757-seize-dh3928m-in-major-drug-busts-1.500586966",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-06-25",
-        "description": "Sharjah Police arrest 4 , 757 suspects , seize Dh392 . 8 million in major anti - drug operations",
-        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-06-25%2Fy45th046%2FSharjah-Police-forum-9.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 13,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "gdelt"
-      },
-      {
-        "title": "Dubai’s Gems Education to scale up presence in India",
-        "url": "https://www.agbi.com/education/2026/06/dubais-gems-education-to-scale-up-presence-in-india/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-25",
-        "description": "Gems Education, part of the Dubai-based Varkey Group, is reportedly planning to invest up to $30 million in India over the next three to five years. The strategy includes the development of more than 30 Gems-operated schools, a nationwide network of more than 1,000 Gems partner schools and the establishment of a dedicated school for [&#8230;]",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      }
-    ]
+    "world": []
   },
   "totalCount": 7
 }
