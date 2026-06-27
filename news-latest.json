@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-27T17:08:01.951Z",
+  "generatedAt": "2026-06-27T21:01:58.432Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 161,
+    "afterDedup": 164,
     "big4Rejected": 2,
-    "englishOnly": 159,
-    "withinRecency": 45,
-    "scored": 45,
+    "englishOnly": 162,
+    "withinRecency": 49,
+    "scored": 49,
     "passed": 2
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "UAE healthcare provider Burjeel Holdings has raised $500 million through its inaugural dollar sukuk after attracting more than three times that amount in investor orders, as demand for Gulf corporate debt continues to recover. The Abu Dhabi-listed company priced the five-year sukuk with a 7 percent profit rate, after demand reached about $1.6 billion. Investor [&#8230;]",
-        "hoursAgo": 30,
+        "hoursAgo": 33,
         "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "Iraq posted a fiscal deficit of ID6.7 trillion ($5 billion) in the first four months of 2026 after the Iran war dented oil export revenue, underlining the need for government approval of a new state budget. The Iraqi government has been spending a monthly average of just over 8 percent of last year’s expenditure, even [&#8230;]",
-        "hoursAgo": 30,
+        "hoursAgo": 34,
         "score": 6.5,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
