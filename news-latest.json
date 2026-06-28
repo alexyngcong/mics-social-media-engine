@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-28T10:26:30.107Z",
+  "generatedAt": "2026-06-28T13:42:52.030Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 165,
-    "big4Rejected": 4,
-    "englishOnly": 161,
-    "withinRecency": 46,
-    "scored": 46,
-    "passed": 2
+    "totalFetched": 270,
+    "afterDedup": 200,
+    "big4Rejected": 5,
+    "englishOnly": 180,
+    "withinRecency": 66,
+    "scored": 66,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -31,8 +31,8 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "UAE healthcare provider Burjeel Holdings has raised $500 million through its inaugural dollar sukuk after attracting more than three times that amount in investor orders, as demand for Gulf corporate debt continues to recover. The Abu Dhabi-listed company priced the five-year sukuk with a 7 percent profit rate, after demand reached about $1.6 billion. Investor [&#8230;]",
-        "hoursAgo": 47,
-        "score": 7.5,
+        "hoursAgo": 50,
+        "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       },
@@ -43,14 +43,28 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "Iraq posted a fiscal deficit of ID6.7 trillion ($5 billion) in the first four months of 2026 after the Iran war dented oil export revenue, underlining the need for government approval of a new state budget. The Iraqi government has been spending a monthly average of just over 8 percent of last year’s expenditure, even [&#8230;]",
-        "hoursAgo": 47,
-        "score": 6.5,
+        "hoursAgo": 51,
+        "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Lebanese , UAE presidents discuss Lebanon - Israel framework deal",
+        "url": "https://aa.com.tr/en/middle-east/lebanese-uae-presidents-discuss-lebanon-israel-framework-deal/3979791",
+        "source": "Aa",
+        "domain": "aa.com.tr",
+        "date": "2026-06-27",
+        "description": "Lebanese , UAE presidents discuss Lebanon - Israel framework deal",
+        "imageUrl": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/06/27/thumbs_b_c_1dc6cc252f76541e4ffc3dff68523017.jpg",
+        "hoursAgo": 22,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "gdelt"
+      }
+    ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
