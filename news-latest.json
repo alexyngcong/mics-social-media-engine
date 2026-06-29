@@ -1,56 +1,106 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-29T08:57:34.843Z",
+  "generatedAt": "2026-06-29T15:43:05.637Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 10,
+    "gdelt": 7,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 180,
-    "afterDedup": 165,
+    "totalFetched": 177,
+    "afterDedup": 166,
     "big4Rejected": 5,
-    "englishOnly": 159,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 2
+    "englishOnly": 160,
+    "withinRecency": 48,
+    "scored": 48,
+    "passed": 6
   },
   "rooms": {
     "growth": [],
     "capital": [
       {
-        "title": "Burjeel prices $500m sukuk as Gulf debt issuance gathers pace",
-        "url": "https://www.agbi.com/markets/2026/06/burjeel-prices-500m-sukuk-as-gulf-debt-issuance-gathers-pace/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-26",
-        "description": "UAE healthcare provider Burjeel Holdings has raised $500 million through its inaugural dollar sukuk after attracting more than three times that amount in investor orders, as demand for Gulf corporate debt continues to recover. The Abu Dhabi-listed company priced the five-year sukuk with a 7 percent profit rate, after demand reached about $1.6 billion. Investor [&#8230;]",
-        "hoursAgo": 69,
+        "title": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30 - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTDByMGV5ejhQMW9HNUtXdUNScFhYSm9Pb3VxMFBkd3dLUm10UDdWdmU3aUwyY1RHcmFkb3M3VDBiVGJXbEpiOTIxQzM0SEVhV1ZnUGdQb3J1NEVfdkxFeXZLb3JweXRabkVCcm9fcGNhbDF6cWRueXNHYVNwNm9BSmZLU0k1bGNaZ0EwbzQ0STBLeEN1emRucWQyLUZDNG1uQlBLUnh3SllqZmFRREU5V25FaTVCZlFFLVBhQktXUlUtandRMzNHNjl3?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-06-29",
+        "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
+        "hoursAgo": 2,
         "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
+        "topic": "Workforce & HR",
+        "origin": "google-news"
       },
       {
-        "title": "Iraq posts $5bn budget gap as oil revenue slumps during Iran war",
-        "url": "https://www.agbi.com/economy/2026/06/iraq-posts-5bn-budget-deficit-as-oil-revenue-slumps-after-iran-war/",
+        "title": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMXVLTnNSeUFCTmRBQ0h5NmJPRG1uNVM4cWdDNGFRbWg3MVE0Q2dBME9BWU9QdGpGNVNHVHZVSnZRZmFDbXBpTWh2WXpyblZJSjQzTFpjUnI4YTFkWVJnVkdmdVVXTUtNUV9QWVZ0SndRYkZ0U3JEM2xVTUcxTDZ3ZDZBc0x6SlR4U0x2WWJhWk5vUV94LWVONFFnSlNwSFJvQ045MFpBZ1VtOWZFVlBYVV9R0gHMAUFVX3lxTFBQRnpnZml0UkVqM1ZFOGpKWGwyUGRENFJTTlNBZGUyRWhXWWRnd0pIZGNNWDRaazM0blpTaG5qRmNnYVY4YjJqblVEMHlRdDR5NTI2VEpTb1h1OGJHeXV1VV9YaDVta1dfMkZfWXl1alJyc2tocUZEaGdWWm54RlczRmRVcGZEWWpyMVJEY1VPUy1pYktxWEs5bWhsU1hIbjA2aEYtaUNjTVYyeEFILW0zcktzbC1LWVRlWklad3Jmakg1bDgyWFhINUxhMg?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-06-29",
+        "description": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines  Emirates 24|7",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Workforce & HR",
+        "origin": "google-news"
+      }
+    ],
+    "risk": [
+      {
+        "title": "UAE FTA reports record Dhs46 billion revenue for 2025 - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcWttbG55YVBxWDRHMWg4NTltZTAtTGZ5SjIwUEVkV1Y3N2NEdjdvU2g2NVdhbVRSSFdWcUViNmZwOUVCSTBpdm9OemxDTjRUMjRtZFNhUFlaSXNCWGc4ZS1UdktRSEdDVUJNQmF3MXliYXVZbVZxb0x1VDBwQU9mYUMySEk0X2JablNNYkh0QU1qd2NSMWtFeUM0YUJuRDA?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-06-29",
+        "description": "UAE FTA reports record Dhs46 billion revenue for 2025  Gulf Today",
+        "hoursAgo": 2,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "Iraq acts to renew Turkish pipeline deal before July deadline",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/iraq-acts-to-renew-turkish-pipeline-deal-before-july-deadline/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-26",
-        "description": "Iraq posted a fiscal deficit of ID6.7 trillion ($5 billion) in the first four months of 2026 after the Iran war dented oil export revenue, underlining the need for government approval of a new state budget. The Iraqi government has been spending a monthly average of just over 8 percent of last year’s expenditure, even [&#8230;]",
-        "hoursAgo": 70,
+        "date": "2026-06-29",
+        "description": "Iraq has formed a government committee to negotiate a new oil pipeline agreement with Turkey before a decades-old accord expires next month. Baghdad is seeking to secure an alternative export outlet to the restricted Strait of Hormuz. In July 2025, Ankara informed Baghdad that it had decided to terminate the 52-year-old pact governing the pipeline [&#8230;]",
+        "hoursAgo": 5,
         "score": 6,
-        "topic": "Corporate Finance",
+        "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
       }
     ],
-    "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE tax: Major reform begins this week - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE11LTNEVnRmMk5ESlpFZWJZOW1fWjIzTGV6cDNudnotN25LOWJxWjYxSWxaTGgyNFIwSW51SlpmckVKajlRaVl1ZHUwWURNZVhCNnBlb0ZPMDE3S2JZYV8ydjdhblk0OHBFbElhbnN2aDJ1LTRBU1RkQ251NW5EZw?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-06-29",
+        "description": "UAE tax: Major reform begins this week  Arabian Business",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Manufacturing and energy help Tunisia&#8217;s FDI to rise 25%",
+        "url": "https://www.agbi.com/economy/2026/06/manufacturing-and-energy-help-tunisian-fdi-to-rise-25/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-29",
+        "description": "Foreign direct investment into Tunisia rose by nearly a quarter in the first four months of 2026, driven by manufacturing and energy projects, as the North African country seeks to attract more overseas capital. FDI increased from around TD1 billion ($345 million) in the first four months of 2025 to TD1.3 billion in the same [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      }
+    ]
   },
-  "totalCount": 2
+  "totalCount": 6
 }
