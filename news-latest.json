@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-29T15:43:05.637Z",
+  "generatedAt": "2026-06-29T18:07:15.446Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 7,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 177,
-    "afterDedup": 166,
-    "big4Rejected": 5,
-    "englishOnly": 160,
-    "withinRecency": 48,
-    "scored": 48,
-    "passed": 6
+    "totalFetched": 170,
+    "afterDedup": 161,
+    "big4Rejected": 4,
+    "englishOnly": 157,
+    "withinRecency": 50,
+    "scored": 50,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
@@ -31,37 +31,13 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 2,
+        "hoursAgo": 4,
         "score": 7,
-        "topic": "Workforce & HR",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMXVLTnNSeUFCTmRBQ0h5NmJPRG1uNVM4cWdDNGFRbWg3MVE0Q2dBME9BWU9QdGpGNVNHVHZVSnZRZmFDbXBpTWh2WXpyblZJSjQzTFpjUnI4YTFkWVJnVkdmdVVXTUtNUV9QWVZ0SndRYkZ0U3JEM2xVTUcxTDZ3ZDZBc0x6SlR4U0x2WWJhWk5vUV94LWVONFFnSlNwSFJvQ045MFpBZ1VtOWZFVlBYVV9R0gHMAUFVX3lxTFBQRnpnZml0UkVqM1ZFOGpKWGwyUGRENFJTTlNBZGUyRWhXWWRnd0pIZGNNWDRaazM0blpTaG5qRmNnYVY4YjJqblVEMHlRdDR5NTI2VEpTb1h1OGJHeXV1VV9YaDVta1dfMkZfWXl1alJyc2tocUZEaGdWWm54RlczRmRVcGZEWWpyMVJEY1VPUy1pYktxWEs5bWhsU1hIbjA2aEYtaUNjTVYyeEFILW0zcktzbC1LWVRlWklad3Jmakg1bDgyWFhINUxhMg?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-06-29",
-        "description": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines  Emirates 24|7",
-        "hoursAgo": 6,
-        "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
     "risk": [
-      {
-        "title": "UAE FTA reports record Dhs46 billion revenue for 2025 - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcWttbG55YVBxWDRHMWg4NTltZTAtTGZ5SjIwUEVkV1Y3N2NEdjdvU2g2NVdhbVRSSFdWcUViNmZwOUVCSTBpdm9OemxDTjRUMjRtZFNhUFlaSXNCWGc4ZS1UdktRSEdDVUJNQmF3MXliYXVZbVZxb0x1VDBwQU9mYUMySEk0X2JablNNYkh0QU1qd2NSMWtFeUM0YUJuRDA?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-06-29",
-        "description": "UAE FTA reports record Dhs46 billion revenue for 2025  Gulf Today",
-        "hoursAgo": 2,
-        "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
       {
         "title": "Iraq acts to renew Turkish pipeline deal before July deadline",
         "url": "https://www.agbi.com/oil-and-gas/2026/06/iraq-acts-to-renew-turkish-pipeline-deal-before-july-deadline/",
@@ -69,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-06-29",
         "description": "Iraq has formed a government committee to negotiate a new oil pipeline agreement with Turkey before a decades-old accord expires next month. Baghdad is seeking to secure an alternative export outlet to the restricted Strait of Hormuz. In July 2025, Ankara informed Baghdad that it had decided to terminate the 52-year-old pact governing the pipeline [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -83,7 +59,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-06-29",
         "description": "UAE tax: Major reform begins this week  Arabian Business",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -95,12 +71,12 @@
         "domain": "agbi.com",
         "date": "2026-06-29",
         "description": "Foreign direct investment into Tunisia rose by nearly a quarter in the first four months of 2026, driven by manufacturing and energy projects, as the North African country seeks to attract more overseas capital. FDI increased from around TD1 billion ($345 million) in the first four months of 2025 to TD1.3 billion in the same [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 4
 }
