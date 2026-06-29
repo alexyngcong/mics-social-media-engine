@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-29T03:41:33.404Z",
+  "generatedAt": "2026-06-29T08:57:34.843Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 1,
+    "gdelt": 10,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 171,
-    "afterDedup": 160,
-    "big4Rejected": 4,
-    "englishOnly": 156,
-    "withinRecency": 41,
-    "scored": 41,
+    "totalFetched": 180,
+    "afterDedup": 165,
+    "big4Rejected": 5,
+    "englishOnly": 159,
+    "withinRecency": 45,
+    "scored": 45,
     "passed": 2
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "UAE healthcare provider Burjeel Holdings has raised $500 million through its inaugural dollar sukuk after attracting more than three times that amount in investor orders, as demand for Gulf corporate debt continues to recover. The Abu Dhabi-listed company priced the five-year sukuk with a 7 percent profit rate, after demand reached about $1.6 billion. Investor [&#8230;]",
-        "hoursAgo": 64,
+        "hoursAgo": 69,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -43,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-06-26",
         "description": "Iraq posted a fiscal deficit of ID6.7 trillion ($5 billion) in the first four months of 2026 after the Iran war dented oil export revenue, underlining the need for government approval of a new state budget. The Iraqi government has been spending a monthly average of just over 8 percent of last year’s expenditure, even [&#8230;]",
-        "hoursAgo": 65,
+        "hoursAgo": 70,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
