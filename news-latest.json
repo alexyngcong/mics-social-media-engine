@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-30T07:52:54.732Z",
+  "generatedAt": "2026-06-30T10:56:22.191Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 10,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 180,
-    "afterDedup": 163,
+    "totalFetched": 270,
+    "afterDedup": 198,
     "big4Rejected": 3,
-    "englishOnly": 159,
-    "withinRecency": 54,
-    "scored": 54,
+    "englishOnly": 181,
+    "withinRecency": 76,
+    "scored": 76,
     "passed": 6
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Oman has awarded a major contract to a consortium led by a French utility company to provide 24-hour water supply to 2.3 million residents. The 15-year performance-based contract, valued at €2 billion ($2.3 billion), was given by the state-run Oman Water and Wastewater Services Company (Nama Water Services) to a group comprising Suez and two [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Infrastructure & Logistics",
         "origin": "uae-rss"
@@ -44,32 +44,8 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 18,
+        "hoursAgo": 21,
         "score": 7,
-        "topic": "Workforce & HR",
-        "origin": "google-news"
-      },
-      {
-        "title": "Tougher rules for UAE firms as Emiratisation deadline hits",
-        "url": "https://www.agbi.com/employment/2026/06/tougher-rules-for-uae-firms-as-emiratisation-deadline-hits/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "UAE companies racing to meet today&#8217;s Emiratisation deadline should prepare for tougher localisation rules beyond current hiring quotas, labour market specialists say, as enforcement intensifies and broader employment reforms loom. Private-sector companies with 50 or more employees must increase the proportion of Emiratis in skilled roles by 1 percent by June 30 – the first [&#8230;]",
-        "hoursAgo": 4,
-        "score": 7,
-        "topic": "Workforce & HR",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMXVLTnNSeUFCTmRBQ0h5NmJPRG1uNVM4cWdDNGFRbWg3MVE0Q2dBME9BWU9QdGpGNVNHVHZVSnZRZmFDbXBpTWh2WXpyblZJSjQzTFpjUnI4YTFkWVJnVkdmdVVXTUtNUV9QWVZ0SndRYkZ0U3JEM2xVTUcxTDZ3ZDZBc0x6SlR4U0x2WWJhWk5vUV94LWVONFFnSlNwSFJvQ045MFpBZ1VtOWZFVlBYVV9R0gHMAUFVX3lxTFBQRnpnZml0UkVqM1ZFOGpKWGwyUGRENFJTTlNBZGUyRWhXWWRnd0pIZGNNWDRaazM0blpTaG5qRmNnYVY4YjJqblVEMHlRdDR5NTI2VEpTb1h1OGJHeXV1VV9YaDVta1dfMkZfWXl1alJyc2tocUZEaGdWWm54RlczRmRVcGZEWWpyMVJEY1VPUy1pYktxWEs5bWhsU1hIbjA2aEYtaUNjTVYyeEFILW0zcktzbC1LWVRlWklad3Jmakg1bDgyWFhINUxhMg?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-06-29",
-        "description": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines  Emirates 24|7",
-        "hoursAgo": 22,
-        "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
       }
@@ -77,13 +53,37 @@
     "risk": [],
     "world": [
       {
+        "title": "Jordan plans $70m amusement park in Amra city",
+        "url": "https://www.agbi.com/construction/2026/06/jordan-plans-70m-amusement-park-in-amra-green-city/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "Jordan has awarded a feasibility study contract for a $70 million amusement park as part of the Amra green city development. The state-owned Jordan Company for Developing Cities and Facilities (JCDCF), which manages the Amra project, said it awarded the contract to a British-Saudi consortium. The amusement park is expected to cost about JD50 million [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Saudi Arabia extends tax waiver until end of 2026",
+        "url": "https://www.agbi.com/tax/2026/06/saudi-arabia-extends-tax-waiver-scheme-until-end-of-2026/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "Saudi Arabia&#8217;s tax authority has extended its fine and penalty waiver scheme for an additional six months, effective from July 1. The extension will run until December 31, offering exemptions from penalties for late registration, payment and filing under all tax laws, the Zakat, Tax and Customs Authority (Zatca) said in a statement. The scheme [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
         "title": "XRG expands globally with stake in Argentine gas blocks",
         "url": "https://www.agbi.com/oil-and-gas/2026/06/xrg-expands-globally-with-stake-in-argentine-gas-blocks/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "XRG, the low-carbon energy and chemicals investment arm of&#160;Abu Dhabi National Oil Company (Adnoc), has signed a deal with Argentina&#8217;s state oil company YPF to take a 32 percent stake in three upstream gas blocks in the South American country. Completion of the transaction remains subject to customary regulatory approval, XRG said in a statement. The [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
@@ -95,7 +95,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Abu Dhabi Future Energy Company (Masdar) has broken ground on its 1-gigawatt wind farm in Kazakhstan. The $1.4 billion project in the Zhambyl region in southern Kazakhstan is one of the largest renewable energy developments in Central Asia. It is being co-developed with W Solar, Qazaq Green Power, a Samruk-Kazyna Fund company and the Kazakhstan Investment Development [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
