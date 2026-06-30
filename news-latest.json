@@ -1,38 +1,50 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-30T10:56:22.191Z",
+  "generatedAt": "2026-06-30T14:15:17.678Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 198,
+    "totalFetched": 181,
+    "afterDedup": 167,
     "big4Rejected": 3,
-    "englishOnly": 181,
-    "withinRecency": 76,
-    "scored": 76,
-    "passed": 6
+    "englishOnly": 163,
+    "withinRecency": 60,
+    "scored": 60,
+    "passed": 8
   },
   "rooms": {
     "growth": [
       {
-        "title": "Oman awards $2bn contract to ensure non-stop water supply",
-        "url": "https://www.agbi.com/infrastructure/2026/06/oman-awards-2bn-contract-to-ensure-non-stop-water-supply/",
+        "title": "Modon awards $200m contract for Ras El Hekma district",
+        "url": "https://www.agbi.com/infrastructure/2026/06/modon-awards-200m-contract-for-ras-el-hekma-district/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-30",
-        "description": "Oman has awarded a major contract to a consortium led by a French utility company to provide 24-hour water supply to 2.3 million residents. The 15-year performance-based contract, valued at €2 billion ($2.3 billion), was given by the state-run Oman Water and Wastewater Services Company (Nama Water Services) to a group comprising Suez and two [&#8230;]",
-        "hoursAgo": 6,
+        "description": "Abu Dhabi developer Modon Holding&#160;has reportedly awarded the infrastructure contract for the Wadi Yemm district, the first luxury residential destination&#160;in Egypt&#8217;s $35 billion Ras El Hekma development. The contract, valued at EGP10 billion ($200 million), was awarded to a joint venture between Egypt’s Rowad Modern Engineering and Greece’s Consolidated Contractors Company, Asharq Business reported, quoting [&#8230;]",
+        "hoursAgo": 1,
         "score": 6,
-        "topic": "Infrastructure & Logistics",
+        "topic": "Real Estate & Construction",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Dubai Residential REIT buys 220 Jebel Ali Village townhouses",
+        "url": "https://www.agbi.com/real-estate/2026/06/dubai-residential-reit-buys-220-jebel-ali-village-townhouses/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "Dubai Residential REIT has expanded its investment portfolio with the purchase of 220 townhouses at Jebel Ali Village for AED894 million ($243 million). The real estate investment trust added 276 units to its portfolio in the first half of 2026, including 56 units purchased in Garden View Villas earlier this year. The Garden View villas [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Real Estate & Construction",
         "origin": "uae-rss"
       }
     ],
@@ -44,14 +56,63 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 21,
+        "hoursAgo": 24,
         "score": 7,
         "topic": "Workforce & HR",
         "origin": "google-news"
+      },
+      {
+        "title": "PIF reports doubling in profits and slash in state funding",
+        "url": "https://www.agbi.com/economy/2026/06/pif-reports-doubling-in-profits-and-slash-in-state-funding/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "Saudi Arabia’s Public Investment Fund reported a doubling of profits and a sharp reduction in government funding in 2025, according to its annual financial disclosure to the London Stock Exchange. The sovereign wealth fund’s net assets hit SAR4.5 trillion ($1.2 trillion) last year, up from SAR4.3 trillion the previous year. Profit after tax rose from [&#8230;]",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Saudi Arabia compensates 20,000 investors for trading losses",
+        "url": "https://www.agbi.com/markets/2026/06/saudi-arabia-compensates-20000-investors-for-trading-losses/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "Saudi Arabia’s capital market regulator has compensated more than 20,000 investors affected by the market manipulation of eight investors who were convicted in 2023. The Capital Markets Authority (CMA) said in a statement on Monday that it has deposited SAR293 million ($78 million) into the accounts of those affected. The ruling follows the conviction of [&#8230;]",
+        "hoursAgo": 0,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Prospect of peace brings relief for car users as UAE cuts pump prices",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/peace-brings-relief-for-car-users-as-uae-cuts-pump-prices/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "The UAE has cut fuel prices for the first time in four months as oil retreated after the Iran war and signing of the US-Iran memorandum of understanding. The price of Super 95 petrol, the most widely used fuel for everyday cars, will fall by 14 percent to AED3.29 ($0.90) per litre in July, the [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      }
+    ],
     "world": [
+      {
+        "title": "Adnoc closes in on deal for Shell&#8217;s South African petrol stations",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/adnoc-closes-in-on-deal-for-shells-south-african-petrol-stations/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "British energy company Shell&#160;is reportedly close to selling its fuel stations in South Africa to a unit of the Abu Dhabi National Oil Company. Adnoc Distribution and Shell are likely to announce the $1 billion deal in the coming days, according to a Bloomberg report that quotes unidentified sources. The Adnoc unit, which is listed [&#8230;]",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
+        "origin": "uae-rss"
+      },
       {
         "title": "Jordan plans $70m amusement park in Amra city",
         "url": "https://www.agbi.com/construction/2026/06/jordan-plans-70m-amusement-park-in-amra-green-city/",
@@ -59,48 +120,12 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Jordan has awarded a feasibility study contract for a $70 million amusement park as part of the Amra green city development. The state-owned Jordan Company for Developing Cities and Facilities (JCDCF), which manages the Amra project, said it awarded the contract to a British-Saudi consortium. The amusement park is expected to cost about JD50 million [&#8230;]",
-        "hoursAgo": 1,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Saudi Arabia extends tax waiver until end of 2026",
-        "url": "https://www.agbi.com/tax/2026/06/saudi-arabia-extends-tax-waiver-scheme-until-end-of-2026/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "Saudi Arabia&#8217;s tax authority has extended its fine and penalty waiver scheme for an additional six months, effective from July 1. The extension will run until December 31, offering exemptions from penalties for late registration, payment and filing under all tax laws, the Zakat, Tax and Customs Authority (Zatca) said in a statement. The scheme [&#8230;]",
-        "hoursAgo": 2,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "XRG expands globally with stake in Argentine gas blocks",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/xrg-expands-globally-with-stake-in-argentine-gas-blocks/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "XRG, the low-carbon energy and chemicals investment arm of&#160;Abu Dhabi National Oil Company (Adnoc), has signed a deal with Argentina&#8217;s state oil company YPF to take a 32 percent stake in three upstream gas blocks in the South American country. Completion of the transaction remains subject to customary regulatory approval, XRG said in a statement. The [&#8230;]",
         "hoursAgo": 5,
-        "score": 6,
-        "topic": "Oil & Energy Markets",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Masdar starts work on Kazakhstan wind farm",
-        "url": "https://www.agbi.com/renewable-energy/2026/06/masdar-starts-work-on-kazakhstan-wind-farm/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "Abu Dhabi Future Energy Company (Masdar) has broken ground on its 1-gigawatt wind farm in Kazakhstan. The $1.4 billion project in the Zhambyl region in southern Kazakhstan is one of the largest renewable energy developments in Central Asia. It is being co-developed with W Solar, Qazaq Green Power, a Samruk-Kazyna Fund company and the Kazakhstan Investment Development [&#8230;]",
-        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 8
 }
