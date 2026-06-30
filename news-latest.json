@@ -1,28 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-30T03:29:37.362Z",
+  "generatedAt": "2026-06-30T07:52:54.732Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 8,
+    "gdelt": 10,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 178,
-    "afterDedup": 162,
-    "big4Rejected": 6,
-    "englishOnly": 155,
-    "withinRecency": 47,
-    "scored": 47,
-    "passed": 4
+    "totalFetched": 180,
+    "afterDedup": 163,
+    "big4Rejected": 3,
+    "englishOnly": 159,
+    "withinRecency": 54,
+    "scored": 54,
+    "passed": 6
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Oman awards $2bn contract to ensure non-stop water supply",
+        "url": "https://www.agbi.com/infrastructure/2026/06/oman-awards-2bn-contract-to-ensure-non-stop-water-supply/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "Oman has awarded a major contract to a consortium led by a French utility company to provide 24-hour water supply to 2.3 million residents. The 15-year performance-based contract, valued at €2 billion ($2.3 billion), was given by the state-run Oman Water and Wastewater Services Company (Nama Water Services) to a group comprising Suez and two [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Infrastructure & Logistics",
+        "origin": "uae-rss"
+      }
+    ],
     "capital": [
       {
         "title": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30 - Gulf Today",
@@ -31,10 +44,22 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 7,
         "topic": "Workforce & HR",
         "origin": "google-news"
+      },
+      {
+        "title": "Tougher rules for UAE firms as Emiratisation deadline hits",
+        "url": "https://www.agbi.com/employment/2026/06/tougher-rules-for-uae-firms-as-emiratisation-deadline-hits/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "UAE companies racing to meet today&#8217;s Emiratisation deadline should prepare for tougher localisation rules beyond current hiring quotas, labour market specialists say, as enforcement intensifies and broader employment reforms loom. Private-sector companies with 50 or more employees must increase the proportion of Emiratis in skilled roles by 1 percent by June 30 – the first [&#8230;]",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "Workforce & HR",
+        "origin": "uae-rss"
       },
       {
         "title": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines - Emirates 24|7",
@@ -43,40 +68,39 @@
         "domain": "emirates247.com",
         "date": "2026-06-29",
         "description": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines  Emirates 24|7",
-        "hoursAgo": 18,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
-    "risk": [
-      {
-        "title": "Iraq acts to renew Turkish pipeline deal before July deadline",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/iraq-acts-to-renew-turkish-pipeline-deal-before-july-deadline/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-29",
-        "description": "Iraq has formed a government committee to negotiate a new oil pipeline agreement with Turkey before a decades-old accord expires next month. Baghdad is seeking to secure an alternative export outlet to the restricted Strait of Hormuz. In July 2025, Ankara informed Baghdad that it had decided to terminate the 52-year-old pact governing the pipeline [&#8230;]",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
-        "origin": "uae-rss"
-      }
-    ],
+    "risk": [],
     "world": [
       {
-        "title": "Manufacturing and energy help Tunisia&#8217;s FDI to rise 25%",
-        "url": "https://www.agbi.com/economy/2026/06/manufacturing-and-energy-help-tunisian-fdi-to-rise-25/",
+        "title": "XRG expands globally with stake in Argentine gas blocks",
+        "url": "https://www.agbi.com/oil-and-gas/2026/06/xrg-expands-globally-with-stake-in-argentine-gas-blocks/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-29",
-        "description": "Foreign direct investment into Tunisia rose by nearly a quarter in the first four months of 2026, driven by manufacturing and energy projects, as the North African country seeks to attract more overseas capital. FDI increased from around TD1 billion ($345 million) in the first four months of 2025 to TD1.3 billion in the same [&#8230;]",
-        "hoursAgo": 16,
+        "date": "2026-06-30",
+        "description": "XRG, the low-carbon energy and chemicals investment arm of&#160;Abu Dhabi National Oil Company (Adnoc), has signed a deal with Argentina&#8217;s state oil company YPF to take a 32 percent stake in three upstream gas blocks in the South American country. Completion of the transaction remains subject to customary regulatory approval, XRG said in a statement. The [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Masdar starts work on Kazakhstan wind farm",
+        "url": "https://www.agbi.com/renewable-energy/2026/06/masdar-starts-work-on-kazakhstan-wind-farm/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-06-30",
+        "description": "Abu Dhabi Future Energy Company (Masdar) has broken ground on its 1-gigawatt wind farm in Kazakhstan. The $1.4 billion project in the Zhambyl region in southern Kazakhstan is one of the largest renewable energy developments in Central Asia. It is being co-developed with W Solar, Qazaq Green Power, a Samruk-Kazyna Fund company and the Kazakhstan Investment Development [&#8230;]",
+        "hoursAgo": 3,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 6
 }
