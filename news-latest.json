@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-29T21:25:35.253Z",
+  "generatedAt": "2026-06-30T03:29:37.362Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 8,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 210,
-    "big4Rejected": 4,
-    "englishOnly": 182,
-    "withinRecency": 75,
-    "scored": 75,
-    "passed": 5
+    "totalFetched": 178,
+    "afterDedup": 162,
+    "big4Rejected": 6,
+    "englishOnly": 155,
+    "withinRecency": 47,
+    "scored": 47,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 7,
+        "hoursAgo": 14,
         "score": 7,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -43,7 +43,7 @@
         "domain": "emirates247.com",
         "date": "2026-06-29",
         "description": "UAE sets June 30 deadline for Emiratisation targets, warns of Dh120,000 fines  Emirates 24|7",
-        "hoursAgo": 12,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-06-29",
         "description": "Iraq has formed a government committee to negotiate a new oil pipeline agreement with Turkey before a decades-old accord expires next month. Baghdad is seeking to secure an alternative export outlet to the restricted Strait of Hormuz. In July 2025, Ankara informed Baghdad that it had decided to terminate the 52-year-old pact governing the pipeline [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -65,30 +65,18 @@
     ],
     "world": [
       {
-        "title": "UAE tax: Major reform begins this week - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE11LTNEVnRmMk5ESlpFZWJZOW1fWjIzTGV6cDNudnotN25LOWJxWjYxSWxaTGgyNFIwSW51SlpmckVKajlRaVl1ZHUwWURNZVhCNnBlb0ZPMDE3S2JZYV8ydjdhblk0OHBFbElhbnN2aDJ1LTRBU1RkQ251NW5EZw?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-06-29",
-        "description": "UAE tax: Major reform begins this week  Arabian Business",
-        "hoursAgo": 10,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
         "title": "Manufacturing and energy help Tunisia&#8217;s FDI to rise 25%",
         "url": "https://www.agbi.com/economy/2026/06/manufacturing-and-energy-help-tunisian-fdi-to-rise-25/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-29",
         "description": "Foreign direct investment into Tunisia rose by nearly a quarter in the first four months of 2026, driven by manufacturing and energy projects, as the North African country seeks to attract more overseas capital. FDI increased from around TD1 billion ($345 million) in the first four months of 2025 to TD1.3 billion in the same [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 4
 }
