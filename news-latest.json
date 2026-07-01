@@ -1,48 +1,48 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-01T03:38:03.375Z",
+  "generatedAt": "2026-07-01T08:11:26.775Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 5,
+    "gdelt": 12,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 175,
-    "afterDedup": 168,
+    "totalFetched": 182,
+    "afterDedup": 170,
     "big4Rejected": 4,
-    "englishOnly": 164,
-    "withinRecency": 61,
-    "scored": 61,
-    "passed": 9
+    "englishOnly": 165,
+    "withinRecency": 59,
+    "scored": 59,
+    "passed": 7
   },
   "rooms": {
     "growth": [
       {
-        "title": "Modon awards $200m contract for Ras El Hekma district",
-        "url": "https://www.agbi.com/infrastructure/2026/06/modon-awards-200m-contract-for-ras-el-hekma-district/",
+        "title": "Oman Air and Riyadh Air expand route networks",
+        "url": "https://www.agbi.com/aviation/2026/07/oman-air-and-riyadh-air-expand-route-networks/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "Abu Dhabi developer Modon Holding&#160;has reportedly awarded the infrastructure contract for the Wadi Yemm district, the first luxury residential destination&#160;in Egypt&#8217;s $35 billion Ras El Hekma development. The contract, valued at EGP10 billion ($200 million), was awarded to a joint venture between Egypt’s Rowad Modern Engineering and Greece’s Consolidated Contractors Company, Asharq Business reported, quoting [&#8230;]",
-        "hoursAgo": 14,
+        "date": "2026-07-01",
+        "description": "Oman Air and Saudi Arabia’s newest airline Riyadh Air are adding new routes as part of their global expansion strategies. State-backed Oman Air will launch a non-stop Muscat to Singapore service from Thursday, Oman Air CEO Con Korfiatis told Reuters. The airline will fly the Boeing 737 Max narrow-body jet to Singapore for a non-stop [&#8230;]",
+        "hoursAgo": 2,
         "score": 6,
-        "topic": "Real Estate & Construction",
+        "topic": "Business Expansion",
         "origin": "uae-rss"
       },
       {
-        "title": "Dubai Residential REIT buys 220 Jebel Ali Village townhouses",
-        "url": "https://www.agbi.com/real-estate/2026/06/dubai-residential-reit-buys-220-jebel-ali-village-townhouses/",
+        "title": "Neom exit hasn’t derailed Webuild Saudi plans, CEO says",
+        "url": "https://www.agbi.com/giga-projects/2026/07/neom-exit-hasnt-derailed-webuilds-saudi-plans-ceo-says/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "Dubai Residential REIT has expanded its investment portfolio with the purchase of 220 townhouses at Jebel Ali Village for AED894 million ($243 million). The real estate investment trust added 276 units to its portfolio in the first half of 2026, including 56 units purchased in Garden View Villas earlier this year. The Garden View villas [&#8230;]",
-        "hoursAgo": 16,
+        "date": "2026-07-01",
+        "description": "A major Neom contractor has stopped work on the Saudi giga-project but still intends to expand in the kingdom, as Riyadh redirects spending towards transport, infrastructure and plans with clearer commercial returns. Despite cancellations across giga-project developments, companies continue to chase new construction contracts, which more than doubled in value in the first five months [&#8230;]",
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -50,25 +50,13 @@
     ],
     "capital": [
       {
-        "title": "PIF reports doubling in profits and slash in state funding",
-        "url": "https://www.agbi.com/economy/2026/06/pif-reports-doubling-in-profits-and-slash-in-state-funding/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "Saudi Arabia’s Public Investment Fund reported a doubling of profits and a sharp reduction in government funding in 2025, according to its annual financial disclosure to the London Stock Exchange. The sovereign wealth fund’s net assets hit SAR4.5 trillion ($1.2 trillion) last year, up from SAR4.3 trillion the previous year. Profit after tax rose from [&#8230;]",
-        "hoursAgo": 15,
-        "score": 7,
-        "topic": "Corporate Finance",
-        "origin": "uae-rss"
-      },
-      {
         "title": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30 - Gulf Today",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTDByMGV5ejhQMW9HNUtXdUNScFhYSm9Pb3VxMFBkd3dLUm10UDdWdmU3aUwyY1RHcmFkb3M3VDBiVGJXbEpiOTIxQzM0SEVhV1ZnUGdQb3J1NEVfdkxFeXZLb3JweXRabkVCcm9fcGNhbDF6cWRueXNHYVNwNm9BSmZLU0k1bGNaZ0EwbzQ0STBLeEN1emRucWQyLUZDNG1uQlBLUnh3SllqZmFRREU5V25FaTVCZlFFLVBhQktXUlUtandRMzNHNjl3?oc=5",
         "source": "Gulf Today",
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 38,
+        "hoursAgo": 42,
         "score": 6.5,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -76,27 +64,39 @@
     ],
     "risk": [
       {
+        "title": "Gulf sovereign funds defy war uncertainty with record first-half investments - The National",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLVdUWERQZWRubFdBc3lUTHAyak8xdmZyZjFzaWMtbFozTEh0TXpLekt4Q1lESHphS3Y1VmxDVjg0dUNCYzA2MUJoRjBPeUxQb2IzeTJZRUdNY05XVWpEZ3l3U1UzeXkxbm5UY2o4UEl0NE1teFF1M0M4dlJ1SDRUOWE3SEgxM05TV0VuNTRXZTVBUW92S2dVRXA5N1pXamFMdHNyRzEtRXkzTXYxSTlIQXR0RHVqeE16TDVRM2RkNDItRG9ydUduazN0QjgtYnVXZXJF?oc=5",
+        "source": "The National",
+        "domain": "thenationalnews.com",
+        "date": "2026-07-01",
+        "description": "Gulf sovereign funds defy war uncertainty with record first-half investments  The National",
+        "hoursAgo": 0,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "Accor expects Dubai hotel market to recover fully next year",
+        "url": "https://www.agbi.com/tourism/2026/07/accor-expects-dubai-hotel-market-to-recover-fully-next-year/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-01",
+        "description": "Dubai&#8217;s hotel market is unlikely to recover fully from the impact of the Iran-US conflict until the second quarter of next year, according to a senior executive at one of the world’s largest hotel operators. Accor, which has headquarters in Paris and runs about 85 hotels in the UAE, expects occupancy to recover first followed [&#8230;]",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "uae-rss"
+      },
+      {
         "title": "Saudi Arabia compensates 20,000 investors for trading losses",
         "url": "https://www.agbi.com/markets/2026/06/saudi-arabia-compensates-20000-investors-for-trading-losses/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Saudi Arabia’s capital market regulator has compensated more than 20,000 investors affected by the market manipulation of eight investors who were convicted in 2023. The Capital Markets Authority (CMA) said in a statement on Monday that it has deposited SAR293 million ($78 million) into the accounts of those affected. The ruling follows the conviction of [&#8230;]",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Tax & Regulatory",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Prospect of peace brings relief for car users as UAE cuts pump prices",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/peace-brings-relief-for-car-users-as-uae-cuts-pump-prices/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "The UAE has cut fuel prices for the first time in four months as oil retreated after the Iran war and signing of the US-Iran memorandum of understanding. The price of Super 95 petrol, the most widely used fuel for everyday cars, will fall by 14 percent to AED3.29 ($0.90) per litre in July, the [&#8230;]",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       }
     ],
@@ -108,36 +108,12 @@
         "domain": "gulfnews.com",
         "date": "2026-06-30",
         "description": "UAE economy to slow to 1.7% in 2026 before rebounding to 9.8%  Gulf News",
-        "hoursAgo": 9,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
-      },
-      {
-        "title": "Adnoc closes in on deal for Shell&#8217;s South African petrol stations",
-        "url": "https://www.agbi.com/oil-and-gas/2026/06/adnoc-closes-in-on-deal-for-shells-south-african-petrol-stations/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "British energy company Shell&#160;is reportedly close to selling its fuel stations in South Africa to a unit of the Abu Dhabi National Oil Company. Adnoc Distribution and Shell are likely to announce the $1 billion deal in the coming days, according to a Bloomberg report that quotes unidentified sources. The Adnoc unit, which is listed [&#8230;]",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Oil & Energy Markets",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Jordan plans $70m amusement park in Amra city",
-        "url": "https://www.agbi.com/construction/2026/06/jordan-plans-70m-amusement-park-in-amra-green-city/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "Jordan has awarded a feasibility study contract for a $70 million amusement park as part of the Amra green city development. The state-owned Jordan Company for Developing Cities and Facilities (JCDCF), which manages the Amra project, said it awarded the contract to a British-Saudi consortium. The amusement park is expected to cost about JD50 million [&#8230;]",
-        "hoursAgo": 18,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 9
+  "totalCount": 7
 }
