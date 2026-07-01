@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-01T17:53:50.445Z",
+  "generatedAt": "2026-07-01T21:27:22.934Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 30,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 200,
-    "afterDedup": 181,
-    "big4Rejected": 4,
-    "englishOnly": 174,
-    "withinRecency": 72,
-    "scored": 72,
-    "passed": 6
+    "totalFetched": 170,
+    "afterDedup": 163,
+    "big4Rejected": 5,
+    "englishOnly": 158,
+    "withinRecency": 62,
+    "scored": 62,
+    "passed": 5
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 52,
+        "hoursAgo": 55,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-07-01",
         "description": "Capital Letter is Frank Kane&#8217;s weekly series on Abu Dhabi&#8217;s money, power and ambition The website of The National newspaper shows my first byline about Abu Dhabi Global Market dated October 2 2013, written when the project was barely more than a federal decree and a five-man board. The message then, from founding chairman Ahmed [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 13,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-07-01",
         "description": "Gulf sovereign funds defy war uncertainty with record first-half investments  The National",
-        "hoursAgo": 10,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -69,7 +69,7 @@
         "domain": "agbi.com",
         "date": "2026-07-01",
         "description": "Oman will subsidise half of the transport and insurance costs for food imports over the next six months, aiming to strengthen security of supply and shield consumers from higher prices as a result of the Iran war. State-run shipping company Asyad Group said in a bourse disclosure it had received a royal directive from Omani [&#8230;]",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -83,24 +83,12 @@
         "domain": "agbi.com",
         "date": "2026-07-01",
         "description": "Abu Dhabi artificial intelligence investor MGX has closed its first dedicated AI fund with $49 billion in commitments, exceeding its target, as global institutional financiers pour money into the sector. The MGX Fund I, which set an initial target of $45 billion, attracted diverse institutional and private investors from the Gulf, North America, Asia and [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 8,
         "topic": "AI & Technology",
         "origin": "uae-rss"
-      },
-      {
-        "title": "UAE economy to slow to 1.7% in 2026 before rebounding to 9.8% - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLXpYZUUyV2tKMmhyaGdLRHZ6dVRMR2NFLS1vbDZxVU4wd0FheGgwRS02djAyZnNNT3pNVjNlR19OSzBFVHdFRzFEQVRYR0Z2RnA5TUthZGswUlN3V3d5eTlRT0c2eG1aZHZtNDA5S0Y2N1ZrSkY3dG9yNHVTZ1NvanAxQW4xZFRtX1dqYnpWRjFtZUdXYlRfWGVCa2Z5NEFPTFNkTjI1MEpyYUHSAb4BQVVfeXFMUDRtQ1BaenREYnh1N29GOXdkNXFoaXJkOUZHNmp3WWNPeU1fMlUxUDRaWWF4S2dOTGd0MEFWbUxNZGEzNzRFVW5pTG1zcUoxdWJ3eEhMZktCeFdMTFIwZG1LLW1Ma21nYklITm5kTkpJU1hWUFcwa08yc205SzZXNm5pZ2ZGVEZNcU1aWjZDc3FhMTBkR3lzV1hRcDZTbUx6RzJXbHRKOGJieHFHQnJ2cC1BVWtURnVDU01fTWJLQQ?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-06-30",
-        "description": "UAE economy to slow to 1.7% in 2026 before rebounding to 9.8%  Gulf News",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 5
 }
