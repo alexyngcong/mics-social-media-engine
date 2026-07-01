@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-06-30T21:27:48.250Z",
+  "generatedAt": "2026-07-01T03:38:03.375Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 5,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 270,
-    "afterDedup": 211,
-    "big4Rejected": 5,
-    "englishOnly": 186,
-    "withinRecency": 86,
-    "scored": 86,
+    "totalFetched": 175,
+    "afterDedup": 168,
+    "big4Rejected": 4,
+    "englishOnly": 164,
+    "withinRecency": 61,
+    "scored": 61,
     "passed": 9
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Abu Dhabi developer Modon Holding&#160;has reportedly awarded the infrastructure contract for the Wadi Yemm district, the first luxury residential destination&#160;in Egypt&#8217;s $35 billion Ras El Hekma development. The contract, valued at EGP10 billion ($200 million), was awarded to a joint venture between Egypt’s Rowad Modern Engineering and Greece’s Consolidated Contractors Company, Asharq Business reported, quoting [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Dubai Residential REIT has expanded its investment portfolio with the purchase of 220 townhouses at Jebel Ali Village for AED894 million ($243 million). The real estate investment trust added 276 units to its portfolio in the first half of 2026, including 56 units purchased in Garden View Villas earlier this year. The Garden View villas [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -56,7 +56,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Saudi Arabia’s Public Investment Fund reported a doubling of profits and a sharp reduction in government funding in 2025, according to its annual financial disclosure to the London Stock Exchange. The sovereign wealth fund’s net assets hit SAR4.5 trillion ($1.2 trillion) last year, up from SAR4.3 trillion the previous year. Profit after tax rose from [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -68,7 +68,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 31,
+        "hoursAgo": 38,
         "score": 6.5,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -82,7 +82,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Saudi Arabia’s capital market regulator has compensated more than 20,000 investors affected by the market manipulation of eight investors who were convicted in 2023. The Capital Markets Authority (CMA) said in a statement on Monday that it has deposited SAR293 million ($78 million) into the accounts of those affected. The ruling follows the conviction of [&#8230;]",
-        "hoursAgo": 8,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -94,7 +94,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "The UAE has cut fuel prices for the first time in four months as oil retreated after the Iran war and signing of the US-Iran memorandum of understanding. The price of Super 95 petrol, the most widely used fuel for everyday cars, will fall by 14 percent to AED3.29 ($0.90) per litre in July, the [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -108,7 +108,7 @@
         "domain": "gulfnews.com",
         "date": "2026-06-30",
         "description": "UAE economy to slow to 1.7% in 2026 before rebounding to 9.8%  Gulf News",
-        "hoursAgo": 3,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -120,7 +120,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "British energy company Shell&#160;is reportedly close to selling its fuel stations in South Africa to a unit of the Abu Dhabi National Oil Company. Adnoc Distribution and Shell are likely to announce the $1 billion deal in the coming days, according to a Bloomberg report that quotes unidentified sources. The Adnoc unit, which is listed [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
@@ -132,7 +132,7 @@
         "domain": "agbi.com",
         "date": "2026-06-30",
         "description": "Jordan has awarded a feasibility study contract for a $70 million amusement park as part of the Amra green city development. The state-owned Jordan Company for Developing Cities and Facilities (JCDCF), which manages the Amra project, said it awarded the contract to a British-Saudi consortium. The amusement park is expected to cost about JD50 million [&#8230;]",
-        "hoursAgo": 12,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
