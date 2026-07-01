@@ -1,53 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-01T08:11:26.775Z",
+  "generatedAt": "2026-07-01T14:31:56.436Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 12,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 182,
-    "afterDedup": 170,
-    "big4Rejected": 4,
-    "englishOnly": 165,
-    "withinRecency": 59,
-    "scored": 59,
-    "passed": 7
+    "totalFetched": 170,
+    "afterDedup": 161,
+    "big4Rejected": 5,
+    "englishOnly": 156,
+    "withinRecency": 55,
+    "scored": 55,
+    "passed": 6
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Oman Air and Riyadh Air expand route networks",
-        "url": "https://www.agbi.com/aviation/2026/07/oman-air-and-riyadh-air-expand-route-networks/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-07-01",
-        "description": "Oman Air and Saudi Arabia’s newest airline Riyadh Air are adding new routes as part of their global expansion strategies. State-backed Oman Air will launch a non-stop Muscat to Singapore service from Thursday, Oman Air CEO Con Korfiatis told Reuters. The airline will fly the Boeing 737 Max narrow-body jet to Singapore for a non-stop [&#8230;]",
-        "hoursAgo": 2,
-        "score": 6,
-        "topic": "Business Expansion",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "Neom exit hasn’t derailed Webuild Saudi plans, CEO says",
-        "url": "https://www.agbi.com/giga-projects/2026/07/neom-exit-hasnt-derailed-webuilds-saudi-plans-ceo-says/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-07-01",
-        "description": "A major Neom contractor has stopped work on the Saudi giga-project but still intends to expand in the kingdom, as Riyadh redirects spending towards transport, infrastructure and plans with clearer commercial returns. Despite cancellations across giga-project developments, companies continue to chase new construction contracts, which more than doubled in value in the first five months [&#8230;]",
-        "hoursAgo": 4,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "uae-rss"
-      }
-    ],
+    "growth": [],
     "capital": [
       {
         "title": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30 - Gulf Today",
@@ -56,13 +31,25 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 42,
-        "score": 6.5,
+        "hoursAgo": 49,
+        "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
     "risk": [
+      {
+        "title": "ADGM’s watchword was caution – not any more",
+        "url": "https://www.agbi.com/finance/2026/07/adgms-watchword-was-caution-not-any-more/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-01",
+        "description": "Capital Letter is Frank Kane&#8217;s weekly series on Abu Dhabi&#8217;s money, power and ambition The website of The National newspaper shows my first byline about Abu Dhabi Global Market dated October 2 2013, written when the project was barely more than a federal decree and a five-man board. The message then, from founding chairman Ahmed [&#8230;]",
+        "hoursAgo": 6,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "uae-rss"
+      },
       {
         "title": "Gulf sovereign funds defy war uncertainty with record first-half investments - The National",
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLVdUWERQZWRubFdBc3lUTHAyak8xdmZyZjFzaWMtbFozTEh0TXpLekt4Q1lESHphS3Y1VmxDVjg0dUNCYzA2MUJoRjBPeUxQb2IzeTJZRUdNY05XVWpEZ3l3U1UzeXkxbm5UY2o4UEl0NE1teFF1M0M4dlJ1SDRUOWE3SEgxM05TV0VuNTRXZTVBUW92S2dVRXA5N1pXamFMdHNyRzEtRXkzTXYxSTlIQXR0RHVqeE16TDVRM2RkNDItRG9ydUduazN0QjgtYnVXZXJF?oc=5",
@@ -70,37 +57,37 @@
         "domain": "thenationalnews.com",
         "date": "2026-07-01",
         "description": "Gulf sovereign funds defy war uncertainty with record first-half investments  The National",
-        "hoursAgo": 0,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       },
       {
-        "title": "Accor expects Dubai hotel market to recover fully next year",
-        "url": "https://www.agbi.com/tourism/2026/07/accor-expects-dubai-hotel-market-to-recover-fully-next-year/",
+        "title": "Oman to shield consumers by subsidising food imports",
+        "url": "https://www.agbi.com/economy/2026/07/oman-to-shield-consumers-by-subsidising-food-import-costs/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-07-01",
-        "description": "Dubai&#8217;s hotel market is unlikely to recover fully from the impact of the Iran-US conflict until the second quarter of next year, according to a senior executive at one of the world’s largest hotel operators. Accor, which has headquarters in Paris and runs about 85 hotels in the UAE, expects occupancy to recover first followed [&#8230;]",
+        "description": "Oman will subsidise half of the transport and insurance costs for food imports over the next six months, aiming to strengthen security of supply and shield consumers from higher prices as a result of the Iran war. State-run shipping company Asyad Group said in a bourse disclosure it had received a royal directive from Omani [&#8230;]",
         "hoursAgo": 4,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
-      },
-      {
-        "title": "Saudi Arabia compensates 20,000 investors for trading losses",
-        "url": "https://www.agbi.com/markets/2026/06/saudi-arabia-compensates-20000-investors-for-trading-losses/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-06-30",
-        "description": "Saudi Arabia’s capital market regulator has compensated more than 20,000 investors affected by the market manipulation of eight investors who were convicted in 2023. The Capital Markets Authority (CMA) said in a statement on Monday that it has deposited SAR293 million ($78 million) into the accounts of those affected. The ruling follows the conviction of [&#8230;]",
-        "hoursAgo": 18,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "uae-rss"
       }
     ],
     "world": [
+      {
+        "title": "MGX raises $49bn as investors flock to AI",
+        "url": "https://www.agbi.com/ai/2026/07/mgx-raises-49bn-as-investors-flock-to-ai/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-01",
+        "description": "Abu Dhabi artificial intelligence investor MGX has closed its first dedicated AI fund with $49 billion in commitments, exceeding its target, as global institutional financiers pour money into the sector. The MGX Fund I, which set an initial target of $45 billion, attracted diverse institutional and private investors from the Gulf, North America, Asia and [&#8230;]",
+        "hoursAgo": 2,
+        "score": 8,
+        "topic": "AI & Technology",
+        "origin": "uae-rss"
+      },
       {
         "title": "UAE economy to slow to 1.7% in 2026 before rebounding to 9.8% - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLXpYZUUyV2tKMmhyaGdLRHZ6dVRMR2NFLS1vbDZxVU4wd0FheGgwRS02djAyZnNNT3pNVjNlR19OSzBFVHdFRzFEQVRYR0Z2RnA5TUthZGswUlN3V3d5eTlRT0c2eG1aZHZtNDA5S0Y2N1ZrSkY3dG9yNHVTZ1NvanAxQW4xZFRtX1dqYnpWRjFtZUdXYlRfWGVCa2Z5NEFPTFNkTjI1MEpyYUHSAb4BQVVfeXFMUDRtQ1BaenREYnh1N29GOXdkNXFoaXJkOUZHNmp3WWNPeU1fMlUxUDRaWWF4S2dOTGd0MEFWbUxNZGEzNzRFVW5pTG1zcUoxdWJ3eEhMZktCeFdMTFIwZG1LLW1Ma21nYklITm5kTkpJU1hWUFcwa08yc205SzZXNm5pZ2ZGVEZNcU1aWjZDc3FhMTBkR3lzV1hRcDZTbUx6RzJXbHRKOGJieHFHQnJ2cC1BVWtURnVDU01fTWJLQQ?oc=5",
@@ -108,12 +95,12 @@
         "domain": "gulfnews.com",
         "date": "2026-06-30",
         "description": "UAE economy to slow to 1.7% in 2026 before rebounding to 9.8%  Gulf News",
-        "hoursAgo": 14,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 7
+  "totalCount": 6
 }
