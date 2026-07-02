@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-01T21:27:22.934Z",
+  "generatedAt": "2026-07-02T03:23:56.009Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 163,
+    "totalFetched": 181,
+    "afterDedup": 170,
     "big4Rejected": 5,
-    "englishOnly": 158,
-    "withinRecency": 62,
-    "scored": 62,
+    "englishOnly": 164,
+    "withinRecency": 67,
+    "scored": 67,
     "passed": 5
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 55,
+        "hoursAgo": 61,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -45,19 +45,19 @@
         "domain": "agbi.com",
         "date": "2026-07-01",
         "description": "Capital Letter is Frank Kane&#8217;s weekly series on Abu Dhabi&#8217;s money, power and ambition The website of The National newspaper shows my first byline about Abu Dhabi Global Market dated October 2 2013, written when the project was barely more than a federal decree and a five-man board. The message then, from founding chairman Ahmed [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
       },
       {
-        "title": "Gulf sovereign funds defy war uncertainty with record first-half investments - The National",
+        "title": "Gulf sovereign funds defy war uncertainty with record first-half investments - thenationalnews.com",
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLVdUWERQZWRubFdBc3lUTHAyak8xdmZyZjFzaWMtbFozTEh0TXpLekt4Q1lESHphS3Y1VmxDVjg0dUNCYzA2MUJoRjBPeUxQb2IzeTJZRUdNY05XVWpEZ3l3U1UzeXkxbm5UY2o4UEl0NE1teFF1M0M4dlJ1SDRUOWE3SEgxM05TV0VuNTRXZTVBUW92S2dVRXA5N1pXamFMdHNyRzEtRXkzTXYxSTlIQXR0RHVqeE16TDVRM2RkNDItRG9ydUduazN0QjgtYnVXZXJF?oc=5",
-        "source": "The National",
+        "source": "thenationalnews.com",
         "domain": "thenationalnews.com",
         "date": "2026-07-01",
-        "description": "Gulf sovereign funds defy war uncertainty with record first-half investments  The National",
-        "hoursAgo": 14,
+        "description": "Gulf sovereign funds defy war uncertainty with record first-half investments  thenationalnews.com",
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -69,7 +69,7 @@
         "domain": "agbi.com",
         "date": "2026-07-01",
         "description": "Oman will subsidise half of the transport and insurance costs for food imports over the next six months, aiming to strengthen security of supply and shield consumers from higher prices as a result of the Iran war. State-run shipping company Asyad Group said in a bourse disclosure it had received a royal directive from Omani [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -83,7 +83,7 @@
         "domain": "agbi.com",
         "date": "2026-07-01",
         "description": "Abu Dhabi artificial intelligence investor MGX has closed its first dedicated AI fund with $49 billion in commitments, exceeding its target, as global institutional financiers pour money into the sector. The MGX Fund I, which set an initial target of $45 billion, attracted diverse institutional and private investors from the Gulf, North America, Asia and [&#8230;]",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 8,
         "topic": "AI & Technology",
         "origin": "uae-rss"
