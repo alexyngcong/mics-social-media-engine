@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-02T10:37:28.383Z",
+  "generatedAt": "2026-07-02T13:55:44.244Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 162,
-    "big4Rejected": 7,
-    "englishOnly": 155,
-    "withinRecency": 54,
-    "scored": 54,
+    "afterDedup": 160,
+    "big4Rejected": 6,
+    "englishOnly": 154,
+    "withinRecency": 55,
+    "scored": 55,
     "passed": 9
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-06-29",
         "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 69,
+        "hoursAgo": 72,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
@@ -43,7 +43,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Newcastle United will have to focus on raising commercial revenues rather than relying on its wealthy Saudi owners after falling foul of European football’s financial sustainability regulations. The English Premier League side, bought by the Public Investment Fund in 2021, was found to have breached Uefa’s football earnings rule, leading to a three-year settlement agreement, [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Anghami, one of the largest music streaming apps in the Middle East and North Africa,&#160;said it received a preliminary, non-binding offer from OSN Streaming (OSN), its Dubai-based controlling shareholder, to acquire all outstanding shares and delist from Nasdaq. OSN, which owns 67 percent of Anghami, has proposed a $3.39-per-share cash purchase price, the company, which [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 5,
         "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -69,7 +69,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-07-02",
         "description": "Abu Dhabi’s MGX raises $49 billion from major institutional and private investors to expand portfolio  Economy Middle East",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -81,7 +81,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-02",
         "description": "UAE tax warning: Businesses face hidden e-invoicing trap ahead of new deadline  Arabian Business",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -93,7 +93,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Saudi Arabia’s market regulator has invited proposals to launch a domestic commodities exchange, as the kingdom looks to deepen its capital markets and support its fast-growing mining sector. The exchange “aims to strengthen the capital market infrastructure, expand the range of financial instruments in the Saudi Capital Market, and diversify its products,” the Capital Market [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -105,7 +105,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Oman’s state-run logistics company Asyad has signed a partnership agreement with a French company to build a $400 million logistics terminal at Sohar port. “The agreement was a result of Sultan Haitham’s efforts during his visit to France this week to expand our industrial zones,” Abdulrahman Al Hatmi, CEO of Asyad Group, told AGBI. Asyad [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -113,26 +113,26 @@
     ],
     "world": [
       {
-        "title": "UAE leads US and Britain as top FDI investor in Qatar",
-        "url": "https://www.agbi.com/finance/2026/07/uae-leads-us-and-britain-as-top-fdi-investor-in-qatar/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-07-02",
-        "description": "The UAE emerged as the largest foreign investor in Qatar in 2025, contributing $814 million across 73 projects, Qatar&#8217;s investment promotion agency said in a report. The US ranked second, investing $587 million in 53 projects, while the UK came third with $222 million in 37 projects, according to the report issued on Wednesday by [&#8230;]",
-        "hoursAgo": 4,
-        "score": 8,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
         "title": "Repair of missile-hit smelter is ahead of schedule, says EGA",
         "url": "https://www.agbi.com/manufacturing/2026/07/repair-of-missile-hit-smelter-is-ahead-of-schedule-says-ega/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Emirates Global Aluminum (EGA) says repair work to restore production at its Al Taweelah smelter, one of the world’s largest, is ahead of schedule. The site sustained significant damage on March 28 after Iranian missile and drone attacks on Khalifa Economic Zone Abu Dhabi forced an emergency shutdown. In April EGA’s preliminary assessment indicated it [&#8230;]",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "IHC and Adani to build $12bn aluminium plant in India",
+        "url": "https://www.agbi.com/manufacturing/2026/07/ihc-and-adani-to-build-12bn-aluminium-plant-in-india/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-02",
+        "description": "Abu Dhabi conglomerate International Holding Company (IHC) and India’s Adani Group have reportedly signed a memorandum of understanding with the government of the Indian state of Odisha to invest billions of dollars to build a greenfield aluminium plant. The joint investment will reach up to $11.5 billion, the largest foreign direct investment in the Indian metallurgy sector, [&#8230;]",
+        "hoursAgo": 3,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
