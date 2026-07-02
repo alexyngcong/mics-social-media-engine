@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-02T13:55:44.244Z",
+  "generatedAt": "2026-07-02T17:45:59.731Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,28 +14,16 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 160,
+    "afterDedup": 158,
     "big4Rejected": 6,
-    "englishOnly": 154,
-    "withinRecency": 55,
-    "scored": 55,
+    "englishOnly": 152,
+    "withinRecency": 47,
+    "scored": 47,
     "passed": 9
   },
   "rooms": {
     "growth": [],
     "capital": [
-      {
-        "title": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30 - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTDByMGV5ejhQMW9HNUtXdUNScFhYSm9Pb3VxMFBkd3dLUm10UDdWdmU3aUwyY1RHcmFkb3M3VDBiVGJXbEpiOTIxQzM0SEVhV1ZnUGdQb3J1NEVfdkxFeXZLb3JweXRabkVCcm9fcGNhbDF6cWRueXNHYVNwNm9BSmZLU0k1bGNaZ0EwbzQ0STBLeEN1emRucWQyLUZDNG1uQlBLUnh3SllqZmFRREU5V25FaTVCZlFFLVBhQktXUlUtandRMzNHNjl3?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-06-29",
-        "description": "Deadline for firms to achieve Emiratisation targets for first half of 2026 ends on June 30  Gulf Today",
-        "hoursAgo": 72,
-        "score": 6,
-        "topic": "Workforce & HR",
-        "origin": "google-news"
-      },
       {
         "title": "PIF&#8217;s Newcastle &#8216;must focus on revenue&#8217; after Uefa sanctions",
         "url": "https://www.agbi.com/business-of-sport/2026/07/newcastle-must-focus-on-revenue-growth-after-uefa-sanctions/",
@@ -43,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Newcastle United will have to focus on raising commercial revenues rather than relying on its wealthy Saudi owners after falling foul of European football’s financial sustainability regulations. The English Premier League side, bought by the Public Investment Fund in 2021, was found to have breached Uefa’s football earnings rule, leading to a three-year settlement agreement, [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -57,22 +45,22 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Anghami, one of the largest music streaming apps in the Middle East and North Africa,&#160;said it received a preliminary, non-binding offer from OSN Streaming (OSN), its Dubai-based controlling shareholder, to acquire all outstanding shares and delist from Nasdaq. OSN, which owns 67 percent of Anghami, has proposed a $3.39-per-share cash purchase price, the company, which [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
       },
       {
-        "title": "Abu Dhabi’s MGX raises $49 billion from major institutional and private investors to expand portfolio - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLW1IMVhJbElBc2YtUi1rYWlFMjVWX0pNRVluX2VGS2dBMEtjM1ViSmNkeWl0WmlXVU5KTjNhWkdvSHlZaUFvRVZfQWJKUUc1TDB5Q09GMUUteWZQcTF5VTBpOGhOallEYmtYb1pQbmJYUmNkTHJtLUc5ZTU1TllaREdFYUg4ajhyVm5IRWgyOVI3RWNHUXFYX3NpTFUtYmE1SlJBeTdkdWNySEJ6bFlRMGpRRDh3RkY5cVlUSklDX1RKOC0wS1RnNld1LUZneTB0?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
+        "title": "India’s Bank of Baroda agrees $600m payout in NMC fraud case",
+        "url": "https://www.agbi.com/law/2026/07/indias-bank-of-baroda-agrees-600m-payout-in-nmc-fraud-case/",
+        "source": "AGBI",
+        "domain": "agbi.com",
         "date": "2026-07-02",
-        "description": "Abu Dhabi’s MGX raises $49 billion from major institutional and private investors to expand portfolio  Economy Middle East",
-        "hoursAgo": 5,
+        "description": "Bank of Baroda, one of India’s largest lenders, has agreed a $600 million out-of-court settlement in the NMC Health fraud case. The India-listed bank was one of three defendants in the $5.4 billion claim brought by Alvarez &#38; Marsal (A&#38;M), administrator of the collapsed Abu Dhabi-based healthcare company. A&#38;M alleges that NMC’s founder, Indian-born BR [&#8230;]",
+        "hoursAgo": 3,
         "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
+        "topic": "Emerging Risks",
+        "origin": "uae-rss"
       },
       {
         "title": "UAE tax warning: Businesses face hidden e-invoicing trap ahead of new deadline - Arabian Business",
@@ -81,7 +69,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-02",
         "description": "UAE tax warning: Businesses face hidden e-invoicing trap ahead of new deadline  Arabian Business",
-        "hoursAgo": 8,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -93,7 +81,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Saudi Arabia’s market regulator has invited proposals to launch a domestic commodities exchange, as the kingdom looks to deepen its capital markets and support its fast-growing mining sector. The exchange “aims to strengthen the capital market infrastructure, expand the range of financial instruments in the Saudi Capital Market, and diversify its products,” the Capital Market [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -105,7 +93,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Oman’s state-run logistics company Asyad has signed a partnership agreement with a French company to build a $400 million logistics terminal at Sohar port. “The agreement was a result of Sultan Haitham’s efforts during his visit to France this week to expand our industrial zones,” Abdulrahman Al Hatmi, CEO of Asyad Group, told AGBI. Asyad [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -119,10 +107,22 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Emirates Global Aluminum (EGA) says repair work to restore production at its Al Taweelah smelter, one of the world’s largest, is ahead of schedule. The site sustained significant damage on March 28 after Iranian missile and drone attacks on Khalifa Economic Zone Abu Dhabi forced an emergency shutdown. In April EGA’s preliminary assessment indicated it [&#8230;]",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
+      },
+      {
+        "title": "Sheikh Hamdan witnesses launch of Dubai Digital Twin Platform to drive smart city, AI, digital transformation - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNNzM5S2ZlMmRNb1lvWmRQVV9KUFg5MU9yVjk1Qzl2T0M1M04taE1QMnZrS3IycXR2dkp4VmJZd00zMUNqYWoyR2IwVElWODBLNlJpN3Vibm9EWUdIYjFua1VUeHNtM2JKUVc4eG1fTk9JVF9JZTVOWmtxdXRxRU5MSWJuLUEwU0Rpb1Z2N0RRd3EwUG5XbVlZd0hNVjJQdk44d1JOZTcyZFpObFFXQ0xBSmlXSTlDNUxYWGtYRWFNOGRYNE5yUzk2VXIwcGhMOVdWTDhDeXphOERPMjlRNi1iZHk3bzNROHJ0VVln0gH-AUFVX3lxTFBzUEJOZk8ybExtNWE5ZF9fNVJkUDZZVnFQX1F3MGxmOUJQbkdIY3UxMzlRaDRtTGRUUWRNQXNNcHgycEYzaHRocWl1cDJyaXp6UWZvdFpZQ3c0ZGJpeU5wdHh3SldWRm0ya2Eya3pzeG85ejZ1M0FVVHNYQmE0T095WXRqMEdfU1lnQWl3VVhGMXkwYWo3SGFuckJQZE9RdDJUbTA1OGlmWGdJcDFaeEl5NEx5UjZqb0VtV0J1VktTTjUzSGFTaHpYRUNxdzFCLWFuWFVkcElRT0Y1ZmJRM3pEM1ZYOFVDX0pvZHBLeHRad1BEOVdCMjRtVTdLNGxn?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-07-02",
+        "description": "Sheikh Hamdan witnesses launch of Dubai Digital Twin Platform to drive smart city, AI, digital transformation  Gulf News",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "AI & Technology",
+        "origin": "google-news"
       },
       {
         "title": "IHC and Adani to build $12bn aluminium plant in India",
@@ -131,7 +131,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Abu Dhabi conglomerate International Holding Company (IHC) and India’s Adani Group have reportedly signed a memorandum of understanding with the government of the Indian state of Odisha to invest billions of dollars to build a greenfield aluminium plant. The joint investment will reach up to $11.5 billion, the largest foreign direct investment in the Indian metallurgy sector, [&#8230;]",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
