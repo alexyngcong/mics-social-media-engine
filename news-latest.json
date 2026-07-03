@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-02T21:04:37.352Z",
+  "generatedAt": "2026-07-03T02:47:04.519Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 6,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 176,
-    "afterDedup": 168,
-    "big4Rejected": 4,
-    "englishOnly": 164,
-    "withinRecency": 59,
-    "scored": 59,
+    "totalFetched": 270,
+    "afterDedup": 218,
+    "big4Rejected": 5,
+    "englishOnly": 193,
+    "withinRecency": 84,
+    "scored": 84,
     "passed": 8
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Newcastle United will have to focus on raising commercial revenues rather than relying on its wealthy Saudi owners after falling foul of European football’s financial sustainability regulations. The English Premier League side, bought by the Public Investment Fund in 2021, was found to have breached Uefa’s football earnings rule, leading to a three-year settlement agreement, [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "uae-rss"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Anghami, one of the largest music streaming apps in the Middle East and North Africa,&#160;said it received a preliminary, non-binding offer from OSN Streaming (OSN), its Dubai-based controlling shareholder, to acquire all outstanding shares and delist from Nasdaq. OSN, which owns 67 percent of Anghami, has proposed a $3.39-per-share cash purchase price, the company, which [&#8230;]",
-        "hoursAgo": 12,
+        "hoursAgo": 18,
         "score": 8,
         "topic": "Geopolitical Risk",
         "origin": "uae-rss"
@@ -57,7 +57,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Bank of Baroda, one of India’s largest lenders, has agreed a $600 million out-of-court settlement in the NMC Health fraud case. The India-listed bank was one of three defendants in the $5.4 billion claim brought by Alvarez &#38; Marsal (A&#38;M), administrator of the collapsed Abu Dhabi-based healthcare company. A&#38;M alleges that NMC’s founder, Indian-born BR [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 12,
         "score": 7,
         "topic": "Emerging Risks",
         "origin": "uae-rss"
@@ -69,7 +69,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-02",
         "description": "UAE tax warning: Businesses face hidden e-invoicing trap ahead of new deadline  Arabian Business",
-        "hoursAgo": 15,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -81,7 +81,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Saudi Arabia’s market regulator has invited proposals to launch a domestic commodities exchange, as the kingdom looks to deepen its capital markets and support its fast-growing mining sector. The exchange “aims to strengthen the capital market infrastructure, expand the range of financial instruments in the Saudi Capital Market, and diversify its products,” the Capital Market [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "uae-rss"
@@ -93,7 +93,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Oman’s state-run logistics company Asyad has signed a partnership agreement with a French company to build a $400 million logistics terminal at Sohar port. “The agreement was a result of Sultan Haitham’s efforts during his visit to France this week to expand our industrial zones,” Abdulrahman Al Hatmi, CEO of Asyad Group, told AGBI. Asyad [&#8230;]",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "uae-rss"
@@ -107,7 +107,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Emirates Global Aluminum (EGA) says repair work to restore production at its Al Taweelah smelter, one of the world’s largest, is ahead of schedule. The site sustained significant damage on March 28 after Iranian missile and drone attacks on Khalifa Economic Zone Abu Dhabi forced an emergency shutdown. In April EGA’s preliminary assessment indicated it [&#8230;]",
-        "hoursAgo": 11,
+        "hoursAgo": 17,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -119,7 +119,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Abu Dhabi conglomerate International Holding Company (IHC) and India’s Adani Group have reportedly signed a memorandum of understanding with the government of the Indian state of Odisha to invest billions of dollars to build a greenfield aluminium plant. The joint investment will reach up to $11.5 billion, the largest foreign direct investment in the Indian metallurgy sector, [&#8230;]",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
