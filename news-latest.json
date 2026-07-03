@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-03T07:19:26.257Z",
+  "generatedAt": "2026-07-03T10:34:25.597Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,9 +14,9 @@
   },
   "diagnostic": {
     "totalFetched": 173,
-    "afterDedup": 165,
+    "afterDedup": 164,
     "big4Rejected": 5,
-    "englishOnly": 160,
+    "englishOnly": 159,
     "withinRecency": 52,
     "scored": 52,
     "passed": 5
@@ -24,13 +24,13 @@
   "rooms": {
     "growth": [
       {
-        "title": "New $250m fund to grow Oman’s real estate sector",
-        "url": "https://www.agbi.com/real-estate/2026/07/new-250m-fund-to-grow-omans-real-estate-sector/",
+        "title": "New $250m fund to boost Oman real estate",
+        "url": "https://www.agbi.com/finance/2026/07/new-250m-fund-to-grow-omans-real-estate-sector/",
         "source": "AGBI",
         "domain": "agbi.com",
         "date": "2026-07-03",
-        "description": "State-backed Oman National Investments Development Company (Tanmia) and FIM Partners Muscat have jointly launched an OMR96 million ($250 million) fund to accelerate growth in the real estate sector. The Oman Real Estate Development Fund will focus on economically viable ventures, the state-run Oman News Agency reported. The fund aims to attract long-term institutional capital and [&#8230;]",
-        "hoursAgo": 3,
+        "description": "The state-backed Oman National Investments Development Company (Tanmia) and FIM Partners Muscat have jointly launched an OMR96 million ($250 million) fund to accelerate growth in the real estate sector. The Oman Real Estate Development Fund will focus on economically viable ventures, the state-run Oman News Agency reported. The fund aims to attract long-term institutional capital [&#8230;]",
+        "hoursAgo": 6,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -42,13 +42,26 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-03",
         "description": "Dubai’s real estate trends revealed for 2026 after record month drives sales to $78 billion for H  Arabian Business",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
       }
     ],
-    "capital": [],
+    "capital": [
+      {
+        "title": "UAE doubles size of first retail T-Sukuk offering to Dh100m on high demand - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeWphZzVZSTFMZXNxT3YwRjdidUMzWlNEN2wwcnp1TlVsdWVqN2tmNWRuSDFUNGhkTnVxdEQ1eXdjbGNKdjNBRFpSWjN3MmV1M2tnbUVRS09mSkpPVE9NanZfUzU1SmhPUjM4N1lvVEJxQWNzeklyQ1RHMUFPVGtjQmlja2JxMy1rcWJzUlgzbHZVM2Y4WmVkYXUtbzBfWTRpaVdoUWMxZmh3NE9LVUVmalZodTc2QUZnSHJURkhOXzJKZ9IB1AFBVV95cUxNTHJpR1lvbU83cmJFTW1rS2NvT0VwYmhuNy1Pd0pTYXc2UkF4X0NFX1Q1Wm9qYU9mWE1jSjhwcjA3VDE3a043dDJ4WEdVSmcwSE5tdm45MG5fd3RlVkg3cGVZSzZCZ3h1RlphRkgzMm43RG1XNjMxcHQwRFZtVjhvdE9uX282U1Bwa2RRVElzWjJGNW9KT3NDemFJUDQtcGl2S3pTZmJPTFBmcXhZZkNoS0FkZ2swRHQ0YjVJTFVRWTVtUEJ5MHZTa0dJODNEeDBPRXhjeQ?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-07-02",
+        "description": "UAE doubles size of first retail T-Sukuk offering to Dh100m on high demand  Gulf News",
+        "hoursAgo": 20,
+        "score": 6,
+        "topic": "Banking & Rates",
+        "origin": "google-news"
+      }
+    ],
     "risk": [
       {
         "title": "India’s Bank of Baroda agrees $600m payout in NMC fraud case",
@@ -57,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-07-02",
         "description": "Bank of Baroda, one of India’s largest lenders, has agreed a $600 million out-of-court settlement in the NMC Health fraud case. The India-listed bank was one of three defendants in the $5.4 billion claim brought by Alvarez &#38; Marsal (A&#38;M), administrator of the collapsed Abu Dhabi-based healthcare company. A&#38;M alleges that NMC’s founder, Indian-born BR [&#8230;]",
-        "hoursAgo": 16,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Emerging Risks",
         "origin": "uae-rss"
@@ -71,20 +84,8 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "BlueFive Capital, an Abu Dhabi-based alternative asset manager, has acquired a 70 percent stake in Gulf Cobla, a UAE dredging and land reclamation company. As part of the deal, BlueFive Capital will acquire the entire 49 percent stake held by Advanced Dynamics Investments, an affiliate of Saudi Binladin Group, as well as a 21 percent [&#8230;]",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 7,
-        "topic": "Global Economic Signals",
-        "origin": "uae-rss"
-      },
-      {
-        "title": "IHC and Adani to build $12bn aluminium plant in India",
-        "url": "https://www.agbi.com/manufacturing/2026/07/ihc-and-adani-to-build-12bn-aluminium-plant-in-india/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-07-02",
-        "description": "Abu Dhabi conglomerate International Holding Company (IHC) and India’s Adani Group have reportedly signed a memorandum of understanding with the government of the Indian state of Odisha to invest billions of dollars to build a greenfield aluminium plant. The joint investment will reach up to $11.5 billion, the largest foreign direct investment in the Indian metallurgy sector, [&#8230;]",
-        "hoursAgo": 20,
-        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
