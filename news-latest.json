@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-03T10:34:25.597Z",
+  "generatedAt": "2026-07-03T13:59:26.166Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 3,
+    "gdelt": 1,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 10
   },
   "diagnostic": {
-    "totalFetched": 173,
+    "totalFetched": 171,
     "afterDedup": 164,
-    "big4Rejected": 5,
-    "englishOnly": 159,
+    "big4Rejected": 6,
+    "englishOnly": 158,
     "withinRecency": 52,
     "scored": 52,
-    "passed": 5
+    "passed": 6
   },
   "rooms": {
     "growth": [
@@ -30,22 +30,34 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "The state-backed Oman National Investments Development Company (Tanmia) and FIM Partners Muscat have jointly launched an OMR96 million ($250 million) fund to accelerate growth in the real estate sector. The Oman Real Estate Development Fund will focus on economically viable ventures, the state-run Oman News Agency reported. The fund aims to attract long-term institutional capital [&#8230;]",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
       },
       {
-        "title": "Dubai’s real estate trends revealed for 2026 after record month drives sales to $78 billion for H - Arabian Business",
+        "title": "Dubai’s real estate trends revealed for 2026 after record month drives sales to $78 billion - Arabian Business",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcXQtU0VDbGkya2Ftd3J6Y0RIMGh6QnpEYVhrX1ZaUll4TWY5eUJHaS1ORmxyd1E3ODFjZVhnTk5jTkZEZjZqem9yQm1qbzdzNzdyN0UxbDRzTlRlVWh5SDV2RVAxRzZoR3FOX1lSUU5nV1B5b0JVa3dXVktoZkh6bzQzNA?oc=5",
         "source": "Arabian Business",
         "domain": "arabianbusiness.com",
         "date": "2026-07-03",
-        "description": "Dubai’s real estate trends revealed for 2026 after record month drives sales to $78 billion for H  Arabian Business",
-        "hoursAgo": 6,
+        "description": "Dubai’s real estate trends revealed for 2026 after record month drives sales to $78 billion  Arabian Business",
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
+      },
+      {
+        "title": "Emaar’s unnamed $54bn mega-project tipped to be Dubai Estate",
+        "url": "https://www.agbi.com/real-estate/2026/07/emaars-unnamed-megaproject-tipped-to-be-54bn-dubai-estate/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-03",
+        "description": "Emaar’s imminent plans to launch a new “city within a city” are likely to be a revamp of an existing masterplan named Dubai Estate, realtors and industry sources have told AGBI. The master developer has been working on the project in south-east Dubai since last year, now an AED200 billion ($54 billion) project with backing [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "uae-rss"
       }
     ],
     "capital": [
@@ -56,26 +68,13 @@
         "domain": "gulfnews.com",
         "date": "2026-07-02",
         "description": "UAE doubles size of first retail T-Sukuk offering to Dh100m on high demand  Gulf News",
-        "hoursAgo": 20,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Banking & Rates",
         "origin": "google-news"
       }
     ],
-    "risk": [
-      {
-        "title": "India’s Bank of Baroda agrees $600m payout in NMC fraud case",
-        "url": "https://www.agbi.com/law/2026/07/indias-bank-of-baroda-agrees-600m-payout-in-nmc-fraud-case/",
-        "source": "AGBI",
-        "domain": "agbi.com",
-        "date": "2026-07-02",
-        "description": "Bank of Baroda, one of India’s largest lenders, has agreed a $600 million out-of-court settlement in the NMC Health fraud case. The India-listed bank was one of three defendants in the $5.4 billion claim brought by Alvarez &#38; Marsal (A&#38;M), administrator of the collapsed Abu Dhabi-based healthcare company. A&#38;M alleges that NMC’s founder, Indian-born BR [&#8230;]",
-        "hoursAgo": 19,
-        "score": 7,
-        "topic": "Emerging Risks",
-        "origin": "uae-rss"
-      }
-    ],
+    "risk": [],
     "world": [
       {
         "title": "BlueFive takes majority stake in UAE dredging company",
@@ -84,12 +83,24 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "BlueFive Capital, an Abu Dhabi-based alternative asset manager, has acquired a 70 percent stake in Gulf Cobla, a UAE dredging and land reclamation company. As part of the deal, BlueFive Capital will acquire the entire 49 percent stake held by Advanced Dynamics Investments, an affiliate of Saudi Binladin Group, as well as a 21 percent [&#8230;]",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Global Economic Signals",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Kuwait’s new taxes expected to lift non-oil income to record high",
+        "url": "https://www.agbi.com/tax/2026/07/kuwaits-new-taxes-expected-to-lift-non-oil-income-to-record-high/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-03",
+        "description": "New levies on multinational companies and a &#8220;sin tax&#8221; on harmful products are forecast to earn Kuwait record high non-oil revenues in the next fiscal year, helping to reduce the Gulf state’s dependence on hydrocarbons. The two types of tax could fetch the government nearly $1.5 billion during the 2027-2028 fiscal year, starting on April [&#8230;]",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 6
 }
