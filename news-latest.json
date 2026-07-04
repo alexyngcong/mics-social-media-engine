@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-04T06:46:45.852Z",
+  "generatedAt": "2026-07-04T10:09:00.578Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 164,
+    "afterDedup": 161,
     "big4Rejected": 5,
-    "englishOnly": 159,
-    "withinRecency": 46,
-    "scored": 46,
+    "englishOnly": 156,
+    "withinRecency": 45,
+    "scored": 45,
     "passed": 4
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "The state-backed Oman National Investments Development Company (Tanmia) and FIM Partners Muscat have jointly launched an OMR96 million ($250 million) fund to accelerate growth in the real estate sector. The Oman Real Estate Development Fund will focus on economically viable ventures, the state-run Oman News Agency reported. The fund aims to attract long-term institutional capital [&#8230;]",
-        "hoursAgo": 26,
+        "hoursAgo": 29,
         "score": 6.5,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -42,7 +42,7 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "Emaar’s imminent plans to launch a new “city within a city” are likely to be a revamp of an existing masterplan named Dubai Estate, realtors and industry sources have told AGBI. The master developer has been working on the project in south-east Dubai since last year, now an AED200 billion ($54 billion) project with backing [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -58,7 +58,7 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "BlueFive Capital, an Abu Dhabi-based alternative asset manager, has acquired a 70 percent stake in Gulf Cobla, a UAE dredging and land reclamation company. As part of the deal, BlueFive Capital will acquire the entire 49 percent stake held by Advanced Dynamics Investments, an affiliate of Saudi Binladin Group, as well as a 21 percent [&#8230;]",
-        "hoursAgo": 25,
+        "hoursAgo": 28,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
@@ -70,7 +70,7 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "New levies on multinational companies and a &#8220;sin tax&#8221; on harmful products are forecast to earn Kuwait record high non-oil revenues in the next fiscal year, helping to reduce the Gulf state’s dependence on hydrocarbons. The two types of tax could fetch the government nearly $1.5 billion during the 2027-2028 fiscal year, starting on April [&#8230;]",
-        "hoursAgo": 19,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "uae-rss"
