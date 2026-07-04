@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-04T17:03:09.003Z",
+  "generatedAt": "2026-07-04T20:55:30.810Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,8 +17,8 @@
     "afterDedup": 161,
     "big4Rejected": 5,
     "englishOnly": 156,
-    "withinRecency": 42,
-    "scored": 42,
+    "withinRecency": 41,
+    "scored": 41,
     "passed": 2
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "The state-backed Oman National Investments Development Company (Tanmia) and FIM Partners Muscat have jointly launched an OMR96 million ($250 million) fund to accelerate growth in the real estate sector. The Oman Real Estate Development Fund will focus on economically viable ventures, the state-run Oman News Agency reported. The fund aims to attract long-term institutional capital [&#8230;]",
-        "hoursAgo": 36,
+        "hoursAgo": 40,
         "score": 6.5,
         "topic": "Real Estate & Construction",
         "origin": "uae-rss"
@@ -46,7 +46,7 @@
         "domain": "agbi.com",
         "date": "2026-07-03",
         "description": "BlueFive Capital, an Abu Dhabi-based alternative asset manager, has acquired a 70 percent stake in Gulf Cobla, a UAE dredging and land reclamation company. As part of the deal, BlueFive Capital will acquire the entire 49 percent stake held by Advanced Dynamics Investments, an affiliate of Saudi Binladin Group, as well as a 21 percent [&#8230;]",
-        "hoursAgo": 35,
+        "hoursAgo": 39,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
