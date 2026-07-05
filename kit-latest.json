@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-11T08:46:33.552Z",
-  "weekOf": "11 Jun 2026",
+  "generatedAt": "2026-07-05T10:11:46.873Z",
+  "weekOf": "5 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "gulf-producers-plug-nearly-half-pre-war-",
+      "slug": "bluefive-takes-majority-stake-in-uae-dre",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
-      "theme": "oil_energy",
-      "tier": "WEEK AHEAD",
-      "title": "Gulf producers plug nearly half pre-war oil output",
-      "sourceUrl": "https://www.agbi.com/oil-and-gas/2026/06/hormuz-forces-gulf-oil-producers-to-plug-nearly-half-pre-war-output/",
-      "filenameBase": "post-1-gulf-producers-plug-nearly-half-pre-war-",
-      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "treasury_capital",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "BlueFive takes majority stake in UAE dredging company",
+      "sourceUrl": "https://www.agbi.com/banking-finance/2026/07/bluefive-takes-majority-stake-in-uae-dredging-company/",
+      "filenameBase": "post-1-bluefive-takes-majority-stake-in-uae-dre",
+      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
       "stat": "",
-      "headlineLine1": "Gulf producers plug nearly half pre-war oil output",
+      "headlineLine1": "BlueFive takes majority stake in UAE dredging company",
       "headlineLine2": "",
-      "hoursAgo": 5
+      "hoursAgo": 52
     },
     {
       "n": 2,
