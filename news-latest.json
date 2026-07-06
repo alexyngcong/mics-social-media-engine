@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-06T03:20:34.074Z",
+  "generatedAt": "2026-07-06T08:19:06.464Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,69 @@
   },
   "diagnostic": {
     "totalFetched": 170,
-    "afterDedup": 162,
+    "afterDedup": 165,
     "big4Rejected": 5,
-    "englishOnly": 157,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 1
+    "englishOnly": 160,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
-    "capital": [],
-    "risk": [],
-    "world": [
+    "capital": [
       {
-        "title": "BlueFive takes majority stake in UAE dredging company",
-        "url": "https://www.agbi.com/banking-finance/2026/07/bluefive-takes-majority-stake-in-uae-dredging-company/",
+        "title": "Almarai profit hit by higher energy and shipping costs",
+        "url": "https://www.agbi.com/agriculture/2026/07/almarai-profit-hit-by-higher-energy-and-shipping-costs/",
         "source": "AGBI",
         "domain": "agbi.com",
-        "date": "2026-07-03",
-        "description": "BlueFive Capital, an Abu Dhabi-based alternative asset manager, has acquired a 70 percent stake in Gulf Cobla, a UAE dredging and land reclamation company. As part of the deal, BlueFive Capital will acquire the entire 49 percent stake held by Advanced Dynamics Investments, an affiliate of Saudi Binladin Group, as well as a 21 percent [&#8230;]",
-        "hoursAgo": 70,
+        "date": "2026-07-06",
+        "description": "Saudi dairy and food producer Almarai reported a fall in net profit in the second quarter, driven by cost inflation. Net earnings fell by 2 percent year on year to SAR636 million ($170 million), despite revenues rising by 11 percent to SAR5.9 billion. Higher feed and shipping costs, as well as increased distribution costs, were [&#8230;]",
+        "hoursAgo": 3,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "uae-rss"
+      }
+    ],
+    "risk": [
+      {
+        "title": "MENA startups raise $148.2 million in June 2026, UAE leads with $93.8 million - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObFk2WEF6VWd4ZExrdU5oTEtGOV92WVZBLWZXZ2lING5fQ1RIS2RTbUFEUUZYcFVOa0xyX1hXMzE2ZDdQcUF2WnM3Y25MaHFyTEhGUFZ3VEI2YVpGWUJ6Q0NtRFQ0NUwxMFR0eVVwUGlTSzBocmM5NmkxSkszNnFUMjVzNHVaQldpTXROWW5Cc1I5SHNrdEs5Rmo3cXVDOTVETUEtNC1DQi1Bdm94Q3o4?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-07-06",
+        "description": "MENA startups raise $148.2 million in June 2026, UAE leads with $93.8 million  Economy Middle East",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
+      {
+        "title": "BlueFive co-leads Chinese AI company’s $3bn fundraising",
+        "url": "https://www.agbi.com/ai/2026/07/bluefive-co-leads-chinese-ai-companys-3bn-fundraising/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-06",
+        "description": "BlueFive Capital, an Abu Dhabi-based alternative asset manager, said it co-led the $3 billion funding round for Chinese AI developer Kling AI. The Chinese company is valued at $18 billion after the latest fundraising round, BlueFive said in a statement. Other major investors included CPE, Guofang Investment, Tencent and CITIC Securities. More than 10 institutional [&#8230;]",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "AI & Technology",
+        "origin": "uae-rss"
+      },
+      {
+        "title": "Saudi Arabia seeks investors for $135m Ferris wheel in Medina",
+        "url": "https://www.agbi.com/tourism/2026/07/saudi-arabia-seeks-investors-for-135m-medina-ferris-wheel/",
+        "source": "AGBI",
+        "domain": "agbi.com",
+        "date": "2026-07-06",
+        "description": "Saudi Arabia is seeking private investors for a proposed giant Ferris wheel in Medina, as the kingdom increases its reliance on private capital and sharpens its focus on attractions for pilgrims and domestic travellers. The SAR511 million ($135 million) Hijaz Eye, as it is called in the government’s Invest Saudi platform – a database of [&#8230;]",
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "uae-rss"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 4
 }
