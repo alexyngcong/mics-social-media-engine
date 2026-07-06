@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-06T03:20:48.671Z",
+  "generatedAt": "2026-07-06T15:28:18.962Z",
   "weekOf": "6 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "bluefive-takes-majority-stake-in-uae-dre",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "treasury_capital",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "BlueFive takes majority stake in UAE dredging company",
-      "sourceUrl": "https://www.agbi.com/banking-finance/2026/07/bluefive-takes-majority-stake-in-uae-dredging-company/",
-      "filenameBase": "post-1-bluefive-takes-majority-stake-in-uae-dre",
-      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "BlueFive takes majority stake in UAE dredging company",
+      "headlineLine1": "Awaiting World signal",
       "headlineLine2": "",
-      "hoursAgo": 70
+      "hoursAgo": null
     },
     {
       "n": 2,
