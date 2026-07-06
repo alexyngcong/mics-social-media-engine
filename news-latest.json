@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-06T18:10:43.671Z",
+  "generatedAt": "2026-07-06T21:27:33.656Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 6,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
+    "totalFetched": 166,
+    "afterDedup": 157,
     "big4Rejected": 5,
-    "englishOnly": 148,
-    "withinRecency": 34,
-    "scored": 34,
-    "passed": 0
+    "englishOnly": 151,
+    "withinRecency": 39,
+    "scored": 39,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026 - Fast Company Middle East",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcFBDZmU3NVB3ckdheW56SWVDWTlSVDNBbE5TSnNrM1FqZExydkJkTzY2OWtHTmJycFpQWnpKdHhlYk95ZXFkM2J2NEtPekVKR1dXQnhiejhHWmVIc1lnN3UwWS1JLW9wbHR1aWRCei1XNlU4dFEtM2ZfVXpQeGVHSGV4NVNpRkdXLVhmaXFQN0dxVmFIc0xNanJST1JmbC1FcUV1WDM3RW9UbDEtdXZxUWwyd1l0VjBkb2c?oc=5",
+        "source": "Fast Company Middle East",
+        "domain": "fastcompanyme.com",
+        "date": "2026-07-06",
+        "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
+        "hoursAgo": 13,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
