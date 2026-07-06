@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-06T18:10:58.690Z",
+  "generatedAt": "2026-07-06T21:27:45.020Z",
   "weekOf": "6 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "uae-real-estate-maintains-momentum-as-tr",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "real_estate",
+      "tier": "WEEK AHEAD",
+      "title": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026 - Fast Company Middle East",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcFBDZmU3NVB3ckdheW56SWVDWTlSVDNBbE5TSnNrM1FqZExydkJkTzY2OWtHTmJycFpQWnpKdHhlYk95ZXFkM2J2NEtPekVKR1dXQnhiejhHWmVIc1lnN3UwWS1JLW9wbHR1aWRCei1XNlU4dFEtM2ZfVXpQeGVHSGV4NVNpRkdXLVhmaXFQN0dxVmFIc0xNanJST1JmbC1FcUV1WDM3RW9UbDEtdXZxUWwyd1l0VjBkb2c?oc=5",
+      "filenameBase": "post-1-uae-real-estate-maintains-momentum-as-tr",
+      "photoUrl": "/mics-social-media-engine/photos/growth/04_abu_dhabi_corniche.jpg",
+      "stat": "103%",
+      "headlineLine1": "UAE real estate maintains momentum as",
+      "headlineLine2": "transactions surge 103% in the first…",
+      "hoursAgo": 13
     },
     {
       "n": 2,
