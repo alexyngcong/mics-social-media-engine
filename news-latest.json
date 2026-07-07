@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-07T07:36:56.605Z",
+  "generatedAt": "2026-07-07T10:54:21.064Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,11 +15,11 @@
   "diagnostic": {
     "totalFetched": 160,
     "afterDedup": 155,
-    "big4Rejected": 6,
-    "englishOnly": 149,
-    "withinRecency": 39,
-    "scored": 39,
-    "passed": 1
+    "big4Rejected": 7,
+    "englishOnly": 148,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,13 +32,25 @@
         "domain": "fastcompanyme.com",
         "date": "2026-07-06",
         "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
-        "hoursAgo": 24,
-        "score": 7,
+        "hoursAgo": 27,
+        "score": 6.5,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "Dubai’s real estate market hits $29.4 billion in Q2 2026 transactions amid sustained demand - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPamgtM3c1N0dhd2ZLbW1QckIxb0xYSW1JRE9Gc1Fld05ZYllXMGZPVE1DOW85dlNnZlNYTjhwN25oakpoV0FkWEU0Q2tIRkJEZ3hNaU9ObC1pYXZOdm1MSE1JZEdmem1vWGJSVy1iWkI5QVEyTmZRd2ZfMExMWHpuZ2ZsZXNnZmh3R0ZidzVUSElDZVBHMEhEUFJYNHRVcmtrVmxvaDdiWGFqNDNYNnlvVWhFN2FObkZ0U3F5YzVIXzhfckE?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-07-07",
+        "description": "Dubai’s real estate market hits $29.4 billion in Q2 2026 transactions amid sustained demand  Economy Middle East",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
