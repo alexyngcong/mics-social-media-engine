@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-06T21:27:33.656Z",
+  "generatedAt": "2026-07-07T02:53:34.943Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 6,
+    "gdelt": 7,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 166,
-    "afterDedup": 157,
+    "totalFetched": 167,
+    "afterDedup": 158,
     "big4Rejected": 5,
-    "englishOnly": 151,
-    "withinRecency": 39,
-    "scored": 39,
+    "englishOnly": 152,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 1
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "fastcompanyme.com",
         "date": "2026-07-06",
         "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
-        "hoursAgo": 13,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
