@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-08T17:28:09.228Z",
+  "generatedAt": "2026-07-08T21:06:25.129Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,14 +15,27 @@
   "diagnostic": {
     "totalFetched": 160,
     "afterDedup": 153,
-    "big4Rejected": 7,
-    "englishOnly": 146,
-    "withinRecency": 49,
-    "scored": 49,
-    "passed": 1
+    "big4Rejected": 4,
+    "englishOnly": 149,
+    "withinRecency": 53,
+    "scored": 53,
+    "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Dubai's economy grows to Dh232 billion in Q1 as GDP rises 2.4% - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQjRiWlB1cllNZTRjNWhrb25sQVJqbm1NTmN3NEowZnpxZnkwRy1BQWxQR21ZdDNzeE9adS0xWVl2blVmZjhBS1FZNjFDaFJfQl9Ta3c3WU1ZN2hyREJteG9PMHItNTlJQldNZkU5SVRGckZaekRUaUV2WmdqVUpUMlVWZnBsLUNWbTNYRVoxNWdFX0hpOV9uX3dDN3gzRndxQ3Bv0gGzAUFVX3lxTE5qcm9rRFB0bVR5R2otX2N2bUZndXlLY3pnYlBxQTQtTzBpRTFONmY2QUQ4X0ZyRldtNzZYOVJhXzJldUFWMVhBbzdaNXRuanVaLU5BazNCYXVSQjh2aURSenhYWEx5LWYzZjkwdkNRY25oTlJFS21RbHpmY0tRb3ZFMi14QlNCX0g1eXpYdTJaNEJUSkJYNmNkZE43cDFlM2pHV1NnWHg0b3BoWWplODR4V1lN?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-07-08",
+        "description": "Dubai's economy grows to Dh232 billion in Q1 as GDP rises 2.4%  Gulf News",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "UAE/GCC Economy",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [
       {
@@ -32,7 +45,7 @@
         "domain": "fastcompanyme.com",
         "date": "2026-07-06",
         "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
-        "hoursAgo": 57,
+        "hoursAgo": 61,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -40,5 +53,5 @@
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
