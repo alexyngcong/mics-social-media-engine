@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-08T14:00:45.393Z",
+  "generatedAt": "2026-07-08T17:28:09.228Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 6,
+    "afterDedup": 153,
+    "big4Rejected": 7,
     "englishOnly": 146,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 2
+    "withinRecency": 49,
+    "scored": 49,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
@@ -32,26 +32,13 @@
         "domain": "fastcompanyme.com",
         "date": "2026-07-06",
         "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
-        "hoursAgo": 54,
+        "hoursAgo": 57,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "UAE certifies world’s first commercial vertiport ahead of Dubai air taxi launch - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbWpuMWxyOFJPSUJFM3VnYjRuUjhYMWtKOUlxQXJBaEx2MmVFTGhHV2hvZjhBaEtHeTNqWGl0M0NjcUlHNXFKLUtjS0hxRTlQeFV6LWwtVF9qYUtGcjV1bHFuQmVFRGtCYkJOeUpRTkpqb3ZtMlJOeURpalZwWlFrV21ZWjhjN3E4anlteXoxQUd3c0hXYmhzWE1wanZNS2YxdUtuWWVzZEtZN3E1OUF0V3RzRE5VWFRyZ2NpaGl3?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-07-08",
-        "description": "UAE certifies world’s first commercial vertiport ahead of Dubai air taxi launch  Gulf Business",
-        "hoursAgo": 6,
-        "score": 7,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
