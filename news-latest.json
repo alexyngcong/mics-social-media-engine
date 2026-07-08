@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-08T02:30:59.838Z",
+  "generatedAt": "2026-07-08T06:27:40.201Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 156,
+    "totalFetched": 260,
+    "afterDedup": 206,
     "big4Rejected": 7,
-    "englishOnly": 149,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 2
+    "englishOnly": 176,
+    "withinRecency": 76,
+    "scored": 76,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "fastcompanyme.com",
         "date": "2026-07-06",
         "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
-        "hoursAgo": 43,
+        "hoursAgo": 46,
         "score": 6.5,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -44,13 +44,26 @@
         "domain": "economymiddleeast.com",
         "date": "2026-07-07",
         "description": "Dubai’s real estate market hits $29.4 billion in Q2 2026 transactions amid sustained demand  Economy Middle East",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE certifies world’s first commercial vertiport ahead of Dubai air taxi launch - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQU2kzRlBYVnlCN1FHRl96TS1BZXBqbERKNV9RY0Y4Y3NlaHBKWENWajlwZFRjU0o4bS1iUEJ0aVQ1MVI1WVdnWDZCUTd4VmNmbnZQQ2Nic1hQMGhTU0FwZUtGS3FxOTJ0blZnVGR0d1Nsc0hTY0JSRThnb2lSYXRyNXByUWJFMEtyNDB2clpELWFXY2otQVZySVRwdGp5Y1ZXT0hiTWQ1dVJ5ZkhrdGdwaXRmRDhvY0E2bjBZaQ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-07-08",
+        "description": "UAE certifies world’s first commercial vertiport ahead of Dubai air taxi launch  Gulf Business",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
