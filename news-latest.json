@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-09T14:55:16.166Z",
+  "generatedAt": "2026-07-09T17:54:42.257Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
+    "afterDedup": 157,
     "big4Rejected": 6,
-    "englishOnly": 148,
-    "withinRecency": 52,
-    "scored": 52,
+    "englishOnly": 151,
+    "withinRecency": 56,
+    "scored": 56,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-07-08",
         "description": "Dubai's GDP grew to Dh232bn in first quarter despite Iran war  thenationalnews.com",
-        "hoursAgo": 19,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-09",
         "description": "Saudi Arabia issues withholding tax warning ahead of Friday deadline  Arabian Business",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Emerging Risks",
         "origin": "google-news"
