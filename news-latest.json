@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-08T21:06:25.129Z",
+  "generatedAt": "2026-07-09T02:47:46.614Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 4,
-    "englishOnly": 149,
-    "withinRecency": 53,
-    "scored": 53,
+    "totalFetched": 260,
+    "afterDedup": 204,
+    "big4Rejected": 6,
+    "englishOnly": 174,
+    "withinRecency": 75,
+    "scored": 75,
     "passed": 2
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "gulfnews.com",
         "date": "2026-07-08",
         "description": "Dubai's economy grows to Dh232 billion in Q1 as GDP rises 2.4%  Gulf News",
-        "hoursAgo": 2,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -45,7 +45,7 @@
         "domain": "fastcompanyme.com",
         "date": "2026-07-06",
         "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
-        "hoursAgo": 61,
+        "hoursAgo": 67,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
