@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-09T02:47:46.614Z",
+  "generatedAt": "2026-07-09T07:45:43.352Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 4,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 204,
+    "totalFetched": 164,
+    "afterDedup": 156,
     "big4Rejected": 6,
-    "englishOnly": 174,
-    "withinRecency": 75,
-    "scored": 75,
-    "passed": 2
+    "englishOnly": 148,
+    "withinRecency": 48,
+    "scored": 48,
+    "passed": 3
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "gulfnews.com",
         "date": "2026-07-08",
         "description": "Dubai's economy grows to Dh232 billion in Q1 as GDP rises 2.4%  Gulf News",
-        "hoursAgo": 7,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "UAE/GCC Economy",
         "origin": "google-news"
@@ -39,13 +39,25 @@
     "capital": [],
     "risk": [
       {
+        "title": "Saudi Arabia issues withholding tax warning ahead of Friday deadline - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEloNFMxUm5UZTZfajYzM2pLTVhBaEZOVEFrc1d3TkJEcHpmZkVPeGJRTE1vN2IwZWh1Nnc3VndrVDVyNXBKUFNrUUxDejlBTDJOSUMxV3VMb19SZGNjeE0teXJEdGJyUklmUUNQTVhhQUxMb2luSHRmdEIwbHVCNGVVdUlNMVMzbTdBYjE2MGwySGZKa1ZNRQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-07-09",
+        "description": "Saudi Arabia issues withholding tax warning ahead of Friday deadline  Arabian Business",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Emerging Risks",
+        "origin": "google-news"
+      },
+      {
         "title": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026 - Fast Company Middle East",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcFBDZmU3NVB3ckdheW56SWVDWTlSVDNBbE5TSnNrM1FqZExydkJkTzY2OWtHTmJycFpQWnpKdHhlYk95ZXFkM2J2NEtPekVKR1dXQnhiejhHWmVIc1lnN3UwWS1JLW9wbHR1aWRCei1XNlU4dFEtM2ZfVXpQeGVHSGV4NVNpRkdXLVhmaXFQN0dxVmFIc0xNanJST1JmbC1FcUV1WDM3RW9UbDEtdXZxUWwyd1l0VjBkb2c?oc=5",
         "source": "Fast Company Middle East",
         "domain": "fastcompanyme.com",
         "date": "2026-07-06",
         "description": "UAE real estate maintains momentum as transactions surge 103% in the first half of 2026  Fast Company Middle East",
-        "hoursAgo": 67,
+        "hoursAgo": 72,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -53,5 +65,5 @@
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
