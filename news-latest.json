@@ -1,56 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-09T17:54:42.257Z",
+  "generatedAt": "2026-07-09T21:22:35.932Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 0,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 157,
-    "big4Rejected": 6,
-    "englishOnly": 151,
-    "withinRecency": 56,
-    "scored": 56,
-    "passed": 2
+    "totalFetched": 10,
+    "afterDedup": 9,
+    "big4Rejected": 0,
+    "englishOnly": 9,
+    "withinRecency": 9,
+    "scored": 9,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Dubai's GDP grew to Dh232bn in first quarter despite Iran war - thenationalnews.com",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRF94a0dzTUdwYjAxTDZEM2dkWXMtaElSYVN2THliOU0tMXlwRkZjNnRPdlVLakp3eUVNeXBWYkNGNmhiVURkYWRVNW5weXRaSnhEbGRjbmdtMFZYXzVIQ3ZZVm5HLXFCX3VxUTN5RHNza0FKWXpqQUlzYzJXTzB2UV82ZXJkTVdLREtvVElqeDc3ZmdxT0dHSXd2OG9ia3VMNEl4al9nem9YUFVmSFE4TlJqQUVGY0lCdUo3VjU0RTUwREEwUGxmbQ?oc=5",
-        "source": "thenationalnews.com",
-        "domain": "thenationalnews.com",
-        "date": "2026-07-08",
-        "description": "Dubai's GDP grew to Dh232bn in first quarter despite Iran war  thenationalnews.com",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
-        "title": "Saudi Arabia issues withholding tax warning ahead of Friday deadline - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEloNFMxUm5UZTZfajYzM2pLTVhBaEZOVEFrc1d3TkJEcHpmZkVPeGJRTE1vN2IwZWh1Nnc3VndrVDVyNXBKUFNrUUxDejlBTDJOSUMxV3VMb19SZGNjeE0teXJEdGJyUklmUUNQTVhhQUxMb2luSHRmdEIwbHVCNGVVdUlNMVMzbTdBYjE2MGwySGZKa1ZNRQ?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-07-09",
-        "description": "Saudi Arabia issues withholding tax warning ahead of Friday deadline  Arabian Business",
-        "hoursAgo": 12,
-        "score": 6,
-        "topic": "Emerging Risks",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 0
 }
