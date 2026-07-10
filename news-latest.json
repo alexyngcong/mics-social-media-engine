@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-09T21:22:35.932Z",
+  "generatedAt": "2026-07-10T02:50:29.318Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 0,
+    "gdelt": 2,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 10,
-    "afterDedup": 9,
-    "big4Rejected": 0,
-    "englishOnly": 9,
-    "withinRecency": 9,
-    "scored": 9,
-    "passed": 0
+    "totalFetched": 162,
+    "afterDedup": 158,
+    "big4Rejected": 6,
+    "englishOnly": 152,
+    "withinRecency": 49,
+    "scored": 49,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Saudi Arabia issues withholding tax warning ahead of Friday deadline - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEloNFMxUm5UZTZfajYzM2pLTVhBaEZOVEFrc1d3TkJEcHpmZkVPeGJRTE1vN2IwZWh1Nnc3VndrVDVyNXBKUFNrUUxDejlBTDJOSUMxV3VMb19SZGNjeE0teXJEdGJyUklmUUNQTVhhQUxMb2luSHRmdEIwbHVCNGVVdUlNMVMzbTdBYjE2MGwySGZKa1ZNRQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-07-09",
+        "description": "Saudi Arabia issues withholding tax warning ahead of Friday deadline  Arabian Business",
+        "hoursAgo": 21,
+        "score": 6,
+        "topic": "Emerging Risks",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
