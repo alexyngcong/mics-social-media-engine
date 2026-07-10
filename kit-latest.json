@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-10T02:50:40.433Z",
+  "generatedAt": "2026-07-10T07:34:30.685Z",
   "weekOf": "10 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "saudi-arabia-issues-withholding-tax-warn",
+      "slug": "140-surge-why-dubai-s-waterfront-homes-a",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
-      "theme": "compliance_risk",
-      "tier": "WEEK AHEAD",
-      "title": "Saudi Arabia issues withholding tax warning ahead of Friday deadline - Arabian Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEloNFMxUm5UZTZfajYzM2pLTVhBaEZOVEFrc1d3TkJEcHpmZkVPeGJRTE1vN2IwZWh1Nnc3VndrVDVyNXBKUFNrUUxDejlBTDJOSUMxV3VMb19SZGNjeE0teXJEdGJyUklmUUNQTVhhQUxMb2luSHRmdEIwbHVCNGVVdUlNMVMzbTdBYjE2MGwySGZKa1ZNRQ?oc=5",
-      "filenameBase": "post-1-saudi-arabia-issues-withholding-tax-warn",
-      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
-      "stat": "",
-      "headlineLine1": "Saudi Arabia issues withholding",
-      "headlineLine2": "tax warning ahead of Friday deadline",
-      "hoursAgo": 21
+      "room": "growth",
+      "roomColor": "#4ADE80",
+      "roomLabel": "GROWTH SIGNALS",
+      "theme": "real_estate",
+      "tier": "WEEK AHEAD GROWTH",
+      "title": "140% surge: Why Dubai’s waterfront homes are becoming the UAE’s most valuable real estate asset - Khaleej Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdDNEZ1BOUHFrREhiN0JfcWpjN1lTeE9iN2xpcVFaTURBSmY0aWZWb3drYi1CWUFoYlJ5S2tnVXJkWnNqWVp4cE94dXpJdnl5djBDaTVwa0FEQkNEQVNOQzV5SmdWOU9ESnM1V3hGaE5ERFhxcnh5R3JxM2VMN1BZeS04MkpGbkNheHlsT2luMXdyRm43OEVTdTNPQlRnVWRNN1JhY0xIYWhrQUpiZ01XNTJaQjB5dWRNSloybEJEN2pBV0Fsa0xTRzNoNEpKd01NQ29WatIB3AFBVV95cUxOVER0U1lsVEZzb0VIQmRCcF9ldGhvOEFBU2Z4N1JTOXlBQXBnOTdaTXpwa09yd2VCSkRUaXdyZkd3MUJ6Z3ozNXFneExDRTJkanFVWjBuNGxHYVRvX1BueWpfNkJ2SUtDSHhVYk10c3NfQTB0emdIbFlrNTNhNjFKUkwzbVpjd1UzaWFZQTJub3pjbTRwTzk1WlU0MmRKRWVEc2MtV2tUcElfWlMwZ0MxdmFETXI0WGNsYmJZYTlMRlFQTm1fUTY0WDFWX2NaaHFPSUJDa0YtU3RWQXhj?oc=5",
+      "filenameBase": "post-1-140-surge-why-dubai-s-waterfront-homes-a",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "stat": "140%",
+      "headlineLine1": "140% surge: Why Dubai’s waterfront h…",
+      "headlineLine2": "becoming the UAE’s most valuable rea…",
+      "hoursAgo": 6
     },
     {
       "n": 2,
