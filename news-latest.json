@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-10T14:22:12.476Z",
+  "generatedAt": "2026-07-10T17:47:04.234Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
-    "big4Rejected": 6,
-    "englishOnly": 148,
-    "withinRecency": 42,
-    "scored": 42,
+    "afterDedup": 151,
+    "big4Rejected": 5,
+    "englishOnly": 146,
+    "withinRecency": 41,
+    "scored": 41,
     "passed": 1
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "khaleejtimes.com",
         "date": "2026-07-10",
         "description": "140% surge: Why Dubai’s waterfront homes are becoming the UAE’s most valuable real estate asset  Khaleej Times",
-        "hoursAgo": 12,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
