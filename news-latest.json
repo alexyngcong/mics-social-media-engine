@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-11T16:56:17.303Z",
+  "generatedAt": "2026-07-11T20:44:42.089Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 155,
-    "big4Rejected": 5,
+    "afterDedup": 154,
+    "big4Rejected": 4,
     "englishOnly": 150,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 0
+    "withinRecency": 36,
+    "scored": 36,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Iran, Oman advance Hormuz shipping talks - Shafaq News | Latest breaking news in Iraq and the world - شفق نيوز",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5TdFhOUGZoMlBMZ2JjdG1sZ3RuZ2tTRDZqbV9ycVJ6UndWZm4zZFdYMlNTclRmeC0tVE9ETXA4YXp2MVZXRjdhdVoxdjNvZVdFWUlvYk16SkhhbG5lVGE2WVlFbWlwU3ZUSHVhXzFmTnJqNGNVRGZNZC1qZmlzUQ?oc=5",
+        "source": "شفق نيوز",
+        "domain": "shafaq.com",
+        "date": "2026-07-11",
+        "description": "Iran, Oman advance Hormuz shipping talks - Shafaq News | Latest breaking news in Iraq and the world  شفق نيوز",
+        "hoursAgo": 0,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
