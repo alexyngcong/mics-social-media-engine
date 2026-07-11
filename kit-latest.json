@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-11T02:29:10.434Z",
+  "generatedAt": "2026-07-11T06:12:26.652Z",
   "weekOf": "11 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "140-surge-why-dubai-s-waterfront-homes-a",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "growth",
-      "roomColor": "#4ADE80",
-      "roomLabel": "GROWTH SIGNALS",
-      "theme": "real_estate",
-      "tier": "WEEK AHEAD GROWTH",
-      "title": "140% surge: Why Dubai’s waterfront homes are becoming the UAE’s most valuable real estate asset - Khaleej Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdDNEZ1BOUHFrREhiN0JfcWpjN1lTeE9iN2xpcVFaTURBSmY0aWZWb3drYi1CWUFoYlJ5S2tnVXJkWnNqWVp4cE94dXpJdnl5djBDaTVwa0FEQkNEQVNOQzV5SmdWOU9ESnM1V3hGaE5ERFhxcnh5R3JxM2VMN1BZeS04MkpGbkNheHlsT2luMXdyRm43OEVTdTNPQlRnVWRNN1JhY0xIYWhrQUpiZ01XNTJaQjB5dWRNSloybEJEN2pBV0Fsa0xTRzNoNEpKd01NQ29WatIB3AFBVV95cUxOVER0U1lsVEZzb0VIQmRCcF9ldGhvOEFBU2Z4N1JTOXlBQXBnOTdaTXpwa09yd2VCSkRUaXdyZkd3MUJ6Z3ozNXFneExDRTJkanFVWjBuNGxHYVRvX1BueWpfNkJ2SUtDSHhVYk10c3NfQTB0emdIbFlrNTNhNjFKUkwzbVpjd1UzaWFZQTJub3pjbTRwTzk1WlU0MmRKRWVEc2MtV2tUcElfWlMwZ0MxdmFETXI0WGNsYmJZYTlMRlFQTm1fUTY0WDFWX2NaaHFPSUJDa0YtU3RWQXhj?oc=5",
-      "filenameBase": "post-1-140-surge-why-dubai-s-waterfront-homes-a",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
-      "stat": "140%",
-      "headlineLine1": "140% surge: Why Dubai’s waterfront h…",
-      "headlineLine2": "becoming the UAE’s most valuable rea…",
-      "hoursAgo": 24
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
