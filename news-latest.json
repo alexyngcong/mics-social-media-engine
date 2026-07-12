@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-11T20:44:42.089Z",
+  "generatedAt": "2026-07-12T02:34:26.379Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,9 +14,9 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
-    "big4Rejected": 4,
-    "englishOnly": 150,
+    "afterDedup": 152,
+    "big4Rejected": 5,
+    "englishOnly": 147,
     "withinRecency": 36,
     "scored": 36,
     "passed": 1
@@ -32,7 +32,7 @@
         "domain": "shafaq.com",
         "date": "2026-07-11",
         "description": "Iran, Oman advance Hormuz shipping talks - Shafaq News | Latest breaking news in Iraq and the world  شفق نيوز",
-        "hoursAgo": 0,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
