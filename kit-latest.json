@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-12T02:34:45.279Z",
+  "generatedAt": "2026-07-12T06:32:24.311Z",
   "weekOf": "12 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "iran-oman-advance-hormuz-shipping-talks-",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
-      "theme": "oil_energy",
-      "tier": "WEEK AHEAD",
-      "title": "Iran, Oman advance Hormuz shipping talks - Shafaq News | Latest breaking news in Iraq and the world - شفق نيوز",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5TdFhOUGZoMlBMZ2JjdG1sZ3RuZ2tTRDZqbV9ycVJ6UndWZm4zZFdYMlNTclRmeC0tVE9ETXA4YXp2MVZXRjdhdVoxdjNvZVdFWUlvYk16SkhhbG5lVGE2WVlFbWlwU3ZUSHVhXzFmTnJqNGNVRGZNZC1qZmlzUQ?oc=5",
-      "filenameBase": "post-1-iran-oman-advance-hormuz-shipping-talks-",
-      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Iran, Oman advance Hormuz shipping t…",
-      "headlineLine2": "| Latest breaking news in Iraq and t…",
-      "hoursAgo": 6
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
