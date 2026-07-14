@@ -1,43 +1,30 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-14T17:13:11.665Z",
+  "generatedAt": "2026-07-14T20:59:27.199Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 10,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 199,
+    "totalFetched": 170,
+    "afterDedup": 165,
     "big4Rejected": 4,
-    "englishOnly": 165,
-    "withinRecency": 56,
-    "scored": 56,
-    "passed": 2
+    "englishOnly": 159,
+    "withinRecency": 54,
+    "scored": 54,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Trump's Strait of Hormuz blockade erases the last concession to Iran in preliminary deal - ABC News - Breaking News, Latest News and Videos",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMEVUb2cxazlVN1o3X1lJRmliczd2Y2F0alNEMXRQd1VCTjhNckdvV0FLYlVnRGN0TGRtU3pyVW5fRXlZWmk3SXVqcVFjenF5cHctdmVPNUtBZFVnWnRsS2VPalRnRklWNWlVMkl2Mm5OSHdicTNGbDhxWFZYRzVkblJWa0gtQXJmVF8yVmVtZ2pKcWlFT2l3Zmt3NXEtaUpqNDg5dk9PNU1NaVB3cV9oejJB0gG3AUFVX3lxTE1JVWFwNEZ2TXd1bG1lRjZ5ZlhlOXl1c3V6Q2dfYUhyQXpwV05WdlhQVGhtaTZDVDMxbVRrTmw5VnNQdlNzUTVlRngySVgwUWJjUi12cnhFVXRadFlkanRKNVl6Tm9TaXJVV1NESFJSbm13RWgwY1NLR1l0R1NidlBaUDA2R0xzVjJQM0FyN1dGMGZ6cTNTbWRUZk0xWENaRW8ycGd3b1dDMDR1YTZGbEc2YnVTT0JMdw?oc=5",
-        "source": "ABC News - Breaking News, Latest News and Videos",
-        "domain": "abcnews.com",
-        "date": "2026-07-13",
-        "description": "Trump's Strait of Hormuz blockade erases the last concession to Iran in preliminary deal  ABC News - Breaking News, Latest News and Videos",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": [
       {
         "title": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers - Gulf Business",
@@ -46,12 +33,12 @@
         "domain": "gulfbusiness.com",
         "date": "2026-07-14",
         "description": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers  Gulf Business",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
