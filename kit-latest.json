@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T09:57:25.511Z",
+  "generatedAt": "2026-07-14T20:59:38.891Z",
   "weekOf": "14 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "property-finder-introduces-mortgage-cash",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
+      "theme": "real_estate",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "title": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers - Gulf Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVjBzdVRITFdISi0yRkdvTVhNUkp0VVdDa3BtOTJMdDBHUWpnWm5PbGY0ZnF1UWgtdkNNcDZ5V3hVTnVzbHUtZml2QkRabFhaVnN0cFQtR2FwTV82cFdKanJ0MDhoZktyVHdBQ2RIbDh1TXRNbktlVWpjNkg4SERSWTZFZ1ZOZ3Y2VkVzUnd5QWJjYmxiNUlPUjVIdjBtb1psU0lESFEwY1NsaWFTSno5c3czVmxMbmc3LVNreUN5VVR0Tl9MZkdCRQ?oc=5",
+      "filenameBase": "post-1-property-finder-introduces-mortgage-cash",
+      "photoUrl": "/mics-social-media-engine/photos/growth/04_abu_dhabi_corniche.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "Property Finder introduces mortgage",
+      "headlineLine2": "cashback scheme for UAE first-time h…",
+      "hoursAgo": 10
     },
     {
       "n": 2,
