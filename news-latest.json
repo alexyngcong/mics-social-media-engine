@@ -1,31 +1,57 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-14T09:57:12.920Z",
+  "generatedAt": "2026-07-14T13:30:14.239Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 191,
-    "big4Rejected": 5,
-    "englishOnly": 161,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 156,
+    "big4Rejected": 4,
+    "englishOnly": 152,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
-    "world": []
+    "risk": [
+      {
+        "title": "Trump's Strait of Hormuz blockade erases the last concession to Iran in preliminary deal - ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMEVUb2cxazlVN1o3X1lJRmliczd2Y2F0alNEMXRQd1VCTjhNckdvV0FLYlVnRGN0TGRtU3pyVW5fRXlZWmk3SXVqcVFjenF5cHctdmVPNUtBZFVnWnRsS2VPalRnRklWNWlVMkl2Mm5OSHdicTNGbDhxWFZYRzVkblJWa0gtQXJmVF8yVmVtZ2pKcWlFT2l3Zmt3NXEtaUpqNDg5dk9PNU1NaVB3cV9oejJB0gG3AUFVX3lxTE1JVWFwNEZ2TXd1bG1lRjZ5ZlhlOXl1c3V6Q2dfYUhyQXpwV05WdlhQVGhtaTZDVDMxbVRrTmw5VnNQdlNzUTVlRngySVgwUWJjUi12cnhFVXRadFlkanRKNVl6Tm9TaXJVV1NESFJSbm13RWgwY1NLR1l0R1NidlBaUDA2R0xzVjJQM0FyN1dGMGZ6cTNTbWRUZk0xWENaRW8ycGd3b1dDMDR1YTZGbEc2YnVTT0JMdw?oc=5",
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "domain": "abcnews.com",
+        "date": "2026-07-13",
+        "description": "Trump's Strait of Hormuz blockade erases the last concession to Iran in preliminary deal  ABC News - Breaking News, Latest News and Videos",
+        "hoursAgo": 15,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
+      {
+        "title": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVjBzdVRITFdISi0yRkdvTVhNUkp0VVdDa3BtOTJMdDBHUWpnWm5PbGY0ZnF1UWgtdkNNcDZ5V3hVTnVzbHUtZml2QkRabFhaVnN0cFQtR2FwTV82cFdKanJ0MDhoZktyVHdBQ2RIbDh1TXRNbktlVWpjNkg4SERSWTZFZ1ZOZ3Y2VkVzUnd5QWJjYmxiNUlPUjVIdjBtb1psU0lESFEwY1NsaWFTSno5c3czVmxMbmc3LVNreUN5VVR0Tl9MZkdCRQ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-07-14",
+        "description": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers  Gulf Business",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 2
 }
