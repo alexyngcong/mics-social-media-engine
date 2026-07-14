@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-14T02:14:09.996Z",
+  "generatedAt": "2026-07-14T06:10:19.379Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 1,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 161,
-    "afterDedup": 161,
+    "totalFetched": 160,
+    "afterDedup": 158,
     "big4Rejected": 5,
-    "englishOnly": 156,
-    "withinRecency": 43,
-    "scored": 43,
+    "englishOnly": 153,
+    "withinRecency": 41,
+    "scored": 41,
     "passed": 1
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "abcnews.com",
         "date": "2026-07-13",
         "description": "Trump's Strait of Hormuz blockade erases the last concession to Iran in preliminary deal  ABC News - Breaking News, Latest News and Videos",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
