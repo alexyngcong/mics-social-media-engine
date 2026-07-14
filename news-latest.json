@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-13T20:56:20.671Z",
+  "generatedAt": "2026-07-14T02:14:09.996Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 161,
-    "afterDedup": 157,
-    "big4Rejected": 6,
-    "englishOnly": 150,
-    "withinRecency": 36,
-    "scored": 36,
-    "passed": 0
+    "afterDedup": 161,
+    "big4Rejected": 5,
+    "englishOnly": 156,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Trump's Strait of Hormuz blockade erases the last concession to Iran in preliminary deal - ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMEVUb2cxazlVN1o3X1lJRmliczd2Y2F0alNEMXRQd1VCTjhNckdvV0FLYlVnRGN0TGRtU3pyVW5fRXlZWmk3SXVqcVFjenF5cHctdmVPNUtBZFVnWnRsS2VPalRnRklWNWlVMkl2Mm5OSHdicTNGbDhxWFZYRzVkblJWa0gtQXJmVF8yVmVtZ2pKcWlFT2l3Zmt3NXEtaUpqNDg5dk9PNU1NaVB3cV9oejJB0gG3AUFVX3lxTE1JVWFwNEZ2TXd1bG1lRjZ5ZlhlOXl1c3V6Q2dfYUhyQXpwV05WdlhQVGhtaTZDVDMxbVRrTmw5VnNQdlNzUTVlRngySVgwUWJjUi12cnhFVXRadFlkanRKNVl6Tm9TaXJVV1NESFJSbm13RWgwY1NLR1l0R1NidlBaUDA2R0xzVjJQM0FyN1dGMGZ6cTNTbWRUZk0xWENaRW8ycGd3b1dDMDR1YTZGbEc2YnVTT0JMdw?oc=5",
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "domain": "abcnews.com",
+        "date": "2026-07-13",
+        "description": "Trump's Strait of Hormuz blockade erases the last concession to Iran in preliminary deal  ABC News - Breaking News, Latest News and Videos",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
