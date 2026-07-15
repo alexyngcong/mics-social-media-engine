@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-14T20:59:27.199Z",
+  "generatedAt": "2026-07-15T02:13:18.872Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 10,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 170,
-    "afterDedup": 165,
-    "big4Rejected": 4,
-    "englishOnly": 159,
-    "withinRecency": 54,
-    "scored": 54,
+    "totalFetched": 260,
+    "afterDedup": 206,
+    "big4Rejected": 5,
+    "englishOnly": 168,
+    "withinRecency": 64,
+    "scored": 64,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-07-14",
         "description": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers  Gulf Business",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
