@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-15T06:13:09.248Z",
+  "generatedAt": "2026-07-15T10:01:27.141Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 13,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 173,
-    "afterDedup": 166,
-    "big4Rejected": 5,
-    "englishOnly": 158,
-    "withinRecency": 52,
-    "scored": 52,
-    "passed": 1
+    "totalFetched": 160,
+    "afterDedup": 152,
+    "big4Rejected": 4,
+    "englishOnly": 148,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVjBzdVRITFdISi0yRkdvTVhNUkp0VVdDa3BtOTJMdDBHUWpnWm5PbGY0ZnF1UWgtdkNNcDZ5V3hVTnVzbHUtZml2QkRabFhaVnN0cFQtR2FwTV82cFdKanJ0MDhoZktyVHdBQ2RIbDh1TXRNbktlVWpjNkg4SERSWTZFZ1ZOZ3Y2VkVzUnd5QWJjYmxiNUlPUjVIdjBtb1psU0lESFEwY1NsaWFTSno5c3czVmxMbmc3LVNreUN5VVR0Tl9MZkdCRQ?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-07-14",
-        "description": "Property Finder introduces mortgage cashback scheme for UAE first-time homebuyers  Gulf Business",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
