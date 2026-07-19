@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-19T16:56:56.284Z",
+  "generatedAt": "2026-07-19T20:43:53.794Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 4,
+    "gdelt": 3,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 164,
-    "afterDedup": 159,
+    "totalFetched": 163,
+    "afterDedup": 158,
     "big4Rejected": 3,
-    "englishOnly": 155,
-    "withinRecency": 33,
-    "scored": 33,
+    "englishOnly": 154,
+    "withinRecency": 30,
+    "scored": 30,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "zawya.com",
         "date": "2026-07-19",
         "description": "UAE non-oil trade rises 13.1% to $527.5 billion in first half of 2026  Zawya",
-        "hoursAgo": 2,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
