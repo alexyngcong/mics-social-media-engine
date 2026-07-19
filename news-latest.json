@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-19T13:13:48.209Z",
+  "generatedAt": "2026-07-19T16:56:56.284Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 164,
-    "afterDedup": 157,
+    "afterDedup": 159,
     "big4Rejected": 3,
-    "englishOnly": 152,
-    "withinRecency": 32,
-    "scored": 32,
-    "passed": 0
+    "englishOnly": 155,
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE non-oil trade rises 13.1% to $527.5 billion in first half of 2026 - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc0F6ci02SVRvNmlmTEhfa05vX2E3VHNJaWJKMHI3Q0xhVnNEX3RsR1JUQXo3MnE0YXRLRzFNSkZWUnRUSzVVMFdRX0NnOERtb01lOVRsTUJjTm9PM0QzWXlkdFJBUWlneUxpazJBMHVzczg0dzJSNmtWTGUyeURkT3ZVcXVENUFKMk5LUHlTdXUwVkpOU1h5ak8xSUU5Q0VtOVZ1RUdCNG5VdU0?oc=5",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-07-19",
+        "description": "UAE non-oil trade rises 13.1% to $527.5 billion in first half of 2026  Zawya",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Oil & Energy Markets",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
