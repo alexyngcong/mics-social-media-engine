@@ -1,44 +1,57 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-20T06:44:50.081Z",
+  "generatedAt": "2026-07-20T10:50:29.732Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 7,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
+    "totalFetched": 167,
+    "afterDedup": 158,
     "big4Rejected": 3,
-    "englishOnly": 150,
-    "withinRecency": 26,
-    "scored": 26,
-    "passed": 1
+    "englishOnly": 153,
+    "withinRecency": 30,
+    "scored": 30,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Abu Dhabi real estate transactions surge 112 percent to $31.86 billion in H1 2026 as FDI grows 309 percent - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMinwNBVV95cUxQSFh0NmhKTTZVbFlyeVBsZWw5UlY4VnhHZ2s0N1BVRTRfQjB6RW5RWkpXdlNKY1RPR2VKeGlqWi1sa0h2VkhuMEdnU0NMclBpZEdibmh5MEJCSlctTHo1aW1rdzE4cmNkYko2NjRHMzdNVXJib1JiMnRBMDR0dENLLUZhQXpLYjVkS2NOZjNiWmZXMzk5Vmp6amdsME5FY1hqUDA1aXFUX1hvekJHYkppVE8ycnVicVVCOWJhcU5LbTlfeW0wT2dVLW1lcnQwbmx6V0ZCTnphVllVNGxWcGZrRXhSa0hHOXhwN2RxYzNwTnhzcF9nWmFOa3hkTllwSFFaLWhxX0hTWWxqSDh5eXVpSWdidWhvM25keUFJZ3dBZ1hSa0ZUcWtobVp1T2xJXzdMclJBNmc4VGRVSVJHVUdRYkxUZkhtbGQwTVpVWDd3b3VBNWdKMFI0N2ktOXBmeFlwN3NPdHpxNnRHU1NwYzB1MmZZdTNQLXlxeUdVYTNxdmRYbW9QV0JsQ3p5Y0ZDUENVaXZfcERxdnhIckxBOWgw?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-07-20",
+        "description": "Abu Dhabi real estate transactions surge 112 percent to $31.86 billion in H1 2026 as FDI grows 309 percent  Economy Middle East",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
-        "title": "UAE non-oil trade rises 13.1% to $527.5 billion in first half of 2026 - Zawya",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc0F6ci02SVRvNmlmTEhfa05vX2E3VHNJaWJKMHI3Q0xhVnNEX3RsR1JUQXo3MnE0YXRLRzFNSkZWUnRUSzVVMFdRX0NnOERtb01lOVRsTUJjTm9PM0QzWXlkdFJBUWlneUxpazJBMHVzczg0dzJSNmtWTGUyeURkT3ZVcXVENUFKMk5LUHlTdXUwVkpOU1h5ak8xSUU5Q0VtOVZ1RUdCNG5VdU0?oc=5",
+        "title": "UAE non-oil trade rises 13.1% to $527.5bln in first half of 2026 - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUnRITmhvcEl2dFlwenl4LURDNVd6WHNTLS1vMHpmaVlueVUtWlRWNFIyNDdwVS1fX2hiaEc5LXRYMThyMktOYjg1emUzdWZFc3Rkd25LUFlrckJfWGs5eExuNXloSFBDcG0tdFAxaW95cXVrelctU3hpYjM5RE5qa1oyNUFIMlB0eExrTzFKRXE1UzlGQkFwMjNMaUs1R1N6NHUxaQ?oc=5",
         "source": "Zawya",
         "domain": "zawya.com",
-        "date": "2026-07-19",
-        "description": "UAE non-oil trade rises 13.1% to $527.5 billion in first half of 2026  Zawya",
-        "hoursAgo": 16,
+        "date": "2026-07-20",
+        "description": "UAE non-oil trade rises 13.1% to $527.5bln in first half of 2026  Zawya",
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
