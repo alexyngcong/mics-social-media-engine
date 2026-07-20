@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-20T14:02:21.017Z",
+  "generatedAt": "2026-07-20T18:00:54.607Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
+    "afterDedup": 155,
     "big4Rejected": 3,
-    "englishOnly": 150,
-    "withinRecency": 28,
-    "scored": 28,
+    "englishOnly": 152,
+    "withinRecency": 30,
+    "scored": 30,
     "passed": 3
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-07-20",
         "description": "Abu Dhabi real estate transactions surge 112 percent to $31.86 billion in H1 2026 as FDI grows 309 percent  Economy Middle East",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "zawya.com",
         "date": "2026-07-20",
         "description": "UAE non-oil trade rises 13.1% to $527.5bln in first half of 2026  Zawya",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "emirates247.com",
         "date": "2026-07-20",
         "description": "Dubai property transactions reach AED419.9 billion in first half of 2026  Emirates 24|7",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
