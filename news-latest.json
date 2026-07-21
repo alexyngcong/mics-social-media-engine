@@ -1,30 +1,42 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-21T06:27:06.590Z",
+  "generatedAt": "2026-07-21T10:24:11.911Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 8,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 168,
-    "afterDedup": 159,
-    "big4Rejected": 3,
-    "englishOnly": 154,
-    "withinRecency": 31,
-    "scored": 31,
-    "passed": 3
+    "totalFetched": 160,
+    "afterDedup": 154,
+    "big4Rejected": 2,
+    "englishOnly": 152,
+    "withinRecency": 29,
+    "scored": 29,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
+      {
+        "title": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire - CNBC",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCR25xNkpjVTVydW1EeU1OdUNxT29yYzR2a0NXTUxTTGNZWFlvZHN2NDlGRDVfSlBvSXVHS2xvOHNqdmZNWmJ1czN2cy1aVlpWanU2Tk04Xy15RXY3M3licDNOR1d4NDJGZC1tY3lEak9xcFdDNzlvNNIBfkFVX3lxTE9pTHRsSHNZSEw5R1llanY3VzVxOU1jMW9hajY1SU15TDJYa1dPMnZKRlluNzZsSEFianZiNko5VUFESVZEaU4tTmJYU3hDMDB1X0NEekhNUjBqbDNsdFhpVHgyeFRNaGdxRDExYTFBeHJMcVpzUHhzbjVWZEhMQQ?oc=5",
+        "source": "CNBC",
+        "domain": "cnbc.com",
+        "date": "2026-07-21",
+        "description": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire  CNBC",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
       {
         "title": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war - Reuters",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmtOemhMR1UtaVNoMENBMHltNEpKTWJNekRXUEtSa3hidndTM0VZVnRoTEJlV2ZENWtkYVFCUkJtSk8zdFhPeEJQSXRNMS1vWC03N2NJek14WklXdzhNZWkzMnZRUFpGcHg2OXotaHpyVW9jblFTYUM4U2lGcXFWa1NFbnZSQnpreVF6OXVhMW1oeHdIdkFNMjBJa09UZGgycjRkMjZ6Z1dxNC10enJIVDZJdlVSQjRxQlBZc05Tdw?oc=5",
@@ -32,7 +44,7 @@
         "domain": "reuters.com",
         "date": "2026-07-20",
         "description": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war  Reuters",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -46,7 +58,7 @@
         "domain": "gulfnews.com",
         "date": "2026-07-20",
         "description": "A 200% jump in response: Dubai Police’s AI platform is transforming protection  Gulf News",
-        "hoursAgo": 15,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
@@ -58,12 +70,12 @@
         "domain": "emirates247.com",
         "date": "2026-07-20",
         "description": "Dubai property transactions reach AED419.9 billion in first half of 2026  Emirates 24|7",
-        "hoursAgo": 19,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 4
 }
