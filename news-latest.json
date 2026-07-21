@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-21T10:24:11.911Z",
+  "generatedAt": "2026-07-21T13:44:45.371Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 3,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 154,
-    "big4Rejected": 2,
+    "totalFetched": 163,
+    "afterDedup": 155,
+    "big4Rejected": 3,
     "englishOnly": 152,
-    "withinRecency": 29,
-    "scored": 29,
-    "passed": 4
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "cnbc.com",
         "date": "2026-07-21",
         "description": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire  CNBC",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "reuters.com",
         "date": "2026-07-20",
         "description": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war  Reuters",
-        "hoursAgo": 15,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -58,24 +58,12 @@
         "domain": "gulfnews.com",
         "date": "2026-07-20",
         "description": "A 200% jump in response: Dubai Police’s AI platform is transforming protection  Gulf News",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "AI & Technology",
-        "origin": "google-news"
-      },
-      {
-        "title": "Dubai property transactions reach AED419.9 billion in first half of 2026 - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOExuYWxPNmZvMXlmczdlQzRyam8tTHF2UmJSVW1IeDFaOWpwc2hLZWI2c3p3UDdpNUtROWVCNDBicEU5YnV6UkxGQzRZZGotQjNiWEVSY2RUeWNOd0lZMHdyb3diNU1jN3psekFpejZtRUJRNTZNQXpVbnQydHFhVUIydmhOZWpoWEtsUGhTNXQwQmd1YXROdTVPN2JfNjk3ZXZyN0hWMmUwYk9ET0ZRN2Fjd9IBzgFBVV95cUxOLVFrU0xfdGJGM2RJQWZKUU1MdndvVFd3UjlBRmk4NHJYYkhNX29jeHliUDhaSHdJbFdHVXdIV08yQ2w2QmE0QWJFaFFKNzVFbFhwUjFYa25kcDBXWXhOeGU2M3RLWmIzSHRDTkROX0ZwUzJHNXZtdGFuNWdsYk1Rc05fWUxxUzFSY0VtOHp2VnBka0NIMHl0UFA0OWo3WVBiM0RLUnh1Z2l0TnZRN0o1ZElpQXpaaklpN1dSWGtmNVlRbG5RZWZwcEVzbmpRUQ?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-07-20",
-        "description": "Dubai property transactions reach AED419.9 billion in first half of 2026  Emirates 24|7",
         "hoursAgo": 23,
         "score": 6,
-        "topic": "Global Economic Signals",
+        "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 3
 }
