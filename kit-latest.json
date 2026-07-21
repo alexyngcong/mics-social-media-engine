@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-21T02:29:56.277Z",
+  "generatedAt": "2026-07-21T17:16:58.214Z",
   "weekOf": "21 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "u-s-strikes-iran-and-houthis-threaten-sa",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "shipping_logistics",
+      "tier": "WEEK AHEAD",
+      "title": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire - CNBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCR25xNkpjVTVydW1EeU1OdUNxT29yYzR2a0NXTUxTTGNZWFlvZHN2NDlGRDVfSlBvSXVHS2xvOHNqdmZNWmJ1czN2cy1aVlpWanU2Tk04Xy15RXY3M3licDNOR1d4NDJGZC1tY3lEak9xcFdDNzlvNNIBfkFVX3lxTE9pTHRsSHNZSEw5R1llanY3VzVxOU1jMW9hajY1SU15TDJYa1dPMnZKRlluNzZsSEFianZiNko5VUFESVZEaU4tTmJYU3hDMDB1X0NEekhNUjBqbDNsdFhpVHgyeFRNaGdxRDExYTFBeHJMcVpzUHhzbjVWZEhMQQ?oc=5",
+      "filenameBase": "post-1-u-s-strikes-iran-and-houthis-threaten-sa",
+      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "U.S. strikes Iran and Houthis threat…",
+      "headlineLine2": "Arabia shipping as mediators push 10…",
+      "hoursAgo": 9
     },
     {
       "n": 2,
