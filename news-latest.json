@@ -1,31 +1,69 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-21T02:29:45.015Z",
+  "generatedAt": "2026-07-21T06:27:06.590Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 0,
+    "gdelt": 8,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 10,
-    "afterDedup": 8,
-    "big4Rejected": 0,
-    "englishOnly": 8,
-    "withinRecency": 8,
-    "scored": 8,
-    "passed": 0
+    "totalFetched": 168,
+    "afterDedup": 159,
+    "big4Rejected": 3,
+    "englishOnly": 154,
+    "withinRecency": 31,
+    "scored": 31,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
-    "world": []
+    "risk": [
+      {
+        "title": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmtOemhMR1UtaVNoMENBMHltNEpKTWJNekRXUEtSa3hidndTM0VZVnRoTEJlV2ZENWtkYVFCUkJtSk8zdFhPeEJQSXRNMS1vWC03N2NJek14WklXdzhNZWkzMnZRUFpGcHg2OXotaHpyVW9jblFTYUM4U2lGcXFWa1NFbnZSQnpreVF6OXVhMW1oeHdIdkFNMjBJa09UZGgycjRkMjZ6Z1dxNC10enJIVDZJdlVSQjRxQlBZc05Tdw?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
+        "date": "2026-07-20",
+        "description": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war  Reuters",
+        "hoursAgo": 11,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
+      {
+        "title": "A 200% jump in response: Dubai Police’s AI platform is transforming protection - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYTktb3EtTTRpNmhNYzlaX2J6dVBfZDdHdC1TY3l3Z2dGVC1YSUZFUlM2NmFCSHVfY3pHaXFNSVVnUUdidkMwMzRPLTFldVJzZm5PS1B0bFEwd3FYamxSUWh3RWd6d1J6VmRSbk5DTmRFWkg3YzA4Ry04MlJPVnYwdUMzd3cybHZaWFVESHljY3dWajNRLTdPTkt2ZjdYYnBvanRaRktwQVBVS1N3dTZpVmdxMlBuNGlpcl93Q3RQdGnSAdMBQVVfeXFMTTIzTEZteE9Qd2RQM3pJVHJ3VkJYT1dERWZHOWpTNExTVzliYXNNWUZEZmFiaFljZ1YwMEh4SzB6bnlWSXgyWXNOM0FIeHZ5cVVINldGZWVjMXlnUXNUYWdlOTVpWkwwbVJYcnZEU1l4dHZHeG43WnRGNWdPbXdPRE8tby1CMHRxRGxXc1hJZWpEdG5Lcnhrc1ZpYTVMV2dpMEJVazVYR1JyOWJzTVRuMk1yMWp6MXctcEx2LWxQNUxtVzBMT3dFNzhfZkpmVWRNaGQ3RQ?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-07-20",
+        "description": "A 200% jump in response: Dubai Police’s AI platform is transforming protection  Gulf News",
+        "hoursAgo": 15,
+        "score": 6,
+        "topic": "AI & Technology",
+        "origin": "google-news"
+      },
+      {
+        "title": "Dubai property transactions reach AED419.9 billion in first half of 2026 - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOExuYWxPNmZvMXlmczdlQzRyam8tTHF2UmJSVW1IeDFaOWpwc2hLZWI2c3p3UDdpNUtROWVCNDBicEU5YnV6UkxGQzRZZGotQjNiWEVSY2RUeWNOd0lZMHdyb3diNU1jN3psekFpejZtRUJRNTZNQXpVbnQydHFhVUIydmhOZWpoWEtsUGhTNXQwQmd1YXROdTVPN2JfNjk3ZXZyN0hWMmUwYk9ET0ZRN2Fjd9IBzgFBVV95cUxOLVFrU0xfdGJGM2RJQWZKUU1MdndvVFd3UjlBRmk4NHJYYkhNX29jeHliUDhaSHdJbFdHVXdIV08yQ2w2QmE0QWJFaFFKNzVFbFhwUjFYa25kcDBXWXhOeGU2M3RLWmIzSHRDTkROX0ZwUzJHNXZtdGFuNWdsYk1Rc05fWUxxUzFSY0VtOHp2VnBka0NIMHl0UFA0OWo3WVBiM0RLUnh1Z2l0TnZRN0o1ZElpQXpaaklpN1dSWGtmNVlRbG5RZWZwcEVzbmpRUQ?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-07-20",
+        "description": "Dubai property transactions reach AED419.9 billion in first half of 2026  Emirates 24|7",
+        "hoursAgo": 19,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 3
 }
