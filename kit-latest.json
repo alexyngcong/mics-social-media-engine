@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-20T06:45:03.368Z",
-  "weekOf": "20 Jul 2026",
+  "generatedAt": "2026-07-21T02:29:56.277Z",
+  "weekOf": "21 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-non-oil-trade-rises-13-1-to-527-5-bi",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "oil_energy",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "UAE non-oil trade rises 13.1% to $527.5 billion in first half of 2026 - Zawya",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc0F6ci02SVRvNmlmTEhfa05vX2E3VHNJaWJKMHI3Q0xhVnNEX3RsR1JUQXo3MnE0YXRLRzFNSkZWUnRUSzVVMFdRX0NnOERtb01lOVRsTUJjTm9PM0QzWXlkdFJBUWlneUxpazJBMHVzczg0dzJSNmtWTGUyeURkT3ZVcXVENUFKMk5LUHlTdXUwVkpOU1h5ak8xSUU5Q0VtOVZ1RUdCNG5VdU0?oc=5",
-      "filenameBase": "post-1-uae-non-oil-trade-rises-13-1-to-527-5-bi",
-      "photoUrl": "/mics-social-media-engine/photos/world/08_oil_sea.jpg",
-      "stat": "$527.5B",
-      "headlineLine1": "UAE non-oil trade rises 13.1% to",
-      "headlineLine2": "$527.5 billion in first half of 2026",
-      "hoursAgo": 16
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
