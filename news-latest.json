@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-22T10:24:07.725Z",
+  "generatedAt": "2026-07-22T13:48:07.859Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,28 +17,15 @@
     "afterDedup": 148,
     "big4Rejected": 3,
     "englishOnly": 145,
-    "withinRecency": 33,
-    "scored": 33,
-    "passed": 1
+    "withinRecency": 32,
+    "scored": 32,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmtOemhMR1UtaVNoMENBMHltNEpKTWJNekRXUEtSa3hidndTM0VZVnRoTEJlV2ZENWtkYVFCUkJtSk8zdFhPeEJQSXRNMS1vWC03N2NJek14WklXdzhNZWkzMnZRUFpGcHg2OXotaHpyVW9jblFTYUM4U2lGcXFWa1NFbnZSQnpreVF6OXVhMW1oeHdIdkFNMjBJa09UZGgycjRkMjZ6Z1dxNC10enJIVDZJdlVSQjRxQlBZc05Tdw?oc=5",
-        "source": "Reuters",
-        "domain": "reuters.com",
-        "date": "2026-07-21",
-        "description": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war  Reuters",
-        "hoursAgo": 12,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
