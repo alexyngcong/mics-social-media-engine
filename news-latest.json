@@ -1,58 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-22T06:26:51.430Z",
+  "generatedAt": "2026-07-22T10:24:07.725Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 198,
+    "totalFetched": 160,
+    "afterDedup": 148,
     "big4Rejected": 3,
-    "englishOnly": 172,
-    "withinRecency": 61,
-    "scored": 61,
-    "passed": 2
+    "englishOnly": 145,
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
       {
-        "title": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire - CNBC",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCR25xNkpjVTVydW1EeU1OdUNxT29yYzR2a0NXTUxTTGNZWFlvZHN2NDlGRDVfSlBvSXVHS2xvOHNqdmZNWmJ1czN2cy1aVlpWanU2Tk04Xy15RXY3M3licDNOR1d4NDJGZC1tY3lEak9xcFdDNzlvNNIBfkFVX3lxTE9pTHRsSHNZSEw5R1llanY3VzVxOU1jMW9hajY1SU15TDJYa1dPMnZKRlluNzZsSEFianZiNko5VUFESVZEaU4tTmJYU3hDMDB1X0NEekhNUjBqbDNsdFhpVHgyeFRNaGdxRDExYTFBeHJMcVpzUHhzbjVWZEhMQQ?oc=5",
-        "source": "CNBC",
-        "domain": "cnbc.com",
+        "title": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmtOemhMR1UtaVNoMENBMHltNEpKTWJNekRXUEtSa3hidndTM0VZVnRoTEJlV2ZENWtkYVFCUkJtSk8zdFhPeEJQSXRNMS1vWC03N2NJek14WklXdzhNZWkzMnZRUFpGcHg2OXotaHpyVW9jblFTYUM4U2lGcXFWa1NFbnZSQnpreVF6OXVhMW1oeHdIdkFNMjBJa09UZGgycjRkMjZ6Z1dxNC10enJIVDZJdlVSQjRxQlBZc05Tdw?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
         "date": "2026-07-21",
-        "description": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire  CNBC",
-        "hoursAgo": 22,
+        "description": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war  Reuters",
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "UAE NRIs Face July 31 , 2026 ITR Deadline : Key Tax Rules , Forms and Last - Minute Filing Tips Explained",
-        "url": "https://gulfnews.com/business/tax-news/uae-nris-10-days-to-itr-deadline-8-last-minute-filing-questions-answered-1.500615622",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-07-22",
-        "description": "UAE NRIs Face July 31 , 2026 ITR Deadline : Key Tax Rules , Forms and Last - Minute Filing Tips Explained",
-        "imageUrl": "https://media.assettype.com/gulfnews%2F2025-09-11%2Fsx5xjri4%2F202509113506804.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 2,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "gdelt"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
