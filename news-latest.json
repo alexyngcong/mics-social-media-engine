@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-22T02:28:13.965Z",
+  "generatedAt": "2026-07-22T06:26:51.430Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 260,
-    "afterDedup": 206,
+    "afterDedup": 198,
     "big4Rejected": 3,
-    "englishOnly": 179,
-    "withinRecency": 65,
-    "scored": 65,
-    "passed": 1
+    "englishOnly": 172,
+    "withinRecency": 61,
+    "scored": 61,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,13 +32,27 @@
         "domain": "cnbc.com",
         "date": "2026-07-21",
         "description": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire  CNBC",
-        "hoursAgo": 18,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE NRIs Face July 31 , 2026 ITR Deadline : Key Tax Rules , Forms and Last - Minute Filing Tips Explained",
+        "url": "https://gulfnews.com/business/tax-news/uae-nris-10-days-to-itr-deadline-8-last-minute-filing-questions-answered-1.500615622",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-07-22",
+        "description": "UAE NRIs Face July 31 , 2026 ITR Deadline : Key Tax Rules , Forms and Last - Minute Filing Tips Explained",
+        "imageUrl": "https://media.assettype.com/gulfnews%2F2025-09-11%2Fsx5xjri4%2F202509113506804.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
+      }
+    ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
