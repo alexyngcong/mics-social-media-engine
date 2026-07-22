@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-21T21:06:51.840Z",
+  "generatedAt": "2026-07-22T02:28:13.965Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 4,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 164,
-    "afterDedup": 155,
+    "totalFetched": 260,
+    "afterDedup": 206,
     "big4Rejected": 3,
-    "englishOnly": 152,
-    "withinRecency": 39,
-    "scored": 39,
+    "englishOnly": 179,
+    "withinRecency": 65,
+    "scored": 65,
     "passed": 1
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "cnbc.com",
         "date": "2026-07-21",
         "description": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire  CNBC",
-        "hoursAgo": 12,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
