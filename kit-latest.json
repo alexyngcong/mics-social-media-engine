@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-22T02:28:31.142Z",
+  "generatedAt": "2026-07-22T10:24:19.466Z",
   "weekOf": "22 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "u-s-strikes-iran-and-houthis-threaten-sa",
+      "slug": "houthis-announce-saudi-naval-blockade-th",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "risk",
       "roomColor": "#EF5555",
       "roomLabel": "RISK · COMPLIANCE",
-      "theme": "shipping_logistics",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD",
-      "title": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire - CNBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCR25xNkpjVTVydW1EeU1OdUNxT29yYzR2a0NXTUxTTGNZWFlvZHN2NDlGRDVfSlBvSXVHS2xvOHNqdmZNWmJ1czN2cy1aVlpWanU2Tk04Xy15RXY3M3licDNOR1d4NDJGZC1tY3lEak9xcFdDNzlvNNIBfkFVX3lxTE9pTHRsSHNZSEw5R1llanY3VzVxOU1jMW9hajY1SU15TDJYa1dPMnZKRlluNzZsSEFianZiNko5VUFESVZEaU4tTmJYU3hDMDB1X0NEekhNUjBqbDNsdFhpVHgyeFRNaGdxRDExYTFBeHJMcVpzUHhzbjVWZEhMQQ?oc=5",
-      "filenameBase": "post-1-u-s-strikes-iran-and-houthis-threaten-sa",
-      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
+      "title": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war - Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmtOemhMR1UtaVNoMENBMHltNEpKTWJNekRXUEtSa3hidndTM0VZVnRoTEJlV2ZENWtkYVFCUkJtSk8zdFhPeEJQSXRNMS1vWC03N2NJek14WklXdzhNZWkzMnZRUFpGcHg2OXotaHpyVW9jblFTYUM4U2lGcXFWa1NFbnZSQnpreVF6OXVhMW1oeHdIdkFNMjBJa09UZGgycjRkMjZ6Z1dxNC10enJIVDZJdlVSQjRxQlBZc05Tdw?oc=5",
+      "filenameBase": "post-1-houthis-announce-saudi-naval-blockade-th",
+      "photoUrl": "https://images.unsplash.com/photo-1474314170901-f351b68f544f?w=1600&q=80&fit=crop&crop=entropy&auto=format",
       "stat": "",
-      "headlineLine1": "U.S. strikes Iran and Houthis threat…",
-      "headlineLine2": "Arabia shipping as mediators push 10…",
-      "hoursAgo": 18
+      "headlineLine1": "Houthis announce Saudi naval blockade,",
+      "headlineLine2": "threatening new front in US-Iran war",
+      "hoursAgo": 12
     },
     {
       "n": 2,
