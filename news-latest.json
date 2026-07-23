@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-23T02:33:20.011Z",
+  "generatedAt": "2026-07-23T06:29:49.043Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 10,
-    "afterDedup": 6,
-    "big4Rejected": 0,
-    "englishOnly": 6,
-    "withinRecency": 6,
-    "scored": 6,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 156,
+    "big4Rejected": 3,
+    "englishOnly": 153,
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 1
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "W Capital: Dubai commercial real estate records highest-ever first-half sales, surpassing full-year total - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPQ0dfeTF5aDM3YVFNLWROV09NaHFtaVdtOWc5QTFqMGJyN2pOX2cwaU13WWdLWGQ2V2lFQ3ZxX1l0NDM0OVprVE9TamJKcHh1QjZodG42VXVuTVFnUnpSVzRGV3RpUzNsSllvSDVmdHBiRWZVSnlzVi02V21hdUFsRGZreWFpODRQcnhmLUNLNEZSS09YY01oQWlZQ3hrZFdqRkdTcXdiNTVJdnFvOHFqMFZqZFA1bmViYWVPMHhkODlyRU5ENG9OeWd2Vzh4VDdWcGlXbUNwd1oyR0dnZ2p4SldzWXFaM0VvaEEtNFBBS2JYNmswZFRkTHd3?oc=5",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-07-22",
+        "description": "W Capital: Dubai commercial real estate records highest-ever first-half sales, surpassing full-year total  Zawya",
+        "hoursAgo": 17,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
