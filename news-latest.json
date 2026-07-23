@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-23T06:29:49.043Z",
+  "generatedAt": "2026-07-23T10:21:39.709Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 156,
+    "afterDedup": 155,
     "big4Rejected": 3,
-    "englishOnly": 153,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 1
+    "englishOnly": 152,
+    "withinRecency": 44,
+    "scored": 44,
+    "passed": 2
   },
   "rooms": {
     "growth": [
@@ -30,15 +30,28 @@
         "domain": "zawya.com",
         "date": "2026-07-22",
         "description": "W Capital: Dubai commercial real estate records highest-ever first-half sales, surpassing full-year total  Zawya",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
       }
     ],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone - Economy Middle East",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbXBSNGRiTGhZT2FUd3I1T0NFSl8tcV96Wk84WXBTRW4ya0lFNTdCelR1cUpObkJ4VXRud3ZhYUg2d0VhdDVxRXBXc0lXY0NXQjZOQWhEcGdHNDVVY1B2djlEU0RKOEYwUGRlWDVvVGtlOW5iMmZSUnFqOW5iZ0lST3M4SjZfZTdoc1pLcDFfb0ZieGZpTXVZRnhhV2FETGwyaXBsV01pRUczU3FJaUtlSW1ia21mcElNckFWRVU2UQ?oc=5",
+        "source": "Economy Middle East",
+        "domain": "economymiddleeast.com",
+        "date": "2026-07-23",
+        "description": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone  Economy Middle East",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
