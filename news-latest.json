@@ -1,36 +1,36 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-23T13:52:24.962Z",
+  "generatedAt": "2026-07-23T17:21:08.944Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 4,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 164,
-    "afterDedup": 159,
-    "big4Rejected": 3,
-    "englishOnly": 154,
-    "withinRecency": 40,
-    "scored": 40,
+    "totalFetched": 160,
+    "afterDedup": 153,
+    "big4Rejected": 4,
+    "englishOnly": 149,
+    "withinRecency": 44,
+    "scored": 44,
     "passed": 2
   },
   "rooms": {
     "growth": [
       {
-        "title": "W Capital: Dubai commercial real estate records highest-ever first-half sales, surpassing full-year total - Zawya",
-        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPQ0dfeTF5aDM3YVFNLWROV09NaHFtaVdtOWc5QTFqMGJyN2pOX2cwaU13WWdLWGQ2V2lFQ3ZxX1l0NDM0OVprVE9TamJKcHh1QjZodG42VXVuTVFnUnpSVzRGV3RpUzNsSllvSDVmdHBiRWZVSnlzVi02V21hdUFsRGZreWFpODRQcnhmLUNLNEZSS09YY01oQWlZQ3hrZFdqRkdTcXdiNTVJdnFvOHFqMFZqZFA1bmViYWVPMHhkODlyRU5ENG9OeWd2Vzh4VDdWcGlXbUNwd1oyR0dnZ2p4SldzWXFaM0VvaEEtNFBBS2JYNmswZFRkTHd3?oc=5",
+        "title": "Dubai commercial property sales hit record H1 high, surpassing full-year 2025 total - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOa0prT19jT1NxUGtmYzBtbGwwbklRWVFkR3AyN3lXaFhTbmdwNXFrNjI4SDF2QVJkOFdlTUhYMFpaY0lScGlZd0FQSGdpVGJOY0FjYTFocFV3UTdobkx5Z1Rxem9TYjZoZXJkVDFIREN5NWl2MXlaaW1XR1NseXpTWHlxZDJvODFVaWZFdV9NUjFUZmZaLUVramx5cFhtRlhKNmM1a2ZPVFZBUzVpRzVDSHBZOF8ta2oxNkpJTHBNRm5jNFFoNHhEWS1ySjdvQko0ZjdtR1dVcWdWcHdDWmc?oc=5",
         "source": "Zawya",
         "domain": "zawya.com",
-        "date": "2026-07-22",
-        "description": "W Capital: Dubai commercial real estate records highest-ever first-half sales, surpassing full-year total  Zawya",
-        "hoursAgo": 24,
+        "date": "2026-07-23",
+        "description": "Dubai commercial property sales hit record H1 high, surpassing full-year 2025 total  Zawya",
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -45,7 +45,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-07-23",
         "description": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone  Economy Middle East",
-        "hoursAgo": 6,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
