@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23T06:30:00.692Z",
+  "generatedAt": "2026-07-23T21:02:40.706Z",
   "weekOf": "23 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "w-capital-dubai-commercial-real-estate-r",
+      "slug": "35-billion-al-maktoum-airport-expansion-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "growth",
-      "roomColor": "#4ADE80",
-      "roomLabel": "GROWTH SIGNALS",
-      "theme": "treasury_capital",
-      "tier": "WEEK AHEAD GROWTH",
-      "title": "W Capital: Dubai commercial real estate records highest-ever first-half sales, surpassing full-year total - Zawya",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPQ0dfeTF5aDM3YVFNLWROV09NaHFtaVdtOWc5QTFqMGJyN2pOX2cwaU13WWdLWGQ2V2lFQ3ZxX1l0NDM0OVprVE9TamJKcHh1QjZodG42VXVuTVFnUnpSVzRGV3RpUzNsSllvSDVmdHBiRWZVSnlzVi02V21hdUFsRGZreWFpODRQcnhmLUNLNEZSS09YY01oQWlZQ3hrZFdqRkdTcXdiNTVJdnFvOHFqMFZqZFA1bmViYWVPMHhkODlyRU5ENG9OeWd2Vzh4VDdWcGlXbUNwd1oyR0dnZ2p4SldzWXFaM0VvaEEtNFBBS2JYNmswZFRkTHd3?oc=5",
-      "filenameBase": "post-1-w-capital-dubai-commercial-real-estate-r",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "growth_expansion",
+      "tier": "WEEK AHEAD",
+      "title": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone - Economy Middle East",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbXBSNGRiTGhZT2FUd3I1T0NFSl8tcV96Wk84WXBTRW4ya0lFNTdCelR1cUpObkJ4VXRud3ZhYUg2d0VhdDVxRXBXc0lXY0NXQjZOQWhEcGdHNDVVY1B2djlEU0RKOEYwUGRlWDVvVGtlOW5iMmZSUnFqOW5iZ0lST3M4SjZfZTdoc1pLcDFfb0ZieGZpTXVZRnhhV2FETGwyaXBsV01pRUczU3FJaUtlSW1ia21mcElNckFWRVU2UQ?oc=5",
+      "filenameBase": "post-1-35-billion-al-maktoum-airport-expansion-",
       "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
-      "stat": "",
-      "headlineLine1": "W Capital: Dubai commercial real est…",
-      "headlineLine2": "highest-ever first-half sales, surpa…",
-      "hoursAgo": 17
+      "stat": "$35B",
+      "headlineLine1": "$35 billion Al Maktoum Airport expan…",
+      "headlineLine2": "reshape Dubai’s next real estate gro…",
+      "hoursAgo": 10
     },
     {
       "n": 2,
