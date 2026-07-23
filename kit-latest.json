@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23T02:33:36.087Z",
+  "generatedAt": "2026-07-23T06:30:00.692Z",
   "weekOf": "23 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "w-capital-dubai-commercial-real-estate-r",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "growth",
+      "roomColor": "#4ADE80",
+      "roomLabel": "GROWTH SIGNALS",
+      "theme": "treasury_capital",
+      "tier": "WEEK AHEAD GROWTH",
+      "title": "W Capital: Dubai commercial real estate records highest-ever first-half sales, surpassing full-year total - Zawya",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPQ0dfeTF5aDM3YVFNLWROV09NaHFtaVdtOWc5QTFqMGJyN2pOX2cwaU13WWdLWGQ2V2lFQ3ZxX1l0NDM0OVprVE9TamJKcHh1QjZodG42VXVuTVFnUnpSVzRGV3RpUzNsSllvSDVmdHBiRWZVSnlzVi02V21hdUFsRGZreWFpODRQcnhmLUNLNEZSS09YY01oQWlZQ3hrZFdqRkdTcXdiNTVJdnFvOHFqMFZqZFA1bmViYWVPMHhkODlyRU5ENG9OeWd2Vzh4VDdWcGlXbUNwd1oyR0dnZ2p4SldzWXFaM0VvaEEtNFBBS2JYNmswZFRkTHd3?oc=5",
+      "filenameBase": "post-1-w-capital-dubai-commercial-real-estate-r",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "W Capital: Dubai commercial real est…",
+      "headlineLine2": "highest-ever first-half sales, surpa…",
+      "hoursAgo": 17
     },
     {
       "n": 2,
