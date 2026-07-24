@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-23T21:02:27.714Z",
+  "generatedAt": "2026-07-24T02:29:50.711Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 150,
+    "gdelt": 13,
+    "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 5,
-    "englishOnly": 148,
-    "withinRecency": 41,
-    "scored": 41,
+    "totalFetched": 163,
+    "afterDedup": 151,
+    "big4Rejected": 4,
+    "englishOnly": 145,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 1
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-07-23",
         "description": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone  Economy Middle East",
-        "hoursAgo": 10,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
