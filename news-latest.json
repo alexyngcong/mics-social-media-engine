@@ -1,28 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-24T02:29:50.711Z",
+  "generatedAt": "2026-07-24T06:24:35.795Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 13,
-    "googleNews": 140,
+    "gdelt": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 163,
+    "totalFetched": 160,
     "afterDedup": 151,
-    "big4Rejected": 4,
-    "englishOnly": 145,
-    "withinRecency": 43,
-    "scored": 43,
-    "passed": 1
+    "big4Rejected": 5,
+    "englishOnly": 146,
+    "withinRecency": 36,
+    "scored": 36,
+    "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Dubai commercial property sales hit record H1 high, surpassing full-year 2025 total - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOa0prT19jT1NxUGtmYzBtbGwwbklRWVFkR3AyN3lXaFhTbmdwNXFrNjI4SDF2QVJkOFdlTUhYMFpaY0lScGlZd0FQSGdpVGJOY0FjYTFocFV3UTdobkx5Z1Rxem9TYjZoZXJkVDFIREN5NWl2MXlaaW1XR1NseXpTWHlxZDJvODFVaWZFdV9NUjFUZmZaLUVramx5cFhtRlhKNmM1a2ZPVFZBUzVpRzVDSHBZOF8ta2oxNkpJTHBNRm5jNFFoNHhEWS1ySjdvQko0ZjdtR1dVcWdWcHdDWmc?oc=5",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-07-23",
+        "description": "Dubai commercial property sales hit record H1 high, surpassing full-year 2025 total  Zawya",
+        "hoursAgo": 21,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [
       {
@@ -32,7 +45,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-07-23",
         "description": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone  Economy Middle East",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -40,5 +53,5 @@
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
