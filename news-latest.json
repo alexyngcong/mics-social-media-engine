@@ -1,41 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-24T10:15:16.652Z",
+  "generatedAt": "2026-07-24T13:40:58.314Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 155,
+    "totalFetched": 260,
+    "afterDedup": 204,
     "big4Rejected": 5,
-    "englishOnly": 150,
-    "withinRecency": 37,
-    "scored": 37,
-    "passed": 3
+    "englishOnly": 177,
+    "withinRecency": 63,
+    "scored": 63,
+    "passed": 2
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Dubai commercial property sales hit record H1 high, surpassing full-year 2025 total - Zawya",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOa0prT19jT1NxUGtmYzBtbGwwbklRWVFkR3AyN3lXaFhTbmdwNXFrNjI4SDF2QVJkOFdlTUhYMFpaY0lScGlZd0FQSGdpVGJOY0FjYTFocFV3UTdobkx5Z1Rxem9TYjZoZXJkVDFIREN5NWl2MXlaaW1XR1NseXpTWHlxZDJvODFVaWZFdV9NUjFUZmZaLUVramx5cFhtRlhKNmM1a2ZPVFZBUzVpRzVDSHBZOF8ta2oxNkpJTHBNRm5jNFFoNHhEWS1ySjdvQko0ZjdtR1dVcWdWcHdDWmc?oc=5",
-        "source": "Zawya",
-        "domain": "zawya.com",
-        "date": "2026-07-23",
-        "description": "Dubai commercial property sales hit record H1 high, surpassing full-year 2025 total  Zawya",
-        "hoursAgo": 24,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [
       {
         "title": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump - Gulf News",
@@ -44,27 +31,27 @@
         "domain": "gulfnews.com",
         "date": "2026-07-24",
         "description": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump  Gulf News",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
-      }
-    ],
-    "risk": [
+      },
       {
-        "title": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone - Economy Middle East",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbXBSNGRiTGhZT2FUd3I1T0NFSl8tcV96Wk84WXBTRW4ya0lFNTdCelR1cUpObkJ4VXRud3ZhYUg2d0VhdDVxRXBXc0lXY0NXQjZOQWhEcGdHNDVVY1B2djlEU0RKOEYwUGRlWDVvVGtlOW5iMmZSUnFqOW5iZ0lST3M4SjZfZTdoc1pLcDFfb0ZieGZpTXVZRnhhV2FETGwyaXBsV01pRUczU3FJaUtlSW1ia21mcElNckFWRVU2UQ?oc=5",
-        "source": "Economy Middle East",
-        "domain": "economymiddleeast.com",
-        "date": "2026-07-23",
-        "description": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone  Economy Middle East",
-        "hoursAgo": 24,
+        "title": "UAE Business : Emirates NBD delivers record H1 pre - tax profit of $4 . 41bn , up 5 % ",
+        "url": "https://www.gdnonline.com:443/Details/1401430",
+        "source": "Gdnonline",
+        "domain": "gdnonline.com",
+        "date": "2026-07-24",
+        "description": "UAE Business : Emirates NBD delivers record H1 pre - tax profit of $4 . 41bn , up 5 % ",
+        "imageUrl": "https://www.gdnonline.com/gdnimages/20260723%5CTA_20260723092108.jpg",
+        "hoursAgo": 0,
         "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
+        "topic": "Corporate Finance",
+        "origin": "gdelt"
       }
     ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 3
+  "totalCount": 2
 }
