@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-24T06:24:35.795Z",
+  "generatedAt": "2026-07-24T10:15:16.652Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
+    "afterDedup": 155,
     "big4Rejected": 5,
-    "englishOnly": 146,
-    "withinRecency": 36,
-    "scored": 36,
-    "passed": 2
+    "englishOnly": 150,
+    "withinRecency": 37,
+    "scored": 37,
+    "passed": 3
   },
   "rooms": {
     "growth": [
@@ -30,13 +30,26 @@
         "domain": "zawya.com",
         "date": "2026-07-23",
         "description": "Dubai commercial property sales hit record H1 high, surpassing full-year 2025 total  Zawya",
-        "hoursAgo": 21,
+        "hoursAgo": 24,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
       }
     ],
-    "capital": [],
+    "capital": [
+      {
+        "title": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWGVXb0RFY0tfMFVNOTFrWlE4ZkdiX2pGNElicktXakxHYVhIWkVDY3JpSHBFTUx4cm83QVBaem5MQWQzeE0yVVhScXZJZ05YeGNBb3NqQ2l3dUF1Um5feHJNQlY4akVxUXlkT1FZVnFLLV81QXJtN1Y4Y1lWUUVHLWgwaHNPdHVhQThzYW1ZWXFkeExVQlNTc3M5VEUzeUdBOUFXdzRhcXpWVjZmV0NjaHA5TXoyVzRSa2U2NUJKZ0djVlVJSXZF0gHaAUFVX3lxTFBiLVAtbEo5MjFIV1BnaXd0Y0NWODFpOHZ6N093X2Y4VXhkazdhUGtSSFVYNDRMdk84bDIwdHpQSHpVNm1saUFOby1UUTE5TWRjdmlrT2c3NkJpbUJsRWZCUVBrTXVxNmtrd3FUUjNjcFdITThScFluUVUwZEUxNU11NDZmTzZySUpKX2pqZ1g3R3hjWEtDbTNyWGFxeS1ENGMwSVJoQnU4el9veVlBR1Y5aXNGVlFhb1A0eURtMEMtMWtmWkpJeGt4dnJpZlNVUHhJRzROWmtnbTd3?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-07-24",
+        "description": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump  Gulf News",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "google-news"
+      }
+    ],
     "risk": [
       {
         "title": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone - Economy Middle East",
@@ -45,7 +58,7 @@
         "domain": "economymiddleeast.com",
         "date": "2026-07-23",
         "description": "$35 billion Al Maktoum Airport expansion to reshape Dubai’s next real estate growth zone  Economy Middle East",
-        "hoursAgo": 20,
+        "hoursAgo": 24,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -53,5 +66,5 @@
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
