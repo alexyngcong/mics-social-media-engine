@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-24T13:40:58.314Z",
+  "generatedAt": "2026-07-24T17:28:27.211Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 2,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 204,
+    "totalFetched": 162,
+    "afterDedup": 154,
     "big4Rejected": 5,
-    "englishOnly": 177,
-    "withinRecency": 63,
-    "scored": 63,
-    "passed": 2
+    "englishOnly": 149,
+    "withinRecency": 35,
+    "scored": 35,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
@@ -31,27 +31,14 @@
         "domain": "gulfnews.com",
         "date": "2026-07-24",
         "description": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump  Gulf News",
-        "hoursAgo": 8,
+        "hoursAgo": 12,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
-      },
-      {
-        "title": "UAE Business : Emirates NBD delivers record H1 pre - tax profit of $4 . 41bn , up 5 % ",
-        "url": "https://www.gdnonline.com:443/Details/1401430",
-        "source": "Gdnonline",
-        "domain": "gdnonline.com",
-        "date": "2026-07-24",
-        "description": "UAE Business : Emirates NBD delivers record H1 pre - tax profit of $4 . 41bn , up 5 % ",
-        "imageUrl": "https://www.gdnonline.com/gdnimages/20260723%5CTA_20260723092108.jpg",
-        "hoursAgo": 0,
-        "score": 6,
-        "topic": "Corporate Finance",
-        "origin": "gdelt"
       }
     ],
     "risk": [],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
