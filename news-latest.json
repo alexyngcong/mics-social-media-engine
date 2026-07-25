@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-25T16:55:03.934Z",
+  "generatedAt": "2026-07-25T20:50:20.187Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 7,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 154,
+    "totalFetched": 167,
+    "afterDedup": 160,
     "big4Rejected": 4,
-    "englishOnly": 150,
-    "withinRecency": 29,
-    "scored": 29,
-    "passed": 1
+    "englishOnly": 154,
+    "withinRecency": 34,
+    "scored": 34,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWGVXb0RFY0tfMFVNOTFrWlE4ZkdiX2pGNElicktXakxHYVhIWkVDY3JpSHBFTUx4cm83QVBaem5MQWQzeE0yVVhScXZJZ05YeGNBb3NqQ2l3dUF1Um5feHJNQlY4akVxUXlkT1FZVnFLLV81QXJtN1Y4Y1lWUUVHLWgwaHNPdHVhQThzYW1ZWXFkeExVQlNTc3M5VEUzeUdBOUFXdzRhcXpWVjZmV0NjaHA5TXoyVzRSa2U2NUJKZ0djVlVJSXZF0gHaAUFVX3lxTFBiLVAtbEo5MjFIV1BnaXd0Y0NWODFpOHZ6N093X2Y4VXhkazdhUGtSSFVYNDRMdk84bDIwdHpQSHpVNm1saUFOby1UUTE5TWRjdmlrT2c3NkJpbUJsRWZCUVBrTXVxNmtrd3FUUjNjcFdITThScFluUVUwZEUxNU11NDZmTzZySUpKX2pqZ1g3R3hjWEtDbTNyWGFxeS1ENGMwSVJoQnU4el9veVlBR1Y5aXNGVlFhb1A0eURtMEMtMWtmWkpJeGt4dnJpZlNVUHhJRzROWmtnbTd3?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-07-24",
-        "description": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump  Gulf News",
-        "hoursAgo": 35,
-        "score": 6.5,
-        "topic": "Corporate Finance",
-        "origin": "google-news"
-      }
-    ],
+    "capital": [],
     "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
