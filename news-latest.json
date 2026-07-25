@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-25T13:21:36.471Z",
+  "generatedAt": "2026-07-25T16:55:03.934Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 155,
+    "afterDedup": 154,
     "big4Rejected": 4,
-    "englishOnly": 151,
-    "withinRecency": 28,
-    "scored": 28,
+    "englishOnly": 150,
+    "withinRecency": 29,
+    "scored": 29,
     "passed": 1
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "gulfnews.com",
         "date": "2026-07-24",
         "description": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump  Gulf News",
-        "hoursAgo": 31,
+        "hoursAgo": 35,
         "score": 6.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
