@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T09:45:08.500Z",
+  "generatedAt": "2026-07-25T13:21:49.603Z",
   "weekOf": "25 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "union-properties-plans-dh2-billion-dubai",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "room": "capital",
+      "roomColor": "#F0C050",
+      "roomLabel": "CAPITAL · CASH",
+      "theme": "treasury_capital",
+      "tier": "WEEK AHEAD CAPITAL",
+      "title": "Union Properties plans Dh2 billion Dubai home community after 68% revenue jump - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWGVXb0RFY0tfMFVNOTFrWlE4ZkdiX2pGNElicktXakxHYVhIWkVDY3JpSHBFTUx4cm83QVBaem5MQWQzeE0yVVhScXZJZ05YeGNBb3NqQ2l3dUF1Um5feHJNQlY4akVxUXlkT1FZVnFLLV81QXJtN1Y4Y1lWUUVHLWgwaHNPdHVhQThzYW1ZWXFkeExVQlNTc3M5VEUzeUdBOUFXdzRhcXpWVjZmV0NjaHA5TXoyVzRSa2U2NUJKZ0djVlVJSXZF0gHaAUFVX3lxTFBiLVAtbEo5MjFIV1BnaXd0Y0NWODFpOHZ6N093X2Y4VXhkazdhUGtSSFVYNDRMdk84bDIwdHpQSHpVNm1saUFOby1UUTE5TWRjdmlrT2c3NkJpbUJsRWZCUVBrTXVxNmtrd3FUUjNjcFdITThScFluUVUwZEUxNU11NDZmTzZySUpKX2pqZ1g3R3hjWEtDbTNyWGFxeS1ENGMwSVJoQnU4el9veVlBR1Y5aXNGVlFhb1A0eURtMEMtMWtmWkpJeGt4dnJpZlNVUHhJRzROWmtnbTd3?oc=5",
+      "filenameBase": "post-1-union-properties-plans-dh2-billion-dubai",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "stat": "68%",
+      "headlineLine1": "Union Properties plans Dh2 billion D…",
+      "headlineLine2": "home community after 68% revenue jump",
+      "hoursAgo": 31
     },
     {
       "n": 2,
