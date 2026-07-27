@@ -1,57 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-27T11:18:30.059Z",
+  "generatedAt": "2026-07-27T14:28:56.701Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 9,
+    "gdelt": 6,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 169,
-    "afterDedup": 158,
-    "big4Rejected": 4,
-    "englishOnly": 154,
-    "withinRecency": 27,
-    "scored": 27,
-    "passed": 2
+    "totalFetched": 166,
+    "afterDedup": 155,
+    "big4Rejected": 5,
+    "englishOnly": 150,
+    "withinRecency": 24,
+    "scored": 24,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Binghatti H1 profit jumps 64% to Dh3 billion as Dubai demand drives growth - Khaleej Times",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOT20xODgtdFkzN1dpQVpKNzkyLWI3RkkwSkNVMUtoRHpXTHlQRHRmbkVfNU9YN1ozVF9fdUp1bE9sQXg3anlYLUNNUHFoVGRFZ05OclFZc200aWg3QVRHOWNOMFFsUUVGS28tMzlnZTEtQWlXcXhHUDE1N0pNNkg3SlNvT191SFhGYW9ZN9IBlAFBVV95cUxPTDFhNTJDUXZFTXFfTlRfdTlsV1c2bmlweFRYSUxITkJIdjd5WUwtdUZmblRUQU1SSUdYWVVuV1pGX1l1R3VKRDE4QVJoTW1Vb3dFeG1COEZpaTJza3VZTWNzcEVndTU1angzbmV5RnlxS3FyMzlUalZ4VExFNmJodEpvTnNHOWJ6VmVidXIwVVdpYTdC?oc=5",
-        "source": "Khaleej Times",
-        "domain": "khaleejtimes.com",
-        "date": "2026-07-27",
-        "description": "Binghatti H1 profit jumps 64% to Dh3 billion as Dubai demand drives growth  Khaleej Times",
-        "hoursAgo": 4,
-        "score": 6,
-        "topic": "Corporate Finance",
-        "origin": "google-news"
-      }
-    ],
+    "capital": [],
     "risk": [],
     "world": [
       {
         "title": "DET and Julius Baer launch strategic alliance to advance Dubai's position as a global hub for private wealth - Government of Dubai Media Office",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbFg2bXFEWWEybkNnWlJ0VTM2NkZDblN1YWNkQUNvTzFfSnpoSi1jZHR2ZUdGdkZXMm8xY0d6cm1kRnl4Yklpb3hMWmZpYmhZRm1KbVVHbm9ZdE1sMGRBVkw1d2RlTlpWeEZJNVVBSmRmN1kySXd3SzBVWktSS1lDaG4yVDdNUkNHTmlNck5xdGZ6RERZSnNz?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUXNEcTZjMTZLN1BPLWJLemoyVWw4NFRiME9lNUNlcFlNUENVeUNOUFhIZldoVUlfeE03MUptbVdGUFJud1BsOWhIRHp3dlZLdlEtMzB3WElPLU5GOF9WWlYtNnE2a2ZnMTE2ZndPZ21HUWNvUlNQbXJ6TTBJd2FqdURTTEVmX182TjFnMU90Uy1wWE13alhrTHhFaHQ?oc=5",
         "source": "Government of Dubai Media Office",
         "domain": "mediaoffice.ae",
         "date": "2026-07-27",
         "description": "DET and Julius Baer launch strategic alliance to advance Dubai's position as a global hub for private wealth  Government of Dubai Media Office",
-        "hoursAgo": 4,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
