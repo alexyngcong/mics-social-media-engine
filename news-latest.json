@@ -1,30 +1,43 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-27T17:41:56.386Z",
+  "generatedAt": "2026-07-27T21:08:55.327Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 12,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
+    "totalFetched": 172,
+    "afterDedup": 159,
     "big4Rejected": 4,
-    "englishOnly": 148,
-    "withinRecency": 20,
-    "scored": 20,
-    "passed": 1
+    "englishOnly": 155,
+    "withinRecency": 26,
+    "scored": 26,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE's transition to e-invoicing is a major step in its digital journey - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRUFnendtTHdEOHpJakhDUjJ0VVRIcjhxRkhkc1JyUFlSZVJoUk9vS29jTFotS014ZE5NcDJ3OU05WXN0SDlqa1hkUXdkMG92NFdvQW5tYTR6NEVkNUZQWEtqVVZNSmZkS3pQdERVT0dBZTU1R2ZtOURIR3FkcTdIeGl0TnAzeXlLSzJrVEZwa3RFVnNIZ2xOSV9TMzF5WVU0djBzWGp4LUJyM0ZyZFpUa19TWmU?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-07-27",
+        "description": "UAE's transition to e-invoicing is a major step in its digital journey  Gulf Today",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
         "title": "DET and Julius Baer launch strategic alliance to advance Dubai's position as a global hub for private wealth - Government of Dubai Media Office",
@@ -33,12 +46,12 @@
         "domain": "mediaoffice.ae",
         "date": "2026-07-27",
         "description": "DET and Julius Baer launch strategic alliance to advance Dubai's position as a global hub for private wealth  Government of Dubai Media Office",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
