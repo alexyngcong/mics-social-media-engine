@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-27T21:08:55.327Z",
+  "generatedAt": "2026-07-28T02:22:51.125Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 12,
+    "gdelt": 7,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 172,
+    "totalFetched": 167,
     "afterDedup": 159,
-    "big4Rejected": 4,
-    "englishOnly": 155,
-    "withinRecency": 26,
-    "scored": 26,
-    "passed": 2
+    "big4Rejected": 5,
+    "englishOnly": 154,
+    "withinRecency": 28,
+    "scored": 28,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-07-27",
         "description": "UAE's transition to e-invoicing is a major step in its digital journey  Gulf Today",
-        "hoursAgo": 2,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -40,18 +40,30 @@
     ],
     "world": [
       {
+        "title": "Dubai targets global wealth as family offices surge 61% and investor interest grows - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmh0d0diNzBWWDV2ZlZUUWJEUFcwbDkwYWFpNC0zUWVWOHMySTgtSGlJN3A1cTlMVW9kZ1I3MG5IdHpaRFl3MGdlU2psd0xEMHV6NW0wRE5WRzZBRjY3bDNCWTkwZmNDa2Y5cFlxamFKSUxXaWtMZWp5UlRacU5naTY0Uno4c1RTdWc?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-07-27",
+        "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
         "title": "DET and Julius Baer launch strategic alliance to advance Dubai's position as a global hub for private wealth - Government of Dubai Media Office",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUXNEcTZjMTZLN1BPLWJLemoyVWw4NFRiME9lNUNlcFlNUENVeUNOUFhIZldoVUlfeE03MUptbVdGUFJud1BsOWhIRHp3dlZLdlEtMzB3WElPLU5GOF9WWlYtNnE2a2ZnMTE2ZndPZ21HUWNvUlNQbXJ6TTBJd2FqdURTTEVmX182TjFnMU90Uy1wWE13alhrTHhFaHQ?oc=5",
         "source": "Government of Dubai Media Office",
         "domain": "mediaoffice.ae",
         "date": "2026-07-27",
         "description": "DET and Julius Baer launch strategic alliance to advance Dubai's position as a global hub for private wealth  Government of Dubai Media Office",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
