@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-28T02:22:51.125Z",
+  "generatedAt": "2026-07-28T06:25:50.025Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 7,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 167,
-    "afterDedup": 159,
-    "big4Rejected": 5,
-    "englishOnly": 154,
-    "withinRecency": 28,
-    "scored": 28,
+    "totalFetched": 260,
+    "afterDedup": 196,
+    "big4Rejected": 4,
+    "englishOnly": 165,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 3
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-07-27",
         "description": "UAE's transition to e-invoicing is a major step in its digital journey  Gulf Today",
-        "hoursAgo": 8,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-27",
         "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "mediaoffice.ae",
         "date": "2026-07-27",
         "description": "DET and Julius Baer launch strategic alliance to advance Dubai's position as a global hub for private wealth  Government of Dubai Media Office",
-        "hoursAgo": 18,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
