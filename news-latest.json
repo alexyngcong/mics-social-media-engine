@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-28T10:33:16.299Z",
+  "generatedAt": "2026-07-28T14:02:09.237Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,8 +17,8 @@
     "afterDedup": 155,
     "big4Rejected": 4,
     "englishOnly": 151,
-    "withinRecency": 30,
-    "scored": 30,
+    "withinRecency": 31,
+    "scored": 31,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-07-27",
         "description": "UAE's transition to e-invoicing is a major step in its digital journey  Gulf Today",
-        "hoursAgo": 16,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-27",
         "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
-        "hoursAgo": 13,
+        "hoursAgo": 16,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
