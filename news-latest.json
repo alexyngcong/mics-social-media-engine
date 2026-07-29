@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-29T17:13:59.538Z",
+  "generatedAt": "2026-07-29T20:54:21.368Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 203,
+    "totalFetched": 160,
+    "afterDedup": 152,
     "big4Rejected": 5,
-    "englishOnly": 175,
-    "withinRecency": 66,
-    "scored": 66,
-    "passed": 1
+    "englishOnly": 147,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -33,12 +33,36 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-27",
         "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
-        "hoursAgo": 43,
+        "hoursAgo": 47,
         "score": 6.5,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Expo City Dubai sees new business registrations rise more than 25% in H1 2026 - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUUFoVVk2U3EyTXFfWVE0UEtrUThrUnpDMnB4NnBhXzN5OG9HbnNWLUcwRGo3d3NESm5SN3VfTVAtV1NsWVpRT1BzYjFrU2tqdkl0X2EwSGpwUEt0Vzl3M204ZjhqZDhWZWFrMEtvUGNSTzhlWGJxbktjRVdTbHZUTWFJRzkzZEVPZkpCVlprb2kzZjZ2djUyWldadnlOX0RpWnVxYWRXY09VT3dJTzFv?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-07-29",
+        "description": "Expo City Dubai sees new business registrations rise more than 25% in H1 2026  Gulf Business",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Dubai Property Deals Hit AED 252 Billion: SOLD Media Spotlights 10 Key Communities - markets.businessinsider.com",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNaFlXamRFTV9Pa2o3clBWc0tWa1h4Z2ZUQ1pWb2ZlRVBSc3BFWFkxcDJ3em5aVlNTZDlqV3RtZDNlUldIOVE5Z2l0TXdLc0FQeTNmbFgzY2xSVFJFVmxkLTZtLWZEc0l5V1JmXzE3ZmZ6dWppcURGOW5IS0htV0Q5ZzFta2xHS3JyWmlXbkdsZUp5SVdMZFY0NGJzWFFJWGwtYzcyOWNYSzhJQnZRY2R4bjVRZ01WOFNkRG01NXRPcVFFUDJWRWhEd3JlWVpyMHdyd2JEMmdYZw?oc=5",
+        "source": "markets.businessinsider.com",
+        "domain": "markets.businessinsider.com",
+        "date": "2026-07-29",
+        "description": "Dubai Property Deals Hit AED 252 Billion: SOLD Media Spotlights 10 Key Communities  markets.businessinsider.com",
+        "hoursAgo": 6,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 3
 }
