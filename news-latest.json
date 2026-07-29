@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-29T10:36:46.923Z",
+  "generatedAt": "2026-07-29T14:06:11.810Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 7,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 167,
-    "afterDedup": 156,
-    "big4Rejected": 6,
-    "englishOnly": 150,
-    "withinRecency": 44,
-    "scored": 44,
+    "totalFetched": 160,
+    "afterDedup": 153,
+    "big4Rejected": 5,
+    "englishOnly": 148,
+    "withinRecency": 39,
+    "scored": 39,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-07-27",
         "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
-        "hoursAgo": 37,
+        "hoursAgo": 40,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
