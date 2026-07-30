@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-30T02:09:30.429Z",
+  "generatedAt": "2026-07-30T06:26:32.614Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 201,
+    "totalFetched": 160,
+    "afterDedup": 151,
     "big4Rejected": 6,
-    "englishOnly": 173,
-    "withinRecency": 67,
-    "scored": 67,
-    "passed": 3
+    "englishOnly": 145,
+    "withinRecency": 37,
+    "scored": 37,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -33,19 +33,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-07-29",
         "description": "Expo City Dubai sees new business registrations rise more than 25% in H1 2026  Gulf Business",
-        "hoursAgo": 13,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
-        "title": "Dubai targets global wealth as family offices surge 61% and investor interest grows - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmh0d0diNzBWWDV2ZlZUUWJEUFcwbDkwYWFpNC0zUWVWOHMySTgtSGlJN3A1cTlMVW9kZ1I3MG5IdHpaRFl3MGdlU2psd0xEMHV6NW0wRE5WRzZBRjY3bDNCWTkwZmNDa2Y5cFlxamFKSUxXaWtMZWp5UlRacU5naTY0Uno4c1RTdWc?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-07-27",
-        "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
-        "hoursAgo": 52,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -57,12 +45,12 @@
         "domain": "markets.businessinsider.com",
         "date": "2026-07-29",
         "description": "Dubai Property Deals Hit AED 252 Billion: SOLD Media Spotlights 10 Key Communities  markets.businessinsider.com",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 2
 }
