@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-30T06:26:32.614Z",
+  "generatedAt": "2026-07-30T10:23:24.979Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 23,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 151,
+    "totalFetched": 183,
+    "afterDedup": 161,
     "big4Rejected": 6,
-    "englishOnly": 145,
-    "withinRecency": 37,
-    "scored": 37,
-    "passed": 2
+    "englishOnly": 153,
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
@@ -33,24 +33,12 @@
         "domain": "gulfbusiness.com",
         "date": "2026-07-29",
         "description": "Expo City Dubai sees new business registrations rise more than 25% in H1 2026  Gulf Business",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
-        "title": "Dubai Property Deals Hit AED 252 Billion: SOLD Media Spotlights 10 Key Communities - markets.businessinsider.com",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNaFlXamRFTV9Pa2o3clBWc0tWa1h4Z2ZUQ1pWb2ZlRVBSc3BFWFkxcDJ3em5aVlNTZDlqV3RtZDNlUldIOVE5Z2l0TXdLc0FQeTNmbFgzY2xSVFJFVmxkLTZtLWZEc0l5V1JmXzE3ZmZ6dWppcURGOW5IS0htV0Q5ZzFta2xHS3JyWmlXbkdsZUp5SVdMZFY0NGJzWFFJWGwtYzcyOWNYSzhJQnZRY2R4bjVRZ01WOFNkRG01NXRPcVFFUDJWRWhEd3JlWVpyMHdyd2JEMmdYZw?oc=5",
-        "source": "markets.businessinsider.com",
-        "domain": "markets.businessinsider.com",
-        "date": "2026-07-29",
-        "description": "Dubai Property Deals Hit AED 252 Billion: SOLD Media Spotlights 10 Key Communities  markets.businessinsider.com",
-        "hoursAgo": 15,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
