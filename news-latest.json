@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-30T10:23:24.979Z",
+  "generatedAt": "2026-07-30T13:55:10.997Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 23,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 183,
-    "afterDedup": 161,
+    "totalFetched": 160,
+    "afterDedup": 148,
     "big4Rejected": 6,
-    "englishOnly": 153,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 1
+    "englishOnly": 142,
+    "withinRecency": 32,
+    "scored": 32,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -33,12 +33,24 @@
         "domain": "gulfbusiness.com",
         "date": "2026-07-29",
         "description": "Expo City Dubai sees new business registrations rise more than 25% in H1 2026  Gulf Business",
-        "hoursAgo": 21,
+        "hoursAgo": 24,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Dubai targets global wealth as family offices surge 61% and investor interest grows - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmh0d0diNzBWWDV2ZlZUUWJEUFcwbDkwYWFpNC0zUWVWOHMySTgtSGlJN3A1cTlMVW9kZ1I3MG5IdHpaRFl3MGdlU2psd0xEMHV6NW0wRE5WRzZBRjY3bDNCWTkwZmNDa2Y5cFlxamFKSUxXaWtMZWp5UlRacU5naTY0Uno4c1RTdWc?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-07-27",
+        "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
+        "hoursAgo": 64,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
