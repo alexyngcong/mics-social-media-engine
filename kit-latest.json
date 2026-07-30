@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T10:23:40.191Z",
+  "generatedAt": "2026-07-30T17:25:29.425Z",
   "weekOf": "30 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "expo-city-dubai-sees-new-business-regist",
+      "slug": "dubai-targets-global-wealth-as-family-of",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Expo City Dubai sees new business registrations rise more than 25% in H1 2026 - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaml6TjJIa215WTJUOUpFMDhPZjQ4M3VYZEtvR1MtN3BXRklkMXI5ZTUyZUhUNHYzZ25KWnROSzhTdEdaM0dxRDN5QUhPVUF1R25qTEI2aVRzN1BRU3dlY2tOUC10RWZ5NE00RHNvWXJJTEdPRHVhd1htcjdid0MtdVBpRkxfMW9WMWt1S1ZHZWpNbmpXc2hEcmtWM18xY3FKaWlNY3lLMF9YS09ubnBBTA?oc=5",
-      "filenameBase": "post-1-expo-city-dubai-sees-new-business-regist",
+      "title": "Dubai targets global wealth as family offices surge 61% and investor interest grows - Arabian Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmh0d0diNzBWWDV2ZlZUUWJEUFcwbDkwYWFpNC0zUWVWOHMySTgtSGlJN3A1cTlMVW9kZ1I3MG5IdHpaRFl3MGdlU2psd0xEMHV6NW0wRE5WRzZBRjY3bDNCWTkwZmNDa2Y5cFlxamFKSUxXaWtMZWp5UlRacU5naTY0Uno4c1RTdWc?oc=5",
+      "filenameBase": "post-1-dubai-targets-global-wealth-as-family-of",
       "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
-      "stat": "25%",
-      "headlineLine1": "Expo City Dubai sees new business",
-      "headlineLine2": "registrations rise more than 25% in …",
-      "hoursAgo": 21
+      "stat": "61%",
+      "headlineLine1": "Dubai targets global wealth as family",
+      "headlineLine2": "offices surge 61% and investor inter…",
+      "hoursAgo": 67
     },
     {
       "n": 2,
