@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T21:08:25.444Z",
-  "weekOf": "30 Jul 2026",
+  "generatedAt": "2026-07-31T02:37:30.615Z",
+  "weekOf": "31 Jul 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "dubai-targets-global-wealth-as-family-of",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Dubai targets global wealth as family offices surge 61% and investor interest grows - Arabian Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmh0d0diNzBWWDV2ZlZUUWJEUFcwbDkwYWFpNC0zUWVWOHMySTgtSGlJN3A1cTlMVW9kZ1I3MG5IdHpaRFl3MGdlU2psd0xEMHV6NW0wRE5WRzZBRjY3bDNCWTkwZmNDa2Y5cFlxamFKSUxXaWtMZWp5UlRacU5naTY0Uno4c1RTdWc?oc=5",
-      "filenameBase": "post-1-dubai-targets-global-wealth-as-family-of",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
-      "stat": "61%",
-      "headlineLine1": "Dubai targets global wealth as family",
-      "headlineLine2": "offices surge 61% and investor inter…",
-      "hoursAgo": 71
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
