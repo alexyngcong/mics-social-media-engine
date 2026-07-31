@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-30T21:08:06.724Z",
+  "generatedAt": "2026-07-31T02:37:16.461Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 260,
-    "afterDedup": 204,
+    "afterDedup": 197,
     "big4Rejected": 6,
-    "englishOnly": 173,
-    "withinRecency": 65,
-    "scored": 65,
-    "passed": 1
+    "englishOnly": 171,
+    "withinRecency": 62,
+    "scored": 62,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Dubai targets global wealth as family offices surge 61% and investor interest grows - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmh0d0diNzBWWDV2ZlZUUWJEUFcwbDkwYWFpNC0zUWVWOHMySTgtSGlJN3A1cTlMVW9kZ1I3MG5IdHpaRFl3MGdlU2psd0xEMHV6NW0wRE5WRzZBRjY3bDNCWTkwZmNDa2Y5cFlxamFKSUxXaWtMZWp5UlRacU5naTY0Uno4c1RTdWc?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-07-27",
-        "description": "Dubai targets global wealth as family offices surge 61% and investor interest grows  Arabian Business",
-        "hoursAgo": 71,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
