@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-07-31T21:02:54.191Z",
+  "generatedAt": "2026-08-01T02:35:52.502Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 196,
+    "totalFetched": 160,
+    "afterDedup": 154,
     "big4Rejected": 6,
-    "englishOnly": 170,
-    "withinRecency": 60,
-    "scored": 60,
+    "englishOnly": 148,
+    "withinRecency": 39,
+    "scored": 39,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-07-31",
         "description": "Want to own your first Dubai home? Here are the new benefits available for buyers  Gulf Business",
-        "hoursAgo": 13,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
