@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T06:27:50.307Z",
+  "generatedAt": "2026-08-01T09:57:34.241Z",
   "weekOf": "1 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "want-to-own-your-first-dubai-home-here-a",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Want to own your first Dubai home? Here are the new benefits available for buyers - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQXzdWQ283R3BMWU8tQmhUR0oxNzIwRFlKcU1zZkpKeU5YQkVyNmxoeV9YWUZpRlFCRkhNOVhmSXpWUk5LZE9qNGw3UkM1RnpESUY1czVvLU1taUc4YVBtR0pnc0VkclRhNkJHSzJfZ0oxV1hpVVpTdjhqcnFwbjgwQ1VJZ2E2S3BIMUhWbTZWdHNJeFBPTkhzYWhNMTZjTjM2bzJfUmRNVG53YWNKUHNDSkRvVlY2OFlCVEFCN3hnVEY3MGs5bG00?oc=5",
-      "filenameBase": "post-1-want-to-own-your-first-dubai-home-here-a",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Want to own your first Dubai home? H…",
-      "headlineLine2": "are the new benefits available for b…",
-      "hoursAgo": 23
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
