@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T09:55:01.947Z",
+  "generatedAt": "2026-08-02T13:16:59.537Z",
   "weekOf": "2 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "uae-seizes-3-58-million-non-compliant-ex",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "title": "UAE seizes 3.58 million non-compliant excise goods - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOF9vUDk3UXlsY19FUWtOOEJ2V3Awam9fY09zeS1seXpTUUt2Y05TQlVUVjlwYlVuX2hRN3JBM095eTlqZ3pxWWx5ZWJzUzV1bGdCQ21JMzd1bjRIMGRMdHpiZWVOM1lmOVdtSXlicW4wYUNoYjMySjFTNl9OTnRvYWZycGdhODlTcU9sQUpwUEdJcnltNF9nSXpBWkpJbjF0VG1qeVJqTdIBugFBVV95cUxPMDVISGFVMTVqWFFiS0VMTmlzZzlyWXRVUl9BTjBGaWgtS21lN05BdlppYlVNQkNtYmZWaHRIczNlSWRmbXBBdG9zamlobjFhTFh6R2lYZFJ1RUtKWGZqOWpNd21LTmNxaUF1SjVIUm9UNjF6cmwxUGY2ZHFIVHBFdVJNMXcyeFp3dUZ2V1hpVmtnRmZOY29nLWNWQmxsQ0tHUzd0RjRyRUlZeW1adThtZEpPVl9KT1pFRUE?oc=5",
+      "filenameBase": "post-1-uae-seizes-3-58-million-non-compliant-ex",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
+      "headlineLine1": "UAE seizes 3.58 million non-compliant excise goods",
       "headlineLine2": "",
-      "hoursAgo": null
+      "hoursAgo": 4
     },
     {
       "n": 2,
