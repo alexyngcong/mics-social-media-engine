@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-02T13:16:45.824Z",
+  "generatedAt": "2026-08-02T16:56:59.233Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 195,
+    "totalFetched": 160,
+    "afterDedup": 148,
     "big4Rejected": 6,
-    "englishOnly": 171,
-    "withinRecency": 48,
-    "scored": 48,
+    "englishOnly": 142,
+    "withinRecency": 23,
+    "scored": 23,
     "passed": 1
   },
   "rooms": {
@@ -28,12 +28,12 @@
     "world": [
       {
         "title": "UAE seizes 3.58 million non-compliant excise goods - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOF9vUDk3UXlsY19FUWtOOEJ2V3Awam9fY09zeS1seXpTUUt2Y05TQlVUVjlwYlVuX2hRN3JBM095eTlqZ3pxWWx5ZWJzUzV1bGdCQ21JMzd1bjRIMGRMdHpiZWVOM1lmOVdtSXlicW4wYUNoYjMySjFTNl9OTnRvYWZycGdhODlTcU9sQUpwUEdJcnltNF9nSXpBWkpJbjF0VG1qeVJqTdIBugFBVV95cUxPMDVISGFVMTVqWFFiS0VMTmlzZzlyWXRVUl9BTjBGaWgtS21lN05BdlppYlVNQkNtYmZWaHRIczNlSWRmbXBBdG9zamlobjFhTFh6R2lYZFJ1RUtKWGZqOWpNd21LTmNxaUF1SjVIUm9UNjF6cmwxUGY2ZHFIVHBFdVJNMXcyeFp3dUZ2V1hpVmtnRmZOY29nLWNWQmxsQ0tHUzd0RjRyRUlZeW1adThtZEpPVl9KT1pFRUE?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMDVISGFVMTVqWFFiS0VMTmlzZzlyWXRVUl9BTjBGaWgtS21lN05BdlppYlVNQkNtYmZWaHRIczNlSWRmbXBBdG9zamlobjFhTFh6R2lYZFJ1RUtKWGZqOWpNd21LTmNxaUF1SjVIUm9UNjF6cmwxUGY2ZHFIVHBFdVJNMXcyeFp3dUZ2V1hpVmtnRmZOY29nLWNWQmxsQ0tHUzd0RjRyRUlZeW1adThtZEpPVl9KT1pFRUHSAboBQVVfeXFMTzA1SEhhVTE1alhRYktFTE5pc2c5cll0VVJfQU4wRmloLUttZTdOQXZaaWJVTUJDbWJmVmh0SHMzZUlkZm1wQXRvc2ppaG4xYUxYekdpWGRSdUVLSlhmajlqTXdtS05jcWlBdUo1SFJvVDYxenJsMVBmNmRxSFRwRXVSTTF3Mnhad3VGdldYaVZrZ0ZmTmNvZy1jVkJsbENLR1M3dEY0ckVJWXltWnU4bWRKT1ZfSk9aRUVB?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-08-02",
         "description": "UAE seizes 3.58 million non-compliant excise goods  Gulf News",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
