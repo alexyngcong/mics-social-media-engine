@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-03T02:36:38.004Z",
+  "generatedAt": "2026-08-03T06:58:14.454Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 150,
+    "afterDedup": 152,
     "big4Rejected": 6,
-    "englishOnly": 144,
-    "withinRecency": 24,
-    "scored": 24,
-    "passed": 0
+    "englishOnly": 146,
+    "withinRecency": 26,
+    "scored": 26,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE seizes 3.58 million non-compliant excise goods - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMDVISGFVMTVqWFFiS0VMTmlzZzlyWXRVUl9BTjBGaWgtS21lN05BdlppYlVNQkNtYmZWaHRIczNlSWRmbXBBdG9zamlobjFhTFh6R2lYZFJ1RUtKWGZqOWpNd21LTmNxaUF1SjVIUm9UNjF6cmwxUGY2ZHFIVHBFdVJNMXcyeFp3dUZ2V1hpVmtnRmZOY29nLWNWQmxsQ0tHUzd0RjRyRUlZeW1adThtZEpPVl9KT1pFRUHSAboBQVVfeXFMTzA1SEhhVTE1alhRYktFTE5pc2c5cll0VVJfQU4wRmloLUttZTdOQXZaaWJVTUJDbWJmVmh0SHMzZUlkZm1wQXRvc2ppaG4xYUxYekdpWGRSdUVLSlhmajlqTXdtS05jcWlBdUo1SFJvVDYxenJsMVBmNmRxSFRwRXVSTTF3Mnhad3VGdldYaVZrZ0ZmTmNvZy1jVkJsbENLR1M3dEY0ckVJWXltWnU4bWRKT1ZfSk9aRUVB?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-08-02",
+        "description": "UAE seizes 3.58 million non-compliant excise goods  Gulf News",
+        "hoursAgo": 21,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
