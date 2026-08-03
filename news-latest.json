@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-03T14:34:32.597Z",
+  "generatedAt": "2026-08-03T17:49:58.976Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 148,
+    "afterDedup": 150,
     "big4Rejected": 5,
-    "englishOnly": 143,
-    "withinRecency": 34,
-    "scored": 34,
+    "englishOnly": 145,
+    "withinRecency": 31,
+    "scored": 31,
     "passed": 1
   },
   "rooms": {
@@ -27,12 +27,12 @@
     "risk": [
       {
         "title": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA - Khaleej Times",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWnJlYmRmRm4xdy0xZ0toMUNUbnhTd3A5UW1pVzhFeXhIM2txamo4NU5qYVYwZGlQcEYwLTJhelBkOEdHajRYSE5PRnZtdmxGWmc0R2JlUVk0eVc0aW53NzdlM08zeWFzTUNocU9UcnY3UTNhTHVzZHhjRXFPZ0ZMMHMyRExEcjFiVVhKVzMxYk9FSHUxdERQRnUyZlJLWXA0ZVHSAaoBQVVfeXFMT3BwVV9lZzBQRTFjWUNVNEFzaUlhOUJuTHByVVRhdjRTbjdpajdOTjRtc2hfOEotMWlSb0FvX1F3azI2czNjMHREWnRJbFptM0F5ZHJkWUFsMW5fMDBsNU1YODgzT2VkMWZacU51MzkxaHJ0S216TF9UR241SnM0OVo2eHlDM0F6V2VfbUt4elZfZVBub2pLNW5fazhqV1hNUnBzRmkxS0NUQVE?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcHBVX2VnMFBFMWNZQ1U0QXNpSWE5Qm5McHJVVGF2NFNuN2lqN05ONG1zaF84Si0xaVJvQW9fUXdrMjZzM2MwdERadElsWm0zQXlkcmRZQWwxbl8wMGw1TVg4ODNPZWQxZlpxTnUzOTFocnRLbXpMX1RHbjVKczQ5WjZ4eUMzQXpXZV9tS3h6Vl9lUG5vaks1bl9rOGpXWE1ScHNGaTFLQ1RBUdIBqgFBVV95cUxPcHBVX2VnMFBFMWNZQ1U0QXNpSWE5Qm5McHJVVGF2NFNuN2lqN05ONG1zaF84Si0xaVJvQW9fUXdrMjZzM2MwdERadElsWm0zQXlkcmRZQWwxbl8wMGw1TVg4ODNPZWQxZlpxTnUzOTFocnRLbXpMX1RHbjVKczQ5WjZ4eUMzQXpXZV9tS3h6Vl9lUG5vaks1bl9rOGpXWE1ScHNGaTFLQ1RBUQ?oc=5",
         "source": "Khaleej Times",
         "domain": "khaleejtimes.com",
         "date": "2026-08-03",
         "description": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA  Khaleej Times",
-        "hoursAgo": 2,
+        "hoursAgo": 5,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
