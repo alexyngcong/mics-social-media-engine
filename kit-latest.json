@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T11:21:03.418Z",
+  "generatedAt": "2026-08-03T14:34:47.780Z",
   "weekOf": "3 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "small-businesses-in-uae-urged-to-file-co",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA - Khaleej Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWnJlYmRmRm4xdy0xZ0toMUNUbnhTd3A5UW1pVzhFeXhIM2txamo4NU5qYVYwZGlQcEYwLTJhelBkOEdHajRYSE5PRnZtdmxGWmc0R2JlUVk0eVc0aW53NzdlM08zeWFzTUNocU9UcnY3UTNhTHVzZHhjRXFPZ0ZMMHMyRExEcjFiVVhKVzMxYk9FSHUxdERQRnUyZlJLWXA0ZVHSAaoBQVVfeXFMT3BwVV9lZzBQRTFjWUNVNEFzaUlhOUJuTHByVVRhdjRTbjdpajdOTjRtc2hfOEotMWlSb0FvX1F3azI2czNjMHREWnRJbFptM0F5ZHJkWUFsMW5fMDBsNU1YODgzT2VkMWZacU51MzkxaHJ0S216TF9UR241SnM0OVo2eHlDM0F6V2VfbUt4elZfZVBub2pLNW5fazhqV1hNUnBzRmkxS0NUQVE?oc=5",
+      "filenameBase": "post-1-small-businesses-in-uae-urged-to-file-co",
+      "photoUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80&fit=crop&crop=entropy&auto=format",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "Small businesses in UAE urged to file",
+      "headlineLine2": "corporate tax returns before deadlin…",
+      "hoursAgo": 2
     },
     {
       "n": 2,
