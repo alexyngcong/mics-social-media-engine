@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-03T11:20:47.231Z",
+  "generatedAt": "2026-08-03T14:34:32.597Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 10,
-    "afterDedup": 5,
-    "big4Rejected": 0,
-    "englishOnly": 5,
-    "withinRecency": 5,
-    "scored": 5,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 148,
+    "big4Rejected": 5,
+    "englishOnly": 143,
+    "withinRecency": 34,
+    "scored": 34,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA - Khaleej Times",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWnJlYmRmRm4xdy0xZ0toMUNUbnhTd3A5UW1pVzhFeXhIM2txamo4NU5qYVYwZGlQcEYwLTJhelBkOEdHajRYSE5PRnZtdmxGWmc0R2JlUVk0eVc0aW53NzdlM08zeWFzTUNocU9UcnY3UTNhTHVzZHhjRXFPZ0ZMMHMyRExEcjFiVVhKVzMxYk9FSHUxdERQRnUyZlJLWXA0ZVHSAaoBQVVfeXFMT3BwVV9lZzBQRTFjWUNVNEFzaUlhOUJuTHByVVRhdjRTbjdpajdOTjRtc2hfOEotMWlSb0FvX1F3azI2czNjMHREWnRJbFptM0F5ZHJkWUFsMW5fMDBsNU1YODgzT2VkMWZacU51MzkxaHJ0S216TF9UR241SnM0OVo2eHlDM0F6V2VfbUt4elZfZVBub2pLNW5fazhqV1hNUnBzRmkxS0NUQVE?oc=5",
+        "source": "Khaleej Times",
+        "domain": "khaleejtimes.com",
+        "date": "2026-08-03",
+        "description": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA  Khaleej Times",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
