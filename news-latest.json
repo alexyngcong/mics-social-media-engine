@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-04T02:20:16.326Z",
+  "generatedAt": "2026-08-04T06:26:33.673Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,17 +14,29 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
+    "afterDedup": 149,
     "big4Rejected": 3,
-    "englishOnly": 148,
-    "withinRecency": 33,
-    "scored": 33,
-    "passed": 1
+    "englishOnly": 146,
+    "withinRecency": 31,
+    "scored": 31,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
+      {
+        "title": "FTA clarifies small business relief rules ahead of tax return deadline in UAE - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXhxdHFmLVQxVkNJanM0eC1LQWE5OUkxSmhZTTc0Yk1BSXNtTUJFejUxY0V5bmdrLXQ2WlJBTmc2ZXNIczdmQXZUQ042eVhsLVoxeU1LY2M1UllTODU1bnVoNzNiTzVyUkNiaUtJbWhqLTRMdzBSazc5Nm5FaWt5eFVwVG5yendNOF9aQWpVOV9UMEVkbW1GcmVndVhDanozUktMUnBKN3BNUmFCQ0FQYnp4T05pUQ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-08-04",
+        "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
       {
         "title": "UAE tax warning as thousands of businesses approach Corporate Tax deadline - Arabian Business",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGbVZOWkkxM2FaVGlfeENJVWJXYzN6SDdmNk9nOFBYWWJDV3N6eGxVcnBRRXc5cDY5Qy1xSnNBQzVHMXR3NGpacEVucjlTMFRSaHc0dG5aZXc1aUVwSXlrTXhFTGd3RWNMbzVpWmdEVUZuUC1N?oc=5",
@@ -32,7 +44,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-08-03",
         "description": "UAE tax warning as thousands of businesses approach Corporate Tax deadline  Arabian Business",
-        "hoursAgo": 8,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -40,5 +52,5 @@
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
