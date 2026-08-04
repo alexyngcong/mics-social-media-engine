@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-04T17:46:47.853Z",
+  "generatedAt": "2026-08-04T21:11:33.021Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 5,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 165,
-    "afterDedup": 151,
-    "big4Rejected": 3,
-    "englishOnly": 147,
+    "totalFetched": 160,
+    "afterDedup": 146,
+    "big4Rejected": 4,
+    "englishOnly": 142,
     "withinRecency": 43,
     "scored": 43,
     "passed": 3
@@ -26,39 +26,39 @@
     "capital": [],
     "risk": [
       {
+        "title": "UAE economy grows 3% in first quarter despite impact of regional war - thenationalnews.com",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSzlZN2pEaldoeEVOV0FBS0owbDAwbGtVRnh0clBaaFUyVl9Qb0luN2NpeVEtZk0yeFJNM1g0czZ6X3FUMWFFZThxTUIzcXBSakpsU3NncE1XUGtDN0lWMzRrM0ZiRm8zc2lFMVhBclpwZHhJLVVFenhIZjZOSEpTUjUyOWtWLUlsZDFtT2RqSF83Um03YlIxVWFSMExOLWY3OHpSNGNCaHg0SVhabFkyYVJ2b3NXSUM2aVlTOVNudG5nQlJyd2sxc0lsRWxNUXc?oc=5",
+        "source": "thenationalnews.com",
+        "domain": "thenationalnews.com",
+        "date": "2026-08-04",
+        "description": "UAE economy grows 3% in first quarter despite impact of regional war  thenationalnews.com",
+        "hoursAgo": 8,
+        "score": 7,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
         "title": "FTA clarifies small business relief rules ahead of tax return deadline in UAE - Gulf Business",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXhxdHFmLVQxVkNJanM0eC1LQWE5OUkxSmhZTTc0Yk1BSXNtTUJFejUxY0V5bmdrLXQ2WlJBTmc2ZXNIczdmQXZUQ042eVhsLVoxeU1LY2M1UllTODU1bnVoNzNiTzVyUkNiaUtJbWhqLTRMdzBSazc5Nm5FaWt5eFVwVG5yendNOF9aQWpVOV9UMEVkbW1GcmVndVhDanozUktMUnBKN3BNUmFCQ0FQYnp4T05pUQ?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 12,
+        "hoursAgo": 15,
         "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE tax warning as thousands of businesses approach Corporate Tax deadline - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGbVZOWkkxM2FaVGlfeENJVWJXYzN6SDdmNk9nOFBYWWJDV3N6eGxVcnBRRXc5cDY5Qy1xSnNBQzVHMXR3NGpacEVucjlTMFRSaHc0dG5aZXc1aUVwSXlrTXhFTGd3RWNMbzVpWmdEVUZuUC1N?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-08-03",
-        "description": "UAE tax warning as thousands of businesses approach Corporate Tax deadline  Arabian Business",
-        "hoursAgo": 23,
-        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
     "world": [
       {
-        "title": "UAE Economy Hits Dh485 Billion as Non-Oil Sectors Take 79.4% Share - Gulf News",
+        "title": "UAE economy reaches AED485bn as non-oil share climbs to 79.4% - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeEI0WXgwTjY4YzRRNTVVbmNLNmRTazdZSVYybkxJdlFleWtQZlBOUXpYYnpGZy11Ui12elhRRjJYdHdqTHpyYXppcTAxXzFfcWgxS0s1NFMxc0s5VllNbnN1MjNIa3J5V3dLZ1RwM3JCcGoxNzhIME1ETFFiRWxMeGV0SFl3WjFGZ1cxQmVhaVZvdGJkZVA3V19DdDdoX3A4N28yXzFkS3RoWGs?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-08-04",
-        "description": "UAE Economy Hits Dh485 Billion as Non-Oil Sectors Take 79.4% Share  Gulf News",
-        "hoursAgo": 10,
+        "description": "UAE economy reaches AED485bn as non-oil share climbs to 79.4%  Gulf News",
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
