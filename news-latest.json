@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-04T10:37:04.718Z",
+  "generatedAt": "2026-08-04T14:06:10.484Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
+    "afterDedup": 147,
     "big4Rejected": 3,
-    "englishOnly": 146,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 6
+    "englishOnly": 144,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 5
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-08-04",
         "description": "UAE economy grows 3% in first quarter despite impact of war  thenationalnews.com",
-        "hoursAgo": 1,
+        "hoursAgo": 4,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 5,
+        "hoursAgo": 8,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -56,19 +56,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-08-03",
         "description": "UAE tax warning as thousands of businesses approach Corporate Tax deadline  Arabian Business",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA - Khaleej Times",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcHBVX2VnMFBFMWNZQ1U0QXNpSWE5Qm5McHJVVGF2NFNuN2lqN05ONG1zaF84Si0xaVJvQW9fUXdrMjZzM2MwdERadElsWm0zQXlkcmRZQWwxbl8wMGw1TVg4ODNPZWQxZlpxTnUzOTFocnRLbXpMX1RHbjVKczQ5WjZ4eUMzQXpXZV9tS3h6Vl9lUG5vaks1bl9rOGpXWE1ScHNGaTFLQ1RBUdIBqgFBVV95cUxPcHBVX2VnMFBFMWNZQ1U0QXNpSWE5Qm5McHJVVGF2NFNuN2lqN05ONG1zaF84Si0xaVJvQW9fUXdrMjZzM2MwdERadElsWm0zQXlkcmRZQWwxbl8wMGw1TVg4ODNPZWQxZlpxTnUzOTFocnRLbXpMX1RHbjVKczQ5WjZ4eUMzQXpXZV9tS3h6Vl9lUG5vaks1bl9rOGpXWE1ScHNGaTFLQ1RBUQ?oc=5",
-        "source": "Khaleej Times",
-        "domain": "khaleejtimes.com",
-        "date": "2026-08-03",
-        "description": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA  Khaleej Times",
-        "hoursAgo": 22,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -82,24 +70,24 @@
         "domain": "gulftoday.ae",
         "date": "2026-08-04",
         "description": "UAE economy grows by 3% in Q1 2026 driven by strong non-oil sector performance  Gulf Today",
-        "hoursAgo": 0,
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
       },
       {
         "title": "UAE Economy Hits Dh485 Billion as Non-Oil Sectors Take 79.4% Share - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQenhLMmpob21KS3RKT2xQaFh0MHp0MFFyQkY2ZWJiNW5PT1ExSkRyOU9tQlJZaTRTeFF0cFlxZDVqVEt0UmxlUTF5anBUb3dvWS02bEVudTBkQnZ4bFUyU3NrWEFwcFJZRFNRclNXTzdKV0t3Xy0xaUtXWmNRRzFnb0pMYjgxVnljSFJqd21MTlJXbDZzYjVoelZsLWJwWUVKMm9TaDBnRHNoaXpDVGlmdkFMVEpRUXQwZDdhOWZ3?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeEI0WXgwTjY4YzRRNTVVbmNLNmRTazdZSVYybkxJdlFleWtQZlBOUXpYYnpGZy11Ui12elhRRjJYdHdqTHpyYXppcTAxXzFfcWgxS0s1NFMxc0s5VllNbnN1MjNIa3J5V3dLZ1RwM3JCcGoxNzhIME1ETFFiRWxMeGV0SFl3WjFGZ1cxQmVhaVZvdGJkZVA3V19DdDdoX3A4N28yXzFkS3RoWGs?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-08-04",
         "description": "UAE Economy Hits Dh485 Billion as Non-Oil Sectors Take 79.4% Share  Gulf News",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 5
 }
