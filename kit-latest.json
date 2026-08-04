@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T17:50:19.646Z",
-  "weekOf": "3 Aug 2026",
+  "generatedAt": "2026-08-04T02:20:38.629Z",
+  "weekOf": "4 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "small-businesses-in-uae-urged-to-file-co",
+      "slug": "uae-tax-warning-as-thousands-of-business",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "RISK · COMPLIANCE",
       "theme": "compliance_risk",
       "tier": "WEEK AHEAD",
-      "title": "Small businesses in UAE urged to file corporate tax returns before deadline, says FTA - Khaleej Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcHBVX2VnMFBFMWNZQ1U0QXNpSWE5Qm5McHJVVGF2NFNuN2lqN05ONG1zaF84Si0xaVJvQW9fUXdrMjZzM2MwdERadElsWm0zQXlkcmRZQWwxbl8wMGw1TVg4ODNPZWQxZlpxTnUzOTFocnRLbXpMX1RHbjVKczQ5WjZ4eUMzQXpXZV9tS3h6Vl9lUG5vaks1bl9rOGpXWE1ScHNGaTFLQ1RBUdIBqgFBVV95cUxPcHBVX2VnMFBFMWNZQ1U0QXNpSWE5Qm5McHJVVGF2NFNuN2lqN05ONG1zaF84Si0xaVJvQW9fUXdrMjZzM2MwdERadElsWm0zQXlkcmRZQWwxbl8wMGw1TVg4ODNPZWQxZlpxTnUzOTFocnRLbXpMX1RHbjVKczQ5WjZ4eUMzQXpXZV9tS3h6Vl9lUG5vaks1bl9rOGpXWE1ScHNGaTFLQ1RBUQ?oc=5",
-      "filenameBase": "post-1-small-businesses-in-uae-urged-to-file-co",
-      "photoUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "title": "UAE tax warning as thousands of businesses approach Corporate Tax deadline - Arabian Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGbVZOWkkxM2FaVGlfeENJVWJXYzN6SDdmNk9nOFBYWWJDV3N6eGxVcnBRRXc5cDY5Qy1xSnNBQzVHMXR3NGpacEVucjlTMFRSaHc0dG5aZXc1aUVwSXlrTXhFTGd3RWNMbzVpWmdEVUZuUC1N?oc=5",
+      "filenameBase": "post-1-uae-tax-warning-as-thousands-of-business",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
       "stat": "",
-      "headlineLine1": "Small businesses in UAE urged to file",
-      "headlineLine2": "corporate tax returns before deadlin…",
-      "hoursAgo": 5
+      "headlineLine1": "UAE tax warning as thousands of",
+      "headlineLine2": "businesses approach Corporate Tax de…",
+      "hoursAgo": 8
     },
     {
       "n": 2,
