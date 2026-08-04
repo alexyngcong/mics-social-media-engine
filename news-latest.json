@@ -1,42 +1,30 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-04T14:06:10.484Z",
+  "generatedAt": "2026-08-04T17:46:47.853Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 5,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 147,
+    "totalFetched": 165,
+    "afterDedup": 151,
     "big4Rejected": 3,
-    "englishOnly": 144,
-    "withinRecency": 41,
-    "scored": 41,
-    "passed": 5
+    "englishOnly": 147,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
-      {
-        "title": "UAE economy grows 3% in first quarter despite impact of war - thenationalnews.com",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSzlZN2pEaldoeEVOV0FBS0owbDAwbGtVRnh0clBaaFUyVl9Qb0luN2NpeVEtZk0yeFJNM1g0czZ6X3FUMWFFZThxTUIzcXBSakpsU3NncE1XUGtDN0lWMzRrM0ZiRm8zc2lFMVhBclpwZHhJLVVFenhIZjZOSEpTUjUyOWtWLUlsZDFtT2RqSF83Um03YlIxVWFSMExOLWY3OHpSNGNCaHg0SVhabFkyYVJ2b3NXSUM2aVlTOVNudG5nQlJyd2sxc0lsRWxNUXc?oc=5",
-        "source": "thenationalnews.com",
-        "domain": "thenationalnews.com",
-        "date": "2026-08-04",
-        "description": "UAE economy grows 3% in first quarter despite impact of war  thenationalnews.com",
-        "hoursAgo": 4,
-        "score": 7,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
       {
         "title": "FTA clarifies small business relief rules ahead of tax return deadline in UAE - Gulf Business",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXhxdHFmLVQxVkNJanM0eC1LQWE5OUkxSmhZTTc0Yk1BSXNtTUJFejUxY0V5bmdrLXQ2WlJBTmc2ZXNIczdmQXZUQ042eVhsLVoxeU1LY2M1UllTODU1bnVoNzNiTzVyUkNiaUtJbWhqLTRMdzBSazc5Nm5FaWt5eFVwVG5yendNOF9aQWpVOV9UMEVkbW1GcmVndVhDanozUktMUnBKN3BNUmFCQ0FQYnp4T05pUQ?oc=5",
@@ -44,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 8,
+        "hoursAgo": 12,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -56,7 +44,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-08-03",
         "description": "UAE tax warning as thousands of businesses approach Corporate Tax deadline  Arabian Business",
-        "hoursAgo": 20,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -64,30 +52,18 @@
     ],
     "world": [
       {
-        "title": "UAE economy grows by 3% in Q1 2026 driven by strong non-oil sector performance - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRVJLOUwwdVN3eWw1b0NpU2NWZXhrbHgxeERUT1laaWRYc2FPOUxlVnlyMlFqQmJnc0hweVNFYlNVcWZDX2t3WkdNVVNKMmY1WUwxclN6SXFxQWxXb1lUYlZKTjExM0hKSXFGdV90ZG12MjZPLUoweU5kRVdjd0xicExFTi1uXzJDdkxwaUQtcHdBcmVoWVdQVzNublVZeU1pTEdUNnNDeUQ4dkNob01Hai1hWkJyYUJtNXdfRlBOYw?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-08-04",
-        "description": "UAE economy grows by 3% in Q1 2026 driven by strong non-oil sector performance  Gulf Today",
-        "hoursAgo": 4,
-        "score": 6,
-        "topic": "Oil & Energy Markets",
-        "origin": "google-news"
-      },
-      {
         "title": "UAE Economy Hits Dh485 Billion as Non-Oil Sectors Take 79.4% Share - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeEI0WXgwTjY4YzRRNTVVbmNLNmRTazdZSVYybkxJdlFleWtQZlBOUXpYYnpGZy11Ui12elhRRjJYdHdqTHpyYXppcTAxXzFfcWgxS0s1NFMxc0s5VllNbnN1MjNIa3J5V3dLZ1RwM3JCcGoxNzhIME1ETFFiRWxMeGV0SFl3WjFGZ1cxQmVhaVZvdGJkZVA3V19DdDdoX3A4N28yXzFkS3RoWGs?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-08-04",
         "description": "UAE Economy Hits Dh485 Billion as Non-Oil Sectors Take 79.4% Share  Gulf News",
-        "hoursAgo": 6,
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 3
 }
