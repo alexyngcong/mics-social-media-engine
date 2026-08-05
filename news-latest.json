@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-04T21:11:33.021Z",
+  "generatedAt": "2026-08-05T02:15:48.599Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 146,
+    "afterDedup": 148,
     "big4Rejected": 4,
-    "englishOnly": 142,
-    "withinRecency": 43,
-    "scored": 43,
+    "englishOnly": 144,
+    "withinRecency": 49,
+    "scored": 49,
     "passed": 3
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-08-04",
         "description": "UAE economy grows 3% in first quarter despite impact of regional war  thenationalnews.com",
-        "hoursAgo": 8,
+        "hoursAgo": 13,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 15,
+        "hoursAgo": 20,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "gulfnews.com",
         "date": "2026-08-04",
         "description": "UAE economy reaches AED485bn as non-oil share climbs to 79.4%  Gulf News",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
