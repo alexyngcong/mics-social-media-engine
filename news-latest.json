@@ -1,31 +1,69 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-05T14:04:11.825Z",
+  "generatedAt": "2026-08-05T17:27:34.043Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 10,
-    "afterDedup": 6,
-    "big4Rejected": 0,
-    "englishOnly": 6,
-    "withinRecency": 6,
-    "scored": 6,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 149,
+    "big4Rejected": 4,
+    "englishOnly": 145,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
-    "world": []
+    "risk": [
+      {
+        "title": "FTA clarifies small business relief rules ahead of tax return deadline in UAE - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXhxdHFmLVQxVkNJanM0eC1LQWE5OUkxSmhZTTc0Yk1BSXNtTUJFejUxY0V5bmdrLXQ2WlJBTmc2ZXNIczdmQXZUQ042eVhsLVoxeU1LY2M1UllTODU1bnVoNzNiTzVyUkNiaUtJbWhqLTRMdzBSazc5Nm5FaWt5eFVwVG5yendNOF9aQWpVOV9UMEVkbW1GcmVndVhDanozUktMUnBKN3BNUmFCQ0FQYnp4T05pUQ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-08-04",
+        "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
+        "hoursAgo": 36,
+        "score": 6.5,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want? - Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMFk4RFZhTktDekxOd19jdDhMcW9nRzl4Q05xajU3eGJIZHhnd0RQSzRqMEhQdEgzdzZ4MXpFN2hnVmdxRG5aZjloNHVQZDVwNG4wTDM4d0V4OEhnUmJjYVhsSkphT05zTDRKc0h4QTgyb3VKbjZyZzl4OTB1VzlSdWxJVTBoMGtTWW9MOXRZdU14RXpHQjE4MzhtVdIBoAFBVV95cUxPMk5LUXVYb21QRF9EYV9jUzlEYWZONHhBTHZMcll5RFFzdE11akVabFBKVVR4enRCTzdZTHpmQ21BS0poQnY3cnJZOHlCSUl6T01nUGdLVW5vUnZxYWZpUmlZSW8tWVByQW9Cc2tpSVFRdUN3djdWZzZEak1Hb3dwdktqUlFCX2ZlV19ESkkzTlVPR0tSbnBBUnhGdDFWZDJX?oc=5",
+        "source": "Al Jazeera",
+        "domain": "aljazeera.com",
+        "date": "2026-08-05",
+        "description": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?  Al Jazeera",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
+      {
+        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONnM4cFVTMFNjc0dPLVlpbTBSNDFGY2tJZy05V19yV0RBMnl2M0NjSTBNejRlV1k5QmljU0c4LUNGVi1WRjFxUmk5amtJeEc4eFVhZEhKMHZJcC1XQVhNdnFTd0JtbVF6eGFiVURnNnRuY3p0WUVxdEMza0hWTTk1Y3lrTDdrRXJIX0lucWVDTTZSWWt3TjUzV3JZUURqWktidnR0aXJGd0xUSjMyNXltTEZEZ3gzMlpZcXpTeVlnUDhTcUE5Wi1z?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-08-05",
+        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
+        "hoursAgo": 7,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 3
 }
