@@ -1,57 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-05T10:32:56.854Z",
+  "generatedAt": "2026-08-05T14:04:11.825Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 0,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 147,
-    "big4Rejected": 4,
-    "englishOnly": 143,
-    "withinRecency": 47,
-    "scored": 47,
-    "passed": 2
+    "totalFetched": 10,
+    "afterDedup": 6,
+    "big4Rejected": 0,
+    "englishOnly": 6,
+    "withinRecency": 6,
+    "scored": 6,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "FTA clarifies small business relief rules ahead of tax return deadline in UAE - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXhxdHFmLVQxVkNJanM0eC1LQWE5OUkxSmhZTTc0Yk1BSXNtTUJFejUxY0V5bmdrLXQ2WlJBTmc2ZXNIczdmQXZUQ042eVhsLVoxeU1LY2M1UllTODU1bnVoNzNiTzVyUkNiaUtJbWhqLTRMdzBSazc5Nm5FaWt5eFVwVG5yendNOF9aQWpVOV9UMEVkbW1GcmVndVhDanozUktMUnBKN3BNUmFCQ0FQYnp4T05pUQ?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-08-04",
-        "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 29,
-        "score": 6.5,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
-    "world": [
-      {
-        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTkhYekh1VkVhaXNHdmZOU3JYeWJEVy04VmN6VHdYaVd0a3RvRzVhRUQ5bVJiYlJWRHU3RDZlUXZlaWdnbTFkM3d2aE5FbEJZeGJCVEI4OVhKeHNXU2ZjakJNaFMyUWFsTFMwT3NNRHhOcUxvQ3VTaFVOSE5sX3pESzZsSmp2bERUVjh3aHhCLU5kNWFtbmxZR2FrOUgyc3VMZFdxQm1mUjlTOW1jSnZYcm44aHJRMjJCMTBLT0VfODM5ZUpwZnc?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-08-05",
-        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 0,
-        "score": 7,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "risk": [],
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 0
 }
