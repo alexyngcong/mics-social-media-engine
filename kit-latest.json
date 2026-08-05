@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T02:20:38.629Z",
-  "weekOf": "4 Aug 2026",
+  "generatedAt": "2026-08-05T14:04:27.692Z",
+  "weekOf": "5 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-tax-warning-as-thousands-of-business",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
-      "theme": "compliance_risk",
-      "tier": "WEEK AHEAD",
-      "title": "UAE tax warning as thousands of businesses approach Corporate Tax deadline - Arabian Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGbVZOWkkxM2FaVGlfeENJVWJXYzN6SDdmNk9nOFBYWWJDV3N6eGxVcnBRRXc5cDY5Qy1xSnNBQzVHMXR3NGpacEVucjlTMFRSaHc0dG5aZXc1aUVwSXlrTXhFTGd3RWNMbzVpWmdEVUZuUC1N?oc=5",
-      "filenameBase": "post-1-uae-tax-warning-as-thousands-of-business",
-      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "UAE tax warning as thousands of",
-      "headlineLine2": "businesses approach Corporate Tax de…",
-      "hoursAgo": 8
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
