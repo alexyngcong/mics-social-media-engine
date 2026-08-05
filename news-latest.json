@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-05T02:15:48.599Z",
+  "generatedAt": "2026-08-05T06:26:24.754Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 5,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 148,
+    "totalFetched": 165,
+    "afterDedup": 151,
     "big4Rejected": 4,
-    "englishOnly": 144,
-    "withinRecency": 49,
-    "scored": 49,
+    "englishOnly": 146,
+    "withinRecency": 51,
+    "scored": 51,
     "passed": 3
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-08-04",
         "description": "UAE economy grows 3% in first quarter despite impact of regional war  thenationalnews.com",
-        "hoursAgo": 13,
+        "hoursAgo": 17,
         "score": 7,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -44,8 +44,8 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 20,
-        "score": 7,
+        "hoursAgo": 25,
+        "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -58,7 +58,7 @@
         "domain": "gulfnews.com",
         "date": "2026-08-04",
         "description": "UAE economy reaches AED485bn as non-oil share climbs to 79.4%  Gulf News",
-        "hoursAgo": 18,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
