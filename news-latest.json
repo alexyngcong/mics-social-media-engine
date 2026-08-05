@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-05T17:27:34.043Z",
+  "generatedAt": "2026-08-05T21:06:01.378Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
-    "big4Rejected": 4,
-    "englishOnly": 145,
-    "withinRecency": 43,
-    "scored": 43,
-    "passed": 3
+    "afterDedup": 153,
+    "big4Rejected": 3,
+    "englishOnly": 150,
+    "withinRecency": 47,
+    "scored": 47,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 36,
+        "hoursAgo": 39,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -44,7 +44,19 @@
         "domain": "aljazeera.com",
         "date": "2026-08-05",
         "description": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?  Al Jazeera",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "Iran, Oman say Strait of Hormuz talks in final stages, as Trump again teases a deal being close - CNBC",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeHFIUDlHWHh2b2NwZF9ibHQ4RE5jQ0JOeXFsdEE5MUlqT0VDQ3R1VENGSmRobExCLTlIUDBxSEtjNU0ya01tSnFob0FTWmU5aXlXZzNaeEh0Z3Awc2tkR01nbkpGaUctQlNPUElRb05uV3RLNFZQVHJINThaTDdFd3Z4Q0pLbnVfeXA1enZB0gGTAUFVX3lxTE1FTVdjeHdZdTRmcUIwdHJ1OW52U2x5Q1dlTUhDYnZFc1BfSzA5NTFCRF9ybE81Y0hmN3ZWS1ozUDFHdnEzS0F5T21LRDdmQ0ZXa0F0QlZRRHVtSzVkUDFDQTZieEpocWt6bjRzc2Y2ZUJHNVZFU1VvOXlvdjlZTTVJR08tMmxDQ3dwZFZ1NDNseW5ocw?oc=5",
+        "source": "CNBC",
+        "domain": "cnbc.com",
+        "date": "2026-08-05",
+        "description": "Iran, Oman say Strait of Hormuz talks in final stages, as Trump again teases a deal being close  CNBC",
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -58,12 +70,12 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-05",
         "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 4
 }
