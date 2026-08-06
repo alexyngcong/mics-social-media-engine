@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-05T21:06:01.378Z",
+  "generatedAt": "2026-08-06T02:23:20.157Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 14,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
+    "totalFetched": 174,
+    "afterDedup": 158,
     "big4Rejected": 3,
-    "englishOnly": 150,
-    "withinRecency": 47,
-    "scored": 47,
-    "passed": 4
+    "englishOnly": 154,
+    "withinRecency": 56,
+    "scored": 56,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,33 +32,9 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 39,
+        "hoursAgo": 45,
         "score": 6.5,
         "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want? - Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMFk4RFZhTktDekxOd19jdDhMcW9nRzl4Q05xajU3eGJIZHhnd0RQSzRqMEhQdEgzdzZ4MXpFN2hnVmdxRG5aZjloNHVQZDVwNG4wTDM4d0V4OEhnUmJjYVhsSkphT05zTDRKc0h4QTgyb3VKbjZyZzl4OTB1VzlSdWxJVTBoMGtTWW9MOXRZdU14RXpHQjE4MzhtVdIBoAFBVV95cUxPMk5LUXVYb21QRF9EYV9jUzlEYWZONHhBTHZMcll5RFFzdE11akVabFBKVVR4enRCTzdZTHpmQ21BS0poQnY3cnJZOHlCSUl6T01nUGdLVW5vUnZxYWZpUmlZSW8tWVByQW9Cc2tpSVFRdUN3djdWZzZEak1Hb3dwdktqUlFCX2ZlV19ESkkzTlVPR0tSbnBBUnhGdDFWZDJX?oc=5",
-        "source": "Al Jazeera",
-        "domain": "aljazeera.com",
-        "date": "2026-08-05",
-        "description": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?  Al Jazeera",
-        "hoursAgo": 9,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
-        "title": "Iran, Oman say Strait of Hormuz talks in final stages, as Trump again teases a deal being close - CNBC",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeHFIUDlHWHh2b2NwZF9ibHQ4RE5jQ0JOeXFsdEE5MUlqT0VDQ3R1VENGSmRobExCLTlIUDBxSEtjNU0ya01tSnFob0FTWmU5aXlXZzNaeEh0Z3Awc2tkR01nbkpGaUctQlNPUElRb05uV3RLNFZQVHJINThaTDdFd3Z4Q0pLbnVfeXA1enZB0gGTAUFVX3lxTE1FTVdjeHdZdTRmcUIwdHJ1OW52U2x5Q1dlTUhDYnZFc1BfSzA5NTFCRF9ybE81Y0hmN3ZWS1ozUDFHdnEzS0F5T21LRDdmQ0ZXa0F0QlZRRHVtSzVkUDFDQTZieEpocWt6bjRzc2Y2ZUJHNVZFU1VvOXlvdjlZTTVJR08tMmxDQ3dwZFZ1NDNseW5ocw?oc=5",
-        "source": "CNBC",
-        "domain": "cnbc.com",
-        "date": "2026-08-05",
-        "description": "Iran, Oman say Strait of Hormuz talks in final stages, as Trump again teases a deal being close  CNBC",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
@@ -70,12 +46,12 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-05",
         "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 11,
+        "hoursAgo": 16,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 2
 }
