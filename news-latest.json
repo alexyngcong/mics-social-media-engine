@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-06T10:36:51.754Z",
+  "generatedAt": "2026-08-06T14:03:09.582Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 4,
-    "englishOnly": 149,
-    "withinRecency": 47,
-    "scored": 47,
+    "afterDedup": 151,
+    "big4Rejected": 3,
+    "englishOnly": 148,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 53,
+        "hoursAgo": 56,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -40,14 +40,14 @@
     ],
     "world": [
       {
-        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONnM4cFVTMFNjc0dPLVlpbTBSNDFGY2tJZy05V19yV0RBMnl2M0NjSTBNejRlV1k5QmljU0c4LUNGVi1WRjFxUmk5amtJeEc4eFVhZEhKMHZJcC1XQVhNdnFTd0JtbVF6eGFiVURnNnRuY3p0WUVxdEMza0hWTTk1Y3lrTDdrRXJIX0lucWVDTTZSWWt3TjUzV3JZUURqWktidnR0aXJGd0xUSjMyNXltTEZEZ3gzMlpZcXpTeVlnUDhTcUE5Wi1z?oc=5",
+        "title": "Dubai ultra-prime home sales rise 23% as commercial investment surges - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXRpUEZuODlna3dtV3F3eW9wbEdxV1ZZVVNGc25ueEFsWG90NjFHSFBRTU9pZ0dqazUwd1gtbFZpOXZQRTVCMHZ3MFhYSVdNOEptY18tZ0dJRVZQbXNwM0hINGpwR19lV1VHMTd3M1ROVW5sUURHVTlsVnI1ZVR4ajNtUmM3dnBmWGk3NnY5N2VQeFdfd2FHNmlUOG0tazhUOXBLVEpfY0RrOTZUa0lJa0NTdw?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
-        "date": "2026-08-05",
-        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 24,
-        "score": 7,
+        "date": "2026-08-06",
+        "description": "Dubai ultra-prime home sales rise 23% as commercial investment surges  Gulf Business",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
