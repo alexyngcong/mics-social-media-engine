@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-06T02:23:20.157Z",
+  "generatedAt": "2026-08-06T06:28:16.917Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 174,
-    "afterDedup": 158,
-    "big4Rejected": 3,
-    "englishOnly": 154,
-    "withinRecency": 56,
-    "scored": 56,
+    "afterDedup": 162,
+    "big4Rejected": 4,
+    "englishOnly": 157,
+    "withinRecency": 58,
+    "scored": 58,
     "passed": 2
   },
   "rooms": {
@@ -32,8 +32,8 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 45,
-        "score": 6.5,
+        "hoursAgo": 49,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -46,7 +46,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-05",
         "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
