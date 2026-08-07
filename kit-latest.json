@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T08:57:38.747Z",
+  "generatedAt": "2026-08-07T12:58:43.554Z",
   "weekOf": "7 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "dubai-ultra-prime-home-sales-rise-23-as-",
+      "slug": "iran-seeks-to-bar-us-and-israeli-ships-i",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "growth_expansion",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Dubai ultra-prime home sales rise 23% as commercial investment surges - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOFBzZFJ3cDFhZDhQMWUyNG9QeVpwMjZaaVBVdFB3NmxlWTUxWUQxenowVWpHNUMtWldQT1ZBOTdXSkVER2luVy1OenZqWXJZdDU2LW1vbFI4OGtxVHNLMHZUMDVRbTJqa0tlb3Z5S1BrWTdVdW1tOUdqR2lMNkFPY1ZyX2I0cVUzNDRmbnpoeWhheTNOdmdkOTk2djA5b2FfNTQ4dGhBRjhpVWxEajdReU1sb08?oc=5",
-      "filenameBase": "post-1-dubai-ultra-prime-home-sales-rise-23-as-",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
-      "stat": "23%",
-      "headlineLine1": "Dubai ultra-prime home sales rise",
-      "headlineLine2": "23% as commercial investment surges",
-      "hoursAgo": 21
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "oil_energy",
+      "tier": "WEEK AHEAD",
+      "title": "Iran seeks to bar US and Israeli ships in Hormuz deal with Oman - South China Morning Post",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRDRhcDU1MTNNWXFhOEYwS3pKNnVzcmw3dExzUm5HS0twM1haSFBYSE9RSDYzNTdLc0dwVFkzX3dPSjNRS090Nzg1SF9sOFlHejg5TzItLURMc1RKVU9nS0Y0eVB6NC0zaXBYTXlWLVhZNGpQc3BqaThVVEVwS0tySXRsTGh2TEhqaGJzVVN5RnRWUElZSnNDODVqNjdWcTNnRE5rN21jbDNqUTR3MEHSAa4BQVVfeXFMTTBlWUVaaEI2RTRKcHhoWEFXMW9WdkRhSUszajh4eF8zMmRfMUltTUtYU3daUXRaYWJlWE5jVjJDQlhWdlREWDdMQjhvOW5HX0V2SUMySVRwdzgtaENPdkZ5N0QyQUhGWGRGMTJRSmEybzk3TEtsVE1xc3lteDhUbXU3aWtzcEVOSWRha2NCRkl1bklCaG5JY2Vqb3dPZzBCeC0zX3FPV2NZekk4aVVB?oc=5",
+      "filenameBase": "post-1-iran-seeks-to-bar-us-and-israeli-ships-i",
+      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
+      "stat": "",
+      "headlineLine1": "Iran seeks to bar US and Israeli",
+      "headlineLine2": "ships in Hormuz deal with Oman",
+      "hoursAgo": 13
     },
     {
       "n": 2,
