@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-06T14:03:09.582Z",
+  "generatedAt": "2026-08-07T00:53:00.946Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 3,
-    "englishOnly": 148,
-    "withinRecency": 43,
-    "scored": 43,
+    "afterDedup": 148,
+    "big4Rejected": 4,
+    "englishOnly": 144,
+    "withinRecency": 33,
+    "scored": 33,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 56,
+        "hoursAgo": 67,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -41,12 +41,12 @@
     "world": [
       {
         "title": "Dubai ultra-prime home sales rise 23% as commercial investment surges - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXRpUEZuODlna3dtV3F3eW9wbEdxV1ZZVVNGc25ueEFsWG90NjFHSFBRTU9pZ0dqazUwd1gtbFZpOXZQRTVCMHZ3MFhYSVdNOEptY18tZ0dJRVZQbXNwM0hINGpwR19lV1VHMTd3M1ROVW5sUURHVTlsVnI1ZVR4ajNtUmM3dnBmWGk3NnY5N2VQeFdfd2FHNmlUOG0tazhUOXBLVEpfY0RrOTZUa0lJa0NTdw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOFBzZFJ3cDFhZDhQMWUyNG9QeVpwMjZaaVBVdFB3NmxlWTUxWUQxenowVWpHNUMtWldQT1ZBOTdXSkVER2luVy1OenZqWXJZdDU2LW1vbFI4OGtxVHNLMHZUMDVRbTJqa0tlb3Z5S1BrWTdVdW1tOUdqR2lMNkFPY1ZyX2I0cVUzNDRmbnpoeWhheTNOdmdkOTk2djA5b2FfNTQ4dGhBRjhpVWxEajdReU1sb08?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-08-06",
         "description": "Dubai ultra-prime home sales rise 23% as commercial investment surges  Gulf Business",
-        "hoursAgo": 2,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
