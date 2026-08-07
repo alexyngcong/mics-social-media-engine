@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-07T16:52:45.616Z",
+  "generatedAt": "2026-08-07T20:39:09.431Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 5,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 165,
-    "afterDedup": 153,
+    "totalFetched": 160,
+    "afterDedup": 151,
     "big4Rejected": 4,
-    "englishOnly": 149,
-    "withinRecency": 42,
-    "scored": 42,
+    "englishOnly": 147,
+    "withinRecency": 39,
+    "scored": 39,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "scmp.com",
         "date": "2026-08-06",
         "description": "Iran seeks to bar US and Israeli ships in Hormuz deal with Oman  South China Morning Post",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-05",
         "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 55,
+        "hoursAgo": 58,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
