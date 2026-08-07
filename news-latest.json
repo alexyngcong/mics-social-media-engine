@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-07T12:58:30.860Z",
+  "generatedAt": "2026-08-07T16:52:45.616Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 5,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 186,
+    "totalFetched": 165,
+    "afterDedup": 153,
     "big4Rejected": 4,
-    "englishOnly": 162,
-    "withinRecency": 55,
-    "scored": 55,
-    "passed": 1
+    "englishOnly": 149,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,13 +32,26 @@
         "domain": "scmp.com",
         "date": "2026-08-06",
         "description": "Iran seeks to bar US and Israeli ships in Hormuz deal with Oman  South China Morning Post",
-        "hoursAgo": 13,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONnM4cFVTMFNjc0dPLVlpbTBSNDFGY2tJZy05V19yV0RBMnl2M0NjSTBNejRlV1k5QmljU0c4LUNGVi1WRjFxUmk5amtJeEc4eFVhZEhKMHZJcC1XQVhNdnFTd0JtbVF6eGFiVURnNnRuY3p0WUVxdEMza0hWTTk1Y3lrTDdrRXJIX0lucWVDTTZSWWt3TjUzV3JZUURqWktidnR0aXJGd0xUSjMyNXltTEZEZ3gzMlpZcXpTeVlnUDhTcUE5Wi1z?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-08-05",
+        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
+        "hoursAgo": 55,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
