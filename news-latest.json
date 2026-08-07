@@ -1,44 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-07T08:57:24.096Z",
+  "generatedAt": "2026-08-07T12:58:30.860Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 5,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 165,
-    "afterDedup": 155,
-    "big4Rejected": 5,
-    "englishOnly": 149,
-    "withinRecency": 43,
-    "scored": 43,
+    "totalFetched": 260,
+    "afterDedup": 186,
+    "big4Rejected": 4,
+    "englishOnly": 162,
+    "withinRecency": 55,
+    "scored": 55,
     "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
-    "world": [
+    "risk": [
       {
-        "title": "Dubai ultra-prime home sales rise 23% as commercial investment surges - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOFBzZFJ3cDFhZDhQMWUyNG9QeVpwMjZaaVBVdFB3NmxlWTUxWUQxenowVWpHNUMtWldQT1ZBOTdXSkVER2luVy1OenZqWXJZdDU2LW1vbFI4OGtxVHNLMHZUMDVRbTJqa0tlb3Z5S1BrWTdVdW1tOUdqR2lMNkFPY1ZyX2I0cVUzNDRmbnpoeWhheTNOdmdkOTk2djA5b2FfNTQ4dGhBRjhpVWxEajdReU1sb08?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
+        "title": "Iran seeks to bar US and Israeli ships in Hormuz deal with Oman - South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRDRhcDU1MTNNWXFhOEYwS3pKNnVzcmw3dExzUm5HS0twM1haSFBYSE9RSDYzNTdLc0dwVFkzX3dPSjNRS090Nzg1SF9sOFlHejg5TzItLURMc1RKVU9nS0Y0eVB6NC0zaXBYTXlWLVhZNGpQc3BqaThVVEVwS0tySXRsTGh2TEhqaGJzVVN5RnRWUElZSnNDODVqNjdWcTNnRE5rN21jbDNqUTR3MEHSAa4BQVVfeXFMTTBlWUVaaEI2RTRKcHhoWEFXMW9WdkRhSUszajh4eF8zMmRfMUltTUtYU3daUXRaYWJlWE5jVjJDQlhWdlREWDdMQjhvOW5HX0V2SUMySVRwdzgtaENPdkZ5N0QyQUhGWGRGMTJRSmEybzk3TEtsVE1xc3lteDhUbXU3aWtzcEVOSWRha2NCRkl1bklCaG5JY2Vqb3dPZzBCeC0zX3FPV2NZekk4aVVB?oc=5",
+        "source": "South China Morning Post",
+        "domain": "scmp.com",
         "date": "2026-08-06",
-        "description": "Dubai ultra-prime home sales rise 23% as commercial investment surges  Gulf Business",
-        "hoursAgo": 21,
+        "description": "Iran seeks to bar US and Israeli ships in Hormuz deal with Oman  South China Morning Post",
+        "hoursAgo": 13,
         "score": 6,
-        "topic": "Global Economic Signals",
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
-    ]
+    ],
+    "world": []
   },
   "totalCount": 1
 }
