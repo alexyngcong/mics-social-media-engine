@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-07T00:53:00.946Z",
+  "generatedAt": "2026-08-07T05:39:42.943Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 148,
-    "big4Rejected": 4,
-    "englishOnly": 144,
-    "withinRecency": 33,
-    "scored": 33,
+    "afterDedup": 151,
+    "big4Rejected": 5,
+    "englishOnly": 146,
+    "withinRecency": 37,
+    "scored": 37,
     "passed": 2
   },
   "rooms": {
@@ -27,12 +27,12 @@
     "risk": [
       {
         "title": "FTA clarifies small business relief rules ahead of tax return deadline in UAE - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXhxdHFmLVQxVkNJanM0eC1LQWE5OUkxSmhZTTc0Yk1BSXNtTUJFejUxY0V5bmdrLXQ2WlJBTmc2ZXNIczdmQXZUQ042eVhsLVoxeU1LY2M1UllTODU1bnVoNzNiTzVyUkNiaUtJbWhqLTRMdzBSazc5Nm5FaWt5eFVwVG5yendNOF9aQWpVOV9UMEVkbW1GcmVndVhDanozUktMUnBKN3BNUmFCQ0FQYnp4T05pUQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN3VrN0xIYkNtaGplWUoyeGNsYUxjUzg4YUJadmVILTB0bWI0Y09NLVRSLWpreFFfV0Rvc0JnaTFLS2N0WHFfaXZBdmxZNmg3UmQxOVl0RHVnVFdCREk5ZjZUNi15TmYwVDdhdURWZ21rVXREREFCM1hqanB4d1RpM2t0YUlZc0k1SjRiUTNiQWV2Smc3TVhtb2pXMTY4dzJYNFdUcno1UTdwQ1BVZEQ1a2lEblE?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-08-04",
         "description": "FTA clarifies small business relief rules ahead of tax return deadline in UAE  Gulf Business",
-        "hoursAgo": 67,
+        "hoursAgo": 72,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-06",
         "description": "Dubai ultra-prime home sales rise 23% as commercial investment surges  Gulf Business",
-        "hoursAgo": 12,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
