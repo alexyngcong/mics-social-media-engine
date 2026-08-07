@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T14:04:27.692Z",
-  "weekOf": "5 Aug 2026",
+  "generatedAt": "2026-08-07T08:57:38.747Z",
+  "weekOf": "7 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "dubai-ultra-prime-home-sales-rise-23-as-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
+      "theme": "growth_expansion",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "title": "Dubai ultra-prime home sales rise 23% as commercial investment surges - Gulf Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOFBzZFJ3cDFhZDhQMWUyNG9QeVpwMjZaaVBVdFB3NmxlWTUxWUQxenowVWpHNUMtWldQT1ZBOTdXSkVER2luVy1OenZqWXJZdDU2LW1vbFI4OGtxVHNLMHZUMDVRbTJqa0tlb3Z5S1BrWTdVdW1tOUdqR2lMNkFPY1ZyX2I0cVUzNDRmbnpoeWhheTNOdmdkOTk2djA5b2FfNTQ4dGhBRjhpVWxEajdReU1sb08?oc=5",
+      "filenameBase": "post-1-dubai-ultra-prime-home-sales-rise-23-as-",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "stat": "23%",
+      "headlineLine1": "Dubai ultra-prime home sales rise",
+      "headlineLine2": "23% as commercial investment surges",
+      "hoursAgo": 21
     },
     {
       "n": 2,
