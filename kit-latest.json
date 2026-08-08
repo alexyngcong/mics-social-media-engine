@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T12:58:43.554Z",
-  "weekOf": "7 Aug 2026",
+  "generatedAt": "2026-08-08T01:23:00.351Z",
+  "weekOf": "8 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "iran-seeks-to-bar-us-and-israeli-ships-i",
+      "slug": "abu-dhabi-building-safety-rules-what-pro",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
-      "theme": "oil_energy",
-      "tier": "WEEK AHEAD",
-      "title": "Iran seeks to bar US and Israeli ships in Hormuz deal with Oman - South China Morning Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRDRhcDU1MTNNWXFhOEYwS3pKNnVzcmw3dExzUm5HS0twM1haSFBYSE9RSDYzNTdLc0dwVFkzX3dPSjNRS090Nzg1SF9sOFlHejg5TzItLURMc1RKVU9nS0Y0eVB6NC0zaXBYTXlWLVhZNGpQc3BqaThVVEVwS0tySXRsTGh2TEhqaGJzVVN5RnRWUElZSnNDODVqNjdWcTNnRE5rN21jbDNqUTR3MEHSAa4BQVVfeXFMTTBlWUVaaEI2RTRKcHhoWEFXMW9WdkRhSUszajh4eF8zMmRfMUltTUtYU3daUXRaYWJlWE5jVjJDQlhWdlREWDdMQjhvOW5HX0V2SUMySVRwdzgtaENPdkZ5N0QyQUhGWGRGMTJRSmEybzk3TEtsVE1xc3lteDhUbXU3aWtzcEVOSWRha2NCRkl1bklCaG5JY2Vqb3dPZzBCeC0zX3FPV2NZekk4aVVB?oc=5",
-      "filenameBase": "post-1-iran-seeks-to-bar-us-and-israeli-ships-i",
-      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONnM4cFVTMFNjc0dPLVlpbTBSNDFGY2tJZy05V19yV0RBMnl2M0NjSTBNejRlV1k5QmljU0c4LUNGVi1WRjFxUmk5amtJeEc4eFVhZEhKMHZJcC1XQVhNdnFTd0JtbVF6eGFiVURnNnRuY3p0WUVxdEMza0hWTTk1Y3lrTDdrRXJIX0lucWVDTTZSWWt3TjUzV3JZUURqWktidnR0aXJGd0xUSjMyNXltTEZEZ3gzMlpZcXpTeVlnUDhTcUE5Wi1z?oc=5",
+      "filenameBase": "post-1-abu-dhabi-building-safety-rules-what-pro",
+      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
       "stat": "",
-      "headlineLine1": "Iran seeks to bar US and Israeli",
-      "headlineLine2": "ships in Hormuz deal with Oman",
-      "hoursAgo": 13
+      "headlineLine1": "Abu Dhabi building safety rules: What",
+      "headlineLine2": "property owners must know before the…",
+      "hoursAgo": 63
     },
     {
       "n": 2,
