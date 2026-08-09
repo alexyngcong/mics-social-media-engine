@@ -1,45 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-08T20:26:54.596Z",
+  "generatedAt": "2026-08-09T01:27:58.899Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 189,
+    "totalFetched": 160,
+    "afterDedup": 150,
     "big4Rejected": 5,
-    "englishOnly": 168,
-    "withinRecency": 56,
-    "scored": 56,
-    "passed": 1
+    "englishOnly": 145,
+    "withinRecency": 32,
+    "scored": 32,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "BREAKING : Iran attacks UAE vessel in Strait of Hormuz – The Right Scoop",
-        "url": "https://therightscoop.com/breaking-iran-attacks-uae-vessel-in-strait-of-hormuz/",
-        "source": "Therightscoop",
-        "domain": "therightscoop.com",
-        "date": "2026-08-08",
-        "description": "BREAKING : Iran attacks UAE vessel in Strait of Hormuz – The Right Scoop",
-        "imageUrl": "https://therightscoop.com/wp-content/uploads/2025/06/straitofhormuz.jpg",
-        "hoursAgo": 0,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "gdelt"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
