@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T20:27:09.549Z",
-  "weekOf": "8 Aug 2026",
+  "generatedAt": "2026-08-09T01:28:09.971Z",
+  "weekOf": "9 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "breaking-iran-attacks-uae-vessel-in-stra",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
-      "theme": "oil_energy",
-      "tier": "WEEK AHEAD",
-      "title": "BREAKING : Iran attacks UAE vessel in Strait of Hormuz – The Right Scoop",
-      "sourceUrl": "https://therightscoop.com/breaking-iran-attacks-uae-vessel-in-strait-of-hormuz/",
-      "filenameBase": "post-1-breaking-iran-attacks-uae-vessel-in-stra",
-      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "BREAKING : Iran attacks UAE vessel in Strait of Hormuz",
+      "headlineLine1": "Awaiting World signal",
       "headlineLine2": "",
-      "hoursAgo": 0
+      "hoursAgo": null
     },
     {
       "n": 2,
