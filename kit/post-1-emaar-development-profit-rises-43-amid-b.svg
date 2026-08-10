@@ -92,15 +92,15 @@
   <text x="1000" y="900" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end">Emaar Development profit rises 43% amid broader Emaar growth</text>
   <text x="1000" y="942" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="end"></text>
 
+  <line x1="900" y1="50" x2="1040" y2="50" stroke="#F0C050" stroke-width="3" opacity="0.8"/>
+  <line x1="1040" y1="50" x2="1040" y2="180" stroke="#F0C050" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="900" x2="40" y2="1040" stroke="#F0C050" stroke-width="3" opacity="0.8"/>
+  <line x1="40" y1="1040" x2="180" y2="1040" stroke="#F0C050" stroke-width="3" opacity="0.8"/>
+
   <rect x="120" y="180" width="60" height="2" fill="#F0C050" opacity="0.7"/>
   <rect x="900" y="180" width="60" height="2" fill="#F0C050" opacity="0.7"/>
   <rect x="120" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
   <rect x="900" y="930" width="60" height="2" fill="#A8926A" opacity="0.6"/>
-
-  <circle cx="940" cy="240" r="60" fill="none" stroke="#F0C050" stroke-width="1" opacity="0.35"/>
-  <circle cx="940" cy="240" r="100" fill="none" stroke="#F0C050" stroke-width="1" opacity="0.22"/>
-  <circle cx="940" cy="240" r="150" fill="none" stroke="#F0C050" stroke-width="1" opacity="0.12"/>
-  <circle cx="940" cy="240" r="4" fill="#F0C050" opacity="0.8"/>
 
   <rect x="80" y="1000" width="920" height="1" fill="url(#brassUnder)"/>
   <text x="540" y="1042" font-size="13" font-weight="700" letter-spacing="6" fill="rgba(168,146,106,0.7)" text-anchor="middle">MICS INTERNATIONAL</text>
