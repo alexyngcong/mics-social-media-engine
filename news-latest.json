@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-10T16:52:59.320Z",
+  "generatedAt": "2026-08-10T20:40:31.230Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 147,
-    "big4Rejected": 3,
-    "englishOnly": 144,
-    "withinRecency": 29,
-    "scored": 29,
+    "afterDedup": 150,
+    "big4Rejected": 4,
+    "englishOnly": 146,
+    "withinRecency": 34,
+    "scored": 34,
     "passed": 1
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-10",
         "description": "Emaar Development profit rises 43% amid broader Emaar growth  Gulf Business",
-        "hoursAgo": 12,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "google-news"
