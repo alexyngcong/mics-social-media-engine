@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T05:06:39.136Z",
+  "generatedAt": "2026-08-11T08:53:31.029Z",
   "weekOf": "11 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "emaar-development-profit-rises-43-amid-b",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "capital",
-      "roomColor": "#F0C050",
-      "roomLabel": "CAPITAL · CASH",
-      "theme": "growth_expansion",
-      "tier": "WEEK AHEAD CAPITAL",
-      "title": "Emaar Development profit rises 43% amid broader Emaar growth - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQT2c3cTN3MmtBQVl0OUE2UXdGTVVkekVETzR3MnVaOEx2cTE1NXRxZXFfbjJIOUxnUjEwVXZqSmZYcUxUVEIxanhKUEU5R2JBSnpWcW5ibU9FNGdscFhIREdMQzQ2TzVmQ0xhUU1xMk4wN3pZR0NadFhlVVczYTVzWGs1MlJrbUtMVGFTeUt6YWxOOWlaaUJKcHdTOFgyR3V4RUZkVG5RTG4?oc=5",
-      "filenameBase": "post-1-emaar-development-profit-rises-43-amid-b",
-      "photoUrl": "/mics-social-media-engine/photos/growth/07_skyscraper_construction.jpg",
-      "stat": "43%",
-      "headlineLine1": "Emaar Development profit rises 43% amid broader Emaar growth",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
       "headlineLine2": "",
-      "hoursAgo": 24
+      "hoursAgo": null
     },
     {
       "n": 2,
