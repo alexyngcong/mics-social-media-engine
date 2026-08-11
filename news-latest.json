@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-10T20:40:31.230Z",
+  "generatedAt": "2026-08-11T01:27:28.217Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 6,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 150,
+    "totalFetched": 166,
+    "afterDedup": 153,
     "big4Rejected": 4,
-    "englishOnly": 146,
-    "withinRecency": 34,
-    "scored": 34,
+    "englishOnly": 149,
+    "withinRecency": 40,
+    "scored": 40,
     "passed": 1
   },
   "rooms": {
@@ -26,12 +26,12 @@
     "capital": [
       {
         "title": "Emaar Development profit rises 43% amid broader Emaar growth - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYWw1MEd6UkdpdjI4ZlY0WjRRYU9WR0NqblphVVpJNjZrZWhIUDdibzlYekNJRUVZQm5WTHRLNHE3RlBBNlVZT3c3OUMyazdOQ1p2dTBMQUM3dU9IMUdhSG50dlZJWmxFa0pPMmtyS282OW1GTDJ5cW52U1UtOXozVFBCQnEtMVRKY0p2UGJXeWJPemRJVGF0SldZQVdaampIUlNsSjV2bw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQT2c3cTN3MmtBQVl0OUE2UXdGTVVkekVETzR3MnVaOEx2cTE1NXRxZXFfbjJIOUxnUjEwVXZqSmZYcUxUVEIxanhKUEU5R2JBSnpWcW5ibU9FNGdscFhIREdMQzQ2TzVmQ0xhUU1xMk4wN3pZR0NadFhlVVczYTVzWGs1MlJrbUtMVGFTeUt6YWxOOWlaaUJKcHdTOFgyR3V4RUZkVG5RTG4?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-08-10",
         "description": "Emaar Development profit rises 43% amid broader Emaar growth  Gulf Business",
-        "hoursAgo": 16,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "google-news"
