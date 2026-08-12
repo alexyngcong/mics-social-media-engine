@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-12T16:55:46.997Z",
+  "generatedAt": "2026-08-12T20:41:21.848Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,30 +14,17 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 148,
+    "afterDedup": 151,
     "big4Rejected": 4,
-    "englishOnly": 144,
-    "withinRecency": 43,
-    "scored": 43,
-    "passed": 2
+    "englishOnly": 147,
+    "withinRecency": 40,
+    "scored": 40,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "U.S. Fires on Ship Breaking Its Blockade of Iran - WSJ",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbDhFeHNmTTdEYjl4RHZoSEVKRlV5X0dxVnBQWWgxX2NkUWlSaUJvWHFnbEt4bkNVV2lULVJPcnRvQUcxRWVWbmZreVNFa0FsWUdIUEloT29sWW9wb1BtU2Y4R2NEdnEtVFFidFoxOVJpTm43cERCYVoyVXZpTHlUX3Y5bEVBZTU1VVdKS1hVYkFpbnJlUG45QTBB?oc=5",
-        "source": "WSJ",
-        "domain": "wsj.com",
-        "date": "2026-08-11",
-        "description": "U.S. Fires on Ship Breaking Its Blockade of Iran  WSJ",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": [
       {
         "title": "UAE seizes 8.45m non-compliant products as tax inspections surge 21% - Arabian Business",
@@ -46,12 +33,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-08-11",
         "description": "UAE seizes 8.45m non-compliant products as tax inspections surge 21%  Arabian Business",
-        "hoursAgo": 20,
+        "hoursAgo": 24,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
