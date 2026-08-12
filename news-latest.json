@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-12T13:04:32.231Z",
+  "generatedAt": "2026-08-12T16:55:46.997Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
+    "afterDedup": 148,
     "big4Rejected": 4,
-    "englishOnly": 147,
-    "withinRecency": 46,
-    "scored": 46,
-    "passed": 3
+    "englishOnly": 144,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "wsj.com",
         "date": "2026-08-11",
         "description": "U.S. Fires on Ship Breaking Its Blockade of Iran  WSJ",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -46,24 +46,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-08-11",
         "description": "UAE seizes 8.45m non-compliant products as tax inspections surge 21%  Arabian Business",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
-        "title": "Dubai property draws AED 148.35bln in foreign investment as new investors surge 14% - Zawya",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOb0IyMXJ2SDJxbjRXcXhZcVJqUTYxYlMwZkJMaUJDQUdLMmJNdmNaM0xhT283MGsySW9EY2ROMlcwWVhLV1lqZHI2eTdCWUR3TDl6UjVxSWMtdHoxMklaR0ZGZklMVnFuRWxlVE5RZW9HbVVteFlDTk5FeGVmcnIzVEpPNHRjZElMZHJKWXRCRy1GU2pEYlJpY2Q0aG1Rdk5vQ244M3RFTDF3bXVocGFBdGFkNGFZTlRtZ0lDemowUVlGWGNpeWFnVzJlaVc2V291N2FkcFJjSzd4dkZzNHc?oc=5",
-        "source": "Zawya",
-        "domain": "zawya.com",
-        "date": "2026-08-11",
-        "description": "Dubai property draws AED 148.35bln in foreign investment as new investors surge 14%  Zawya",
-        "hoursAgo": 24,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 2
 }
