@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T20:41:27.430Z",
-  "weekOf": "11 Aug 2026",
+  "generatedAt": "2026-08-12T01:45:55.500Z",
+  "weekOf": "12 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "uae-seizes-8-45m-non-compliant-products-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
+      "theme": "compliance_risk",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "title": "UAE seizes 8.45m non-compliant products as tax inspections surge 21% - Arabian Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdDNiRTgteld5Q0hzTWZGUHZvWGpMSEx6ajY3ekotbDEzclFQbmFaV2Y5QXAzN012NHc0RllJb2NkVEcxRDBDLVExWFczS1Y0UFFQSlZzUUsyMlNlN05tQmF1ZVcyZlpTUDZWb1FqXzdkdkF0OGRXNVRMOTZJVkJuVm9jOHVvTW1iVHNFM2xHcVdHTVJRZkVVckZsazY5UTZwTm9zYTBaZkRIQQ?oc=5",
+      "filenameBase": "post-1-uae-seizes-8-45m-non-compliant-products-",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
+      "stat": "21%",
+      "headlineLine1": "UAE seizes 8.45m non-compliant",
+      "headlineLine2": "products as tax inspections surge 21%",
+      "hoursAgo": 5
     },
     {
       "n": 2,
