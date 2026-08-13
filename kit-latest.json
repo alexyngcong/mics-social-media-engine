@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T05:39:34.448Z",
+  "generatedAt": "2026-08-13T13:05:29.637Z",
   "weekOf": "13 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "emirates-skycargo-transports-uae-s-first",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
+      "theme": "ai_tech",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "title": "Emirates SkyCargo transports UAE’s first commercial AI-enabled satellite ahead of October launch - Emirates 24|7",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTjc0YWpiSmNVQWR0RW1RS0J5aDN5U1RyVEhiT0VxcDdvbjFSeFlKeXlqVlhHb3FtOF9lYUtCWFJNT2VrUHNlWmtCazlUeElPUktGakFkdDZBTHZxQmcwbEJXNVpGMUhsby1wVXhqVHBQY2ttUXRGMEFubEppQ1ZIaFI4eDRKUV9sa2NReVEyUnYxV1ZtMkluZHFWSGVyRXl2aURUX0ViSVJGTkFXZFNHZ19yb3haTzZiLTh5aF82MDRZWEk2R09GdWpIWjZrUEtQWjg5bjVn0gHwAUFVX3lxTE1MZVJSbTNUS0ZGSVEzSWIyS0tJamxQV1lEYzkwcHhlTjl4OTVVWU52cm1aV091bWJJQ1lISTZjbjAyX241dHdqNzFqd3R6Sm50bVdFaXRLYXR5ZkJtTy1PS2o2QTVNQmdBc185RkxvaVF0bk5DeS1XSG50d1RJMTUzUVhrd25GX1IteXZvcVM5NHV1VGJLTXAtbUlKZlpuTlBNMklSSUw1QmtJLUdpV0lXWE5DcEtnQkVMU0JFT1FGOW9wVkpqNlJKUjI1QThsZWk4WWZZVnF4U3FnZHJLbEhUSkE5ZkhMWUMwMnhMT1Q2Vw?oc=5",
+      "filenameBase": "post-1-emirates-skycargo-transports-uae-s-first",
+      "photoUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80&fit=crop&crop=entropy&auto=format",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "Emirates SkyCargo transports UAE’s f…",
+      "headlineLine2": "AI-enabled satellite ahead of Octobe…",
+      "hoursAgo": 5
     },
     {
       "n": 2,
