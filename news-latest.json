@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-13T16:54:47.852Z",
+  "generatedAt": "2026-08-13T20:40:01.399Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 4,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 164,
-    "afterDedup": 155,
-    "big4Rejected": 5,
+    "totalFetched": 160,
+    "afterDedup": 154,
+    "big4Rejected": 4,
     "englishOnly": 150,
-    "withinRecency": 46,
-    "scored": 46,
+    "withinRecency": 49,
+    "scored": 49,
     "passed": 2
   },
   "rooms": {
@@ -33,19 +33,19 @@
         "domain": "gulfnews.com",
         "date": "2026-08-13",
         "description": "UAE-built AI satellite Altair-1 heads to US ahead of October launch  Gulf News",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       },
       {
         "title": "Emirates SkyCargo transports UAE’s first commercial AI-enabled satellite ahead of October launch - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTjc0YWpiSmNVQWR0RW1RS0J5aDN5U1RyVEhiT0VxcDdvbjFSeFlKeXlqVlhHb3FtOF9lYUtCWFJNT2VrUHNlWmtCazlUeElPUktGakFkdDZBTHZxQmcwbEJXNVpGMUhsby1wVXhqVHBQY2ttUXRGMEFubEppQ1ZIaFI4eDRKUV9sa2NReVEyUnYxV1ZtMkluZHFWSGVyRXl2aURUX0ViSVJGTkFXZFNHZ19yb3haTzZiLTh5aF82MDRZWEk2R09GdWpIWjZrUEtQWjg5bjVn0gHwAUFVX3lxTE1MZVJSbTNUS0ZGSVEzSWIyS0tJamxQV1lEYzkwcHhlTjl4OTVVWU52cm1aV091bWJJQ1lISTZjbjAyX241dHdqNzFqd3R6Sm50bVdFaXRLYXR5ZkJtTy1PS2o2QTVNQmdBc185RkxvaVF0bk5DeS1XSG50d1RJMTUzUVhrd25GX1IteXZvcVM5NHV1VGJLTXAtbUlKZlpuTlBNMklSSUw1QmtJLUdpV0lXWE5DcEtnQkVMU0JFT1FGOW9wVkpqNlJKUjI1QThsZWk4WWZZVnF4U3FnZHJLbEhUSkE5ZkhMWUMwMnhMT1Q2Vw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTGVSUm0zVEtGRklRM0liMktLSWpsUFdZRGM5MHB4ZU45eDk1VVlOdnJtWldPdW1iSUNZSEk2Y24wMl9uNXR3ajcxand0ekpudG1XRWl0S2F0eWZCbU8tT0tqNkE1TUJnQXNfOUZMb2lRdG5OQ3ktV0hudHdUSTE1M1FYa3duRl9SLXl2b3FTOTR1dVRiS01wLW1JSmZabk5QTTJJUklMNUJrSS1HaVdJV1hOQ3BLZ0JFTFNCRU9RRjlvcFZKajZSSlIyNUE4bGVpOFlmWVZxeFNxZ2RyS2xIVEpBOWZITFlDMDJ4TE9UNlfSAfABQVVfeXFMTUxlUlJtM1RLRkZJUTNJYjJLS0lqbFBXWURjOTBweGVOOXg5NVVZTnZybVpXT3VtYklDWUhJNmNuMDJfbjV0d2o3MWp3dHpKbnRtV0VpdEthdHlmQm1PLU9LajZBNU1CZ0FzXzlGTG9pUXRuTkN5LVdIbnR3VEkxNTNRWGt3bkZfUi15dm9xUzk0dXVUYktNcC1tSUpmWm5OUE0ySVJJTDVCa0ktR2lXSVdYTkNwS2dCRUxTQkVPUUY5b3BWSmo2UkpSMjVBOGxlaThZZllWcXhTcWdkcktsSFRKQTlmSExZQzAyeExPVDZX?oc=5",
         "source": "Emirates 24|7",
         "domain": "emirates247.com",
         "date": "2026-08-13",
         "description": "Emirates SkyCargo transports UAE’s first commercial AI-enabled satellite ahead of October launch  Emirates 24|7",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
