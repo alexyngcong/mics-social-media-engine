@@ -1,58 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-14T09:05:40.300Z",
+  "generatedAt": "2026-08-14T13:01:03.872Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 1,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 197,
-    "big4Rejected": 4,
-    "englishOnly": 163,
-    "withinRecency": 63,
-    "scored": 63,
-    "passed": 2
+    "totalFetched": 161,
+    "afterDedup": 152,
+    "big4Rejected": 3,
+    "englishOnly": 148,
+    "withinRecency": 46,
+    "scored": 46,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "$3 billion cash , 2 tonnes of gold , 15 planes : Is UAE appeasing Iran to avoid being dragged into the war ? ",
-        "url": "https://www.moneycontrol.com/world/3-billion-cash-2-tonnes-of-gold-15-planes-is-uae-appeasing-iran-to-avoid-being-dragged-into-the-war-article-14004982.html",
-        "source": "Moneycontrol",
-        "domain": "moneycontrol.com",
-        "date": "2026-08-13",
-        "description": "$3 billion cash , 2 tonnes of gold , 15 planes : Is UAE appeasing Iran to avoid being dragged into the war ? ",
-        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/08/20260813170158_UAE-2.jpg",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "gdelt"
-      }
-    ],
-    "world": [
-      {
-        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZDgwa013bUYtOHNqQnFlVVNzMFJTM2ZKTDU0MGw5Q1RkWFRzeHQ3ajVMSVJzWHRfRVlDSVRlTkUtcENGRzBkZkhERVdrSFBBWFpqbkN1S2U4RTVralJHMElfWnFNOXNfM29VVnFqZjJza080cnFGRTJyWDRiRXNVQlNnSUZLMm5mZW1SZ2ZvdU5BcDRYYjZJR2UxSEQ4TTdoeWkzMU1xaGR1a1dad3Q5dEZHZjdWX0tEbUNudk1uSVN2Yzg?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-08-12",
-        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 38,
-        "score": 6.5,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "risk": [],
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 0
 }
