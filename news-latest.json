@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-14T13:01:03.872Z",
+  "generatedAt": "2026-08-14T16:49:59.918Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 1,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 161,
-    "afterDedup": 152,
-    "big4Rejected": 3,
-    "englishOnly": 148,
-    "withinRecency": 46,
-    "scored": 46,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 149,
+    "big4Rejected": 2,
+    "englishOnly": 147,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZDgwa013bUYtOHNqQnFlVVNzMFJTM2ZKTDU0MGw5Q1RkWFRzeHQ3ajVMSVJzWHRfRVlDSVRlTkUtcENGRzBkZkhERVdrSFBBWFpqbkN1S2U4RTVralJHMElfWnFNOXNfM29VVnFqZjJza080cnFGRTJyWDRiRXNVQlNnSUZLMm5mZW1SZ2ZvdU5BcDRYYjZJR2UxSEQ4TTdoeWkzMU1xaGR1a1dad3Q5dEZHZjdWX0tEbUNudk1uSVN2Yzg?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-08-12",
+        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
+        "hoursAgo": 46,
+        "score": 6.5,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
