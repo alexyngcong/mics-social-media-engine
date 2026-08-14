@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-14T16:49:59.918Z",
+  "generatedAt": "2026-08-14T20:29:10.217Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
-    "big4Rejected": 2,
-    "englishOnly": 147,
-    "withinRecency": 41,
-    "scored": 41,
+    "afterDedup": 154,
+    "big4Rejected": 4,
+    "englishOnly": 150,
+    "withinRecency": 45,
+    "scored": 45,
     "passed": 1
   },
   "rooms": {
@@ -33,8 +33,8 @@
         "domain": "gulfbusiness.com",
         "date": "2026-08-12",
         "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 46,
-        "score": 6.5,
+        "hoursAgo": 49,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
