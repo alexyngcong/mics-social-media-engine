@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-13T20:40:01.399Z",
+  "generatedAt": "2026-08-14T01:45:56.636Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,9 +17,9 @@
     "afterDedup": 154,
     "big4Rejected": 4,
     "englishOnly": 150,
-    "withinRecency": 49,
-    "scored": 49,
-    "passed": 2
+    "withinRecency": 52,
+    "scored": 52,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -27,30 +27,42 @@
     "risk": [],
     "world": [
       {
+        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZDgwa013bUYtOHNqQnFlVVNzMFJTM2ZKTDU0MGw5Q1RkWFRzeHQ3ajVMSVJzWHRfRVlDSVRlTkUtcENGRzBkZkhERVdrSFBBWFpqbkN1S2U4RTVralJHMElfWnFNOXNfM29VVnFqZjJza080cnFGRTJyWDRiRXNVQlNnSUZLMm5mZW1SZ2ZvdU5BcDRYYjZJR2UxSEQ4TTdoeWkzMU1xaGR1a1dad3Q5dEZHZjdWX0tEbUNudk1uSVN2Yzg?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-08-12",
+        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
+        "hoursAgo": 31,
+        "score": 6.5,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
         "title": "UAE-built AI satellite Altair-1 heads to US ahead of October launch - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSGF0RU5KanhsczRRZ2k4S00yNnpSdGNOT1Q1M00ybWkwWFYxa0FHZDYxV1VJZkRDM3ZEYkJHeS12SFJLQ1E5MTVVb2ZTX0RoRVFRUG9jZU44ZGE3Sk5sbUVGZ1lCNmZJSTJ2UWtmR2xaWmF5M2xLM0VOVWVEeWJfM0l4clNkX3l0U3BPSHJTUEhBa0QwbnQ5NU11eTJpWWhWMFhfTXlsVVZzWGRXM21GLXAtajZmNUYyS1HSAcwBQVVfeXFMUGxKV0VnRXRLUEhmR2ljWmhxVDd4QXJMdl8xWGx2eERFSWtxOUZYVlZuMUE5OHhMU1JUYkpZZ2JuVVl2S3ZzTFpzUy1ZTUNEMkIxWV92VFZkLWZUQmRDQ2liOTZUYkoyMnZsSFBMR18yNGZibHFvNWNCeENqbFRDSGZaNFVhTHRJWlFoOUhBd3FaLW1HanMwckJoXzdSSW5OMVJ3M3hUdmFjOThQVjNSQzBNNU9sc25EaEt1YUpqWDBXbXpoNzRIUVotX3Uw?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-08-13",
         "description": "UAE-built AI satellite Altair-1 heads to US ahead of October launch  Gulf News",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       },
       {
         "title": "Emirates SkyCargo transports UAE’s first commercial AI-enabled satellite ahead of October launch - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTGVSUm0zVEtGRklRM0liMktLSWpsUFdZRGM5MHB4ZU45eDk1VVlOdnJtWldPdW1iSUNZSEk2Y24wMl9uNXR3ajcxand0ekpudG1XRWl0S2F0eWZCbU8tT0tqNkE1TUJnQXNfOUZMb2lRdG5OQ3ktV0hudHdUSTE1M1FYa3duRl9SLXl2b3FTOTR1dVRiS01wLW1JSmZabk5QTTJJUklMNUJrSS1HaVdJV1hOQ3BLZ0JFTFNCRU9RRjlvcFZKajZSSlIyNUE4bGVpOFlmWVZxeFNxZ2RyS2xIVEpBOWZITFlDMDJ4TE9UNlfSAfABQVVfeXFMTUxlUlJtM1RLRkZJUTNJYjJLS0lqbFBXWURjOTBweGVOOXg5NVVZTnZybVpXT3VtYklDWUhJNmNuMDJfbjV0d2o3MWp3dHpKbnRtV0VpdEthdHlmQm1PLU9LajZBNU1CZ0FzXzlGTG9pUXRuTkN5LVdIbnR3VEkxNTNRWGt3bkZfUi15dm9xUzk0dXVUYktNcC1tSUpmWm5OUE0ySVJJTDVCa0ktR2lXSVdYTkNwS2dCRUxTQkVPUUY5b3BWSmo2UkpSMjVBOGxlaThZZllWcXhTcWdkcktsSFRKQTlmSExZQzAyeExPVDZX?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTjc0YWpiSmNVQWR0RW1RS0J5aDN5U1RyVEhiT0VxcDdvbjFSeFlKeXlqVlhHb3FtOF9lYUtCWFJNT2VrUHNlWmtCazlUeElPUktGakFkdDZBTHZxQmcwbEJXNVpGMUhsby1wVXhqVHBQY2ttUXRGMEFubEppQ1ZIaFI4eDRKUV9sa2NReVEyUnYxV1ZtMkluZHFWSGVyRXl2aURUX0ViSVJGTkFXZFNHZ19yb3haTzZiLTh5aF82MDRZWEk2R09GdWpIWjZrUEtQWjg5bjVn0gHwAUFVX3lxTE1MZVJSbTNUS0ZGSVEzSWIyS0tJamxQV1lEYzkwcHhlTjl4OTVVWU52cm1aV091bWJJQ1lISTZjbjAyX241dHdqNzFqd3R6Sm50bVdFaXRLYXR5ZkJtTy1PS2o2QTVNQmdBc185RkxvaVF0bk5DeS1XSG50d1RJMTUzUVhrd25GX1IteXZvcVM5NHV1VGJLTXAtbUlKZlpuTlBNMklSSUw1QmtJLUdpV0lXWE5DcEtnQkVMU0JFT1FGOW9wVkpqNlJKUjI1QThsZWk4WWZZVnF4U3FnZHJLbEhUSkE5ZkhMWUMwMnhMT1Q2Vw?oc=5",
         "source": "Emirates 24|7",
         "domain": "emirates247.com",
         "date": "2026-08-13",
         "description": "Emirates SkyCargo transports UAE’s first commercial AI-enabled satellite ahead of October launch  Emirates 24|7",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
