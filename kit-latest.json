@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T20:29:22.626Z",
-  "weekOf": "14 Aug 2026",
+  "generatedAt": "2026-08-15T01:06:32.531Z",
+  "weekOf": "15 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "abu-dhabi-building-safety-rules-what-pro",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "compliance_risk",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZDgwa013bUYtOHNqQnFlVVNzMFJTM2ZKTDU0MGw5Q1RkWFRzeHQ3ajVMSVJzWHRfRVlDSVRlTkUtcENGRzBkZkhERVdrSFBBWFpqbkN1S2U4RTVralJHMElfWnFNOXNfM29VVnFqZjJza080cnFGRTJyWDRiRXNVQlNnSUZLMm5mZW1SZ2ZvdU5BcDRYYjZJR2UxSEQ4TTdoeWkzMU1xaGR1a1dad3Q5dEZHZjdWX0tEbUNudk1uSVN2Yzg?oc=5",
-      "filenameBase": "post-1-abu-dhabi-building-safety-rules-what-pro",
-      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Abu Dhabi building safety rules: What",
-      "headlineLine2": "property owners must know before the…",
-      "hoursAgo": 49
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
