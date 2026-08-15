@@ -1,0 +1,13 @@
+*15 August 2026.*
+
+What I'd watch through the next five trading days.
+
+FAME Advisory: Guiding businesses through the UAE’s tax and compliance landscape gulfnews.com.
+
+For UAE-regulated entities, DIFC and ADGM-licensed firms, and any group with downstream compliance exposure, the strategic implication lands ahead of where headline coverage catches it. Controls drift quietly, and documentation either catches up to that drift or it does not. The gap shows up first in audit findings, then in penalty exposure, then in board-level conversations. The window to close it is always shorter than the rulebook suggests.
+
+Audit any client-facing trails that touch transaction data or KYC-adjacent flows. Migrate to compliant channels, brief the audit committee on customer-experience implications, and update the control matrix before the next supervisory cycle lands.
+
+Audit-season exposure is built in the quarters before audit, not during. The documentation trail, the control evidence, and the governance posture all need to be in place ahead of the window.
+
+One to keep on the radar.

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T01:06:32.531Z",
+  "generatedAt": "2026-08-15T04:28:52.587Z",
   "weekOf": "15 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "fame-advisory-guiding-businesses-through",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "FAME Advisory: Guiding businesses through the UAE’s tax and compliance landscape - gulfnews.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMW1UU3MySWRoUnhJdkNmRy1VaEZFMk9xTnhmMHg1OEpySk1uNnpSSjY3UU53WjVOdVM5MHhHTl9aYXZPNU93c3RGbTllRUczdVlZbXhBWm1sNlJadWwxX1FzZTltZkRiZGV5QXZCMXJLY0hDLTBvMzhwNHpDN1gxdl96U1Nzam03TmtXamp4bHB5d1d0MFplaTVST29Icm55WFZMeHMtWWVkd2FrZy1iX1RBMGFDeUhTZi02d9IBzAFBVV95cUxOYWl2SFU1ekE0Q05HNTVId1htalZtWk5MUGFBSTZBVUZPODJXWXZIREpaTmhVZ1gzeW9kQ0hITVBncGplRnh3d1ROd0RLT3lVU2dWVmRiOHgtRnlWXzdwenQ3ODR6MjQzWmNMNVpmM0pTM2lRV3hiWVctN3YzLWRqX2NvdlRuVlY2VTJtN2Z4OE1IcnF5Um1Qa3NTUFJTMGZTQWhTdzFmZjEtMVVnc0R6WlhPWUVjdGVCLThjcVhIeDBBbVpDUmVxNWZqbm4?oc=5",
+      "filenameBase": "post-1-fame-advisory-guiding-businesses-through",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "FAME Advisory: Guiding businesses th…",
+      "headlineLine2": "UAE’s tax and compliance landscape -…",
+      "hoursAgo": 1
     },
     {
       "n": 2,
