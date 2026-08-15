@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-14T20:29:10.217Z",
+  "generatedAt": "2026-08-15T01:06:19.578Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,30 +15,17 @@
   "diagnostic": {
     "totalFetched": 160,
     "afterDedup": 154,
-    "big4Rejected": 4,
-    "englishOnly": 150,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 1
+    "big4Rejected": 5,
+    "englishOnly": 149,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Abu Dhabi building safety rules: What property owners must know before the deadline - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZDgwa013bUYtOHNqQnFlVVNzMFJTM2ZKTDU0MGw5Q1RkWFRzeHQ3ajVMSVJzWHRfRVlDSVRlTkUtcENGRzBkZkhERVdrSFBBWFpqbkN1S2U4RTVralJHMElfWnFNOXNfM29VVnFqZjJza080cnFGRTJyWDRiRXNVQlNnSUZLMm5mZW1SZ2ZvdU5BcDRYYjZJR2UxSEQ4TTdoeWkzMU1xaGR1a1dad3Q5dEZHZjdWX0tEbUNudk1uSVN2Yzg?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-08-12",
-        "description": "Abu Dhabi building safety rules: What property owners must know before the deadline  Gulf Business",
-        "hoursAgo": 49,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
