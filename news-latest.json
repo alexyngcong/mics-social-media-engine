@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-15T08:26:03.492Z",
+  "generatedAt": "2026-08-15T12:33:17.322Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 0,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 4,
-    "englishOnly": 148,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 1
+    "totalFetched": 10,
+    "afterDedup": 7,
+    "big4Rejected": 0,
+    "englishOnly": 7,
+    "withinRecency": 7,
+    "scored": 7,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "FAME Advisory: Guiding businesses through the UAE’s tax and compliance landscape - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMW1UU3MySWRoUnhJdkNmRy1VaEZFMk9xTnhmMHg1OEpySk1uNnpSSjY3UU53WjVOdVM5MHhHTl9aYXZPNU93c3RGbTllRUczdVlZbXhBWm1sNlJadWwxX1FzZTltZkRiZGV5QXZCMXJLY0hDLTBvMzhwNHpDN1gxdl96U1Nzam03TmtXamp4bHB5d1d0MFplaTVST29Icm55WFZMeHMtWWVkd2FrZy1iX1RBMGFDeUhTZi02d9IBzAFBVV95cUxOYWl2SFU1ekE0Q05HNTVId1htalZtWk5MUGFBSTZBVUZPODJXWXZIREpaTmhVZ1gzeW9kQ0hITVBncGplRnh3d1ROd0RLT3lVU2dWVmRiOHgtRnlWXzdwenQ3ODR6MjQzWmNMNVpmM0pTM2lRV3hiWVctN3YzLWRqX2NvdlRuVlY2VTJtN2Z4OE1IcnF5Um1Qa3NTUFJTMGZTQWhTdzFmZjEtMVVnc0R6WlhPWUVjdGVCLThjcVhIeDBBbVpDUmVxNWZqbm4?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-08-15",
-        "description": "FAME Advisory: Guiding businesses through the UAE’s tax and compliance landscape  Gulf News",
-        "hoursAgo": 5,
-        "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
