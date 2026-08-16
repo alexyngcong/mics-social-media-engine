@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T08:26:58.654Z",
+  "generatedAt": "2026-08-16T12:35:04.873Z",
   "weekOf": "16 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "dubai-attracts-186-new-property-develope",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "real_estate",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Dubai attracts 186 new property developers in first seven months of 2026 - Gulf News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdE82VkdFRU5QVDdFc1RPY1EwNGRXOHpjME5iSHdhODZhanR5eVpUUy1xR0VnWXFiS3Vqd29TcDVJWDVUTmJ6R1J2S3QwMEFtNzBhLXdtN05RdUZxTDNxZWhBajZIRUxYa09LUGQyeFVWdkZOcGRYRkphR1Z5Uy1mSEl2MWl4c1B2OVQyV1g4ekY0ZmpuRnlhRU1CX0dfbmZBUU9ocnI3LTRwaEQxYm1vX2lRa1VYbFVOS2NRN3FGS1XSAdMBQVVfeXFMTWlRaF9kQUg3cDBCYldnWks0V3hHcU9XMGtnNzhHRldrYUljYm14bUZydlJqR1ozX1BqdlVDbi0wbG4wZHFqdUF2MG9zelhMRGFfRE9FSGpuQVRTTGpoVGhkSW51cG9mQXJVWksyUTlTR0lqTDVfX1FuLUVFNmJvR0N5QU8zVWN4OXI2RkJYY21jOFRPLWR0TlJ2b01FVlB1TjdrUHlhSXAwbThYcHhteDRXVDNFTTh5UGlhU1d0ZEN5R1F3aElZcVJhRnFiU1M3QlNFZw?oc=5",
-      "filenameBase": "post-1-dubai-attracts-186-new-property-develope",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Dubai attracts 186 new property",
-      "headlineLine2": "developers in first seven months of …",
-      "hoursAgo": 20
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
