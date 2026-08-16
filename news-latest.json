@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-16T08:26:45.381Z",
+  "generatedAt": "2026-08-16T12:34:49.973Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 2,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 162,
-    "afterDedup": 157,
+    "totalFetched": 160,
+    "afterDedup": 153,
     "big4Rejected": 4,
-    "englishOnly": 153,
-    "withinRecency": 32,
-    "scored": 32,
-    "passed": 1
+    "englishOnly": 149,
+    "withinRecency": 23,
+    "scored": 23,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Dubai attracts 186 new property developers in first seven months of 2026 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdE82VkdFRU5QVDdFc1RPY1EwNGRXOHpjME5iSHdhODZhanR5eVpUUy1xR0VnWXFiS3Vqd29TcDVJWDVUTmJ6R1J2S3QwMEFtNzBhLXdtN05RdUZxTDNxZWhBajZIRUxYa09LUGQyeFVWdkZOcGRYRkphR1Z5Uy1mSEl2MWl4c1B2OVQyV1g4ekY0ZmpuRnlhRU1CX0dfbmZBUU9ocnI3LTRwaEQxYm1vX2lRa1VYbFVOS2NRN3FGS1XSAdMBQVVfeXFMTWlRaF9kQUg3cDBCYldnWks0V3hHcU9XMGtnNzhHRldrYUljYm14bUZydlJqR1ozX1BqdlVDbi0wbG4wZHFqdUF2MG9zelhMRGFfRE9FSGpuQVRTTGpoVGhkSW51cG9mQXJVWksyUTlTR0lqTDVfX1FuLUVFNmJvR0N5QU8zVWN4OXI2RkJYY21jOFRPLWR0TlJ2b01FVlB1TjdrUHlhSXAwbThYcHhteDRXVDNFTTh5UGlhU1d0ZEN5R1F3aElZcVJhRnFiU1M3QlNFZw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-08-15",
-        "description": "Dubai attracts 186 new property developers in first seven months of 2026  Gulf News",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
