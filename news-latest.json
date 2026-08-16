@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-15T20:20:14.691Z",
+  "generatedAt": "2026-08-16T01:10:16.283Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,8 +17,8 @@
     "afterDedup": 152,
     "big4Rejected": 4,
     "englishOnly": 148,
-    "withinRecency": 33,
-    "scored": 33,
+    "withinRecency": 35,
+    "scored": 35,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-08-15",
         "description": "FAME Advisory: Guiding businesses through the UAE’s tax and compliance landscape  Gulf News",
-        "hoursAgo": 17,
+        "hoursAgo": 22,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "gulfnews.com",
         "date": "2026-08-15",
         "description": "Dubai attracts 186 new property developers in first seven months of 2026  Gulf News",
-        "hoursAgo": 8,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
