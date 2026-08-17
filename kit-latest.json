@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T08:41:11.417Z",
+  "generatedAt": "2026-08-17T12:39:37.135Z",
   "weekOf": "17 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "dubai-economic-zones-hit-96-occupancy-co",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "title": "Dubai economic zones hit 96% occupancy, company count rises 13% - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNR3J4VVBlNnpqSTFBZXhla3dXUVhyMWxHeDBfNXBFSVBxVl9PQ2FIRVdOVGs2Uk9GdlBqQWZVQllSeW15blNLQVFLTTBMZWNCZE9mWXZldXY1SzdXREhySW5mSm1TUW9haHV1bUVEVmNibWpEWU9JMUhNdUdTRXpBdHVWUXZwaF9BdU45M1BlcEd1cmRTN0FfeERzRC14Z3F2eWtVREt3Z3NlZ2J3VW1Z0gHCAUFVX3lxTE1uWFgwdG00RWJyM3VaU3VwRVBDSjBVUnNpUHh5MXVjb0FCeURmaGtVQS1yWXVLSVBrdWRDcVlob1Z3VE5Zb013UjNoMWVJZmx5MjdqRFVRY3BCS24yOVVFdGZ4azF2a1JzclROX1dIQjk0dkduRFJWcko0NkpIbXFSRy04MllnTWtLNzVnSnFzWjR5Tk0wY0FhTE5lWFZsUkFPWk13YzZadXBnQzZxa2dKREp0c3hoRTJncE1QeGFiQk1B?oc=5",
+      "filenameBase": "post-1-dubai-economic-zones-hit-96-occupancy-co",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "stat": "96%",
+      "headlineLine1": "Dubai economic zones hit 96%",
+      "headlineLine2": "occupancy, company count rises 13%",
+      "hoursAgo": 2
     },
     {
       "n": 2,
