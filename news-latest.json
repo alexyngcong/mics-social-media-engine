@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-18T12:40:36.063Z",
+  "generatedAt": "2026-08-18T16:28:53.564Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 6,
+    "gdelt": 15,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 166,
-    "afterDedup": 151,
-    "big4Rejected": 4,
-    "englishOnly": 147,
-    "withinRecency": 40,
-    "scored": 40,
+    "totalFetched": 175,
+    "afterDedup": 159,
+    "big4Rejected": 3,
+    "englishOnly": 156,
+    "withinRecency": 50,
+    "scored": 50,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfnews.com",
         "date": "2026-08-17",
         "description": "Dubai economic zones hit 96% occupancy, company count rises 13%  Gulf News",
-        "hoursAgo": 26,
+        "hoursAgo": 29,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
