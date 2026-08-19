@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-19T08:35:11.117Z",
+  "generatedAt": "2026-08-19T12:41:13.615Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 21,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 149,
+    "totalFetched": 181,
+    "afterDedup": 166,
     "big4Rejected": 4,
-    "englishOnly": 145,
-    "withinRecency": 38,
-    "scored": 38,
+    "englishOnly": 162,
+    "withinRecency": 57,
+    "scored": 57,
     "passed": 2
   },
   "rooms": {
@@ -33,8 +33,8 @@
         "domain": "gulfnews.com",
         "date": "2026-08-17",
         "description": "Dubai economic zones hit 96% occupancy, company count rises 13%  Gulf News",
-        "hoursAgo": 45,
-        "score": 6.5,
+        "hoursAgo": 50,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       },
@@ -45,7 +45,7 @@
         "domain": "gulfnews.com",
         "date": "2026-08-19",
         "description": "Golden Visa, first-time buyer support, Flexi Rent: How Dubai is widening property access for buyers and renters  Gulf News",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
