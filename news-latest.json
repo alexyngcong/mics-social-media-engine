@@ -1,31 +1,56 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-19T16:29:23.372Z",
+  "generatedAt": "2026-08-19T20:25:00.169Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 10,
-    "afterDedup": 5,
-    "big4Rejected": 0,
-    "englishOnly": 5,
-    "withinRecency": 5,
-    "scored": 5,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 150,
+    "big4Rejected": 4,
+    "englishOnly": 146,
+    "withinRecency": 44,
+    "scored": 44,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Dubai economic zones hit 96% occupancy, company count rises 13% - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNR3J4VVBlNnpqSTFBZXhla3dXUVhyMWxHeDBfNXBFSVBxVl9PQ2FIRVdOVGs2Uk9GdlBqQWZVQllSeW15blNLQVFLTTBMZWNCZE9mWXZldXY1SzdXREhySW5mSm1TUW9haHV1bUVEVmNibWpEWU9JMUhNdUdTRXpBdHVWUXZwaF9BdU45M1BlcEd1cmRTN0FfeERzRC14Z3F2eWtVREt3Z3NlZ2J3VW1Z0gHCAUFVX3lxTE1uWFgwdG00RWJyM3VaU3VwRVBDSjBVUnNpUHh5MXVjb0FCeURmaGtVQS1yWXVLSVBrdWRDcVlob1Z3VE5Zb013UjNoMWVJZmx5MjdqRFVRY3BCS24yOVVFdGZ4azF2a1JzclROX1dIQjk0dkduRFJWcko0NkpIbXFSRy04MllnTWtLNzVnSnFzWjR5Tk0wY0FhTE5lWFZsUkFPWk13YzZadXBnQzZxa2dKREp0c3hoRTJncE1QeGFiQk1B?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-08-17",
+        "description": "Dubai economic zones hit 96% occupancy, company count rises 13%  Gulf News",
+        "hoursAgo": 57,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Golden Visa, first-time buyer support, Flexi Rent: How Dubai is widening property access for buyers and renters - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOdUp6NFNYakkxTXMxUXdPRl8xbHpJUWI5NFRmTm5qZWs3REE1SnczR3VscUxtaTVTMGt3WG5MYml3WXdLNE1UNllFOENlQmZ3TjgtM08walk4aF9tMm5YWHFmYWhXYXJBS2J2djNRd1NFNlFDVkt4X3g5VFNwYkRldzUtbndRQnV2VmxuUmZPT1dMVkVZSlhncklBaGJDZVdDRGFxX3pWQ1hUVFM2S0g2clE2QmtVN1ZUb3M2MS1nNHA5dTNNRVBuWm0wRjFDWUVXaGdDQjR2ak9DTnVnWnpxbFBodVNEZUhOZjB5QVBWNHHSAYMCQVVfeXFMTkNidGhHalRrN05MRU5aaXhoazJMYUxlVXlpWF9CRDFtT0tMejFwb1IwQUxFNjIyazh3R1RKcmRRTmI5RTd1d0xfWWY3bUttQUQ0VUJBa3FhMkZRYkFiUWFWUTRtVmdHOGlNTmFwaS1tTHdPa3dPZlBSZ2pCOGhuWmZmN19qakxkQ2t6UEVSS01jQ3p5R0xSRGxBVFYtMmpJaEJ1S3RXenF3T202UGNMbmdUczE1RFhtelNicjN2TEh1Ylh4emVxVDE1WHlNNm1hWXJqcDhEOHVvOHAtZkZTM0g0enBia1QxTFBMWUpuTmtlRW5ZUFpHMmdJbzlzYjBlSS0xSQ?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-08-19",
+        "description": "Golden Visa, first-time buyer support, Flexi Rent: How Dubai is widening property access for buyers and renters  Gulf News",
+        "hoursAgo": 14,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 2
 }
