@@ -1,69 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-20T01:06:00.917Z",
+  "generatedAt": "2026-08-20T04:35:04.610Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 21,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 148,
+    "totalFetched": 181,
+    "afterDedup": 165,
     "big4Rejected": 3,
-    "englishOnly": 145,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 3
+    "englishOnly": 161,
+    "withinRecency": 57,
+    "scored": 57,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Oil prices rise more than 1% as Middle East crisis escalates - CNBC",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb2dqYWhrM1ZaOVBEeDB4LWcwTUp0clNMVHRrY2ktT3R2WnQ3MkJKcmVTNmQwWXAzV2FqNkhTVGphVWIyVnJYSXF6M0Q2Sms4QktoQ3hWajZIV3JuelRzSGg1OWVIaHZoMkxfWDJYbXZMLWhCd21xZlRrS3pBaDFjSFJYNXhPSUo5X0JxWmt4YjlMSlhyMi1R0gGcAUFVX3lxTE5jMG5rRndVVUZhemgtMllCU1poUV9KeHVtV0xmUjNQQnhYeVdFd0Qtd2hxLVM0SF9PTVF1cWZhakVjbk5sSVFEMWd3cG5NUktCNWU4Y0dFNDNOSklPVFp5M1NxOUxBam0yNVBPaXN5TkVHeUFiQkRIdEdqazBOcWNMcnRGeE9hZVZZS0l6azFsYTNRa2lOS0xWbVJ4Mg?oc=5",
-        "source": "CNBC",
-        "domain": "cnbc.com",
-        "date": "2026-08-19",
-        "description": "Oil prices rise more than 1% as Middle East crisis escalates  CNBC",
-        "hoursAgo": 24,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
-    "world": [
-      {
-        "title": "Dubai economic zones hit 96% occupancy, company count rises 13% - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNR3J4VVBlNnpqSTFBZXhla3dXUVhyMWxHeDBfNXBFSVBxVl9PQ2FIRVdOVGs2Uk9GdlBqQWZVQllSeW15blNLQVFLTTBMZWNCZE9mWXZldXY1SzdXREhySW5mSm1TUW9haHV1bUVEVmNibWpEWU9JMUhNdUdTRXpBdHVWUXZwaF9BdU45M1BlcEd1cmRTN0FfeERzRC14Z3F2eWtVREt3Z3NlZ2J3VW1Z0gHCAUFVX3lxTE1uWFgwdG00RWJyM3VaU3VwRVBDSjBVUnNpUHh5MXVjb0FCeURmaGtVQS1yWXVLSVBrdWRDcVlob1Z3VE5Zb013UjNoMWVJZmx5MjdqRFVRY3BCS24yOVVFdGZ4azF2a1JzclROX1dIQjk0dkduRFJWcko0NkpIbXFSRy04MllnTWtLNzVnSnFzWjR5Tk0wY0FhTE5lWFZsUkFPWk13YzZadXBnQzZxa2dKREp0c3hoRTJncE1QeGFiQk1B?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-08-17",
-        "description": "Dubai economic zones hit 96% occupancy, company count rises 13%  Gulf News",
-        "hoursAgo": 62,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
-        "title": "Golden Visa, first-time buyer support, Flexi Rent: How Dubai is widening property access for buyers and renters - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOdUp6NFNYakkxTXMxUXdPRl8xbHpJUWI5NFRmTm5qZWs3REE1SnczR3VscUxtaTVTMGt3WG5MYml3WXdLNE1UNllFOENlQmZ3TjgtM08walk4aF9tMm5YWHFmYWhXYXJBS2J2djNRd1NFNlFDVkt4X3g5VFNwYkRldzUtbndRQnV2VmxuUmZPT1dMVkVZSlhncklBaGJDZVdDRGFxX3pWQ1hUVFM2S0g2clE2QmtVN1ZUb3M2MS1nNHA5dTNNRVBuWm0wRjFDWUVXaGdDQjR2ak9DTnVnWnpxbFBodVNEZUhOZjB5QVBWNHHSAYMCQVVfeXFMTkNidGhHalRrN05MRU5aaXhoazJMYUxlVXlpWF9CRDFtT0tMejFwb1IwQUxFNjIyazh3R1RKcmRRTmI5RTd1d0xfWWY3bUttQUQ0VUJBa3FhMkZRYkFiUWFWUTRtVmdHOGlNTmFwaS1tTHdPa3dPZlBSZ2pCOGhuWmZmN19qakxkQ2t6UEVSS01jQ3p5R0xSRGxBVFYtMmpJaEJ1S3RXenF3T202UGNMbmdUczE1RFhtelNicjN2TEh1Ylh4emVxVDE1WHlNNm1hWXJqcDhEOHVvOHAtZkZTM0g0enBia1QxTFBMWUpuTmtlRW5ZUFpHMmdJbzlzYjBlSS0xSQ?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-08-19",
-        "description": "Golden Visa, first-time buyer support, Flexi Rent: How Dubai is widening property access for buyers and renters  Gulf News",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "risk": [],
+    "world": []
   },
-  "totalCount": 3
+  "totalCount": 0
 }
