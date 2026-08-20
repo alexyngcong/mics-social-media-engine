@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-19T20:25:00.169Z",
+  "generatedAt": "2026-08-20T01:06:00.917Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,17 +14,30 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 150,
-    "big4Rejected": 4,
-    "englishOnly": 146,
-    "withinRecency": 44,
-    "scored": 44,
-    "passed": 2
+    "afterDedup": 148,
+    "big4Rejected": 3,
+    "englishOnly": 145,
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Oil prices rise more than 1% as Middle East crisis escalates - CNBC",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb2dqYWhrM1ZaOVBEeDB4LWcwTUp0clNMVHRrY2ktT3R2WnQ3MkJKcmVTNmQwWXAzV2FqNkhTVGphVWIyVnJYSXF6M0Q2Sms4QktoQ3hWajZIV3JuelRzSGg1OWVIaHZoMkxfWDJYbXZMLWhCd21xZlRrS3pBaDFjSFJYNXhPSUo5X0JxWmt4YjlMSlhyMi1R0gGcAUFVX3lxTE5jMG5rRndVVUZhemgtMllCU1poUV9KeHVtV0xmUjNQQnhYeVdFd0Qtd2hxLVM0SF9PTVF1cWZhakVjbk5sSVFEMWd3cG5NUktCNWU4Y0dFNDNOSklPVFp5M1NxOUxBam0yNVBPaXN5TkVHeUFiQkRIdEdqazBOcWNMcnRGeE9hZVZZS0l6azFsYTNRa2lOS0xWbVJ4Mg?oc=5",
+        "source": "CNBC",
+        "domain": "cnbc.com",
+        "date": "2026-08-19",
+        "description": "Oil prices rise more than 1% as Middle East crisis escalates  CNBC",
+        "hoursAgo": 24,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
         "title": "Dubai economic zones hit 96% occupancy, company count rises 13% - Gulf News",
@@ -33,7 +46,7 @@
         "domain": "gulfnews.com",
         "date": "2026-08-17",
         "description": "Dubai economic zones hit 96% occupancy, company count rises 13%  Gulf News",
-        "hoursAgo": 57,
+        "hoursAgo": 62,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -45,12 +58,12 @@
         "domain": "gulfnews.com",
         "date": "2026-08-19",
         "description": "Golden Visa, first-time buyer support, Flexi Rent: How Dubai is widening property access for buyers and renters  Gulf News",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
