@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-22T16:21:10.815Z",
+  "generatedAt": "2026-08-22T20:20:15.801Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 150,
+    "totalFetched": 171,
+    "afterDedup": 158,
     "big4Rejected": 3,
-    "englishOnly": 147,
-    "withinRecency": 35,
-    "scored": 35,
-    "passed": 0
+    "englishOnly": 155,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE property: New off-plan home finance offers up to 50% funding for residents and non-residents - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNME5RQWVnUl81cDVNektMcUgzcFZvUmhaVngzYzNTOVhIdkE4T1R0U0pySVJ3UHg0RHBMYWx3eHVkZTB4WjU4Rl9BV2RqakotaVhPb1hhd3EwQTdWZXN3TVhrajVqdHVNMlZHUTRTb0VjN1p1M2FhbzE1M0NRektENVd4NGNYazh0WUktVVUxSV94emdFcFV4ckhJdTMzR2xkNkY4X3hoeTFQMDRBMDJJMUdSd2NtTGRnMnZLLVRoQWZKVGx3eTNnRDNUeFdsUUJuVnBUZw?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-08-22",
+        "description": "UAE property: New off-plan home finance offers up to 50% funding for residents and non-residents  Arabian Business",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
