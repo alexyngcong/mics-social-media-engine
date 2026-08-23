@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T20:20:29.394Z",
-  "weekOf": "22 Aug 2026",
+  "generatedAt": "2026-08-23T01:10:57.071Z",
+  "weekOf": "23 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-property-new-off-plan-home-finance-o",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "growth_expansion",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "UAE property: New off-plan home finance offers up to 50% funding for residents and non-residents - Arabian Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNME5RQWVnUl81cDVNektMcUgzcFZvUmhaVngzYzNTOVhIdkE4T1R0U0pySVJ3UHg0RHBMYWx3eHVkZTB4WjU4Rl9BV2RqakotaVhPb1hhd3EwQTdWZXN3TVhrajVqdHVNMlZHUTRTb0VjN1p1M2FhbzE1M0NRektENVd4NGNYazh0WUktVVUxSV94emdFcFV4ckhJdTMzR2xkNkY4X3hoeTFQMDRBMDJJMUdSd2NtTGRnMnZLLVRoQWZKVGx3eTNnRDNUeFdsUUJuVnBUZw?oc=5",
-      "filenameBase": "post-1-uae-property-new-off-plan-home-finance-o",
-      "photoUrl": "/mics-social-media-engine/photos/growth/04_abu_dhabi_corniche.jpg",
-      "stat": "50%",
-      "headlineLine1": "UAE property: New off-plan home fina…",
-      "headlineLine2": "up to 50% funding for residents and …",
-      "hoursAgo": 6
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
