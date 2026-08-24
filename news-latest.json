@@ -1,45 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-24T01:08:56.452Z",
+  "generatedAt": "2026-08-24T04:42:16.337Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 200,
-    "big4Rejected": 3,
-    "englishOnly": 179,
-    "withinRecency": 63,
-    "scored": 63,
-    "passed": 1
+    "totalFetched": 160,
+    "afterDedup": 154,
+    "big4Rejected": 4,
+    "englishOnly": 150,
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Strait of Hormuz Crisis and Tougher US Sanctions : How Rising US – Iran Tensions Are Impacting UAE Travel , Oil Trade and Gulf Security Today",
-        "url": "https://gulfnews.com/world/mena/us-iran-standoff-strait-of-hormuz-tensions-new-us-sanctions-and-flight-changes-key-evening-updates-for-uae-residents-on-august-23-1.500649796",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-08-23",
-        "description": "Strait of Hormuz Crisis and Tougher US Sanctions : How Rising US – Iran Tensions Are Impacting UAE Travel , Oil Trade and Gulf Security Today",
-        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-08-10%2F0f97wnpe%2Fnewsml_afp_com_20260810T183952Z_doc_c4cf9kf.jpeg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 7,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "gdelt"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
