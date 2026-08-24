@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-23T23:23:05.507Z",
-  "weekOf": "23 Aug 2026",
+  "generatedAt": "2026-08-24T01:09:11.734Z",
+  "weekOf": "24 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "strait-of-hormuz-crisis-and-tougher-us-s",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "oil_energy",
+      "tier": "WEEK AHEAD",
+      "title": "Strait of Hormuz Crisis and Tougher US Sanctions : How Rising US – Iran Tensions Are Impacting UAE Travel , Oil Trade and Gulf Security Today",
+      "sourceUrl": "https://gulfnews.com/world/mena/us-iran-standoff-strait-of-hormuz-tensions-new-us-sanctions-and-flight-changes-key-evening-updates-for-uae-residents-on-august-23-1.500649796",
+      "filenameBase": "post-1-strait-of-hormuz-crisis-and-tougher-us-s",
+      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "Strait of Hormuz Crisis and Tougher …",
+      "headlineLine2": "Tensions Are Impacting UAE Travel , …",
+      "hoursAgo": 7
     },
     {
       "n": 2,
