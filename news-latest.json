@@ -1,45 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-25T08:39:42.052Z",
+  "generatedAt": "2026-08-25T12:43:08.245Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 199,
+    "totalFetched": 160,
+    "afterDedup": 149,
     "big4Rejected": 3,
-    "englishOnly": 175,
-    "withinRecency": 55,
-    "scored": 55,
-    "passed": 1
+    "englishOnly": 146,
+    "withinRecency": 26,
+    "scored": 26,
+    "passed": 0
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "UAE Sobha Furniture plans major expansion , targets retail , Saudi markets",
-        "url": "https://www.zawya.com/en/projects/uaes-sobha-furniture-plans-major-expansion-targets-retail-saudi-markets-460703",
-        "source": "Zawya",
-        "domain": "zawya.com",
-        "date": "2026-08-24",
-        "description": "UAE Sobha Furniture plans major expansion , targets retail , Saudi markets",
-        "imageUrl": "https://media.zawya.com/prod/images/gm_preview/fa983507f3b1-mr-anuj-jain-ceo-of-sobha-furniture.jpg",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Business Expansion",
-        "origin": "gdelt"
-      }
-    ],
+    "growth": [],
     "capital": [],
     "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
