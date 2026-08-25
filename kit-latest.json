@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T08:39:54.196Z",
+  "generatedAt": "2026-08-25T12:43:24.342Z",
   "weekOf": "25 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-sobha-furniture-plans-major-expansio",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "growth",
-      "roomColor": "#4ADE80",
-      "roomLabel": "GROWTH SIGNALS",
-      "theme": "growth_expansion",
-      "tier": "WEEK AHEAD GROWTH",
-      "title": "UAE Sobha Furniture plans major expansion , targets retail , Saudi markets",
-      "sourceUrl": "https://www.zawya.com/en/projects/uaes-sobha-furniture-plans-major-expansion-targets-retail-saudi-markets-460703",
-      "filenameBase": "post-1-uae-sobha-furniture-plans-major-expansio",
-      "photoUrl": "/mics-social-media-engine/photos/growth/04_abu_dhabi_corniche.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "UAE Sobha Furniture plans major",
-      "headlineLine2": "expansion , targets retail , Saudi m…",
-      "hoursAgo": 20
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
