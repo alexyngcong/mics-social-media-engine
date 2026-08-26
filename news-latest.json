@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-26T16:46:59.282Z",
+  "generatedAt": "2026-08-26T22:43:39.105Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
-    "big4Rejected": 3,
-    "englishOnly": 146,
-    "withinRecency": 37,
-    "scored": 37,
-    "passed": 2
+    "afterDedup": 147,
+    "big4Rejected": 4,
+    "englishOnly": 143,
+    "withinRecency": 36,
+    "scored": 36,
+    "passed": 3
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,19 @@
         "domain": "emirates247.com",
         "date": "2026-08-26",
         "description": "Dubai real estate transactions hit AED2.1 billion in a day  Emirates 24|7",
-        "hoursAgo": 3,
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      },
+      {
+        "title": "Arabian Gulf Properties: 37.4% rise in licensed buildings reflects strong momentum in Dubai real estate market - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPeE1DWlZKQnNFZFlUNjlEbTNreE0yZ2U0WEJWQ1lldUstV0tIUnhJbFp4dWlvMWx2YUx3V2Fmb1Ftb0d6dlR3ZHVFLXVFSngxUkJYVTdOaFRaVkdOWXROQ25WdG5nRmxaYjBIWVJyUW5oc3BXdDMwaHl4Z0t4amZ6bkdldjBEVlVfclB5WlhvUjNJNG5ObGdoNWpvY1gwa1ZNYnNHSXk1MjVSVV9ueWozTUM0LUwwZThzWWFrSnh1Vy12NGZzQURvX0MwRER4cHloVkNpWnk1SHBMaW9xS3ByNHd2ay1aS1R6M2Y5SF83WE5LSjdBX0VlY2swb28zZw?oc=5",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-08-26",
+        "description": "Arabian Gulf Properties: 37.4% rise in licensed buildings reflects strong momentum in Dubai real estate market  Zawya",
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -39,13 +51,13 @@
     "capital": [],
     "risk": [
       {
-        "title": "Iran warns of military ship ban in Hormuz under potential deal with Oman and other Middle East news - AP News",
+        "title": "Iran warns of military ship ban in Hormuz under potential deal with Oman, and other Middle East news - AP News",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTUxNU1FHTmNSNmlkQ3pyV05DRnlpWGl0U2I2Nm10Z3BkWTNEWVh4LTZsamNUWHBvOThOa1h6ZkZxSEdyTy1jclJMQUE0RHVuZUU2ZWZWUmQ2TnRlQ0t2VmduUlNsemdVNHFVd1g0Zl90SHhiYzdaeFVBT18yZFJ0eF9MMXRjcWFVWXVINXhhOFI1c19LdExYSFpiLVg0bW9qUl9XZHEwQmRNaHRq?oc=5",
         "source": "AP News",
         "domain": "apnews.com",
         "date": "2026-08-26",
-        "description": "Iran warns of military ship ban in Hormuz under potential deal with Oman and other Middle East news  AP News",
-        "hoursAgo": 2,
+        "description": "Iran warns of military ship ban in Hormuz under potential deal with Oman, and other Middle East news  AP News",
+        "hoursAgo": 1,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -53,5 +65,5 @@
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
