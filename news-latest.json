@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-26T12:46:58.829Z",
+  "generatedAt": "2026-08-26T16:46:59.282Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,44 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
+    "afterDedup": 149,
     "big4Rejected": 3,
-    "englishOnly": 150,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 0
+    "englishOnly": 146,
+    "withinRecency": 37,
+    "scored": 37,
+    "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Dubai real estate transactions hit AED2.1 billion in a day - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUHpsWHJRcFlDUlliTmZkQWFwbEY4Z1RZZ0VoTTdwbjd6Tjd2NmlOQ0MwMFRaOTVWMjQ1UVpNc3VTSDhJRFZQM1h3blNOekRCSWZBdHF0WUR1bWZVd084WTk1T0w1YjlOZlpWZkFRclgzMlluNTlKd0xNSmRnVDV5aWtCZEloSkpfT0ZtUTM0SDVLZEJMSjZwNWJuUV9rOUpt0gG7AUFVX3lxTE8ycW1xdmtTZ2I1R2puNWlNVW9RRUZKYUdNYnIyQWNnUjZfaDAzRGdMN0RlZkpjdXg0dS1HNngtdENRazhEYTJBT2tHaDFKazhhWXJ1ZXB1RHY0dkdtQTB5d3dkeFZ0aGlkR1hTdWJKQXRjTkFvMDBYTDVOWmczTDJJMGRFaGNTR0ljcmNJdmhxbDhZTjlKeXVRcjhQQy0wVTNwYjlHdnI0aHFFV1lOSmxGMTh3QW1ZQVhqcEk?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-08-26",
+        "description": "Dubai real estate transactions hit AED2.1 billion in a day  Emirates 24|7",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Iran warns of military ship ban in Hormuz under potential deal with Oman and other Middle East news - AP News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTUxNU1FHTmNSNmlkQ3pyV05DRnlpWGl0U2I2Nm10Z3BkWTNEWVh4LTZsamNUWHBvOThOa1h6ZkZxSEdyTy1jclJMQUE0RHVuZUU2ZWZWUmQ2TnRlQ0t2VmduUlNsemdVNHFVd1g0Zl90SHhiYzdaeFVBT18yZFJ0eF9MMXRjcWFVWXVINXhhOFI1c19LdExYSFpiLVg0bW9qUl9XZHEwQmRNaHRq?oc=5",
+        "source": "AP News",
+        "domain": "apnews.com",
+        "date": "2026-08-26",
+        "description": "Iran warns of military ship ban in Hormuz under potential deal with Oman and other Middle East news  AP News",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 2
 }
