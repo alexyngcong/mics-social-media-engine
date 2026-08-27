@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-26T22:43:39.105Z",
+  "generatedAt": "2026-08-27T07:18:04.005Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 147,
-    "big4Rejected": 4,
-    "englishOnly": 143,
-    "withinRecency": 36,
-    "scored": 36,
+    "afterDedup": 149,
+    "big4Rejected": 5,
+    "englishOnly": 144,
+    "withinRecency": 38,
+    "scored": 38,
     "passed": 3
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "emirates247.com",
         "date": "2026-08-26",
         "description": "Dubai real estate transactions hit AED2.1 billion in a day  Emirates 24|7",
-        "hoursAgo": 9,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -42,7 +42,7 @@
         "domain": "zawya.com",
         "date": "2026-08-26",
         "description": "Arabian Gulf Properties: 37.4% rise in licensed buildings reflects strong momentum in Dubai real estate market  Zawya",
-        "hoursAgo": 14,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -57,7 +57,7 @@
         "domain": "apnews.com",
         "date": "2026-08-26",
         "description": "Iran warns of military ship ban in Hormuz under potential deal with Oman, and other Middle East news  AP News",
-        "hoursAgo": 1,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
