@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T04:03:04.231Z",
+  "generatedAt": "2026-08-28T19:53:00.832Z",
   "weekOf": "28 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "dubai-real-estate-transactions-hit-aed-1",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "room": "growth",
+      "roomColor": "#4ADE80",
+      "roomLabel": "GROWTH SIGNALS",
+      "theme": "real_estate",
+      "tier": "WEEK AHEAD GROWTH",
+      "title": "Dubai real estate transactions hit AED 12 billion in a week - Emirates 24|7",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZU5OMmY2V0V1MlAxOTFyTHBKNUQzcXFHNkFEaWk4S3pKN2VCb2l1M0xJVmRzZWFNZUNtZFJ6dGZyT1FXb2gyNGY2MTRZVVM3S2diR1VLWldxV3JvdzJJUHJ0ZzhiLWFFM0RmVkRkVlVYVzF3bVJCd081Umc1cnhUc2tnTHNxdHlpMS16ektUOXlQMy1tM2g5RHpWTmpWUDZpNGJNb0VoVUZZT3F2TWdKRWZiVWxMY3o5Q2gwVlBqbnRuS0RSc0s5aWFhUGw5X1RQRnBN0gHuAUFVX3lxTE4tTFVTSF9wUUlWTFRTams1OXdFVDhQVWxQekN2UFl0Nmtqd0Q5dFNUWEgtRm9HQmxRdkZ6ZjZhYjZCc2N1YUVnZS01b0xuYzZxbmQ4ZlBEQWNqclFIV2l3bXF2bHY0M1llaFFRMk11T2I4SnFBRUpmd0lWSGptSFZ1ZnFDWEdxREtoUDNsUXM2VTdpSV9XXzQwbWd3MVlISl94ZERqaUZXa2lvY09WanByQ3JqckJaMktlNGU5bHRmaEkwaHV1dnhhY2RYbVk3TzlibVJqZ0RLOXpVZmhMbnU0eElJT1lfdE1wUHZpWXc?oc=5",
+      "filenameBase": "post-1-dubai-real-estate-transactions-hit-aed-1",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "stat": "AED 12B",
+      "headlineLine1": "Dubai real estate transactions hit",
+      "headlineLine2": "AED 12 billion in a week - Emirates …",
+      "hoursAgo": 6
     },
     {
       "n": 2,
