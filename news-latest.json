@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-27T18:50:42.532Z",
+  "generatedAt": "2026-08-28T04:02:50.291Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 147,
+    "afterDedup": 151,
     "big4Rejected": 4,
-    "englishOnly": 143,
-    "withinRecency": 36,
-    "scored": 36,
-    "passed": 1
+    "englishOnly": 147,
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Iran warns of military ship ban in Hormuz under potential deal with Oman, and other Middle East news - AP News",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTUxNU1FHTmNSNmlkQ3pyV05DRnlpWGl0U2I2Nm10Z3BkWTNEWVh4LTZsamNUWHBvOThOa1h6ZkZxSEdyTy1jclJMQUE0RHVuZUU2ZWZWUmQ2TnRlQ0t2VmduUlNsemdVNHFVd1g0Zl90SHhiYzdaeFVBT18yZFJ0eF9MMXRjcWFVWXVINXhhOFI1c19LdExYSFpiLVg0bW9qUl9XZHEwQmRNaHRq?oc=5",
-        "source": "AP News",
-        "domain": "apnews.com",
-        "date": "2026-08-26",
-        "description": "Iran warns of military ship ban in Hormuz under potential deal with Oman, and other Middle East news  AP News",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
