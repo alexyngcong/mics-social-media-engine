@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-29T02:41:32.068Z",
+  "generatedAt": "2026-08-29T10:47:37.314Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 5,
+    "afterDedup": 151,
+    "big4Rejected": 4,
     "englishOnly": 147,
-    "withinRecency": 47,
-    "scored": 47,
+    "withinRecency": 46,
+    "scored": 46,
     "passed": 1
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "emirates247.com",
         "date": "2026-08-28",
         "description": "Dubai real estate transactions hit AED 12 billion in a week  Emirates 24|7",
-        "hoursAgo": 13,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
