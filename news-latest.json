@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-08-31T03:37:47.370Z",
+  "generatedAt": "2026-08-31T10:32:02.483Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,17 +15,30 @@
   "diagnostic": {
     "totalFetched": 160,
     "afterDedup": 151,
-    "big4Rejected": 5,
-    "englishOnly": 146,
-    "withinRecency": 30,
-    "scored": 30,
-    "passed": 0
+    "big4Rejected": 4,
+    "englishOnly": 147,
+    "withinRecency": 31,
+    "scored": 31,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "DMCC launches lab-grown diamond sector as UAE trade surges 91.5% to 76.9 million carats - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdVdRT3pJZTJsQldTQWxPdnJRZEh3QkVqLVJUdTI4UXZJdE9oNDZYQlQ4NHJmUjFwTjFVNlZzWGJ1NmNCaE4wMVlFYTZWS3BWdGNXdTJ0S0V5V1k5b1BXblo2Nk1laTdaWEcwS0pQWHo4RWZtRzBrR1R6cTVCTVZzeFN2a3RyUElrTTVhOVNHdzR0SnlRUy01cUx0cHpCRkM3MVhxYjQ2ZUVTU3lucG5hN0EyOW1zWk5ndFJYYy1qcC1NNEdVa3NZ?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-08-31",
+        "description": "DMCC launches lab-grown diamond sector as UAE trade surges 91.5% to 76.9 million carats  Gulf Business",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
