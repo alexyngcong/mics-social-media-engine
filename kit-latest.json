@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T10:32:17.078Z",
+  "generatedAt": "2026-08-31T18:46:31.448Z",
   "weekOf": "31 Aug 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "dmcc-launches-lab-grown-diamond-sector-a",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "DMCC launches lab-grown diamond sector as UAE trade surges 91.5% to 76.9 million carats - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdVdRT3pJZTJsQldTQWxPdnJRZEh3QkVqLVJUdTI4UXZJdE9oNDZYQlQ4NHJmUjFwTjFVNlZzWGJ1NmNCaE4wMVlFYTZWS3BWdGNXdTJ0S0V5V1k5b1BXblo2Nk1laTdaWEcwS0pQWHo4RWZtRzBrR1R6cTVCTVZzeFN2a3RyUElrTTVhOVNHdzR0SnlRUy01cUx0cHpCRkM3MVhxYjQ2ZUVTU3lucG5hN0EyOW1zWk5ndFJYYy1qcC1NNEdVa3NZ?oc=5",
-      "filenameBase": "post-1-dmcc-launches-lab-grown-diamond-sector-a",
-      "photoUrl": "/mics-social-media-engine/photos/world/07_international_trade.jpg",
-      "stat": "91.5%",
-      "headlineLine1": "DMCC launches lab-grown diamond sect…",
-      "headlineLine2": "UAE trade surges 91.5% to 76.9 milli…",
-      "hoursAgo": 5
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
