@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-02T15:58:34.047Z",
+  "generatedAt": "2026-09-02T19:17:51.425Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
-    "big4Rejected": 6,
-    "englishOnly": 148,
-    "withinRecency": 37,
-    "scored": 37,
-    "passed": 2
+    "afterDedup": 156,
+    "big4Rejected": 2,
+    "englishOnly": 154,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -32,25 +32,37 @@
         "domain": "gulfnews.com",
         "date": "2026-09-02",
         "description": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30  Gulf News",
-        "hoursAgo": 6,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
-        "title": "UAE issues major tax warning as September deadline looms - Arabian Business",
+        "title": "UAE issues major tax warning as September deadline looms - arabianbusiness.com",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Xa1JTMXM2Y21ORnJZeXJCb2c4Y2RRVDFKR3hqQVJSN25pYmhrVmxvQWFZZHdHQlVZTUcxODdodU1YTHNZWWUwWldRZHU3em16bDJUbWM5SkhDRUtod3VxNWNQNjRNSGp1WjBncVpRS1p0T1Iw?oc=5",
-        "source": "Arabian Business",
+        "source": "arabianbusiness.com",
         "domain": "arabianbusiness.com",
         "date": "2026-09-02",
-        "description": "UAE issues major tax warning as September deadline looms  Arabian Business",
-        "hoursAgo": 6,
+        "description": "UAE issues major tax warning as September deadline looms  arabianbusiness.com",
+        "hoursAgo": 10,
         "score": 7,
         "topic": "Emerging Risks",
+        "origin": "google-news"
+      },
+      {
+        "title": "FTA urges UAE corporate taxpayers to file returns, settle dues before deadline - Khaleej Times",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaHpiMXY3dktJbXdHdGd0SGg4Xy11R2N2a0U1VEh4aTF6b3lITEtmeG9WVjB2N1BfMkpMRUlkVVhNYzAzWVk3elFseEdYblliSlp4eENPblpCa2RRWDJ5MGdLNlRqNjhaYkowU0pwZVFwZVo4Wkh2aElQc0ZfYXBkNkt5LUgxYmg1ei1MNzk3UFlHZGl5Z3o5RFhDb0FmMXd0bHI0NjRRS1BIb1pFdm5IMdIBuAFBVV95cUxPTW5xMHBWaE1qSGlUTVZ5RjlvNmFEcF81X25jUld4eWQyQjFWNXl2TUczLXpGRkg4QjY4VTItY181OXRiSDByM3RoN1V3RnFqdk1sT2Q2RHFWWXFmRWQtN2RtNW1wc1N3dWs5UUh6bjFJSUVCdlVxYjdITHYweTR1bDgwendsUzVaaDA5b1dOcmdjNVRoRUU2YzlKbkZRWEpsS0JnNDdDY1l0UlpLWXJVSlV2aGNUU2tf?oc=5",
+        "source": "Khaleej Times",
+        "domain": "khaleejtimes.com",
+        "date": "2026-09-02",
+        "description": "FTA urges UAE corporate taxpayers to file returns, settle dues before deadline  Khaleej Times",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
