@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-03T19:06:20.463Z",
+  "generatedAt": "2026-09-03T22:16:58.013Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 5,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
+    "totalFetched": 165,
+    "afterDedup": 158,
     "big4Rejected": 4,
-    "englishOnly": 149,
-    "withinRecency": 47,
-    "scored": 47,
+    "englishOnly": 153,
+    "withinRecency": 60,
+    "scored": 60,
     "passed": 3
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-09-02",
         "description": "Tax deadline countdown: FTA warns UAE companies to file by September 30  Gulf Business",
-        "hoursAgo": 28,
+        "hoursAgo": 31,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-02",
         "description": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30  Gulf News",
-        "hoursAgo": 33,
+        "hoursAgo": 36,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-09-03",
         "description": "Ryan Reynolds and YouTube co-founder among first speakers announced for LiveX Abu Dhabi  thenationalnews.com",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
