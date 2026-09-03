@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-03T02:56:15.294Z",
+  "generatedAt": "2026-09-03T08:33:20.610Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 157,
-    "big4Rejected": 3,
-    "englishOnly": 154,
-    "withinRecency": 43,
-    "scored": 43,
+    "afterDedup": 154,
+    "big4Rejected": 2,
+    "englishOnly": 152,
+    "withinRecency": 47,
+    "scored": 47,
     "passed": 3
   },
   "rooms": {
@@ -26,13 +26,13 @@
     "capital": [],
     "risk": [
       {
-        "title": "Tax deadline countdown: FTA warns UAE companies to file by September 30 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcURmalVXUl9Ia1dfekV6RTlZd21wTDhEYmxYTU1mZUhKVm1yWTJKM2JDRVNzY3h4TC1rSDBqcWN3Tzk5aWNYMmplUEswLURXWTNnTXlkRTlycTJCWmNwTjFaZjRKYVRSTTJmc1RlZjJidE85TXVsbVBtMzlOVExXNE1EUW1MWXhvb244M1c5UURHNTVHRU9WVEZpd1pYRzVsRnZqcTNDejVjSUo2YTJydElR?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
+        "title": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNmR1clJjTWpiczBrLVhEdFFfQmkyc0Ixb2doMHk2N1hqX2YzUWN4WmZma2owbEg0bUE3S3BhVERuZWJzWnJWWS1PM3RiNWdCOEVQSWlMa0xYUXVDYUp2TWh1aXhrNk5HOTVXUHhIWXh1QXZ5RDZMMjBTT1BMbXJXbXdnUzczN21lU01VWTZ6NlBXYmx3Z1NLU0JsMHpOY25GTHJaYW1CM1RxVnJFbXVqN21aLXBTTGFlUElTdVRhMm5QU05R0gHXAUFVX3lxTE5NZC1iUkplSTRleTV6R200TU9yd3JWaloyaEVRNUt4Nl9GNnRQVUs4NndzbUpvMmpTVkpiNmUyR1AwMzBkUVFMRUkwbjZiNUJBcmFGRXhqbVdiUGtBaTdPMk01enNlN0s2SFVuMlRpS3dlLWw0b0pmZEJVNjBFSk1NUTlFcTZEdi1zV3E4S0lBY0gyeWxUU0pCX0NDUy1vU1JRci1JNzM0NGd2T0UyU3QzNTBmT01QU2dnNDF0ZkQzZWo1bERycWpaeUtjU1NuN1JGanJkdE9z?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
         "date": "2026-09-02",
-        "description": "Tax deadline countdown: FTA warns UAE companies to file by September 30  Gulf Business",
-        "hoursAgo": 12,
+        "description": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30  Gulf News",
+        "hoursAgo": 23,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -44,19 +44,19 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-02",
         "description": "UAE issues major tax warning as September deadline looms  Arabian Business",
-        "hoursAgo": 17,
+        "hoursAgo": 23,
         "score": 7,
         "topic": "Emerging Risks",
         "origin": "google-news"
       },
       {
-        "title": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30 - gulfnews.com",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNmR1clJjTWpiczBrLVhEdFFfQmkyc0Ixb2doMHk2N1hqX2YzUWN4WmZma2owbEg0bUE3S3BhVERuZWJzWnJWWS1PM3RiNWdCOEVQSWlMa0xYUXVDYUp2TWh1aXhrNk5HOTVXUHhIWXh1QXZ5RDZMMjBTT1BMbXJXbXdnUzczN21lU01VWTZ6NlBXYmx3Z1NLU0JsMHpOY25GTHJaYW1CM1RxVnJFbXVqN21aLXBTTGFlUElTdVRhMm5QU05R0gHXAUFVX3lxTE5NZC1iUkplSTRleTV6R200TU9yd3JWaloyaEVRNUt4Nl9GNnRQVUs4NndzbUpvMmpTVkpiNmUyR1AwMzBkUVFMRUkwbjZiNUJBcmFGRXhqbVdiUGtBaTdPMk01enNlN0s2SFVuMlRpS3dlLWw0b0pmZEJVNjBFSk1NUTlFcTZEdi1zV3E4S0lBY0gyeWxUU0pCX0NDUy1vU1JRci1JNzM0NGd2T0UyU3QzNTBmT01QU2dnNDF0ZkQzZWo1bERycWpaeUtjU1NuN1JGanJkdE9z?oc=5",
-        "source": "gulfnews.com",
-        "domain": "gulfnews.com",
+        "title": "Tax deadline countdown: FTA warns UAE companies to file by September 30 - gulfbusiness.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcURmalVXUl9Ia1dfekV6RTlZd21wTDhEYmxYTU1mZUhKVm1yWTJKM2JDRVNzY3h4TC1rSDBqcWN3Tzk5aWNYMmplUEswLURXWTNnTXlkRTlycTJCWmNwTjFaZjRKYVRSTTJmc1RlZjJidE85TXVsbVBtMzlOVExXNE1EUW1MWXhvb244M1c5UURHNTVHRU9WVEZpd1pYRzVsRnZqcTNDejVjSUo2YTJydElR?oc=5",
+        "source": "gulfbusiness.com",
+        "domain": "gulfbusiness.com",
         "date": "2026-09-02",
-        "description": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30  gulfnews.com",
-        "hoursAgo": 17,
+        "description": "Tax deadline countdown: FTA warns UAE companies to file by September 30  gulfbusiness.com",
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
