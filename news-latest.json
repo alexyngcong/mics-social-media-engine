@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-03T22:16:58.013Z",
+  "generatedAt": "2026-09-04T02:55:43.954Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 5,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 165,
-    "afterDedup": 158,
-    "big4Rejected": 4,
-    "englishOnly": 153,
-    "withinRecency": 60,
-    "scored": 60,
-    "passed": 3
+    "totalFetched": 260,
+    "afterDedup": 188,
+    "big4Rejected": 2,
+    "englishOnly": 173,
+    "withinRecency": 75,
+    "scored": 75,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-09-02",
         "description": "Tax deadline countdown: FTA warns UAE companies to file by September 30  Gulf Business",
-        "hoursAgo": 31,
+        "hoursAgo": 36,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-02",
         "description": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30  Gulf News",
-        "hoursAgo": 36,
+        "hoursAgo": 41,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -52,18 +52,31 @@
     ],
     "world": [
       {
+        "title": "Indian Inc rushes to align with UAE 15 % minimum tax as November deadline looms",
+        "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indian-inc-rushes-to-align-with-uaes-15-minimum-tax-as-november-deadline-looms/articleshow/133745550.cms",
+        "source": "Economictimes",
+        "domain": "economictimes.indiatimes.com",
+        "date": "2026-09-04",
+        "description": "Indian Inc rushes to align with UAE 15 % minimum tax as November deadline looms",
+        "imageUrl": "https://img.etimg.com/thumb/msid-133745592,width-1200,height-630,imgsize-187992,overlay-economictimes/articleshow.jpg",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
+      },
+      {
         "title": "Ryan Reynolds and YouTube co-founder among first speakers announced for LiveX Abu Dhabi - thenationalnews.com",
         "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaXhwM1NDM3BqbVpCNWR6WjljRXRtMHliMlhLVFV6VDlJNW1DdzR2OXFrWkVvSUp1V0N3ZV9oc0NZVE9IR0U4S1NHMFFteUNKOFZQTTNwakdrWWQ4WktrN1k3NU5OclVYV1RTMmp4WThHZUJJeUloLUdKTDZyMFNrZ0FpNW5uR3oxYzJGRE5ZcjdaMUpRb0RhOEJSQ0Z1RndDbWU4V0hhaUlpcGVnYW94Z1NKdWptSTVKT285Q19FejhjRXlWaHdDcU4xdFRIOUFLaHFKY2psQ2hVUVhQ?oc=5",
         "source": "thenationalnews.com",
         "domain": "thenationalnews.com",
         "date": "2026-09-03",
         "description": "Ryan Reynolds and YouTube co-founder among first speakers announced for LiveX Abu Dhabi  thenationalnews.com",
-        "hoursAgo": 13,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 4
 }
