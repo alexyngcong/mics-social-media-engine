@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-05T02:57:37.728Z",
+  "generatedAt": "2026-09-05T08:03:28.188Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,15 +14,28 @@
   },
   "diagnostic": {
     "totalFetched": 260,
-    "afterDedup": 196,
+    "afterDedup": 199,
     "big4Rejected": 2,
-    "englishOnly": 174,
-    "withinRecency": 69,
-    "scored": 69,
+    "englishOnly": 173,
+    "withinRecency": 66,
+    "scored": 66,
     "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Aldar and ADCB complete Abu Dhabi first off - plan mortgage under new ADREC framework",
+        "url": "https://www.zawya.com/en/press-release/aldar-and-adcb-complete-abu-dhabis-first-off-plan-mortgage-under-new-adrec-framework-478144",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-09-04",
+        "description": "Aldar and ADCB complete Abu Dhabi first off - plan mortgage under new ADREC framework",
+        "hoursAgo": 10,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "gdelt"
+      }
+    ],
     "capital": [],
     "risk": [
       {
@@ -32,26 +45,13 @@
         "domain": "gulfnews.com",
         "date": "2026-09-02",
         "description": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30  Gulf News",
-        "hoursAgo": 65,
+        "hoursAgo": 70,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "UAE’s 15% Minimum Tax Deadline Puts India Inc’s Gulf Operations on the Clock - NiftyTrader",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOeEhRaEhaSUEyeVkyclhveDVsWFlKUVJDQmxwLTlVRWljUHlhZ0JtOHpEQWEtaC1lMjlqdlZ6S3hEb3haZEozckQ0Nk54R1Foc1RqTktfVXZDS1A4Q3RfODhmYWFUWXdOMnVrZTVDb1VFWjlXVTB4UFRHZWVvd3M?oc=5",
-        "source": "NiftyTrader",
-        "domain": "niftytrader.in",
-        "date": "2026-09-04",
-        "description": "UAE’s 15% Minimum Tax Deadline Puts India Inc’s Gulf Operations on the Clock  NiftyTrader",
-        "hoursAgo": 18,
-        "score": 7,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
   "totalCount": 2
 }
