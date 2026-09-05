@@ -1,42 +1,30 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-04T22:06:43.402Z",
+  "generatedAt": "2026-09-05T02:57:37.728Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 3,
-    "englishOnly": 149,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 3
+    "totalFetched": 260,
+    "afterDedup": 196,
+    "big4Rejected": 2,
+    "englishOnly": 174,
+    "withinRecency": 69,
+    "scored": 69,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
-      {
-        "title": "Tax deadline countdown: FTA warns UAE companies to file by September 30 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVUVoTkN2RktXOVpndE1CcDNMQ0h1UFM0Z0tZM3pJRDM4SXJ3RHpnRERwcUY2ZDladFAwMmhsX1FJUkVhc0R6bXBqWFFrbXpzY0ZqSWlpRS1hZTdjYWdoN1BrWlI5ZE9VcnNCWjE4NkdOUGtSTUZ2YTVmNUQyendSYVJXODduSDRpdzlucmlNTG5DWlFkNzQ4S1htT1lWdmxpeTI1Y1IzbnRDSWVjSzBEVQ?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-09-02",
-        "description": "Tax deadline countdown: FTA warns UAE companies to file by September 30  Gulf Business",
-        "hoursAgo": 55,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
       {
         "title": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30 - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNmR1clJjTWpiczBrLVhEdFFfQmkyc0Ixb2doMHk2N1hqX2YzUWN4WmZma2owbEg0bUE3S3BhVERuZWJzWnJWWS1PM3RiNWdCOEVQSWlMa0xYUXVDYUp2TWh1aXhrNk5HOTVXUHhIWXh1QXZ5RDZMMjBTT1BMbXJXbXdnUzczN21lU01VWTZ6NlBXYmx3Z1NLU0JsMHpOY25GTHJaYW1CM1RxVnJFbXVqN21aLXBTTGFlUElTdVRhMm5QU05R0gHXAUFVX3lxTE5NZC1iUkplSTRleTV6R200TU9yd3JWaloyaEVRNUt4Nl9GNnRQVUs4NndzbUpvMmpTVkpiNmUyR1AwMzBkUVFMRUkwbjZiNUJBcmFGRXhqbVdiUGtBaTdPMk01enNlN0s2SFVuMlRpS3dlLWw0b0pmZEJVNjBFSk1NUTlFcTZEdi1zV3E4S0lBY0gyeWxUU0pCX0NDUy1vU1JRci1JNzM0NGd2T0UyU3QzNTBmT01QU2dnNDF0ZkQzZWo1bERycWpaeUtjU1NuN1JGanJkdE9z?oc=5",
@@ -44,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-02",
         "description": "UAE corporate tax deadline 2026 nears, FTA urges filing by September 30  Gulf News",
-        "hoursAgo": 60,
+        "hoursAgo": 65,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -52,18 +40,18 @@
     ],
     "world": [
       {
-        "title": "Indian Inc rushes to align with UAE’s 15% minimum tax as November deadline looms - The Economic Times",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPRUtGWk8tUWtQUmgyeVZNVkM3R0hJNFRFbE90ZjJTNEFzRHhZT3FzUS1xQU9va2VTeGo4NktibUdGUlByX3ZDTUNLUm5tbkRNcDlMRFdzazR1aXlMRzJHQ2c4d3VOSW1Eb0c1a0U2bWY1djA5bEN2TnlNWGJSa1hQZ2dTd3piYXM2NGNvZUp0bTVHb3lWWWw4SjAzSklFc0RJZkFUU1JsNVJJZ2E4SHpHLUxTV0l3OG9jSDdJaVp0X29pV3NEeVl5bTR5Tk94YWcwa2N4OWJfSFNocjRvYld2SWEtRlNtRGtjS19ORzFYTTjSAfYBQVVfeXFMTXlWY0o2ZkNUaGcySmlWajRhei1sUlJlNmlLRl9uOHRKWWdIc1k4RjQzeUJDM3c0SGQ4Yjh2OVZZV09GbThpRlJLZGtNT3FBWXJYaXd3UXJIVFlzOEpSdjVjbXZvZGpPbXRFVnhmb2VHOFJVQ3h3dkNkazhHZDItZF9vMTAzU0JmVXdidDdCRGtmeVJpcDNNelFTTU9TLUpxZllkRE5hMTVXZ0RHajBaV2ZVeTJLajBoSlRXdU1LRFpESEUzeFRkLXZleFpxVXNFNzk4NXBJanRJOVJxUmR6ODZqYnJ4VnlSUGxLMUpKbkIyUjdJUkVn?oc=5",
-        "source": "The Economic Times",
-        "domain": "m.economictimes.com",
+        "title": "UAE’s 15% Minimum Tax Deadline Puts India Inc’s Gulf Operations on the Clock - NiftyTrader",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOeEhRaEhaSUEyeVkyclhveDVsWFlKUVJDQmxwLTlVRWljUHlhZ0JtOHpEQWEtaC1lMjlqdlZ6S3hEb3haZEozckQ0Nk54R1Foc1RqTktfVXZDS1A4Q3RfODhmYWFUWXdOMnVrZTVDb1VFWjlXVTB4UFRHZWVvd3M?oc=5",
+        "source": "NiftyTrader",
+        "domain": "niftytrader.in",
         "date": "2026-09-04",
-        "description": "Indian Inc rushes to align with UAE’s 15% minimum tax as November deadline looms  The Economic Times",
-        "hoursAgo": 22,
-        "score": 6,
+        "description": "UAE’s 15% Minimum Tax Deadline Puts India Inc’s Gulf Operations on the Clock  NiftyTrader",
+        "hoursAgo": 18,
+        "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 2
 }
