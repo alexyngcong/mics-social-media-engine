@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-07T17:15:22.521Z",
+  "generatedAt": "2026-09-07T22:30:55.571Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 3,
+    "afterDedup": 154,
+    "big4Rejected": 4,
     "englishOnly": 150,
-    "withinRecency": 32,
-    "scored": 32,
-    "passed": 1
+    "withinRecency": 35,
+    "scored": 35,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Dubai home prices fall year-on-year for first time since 2021 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQT3VkTVZSZGNpWkpDeklJaUMyQzRuVV9PR3dqVXRYMm5LdktjOXZ3aU0xa045OUVaMENVNmtlZEhhY0ZTMGF4dWZ3eHZzV0RRUkVFcnY4VktrZUlveUM2cXR5b2VYWlRYRTJJOURWYVhacFBRbkxSdEhnS2lkOGxSMEZMdDdBdThXU0luMnJuVG9EMFplakwxbThzYkhxMzBRTWNQVzIwaDdEM3c?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-09-07",
-        "description": "Dubai home prices fall year-on-year for first time since 2021  Gulf Business",
-        "hoursAgo": 11,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
