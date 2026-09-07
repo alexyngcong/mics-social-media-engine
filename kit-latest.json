@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-07T17:15:33.510Z",
+  "generatedAt": "2026-09-07T22:31:07.554Z",
   "weekOf": "7 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "dubai-home-prices-fall-year-on-year-for-",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Dubai home prices fall year-on-year for first time since 2021 - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQT3VkTVZSZGNpWkpDeklJaUMyQzRuVV9PR3dqVXRYMm5LdktjOXZ3aU0xa045OUVaMENVNmtlZEhhY0ZTMGF4dWZ3eHZzV0RRUkVFcnY4VktrZUlveUM2cXR5b2VYWlRYRTJJOURWYVhacFBRbkxSdEhnS2lkOGxSMEZMdDdBdThXU0luMnJuVG9EMFplakwxbThzYkhxMzBRTWNQVzIwaDdEM3c?oc=5",
-      "filenameBase": "post-1-dubai-home-prices-fall-year-on-year-for-",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Dubai home prices fall year-on-year",
-      "headlineLine2": "for first time since 2021",
-      "hoursAgo": 11
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
