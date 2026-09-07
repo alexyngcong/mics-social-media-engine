@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-07T08:55:45.359Z",
+  "generatedAt": "2026-09-07T17:15:22.521Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,44 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
-    "big4Rejected": 2,
-    "englishOnly": 147,
-    "withinRecency": 33,
-    "scored": 33,
-    "passed": 2
+    "afterDedup": 153,
+    "big4Rejected": 3,
+    "englishOnly": 150,
+    "withinRecency": 32,
+    "scored": 32,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Daribatech Announces Strategic Partnership with Gateley Middle East to Support UAE E-invoicing Compliance - PR Newswire UK",
-        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNNjdMQk5fSHp0bGFDUl9ObTNTSG1BaFpkRG5QejJFMHpkVV9NdjlVTWtUOEVNZnBqWjdDemdEdFEwaGNtdHZtTWh2MUVPU2gwZEJwOTVuV2k2MlhGcDh0MXRmbTk4Vm5vblpMZGxHYW1Pb0VXVk1jbE5HMkQyZWt5MFNPUXJMdDVpOXJzUGZ3ZDNtWXZKSjNKUXNmcFZJQ1ZoNFduU0ZlZXVzZHh6OTBMQU55MG9PX3JVRmtRV3JaYjBIcnd0MWxYd2Nwc1oxcE42NGdVenZuSnB5Z1RuRm9tVFUtelZTQXRYQkxJOHJ6YU1SbDhidlE?oc=5",
-        "source": "PR Newswire UK",
-        "domain": "prnewswire.co.uk",
-        "date": "2026-09-07",
-        "description": "Daribatech Announces Strategic Partnership with Gateley Middle East to Support UAE E-invoicing Compliance  PR Newswire UK",
-        "hoursAgo": 3,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": [
       {
         "title": "Dubai home prices fall year-on-year for first time since 2021 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSFl6V0tIajRBdW0yV3NldENfanBQZGwwR3ltbEVVU3lmb2p6bEl6bThHQnFFR3FubUNNajNwbHZIdEVzN1d2dE9lTXdLT1FPS3NfR3o4by1RU3luVEptdGlYWU54MXNqSUQ0Uk5RQlhnMXhFNFNSTjB5eTBPYXE1RmY5NXpTdzRyTi1IQjlhV3lHcjAtSFlPOUlWVDZUSzNfUXh5LWd2Q0NrZw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQT3VkTVZSZGNpWkpDeklJaUMyQzRuVV9PR3dqVXRYMm5LdktjOXZ3aU0xa045OUVaMENVNmtlZEhhY0ZTMGF4dWZ3eHZzV0RRUkVFcnY4VktrZUlveUM2cXR5b2VYWlRYRTJJOURWYVhacFBRbkxSdEhnS2lkOGxSMEZMdDdBdThXU0luMnJuVG9EMFplakwxbThzYkhxMzBRTWNQVzIwaDdEM3c?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-09-07",
         "description": "Dubai home prices fall year-on-year for first time since 2021  Gulf Business",
-        "hoursAgo": 3,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
