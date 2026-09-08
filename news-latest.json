@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-08T03:03:36.643Z",
+  "generatedAt": "2026-09-08T08:37:06.705Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 156,
-    "big4Rejected": 4,
-    "englishOnly": 152,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 1
+    "totalFetched": 260,
+    "afterDedup": 196,
+    "big4Rejected": 3,
+    "englishOnly": 173,
+    "withinRecency": 59,
+    "scored": 59,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Dubai home prices fall year-on-year for first time since 2021 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSFl6V0tIajRBdW0yV3NldENfanBQZGwwR3ltbEVVU3lmb2p6bEl6bThHQnFFR3FubUNNajNwbHZIdEVzN1d2dE9lTXdLT1FPS3NfR3o4by1RU3luVEptdGlYWU54MXNqSUQ0Uk5RQlhnMXhFNFNSTjB5eTBPYXE1RmY5NXpTdzRyTi1IQjlhV3lHcjAtSFlPOUlWVDZUSzNfUXh5LWd2Q0NrZw?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-09-07",
-        "description": "Dubai home prices fall year-on-year for first time since 2021  Gulf Business",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
