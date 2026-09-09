@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-09T19:05:23.230Z",
+  "generatedAt": "2026-09-09T22:16:24.873Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,44 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 156,
+    "afterDedup": 154,
     "big4Rejected": 3,
-    "englishOnly": 153,
+    "englishOnly": 151,
     "withinRecency": 43,
     "scored": 43,
-    "passed": 0
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
-    "world": []
+    "risk": [
+      {
+        "title": "Iran and US hit tankers in biggest wave of attacks on shipping since war began - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ2FPaUNRYjRBWnd2cmxkT044cmZYbENZYnhTWXAzUGxadUpEZ3N3aHpVSEtodVVsWUt6djBaeFhjUm5JOGVrNEE1SXlaUkxoSzBVaUpaWjZTdkdXZzItRTFOaGtMZWVtbEhpdUFSUWgwczNXa2VqZ3ktdzVhajBmYllFNVJIaUxnMDBLazE4S0VSTzZSbVFxMDZSUVY4aHIxVmhkcUpZeF85TzZYV2tqWkE5bVNWM29qWlE?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
+        "date": "2026-09-09",
+        "description": "Iran and US hit tankers in biggest wave of attacks on shipping since war began  Reuters",
+        "hoursAgo": 18,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
+      {
+        "title": "IHC to acquire 80% stake in UAE space company Marlan Space - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONUpReTNIRW4wQXJkMTBPSUhjZWNQR1RTZFVoeW9IZVRSc0tGYjZCTG1Mdl9SNGk5cXc4aGhDbHpJQVNzakhWU2tQV05yWml4RmRKY2pZYTdQa3c1UTdvOGZGaWo5X1Npb3lJb3VfZU9hQXpJQ2dDYkRkaHN3TnpNNS1RZzh0TTFUUVF1THlKQkRwelN6ZXFWSTZidFM?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-09-09",
+        "description": "IHC to acquire 80% stake in UAE space company Marlan Space  Gulf Business",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 2
 }
