@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-09T08:38:03.957Z",
+  "generatedAt": "2026-09-09T15:56:07.666Z",
   "weekOf": "9 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "odisha-pitches-uae-investors-on-500-bill",
+      "slug": "iran-and-us-hit-tankers-in-biggest-wave-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
       "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Odisha pitches UAE investors on $500 billion economic ambition - Gulf News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNM2dxbEcxb2NxWW41Q1hHdkhqMFlsSlQ1SHYtc0tYamNBS3A3enhxLXdnYTktWXNURFJpa0lKVEp5c1JUYkpDYmJLbXpsakRVczNYQW5DVE9BN1djNFdGR1dNYkZrS3dieTdoV2FrWFhCM20zOGhzcklCeFFkMlZ4bnRyN3VNSVRMU2gxR3EzeXQyOERCdElma1ZWamNSMGFKZGV0ZjM5aW9RdWVzOER5eUt5SkczcDJSYWVhYkFB?oc=5",
-      "filenameBase": "post-1-odisha-pitches-uae-investors-on-500-bill",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
-      "stat": "$500B",
-      "headlineLine1": "Odisha pitches UAE investors on",
-      "headlineLine2": "$500 billion economic ambition",
-      "hoursAgo": 21
+      "tier": "WEEK AHEAD",
+      "title": "Iran and US hit tankers in biggest wave of attacks on shipping since war began - Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ2FPaUNRYjRBWnd2cmxkT044cmZYbENZYnhTWXAzUGxadUpEZ3N3aHpVSEtodVVsWUt6djBaeFhjUm5JOGVrNEE1SXlaUkxoSzBVaUpaWjZTdkdXZzItRTFOaGtMZWVtbEhpdUFSUWgwczNXa2VqZ3ktdzVhajBmYllFNVJIaUxnMDBLazE4S0VSTzZSbVFxMDZSUVY4aHIxVmhkcUpZeF85TzZYV2tqWkE5bVNWM29qWlE?oc=5",
+      "filenameBase": "post-1-iran-and-us-hit-tankers-in-biggest-wave-",
+      "photoUrl": "/mics-social-media-engine/photos/world/02_shipping_port.jpg",
+      "stat": "",
+      "headlineLine1": "Iran and US hit tankers in biggest w…",
+      "headlineLine2": "of attacks on shipping since war began",
+      "hoursAgo": 3
     },
     {
       "n": 2,
