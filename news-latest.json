@@ -1,44 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-09T08:37:49.198Z",
+  "generatedAt": "2026-09-09T15:55:52.242Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 140,
+    "gdelt": 7,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 150,
-    "afterDedup": 143,
-    "big4Rejected": 4,
-    "englishOnly": 139,
-    "withinRecency": 34,
-    "scored": 34,
+    "totalFetched": 167,
+    "afterDedup": 158,
+    "big4Rejected": 3,
+    "englishOnly": 155,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
-    "world": [
+    "risk": [
       {
-        "title": "Odisha pitches UAE investors on $500 billion economic ambition - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNM2dxbEcxb2NxWW41Q1hHdkhqMFlsSlQ1SHYtc0tYamNBS3A3enhxLXdnYTktWXNURFJpa0lKVEp5c1JUYkpDYmJLbXpsakRVczNYQW5DVE9BN1djNFdGR1dNYkZrS3dieTdoV2FrWFhCM20zOGhzcklCeFFkMlZ4bnRyN3VNSVRMU2gxR3EzeXQyOERCdElma1ZWamNSMGFKZGV0ZjM5aW9RdWVzOER5eUt5SkczcDJSYWVhYkFB?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-09-08",
-        "description": "Odisha pitches UAE investors on $500 billion economic ambition  Gulf News",
-        "hoursAgo": 21,
+        "title": "Iran and US hit tankers in biggest wave of attacks on shipping since war began - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ2FPaUNRYjRBWnd2cmxkT044cmZYbENZYnhTWXAzUGxadUpEZ3N3aHpVSEtodVVsWUt6djBaeFhjUm5JOGVrNEE1SXlaUkxoSzBVaUpaWjZTdkdXZzItRTFOaGtMZWVtbEhpdUFSUWgwczNXa2VqZ3ktdzVhajBmYllFNVJIaUxnMDBLazE4S0VSTzZSbVFxMDZSUVY4aHIxVmhkcUpZeF85TzZYV2tqWkE5bVNWM29qWlE?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
+        "date": "2026-09-09",
+        "description": "Iran and US hit tankers in biggest wave of attacks on shipping since war began  Reuters",
+        "hoursAgo": 3,
         "score": 6,
-        "topic": "Global Economic Signals",
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
-    ]
+    ],
+    "world": []
   },
   "totalCount": 1
 }
