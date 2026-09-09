@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-09T03:04:52.578Z",
+  "generatedAt": "2026-09-09T08:37:49.198Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 154,
+    "totalFetched": 150,
+    "afterDedup": 143,
     "big4Rejected": 4,
-    "englishOnly": 150,
-    "withinRecency": 40,
-    "scored": 40,
-    "passed": 0
+    "englishOnly": 139,
+    "withinRecency": 34,
+    "scored": 34,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Odisha pitches UAE investors on $500 billion economic ambition - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNM2dxbEcxb2NxWW41Q1hHdkhqMFlsSlQ1SHYtc0tYamNBS3A3enhxLXdnYTktWXNURFJpa0lKVEp5c1JUYkpDYmJLbXpsakRVczNYQW5DVE9BN1djNFdGR1dNYkZrS3dieTdoV2FrWFhCM20zOGhzcklCeFFkMlZ4bnRyN3VNSVRMU2gxR3EzeXQyOERCdElma1ZWamNSMGFKZGV0ZjM5aW9RdWVzOER5eUt5SkczcDJSYWVhYkFB?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-09-08",
+        "description": "Odisha pitches UAE investors on $500 billion economic ambition  Gulf News",
+        "hoursAgo": 21,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
