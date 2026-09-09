@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-09T03:05:06.860Z",
+  "generatedAt": "2026-09-09T08:38:03.957Z",
   "weekOf": "9 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "odisha-pitches-uae-investors-on-500-bill",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "title": "Odisha pitches UAE investors on $500 billion economic ambition - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNM2dxbEcxb2NxWW41Q1hHdkhqMFlsSlQ1SHYtc0tYamNBS3A3enhxLXdnYTktWXNURFJpa0lKVEp5c1JUYkpDYmJLbXpsakRVczNYQW5DVE9BN1djNFdGR1dNYkZrS3dieTdoV2FrWFhCM20zOGhzcklCeFFkMlZ4bnRyN3VNSVRMU2gxR3EzeXQyOERCdElma1ZWamNSMGFKZGV0ZjM5aW9RdWVzOER5eUt5SkczcDJSYWVhYkFB?oc=5",
+      "filenameBase": "post-1-odisha-pitches-uae-investors-on-500-bill",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "stat": "$500B",
+      "headlineLine1": "Odisha pitches UAE investors on",
+      "headlineLine2": "$500 billion economic ambition",
+      "hoursAgo": 21
     },
     {
       "n": 2,
