@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-09T15:55:52.242Z",
+  "generatedAt": "2026-09-09T19:05:23.230Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 7,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 167,
-    "afterDedup": 158,
+    "totalFetched": 160,
+    "afterDedup": 156,
     "big4Rejected": 3,
-    "englishOnly": 155,
+    "englishOnly": 153,
     "withinRecency": 43,
     "scored": 43,
-    "passed": 1
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Iran and US hit tankers in biggest wave of attacks on shipping since war began - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ2FPaUNRYjRBWnd2cmxkT044cmZYbENZYnhTWXAzUGxadUpEZ3N3aHpVSEtodVVsWUt6djBaeFhjUm5JOGVrNEE1SXlaUkxoSzBVaUpaWjZTdkdXZzItRTFOaGtMZWVtbEhpdUFSUWgwczNXa2VqZ3ktdzVhajBmYllFNVJIaUxnMDBLazE4S0VSTzZSbVFxMDZSUVY4aHIxVmhkcUpZeF85TzZYV2tqWkE5bVNWM29qWlE?oc=5",
-        "source": "Reuters",
-        "domain": "reuters.com",
-        "date": "2026-09-09",
-        "description": "Iran and US hit tankers in biggest wave of attacks on shipping since war began  Reuters",
-        "hoursAgo": 3,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
