@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-10T18:57:32.112Z",
+  "generatedAt": "2026-09-10T22:16:08.378Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
-    "big4Rejected": 3,
-    "englishOnly": 151,
-    "withinRecency": 50,
-    "scored": 50,
+    "afterDedup": 152,
+    "big4Rejected": 4,
+    "englishOnly": 148,
+    "withinRecency": 46,
+    "scored": 46,
     "passed": 3
   },
   "rooms": {
@@ -26,14 +26,14 @@
     "capital": [],
     "risk": [
       {
-        "title": "Tax Star reports strong rise in e-invoicing enquiries as UAE businesses race to beat 30 October deadline - Gulf News",
+        "title": "Tax Star reports strong rise in e-invoicing enquiries as UAE businesses race to beat 30 October deadline - gulfnews.com",
         "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQRnB2Z2lKTndOZnEyODJ5ZGpRNXdyTHBLZVRFd0FnM28xR2s4MUx0WXhTQjh4SzdIUUFoSkdqaER2VW9hYTIwWE9LbTNwX0pYZHdsSUdteTZlcmtBZUl5NlZMWmtVelR5TVRQbE1vMnJVSWRlazRWTlVXTEVJbHhCOU8wSHRKQXFQVWtNTzlQMjFOczB3QUlLdVpCTjU1RTBhSmxNM29WZXQ3RlhGY2hiM09Da3N5Y0VZb2YxcDd3MzJzRTZkb2xnenlhcjhkNWVOYktFM2JpbVFmdjVGZU03YnhuQzBCYTk3eHlyVHBDYWVTaFHSAYYCQVVfeXFMTXVHTDBZcUJ1eGJrOXhuc3BBemVNa0dFc2c3Q0JEd192VzRFSzBvVHN5NDBuRG9BcWZFaUlRUnBVdlhYZVdLUEhSS2lDOUt5NjhvNE1mY3NVVkxhWGZTaHplNDdEcFlVNl93RzhjclFXOGtia3M2YUU0V240S01VWTVPQ2RMbktMd2wyQmF0S0xqRHNKZ3VoY2xiSXp0Q0xSYi1PM1VMWnZpQm1PTndhbm0yV2JwQzFNZjZhSTlBX2VaMFlTTmJRZ2VUNUlxYlFUMFp6TnpfdEFLc1RIN092c0dxUHU0dl9ISERNdVdBd2VjV25vQWlBSFI3NmVTZm5icC11Y2tlZw?oc=5",
-        "source": "Gulf News",
+        "source": "gulfnews.com",
         "domain": "gulfnews.com",
         "date": "2026-09-10",
-        "description": "Tax Star reports strong rise in e-invoicing enquiries as UAE businesses race to beat 30 October deadline  Gulf News",
-        "hoursAgo": 7,
-        "score": 7,
+        "description": "Tax Star reports strong rise in e-invoicing enquiries as UAE businesses race to beat 30 October deadline  gulfnews.com",
+        "hoursAgo": 10,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -46,7 +46,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-10",
         "description": "Major new tax rule to come in from October 1 in UAE  Arabian Business",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-10",
         "description": "UAE businesses face thousands in fines if they miss September 30 tax deadline  Arabian Business",
-        "hoursAgo": 13,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
