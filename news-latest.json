@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-10T15:50:48.387Z",
+  "generatedAt": "2026-09-10T18:57:32.112Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 155,
+    "afterDedup": 154,
     "big4Rejected": 3,
-    "englishOnly": 152,
-    "withinRecency": 47,
-    "scored": 47,
+    "englishOnly": 151,
+    "withinRecency": 50,
+    "scored": 50,
     "passed": 3
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-10",
         "description": "Tax Star reports strong rise in e-invoicing enquiries as UAE businesses race to beat 30 October deadline  Gulf News",
-        "hoursAgo": 4,
+        "hoursAgo": 7,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-10",
         "description": "Major new tax rule to come in from October 1 in UAE  Arabian Business",
-        "hoursAgo": 8,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-10",
         "description": "UAE businesses face thousands in fines if they miss September 30 tax deadline  Arabian Business",
-        "hoursAgo": 10,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
