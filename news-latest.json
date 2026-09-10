@@ -1,52 +1,51 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-10T03:05:24.483Z",
+  "generatedAt": "2026-09-10T08:39:28.839Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 26,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 157,
-    "big4Rejected": 2,
-    "englishOnly": 155,
-    "withinRecency": 46,
-    "scored": 46,
+    "totalFetched": 186,
+    "afterDedup": 169,
+    "big4Rejected": 4,
+    "englishOnly": 163,
+    "withinRecency": 54,
+    "scored": 54,
     "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Iran and US hit tankers in biggest wave of attacks on shipping since war began - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ2FPaUNRYjRBWnd2cmxkT044cmZYbENZYnhTWXAzUGxadUpEZ3N3aHpVSEtodVVsWUt6djBaeFhjUm5JOGVrNEE1SXlaUkxoSzBVaUpaWjZTdkdXZzItRTFOaGtMZWVtbEhpdUFSUWgwczNXa2VqZ3ktdzVhajBmYllFNVJIaUxnMDBLazE4S0VSTzZSbVFxMDZSUVY4aHIxVmhkcUpZeF85TzZYV2tqWkE5bVNWM29qWlE?oc=5",
-        "source": "Reuters",
-        "domain": "reuters.com",
-        "date": "2026-09-09",
-        "description": "Iran and US hit tankers in biggest wave of attacks on shipping since war began  Reuters",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": [
       {
-        "title": "IHC to acquire 80% stake in UAE space company Marlan Space - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONUpReTNIRW4wQXJkMTBPSUhjZWNQR1RTZFVoeW9IZVRSc0tGYjZCTG1Mdl9SNGk5cXc4aGhDbHpJQVNzakhWU2tQV05yWml4RmRKY2pZYTdQa3c1UTdvOGZGaWo5X1Npb3lJb3VfZU9hQXpJQ2dDYkRkaHN3TnpNNS1RZzh0TTFUUVF1THlKQkRwelN6ZXFWSTZidFM?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-09-09",
-        "description": "IHC to acquire 80% stake in UAE space company Marlan Space  Gulf Business",
-        "hoursAgo": 7,
+        "title": "Major new tax rule to come in from October 1 in UAE - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdkNObnNWMmF5bXJzS2dwVWc5M3JvalJfWC1KMkVZWmI2bi1iNElLa1VFMjN0cmR6VU0tYURwTVVvdUt4T0trbXZBenlsa1hFVU42VXdJeDdFWWx0a3ZwRlpmSFNfMHBfMUZNMXI3LWdlRy0xV0FiZERDM0QzMEhsYXUzUXlacGVCUnVRWkRuZ1oxYy0wVFE?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-09-10",
+        "description": "Major new tax rule to come in from October 1 in UAE  Arabian Business",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE businesses face thousands in fines if they miss September 30 tax deadline - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9tSng4RnBUYjhIMkVkdTlPQU9JenVJSm9Zc2VYeTNzSnl3VUMtaGJDWDVFdXhIMy1fdXBEWVhRX0hkdTd5MVBZNFVaR0ZYVzlfazlkdmpWVV90VHdjTzBFWWNTUDhmN1JNMXU1VE1sa1BQVFlnRG43ampRWllaQQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-09-10",
+        "description": "UAE businesses face thousands in fines if they miss September 30 tax deadline  Arabian Business",
+        "hoursAgo": 3,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
