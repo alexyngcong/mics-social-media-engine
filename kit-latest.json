@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T15:52:32.507Z",
+  "generatedAt": "2026-09-11T18:59:23.156Z",
   "weekOf": "11 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "flydubai-to-launch-dedicated-freighter-o",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "title": "flydubai to launch dedicated freighter operations from Dubai on October 1 - Gulf Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRUw3bFByRzlEWHVSeERoRmJ0SmZFcUxyMW5PVGVaN3hoQTJjSkdsODNYcnc4QnpEUGVJWWFLSDU2cGdqNjA1UHZtV0Q5YmszbEJGRW95bktoR2NKWXROaVdHY21YZUNMUFlvNk53T3FPUWRyd19TeUMyTlVmd0l5YVNwOEUtQk1kTWo0UHduakloc003UTNoR0thXzBFcmhzY0FFZXVwSWFpUnhaaWFxb21YZU93OE0?oc=5",
+      "filenameBase": "post-1-flydubai-to-launch-dedicated-freighter-o",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "flydubai to launch dedicated freighter",
+      "headlineLine2": "operations from Dubai on October 1",
+      "hoursAgo": 6
     },
     {
       "n": 2,
