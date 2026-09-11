@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-11T15:52:17.253Z",
+  "generatedAt": "2026-09-11T18:59:11.220Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 21,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 181,
-    "afterDedup": 168,
-    "big4Rejected": 3,
-    "englishOnly": 165,
-    "withinRecency": 66,
-    "scored": 66,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 154,
+    "big4Rejected": 4,
+    "englishOnly": 150,
+    "withinRecency": 51,
+    "scored": 51,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "flydubai to launch dedicated freighter operations from Dubai on October 1 - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRUw3bFByRzlEWHVSeERoRmJ0SmZFcUxyMW5PVGVaN3hoQTJjSkdsODNYcnc4QnpEUGVJWWFLSDU2cGdqNjA1UHZtV0Q5YmszbEJGRW95bktoR2NKWXROaVdHY21YZUNMUFlvNk53T3FPUWRyd19TeUMyTlVmd0l5YVNwOEUtQk1kTWo0UHduakloc003UTNoR0thXzBFcmhzY0FFZXVwSWFpUnhaaWFxb21YZU93OE0?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-09-11",
+        "description": "flydubai to launch dedicated freighter operations from Dubai on October 1  Gulf Business",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
