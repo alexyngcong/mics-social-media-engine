@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-10T22:16:08.378Z",
+  "generatedAt": "2026-09-11T03:00:07.049Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 10,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 4,
-    "englishOnly": 148,
-    "withinRecency": 46,
-    "scored": 46,
+    "totalFetched": 170,
+    "afterDedup": 156,
+    "big4Rejected": 5,
+    "englishOnly": 151,
+    "withinRecency": 52,
+    "scored": 52,
     "passed": 3
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-10",
         "description": "Tax Star reports strong rise in e-invoicing enquiries as UAE businesses race to beat 30 October deadline  gulfnews.com",
-        "hoursAgo": 10,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-10",
         "description": "Major new tax rule to come in from October 1 in UAE  Arabian Business",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-10",
         "description": "UAE businesses face thousands in fines if they miss September 30 tax deadline  Arabian Business",
-        "hoursAgo": 16,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
