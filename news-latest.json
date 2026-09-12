@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-12T18:06:11.077Z",
+  "generatedAt": "2026-09-12T21:56:49.459Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 19,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
+    "totalFetched": 179,
+    "afterDedup": 165,
     "big4Rejected": 6,
-    "englishOnly": 147,
-    "withinRecency": 46,
-    "scored": 46,
+    "englishOnly": 159,
+    "withinRecency": 53,
+    "scored": 53,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "mediaoffice.abudhabi",
         "date": "2026-09-12",
         "description": "Abu Dhabi Investment Office (ADIO) and Bayer sign strategic agreement to advance life sciences and agri-food innovation in emirate  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 7,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
