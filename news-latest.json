@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-12T08:22:44.028Z",
+  "generatedAt": "2026-09-12T15:00:06.022Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 5,
-    "englishOnly": 148,
-    "withinRecency": 44,
-    "scored": 44,
+    "totalFetched": 260,
+    "afterDedup": 204,
+    "big4Rejected": 6,
+    "englishOnly": 167,
+    "withinRecency": 63,
+    "scored": 63,
     "passed": 1
   },
   "rooms": {
@@ -27,13 +27,13 @@
     "risk": [],
     "world": [
       {
-        "title": "flydubai to launch dedicated freighter operations from Dubai on October 1 - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRUw3bFByRzlEWHVSeERoRmJ0SmZFcUxyMW5PVGVaN3hoQTJjSkdsODNYcnc4QnpEUGVJWWFLSDU2cGdqNjA1UHZtV0Q5YmszbEJGRW95bktoR2NKWXROaVdHY21YZUNMUFlvNk53T3FPUWRyd19TeUMyTlVmd0l5YVNwOEUtQk1kTWo0UHduakloc003UTNoR0thXzBFcmhzY0FFZXVwSWFpUnhaaWFxb21YZU93OE0?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-09-11",
-        "description": "flydubai to launch dedicated freighter operations from Dubai on October 1  Gulf Business",
-        "hoursAgo": 19,
+        "title": "Abu Dhabi Investment Office (ADIO) and Bayer sign strategic agreement to advance life sciences and agri-food innovation in emirate - مكتب أبوظبي الإعلامي",
+        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPN1lseFp0dDJ4SkpRODlHNzRXM1ZiZG9EQ19kMGVacjhtRlQ2ZFhmVVpQN2hZLXdjN1JoTTNmRWtINzBkMGUtV1lTQkJabEJVT2R1RWxaR2p6b1pZUk9rVmc5RTJSUDh0aTcxY0JaOHNNWlJ0YmMyb3JPVlRRMHJlU3I4VG9mbnQ1QXVVNFhjajhneWd4aEVQaDVmblpFa3VubzRWanpIcWIwaUxPYWFRMklLRTV3ZW5IZnpSckN0V3FqellSY2lSR3JoREZzYXhfM2RaMnhlSU5oUlBKTDB4MTRqZGpYNVZmejU5bWl6VGZnT2Y2bTc5Y21vdnVMMTh2TFFn?oc=5",
+        "source": "مكتب أبوظبي الإعلامي",
+        "domain": "mediaoffice.abudhabi",
+        "date": "2026-09-12",
+        "description": "Abu Dhabi Investment Office (ADIO) and Bayer sign strategic agreement to advance life sciences and agri-food innovation in emirate  مكتب أبوظبي الإعلامي",
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
