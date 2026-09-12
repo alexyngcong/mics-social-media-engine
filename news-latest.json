@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-12T03:08:00.801Z",
+  "generatedAt": "2026-09-12T08:22:44.028Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 156,
-    "big4Rejected": 4,
-    "englishOnly": 152,
-    "withinRecency": 49,
-    "scored": 49,
+    "afterDedup": 153,
+    "big4Rejected": 5,
+    "englishOnly": 148,
+    "withinRecency": 44,
+    "scored": 44,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-09-11",
         "description": "flydubai to launch dedicated freighter operations from Dubai on October 1  Gulf Business",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
