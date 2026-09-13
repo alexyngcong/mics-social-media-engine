@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-13T03:09:38.144Z",
+  "generatedAt": "2026-09-13T15:37:29.427Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 5,
-    "englishOnly": 148,
-    "withinRecency": 41,
-    "scored": 41,
-    "passed": 1
+    "afterDedup": 157,
+    "big4Rejected": 3,
+    "englishOnly": 154,
+    "withinRecency": 39,
+    "scored": 39,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Abu Dhabi Investment Office (ADIO) and Bayer sign strategic agreement to advance life sciences and agri-food innovation in emirate - مكتب أبوظبي الإعلامي",
-        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPN1lseFp0dDJ4SkpRODlHNzRXM1ZiZG9EQ19kMGVacjhtRlQ2ZFhmVVpQN2hZLXdjN1JoTTNmRWtINzBkMGUtV1lTQkJabEJVT2R1RWxaR2p6b1pZUk9rVmc5RTJSUDh0aTcxY0JaOHNNWlJ0YmMyb3JPVlRRMHJlU3I4VG9mbnQ1QXVVNFhjajhneWd4aEVQaDVmblpFa3VubzRWanpIcWIwaUxPYWFRMklLRTV3ZW5IZnpSckN0V3FqellSY2lSR3JoREZzYXhfM2RaMnhlSU5oUlBKTDB4MTRqZGpYNVZmejU5bWl6VGZnT2Y2bTc5Y21vdnVMMTh2TFFn?oc=5",
-        "source": "مكتب أبوظبي الإعلامي",
-        "domain": "mediaoffice.abudhabi",
-        "date": "2026-09-12",
-        "description": "Abu Dhabi Investment Office (ADIO) and Bayer sign strategic agreement to advance life sciences and agri-food innovation in emirate  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
