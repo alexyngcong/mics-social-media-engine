@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T03:09:51.399Z",
+  "generatedAt": "2026-09-13T15:37:44.165Z",
   "weekOf": "13 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "abu-dhabi-investment-office-adio-and-bay",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "growth_expansion",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Abu Dhabi Investment Office (ADIO) and Bayer sign strategic agreement to advance life sciences and agri-food innovation in emirate - مكتب أبوظبي الإعلامي",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPN1lseFp0dDJ4SkpRODlHNzRXM1ZiZG9EQ19kMGVacjhtRlQ2ZFhmVVpQN2hZLXdjN1JoTTNmRWtINzBkMGUtV1lTQkJabEJVT2R1RWxaR2p6b1pZUk9rVmc5RTJSUDh0aTcxY0JaOHNNWlJ0YmMyb3JPVlRRMHJlU3I4VG9mbnQ1QXVVNFhjajhneWd4aEVQaDVmblpFa3VubzRWanpIcWIwaUxPYWFRMklLRTV3ZW5IZnpSckN0V3FqellSY2lSR3JoREZzYXhfM2RaMnhlSU5oUlBKTDB4MTRqZGpYNVZmejU5bWl6VGZnT2Y2bTc5Y21vdnVMMTh2TFFn?oc=5",
-      "filenameBase": "post-1-abu-dhabi-investment-office-adio-and-bay",
-      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Abu Dhabi Investment Office (ADIO) a…",
-      "headlineLine2": "advance life sciences and agri-food …",
-      "hoursAgo": 16
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
