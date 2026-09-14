@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-14T17:42:07.770Z",
+  "generatedAt": "2026-09-14T22:57:37.695Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,9 +14,9 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 155,
+    "afterDedup": 152,
     "big4Rejected": 3,
-    "englishOnly": 152,
+    "englishOnly": 149,
     "withinRecency": 36,
     "scored": 36,
     "passed": 0
