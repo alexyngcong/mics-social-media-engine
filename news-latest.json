@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-15T09:12:48.554Z",
+  "generatedAt": "2026-09-15T16:15:39.895Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 6,
-    "englishOnly": 146,
-    "withinRecency": 34,
-    "scored": 34,
-    "passed": 0
+    "afterDedup": 150,
+    "big4Rejected": 2,
+    "englishOnly": 148,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Emirates secures rights to launch daily Dubai-Berlin service - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbTVfNjU3NndmWXF1QVVZbUxHUnJDMGQybm9mN05LZE5RTng3N2ZweDlqZ3JLNkpxTWRVcVF0djZtRGlERndnalJvcmsyc1lERkFvNFdXc0Yta3kzNnZoMkg3TWxaZkhmQjFpM1dWWEFGaGV0MHdQUndaYWFpc28yN1Rnd2h2M3VRRFJaWklrR21LY2dwV3RHc2p2NkNhM2tGQThXQg?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-09-15",
+        "description": "Emirates secures rights to launch daily Dubai-Berlin service  Gulf Business",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
