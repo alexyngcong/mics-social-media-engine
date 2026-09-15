@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T09:13:02.758Z",
+  "generatedAt": "2026-09-15T16:15:55.509Z",
   "weekOf": "15 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "emirates-secures-rights-to-launch-daily-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "title": "Emirates secures rights to launch daily Dubai-Berlin service - Gulf Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbTVfNjU3NndmWXF1QVVZbUxHUnJDMGQybm9mN05LZE5RTng3N2ZweDlqZ3JLNkpxTWRVcVF0djZtRGlERndnalJvcmsyc1lERkFvNFdXc0Yta3kzNnZoMkg3TWxaZkhmQjFpM1dWWEFGaGV0MHdQUndaYWFpc28yN1Rnd2h2M3VRRFJaWklrR21LY2dwV3RHc2p2NkNhM2tGQThXQg?oc=5",
+      "filenameBase": "post-1-emirates-secures-rights-to-launch-daily-",
+      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
+      "headlineLine1": "Emirates secures rights to launch daily Dubai-Berlin service",
       "headlineLine2": "",
-      "hoursAgo": null
+      "hoursAgo": 3
     },
     {
       "n": 2,
