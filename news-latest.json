@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-15T22:43:46.905Z",
+  "generatedAt": "2026-09-16T03:20:15.095Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 196,
+    "totalFetched": 160,
+    "afterDedup": 153,
     "big4Rejected": 3,
-    "englishOnly": 174,
-    "withinRecency": 69,
-    "scored": 69,
+    "englishOnly": 150,
+    "withinRecency": 45,
+    "scored": 45,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-09-15",
         "description": "Emirates secures rights to launch daily Dubai-Berlin service  Gulf Business",
-        "hoursAgo": 10,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
