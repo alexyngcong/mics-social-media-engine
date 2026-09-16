@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-16T09:05:11.039Z",
+  "generatedAt": "2026-09-16T16:08:22.846Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,44 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
-    "big4Rejected": 3,
-    "englishOnly": 151,
-    "withinRecency": 46,
-    "scored": 46,
-    "passed": 2
+    "afterDedup": 148,
+    "big4Rejected": 2,
+    "englishOnly": 146,
+    "withinRecency": 48,
+    "scored": 48,
+    "passed": 0
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Abu Dhabi's sovereign investor L’imad to boost its AD Ports stake to 98.5% - thenationalnews.com",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWDE0dVJ2RzE1RVJfNjh4cFdnZkRWdmpSZWswYS1EYmNNWURiY1pNQUNsMlVKcWFDRUFqM1dLYTduYlJvTmNpNDN6RC1FS2RFRDY3a09hYmtzRU5QTi1nYVhMQlhfTUR1YTVJS2JSZGdGYS1ZT0lEcjFzb0VwNlJMQ1ZlT3hNTTdTQlAtYjZySHVadnROZHBXMGd4WU52OThtcFZvVXV2UUd6R1lRVzJtT2xfcE03RVdwY1laTWNPY0h0SkczVjA4RkRSNA?oc=5",
-        "source": "thenationalnews.com",
-        "domain": "thenationalnews.com",
-        "date": "2026-09-16",
-        "description": "Abu Dhabi's sovereign investor L’imad to boost its AD Ports stake to 98.5%  thenationalnews.com",
-        "hoursAgo": 1,
-        "score": 6,
-        "topic": "UAE/GCC Economy",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Emirates secures rights to launch daily Dubai-Berlin service - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbTVfNjU3NndmWXF1QVVZbUxHUnJDMGQybm9mN05LZE5RTng3N2ZweDlqZ3JLNkpxTWRVcVF0djZtRGlERndnalJvcmsyc1lERkFvNFdXc0Yta3kzNnZoMkg3TWxaZkhmQjFpM1dWWEFGaGV0MHdQUndaYWFpc28yN1Rnd2h2M3VRRFJaWklrR21LY2dwV3RHc2p2NkNhM2tGQThXQg?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-09-15",
-        "description": "Emirates secures rights to launch daily Dubai-Berlin service  Gulf Business",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 0
 }
