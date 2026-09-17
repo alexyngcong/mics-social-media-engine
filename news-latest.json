@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-17T03:26:08.530Z",
+  "generatedAt": "2026-09-17T09:13:24.051Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 155,
-    "big4Rejected": 3,
-    "englishOnly": 152,
-    "withinRecency": 55,
-    "scored": 55,
+    "afterDedup": 151,
+    "big4Rejected": 2,
+    "englishOnly": 149,
+    "withinRecency": 46,
+    "scored": 46,
     "passed": 1
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-16",
         "description": "UAE Central Bank raises base rate to 3.9% after US Fed rate hike  Gulf News",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Banking & Rates",
         "origin": "google-news"
