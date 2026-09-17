@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-16T22:39:44.676Z",
+  "generatedAt": "2026-09-17T03:26:08.530Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 2,
-    "englishOnly": 151,
-    "withinRecency": 52,
-    "scored": 52,
-    "passed": 0
+    "afterDedup": 155,
+    "big4Rejected": 3,
+    "englishOnly": 152,
+    "withinRecency": 55,
+    "scored": 55,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
-    "capital": [],
+    "capital": [
+      {
+        "title": "UAE Central Bank raises base rate to 3.9% after US Fed rate hike - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYmNzVVFCQ1owdEJ5Y3R6YlQwLXBRWl9xN0tiR015eV9OaG1sUUZZM0lxOVdCMnh6bFdSMzhOR0tvQmpDb2tsYTBIOXdPQVFYeVR5RUdZSTBiZmU5RmM0NGpOUUVFeHQtMUIzaXhOTGgxZHZUanFBX09vLVhqcm9VdWlnbXFncVU0SFA5a0dfSzBETHMyNHhEeGQtNEpQdmRNcm5PVFJFdXV3ZlJic3VXMzd30gHEAUFVX3lxTFBuNWN3V2Rpb2pNRUFsVmFHaHI3d1FRNXhSN2lHUnlaZl90VmlsamNSOU1XSlVlRlNZeTFmdlJRMURvNFFoWTU5NF9IZmtFc21ubmVsdWVNUk9RR0JNWS1iTUFWNzJNWS1ma0p5WkNkOThnWTRRRjdkVXFrYTM4QlpnOUxTU2MtYTZucUZPMEhKUkM1VFdObnRtRjlNbDVEa2VjZ0x1YVY0d3VnSm5PRGRwQU9YY2VUbjVPTXZ2dVA0dEdFa1M?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-09-16",
+        "description": "UAE Central Bank raises base rate to 3.9% after US Fed rate hike  Gulf News",
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "Banking & Rates",
+        "origin": "google-news"
+      }
+    ],
     "risk": [],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
