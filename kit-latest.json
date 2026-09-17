@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T09:13:36.680Z",
+  "generatedAt": "2026-09-17T16:15:17.185Z",
   "weekOf": "17 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-central-bank-raises-base-rate-to-3-9",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "capital",
-      "roomColor": "#F0C050",
-      "roomLabel": "CAPITAL · CASH",
-      "theme": "treasury_capital",
-      "tier": "WEEK AHEAD CAPITAL",
-      "title": "UAE Central Bank raises base rate to 3.9% after US Fed rate hike - Gulf News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYmNzVVFCQ1owdEJ5Y3R6YlQwLXBRWl9xN0tiR015eV9OaG1sUUZZM0lxOVdCMnh6bFdSMzhOR0tvQmpDb2tsYTBIOXdPQVFYeVR5RUdZSTBiZmU5RmM0NGpOUUVFeHQtMUIzaXhOTGgxZHZUanFBX09vLVhqcm9VdWlnbXFncVU0SFA5a0dfSzBETHMyNHhEeGQtNEpQdmRNcm5PVFJFdXV3ZlJic3VXMzd30gHEAUFVX3lxTFBuNWN3V2Rpb2pNRUFsVmFHaHI3d1FRNXhSN2lHUnlaZl90VmlsamNSOU1XSlVlRlNZeTFmdlJRMURvNFFoWTU5NF9IZmtFc21ubmVsdWVNUk9RR0JNWS1iTUFWNzJNWS1ma0p5WkNkOThnWTRRRjdkVXFrYTM4QlpnOUxTU2MtYTZucUZPMEhKUkM1VFdObnRtRjlNbDVEa2VjZ0x1YVY0d3VnSm5PRGRwQU9YY2VUbjVPTXZ2dVA0dEdFa1M?oc=5",
-      "filenameBase": "post-1-uae-central-bank-raises-base-rate-to-3-9",
-      "photoUrl": "/mics-social-media-engine/photos/capital/05_finance_building.jpg",
-      "stat": "3.9%",
-      "headlineLine1": "UAE Central Bank raises base rate",
-      "headlineLine2": "to 3.9% after US Fed rate hike",
-      "hoursAgo": 15
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
