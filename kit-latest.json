@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T03:13:02.937Z",
+  "generatedAt": "2026-09-18T08:46:34.862Z",
   "weekOf": "18 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-residents-get-a-new-five-year-invest",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "capital",
-      "roomColor": "#F0C050",
-      "roomLabel": "CAPITAL · CASH",
-      "theme": "treasury_capital",
-      "tier": "WEEK AHEAD CAPITAL",
-      "title": "UAE residents get a new five-year investment option after strong first sukuk - Gulf News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTUFGOWRVWjItbHFCYkppMWlsbVJzRXBOOWdBT0JzMHIyay05RHhWNXZ1SXhhZkFtV0ZoRGRmNkRxMmNEbDVPZEY1YjB2MVdNaGMtTUhySS1oeDEtTFlHcVlkT3lySjlsSXl1V2stZUhVQ1g3STljeW1JeFg5WXBRcmhtWDhIRHBvdnJleVRpUHVHa0xFOVZ4bEdadV9tRk8zeTdnSTMtVGRzWmZubmo3WEFWZDlJZ0J6aEJDTmljak9wdXlx0gHXAUFVX3lxTFBTeG9aSnJ5NmJWUHkxSGxUbDlJWElJa0RqSnA3OWw1THpMSVNfY2lWUHpMdF9fLVFXMzk2cmlLWG9wR1BSTlJpMkpPejJPVDFGSVotTm1uTzFqbWJmOW5TUWFaaFRESVBuTkh4b2c4U005R05XUURJWDZMMVlWYndpeC00M3lzTWMtWk04R3UwMEQyX3dZSFVfZ0VQdFVVTHFYazk4NTZucnBCZW9MYXhDLTlKbFI5XzVVdl9wclZvZDNXWGEtVXpCbDdpSkYtMzhTUzBpZTRr?oc=5",
-      "filenameBase": "post-1-uae-residents-get-a-new-five-year-invest",
-      "photoUrl": "https://images.unsplash.com/photo-1618044733300-9472054094ee?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "UAE residents get a new five-year",
-      "headlineLine2": "investment option after strong first…",
-      "hoursAgo": 20
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
