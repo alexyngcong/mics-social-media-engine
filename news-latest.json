@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-17T22:40:28.011Z",
+  "generatedAt": "2026-09-18T03:12:49.283Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 2,
-    "englishOnly": 149,
-    "withinRecency": 46,
-    "scored": 46,
+    "afterDedup": 153,
+    "big4Rejected": 3,
+    "englishOnly": 150,
+    "withinRecency": 47,
+    "scored": 47,
     "passed": 1
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-17",
         "description": "UAE residents get a new five-year investment option after strong first sukuk  Gulf News",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Banking & Rates",
         "origin": "google-news"
