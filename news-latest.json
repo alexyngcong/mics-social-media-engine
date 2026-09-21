@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-21T03:19:21.583Z",
+  "generatedAt": "2026-09-21T09:37:01.386Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 5,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 165,
-    "afterDedup": 155,
-    "big4Rejected": 6,
-    "englishOnly": 149,
-    "withinRecency": 22,
-    "scored": 22,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 152,
+    "big4Rejected": 5,
+    "englishOnly": 147,
+    "withinRecency": 28,
+    "scored": 28,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Major UAE tax warning as final deadline falls next week - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGplOG5vZTNMMzU1REw2ZGJHWVpGYXQ2WjlHeTBTOTlwakN0OXNlRnZxMGdMQXhVMmV3SU9GS1lvbXkzb29McGFxZV9jbWxnZDZyWWVnY1NNLS1mZ3NSdl9wY1E4bHNpWmtQYWkybHc1ZU1DVzctUmd3MkhOaWpxSjVERnNGRlFkVms2OGNWTUlnZVBpT1E2aVZFSQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-09-21",
+        "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
+        "hoursAgo": 0,
+        "score": 7,
+        "topic": "Emerging Risks",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
