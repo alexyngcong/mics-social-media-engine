@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-21T09:37:01.386Z",
+  "generatedAt": "2026-09-21T17:52:58.997Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
+    "totalFetched": 260,
+    "afterDedup": 202,
     "big4Rejected": 5,
-    "englishOnly": 147,
-    "withinRecency": 28,
-    "scored": 28,
-    "passed": 1
+    "englishOnly": 175,
+    "withinRecency": 54,
+    "scored": 54,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,13 +32,26 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-21",
         "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
-        "hoursAgo": 0,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Emerging Risks",
         "origin": "google-news"
+      },
+      {
+        "title": "US Saudi Arabia F35 deal : Why Trump $24 . 3 billion F - 35 deal with Saudi Arabia is giving sleepless nights to Israel and US",
+        "url": "https://economictimes.indiatimes.com/news/new-updates/why-trumps-24-3-billion-f-35-deal-with-saudi-arabia-is-giving-sleepless-nights-to-israel-and-us/articleshow/134386143.cms",
+        "source": "Economictimes",
+        "domain": "economictimes.indiatimes.com",
+        "date": "2026-09-21",
+        "description": "US Saudi Arabia F35 deal : Why Trump $24 . 3 billion F - 35 deal with Saudi Arabia is giving sleepless nights to Israel and US",
+        "imageUrl": "https://img.etimg.com/thumb/msid-134386329,width-1200,height-630,imgsize-106852,overlay-economictimes/articleshow.jpg",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "gdelt"
       }
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
