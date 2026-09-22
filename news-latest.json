@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-22T03:19:25.647Z",
+  "generatedAt": "2026-09-22T09:01:25.472Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
-    "googleNews": 0,
+    "gdelt": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 110,
-    "afterDedup": 62,
-    "big4Rejected": 0,
-    "englishOnly": 34,
-    "withinRecency": 34,
-    "scored": 34,
+    "totalFetched": 160,
+    "afterDedup": 155,
+    "big4Rejected": 5,
+    "englishOnly": 150,
+    "withinRecency": 40,
+    "scored": 40,
     "passed": 1
   },
   "rooms": {
@@ -26,17 +26,16 @@
     "capital": [],
     "risk": [
       {
-        "title": "US Saudi Arabia F35 deal : Why Trump $24 . 3 billion F - 35 deal with Saudi Arabia is giving sleepless nights to Israel and US",
-        "url": "https://economictimes.indiatimes.com/news/new-updates/why-trumps-24-3-billion-f-35-deal-with-saudi-arabia-is-giving-sleepless-nights-to-israel-and-us/articleshow/134386143.cms",
-        "source": "Economictimes",
-        "domain": "economictimes.indiatimes.com",
+        "title": "Major UAE tax warning as final deadline falls next week - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGplOG5vZTNMMzU1REw2ZGJHWVpGYXQ2WjlHeTBTOTlwakN0OXNlRnZxMGdMQXhVMmV3SU9GS1lvbXkzb29McGFxZV9jbWxnZDZyWWVnY1NNLS1mZ3NSdl9wY1E4bHNpWmtQYWkybHc1ZU1DVzctUmd3MkhOaWpxSjVERnNGRlFkVms2OGNWTUlnZVBpT1E2aVZFSQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
         "date": "2026-09-21",
-        "description": "US Saudi Arabia F35 deal : Why Trump $24 . 3 billion F - 35 deal with Saudi Arabia is giving sleepless nights to Israel and US",
-        "imageUrl": "https://img.etimg.com/thumb/msid-134386329,width-1200,height-630,imgsize-106852,overlay-economictimes/articleshow.jpg",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "gdelt"
+        "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
+        "hoursAgo": 24,
+        "score": 7,
+        "topic": "Emerging Risks",
+        "origin": "google-news"
       }
     ],
     "world": []
