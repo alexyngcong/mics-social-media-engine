@@ -89,15 +89,11 @@
   <text x="540" y="620" font-size="14" font-weight="600" letter-spacing="3" fill="#EF5555" text-anchor="middle">TAX · VAT · AML · AUDIT · GOVERNANCE · PILLAR 2</text>
 
   <!-- Headline centered, smaller -->
-  <text x="540" y="720" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="middle">Major UAE tax warning as final deadl…</text>
-  <text x="540" y="762" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="middle">falls next week - arabianbusiness.com</text>
+  <text x="540" y="720" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="middle">Major UAE tax warning as final deadline falls next week</text>
+  <text x="540" y="762" font-family="'Cormorant Garamond','Georgia',serif" font-size="34" font-weight="600" fill="#EAE6DE" text-anchor="middle"></text>
 
   <!-- Hairline divider inside card bottom -->
   <line x1="440" y1="820" x2="640" y2="820" stroke="#EF5555" stroke-width="1" opacity="0.5"/>
-
-  <line x1="1080" y1="0" x2="0" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.12"/>
-  <line x1="1080" y1="60" x2="60" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.08"/>
-  <line x1="1020" y1="0" x2="0" y2="1020" stroke="#A8926A" stroke-width="1" opacity="0.08"/>
 
   <line x1="40" y1="40" x2="90" y2="40" stroke="#A8926A" stroke-width="2"/>
   <line x1="40" y1="40" x2="40" y2="90" stroke="#A8926A" stroke-width="2"/>
@@ -107,6 +103,10 @@
   <line x1="40" y1="1040" x2="40" y2="990" stroke="#A8926A" stroke-width="2"/>
   <line x1="1040" y1="1040" x2="990" y2="1040" stroke="#A8926A" stroke-width="2"/>
   <line x1="1040" y1="1040" x2="1040" y2="990" stroke="#A8926A" stroke-width="2"/>
+
+  <line x1="1080" y1="0" x2="0" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.12"/>
+  <line x1="1080" y1="60" x2="60" y2="1080" stroke="#EF5555" stroke-width="1" opacity="0.08"/>
+  <line x1="1020" y1="0" x2="0" y2="1020" stroke="#A8926A" stroke-width="1" opacity="0.08"/>
 
   <rect x="80" y="1000" width="920" height="1" fill="url(#brassUnder)"/>
   <text x="540" y="1042" font-size="13" font-weight="700" letter-spacing="6" fill="rgba(168,146,106,0.7)" text-anchor="middle">MICS INTERNATIONAL</text>
