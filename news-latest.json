@@ -1,29 +1,68 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-23T09:04:56.821Z",
+  "generatedAt": "2026-09-23T16:06:46.744Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 12,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 172,
-    "afterDedup": 159,
+    "totalFetched": 260,
+    "afterDedup": 205,
     "big4Rejected": 6,
-    "englishOnly": 151,
-    "withinRecency": 48,
-    "scored": 48,
-    "passed": 2
+    "englishOnly": 170,
+    "withinRecency": 66,
+    "scored": 66,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
-    "capital": [],
+    "capital": [
+      {
+        "title": "National Bank of Egypt to acquire Banque Misr UAE branches in major cross - border banking deal",
+        "url": "https://gulfnews.com/business/banking/national-bank-of-egypt-to-acquire-banque-misrs-uae-branches-1.500684036",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-09-22",
+        "description": "National Bank of Egypt to acquire Banque Misr UAE branches in major cross - border banking deal",
+        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-09-22%2F2t7m4o3f%2FEgypt?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 20,
+        "score": 6,
+        "topic": "Banking & Rates",
+        "origin": "gdelt"
+      },
+      {
+        "title": "UAE opens $13 . 6mln five - year retail sukuk at 5 . 06 % profit rate",
+        "url": "https://www.zawya.com/en/capital-markets/the-world-of-islamic-finance/uae-opens-13.6mln-five-year-retail-sukuk-at-5.06-profit-rate-1128875",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-09-23",
+        "description": "UAE opens $13 . 6mln five - year retail sukuk at 5 . 06 % profit rate",
+        "imageUrl": "https://media.zawya.com/prod/images/gm_preview/6bb15dd81331-gettyimages-609794892.jpg",
+        "hoursAgo": 12,
+        "score": 6,
+        "topic": "Corporate Finance",
+        "origin": "gdelt"
+      },
+      {
+        "title": "UAE’s new 5.06% sukuk: What your Dh1,000, Dh10,000 could earn - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWjBMU3ZNS3Y4XzA4VHd3SzUwNTBzM1VReUM0QjBVdzBzb2RiLXJlMDJNaWpPczFQbWxaNzliaWRreWJfNml2SklOaUM4VmotUTRhanNPR3hCYy1KOHkyTDk5U3czekZ3ZGtEWmJaYUhTbERKSXZpN3FmeHljV094enpOVDJoRE1YUnpWWVFjYjR0NEVHS1pQSkstNW54WmU5anNYdjVQMNIBugFBVV95cUxOUTRZU21hLUg1THZabGxFSi1SdUtyRHNZZE1RbnVYQ29lQ1pJVTZTb29Pa2FQQVBWNm1YRjlzTFhhb2czQ0RBQXRjZGVLdG5la3R6MVZTYWJ4ZW9tNVdwTTUzRk1zSWI3RUdFX3JDSEJHRE5TNTFIVy0teDlxVkFObG9RblZRZTVWVG9NanpyRzJrZUwzVWlTd3pBcVM1NHgzUkt4b21rZThmbHVzM0M5OXRrSU1UcU9LTmc?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-09-23",
+        "description": "UAE’s new 5.06% sukuk: What your Dh1,000, Dh10,000 could earn  Gulf News",
+        "hoursAgo": 15,
+        "score": 6,
+        "topic": "Banking & Rates",
+        "origin": "google-news"
+      }
+    ],
     "risk": [
       {
         "title": "Major UAE tax warning as final deadline falls next week - Arabian Business",
@@ -32,25 +71,13 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-21",
         "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
-        "hoursAgo": 48,
-        "score": 6.5,
-        "topic": "Emerging Risks",
-        "origin": "google-news"
-      },
-      {
-        "title": "Europe’s top private markets firm EQT sets up first Middle East base in Abu Dhabi - thenationalnews.com",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObHEwLThPVExWdmZwSnJhRXRWdWVtTldfcXdCRkoxalMwWG1iNWwtbFZYRXNFVVc4Q0huZnNKUTN5N1pHcjdkMm01eEphSFFlQUVQQ1JTeXJWNmM0aWhBQ3o3M2hVaUQwdlNUU2hQeDVmakJERzRMdERoNnJHcXRfQXpfd3hrV0lSNVJmbFRuVUJiWkp1TGlNWUt4WTc1YUhWRXdUUE54WWRxaEVXd2REVzJBV3BqcV9lY2pVcl95YUZFQ1lGcmttako5eURMS0VUXzR0cWRuRG8?oc=5",
-        "source": "thenationalnews.com",
-        "domain": "thenationalnews.com",
-        "date": "2026-09-23",
-        "description": "Europe’s top private markets firm EQT sets up first Middle East base in Abu Dhabi  thenationalnews.com",
-        "hoursAgo": 4,
+        "hoursAgo": 55,
         "score": 6,
-        "topic": "Geopolitical Risk",
+        "topic": "Emerging Risks",
         "origin": "google-news"
       }
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 4
 }
