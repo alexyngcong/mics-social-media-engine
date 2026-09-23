@@ -1,56 +1,29 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-22T22:44:53.316Z",
+  "generatedAt": "2026-09-23T03:19:54.875Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 202,
+    "totalFetched": 160,
+    "afterDedup": 152,
     "big4Rejected": 5,
-    "englishOnly": 175,
-    "withinRecency": 70,
-    "scored": 70,
-    "passed": 3
+    "englishOnly": 147,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "National Bank of Egypt to acquire Banque Misr UAE branches in major cross - border banking deal",
-        "url": "https://gulfnews.com/business/banking/national-bank-of-egypt-to-acquire-banque-misrs-uae-branches-1.500684036",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-09-22",
-        "description": "National Bank of Egypt to acquire Banque Misr UAE branches in major cross - border banking deal",
-        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-09-22%2F2t7m4o3f%2FEgypt?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 3,
-        "score": 6,
-        "topic": "Banking & Rates",
-        "origin": "gdelt"
-      },
-      {
-        "title": "UAE Sets 5 . 06 % Annual Profit Rate for Second Retail Sovereign T - Sukuk , Five - Year Shariah - Compliant Investment Opens September 23",
-        "url": "https://gulfnews.com/business/banking/uae-sets-yearly-profit-rate-of-506-for-second-retail-t-sukuk-investments-1.500683993",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-09-22",
-        "description": "UAE Sets 5 . 06 % Annual Profit Rate for Second Retail Sovereign T - Sukuk , Five - Year Shariah - Compliant Investment Opens September 23",
-        "imageUrl": "https://media.assettype.com/gulfnews%2Fimport%2F2018%2F11%2F08%2Fdirhamsnov82018_resources1_16a08516f27_large.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 3,
-        "score": 6,
-        "topic": "Corporate Finance",
-        "origin": "gdelt"
-      }
-    ],
+    "capital": [],
     "risk": [
       {
         "title": "Major UAE tax warning as final deadline falls next week - Arabian Business",
@@ -59,7 +32,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-21",
         "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
-        "hoursAgo": 38,
+        "hoursAgo": 42,
         "score": 6.5,
         "topic": "Emerging Risks",
         "origin": "google-news"
@@ -67,5 +40,5 @@
     ],
     "world": []
   },
-  "totalCount": 3
+  "totalCount": 1
 }
