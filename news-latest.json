@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-23T03:19:54.875Z",
+  "generatedAt": "2026-09-23T09:04:56.821Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 12,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 5,
-    "englishOnly": 147,
-    "withinRecency": 42,
-    "scored": 42,
-    "passed": 1
+    "totalFetched": 172,
+    "afterDedup": 159,
+    "big4Rejected": 6,
+    "englishOnly": 151,
+    "withinRecency": 48,
+    "scored": 48,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,13 +32,25 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-21",
         "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
-        "hoursAgo": 42,
+        "hoursAgo": 48,
         "score": 6.5,
         "topic": "Emerging Risks",
+        "origin": "google-news"
+      },
+      {
+        "title": "Europe’s top private markets firm EQT sets up first Middle East base in Abu Dhabi - thenationalnews.com",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObHEwLThPVExWdmZwSnJhRXRWdWVtTldfcXdCRkoxalMwWG1iNWwtbFZYRXNFVVc4Q0huZnNKUTN5N1pHcjdkMm01eEphSFFlQUVQQ1JTeXJWNmM0aWhBQ3o3M2hVaUQwdlNUU2hQeDVmakJERzRMdERoNnJHcXRfQXpfd3hrV0lSNVJmbFRuVUJiWkp1TGlNWUt4WTc1YUhWRXdUUE54WWRxaEVXd2REVzJBV3BqcV9lY2pVcl95YUZFQ1lGcmttako5eURMS0VUXzR0cWRuRG8?oc=5",
+        "source": "thenationalnews.com",
+        "domain": "thenationalnews.com",
+        "date": "2026-09-23",
+        "description": "Europe’s top private markets firm EQT sets up first Middle East base in Abu Dhabi  thenationalnews.com",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
