@@ -1,42 +1,29 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-23T22:41:12.809Z",
+  "generatedAt": "2026-09-24T03:09:34.954Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 9,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 169,
-    "afterDedup": 160,
-    "big4Rejected": 6,
-    "englishOnly": 152,
-    "withinRecency": 48,
-    "scored": 48,
-    "passed": 2
+    "totalFetched": 160,
+    "afterDedup": 151,
+    "big4Rejected": 5,
+    "englishOnly": 146,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "UAE’s new 5.06% sukuk: What your Dh1,000, Dh10,000 could earn - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWjBMU3ZNS3Y4XzA4VHd3SzUwNTBzM1VReUM0QjBVdzBzb2RiLXJlMDJNaWpPczFQbWxaNzliaWRreWJfNml2SklOaUM4VmotUTRhanNPR3hCYy1KOHkyTDk5U3czekZ3ZGtEWmJaYUhTbERKSXZpN3FmeHljV094enpOVDJoRE1YUnpWWVFjYjR0NEVHS1pQSkstNW54WmU5anNYdjVQMNIBugFBVV95cUxOUTRZU21hLUg1THZabGxFSi1SdUtyRHNZZE1RbnVYQ29lQ1pJVTZTb29Pa2FQQVBWNm1YRjlzTFhhb2czQ0RBQXRjZGVLdG5la3R6MVZTYWJ4ZW9tNVdwTTUzRk1zSWI3RUdFX3JDSEJHRE5TNTFIVy0teDlxVkFObG9RblZRZTVWVG9NanpyRzJrZUwzVWlTd3pBcVM1NHgzUkt4b21rZThmbHVzM0M5OXRrSU1UcU9LTmc?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-09-23",
-        "description": "UAE’s new 5.06% sukuk: What your Dh1,000, Dh10,000 could earn  Gulf News",
-        "hoursAgo": 22,
-        "score": 6,
-        "topic": "Banking & Rates",
-        "origin": "google-news"
-      }
-    ],
+    "capital": [],
     "risk": [
       {
         "title": "Major UAE tax warning as final deadline falls next week - Arabian Business",
@@ -45,7 +32,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-21",
         "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
-        "hoursAgo": 61,
+        "hoursAgo": 66,
         "score": 6,
         "topic": "Emerging Risks",
         "origin": "google-news"
@@ -53,5 +40,5 @@
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
