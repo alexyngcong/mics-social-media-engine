@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-24T16:30:39.762Z",
+  "generatedAt": "2026-09-24T23:00:55.132Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
+    "afterDedup": 153,
     "big4Rejected": 4,
-    "englishOnly": 145,
-    "withinRecency": 38,
-    "scored": 38,
-    "passed": 0
+    "englishOnly": 149,
+    "withinRecency": 36,
+    "scored": 36,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
-    "capital": [],
+    "capital": [
+      {
+        "title": "GCC economy to shrink 6.4% in 2026 as UAE contracts 1.5%, strong rebound forecast: report - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUFhLT0tfbGMzOFM3WVFqTnlZWnBfcEhIWERkR2ppb1pqaTQ5Z0lyM0RzTzl1NWZ1RWloSUN5MGFPd2pia0FBVDkxaU5NaVp5cHJFQUpwUUNScXo5VlFiZ0ctNkV2MXhOUkNsNzlZZ25zRVdxNkxpUThkd1NDUUhiMlVleHhheERKZ3prNkhNOHlaZHRMYXRMQm02VkpOZXo4UVZNelRweEpjaXNMdm5iM0lUWEs0a2dwb2Y3clNCT0dSVkdIZXJOQ2pmM015QQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-09-24",
+        "description": "GCC economy to shrink 6.4% in 2026 as UAE contracts 1.5%, strong rebound forecast: report  Arabian Business",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Market Trends",
+        "origin": "google-news"
+      }
+    ],
     "risk": [],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
