@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T16:30:55.678Z",
+  "generatedAt": "2026-09-24T23:01:20.174Z",
   "weekOf": "24 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "gcc-economy-to-shrink-6-4-in-2026-as-uae",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "room": "capital",
+      "roomColor": "#F0C050",
+      "roomLabel": "CAPITAL · CASH",
+      "theme": "treasury_capital",
+      "tier": "WEEK AHEAD CAPITAL",
+      "title": "GCC economy to shrink 6.4% in 2026 as UAE contracts 1.5%, strong rebound forecast: report - Arabian Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUFhLT0tfbGMzOFM3WVFqTnlZWnBfcEhIWERkR2ppb1pqaTQ5Z0lyM0RzTzl1NWZ1RWloSUN5MGFPd2pia0FBVDkxaU5NaVp5cHJFQUpwUUNScXo5VlFiZ0ctNkV2MXhOUkNsNzlZZ25zRVdxNkxpUThkd1NDUUhiMlVleHhheERKZ3prNkhNOHlaZHRMYXRMQm02VkpOZXo4UVZNelRweEpjaXNMdm5iM0lUWEs0a2dwb2Y3clNCT0dSVkdIZXJOQ2pmM015QQ?oc=5",
+      "filenameBase": "post-1-gcc-economy-to-shrink-6-4-in-2026-as-uae",
+      "photoUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "6.4%",
+      "headlineLine1": "GCC economy to shrink 6.4% in 2026 a…",
+      "headlineLine2": "contracts 1.5%, strong rebound forec…",
+      "hoursAgo": 1
     },
     {
       "n": 2,
