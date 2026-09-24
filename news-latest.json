@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-24T09:01:03.866Z",
+  "generatedAt": "2026-09-24T16:30:39.762Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 5,
-    "englishOnly": 148,
-    "withinRecency": 43,
-    "scored": 43,
-    "passed": 1
+    "afterDedup": 149,
+    "big4Rejected": 4,
+    "englishOnly": 145,
+    "withinRecency": 38,
+    "scored": 38,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Major UAE tax warning as final deadline falls next week - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGplOG5vZTNMMzU1REw2ZGJHWVpGYXQ2WjlHeTBTOTlwakN0OXNlRnZxMGdMQXhVMmV3SU9GS1lvbXkzb29McGFxZV9jbWxnZDZyWWVnY1NNLS1mZ3NSdl9wY1E4bHNpWmtQYWkybHc1ZU1DVzctUmd3MkhOaWpxSjVERnNGRlFkVms2OGNWTUlnZVBpT1E2aVZFSQ?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-09-21",
-        "description": "Major UAE tax warning as final deadline falls next week  Arabian Business",
-        "hoursAgo": 72,
-        "score": 6,
-        "topic": "Emerging Risks",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
