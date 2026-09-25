@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-24T23:00:55.132Z",
+  "generatedAt": "2026-09-25T03:25:45.904Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 5,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 153,
+    "totalFetched": 165,
+    "afterDedup": 157,
     "big4Rejected": 4,
-    "englishOnly": 149,
-    "withinRecency": 36,
-    "scored": 36,
+    "englishOnly": 153,
+    "withinRecency": 40,
+    "scored": 40,
     "passed": 1
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-24",
         "description": "GCC economy to shrink 6.4% in 2026 as UAE contracts 1.5%, strong rebound forecast: report  Arabian Business",
-        "hoursAgo": 1,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Market Trends",
         "origin": "google-news"
