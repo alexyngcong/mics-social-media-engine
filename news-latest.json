@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-26T15:47:06.889Z",
+  "generatedAt": "2026-09-26T19:00:42.787Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 4,
-    "englishOnly": 149,
-    "withinRecency": 30,
-    "scored": 30,
-    "passed": 1
+    "afterDedup": 150,
+    "big4Rejected": 3,
+    "englishOnly": 147,
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,13 +32,25 @@
         "domain": "gulfnews.com",
         "date": "2026-09-26",
         "description": "September 30 deadline set for UAE corporate tax returns and payments  Gulf News",
-        "hoursAgo": 3,
+        "hoursAgo": 6,
         "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "September 30, 2026, is the deadline for filing and paying corporate tax returns for 2025 - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ3RYc3piVV9PMXE1cDhsM0M3MkhoX3VwY0lEYmJtY3F0aXRqMWFDN29ORFJPd1E3UUdXREZyMk11b1dFR0toSS1fTmZVQlZlX29GQS1FLVU2aEgxSFRNZU5nb1pRQ0lwUkhMdUQ0TzE0ODZUTW96U1dXRWpoQVNMV2RXa3lqNUJDdFVlWENPNVc0T0oySTJfcEhPanFYaHR2S0ZXWFl6ZEZJejVLZVVUbmJ4VzYycFJKTXNEZDg3MFpvMGhuQWlQSXl0UE95Zk9WU1Q5RlpoUdIB8gFBVV95cUxNQVZlVXM5RnU1QmhNcW9sUzFmb1dUVG1KVTlBZWVVWnFoTjRFNmdvMm1mdFFUcnliZG9PRFlrUVhYMElrOGpxLWF5anRKRWVVUktMWGx4eG50bDZua0xFUFh5MDRCOHNiSnV4LXZCbUJzd1ZSaDJxV1N3YnJpYW9KTFFHUWZEQ2FkbWJQQkNmT3BQUWJveWtibUg1a0ppdHVMdWw5Z3BQTkVFVUlGaFBSRWJmSHAxbmRBazFUcHQwdE0zSFNLNXlNYVRBOFJ1MUVqZmVTWmlUWmtESm9SZHZzYkU2OE93WE1NSGtqYzVmZG1rUQ?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-09-26",
+        "description": "September 30, 2026, is the deadline for filing and paying corporate tax returns for 2025  Emirates 24|7",
+        "hoursAgo": 4,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
