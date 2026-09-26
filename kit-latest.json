@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T09:07:04.731Z",
+  "generatedAt": "2026-09-26T15:47:55.133Z",
   "weekOf": "26 Sept 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "september-30-deadline-set-for-uae-corpor",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "September 30 deadline set for UAE corporate tax returns and payments - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNVJESndvSTZBTlVQTDVKc0I4YWdJRjhVbC0zM3JBb3J4cDFoOTdqdG9FUkloV0JIMVN1Rk96OW94YmFCbDJ4MnRQOXA4SGVMWmV0OG1YdjEzc1FkNERoMV8ySlM1M2dnQWRabzVyT2JlN2o5WG9tbjNhbFQtWWRlQlRLNmJZN0F0WlRiSXZKNVM5TjVJZjdTTy1IaHRaejFEb3I3dF9lZmt0Q2o0X0xDNnpBTjVlSFFpOGZ4MGgyTk53Yk50c3J2S1h4RnVjdklqN21pR9IB1AFBVV95cUxPNVJESndvSTZBTlVQTDVKc0I4YWdJRjhVbC0zM3JBb3J4cDFoOTdqdG9FUkloV0JIMVN1Rk96OW94YmFCbDJ4MnRQOXA4SGVMWmV0OG1YdjEzc1FkNERoMV8ySlM1M2dnQWRabzVyT2JlN2o5WG9tbjNhbFQtWWRlQlRLNmJZN0F0WlRiSXZKNVM5TjVJZjdTTy1IaHRaejFEb3I3dF9lZmt0Q2o0X0xDNnpBTjVlSFFpOGZ4MGgyTk53Yk50c3J2S1h4RnVjdklqN21pRw?oc=5",
+      "filenameBase": "post-1-september-30-deadline-set-for-uae-corpor",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "September 30 deadline set for UAE",
+      "headlineLine2": "corporate tax returns and payments",
+      "hoursAgo": 3
     },
     {
       "n": 2,
