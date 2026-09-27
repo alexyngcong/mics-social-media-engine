@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-26T22:22:59.243Z",
+  "generatedAt": "2026-09-27T03:40:38.217Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 150,
+    "afterDedup": 148,
     "big4Rejected": 2,
-    "englishOnly": 148,
-    "withinRecency": 35,
-    "scored": 35,
+    "englishOnly": 146,
+    "withinRecency": 31,
+    "scored": 31,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-26",
         "description": "September 30 deadline set for UAE corporate tax returns and payments  Gulf News",
-        "hoursAgo": 9,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "emirates247.com",
         "date": "2026-09-26",
         "description": "September 30, 2026, is the deadline for filing and paying corporate tax returns for 2025  Emirates 24|7",
-        "hoursAgo": 8,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
