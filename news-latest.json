@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-28T10:34:21.275Z",
+  "generatedAt": "2026-09-28T19:15:15.303Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 193,
+    "totalFetched": 160,
+    "afterDedup": 143,
     "big4Rejected": 2,
-    "englishOnly": 165,
-    "withinRecency": 52,
-    "scored": 52,
+    "englishOnly": 141,
+    "withinRecency": 34,
+    "scored": 34,
     "passed": 2
   },
   "rooms": {
@@ -27,27 +27,27 @@
     "risk": [
       {
         "title": "September 30 deadline set for UAE corporate tax returns and payments - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNVJESndvSTZBTlVQTDVKc0I4YWdJRjhVbC0zM3JBb3J4cDFoOTdqdG9FUkloV0JIMVN1Rk96OW94YmFCbDJ4MnRQOXA4SGVMWmV0OG1YdjEzc1FkNERoMV8ySlM1M2dnQWRabzVyT2JlN2o5WG9tbjNhbFQtWWRlQlRLNmJZN0F0WlRiSXZKNVM5TjVJZjdTTy1IaHRaejFEb3I3dF9lZmt0Q2o0X0xDNnpBTjVlSFFpOGZ4MGgyTk53Yk50c3J2S1h4RnVjdklqN21pR9IB1AFBVV95cUxPNVJESndvSTZBTlVQTDVKc0I4YWdJRjhVbC0zM3JBb3J4cDFoOTdqdG9FUkloV0JIMVN1Rk96OW94YmFCbDJ4MnRQOXA4SGVMWmV0OG1YdjEzc1FkNERoMV8ySlM1M2dnQWRabzVyT2JlN2o5WG9tbjNhbFQtWWRlQlRLNmJZN0F0WlRiSXZKNVM5TjVJZjdTTy1IaHRaejFEb3I3dF9lZmt0Q2o0X0xDNnpBTjVlSFFpOGZ4MGgyTk53Yk50c3J2S1h4RnVjdklqN21pRw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMUhReEUxWndvZDVRVUNCeF90cEt2QVgweFBhM09PZHpxenF0N191MnAzN3N5RDhfVjJJWURBaS15QXY4WG1XTmNNT29qd0xxb1J1V1Z6Rk5PUURwYzBPRDBLSzBBVF9xX2dKQkZBOVM0RG4tNWhkWEFlQTg0SVRzemFzY29RRUVJdjNPYW1YRUtaLWZkdUJpZ3pKM1I4V1RmUjVia2RCdHRjT2tGcExOVFdCNUR2c2M1WW1PMDlQeEhjQdIB1AFBVV95cUxPNVJESndvSTZBTlVQTDVKc0I4YWdJRjhVbC0zM3JBb3J4cDFoOTdqdG9FUkloV0JIMVN1Rk96OW94YmFCbDJ4MnRQOXA4SGVMWmV0OG1YdjEzc1FkNERoMV8ySlM1M2dnQWRabzVyT2JlN2o5WG9tbjNhbFQtWWRlQlRLNmJZN0F0WlRiSXZKNVM5TjVJZjdTTy1IaHRaejFEb3I3dF9lZmt0Q2o0X0xDNnpBTjVlSFFpOGZ4MGgyTk53Yk50c3J2S1h4RnVjdklqN21pRw?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-09-26",
         "description": "September 30 deadline set for UAE corporate tax returns and payments  Gulf News",
-        "hoursAgo": 46,
-        "score": 6.5,
+        "hoursAgo": 54,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
     "world": [
       {
-        "title": "UAE businesses face September 30 tax deadline - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY0ltMlo2cERxcmxEb2NhdFhQVS1kS2NtQVBDMy12OUlMOF9CMDlQZF93QWV6S3NIQ2lENjZ4cjBtMDBMdE5Xc0dSYlUxbmUxOGxySG5ZMlN5dC1IX2t1X2M5czlPcW9BY1ZidFFYdTA1XzAtYkI0dlNXSWozd0pEblNXejc?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-09-27",
-        "description": "UAE businesses face September 30 tax deadline  Arabian Business",
-        "hoursAgo": 24,
-        "score": 6,
+        "title": "Seviora and First Abu Dhabi Bank announce strategic partnership to unlock new investment and market opportunities - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNZkpncmVaY3V4bWN6d3pQb2ZlNUVKT3BaQkhRcW9mb3BpYi1rZlBSRnR0TTFwMFBDYXc4UFhJXzc5UTVvbVRBdXNuNHlHQTN2cVc4TnoxcU9BQWkwZHFBTHJBX2Z1X2R6alc5bml6Ml82bGNvV0R2UE1tWmdsd19LMWZ5V2xnZE0xUEcwMmIzeGtSZG15RmNNZkVvZ1hza3puRVFGUFRLMTVzaENrWVNfcnF5bEcyUXpvSkNLcjAzWHBxXzBfakRNbWpPOENROFkyZVl0ZzI4YmNabnItNnJUN3hqUFh2cHhQS1U0dy1ac0hoR3JqQThVZGJ1SnpQX2pBZXBoOHRB?oc=5",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-09-28",
+        "description": "Seviora and First Abu Dhabi Bank announce strategic partnership to unlock new investment and market opportunities  Zawya",
+        "hoursAgo": 13,
+        "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
