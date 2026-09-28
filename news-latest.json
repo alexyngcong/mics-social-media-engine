@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-28T03:39:06.344Z",
+  "generatedAt": "2026-09-28T10:34:21.275Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 150,
+    "totalFetched": 260,
+    "afterDedup": 193,
     "big4Rejected": 2,
-    "englishOnly": 148,
-    "withinRecency": 29,
-    "scored": 29,
+    "englishOnly": 165,
+    "withinRecency": 52,
+    "scored": 52,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-09-26",
         "description": "September 30 deadline set for UAE corporate tax returns and payments  Gulf News",
-        "hoursAgo": 39,
+        "hoursAgo": 46,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -40,13 +40,13 @@
     ],
     "world": [
       {
-        "title": "UAE businesses face September 30 tax deadline - arabianbusiness.com",
+        "title": "UAE businesses face September 30 tax deadline - Arabian Business",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY0ltMlo2cERxcmxEb2NhdFhQVS1kS2NtQVBDMy12OUlMOF9CMDlQZF93QWV6S3NIQ2lENjZ4cjBtMDBMdE5Xc0dSYlUxbmUxOGxySG5ZMlN5dC1IX2t1X2M5czlPcW9BY1ZidFFYdTA1XzAtYkI0dlNXSWozd0pEblNXejc?oc=5",
-        "source": "arabianbusiness.com",
+        "source": "Arabian Business",
         "domain": "arabianbusiness.com",
         "date": "2026-09-27",
-        "description": "UAE businesses face September 30 tax deadline  arabianbusiness.com",
-        "hoursAgo": 17,
+        "description": "UAE businesses face September 30 tax deadline  Arabian Business",
+        "hoursAgo": 24,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
