@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-29T17:38:37.454Z",
+  "generatedAt": "2026-09-29T23:27:09.931Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -19,26 +19,39 @@
     "englishOnly": 145,
     "withinRecency": 40,
     "scored": 40,
-    "passed": 1
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE tax authority issues major e-Invoicing deadline warning - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VM1BZUEJLeVZEMjQtN09xMHl6NklvNHpGMUZZQWJBM1phYjh0NTY0UVZEa2VZcTdxWEFaalA2VENYLWJBU3Foa0tTQWhxTklLVW5ER0tEemUxNlF0WENGX3pIbnFmQWZjV2R3aDVCMTdrcHM?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-09-29",
+        "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
+        "hoursAgo": 5,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
-        "title": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets - africa.businessinsider.com",
+        "title": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets - Business Insider Africa",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbHlaVGxGVlpMZ3g3TjQxb2FqWGE1el9ZamhPM1lGazB1cW12WFA2bXJUM3UzY3N4NFVtNXh4OTUxY2hCUjd2NHZUc1p2a19QeWZpdkMzREduME8zTllIYXd3Unk0R2RkOGVmZmdDcFRuVldMM25YX1UzZUkyOFFNSnpkYlE4cVJJZHptWFlRaE83dlo3bnMyUDdscG11TEZVMEZva0xCdWFMOUdZcXNpUnRGcGRKSzJ6TFplbEw0amNQTnNzU2dUZm0wVmw3cXBXb3M0Y0JMVQ?oc=5",
-        "source": "africa.businessinsider.com",
+        "source": "Business Insider Africa",
         "domain": "africa.businessinsider.com",
         "date": "2026-09-29",
-        "description": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets  africa.businessinsider.com",
-        "hoursAgo": 10,
+        "description": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets  Business Insider Africa",
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
