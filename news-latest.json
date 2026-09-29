@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-29T10:25:21.485Z",
+  "generatedAt": "2026-09-29T17:38:37.454Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 203,
+    "totalFetched": 160,
+    "afterDedup": 147,
     "big4Rejected": 2,
-    "englishOnly": 176,
-    "withinRecency": 72,
-    "scored": 72,
+    "englishOnly": 145,
+    "withinRecency": 40,
+    "scored": 40,
     "passed": 1
   },
   "rooms": {
@@ -27,13 +27,13 @@
     "risk": [],
     "world": [
       {
-        "title": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets - Business Insider Africa",
+        "title": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets - africa.businessinsider.com",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbHlaVGxGVlpMZ3g3TjQxb2FqWGE1el9ZamhPM1lGazB1cW12WFA2bXJUM3UzY3N4NFVtNXh4OTUxY2hCUjd2NHZUc1p2a19QeWZpdkMzREduME8zTllIYXd3Unk0R2RkOGVmZmdDcFRuVldMM25YX1UzZUkyOFFNSnpkYlE4cVJJZHptWFlRaE83dlo3bnMyUDdscG11TEZVMEZva0xCdWFMOUdZcXNpUnRGcGRKSzJ6TFplbEw0amNQTnNzU2dUZm0wVmw3cXBXb3M0Y0JMVQ?oc=5",
-        "source": "Business Insider Africa",
+        "source": "africa.businessinsider.com",
         "domain": "africa.businessinsider.com",
         "date": "2026-09-29",
-        "description": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets  Business Insider Africa",
-        "hoursAgo": 3,
+        "description": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets  africa.businessinsider.com",
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
