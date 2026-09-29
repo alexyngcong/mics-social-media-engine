@@ -1,57 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-29T00:12:10.117Z",
+  "generatedAt": "2026-09-29T10:25:21.485Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 146,
+    "totalFetched": 260,
+    "afterDedup": 203,
     "big4Rejected": 2,
-    "englishOnly": 144,
-    "withinRecency": 35,
-    "scored": 35,
-    "passed": 2
+    "englishOnly": 176,
+    "withinRecency": 72,
+    "scored": 72,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "September 30 deadline set for UAE corporate tax returns and payments - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMUhReEUxWndvZDVRVUNCeF90cEt2QVgweFBhM09PZHpxenF0N191MnAzN3N5RDhfVjJJWURBaS15QXY4WG1XTmNNT29qd0xxb1J1V1Z6Rk5PUURwYzBPRDBLSzBBVF9xX2dKQkZBOVM0RG4tNWhkWEFlQTg0SVRzemFzY29RRUVJdjNPYW1YRUtaLWZkdUJpZ3pKM1I4V1RmUjVia2RCdHRjT2tGcExOVFdCNUR2c2M1WW1PMDlQeEhjQdIB1AFBVV95cUxPNVJESndvSTZBTlVQTDVKc0I4YWdJRjhVbC0zM3JBb3J4cDFoOTdqdG9FUkloV0JIMVN1Rk96OW94YmFCbDJ4MnRQOXA4SGVMWmV0OG1YdjEzc1FkNERoMV8ySlM1M2dnQWRabzVyT2JlN2o5WG9tbjNhbFQtWWRlQlRLNmJZN0F0WlRiSXZKNVM5TjVJZjdTTy1IaHRaejFEb3I3dF9lZmt0Q2o0X0xDNnpBTjVlSFFpOGZ4MGgyTk53Yk50c3J2S1h4RnVjdklqN21pRw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-09-26",
-        "description": "September 30 deadline set for UAE corporate tax returns and payments  Gulf News",
-        "hoursAgo": 59,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": [
       {
-        "title": "Seviora and First Abu Dhabi Bank announce strategic partnership to unlock new investment and market opportunities - Zawya",
-        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNZkpncmVaY3V4bWN6d3pQb2ZlNUVKT3BaQkhRcW9mb3BpYi1rZlBSRnR0TTFwMFBDYXc4UFhJXzc5UTVvbVRBdXNuNHlHQTN2cVc4TnoxcU9BQWkwZHFBTHJBX2Z1X2R6alc5bml6Ml82bGNvV0R2UE1tWmdsd19LMWZ5V2xnZE0xUEcwMmIzeGtSZG15RmNNZkVvZ1hza3puRVFGUFRLMTVzaENrWVNfcnF5bEcyUXpvSkNLcjAzWHBxXzBfakRNbWpPOENROFkyZVl0ZzI4YmNabnItNnJUN3hqUFh2cHhQS1U0dy1ac0hoR3JqQThVZGJ1SnpQX2pBZXBoOHRB?oc=5",
-        "source": "Zawya",
-        "domain": "zawya.com",
-        "date": "2026-09-28",
-        "description": "Seviora and First Abu Dhabi Bank announce strategic partnership to unlock new investment and market opportunities  Zawya",
-        "hoursAgo": 18,
-        "score": 7,
+        "title": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets - Business Insider Africa",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbHlaVGxGVlpMZ3g3TjQxb2FqWGE1el9ZamhPM1lGazB1cW12WFA2bXJUM3UzY3N4NFVtNXh4OTUxY2hCUjd2NHZUc1p2a19QeWZpdkMzREduME8zTllIYXd3Unk0R2RkOGVmZmdDcFRuVldMM25YX1UzZUkyOFFNSnpkYlE4cVJJZHptWFlRaE83dlo3bnMyUDdscG11TEZVMEZva0xCdWFMOUdZcXNpUnRGcGRKSzJ6TFplbEw0amNQTnNzU2dUZm0wVmw3cXBXb3M0Y0JMVQ?oc=5",
+        "source": "Business Insider Africa",
+        "domain": "africa.businessinsider.com",
+        "date": "2026-09-29",
+        "description": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets  Business Insider Africa",
+        "hoursAgo": 3,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
