@@ -62,46 +62,22 @@
   </defs>
   <rect width="1080" height="1080" fill="#06060f"/>
 
-  <!-- Photo top 70% -->
-  <clipPath id="topStrip"><rect x="0" y="0" width="1080" height="755"/></clipPath>
-  <g clip-path="url(#topStrip)">
-    <image href="/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg" xlink:href="/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg" x="0" y="0" width="1080" height="800" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
-    <rect width="1080" height="755" fill="url(#darken)" opacity="0.5"/>
-    <rect width="1080" height="755" fill="url(#accentGlow)"/>
-  </g>
+  <image href="/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg" xlink:href="/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg" x="0" y="-40" width="1080" height="1080" preserveAspectRatio="xMidYMid slice" filter="url(#cinematic)"/>
+  <rect width="1080" height="1080" fill="url(#darken)"/>
+  <rect width="1080" height="1080" fill="url(#accentGlow)"/>
+  <rect x="0" y="0" width="32" height="1080" fill="#5B8DEE"/>
+  <rect x="32" y="0" width="1048" height="2" fill="#5B8DEE" opacity="0.4"/>
 
-  <!-- Top accent bar -->
-  <rect x="0" y="0" width="1080" height="4" fill="#5B8DEE"/>
+  <text x="80" y="92" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
+  <text x="80" y="128" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.6)" filter="url(#textShadow)">WORLD PULSE</text>
 
-  <!-- Bottom strip -->
-  <rect x="0" y="755" width="1080" height="325" fill="#06060f"/>
-  <rect x="0" y="753" width="1080" height="2" fill="#5B8DEE"/>
+  <line x1="80" y1="610" x2="200" y2="610" stroke="#5B8DEE" stroke-width="2" opacity="0.85"/>
+  <text x="80" y="660" font-size="22" font-weight="700" letter-spacing="6" fill="#5B8DEE" filter="url(#textShadow)">WEEK AHEAD MACRO</text>
 
-  <!-- Top metadata -->
-  <text x="80" y="80" font-size="20" font-weight="700" letter-spacing="4" fill="#A8926A" filter="url(#textShadow)">MICS  ·  CFOs PRIVATE INSIGHTS CIRCLE</text>
-  <text x="80" y="116" font-size="17" letter-spacing="2" fill="rgba(234,230,222,0.65)" filter="url(#textShadow)">WORLD PULSE</text>
+  <text x="80" y="830" font-size="18" font-weight="600" letter-spacing="3" fill="#5B8DEE" filter="url(#textShadow)">INTERNATIONAL ADVISORY · CROSS-BORDER STRUCTURING</text>
 
-  <!-- Big "Insight" word over the photo as visual anchor (replaces the missing stat hero) -->
-  <text x="80" y="690" font-family="'Cormorant Garamond','Georgia',serif" font-size="42" font-style="italic" font-weight="600" fill="rgba(234,230,222,0.85)" filter="url(#textShadow)">"Zambia’s state miner accuses Abu Dha…"</text>
-
-  <!-- LEFT COLUMN — tier + room -->
-  <line x1="80" y1="800" x2="180" y2="800" stroke="#5B8DEE" stroke-width="2"/>
-  <text x="80" y="845" font-size="18" font-weight="700" letter-spacing="5" fill="#5B8DEE">WEEK AHEAD MACRO</text>
-  <text x="80" y="885" font-size="14" letter-spacing="3" fill="#B0AAB0">WORLD PULSE</text>
-  <text x="80" y="918" font-size="12" font-style="italic" fill="#6A6478">International Advisory · Cross-border Structuring</text>
-
-  <!-- VERTICAL DIVIDER between columns -->
-  <line x1="430" y1="785" x2="430" y2="975" stroke="#5B8DEE" stroke-width="1" opacity="0.4"/>
-
-  <!-- CENTER COLUMN — stat -->
-  <text x="540" y="902.5" font-family="'Cormorant Garamond','Georgia',serif" font-size="130" font-weight="500" fill="#ffffff" text-anchor="middle"></text>
-
-  <!-- VERTICAL DIVIDER -->
-  <line x1="650" y1="785" x2="650" y2="975" stroke="#5B8DEE" stroke-width="1" opacity="0.4"/>
-
-  <!-- RIGHT COLUMN — headline -->
-  <text x="1000" y="845" font-family="'Cormorant Garamond','Georgia',serif" font-size="30" font-weight="600" fill="#EAE6DE" text-anchor="end">Zambia’s state miner accuses Abu Dha…</text>
-  <text x="1000" y="885" font-family="'Cormorant Garamond','Georgia',serif" font-size="30" font-weight="600" fill="#EAE6DE" text-anchor="end">of breaching deal for one of its key…</text>
+  <text x="80" y="760" font-family="'Cormorant Garamond','Georgia',serif" font-size="54" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">Zambia’s state miner accuses Abu Dha…</text>
+  <text x="80" y="822" font-family="'Cormorant Garamond','Georgia',serif" font-size="54" font-weight="600" fill="#EAE6DE" filter="url(#textShadow)">deal for one of its key copper asset…</text>
 
   <line x1="40" y1="40" x2="90" y2="40" stroke="#A8926A" stroke-width="2"/>
   <line x1="40" y1="40" x2="40" y2="90" stroke="#A8926A" stroke-width="2"/>
