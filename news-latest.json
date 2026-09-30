@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-29T23:27:09.931Z",
+  "generatedAt": "2026-09-30T03:59:14.213Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 147,
+    "totalFetched": 260,
+    "afterDedup": 195,
     "big4Rejected": 2,
-    "englishOnly": 145,
-    "withinRecency": 40,
-    "scored": 40,
+    "englishOnly": 173,
+    "withinRecency": 66,
+    "scored": 66,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-29",
         "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "africa.businessinsider.com",
         "date": "2026-09-29",
         "description": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets  Business Insider Africa",
-        "hoursAgo": 16,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
