@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-30T03:59:14.213Z",
+  "generatedAt": "2026-09-30T10:23:20.980Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 17,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 195,
+    "totalFetched": 177,
+    "afterDedup": 160,
     "big4Rejected": 2,
-    "englishOnly": 173,
-    "withinRecency": 66,
-    "scored": 66,
+    "englishOnly": 156,
+    "withinRecency": 51,
+    "scored": 51,
     "passed": 2
   },
   "rooms": {
@@ -32,26 +32,26 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-29",
         "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
-        "hoursAgo": 9,
+        "hoursAgo": 16,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
+      },
+      {
+        "title": "Oman Takes Legal Action After Tourist Filmed Sitting on Nesting Sea Turtle , Issues Wildlife Protection Warning",
+        "url": "https://gulfnews.com/world/gulf/oman/oman-takes-legal-action-after-tourists-filmed-sitting-on-nesting-sea-turtle-1.500691490",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-09-29",
+        "description": "Oman Takes Legal Action After Tourist Filmed Sitting on Nesting Sea Turtle , Issues Wildlife Protection Warning",
+        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-09-29%2Fxard05j7%2Fukrainian_influencers_face_turtle_legal_action.webp?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 23,
+        "score": 6,
+        "topic": "Emerging Risks",
+        "origin": "gdelt"
       }
     ],
-    "world": [
-      {
-        "title": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets - Business Insider Africa",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbHlaVGxGVlpMZ3g3TjQxb2FqWGE1el9ZamhPM1lGazB1cW12WFA2bXJUM3UzY3N4NFVtNXh4OTUxY2hCUjd2NHZUc1p2a19QeWZpdkMzREduME8zTllIYXd3Unk0R2RkOGVmZmdDcFRuVldMM25YX1UzZUkyOFFNSnpkYlE4cVJJZHptWFlRaE83dlo3bnMyUDdscG11TEZVMEZva0xCdWFMOUdZcXNpUnRGcGRKSzJ6TFplbEw0amNQTnNzU2dUZm0wVmw3cXBXb3M0Y0JMVQ?oc=5",
-        "source": "Business Insider Africa",
-        "domain": "africa.businessinsider.com",
-        "date": "2026-09-29",
-        "description": "Zambia’s state miner accuses Abu Dhabi investor of breaching deal for one of its key copper assets  Business Insider Africa",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
   "totalCount": 2
 }
