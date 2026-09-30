@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-30T17:37:49.703Z",
+  "generatedAt": "2026-09-30T23:28:37.701Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 197,
-    "big4Rejected": 2,
-    "englishOnly": 173,
-    "withinRecency": 72,
-    "scored": 72,
-    "passed": 4
+    "totalFetched": 160,
+    "afterDedup": 151,
+    "big4Rejected": 4,
+    "englishOnly": 147,
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,50 +32,26 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-29",
         "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
-        "hoursAgo": 23,
-        "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE e-invoicing deadline nears: Is your business ready? - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQUIzWmt3WHMyN3JtY0xEWURmN2FkYW1peWExQ0hTR1RhWWFFRXl2aEJ1MU9GSHZ6QnVGRWtKUFZMZjRMTjlSRFVzbUFCazdKS1BhNHhpTmQtSmJhRzVXbkpQOGdiQXlmbG9EaHdvdG5ac2MzUXRWaEFSb184ZU4tbkVIbHdYR3ZYZFBhUmk5bXpVdGc0ZnctTlJJSVXSAa8BQVVfeXFMT1NjbHpVZmVLLUJFb3p2TlhEWXB4Tm1XQjc2eEZQWjVRZXd2U0N5b2dfdUpZRENpc2hiR092X0t5dHhsay01YnJneEFka05uVjdiZHJ5NVJ4SUQ3RVktVW9oaE1EdGVEcGFvb0UwYldQa2lQcjVKdl9Jc0oxMURTdU5YM0xrOV9BZHA4YXlGaWpHVGVoSkNvVTJTQmpIM1BuOXQwaW1RSDJNSXQ1OXNucw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-09-30",
-        "description": "UAE e-invoicing deadline nears: Is your business ready?  Gulf News",
-        "hoursAgo": 5,
-        "score": 7,
+        "hoursAgo": 29,
+        "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
     "world": [
       {
-        "title": "UAE AI Office and AWS announce 72% AI adoption rate across UAE businesses - zawya.com",
+        "title": "UAE AI Office and AWS announce 72% AI adoption rate across UAE businesses - Zawya",
         "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdWRVSEIyMDZWbll6RmVqYUhObVBrbHhCeVBLQ3dIdTIzWXVCN0tFYTFUZTZGbzVfbS02OE9nQnBkSUVQQjJBRnllRUw4ZFBnT3VUUER0VWZydHVLd2Y5YWo0R2RScnVDLWxXOTZvOHJwYXdtY0VOUmM1MGVoczNsajhEOXRYZUdzVkNWaU1MX0R1ME1Yd21DUlN6VjZSUmZMYTNGX0tUX3M5Vll1QmlOZnVuZUQ4RGtubFZESmpXcG5Ud24xZmpKQzdyZDU4anNPa3c?oc=5",
-        "source": "zawya.com",
+        "source": "Zawya",
         "domain": "zawya.com",
         "date": "2026-09-30",
-        "description": "UAE AI Office and AWS announce 72% AI adoption rate across UAE businesses  zawya.com",
-        "hoursAgo": 7,
+        "description": "UAE AI Office and AWS announce 72% AI adoption rate across UAE businesses  Zawya",
+        "hoursAgo": 12,
         "score": 6,
         "topic": "AI & Technology",
-        "origin": "google-news"
-      },
-      {
-        "title": "1 Billion Followers Summit 2027: What to expect from the UAE’s fifth edition - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVXhRbTRmbFpmTHJPWUdGZGZsSk5oVjRCN1FsOVRkQUZjdGZ3NFkySXI5OVFXZWJRVDU1bVJHWXdoYXN6dF9tWkRtNjdvNTNzTXFaMlQ1ZjMzWkc0bEUxTVpwM1ZQMXBCRFBJVy1nQjJKVTU0YUlnZGdkWGZYQlh1OVVIUUxmN3ZUMU0xa3BKb1dHaHRzeFI0VDFSdWNnUjNlSzgzTGtVd09Gc0tCT0k5UNIBwAFBVV95cUxNVlZaX2NiVmpMZm9zdTFIMjFNOXlYdTdLdkNBYW1WMDJEMWl5cTFuRkRrLWFqaWp5U0Jqdkk3WWd4YTVwQllnam0ydVF4M1NxanJjZVlFTGtwcVJlT0F3eGhKaEdvc1daWnJwYllqOVNpdzlDenBYUzZNYVNJVkFWT2thNlRhLXcxRXRhX0xVZ09XQlNGbGdieWVSOTB2TXNNS05yOXhzcTBfZWxYZTF5Vk5iRVIzdERmSnVOMTFGbDg?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-09-30",
-        "description": "1 Billion Followers Summit 2027: What to expect from the UAE’s fifth edition  Gulf News",
-        "hoursAgo": 6,
-        "score": 6,
-        "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 2
 }
