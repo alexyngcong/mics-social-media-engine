@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-09-30T23:28:37.701Z",
+  "generatedAt": "2026-10-01T04:09:34.168Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 4,
-    "englishOnly": 147,
-    "withinRecency": 45,
-    "scored": 45,
+    "totalFetched": 260,
+    "afterDedup": 190,
+    "big4Rejected": 3,
+    "englishOnly": 164,
+    "withinRecency": 63,
+    "scored": 63,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-29",
         "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
-        "hoursAgo": 29,
+        "hoursAgo": 34,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "zawya.com",
         "date": "2026-09-30",
         "description": "UAE AI Office and AWS announce 72% AI adoption rate across UAE businesses  Zawya",
-        "hoursAgo": 12,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
