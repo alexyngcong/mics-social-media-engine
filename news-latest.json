@@ -1,28 +1,41 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-01T04:09:34.168Z",
+  "generatedAt": "2026-10-01T15:05:42.931Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 3,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 190,
-    "big4Rejected": 3,
-    "englishOnly": 164,
-    "withinRecency": 63,
-    "scored": 63,
+    "totalFetched": 163,
+    "afterDedup": 155,
+    "big4Rejected": 2,
+    "englishOnly": 153,
+    "withinRecency": 49,
+    "scored": 49,
     "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Dubai real estate transactions hit Dh574 billion in nine months - second highest sales value in market history - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVkNHNkhhekstQXlRdGVISGdYWXBBZkNGQjNnNEt2N21BZjROVGhUWjVCT01qOUdNeFlCSmRsMXFPeDlMWDB2RE4wZ0cwNWZRWTBPT0ZNNGI0TnBYVnRPLVgyOFMweVRxU2JPN2hqejl3eEFRbjkzTzl0WHlsVEVVb1B3TFdrNlVUTVBvOTE3RjdrY1JScnd3bW93SmV5MTRpc0dZcEdnUmRwR0dKOUswZk5NRndnLXVqZUQ1X1hrcWwtLWJmU1FQQmMtcDJWVXZSb0N0UWJ2MmtxYVlzanlaQmdfSErSAf8BQVVfeXFMUHNUM0FPYUNocExpUWJzN0hVZnVtdjBkQWJOdW1wSEx2VVdVWTd0MXg5LUFTMnZDdi1fSFdZNVU2eGlxQWhQVWUtckZuMmJOTXlxQVoyY3EzNjdtWXZBSndVYWVQT1VYXzNPRkJxbTd3VXBkNWtOZjQtYk9EeWl4enZjMzRuLTlYdTN4M0c0NWlaUUlZeEg3d2xFVHYxR3JrVEJkN0ZBNVAwQU1vTExPNTJMMlBBNDRwdkwybHpKbkc4ZDJMT2k0cWxMVDRSY1JMdG9NY3ZlbjNVY2xXT2huX2RoMS1lZUpkUWhYUS15bUI5emJnbk1vWnBOaG0wYXg4?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-10-01",
+        "description": "Dubai real estate transactions hit Dh574 billion in nine months - second highest sales value in market history  Emirates 24|7",
+        "hoursAgo": 14,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [
       {
@@ -32,26 +45,13 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-29",
         "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
-        "hoursAgo": 34,
+        "hoursAgo": 45,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "UAE AI Office and AWS announce 72% AI adoption rate across UAE businesses - Zawya",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdWRVSEIyMDZWbll6RmVqYUhObVBrbHhCeVBLQ3dIdTIzWXVCN0tFYTFUZTZGbzVfbS02OE9nQnBkSUVQQjJBRnllRUw4ZFBnT3VUUER0VWZydHVLd2Y5YWo0R2RScnVDLWxXOTZvOHJwYXdtY0VOUmM1MGVoczNsajhEOXRYZUdzVkNWaU1MX0R1ME1Yd21DUlN6VjZSUmZMYTNGX0tUX3M5Vll1QmlOZnVuZUQ4RGtubFZESmpXcG5Ud24xZmpKQzdyZDU4anNPa3c?oc=5",
-        "source": "Zawya",
-        "domain": "zawya.com",
-        "date": "2026-09-30",
-        "description": "UAE AI Office and AWS announce 72% AI adoption rate across UAE businesses  Zawya",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "AI & Technology",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
   "totalCount": 2
 }
