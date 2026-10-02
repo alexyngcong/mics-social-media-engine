@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-02T04:03:56.188Z",
+  "generatedAt": "2026-10-02T14:27:45.211Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 1,
-    "englishOnly": 150,
-    "withinRecency": 44,
-    "scored": 44,
+    "afterDedup": 149,
+    "big4Rejected": 0,
+    "englishOnly": 149,
+    "withinRecency": 37,
+    "scored": 37,
     "passed": 1
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-09-29",
         "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
-        "hoursAgo": 58,
+        "hoursAgo": 68,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
