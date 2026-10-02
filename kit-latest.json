@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T20:48:40.289Z",
-  "weekOf": "1 Oct 2026",
+  "generatedAt": "2026-10-02T04:04:08.450Z",
+  "weekOf": "2 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "uae-tax-authority-issues-major-e-invoici",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "UAE tax authority issues major e-Invoicing deadline warning - Arabian Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VM1BZUEJLeVZEMjQtN09xMHl6NklvNHpGMUZZQWJBM1phYjh0NTY0UVZEa2VZcTdxWEFaalA2VENYLWJBU3Foa0tTQWhxTklLVW5ER0tEemUxNlF0WENGX3pIbnFmQWZjV2R3aDVCMTdrcHM?oc=5",
+      "filenameBase": "post-1-uae-tax-authority-issues-major-e-invoici",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
+      "headlineLine1": "UAE tax authority issues major e-Invoicing deadline warning",
       "headlineLine2": "",
-      "hoursAgo": null
+      "hoursAgo": 58
     },
     {
       "n": 2,
