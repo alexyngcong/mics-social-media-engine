@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-02T14:27:45.211Z",
+  "generatedAt": "2026-10-02T20:22:14.243Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
-    "big4Rejected": 0,
-    "englishOnly": 149,
-    "withinRecency": 37,
-    "scored": 37,
-    "passed": 1
+    "afterDedup": 150,
+    "big4Rejected": 2,
+    "englishOnly": 148,
+    "withinRecency": 33,
+    "scored": 33,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "UAE tax authority issues major e-Invoicing deadline warning - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VM1BZUEJLeVZEMjQtN09xMHl6NklvNHpGMUZZQWJBM1phYjh0NTY0UVZEa2VZcTdxWEFaalA2VENYLWJBU3Foa0tTQWhxTklLVW5ER0tEemUxNlF0WENGX3pIbnFmQWZjV2R3aDVCMTdrcHM?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-09-29",
-        "description": "UAE tax authority issues major e-Invoicing deadline warning  Arabian Business",
-        "hoursAgo": 68,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
