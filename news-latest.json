@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-05T16:48:27.829Z",
+  "generatedAt": "2026-10-06T01:07:48.339Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 4,
-    "englishOnly": 148,
-    "withinRecency": 37,
-    "scored": 37,
+    "afterDedup": 156,
+    "big4Rejected": 3,
+    "englishOnly": 153,
+    "withinRecency": 41,
+    "scored": 41,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfnews.com",
         "date": "2026-10-05",
         "description": "UAE non-oil economy grows 4.8% as share of GDP rises to 79.4%  Gulf News",
-        "hoursAgo": 8,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Oil & Energy Markets",
         "origin": "google-news"
