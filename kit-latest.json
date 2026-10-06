@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:08:06.262Z",
+  "generatedAt": "2026-10-06T11:01:32.059Z",
   "weekOf": "6 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-non-oil-economy-grows-4-8-as-share-o",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "oil_energy",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "UAE non-oil economy grows 4.8% as share of GDP rises to 79.4% - Gulf News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQemE5b1BhZGZHWG1jaUlpcGtpaGRkbXpNMWlEWC1VSHRWcWNYMEZiQWJUU3J6eDJPWWtEWnBTVklndUxndkJidEU1MVVjaldyQjdzRzBBVmQyMEdHUlZOdVo4UkNlQkJvZ2xEWWpMVjNLYTZYZVd6eGxYSzVQVVZlazIxQ3M0YjhBSFI4Qm9BUjlTWDJrM3lYMEtPTWFxNHdVc0xEcExIc1l6c2_SAb4BQVVfeXFMTk1fUHFZUmtXYmtrNUZiTDUyNWxFOEM3T3hsWENoc0pZQjdsUkZXR1NhTzI0VklGR1B6MkJMOUk4elJfVk1OM01ENVZkdzQ4R3pUODlzUzlZNnhBaUlYMG9majA4VF8wUlJrQ2FWLWNaMERkQmQ5cHZsSkNiZEZOODZ1bkM1VVY5YzNjTlVsZGs0aElPTThHVHpNdUpCY05NQkpMUl84cHQ2bWNTeG1jSWxDVHJhbk5wTHBQSWpXUQ?oc=5",
-      "filenameBase": "post-1-uae-non-oil-economy-grows-4-8-as-share-o",
-      "photoUrl": "/mics-social-media-engine/photos/world/08_oil_sea.jpg",
-      "stat": "4.8%",
-      "headlineLine1": "UAE non-oil economy grows 4.8%",
-      "headlineLine2": "as share of GDP rises to 79.4%",
-      "hoursAgo": 16
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
