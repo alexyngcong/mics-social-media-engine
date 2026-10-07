@@ -1,31 +1,57 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-07T04:19:01.026Z",
+  "generatedAt": "2026-10-07T15:05:15.036Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 25,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 154,
-    "big4Rejected": 5,
-    "englishOnly": 149,
-    "withinRecency": 39,
-    "scored": 39,
-    "passed": 0
+    "totalFetched": 185,
+    "afterDedup": 170,
+    "big4Rejected": 2,
+    "englishOnly": 157,
+    "withinRecency": 50,
+    "scored": 50,
+    "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Dubai Land Department, University of Dubai launch first Real Estate Management Degree programme - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNXNQc2RkR2F6MGc1NEdjUmw1VDExQlkzUklMSGlvbEplRE50T0xZck9HLV9YZTJBakJVNlZra3RMRmFyeWt3bU9xcjgyTXFubjFmSGg4OVVNWlVrMmFiWGJhVVRkVGVCRWlSYkRoMkdIZWptWkxIT1RLUC1ISlVrUXU0Q29iSVQ2bTU5dG9kWFo0UnBYT0Y3N0dXYjk0SV9QWFI2cDlBT0xBbWRuczBONDRDNjBKdHdzTTltejBVVWVSOU95ZnMzU1Axb9IB5gFBVV95cUxPSEp4VWpoV2Jnd3ZCYTNheXBfY040UldhNnhZUm0yaUpvbGFVdnF0dUFIdjJ3M2Z5UFJCMGR3VHgyRDMxcTctaEVRcTNwZ1VrSExHN193WVhLU1Ntci1GWlptMHFKTk04UWc2MG1BMmx4M1VUVkFmLThoOE9qcnBhQkFLYzlYQWxySGotRUloaVEwbkgyT1Y3ZkV0RzdTdHRrcGZvajlYbFRzc09MUllWZVl5RDFFZTFHMUJsUnZnckFJdXVKSUo2bUpGQVpMVFNEN2VLcVdSOTNhXzBabFFmV0VzVWZ4dw?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-10-07",
+        "description": "Dubai Land Department, University of Dubai launch first Real Estate Management Degree programme  Emirates 24|7",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE explains multinational tax rules as deadline nears - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPd0Q2T3p2SGV2bUdEbVJUcjV2eUpUX0ZfWVhYbklaN1Z2V0Qyb2lBZ2F4NVRDeFZTODJORVJOcTlWZXQ0Vnh6Y2JERkI5VjE2TF90Q1lLZFkyaG5pMTZ5MFppWmxWeVVIWl9pRW9QdXRDd0FraW14OVhqMWZsdzJJdW1rcHlvLWU0R3Jra2pQWWM?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-10-07",
+        "description": "UAE explains multinational tax rules as deadline nears  Gulf Business",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 2
 }
