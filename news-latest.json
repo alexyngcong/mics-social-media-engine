@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-07T15:05:15.036Z",
+  "generatedAt": "2026-10-07T21:00:48.018Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 25,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 185,
-    "afterDedup": 170,
-    "big4Rejected": 2,
-    "englishOnly": 157,
-    "withinRecency": 50,
-    "scored": 50,
+    "totalFetched": 160,
+    "afterDedup": 148,
+    "big4Rejected": 1,
+    "englishOnly": 147,
+    "withinRecency": 41,
+    "scored": 41,
     "passed": 2
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "emirates247.com",
         "date": "2026-10-07",
         "description": "Dubai Land Department, University of Dubai launch first Real Estate Management Degree programme  Emirates 24|7",
-        "hoursAgo": 3,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
