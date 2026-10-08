@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-07T21:00:48.018Z",
+  "generatedAt": "2026-10-08T04:30:49.984Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 148,
-    "big4Rejected": 1,
-    "englishOnly": 147,
-    "withinRecency": 41,
-    "scored": 41,
-    "passed": 2
+    "afterDedup": 151,
+    "big4Rejected": 2,
+    "englishOnly": 149,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 3
   },
   "rooms": {
     "growth": [
@@ -30,14 +30,27 @@
         "domain": "emirates247.com",
         "date": "2026-10-07",
         "description": "Dubai Land Department, University of Dubai launch first Real Estate Management Degree programme  Emirates 24|7",
-        "hoursAgo": 9,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
       }
     ],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Attacks on tankers in Hormuz hit highest of any week since start of Iran war, sources say - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMzlOYkh2NkF3OTFOQ0g5RFdjT0VSZXU4Y0U1cDREQnltUF9XM2VBVlk1bER5cTNTS00yaWctcDdnTjI3TG1jeWVxV3JIT2ctb1JVLVg4Nm13aENfNmlQSVQ2dHZLS2dabVYyYXQydWFEQ25SQVY1UkFORHd6djNHUHFkVEpwa3d6WkRiMy15SFRwV3l4anZiSXQ2YmR2bmxWZFhYTFE1YVNBRnc1ZG0tbHJDT1RacGJ6VmRhV3RnQ3g5UmZvdE5xZ3RB?oc=5",
+        "source": "Reuters",
+        "domain": "reuters.com",
+        "date": "2026-10-07",
+        "description": "Attacks on tankers in Hormuz hit highest of any week since start of Iran war, sources say  Reuters",
+        "hoursAgo": 14,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
         "title": "UAE explains multinational tax rules as deadline nears - Gulf Business",
@@ -46,12 +59,12 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-07",
         "description": "UAE explains multinational tax rules as deadline nears  Gulf Business",
-        "hoursAgo": 1,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
