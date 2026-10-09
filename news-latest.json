@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-09T14:58:33.795Z",
+  "generatedAt": "2026-10-09T20:33:40.780Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,9 +14,9 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 150,
-    "big4Rejected": 3,
-    "englishOnly": 147,
+    "afterDedup": 153,
+    "big4Rejected": 0,
+    "englishOnly": 153,
     "withinRecency": 45,
     "scored": 45,
     "passed": 2
@@ -46,7 +46,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-07",
         "description": "UAE explains multinational tax rules as deadline nears  Gulf Business",
-        "hoursAgo": 49,
+        "hoursAgo": 55,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
