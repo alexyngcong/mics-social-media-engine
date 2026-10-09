@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-08T21:02:24.589Z",
+  "generatedAt": "2026-10-09T04:34:46.405Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -15,8 +15,8 @@
   "diagnostic": {
     "totalFetched": 160,
     "afterDedup": 149,
-    "big4Rejected": 0,
-    "englishOnly": 149,
+    "big4Rejected": 3,
+    "englishOnly": 146,
     "withinRecency": 42,
     "scored": 42,
     "passed": 2
@@ -31,7 +31,7 @@
         "domain": "gulfnews.com",
         "date": "2026-10-08",
         "description": "UAE economy poised for ‘counterattack’ with 9.5% growth forecast in 2027  Gulf News",
-        "hoursAgo": 10,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Market Trends",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-07",
         "description": "UAE explains multinational tax rules as deadline nears  Gulf Business",
-        "hoursAgo": 31,
+        "hoursAgo": 39,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
