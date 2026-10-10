@@ -1,57 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-10T14:14:01.716Z",
+  "generatedAt": "2026-10-10T19:45:26.134Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 150,
+    "gdelt": 8,
+    "googleNews": 0,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 2,
-    "englishOnly": 150,
-    "withinRecency": 41,
-    "scored": 41,
-    "passed": 2
+    "totalFetched": 18,
+    "afterDedup": 13,
+    "big4Rejected": 0,
+    "englishOnly": 11,
+    "withinRecency": 11,
+    "scored": 11,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "UAE economy grew in first half of 2026 despite impact of Iran war - The National",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOGdpTHFMQkRVcW1aLXgwOFlYZEc2MFZXYnZZY0NsRTFLTE93N0NENmUxc3RSeVQ5OU82UVRiLUJ0SlRrbVNJczI4dzNWV2g0NzdfT2VTRTRxVm8yUVFjclU2TDBOUVFLZk1FS1VrelpGNFpnVUJ0WG5qNUptcVNxWDJNVk5NRFM0UjFpOFJWamE4cThEVEk5ZGdBNTBmakdHY3JQVDFQNjcyMEYySXpVVUpkV1VibjJ1NkI4REFpN1ZETm94?oc=5",
-        "source": "The National",
-        "domain": "thenationalnews.com",
-        "date": "2026-10-09",
-        "description": "UAE economy grew in first half of 2026 despite impact of Iran war  The National",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
-    "world": [
-      {
-        "title": "UAE explains multinational tax rules as deadline looms - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdVk1Nnl6OU5UQ0FLUEVPYlhtRnpDVkNpdmw0M1EwOWF6V0ZPTDRQYVRwalZmRjFhUEtIdnlTdWVoNXVTUDdIY0sycFByczZaNGJlUm52TzFwXzhtMU9KZmRoUTBDMV9jeVVtSk5Sc0JwbTlhX0o0Rmx4RnZaS1lFRzVMbnJyTHJ4WjhLb3B3VQ?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-10-07",
-        "description": "UAE explains multinational tax rules as deadline looms  Gulf Business",
-        "hoursAgo": 67,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "risk": [],
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 0
 }
