@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-13T01:49:29.896Z",
+  "generatedAt": "2026-10-13T11:25:30.503Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
+    "afterDedup": 149,
     "big4Rejected": 0,
-    "englishOnly": 154,
-    "withinRecency": 39,
-    "scored": 39,
-    "passed": 0
+    "englishOnly": 149,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUVDbmlJWXNZMGdOdTBfOHZMZHJ4Mko4YWQ3aWN3RG9BOGo3ZHZrT1A3ZkIyc1Npa3JYRkNPd0psV256anVDNUIwRjNEV1dvUXlPdkFmRHFaNnRRUW9yWEZtdDZ5b3hYVEplTUJTSnZaQndmRlI5T2hmeXdvSGJza1FnMGpmRUplRWVjNDI1VGptc0swYm51U2Q1M3cySkl4d1VGc2VnTjhtclZ2ZVQ2eFhtaUJYWThxTVR0RHE1cnV6MnF0Q2fSAdgBQVVfeXFMTzVOWkd4Vk9YNVFJR016RUFvZTJUVzZZakhvRnR0UVV4emlsWjRad2NLVU84WWV0LVhTb245Slk4TEctd0JmbmNXdFBpUVFPQjZJWXlsMmhrdHBITXI1bUJYNkpDeVVYUXFSLXl4NUkxdTVuX0ZvMzVyZFd3X2cwb3dKUTRiS1l3WndRZkNzRHpWcFhJWVF6bWZBNi1MS3JmWWZQNXJXRWFfWWFnZklfWVlneU5RbjhkQm1DN2ExRVhnZ05jNGhkek5faDZoZVFHdzhBSzdLWHlL?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-13",
+        "description": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why  Gulf News",
+        "hoursAgo": 9,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
