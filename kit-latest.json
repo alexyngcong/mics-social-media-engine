@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T01:49:45.748Z",
+  "generatedAt": "2026-10-13T11:25:44.444Z",
   "weekOf": "13 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "uae-scraps-e-invoicing-pre-approval-ahea",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUVDbmlJWXNZMGdOdTBfOHZMZHJ4Mko4YWQ3aWN3RG9BOGo3ZHZrT1A3ZkIyc1Npa3JYRkNPd0psV256anVDNUIwRjNEV1dvUXlPdkFmRHFaNnRRUW9yWEZtdDZ5b3hYVEplTUJTSnZaQndmRlI5T2hmeXdvSGJza1FnMGpmRUplRWVjNDI1VGptc0swYm51U2Q1M3cySkl4d1VGc2VnTjhtclZ2ZVQ2eFhtaUJYWThxTVR0RHE1cnV6MnF0Q2fSAdgBQVVfeXFMTzVOWkd4Vk9YNVFJR016RUFvZTJUVzZZakhvRnR0UVV4emlsWjRad2NLVU84WWV0LVhTb245Slk4TEctd0JmbmNXdFBpUVFPQjZJWXlsMmhrdHBITXI1bUJYNkpDeVVYUXFSLXl4NUkxdTVuX0ZvMzVyZFd3X2cwb3dKUTRiS1l3WndRZkNzRHpWcFhJWVF6bWZBNi1MS3JmWWZQNXJXRWFfWWFnZklfWVlneU5RbjhkQm1DN2ExRVhnZ05jNGhkek5faDZoZVFHdzhBSzdLWHlL?oc=5",
+      "filenameBase": "post-1-uae-scraps-e-invoicing-pre-approval-ahea",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "UAE scraps e-invoicing pre-approval",
+      "headlineLine2": "ahead of October deadline: Here's why",
+      "hoursAgo": 9
     },
     {
       "n": 2,
