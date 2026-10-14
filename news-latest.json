@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-13T23:36:45.625Z",
+  "generatedAt": "2026-10-14T03:32:39.394Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 156,
+    "afterDedup": 155,
     "big4Rejected": 1,
-    "englishOnly": 155,
-    "withinRecency": 50,
-    "scored": 50,
+    "englishOnly": 154,
+    "withinRecency": 53,
+    "scored": 53,
     "passed": 2
   },
   "rooms": {
@@ -32,8 +32,8 @@
         "domain": "gulfnews.com",
         "date": "2026-10-13",
         "description": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why  Gulf News",
-        "hoursAgo": 22,
-        "score": 7,
+        "hoursAgo": 25,
+        "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -46,7 +46,7 @@
         "domain": "emirates247.com",
         "date": "2026-10-13",
         "description": "IMF forecasts UAE economy to grow 7.7% in 2027, one of the highest rates among regional energy exporters  Emirates 24|7",
-        "hoursAgo": 5,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
