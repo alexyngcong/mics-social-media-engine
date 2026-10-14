@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-14T09:17:53.902Z",
+  "generatedAt": "2026-10-14T16:32:40.095Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 1,
-    "englishOnly": 150,
-    "withinRecency": 59,
-    "scored": 59,
-    "passed": 2
+    "afterDedup": 154,
+    "big4Rejected": 2,
+    "englishOnly": 152,
+    "withinRecency": 64,
+    "scored": 64,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
@@ -32,26 +32,13 @@
         "domain": "gulfnews.com",
         "date": "2026-10-13",
         "description": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why  Gulf News",
-        "hoursAgo": 31,
+        "hoursAgo": 38,
         "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "IMF forecasts UAE economy to grow 7.7% in 2027, one of the highest rates among regional energy exporters - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObnBaMDJ4NlFVSWJvQ1lpcFBKVVdGVHZ6U0VCdGt6MUVieXd0WERNR0h4bjNfYjkyNUxYdFdRbHVodHduYXhqVFpBcEN5YXdSMHpPV2tjdnVvLXRVUEpMRUc2aVFyVEdPa3l3c1NMZzhQTmlpM003a1E0OHJxZWl3NGxrMHVfS1dOMXZXYUM1R2p6Q1Mwb0dkV2FLd2VNU2tVSVlGeFdPMEh0WUdhaWNNR1VMcFhpdjRYR1ZYSnQ4V2E0R2JyQnpoYnNWWVg0Z3lPRFNpMNIB7wFBVV95cUxNMVFEN1pabWJVQXJQOVh0elhVU182U2x2NGFod3J3bS1COUR4M3kzZEc1Um9WVWxTTVFvNWlyelVqamYwWkF2Nms3ak5HTDgycWJhS2sxQkJaU2stNmJrV09nUFJwWDZnRGJMS2dPd2t6aE1wb2JWX29EcTk0VGlCaTVLejhlQ0ZFYlZBS1hwM1A4dkRuTFFudUlDVlJQSVVLdEROYkdyOW40RXUwV1V2TjNlOWt1TXF0RmhiRFdTZFVXY0U1Q1RpT013VU5fUEtuZkMySXBPU1JmNTFKWjFZeGRpVVA5djFPUnNwWDZGbw?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-10-13",
-        "description": "IMF forecasts UAE economy to grow 7.7% in 2027, one of the highest rates among regional energy exporters  Emirates 24|7",
-        "hoursAgo": 15,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
