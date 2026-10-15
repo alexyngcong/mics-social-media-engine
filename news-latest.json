@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-15T16:19:15.726Z",
+  "generatedAt": "2026-10-15T22:53:41.017Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 2,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 207,
-    "big4Rejected": 1,
-    "englishOnly": 193,
-    "withinRecency": 106,
-    "scored": 106,
-    "passed": 2
+    "totalFetched": 162,
+    "afterDedup": 153,
+    "big4Rejected": 0,
+    "englishOnly": 153,
+    "withinRecency": 59,
+    "scored": 59,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-15",
         "description": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub  Gulf Business",
-        "hoursAgo": 4,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "google-news"
@@ -44,13 +44,25 @@
         "domain": "gulfnews.com",
         "date": "2026-10-13",
         "description": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why  Gulf News",
-        "hoursAgo": 62,
+        "hoursAgo": 69,
         "score": 6,
         "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown - The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNSXR5WGFzS184Ql92ck5qanhjRG52NFRsOWNGUEFmalJVUUR6R0tOWmJHYVBBdDZRY0pZSjZTUmxsM081VGNLa0FRbUluek55TnBTVHlQZGxQQzRrVWFsMnZrbVoyOFRPTVgwdl9sRll1VFZZbEVEb3Ffd0o4bVd1Z0NHYlBrVmVBN3Z1cl90dEUwZVE5Zmt1akt0YWhBci1Pb0tDRDVPTXVuVnZ1bngxek5vaVhucWU1VDVVSWVvdlU1Q0stcFllMzlCMHplWmROaURXVmVZUGlXM2JveGZ2NGJIeldTeGF0Ml9HaU14bmozc0tnMnFHQUdFd9IBgAJBVV95cUxPUUFXNVk3WkV1WVFwZUsxTm9kWDBCZ2xuWTk3cE1hUjd4WkxveUplWnFyeS1DTnc2Y1A2RVhXZHlfZ2d5dFlnb19fWnFZZGtsREZ4VFJvcDZpTUdjU0pLNE9iblM0aVdXa2lCZ0NSZ0ZVWW5STUFWU3YyOEF5eDd4Yk9jNlplS2cyWUtIblk2MlZZcDcwMnFUUGRiajV0UkwtR0p1RWhQV2VURTRleGo1b3piVHR0b3U5aXZaU05waUhTMXoxblFKQ0FrRjBFZThKanZKcEM2TVBrS0lvUlhGdnFBQ0JIenN5MXdiSGdGUUI0cUcxVkRhZnFvR0QwTWIx?oc=5",
+        "source": "The Economic Times",
+        "domain": "m.economictimes.com",
+        "date": "2026-10-15",
+        "description": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown  The Economic Times",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
