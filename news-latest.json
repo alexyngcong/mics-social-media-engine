@@ -1,30 +1,42 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-15T08:51:38.960Z",
+  "generatedAt": "2026-10-15T16:19:15.726Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 151,
+    "totalFetched": 260,
+    "afterDedup": 207,
     "big4Rejected": 1,
-    "englishOnly": 150,
-    "withinRecency": 62,
-    "scored": 62,
-    "passed": 1
+    "englishOnly": 193,
+    "withinRecency": 106,
+    "scored": 106,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
+      {
+        "title": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNnF6SHNVa0hNMnVWREJyT3VLcy1JMGhtMnBkcmNhelU0dFAzMHBtRFR0WE9kUXFaekc5eGFOSlJvU3lnQk4yeTRSWEtaWS1YMGV1X3FNWk5COGNKZDlMa1A0bFQ4SmNhamt4U3NNV1dQeGNxY3JJYXFfQVRURjBBNkhVUDhYMG5TeGQybjFxdklscV82SWJIZUd5UGUzWFZON095Um1Ta1BHSGxseFBVOXRnZDJGWDc4?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-10-15",
+        "description": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub  Gulf Business",
+        "hoursAgo": 4,
+        "score": 6,
+        "topic": "Supply Chain Disruption",
+        "origin": "google-news"
+      },
       {
         "title": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUVDbmlJWXNZMGdOdTBfOHZMZHJ4Mko4YWQ3aWN3RG9BOGo3ZHZrT1A3ZkIyc1Npa3JYRkNPd0psV256anVDNUIwRjNEV1dvUXlPdkFmRHFaNnRRUW9yWEZtdDZ5b3hYVEplTUJTSnZaQndmRlI5T2hmeXdvSGJza1FnMGpmRUplRWVjNDI1VGptc0swYm51U2Q1M3cySkl4d1VGc2VnTjhtclZ2ZVQ2eFhtaUJYWThxTVR0RHE1cnV6MnF0Q2fSAdgBQVVfeXFMTzVOWkd4Vk9YNVFJR016RUFvZTJUVzZZakhvRnR0UVV4emlsWjRad2NLVU84WWV0LVhTb245Slk4TEctd0JmbmNXdFBpUVFPQjZJWXlsMmhrdHBITXI1bUJYNkpDeVVYUXFSLXl4NUkxdTVuX0ZvMzVyZFd3X2cwb3dKUTRiS1l3WndRZkNzRHpWcFhJWVF6bWZBNi1MS3JmWWZQNXJXRWFfWWFnZklfWVlneU5RbjhkQm1DN2ExRVhnZ05jNGhkek5faDZoZVFHdzhBSzdLWHlL?oc=5",
@@ -32,7 +44,7 @@
         "domain": "gulfnews.com",
         "date": "2026-10-13",
         "description": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why  Gulf News",
-        "hoursAgo": 55,
+        "hoursAgo": 62,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -40,5 +52,5 @@
     ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
