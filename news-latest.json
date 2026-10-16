@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-16T08:45:29.339Z",
+  "generatedAt": "2026-10-16T16:05:39.319Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,29 +14,17 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 150,
+    "afterDedup": 149,
     "big4Rejected": 1,
-    "englishOnly": 149,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 2
+    "englishOnly": 148,
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
-      {
-        "title": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWS1CejI2M1U4N2lHZGRkVENnQ0g5Z05nNl9QVlNQSVdDRTNwRzkzQkpibTR0M2NuYk55eURlWHBIOWJDd0diQ0ZXcDQtSVdYemF2a1BEN3hnYkR6TTl5dU5ocDB3Q3FqU2JvN1pfUjU5NWlya3lReGVDRDRpcmp0d1lFZWx5ejhCMG9ndEtqemtlR2hXTVVXSFNDQnJlY19KYWxQUjRlVjgxbXlRcjRUSF8xVDhoRmd3aHc?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-10-15",
-        "description": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub  Gulf Business",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Supply Chain Disruption",
-        "origin": "google-news"
-      },
       {
         "title": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown - The Economic Times",
         "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNSXR5WGFzS184Ql92ck5qanhjRG52NFRsOWNGUEFmalJVUUR6R0tOWmJHYVBBdDZRY0pZSjZTUmxsM081VGNLa0FRbUluek55TnBTVHlQZGxQQzRrVWFsMnZrbVoyOFRPTVgwdl9sRll1VFZZbEVEb3Ffd0o4bVd1Z0NHYlBrVmVBN3Z1cl90dEUwZVE5Zmt1akt0YWhBci1Pb0tDRDVPTXVuVnZ1bngxek5vaVhucWU1VDVVSWVvdlU1Q0stcFllMzlCMHplWmROaURXVmVZUGlXM2JveGZ2NGJIeldTeGF0Ml9HaU14bmozc0tnMnFHQUdFd9IBgAJBVV95cUxPUUFXNVk3WkV1WVFwZUsxTm9kWDBCZ2xuWTk3cE1hUjd4WkxveUplWnFyeS1DTnc2Y1A2RVhXZHlfZ2d5dFlnb19fWnFZZGtsREZ4VFJvcDZpTUdjU0pLNE9iblM0aVdXa2lCZ0NSZ0ZVWW5STUFWU3YyOEF5eDd4Yk9jNlplS2cyWUtIblk2MlZZcDcwMnFUUGRiajV0UkwtR0p1RWhQV2VURTRleGo1b3piVHR0b3U5aXZaU05waUhTMXoxblFKQ0FrRjBFZThKanZKcEM2TVBrS0lvUlhGdnFBQ0JIenN5MXdiSGdGUUI0cUcxVkRhZnFvR0QwTWIx?oc=5",
@@ -44,7 +32,7 @@
         "domain": "m.economictimes.com",
         "date": "2026-10-15",
         "description": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown  The Economic Times",
-        "hoursAgo": 13,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -52,5 +40,5 @@
     ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
