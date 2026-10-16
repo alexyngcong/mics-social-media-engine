@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T16:05:52.720Z",
+  "generatedAt": "2026-10-16T22:31:50.130Z",
   "weekOf": "16 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "dubai-bets-1-4-billion-on-a-new-financia",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
-      "tier": "WEEK AHEAD",
-      "title": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown - The Economic Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNSXR5WGFzS184Ql92ck5qanhjRG52NFRsOWNGUEFmalJVUUR6R0tOWmJHYVBBdDZRY0pZSjZTUmxsM081VGNLa0FRbUluek55TnBTVHlQZGxQQzRrVWFsMnZrbVoyOFRPTVgwdl9sRll1VFZZbEVEb3Ffd0o4bVd1Z0NHYlBrVmVBN3Z1cl90dEUwZVE5Zmt1akt0YWhBci1Pb0tDRDVPTXVuVnZ1bngxek5vaVhucWU1VDVVSWVvdlU1Q0stcFllMzlCMHplWmROaURXVmVZUGlXM2JveGZ2NGJIeldTeGF0Ml9HaU14bmozc0tnMnFHQUdFd9IBgAJBVV95cUxPUUFXNVk3WkV1WVFwZUsxTm9kWDBCZ2xuWTk3cE1hUjd4WkxveUplWnFyeS1DTnc2Y1A2RVhXZHlfZ2d5dFlnb19fWnFZZGtsREZ4VFJvcDZpTUdjU0pLNE9iblM0aVdXa2lCZ0NSZ0ZVWW5STUFWU3YyOEF5eDd4Yk9jNlplS2cyWUtIblk2MlZZcDcwMnFUUGRiajV0UkwtR0p1RWhQV2VURTRleGo1b3piVHR0b3U5aXZaU05waUhTMXoxblFKQ0FrRjBFZThKanZKcEM2TVBrS0lvUlhGdnFBQ0JIenN5MXdiSGdGUUI0cUcxVkRhZnFvR0QwTWIx?oc=5",
-      "filenameBase": "post-1-dubai-bets-1-4-billion-on-a-new-financia",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
-      "stat": "$1.4B",
-      "headlineLine1": "Dubai bets $1.4 billion on a new",
-      "headlineLine2": "financial district after Gulf war sl…",
-      "hoursAgo": 20
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
