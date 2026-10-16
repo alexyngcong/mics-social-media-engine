@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-15T22:53:41.017Z",
+  "generatedAt": "2026-10-16T03:08:21.935Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 2,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 162,
-    "afterDedup": 153,
-    "big4Rejected": 0,
-    "englishOnly": 153,
-    "withinRecency": 59,
-    "scored": 59,
-    "passed": 3
+    "totalFetched": 160,
+    "afterDedup": 149,
+    "big4Rejected": 1,
+    "englishOnly": 148,
+    "withinRecency": 53,
+    "scored": 53,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -27,26 +27,14 @@
     "risk": [
       {
         "title": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNnF6SHNVa0hNMnVWREJyT3VLcy1JMGhtMnBkcmNhelU0dFAzMHBtRFR0WE9kUXFaekc5eGFOSlJvU3lnQk4yeTRSWEtaWS1YMGV1X3FNWk5COGNKZDlMa1A0bFQ4SmNhamt4U3NNV1dQeGNxY3JJYXFfQVRURjBBNkhVUDhYMG5TeGQybjFxdklscV82SWJIZUd5UGUzWFZON095Um1Ta1BHSGxseFBVOXRnZDJGWDc4?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWS1CejI2M1U4N2lHZGRkVENnQ0g5Z05nNl9QVlNQSVdDRTNwRzkzQkpibTR0M2NuYk55eURlWHBIOWJDd0diQ0ZXcDQtSVdYemF2a1BEN3hnYkR6TTl5dU5ocDB3Q3FqU2JvN1pfUjU5NWlya3lReGVDRDRpcmp0d1lFZWx5ejhCMG9ndEtqemtlR2hXTVVXSFNDQnJlY19KYWxQUjRlVjgxbXlRcjRUSF8xVDhoRmd3aHc?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-10-15",
         "description": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub  Gulf Business",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Supply Chain Disruption",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUVDbmlJWXNZMGdOdTBfOHZMZHJ4Mko4YWQ3aWN3RG9BOGo3ZHZrT1A3ZkIyc1Npa3JYRkNPd0psV256anVDNUIwRjNEV1dvUXlPdkFmRHFaNnRRUW9yWEZtdDZ5b3hYVEplTUJTSnZaQndmRlI5T2hmeXdvSGJza1FnMGpmRUplRWVjNDI1VGptc0swYm51U2Q1M3cySkl4d1VGc2VnTjhtclZ2ZVQ2eFhtaUJYWThxTVR0RHE1cnV6MnF0Q2fSAdgBQVVfeXFMTzVOWkd4Vk9YNVFJR016RUFvZTJUVzZZakhvRnR0UVV4emlsWjRad2NLVU84WWV0LVhTb245Slk4TEctd0JmbmNXdFBpUVFPQjZJWXlsMmhrdHBITXI1bUJYNkpDeVVYUXFSLXl4NUkxdTVuX0ZvMzVyZFd3X2cwb3dKUTRiS1l3WndRZkNzRHpWcFhJWVF6bWZBNi1MS3JmWWZQNXJXRWFfWWFnZklfWVlneU5RbjhkQm1DN2ExRVhnZ05jNGhkek5faDZoZVFHdzhBSzdLWHlL?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-10-13",
-        "description": "UAE scraps e-invoicing pre-approval ahead of October deadline: Here's why  Gulf News",
-        "hoursAgo": 69,
-        "score": 6,
-        "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
       {
@@ -56,7 +44,7 @@
         "domain": "m.economictimes.com",
         "date": "2026-10-15",
         "description": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown  The Economic Times",
-        "hoursAgo": 3,
+        "hoursAgo": 7,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -64,5 +52,5 @@
     ],
     "world": []
   },
-  "totalCount": 3
+  "totalCount": 2
 }
