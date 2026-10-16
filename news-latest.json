@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-16T16:05:39.319Z",
+  "generatedAt": "2026-10-16T22:31:36.624Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -17,28 +17,15 @@
     "afterDedup": 149,
     "big4Rejected": 1,
     "englishOnly": 148,
-    "withinRecency": 45,
-    "scored": 45,
-    "passed": 1
+    "withinRecency": 47,
+    "scored": 47,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown - The Economic Times",
-        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNSXR5WGFzS184Ql92ck5qanhjRG52NFRsOWNGUEFmalJVUUR6R0tOWmJHYVBBdDZRY0pZSjZTUmxsM081VGNLa0FRbUluek55TnBTVHlQZGxQQzRrVWFsMnZrbVoyOFRPTVgwdl9sRll1VFZZbEVEb3Ffd0o4bVd1Z0NHYlBrVmVBN3Z1cl90dEUwZVE5Zmt1akt0YWhBci1Pb0tDRDVPTXVuVnZ1bngxek5vaVhucWU1VDVVSWVvdlU1Q0stcFllMzlCMHplWmROaURXVmVZUGlXM2JveGZ2NGJIeldTeGF0Ml9HaU14bmozc0tnMnFHQUdFd9IBgAJBVV95cUxPUUFXNVk3WkV1WVFwZUsxTm9kWDBCZ2xuWTk3cE1hUjd4WkxveUplWnFyeS1DTnc2Y1A2RVhXZHlfZ2d5dFlnb19fWnFZZGtsREZ4VFJvcDZpTUdjU0pLNE9iblM0aVdXa2lCZ0NSZ0ZVWW5STUFWU3YyOEF5eDd4Yk9jNlplS2cyWUtIblk2MlZZcDcwMnFUUGRiajV0UkwtR0p1RWhQV2VURTRleGo1b3piVHR0b3U5aXZaU05waUhTMXoxblFKQ0FrRjBFZThKanZKcEM2TVBrS0lvUlhGdnFBQ0JIenN5MXdiSGdGUUI0cUcxVkRhZnFvR0QwTWIx?oc=5",
-        "source": "The Economic Times",
-        "domain": "m.economictimes.com",
-        "date": "2026-10-15",
-        "description": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown  The Economic Times",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
