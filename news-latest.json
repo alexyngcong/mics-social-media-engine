@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-16T03:08:21.935Z",
+  "generatedAt": "2026-10-16T08:45:29.339Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 149,
+    "afterDedup": 150,
     "big4Rejected": 1,
-    "englishOnly": 148,
-    "withinRecency": 53,
-    "scored": 53,
+    "englishOnly": 149,
+    "withinRecency": 50,
+    "scored": 50,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-15",
         "description": "Gargash Prime, JINGDONG Property plan 2.5 million sq ft Dubai logistics hub  Gulf Business",
-        "hoursAgo": 15,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Supply Chain Disruption",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "m.economictimes.com",
         "date": "2026-10-15",
         "description": "Dubai bets $1.4 billion on a new financial district after Gulf war slowdown  The Economic Times",
-        "hoursAgo": 7,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
