@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-17T14:57:37.278Z",
+  "generatedAt": "2026-10-17T18:09:38.207Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 10,
-    "afterDedup": 7,
-    "big4Rejected": 0,
-    "englishOnly": 7,
-    "withinRecency": 7,
-    "scored": 7,
-    "passed": 0
+    "totalFetched": 160,
+    "afterDedup": 150,
+    "big4Rejected": 1,
+    "englishOnly": 149,
+    "withinRecency": 29,
+    "scored": 29,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE explains multinational tax rules as deadline looms - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeE1SU1p2UFowaXNhQkRMTjZUcWZMTkdaRnhaQXJ6Z09LNTd1WVhZZTRLRFhkMU5OZXhHbDAyT0pOOUZmSlpMakx0d3hYQ0RvTFNWc254dlZKN0RYM19NYXp1eUlhMlp6QWJ5eklva1VDUE1Rd3I5X0UtYXN2OERFOEdrR05HVzJjWl9aeg?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-10-17",
+        "description": "UAE explains multinational tax rules as deadline looms  Gulf Business",
+        "hoursAgo": 8,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
