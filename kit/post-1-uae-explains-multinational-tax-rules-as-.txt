@@ -1,0 +1,13 @@
+*17 October 2026.*
+
+What I'd watch through the next five trading days.
+
+UAE explains multinational tax rules as deadline looms.
+
+For UAE-regulated entities, DIFC and ADGM-licensed firms, and any group with downstream compliance exposure, the strategic implication lands ahead of where headline coverage catches it. Retroactive compliance is always more expensive than ahead-of-curve readiness. The firms that get caught mid-cycle pay in remediation costs, advisory fees, and management bandwidth that compounds across multiple quarters before the supervisory finding even closes.
+
+Audit any client-facing trails that touch transaction data or KYC-adjacent flows. Migrate to compliant channels, brief the audit committee on customer-experience implications, and update the control matrix before the next supervisory cycle lands.
+
+Audit-season exposure is built in the quarters before audit, not during. The documentation trail, the control evidence, and the governance posture all need to be in place ahead of the window.
+
+Let's see how the next read lands.
