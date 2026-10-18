@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-18T08:33:35.841Z",
+  "generatedAt": "2026-10-18T15:23:33.816Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 0,
-    "englishOnly": 152,
-    "withinRecency": 26,
-    "scored": 26,
+    "totalFetched": 260,
+    "afterDedup": 201,
+    "big4Rejected": 1,
+    "englishOnly": 177,
+    "withinRecency": 49,
+    "scored": 49,
     "passed": 1
   },
   "rooms": {
@@ -33,8 +33,8 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-17",
         "description": "UAE explains multinational tax rules as deadline looms  Gulf Business",
-        "hoursAgo": 22,
-        "score": 7,
+        "hoursAgo": 29,
+        "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
