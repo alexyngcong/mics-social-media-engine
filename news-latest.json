@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-19T18:20:36.522Z",
+  "generatedAt": "2026-10-19T23:18:15.818Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 9,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 2,
-    "englishOnly": 150,
-    "withinRecency": 39,
-    "scored": 39,
-    "passed": 3
+    "totalFetched": 169,
+    "afterDedup": 154,
+    "big4Rejected": 1,
+    "englishOnly": 153,
+    "withinRecency": 43,
+    "scored": 43,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-10-19",
         "description": "UAE amends e-invoicing regulations as implementation deadline draws closer  The National",
-        "hoursAgo": 8,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -40,30 +40,18 @@
     ],
     "world": [
       {
-        "title": "Goanna Capital opens first international office in Abu Dhabi - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUmx3aDd5THpXejZzbmV6bFMxaTA4aGN6Mkx2TW9wTWs3ZHMyQ2ZzbEhrOV9mSC1WTUY1TlRmV1dOZ0tiSjVoRnJic1dDVDNZN2t2eGR2QXlxOEdZenNzS2hqVE81VG96VnJLSDBINV9sZUxlSXdCMmRQYjVndjlRcjVvdHIyeWlPOGFuVDlEb2NzR1gtRzhfWV95YklyN0NTTWc?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-10-19",
-        "description": "Goanna Capital opens first international office in Abu Dhabi  Arabian Business",
-        "hoursAgo": 10,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
         "title": "UAE explains multinational tax rules as deadline looms - Gulf Business",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeE1SU1p2UFowaXNhQkRMTjZUcWZMTkdaRnhaQXJ6Z09LNTd1WVhZZTRLRFhkMU5OZXhHbDAyT0pOOUZmSlpMakx0d3hYQ0RvTFNWc254dlZKN0RYM19NYXp1eUlhMlp6QWJ5eklva1VDUE1Rd3I5X0UtYXN2OERFOEdrR05HVzJjWl9aeg?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
         "date": "2026-10-17",
         "description": "UAE explains multinational tax rules as deadline looms  Gulf Business",
-        "hoursAgo": 56,
+        "hoursAgo": 61,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 2
 }
