@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-19T03:15:36.722Z",
+  "generatedAt": "2026-10-19T09:36:27.165Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,17 +14,30 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 150,
-    "big4Rejected": 2,
-    "englishOnly": 148,
-    "withinRecency": 20,
-    "scored": 20,
-    "passed": 1
+    "afterDedup": 146,
+    "big4Rejected": 0,
+    "englishOnly": 146,
+    "withinRecency": 22,
+    "scored": 22,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE amends e-invoicing regulations as implementation deadline draws closer - The National",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdUVhZTk0XzRYZjBWZVdwUFZnVGlQZVpsbkVfelk4NWN2ZmpEOE51TDkzV3pnWDNNbTZzRkFwOW41N2tReXFmcTB0YWlsVk5GellnOXhqckFiaFA5RTZtVm5qOEJQR01uOFBlYmtKQ1FlUGpXVEVyeERrY0xSSUw2NThaVXRMMFkzN2MzTkU0YXk0cHkyQnRCazRLakllQTJLVGt4eWxrYXMzNEZYR2RjRkRrVkx1N1FLYVBWcUlxTm5UQzA3NlE?oc=5",
+        "source": "The National",
+        "domain": "thenationalnews.com",
+        "date": "2026-10-19",
+        "description": "UAE amends e-invoicing regulations as implementation deadline draws closer  The National",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
         "title": "UAE explains multinational tax rules as deadline looms - Gulf Business",
@@ -33,12 +46,24 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-17",
         "description": "UAE explains multinational tax rules as deadline looms  Gulf Business",
-        "hoursAgo": 41,
+        "hoursAgo": 47,
         "score": 6.5,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Goanna Capital opens first international office in Abu Dhabi - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUEcxUlhicDhXRHdWbS01RjI3Wkw1YjhsdmVvTlVuUGFSM1g1bUpObGhJRUlhY05FWVJJeGpiLXFlT2toV3dvV2dITmhXMWRnVWVBbW9ZQjFFN3NGZGdKSVJ5NTZGRS1EZEZVVTNPNVU4WlZuMXE4R3g3b1JiaW5QUGVUaElDM283SmFPNTVOT1NyWmJDaU1kcXdSeGZXUjJOcXk0?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-10-19",
+        "description": "Goanna Capital opens first international office in Abu Dhabi  Arabian Business",
+        "hoursAgo": 1,
+        "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 3
 }
