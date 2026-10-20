@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T03:15:48.516Z",
-  "weekOf": "19 Oct 2026",
+  "generatedAt": "2026-10-20T16:22:08.265Z",
+  "weekOf": "20 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-explains-multinational-tax-rules-as-",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "compliance_risk",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "UAE explains multinational tax rules as deadline looms - Gulf Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeE1SU1p2UFowaXNhQkRMTjZUcWZMTkdaRnhaQXJ6Z09LNTd1WVhZZTRLRFhkMU5OZXhHbDAyT0pOOUZmSlpMakx0d3hYQ0RvTFNWc254dlZKN0RYM19NYXp1eUlhMlp6QWJ5eklva1VDUE1Rd3I5X0UtYXN2OERFOEdrR05HVzJjWl9aeg?oc=5",
-      "filenameBase": "post-1-uae-explains-multinational-tax-rules-as-",
-      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "UAE explains multinational tax rules as deadline looms",
+      "headlineLine1": "Awaiting World signal",
       "headlineLine2": "",
-      "hoursAgo": 41
+      "hoursAgo": null
     },
     {
       "n": 2,
