@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-20T03:23:48.372Z",
+  "generatedAt": "2026-10-20T09:07:26.225Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 6,
+    "gdelt": 11,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 166,
-    "afterDedup": 152,
+    "totalFetched": 171,
+    "afterDedup": 159,
     "big4Rejected": 0,
-    "englishOnly": 151,
+    "englishOnly": 158,
     "withinRecency": 42,
     "scored": 42,
     "passed": 2
@@ -32,7 +32,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-10-19",
         "description": "UAE amends e-invoicing regulations as implementation deadline draws closer  The National",
-        "hoursAgo": 17,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-17",
         "description": "UAE explains multinational tax rules as deadline looms  Gulf Business",
-        "hoursAgo": 65,
+        "hoursAgo": 71,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
