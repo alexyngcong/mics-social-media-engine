@@ -1,31 +1,58 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-21T09:07:33.061Z",
+  "generatedAt": "2026-10-21T16:37:14.217Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 18,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 178,
-    "afterDedup": 160,
-    "big4Rejected": 1,
-    "englishOnly": 157,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 0
+    "totalFetched": 260,
+    "afterDedup": 206,
+    "big4Rejected": 2,
+    "englishOnly": 187,
+    "withinRecency": 81,
+    "scored": 81,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [],
+    "capital": [
+      {
+        "title": "DIB posts 7 % YoY growth to record Dh18 . 6 billion gross revenue",
+        "url": "https://gulfnews.com/business/banking/dib-posts-7-yoy-growth-to-record-dh186-billion-gross-revenue-1.500717646",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-21",
+        "description": "DIB posts 7 % YoY growth to record Dh18 . 6 billion gross revenue",
+        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-10-20%2F8kepbwog%2FDIB-HO.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "hoursAgo": 11,
+        "score": 6,
+        "topic": "Corporate Finance",
+        "origin": "gdelt"
+      }
+    ],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Abu Dhabi highlights major project pipeline in pitch to global family offices - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdXJScWlwQjVCVjRaQmNIUXZlMVlqSnVaX2JYRW1zQm5relpJcjNabS12UVVkWGJTcUJFaVV2WEJaNHotNEZvcHVCaDVoTWhPalFWY2ljQUw0VTJTckRadjc0RU9TUHlvTE1heVdxM2JUU3YteVNwb0NMdXpPdHRkei02NUFjNWpFdzRSX29jN1Q1VmFtdjB6MWFxc0o5ZWM2aGZVa1l3bDZqdWZvYnV6VElJZWtXdEZTNEJfN2p3?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-10-21",
+        "description": "Abu Dhabi highlights major project pipeline in pitch to global family offices  Gulf Business",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 2
 }
