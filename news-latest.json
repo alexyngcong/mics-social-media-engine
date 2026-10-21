@@ -1,43 +1,29 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-21T16:37:14.217Z",
+  "generatedAt": "2026-10-21T23:01:44.439Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 206,
+    "totalFetched": 160,
+    "afterDedup": 150,
     "big4Rejected": 2,
-    "englishOnly": 187,
-    "withinRecency": 81,
-    "scored": 81,
+    "englishOnly": 148,
+    "withinRecency": 36,
+    "scored": 36,
     "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "DIB posts 7 % YoY growth to record Dh18 . 6 billion gross revenue",
-        "url": "https://gulfnews.com/business/banking/dib-posts-7-yoy-growth-to-record-dh186-billion-gross-revenue-1.500717646",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-10-21",
-        "description": "DIB posts 7 % YoY growth to record Dh18 . 6 billion gross revenue",
-        "imageUrl": "https://media.assettype.com/gulfnews%2F2026-10-20%2F8kepbwog%2FDIB-HO.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "hoursAgo": 11,
-        "score": 6,
-        "topic": "Corporate Finance",
-        "origin": "gdelt"
-      }
-    ],
+    "capital": [],
     "risk": [],
     "world": [
       {
@@ -48,6 +34,18 @@
         "date": "2026-10-21",
         "description": "Abu Dhabi highlights major project pipeline in pitch to global family offices  Gulf Business",
         "hoursAgo": 1,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Abu Dhabi property launches surge as Dubai’s wane - Arabian Gulf Business Insight | AGBI",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWE8tSHRwZjJvZXFNOGY2ME03aFBtLUVDemotNWVqVURKekFFb3FsQWs2WGZtWU5xaFQwU2hta2V3YlJzN2Noemp2aG5ZSDNzWGJSb0RZeW1LVGxmeHV5U1EyM2dYWjZYbkN5M2k4c09ZTFY4U1F1TDhyOXRRTlNtcjIxNmcyTnFUVGVWcU1BS3c0WlBRM1hZbnhTZTh6Zk1I?oc=5",
+        "source": "Arabian Gulf Business Insight | AGBI",
+        "domain": "agbi.com",
+        "date": "2026-10-21",
+        "description": "Abu Dhabi property launches surge as Dubai’s wane  Arabian Gulf Business Insight | AGBI",
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
