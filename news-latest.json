@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-21T23:01:44.439Z",
+  "generatedAt": "2026-10-22T03:17:23.906Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 150,
+    "gdelt": 10,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 150,
-    "big4Rejected": 2,
-    "englishOnly": 148,
-    "withinRecency": 36,
-    "scored": 36,
+    "totalFetched": 167,
+    "afterDedup": 149,
+    "big4Rejected": 3,
+    "englishOnly": 146,
+    "withinRecency": 43,
+    "scored": 43,
     "passed": 2
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-21",
         "description": "Abu Dhabi highlights major project pipeline in pitch to global family offices  Gulf Business",
-        "hoursAgo": 1,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -45,7 +45,7 @@
         "domain": "agbi.com",
         "date": "2026-10-21",
         "description": "Abu Dhabi property launches surge as Dubai’s wane  Arabian Gulf Business Insight | AGBI",
-        "hoursAgo": 11,
+        "hoursAgo": 15,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
