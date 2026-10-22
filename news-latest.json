@@ -1,43 +1,69 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-22T03:17:23.906Z",
+  "generatedAt": "2026-10-22T09:09:39.309Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 10,
-    "googleNews": 147,
+    "gdelt": 7,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
     "totalFetched": 167,
-    "afterDedup": 149,
+    "afterDedup": 155,
     "big4Rejected": 3,
-    "englishOnly": 146,
-    "withinRecency": 43,
-    "scored": 43,
-    "passed": 2
+    "englishOnly": 152,
+    "withinRecency": 46,
+    "scored": 46,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
-    "capital": [],
-    "risk": [],
-    "world": [
+    "capital": [
       {
-        "title": "Abu Dhabi highlights major project pipeline in pitch to global family offices - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdXJScWlwQjVCVjRaQmNIUXZlMVlqSnVaX2JYRW1zQm5relpJcjNabS12UVVkWGJTcUJFaVV2WEJaNHotNEZvcHVCaDVoTWhPalFWY2ljQUw0VTJTckRadjc0RU9TUHlvTE1heVdxM2JUU3YteVNwb0NMdXpPdHRkei02NUFjNWpFdzRSX29jN1Q1VmFtdjB6MWFxc0o5ZWM2aGZVa1l3bDZqdWZvYnV6VElJZWtXdEZTNEJfN2p3?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-10-21",
-        "description": "Abu Dhabi highlights major project pipeline in pitch to global family offices  Gulf Business",
-        "hoursAgo": 6,
+        "title": "Abu Dhabi doubles down on long-term capital strategy amid M&A surge - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdWhjWHYyV2o5SHEweEFBVGJsbVlvT29kLTZZV3I4Y3RwME5DbzVNcW43VWRsdlotMThjaFRpYkF0LWg5T1JUbDJueExmWHhPVUpGbk1IRHdNQXlrcjU5eW1TS01OSnFYQTN5bGdHSnVvNEZITmxhV1g5d2pnaWo3d3g3NGpiTEx2bjJQWXhlc2JLcWRmeF9aZHk1VjNMb3dwc3lOYTFHdm9TMHZ1enlBVzhRb3M4NDFBNzh0d0ptSE5yMm42UG9DMmR0ZGgxR3ZnV2V4cHlKem9rbDg?oc=5",
+        "source": "TradingView",
+        "domain": "tradingview.com",
+        "date": "2026-10-22",
+        "description": "Abu Dhabi doubles down on long-term capital strategy amid M&A surge  TradingView",
+        "hoursAgo": 4,
         "score": 6,
-        "topic": "Global Economic Signals",
+        "topic": "IPO & M&A",
+        "origin": "google-news"
+      }
+    ],
+    "risk": [
+      {
+        "title": "Thomson Reuters and SpendConsole launch integrated e-invoicing and payables solution for the UAE and GCC - Zawya",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcHBMa1h1Y3VlTjJucURaX050czNrZDZaSEwyY1VTQ0hkaHgxWHdjRk1YaEZoV1VHU2JoaXdVWFdjelFwb3dVVXBZTFZwSTlMNnh6cW92WWU2eXp4M183ekUtVzFJYXlMT3VTMDh0Mkkzb3V5eUdPbjVsQzVyeHc3NVJYTXdfQVV0VGQxU0JMYkVtN09sZnQ0UXRuZEs0aUx3ZU51SkJ3c3B3OUc4dzZYMVkwTlNhLUdxeHpYcjlybU0yZ1NvMXZPaXVBbUVqWHF4UW1HWnI5WFhQYmVhT1ZWLXZEQWt0dw?oc=5",
+        "source": "Zawya",
+        "domain": "zawya.com",
+        "date": "2026-10-22",
+        "description": "Thomson Reuters and SpendConsole launch integrated e-invoicing and payables solution for the UAE and GCC  Zawya",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Tax & Regulatory",
         "origin": "google-news"
       },
+      {
+        "title": "UAE-led global crackdown uncovers $39 billion in fraud-linked assets, 960 arrested - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMkdONWVtbnVwZFRQTzRFcnRzTDJTeXJOc3UtaC1nYVJiRUZNTkdrTGVONmktNDlXb3NNR3FCUnlHb0hmVjVucnpMdGs5dWFsS2kzTGJGSTR5WW9qbFdiZlUteGhEeGRiM3FRWVJTb3p6ejlJa2JmcGQ0d0JXZnlxUks3X1hGNTl1VDJCRjZkNFpfNm4yeWdrY2JpSmVUN1ZLVWE5ZUxRRDA3XzQ3emVGQWloVVZ2anQxekhlNWkxQjZISVdhYmV5Qw?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-22",
+        "description": "UAE-led global crackdown uncovers $39 billion in fraud-linked assets, 960 arrested  Gulf News",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Emerging Risks",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
       {
         "title": "Abu Dhabi property launches surge as Dubai’s wane - Arabian Gulf Business Insight | AGBI",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWE8tSHRwZjJvZXFNOGY2ME03aFBtLUVDemotNWVqVURKekFFb3FsQWs2WGZtWU5xaFQwU2hta2V3YlJzN2Noemp2aG5ZSDNzWGJSb0RZeW1LVGxmeHV5U1EyM2dYWjZYbkN5M2k4c09ZTFY4U1F1TDhyOXRRTlNtcjIxNmcyTnFUVGVWcU1BS3c0WlBRM1hZbnhTZTh6Zk1I?oc=5",
@@ -45,12 +71,12 @@
         "domain": "agbi.com",
         "date": "2026-10-21",
         "description": "Abu Dhabi property launches surge as Dubai’s wane  Arabian Gulf Business Insight | AGBI",
-        "hoursAgo": 15,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 4
 }
