@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-22T16:38:45.244Z",
+  "generatedAt": "2026-10-22T22:58:21.124Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
+    "afterDedup": 154,
     "big4Rejected": 2,
-    "englishOnly": 149,
-    "withinRecency": 43,
-    "scored": 43,
+    "englishOnly": 152,
+    "withinRecency": 45,
+    "scored": 45,
     "passed": 3
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "tradingview.com",
         "date": "2026-10-22",
         "description": "Abu Dhabi doubles down on long-term capital strategy amid M&A surge  TradingView",
-        "hoursAgo": 12,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "google-news"
@@ -45,7 +45,7 @@
         "domain": "zawya.com",
         "date": "2026-10-22",
         "description": "Thomson Reuters and SpendConsole launch integrated e-invoicing and payables solution for the UAE and GCC  Zawya",
-        "hoursAgo": 10,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -57,7 +57,7 @@
         "domain": "gulfnews.com",
         "date": "2026-10-22",
         "description": "UAE-led global crackdown uncovers $39 billion in fraud-linked assets, 960 arrested  Gulf News",
-        "hoursAgo": 14,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Emerging Risks",
         "origin": "google-news"
