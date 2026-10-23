@@ -1,0 +1,13 @@
+*23 October 2026.*
+
+Top of mind heading into the new week.
+
+Abu Dhabi sets five-year deadline for private school Emiratisation drive.
+
+For UAE-regulated entities, DIFC and ADGM-licensed firms, and any group with downstream compliance exposure, the strategic implication lands ahead of where headline coverage catches it. Effective-date language matters here. Retroactive remediation is always more expensive than ahead-of-curve readiness. For groups with cross-border footprint, the documentation burden lands in finance and legal teams first, well before it reaches risk dashboards.
+
+Audit any client-facing trails that touch transaction data or KYC-adjacent flows. Migrate to compliant channels, brief the audit committee on customer-experience implications, and update the control matrix before the next supervisory cycle lands.
+
+Audit-season exposure is built in the quarters before audit, not during. The documentation trail, the control evidence, and the governance posture all need to be in place ahead of the window.
+
+One to keep on the radar.
