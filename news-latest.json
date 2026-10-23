@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-22T22:58:21.124Z",
+  "generatedAt": "2026-10-23T03:23:19.640Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 100,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 154,
+    "totalFetched": 260,
+    "afterDedup": 208,
     "big4Rejected": 2,
-    "englishOnly": 152,
-    "withinRecency": 45,
-    "scored": 45,
+    "englishOnly": 186,
+    "withinRecency": 81,
+    "scored": 81,
     "passed": 3
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "tradingview.com",
         "date": "2026-10-22",
         "description": "Abu Dhabi doubles down on long-term capital strategy amid M&A surge  TradingView",
-        "hoursAgo": 18,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "IPO & M&A",
         "origin": "google-news"
@@ -45,25 +45,27 @@
         "domain": "zawya.com",
         "date": "2026-10-22",
         "description": "Thomson Reuters and SpendConsole launch integrated e-invoicing and payables solution for the UAE and GCC  Zawya",
-        "hoursAgo": 17,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
-      },
-      {
-        "title": "UAE-led global crackdown uncovers $39 billion in fraud-linked assets, 960 arrested - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMkdONWVtbnVwZFRQTzRFcnRzTDJTeXJOc3UtaC1nYVJiRUZNTkdrTGVONmktNDlXb3NNR3FCUnlHb0hmVjVucnpMdGs5dWFsS2kzTGJGSTR5WW9qbFdiZlUteGhEeGRiM3FRWVJTb3p6ejlJa2JmcGQ0d0JXZnlxUks3X1hGNTl1VDJCRjZkNFpfNm4yeWdrY2JpSmVUN1ZLVWE5ZUxRRDA3XzQ3emVGQWloVVZ2anQxekhlNWkxQjZISVdhYmV5Qw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-10-22",
-        "description": "UAE-led global crackdown uncovers $39 billion in fraud-linked assets, 960 arrested  Gulf News",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Emerging Risks",
-        "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE announces intention to invest additional €15 billion in Greece to strengthen economic and strategic partnership",
+        "url": "https://www.emirates247.com/uae/uae-announces-intention-to-invest-additional-15-billion-in-greece-to-strengthen-economic-and-strategic-partnership/7039",
+        "source": "Emirates247",
+        "domain": "emirates247.com",
+        "date": "2026-10-22",
+        "description": "UAE announces intention to invest additional €15 billion in Greece to strengthen economic and strategic partnership",
+        "imageUrl": "https://api.emirates247.com/emirates247/uploads/images/2026/10/22/10967.webp",
+        "hoursAgo": 10,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
+      }
+    ]
   },
   "totalCount": 3
 }
