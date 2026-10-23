@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-23T09:06:53.320Z",
+  "generatedAt": "2026-10-23T16:28:39.449Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,12 +14,12 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 153,
-    "big4Rejected": 2,
-    "englishOnly": 151,
-    "withinRecency": 41,
-    "scored": 41,
-    "passed": 1
+    "afterDedup": 150,
+    "big4Rejected": 1,
+    "englishOnly": 149,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -31,14 +31,27 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-23",
         "description": "Abu Dhabi sets five-year deadline for private school Emiratisation drive  Arabian Business",
-        "hoursAgo": 0,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Deyaar hospitality hit by war but property development continues - Arabian Gulf Business Insight | AGBI",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaFNLZ2RnRFM0Q3FmS196LWp6aF9BQm9zeFlfMjFRVjRtTXVaYVM0T2pvWmtSYXgtWTdsUTlfRlM2VW1qSktYYzNwM01yOFNZalVxWF9nODVvSWlxYm1oTmpTa05iQ1BvdzhvRTdselBsT0FWd2lsaDlqTHBGZl8taE1wUE44S19Fc2htZGJ0WjB4UE5uZnkwbTg2N2J5Ml9fb3hwR1JLaEstdw?oc=5",
+        "source": "Arabian Gulf Business Insight | AGBI",
+        "domain": "agbi.com",
+        "date": "2026-10-23",
+        "description": "Deyaar hospitality hit by war but property development continues  Arabian Gulf Business Insight | AGBI",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
