@@ -1,71 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-23T03:23:19.640Z",
+  "generatedAt": "2026-10-23T09:06:53.320Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 260,
-    "afterDedup": 208,
+    "totalFetched": 160,
+    "afterDedup": 153,
     "big4Rejected": 2,
-    "englishOnly": 186,
-    "withinRecency": 81,
-    "scored": 81,
-    "passed": 3
+    "englishOnly": 151,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [
       {
-        "title": "Abu Dhabi doubles down on long-term capital strategy amid M&A surge - TradingView",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdWhjWHYyV2o5SHEweEFBVGJsbVlvT29kLTZZV3I4Y3RwME5DbzVNcW43VWRsdlotMThjaFRpYkF0LWg5T1JUbDJueExmWHhPVUpGbk1IRHdNQXlrcjU5eW1TS01OSnFYQTN5bGdHSnVvNEZITmxhV1g5d2pnaWo3d3g3NGpiTEx2bjJQWXhlc2JLcWRmeF9aZHk1VjNMb3dwc3lOYTFHdm9TMHZ1enlBVzhRb3M4NDFBNzh0d0ptSE5yMm42UG9DMmR0ZGgxR3ZnV2V4cHlKem9rbDg?oc=5",
-        "source": "TradingView",
-        "domain": "tradingview.com",
-        "date": "2026-10-22",
-        "description": "Abu Dhabi doubles down on long-term capital strategy amid M&A surge  TradingView",
-        "hoursAgo": 23,
+        "title": "Abu Dhabi sets five-year deadline for private school Emiratisation drive - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbG16TGxxVm9pejRUR2tTM0tWelJVN2xuQzZxOWtOR3QzaWhvX0pHN3dYY01KclFuUTY1U3hEU2FWR0dsWG9MS2h1bjR5MWU5N3hpYlVtTTEzWWI3ZDViRnJTMjNmWl9DeVRHcDJ2UDdma21jaVJoMF8tbHlwWkp2cXV3VFNUSWJlLXJIZGhVX3ZmLVlHXzBkczVDaWtRNHpIZHhOSzNaQnJndWtSY2RZWFFrOVN6RXBHbEMtdDBFYVU?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-10-23",
+        "description": "Abu Dhabi sets five-year deadline for private school Emiratisation drive  Arabian Business",
+        "hoursAgo": 0,
         "score": 6,
-        "topic": "IPO & M&A",
+        "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
-    "risk": [
-      {
-        "title": "Thomson Reuters and SpendConsole launch integrated e-invoicing and payables solution for the UAE and GCC - Zawya",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcHBMa1h1Y3VlTjJucURaX050czNrZDZaSEwyY1VTQ0hkaHgxWHdjRk1YaEZoV1VHU2JoaXdVWFdjelFwb3dVVXBZTFZwSTlMNnh6cW92WWU2eXp4M183ekUtVzFJYXlMT3VTMDh0Mkkzb3V5eUdPbjVsQzVyeHc3NVJYTXdfQVV0VGQxU0JMYkVtN09sZnQ0UXRuZEs0aUx3ZU51SkJ3c3B3OUc4dzZYMVkwTlNhLUdxeHpYcjlybU0yZ1NvMXZPaXVBbUVqWHF4UW1HWnI5WFhQYmVhT1ZWLXZEQWt0dw?oc=5",
-        "source": "Zawya",
-        "domain": "zawya.com",
-        "date": "2026-10-22",
-        "description": "Thomson Reuters and SpendConsole launch integrated e-invoicing and payables solution for the UAE and GCC  Zawya",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
-    "world": [
-      {
-        "title": "UAE announces intention to invest additional €15 billion in Greece to strengthen economic and strategic partnership",
-        "url": "https://www.emirates247.com/uae/uae-announces-intention-to-invest-additional-15-billion-in-greece-to-strengthen-economic-and-strategic-partnership/7039",
-        "source": "Emirates247",
-        "domain": "emirates247.com",
-        "date": "2026-10-22",
-        "description": "UAE announces intention to invest additional €15 billion in Greece to strengthen economic and strategic partnership",
-        "imageUrl": "https://api.emirates247.com/emirates247/uploads/images/2026/10/22/10967.webp",
-        "hoursAgo": 10,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "gdelt"
-      }
-    ]
+    "risk": [],
+    "world": []
   },
-  "totalCount": 3
+  "totalCount": 1
 }
