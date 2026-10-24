@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T08:39:21.891Z",
+  "generatedAt": "2026-10-24T15:24:07.981Z",
   "weekOf": "24 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "abu-dhabi-sets-five-year-deadline-for-pr",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "capital",
-      "roomColor": "#F0C050",
-      "roomLabel": "CAPITAL · CASH",
-      "theme": "compliance_risk",
-      "tier": "WEEK AHEAD CAPITAL",
-      "title": "Abu Dhabi sets five-year deadline for private school Emiratisation drive - Arabian Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbG16TGxxVm9pejRUR2tTM0tWelJVN2xuQzZxOWtOR3QzaWhvX0pHN3dYY01KclFuUTY1U3hEU2FWR0dsWG9MS2h1bjR5MWU5N3hpYlVtTTEzWWI3ZDViRnJTMjNmWl9DeVRHcDJ2UDdma21jaVJoMF8tbHlwWkp2cXV3VFNUSWJlLXJIZGhVX3ZmLVlHXzBkczVDaWtRNHpIZHhOSzNaQnJndWtSY2RZWFFrOVN6RXBHbEMtdDBFYVU?oc=5",
-      "filenameBase": "post-1-abu-dhabi-sets-five-year-deadline-for-pr",
-      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "Abu Dhabi sets five-year deadline",
-      "headlineLine2": "for private school Emiratisation drive",
-      "hoursAgo": 24
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
