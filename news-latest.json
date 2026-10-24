@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-23T22:53:56.927Z",
+  "generatedAt": "2026-10-24T03:17:24.530Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 32,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 192,
-    "afterDedup": 156,
-    "big4Rejected": 2,
-    "englishOnly": 153,
-    "withinRecency": 44,
-    "scored": 44,
+    "totalFetched": 160,
+    "afterDedup": 149,
+    "big4Rejected": 1,
+    "englishOnly": 148,
+    "withinRecency": 38,
+    "scored": 38,
     "passed": 1
   },
   "rooms": {
@@ -31,7 +31,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-23",
         "description": "Abu Dhabi sets five-year deadline for private school Emiratisation drive  Arabian Business",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
