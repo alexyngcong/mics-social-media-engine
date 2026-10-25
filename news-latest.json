@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-24T22:15:15.585Z",
+  "generatedAt": "2026-10-25T03:12:39.776Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,31 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 154,
+    "afterDedup": 151,
     "big4Rejected": 2,
-    "englishOnly": 152,
-    "withinRecency": 35,
-    "scored": 35,
-    "passed": 0
+    "englishOnly": 149,
+    "withinRecency": 31,
+    "scored": 31,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE cracks down on universities and training centres breaking rules - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMDFfM3Ffbjl0ODd6dlV3bnBEOFFaWnBCcDJkS1hhWHVzWGNKemh2Tk9ORklwT2lkNC1XZC1mWk1aQUk0WUszZ3k1UEJzYmJRbkh0dnJaSlZnbXphVnB5LXhsX3dfNllrY2hNcHVYaGt4YnBuRTY3MEtEbU9KdWZ1VjRLTlE3MmNtbi10cVpyTW1fSkt2STJVdzlVM1JMRllqZW5ZY25UMA?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-22",
+        "description": "UAE cracks down on universities and training centres breaking rules  Gulf News",
+        "hoursAgo": 61,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
