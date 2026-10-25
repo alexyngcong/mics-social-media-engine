@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T08:58:06.922Z",
+  "generatedAt": "2026-10-25T15:33:57.142Z",
   "weekOf": "25 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-cracks-down-on-universities-and-trai",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "UAE cracks down on universities and training centres breaking rules - Gulf News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMDFfM3Ffbjl0ODd6dlV3bnBEOFFaWnBCcDJkS1hhWHVzWGNKemh2Tk9ORklwT2lkNC1XZC1mWk1aQUk0WUszZ3k1UEJzYmJRbkh0dnJaSlZnbXphVnB5LXhsX3dfNllrY2hNcHVYaGt4YnBuRTY3MEtEbU9KdWZ1VjRLTlE3MmNtbi10cVpyTW1fSkt2STJVdzlVM1JMRllqZW5ZY25UMA?oc=5",
-      "filenameBase": "post-1-uae-cracks-down-on-universities-and-trai",
-      "photoUrl": "/mics-social-media-engine/photos/growth/01_dubai_skyline_night.jpg",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "UAE cracks down on universities",
-      "headlineLine2": "and training centres breaking rules",
-      "hoursAgo": 67
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
