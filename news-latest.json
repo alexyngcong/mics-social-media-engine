@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-25T15:33:43.954Z",
+  "generatedAt": "2026-10-25T18:44:20.710Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 39,
-    "googleNews": 149,
+    "gdelt": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 198,
-    "afterDedup": 159,
+    "totalFetched": 160,
+    "afterDedup": 151,
     "big4Rejected": 1,
-    "englishOnly": 157,
-    "withinRecency": 32,
-    "scored": 32,
+    "englishOnly": 150,
+    "withinRecency": 23,
+    "scored": 23,
     "passed": 0
   },
   "rooms": {
