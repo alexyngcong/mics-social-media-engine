@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-25T03:12:39.776Z",
+  "generatedAt": "2026-10-25T08:57:50.058Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,11 +14,11 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 2,
-    "englishOnly": 149,
-    "withinRecency": 31,
-    "scored": 31,
+    "afterDedup": 153,
+    "big4Rejected": 1,
+    "englishOnly": 152,
+    "withinRecency": 29,
+    "scored": 29,
     "passed": 1
   },
   "rooms": {
@@ -33,7 +33,7 @@
         "domain": "gulfnews.com",
         "date": "2026-10-22",
         "description": "UAE cracks down on universities and training centres breaking rules  Gulf News",
-        "hoursAgo": 61,
+        "hoursAgo": 67,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
