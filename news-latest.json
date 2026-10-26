@@ -1,31 +1,56 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-26T03:12:44.788Z",
+  "generatedAt": "2026-10-26T09:42:24.883Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 20,
+    "gdelt": 92,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 180,
-    "afterDedup": 161,
+    "totalFetched": 252,
+    "afterDedup": 206,
     "big4Rejected": 1,
-    "englishOnly": 160,
-    "withinRecency": 36,
-    "scored": 36,
-    "passed": 0
+    "englishOnly": 181,
+    "withinRecency": 65,
+    "scored": 65,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLWxHNTZNMkNZUTRHY3hWSFRld05JZm9FRzh3TlZsQzNCS2NqX3kwQjBvbFpjUXBCSG8xRmRLUFBhM25YYTVVNXNyQWFmYjdUTk9ndTZCRmY3dDVObUpsLW85bC1pZzUtWGM5UmR3d2hEckZDUDEzdXN2MEN3MXpFa1JaZWRDVGU5aGE3Ul9nVlZPN0FhVGRjSlctX2lnSHNyeDQ3Z2RFTEN6UmRZRXVuMkNBbGRrbFJfaGpZazZQT07SAdMBQVVfeXFMUEhrM2xRZk5Uc2Z2ZkRUV1p3bGpQSkEzaGpaQkdhZ1lrYld2LUMxd3ozdTh6WmxJVkJYNkJCeGxGOURPY2dsbU9RdmphOXpncm03bjZvSWRDeUp0Ykg5NmpOQjUyZ1MwS08xcTdzOXhnSFZGNklnbGxpTk44aldNOFJrNVNuS2trMkphb0xpOXN3ZU13Y0JmN0Q1ZlQtWTZscmNwa0RTbGg4M1M0cHd2R2NXTV9fRFZwQk5aNjMyUF90VXUwX2prR09OaklId0VYSFlHaw?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-26",
+        "description": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines  Gulf News",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "Middle East’s first AI-powered virtual courtroom launches in Dubai - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdW5XSHBQUndpYldVOE9qandZTU5VUFJOZkN6Q09sV0xteF9sUGJHTmNTWTVkcEl6WnBPV2dPbklnalQ4NHZRalJkd1dueWk5bXZBc0FnYS15NDU3WHc3MVltU2IteU5iTU9FcE5NQmg2U2pFczBZSS03bkxKQkZrWnBMX0VfeGZhQXJ2NEswUC01em9RTFM0dkJfUzNqWVV3WkVOcEI4Z0ZLQk5xVGtvaGZ5aHo0Ynp5?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-10-26",
+        "description": "Middle East’s first AI-powered virtual courtroom launches in Dubai  Arabian Business",
+        "hoursAgo": 2,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 2
 }
