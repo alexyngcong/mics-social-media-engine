@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-26T09:42:24.883Z",
+  "generatedAt": "2026-10-26T18:14:29.211Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 92,
+    "gdelt": 0,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 252,
-    "afterDedup": 206,
+    "totalFetched": 160,
+    "afterDedup": 149,
     "big4Rejected": 1,
-    "englishOnly": 181,
-    "withinRecency": 65,
-    "scored": 65,
-    "passed": 2
+    "englishOnly": 148,
+    "withinRecency": 40,
+    "scored": 40,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -32,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-10-26",
         "description": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines  Gulf News",
-        "hoursAgo": 1,
+        "hoursAgo": 10,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -44,13 +44,26 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-26",
         "description": "Middle East’s first AI-powered virtual courtroom launches in Dubai  Arabian Business",
-        "hoursAgo": 2,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "Apollo to buy nearly 10% stake in Abu Dhabi-backed alternative asset manager Mubadala Capital - CNBC",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBpZEZJUTJ2Q1cxb1Rsb0JsRjVYTkxoWVVUWkZucmJ5MlR2WE1leVhUY09zNkgxUWF5X3VwWEFqNVVfYTB2cUM5b1lUTGp3MFJRenBSWWQ0Tl9pN3NYdS16S1NNZThHdThzNUc5Z1h0dEpQck000gF6QVVfeXFMTWxBQ3MwaXdXbUZiTHJoTmdvdWEyOC1JbzVXVklkbzlxSXNwMGdnVkdVWmJxWHVaeVEtNDl2YmpQQXFWTzQzMjNYdjJSeHY3TGZRLWlxc1ZzazR2YVB3cmFGZ3F2MkxLZ2FiTVRkM0hMcjdtQW1abmhJS2c?oc=5",
+        "source": "CNBC",
+        "domain": "cnbc.com",
+        "date": "2026-10-26",
+        "description": "Apollo to buy nearly 10% stake in Abu Dhabi-backed alternative asset manager Mubadala Capital  CNBC",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
