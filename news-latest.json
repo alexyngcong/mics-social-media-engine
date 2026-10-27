@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-27T17:28:50.345Z",
+  "generatedAt": "2026-10-27T23:29:27.821Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 148,
+    "gdelt": 8,
+    "googleNews": 149,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 150,
-    "big4Rejected": 1,
+    "totalFetched": 167,
+    "afterDedup": 153,
+    "big4Rejected": 2,
     "englishOnly": 149,
-    "withinRecency": 54,
-    "scored": 54,
+    "withinRecency": 46,
+    "scored": 46,
     "passed": 1
   },
   "rooms": {
@@ -32,8 +32,8 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-26",
         "description": "UAE e-invoicing: Oct 30 provider deadline looms for firms with Dhs50m+ revenue  Gulf Business",
-        "hoursAgo": 22,
-        "score": 8,
+        "hoursAgo": 28,
+        "score": 7.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
