@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-26T23:34:57.194Z",
+  "generatedAt": "2026-10-27T03:42:53.524Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 147,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
-    "afterDedup": 149,
+    "totalFetched": 158,
+    "afterDedup": 150,
     "big4Rejected": 2,
-    "englishOnly": 147,
-    "withinRecency": 44,
-    "scored": 44,
-    "passed": 3
+    "englishOnly": 148,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -32,20 +32,8 @@
         "domain": "gulfbusiness.com",
         "date": "2026-10-26",
         "description": "UAE e-invoicing: Oct 30 provider deadline looms for firms with Dhs50m+ revenue  Gulf Business",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 8,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLWxHNTZNMkNZUTRHY3hWSFRld05JZm9FRzh3TlZsQzNCS2NqX3kwQjBvbFpjUXBCSG8xRmRLUFBhM25YYTVVNXNyQWFmYjdUTk9ndTZCRmY3dDVObUpsLW85bC1pZzUtWGM5UmR3d2hEckZDUDEzdXN2MEN3MXpFa1JaZWRDVGU5aGE3Ul9nVlZPN0FhVGRjSlctX2lnSHNyeDQ3Z2RFTEN6UmRZRXVuMkNBbGRrbFJfaGpZazZQT07SAdMBQVVfeXFMUEhrM2xRZk5Uc2Z2ZkRUV1p3bGpQSkEzaGpaQkdhZ1lrYld2LUMxd3ozdTh6WmxJVkJYNkJCeGxGOURPY2dsbU9RdmphOXpncm03bjZvSWRDeUp0Ykg5NmpOQjUyZ1MwS08xcTdzOXhnSFZGNklnbGxpTk44aldNOFJrNVNuS2trMkphb0xpOXN3ZU13Y0JmN0Q1ZlQtWTZscmNwa0RTbGg4M1M0cHd2R2NXTV9fRFZwQk5aNjMyUF90VXUwX2prR09OaklId0VYSFlHaw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-10-26",
-        "description": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines  Gulf News",
-        "hoursAgo": 15,
-        "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -58,12 +46,12 @@
         "domain": "cnbc.com",
         "date": "2026-10-26",
         "description": "Apollo to buy nearly 10% stake in Abu Dhabi-backed alternative asset manager Mubadala Capital  CNBC",
-        "hoursAgo": 12,
+        "hoursAgo": 16,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 2
 }
