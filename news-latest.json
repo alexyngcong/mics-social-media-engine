@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-28T03:59:09.303Z",
+  "generatedAt": "2026-10-28T10:27:42.025Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 147,
+    "gdelt": 2,
+    "googleNews": 0,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
-    "afterDedup": 151,
-    "big4Rejected": 2,
-    "englishOnly": 149,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 1
+    "totalFetched": 12,
+    "afterDedup": 7,
+    "big4Rejected": 0,
+    "englishOnly": 7,
+    "withinRecency": 7,
+    "scored": 7,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "UAE e-invoicing: Oct 30 provider deadline looms for firms with Dhs50m+ revenue - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd1M0bzNJcTEybmx2M29pY01HRWxvUURNZmxjemd1WDByOGUzSDVmUW4xUnljZnRlQXZBYW1FdW5ubnd0N01wWTVpNjRDR2xzY0lWcGlDd2ZhLV9BNjZsOTJBME5jbTVoUkJUWjdYbVZjaGhoUktjWUYzNkdvRDNyMldoQXN0V3R2WGFOT0wwbkpSX1ZnTVE1YV8xdklwMlROQ2xiR01EU0xaNUlCYXV1TWFYT1FYUQ?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-10-26",
-        "description": "UAE e-invoicing: Oct 30 provider deadline looms for firms with Dhs50m+ revenue  Gulf Business",
-        "hoursAgo": 32,
-        "score": 7.5,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
