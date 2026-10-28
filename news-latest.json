@@ -1,31 +1,56 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-28T10:27:42.025Z",
+  "generatedAt": "2026-10-28T17:54:46.379Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 2,
-    "googleNews": 0,
+    "gdelt": 38,
+    "googleNews": 146,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 12,
-    "afterDedup": 7,
-    "big4Rejected": 0,
-    "englishOnly": 7,
-    "withinRecency": 7,
-    "scored": 7,
-    "passed": 0
+    "totalFetched": 194,
+    "afterDedup": 176,
+    "big4Rejected": 2,
+    "englishOnly": 169,
+    "withinRecency": 67,
+    "scored": 67,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVlFDSEtCd1I4TTB1M2NIQlBtSUtHWEJGelF2aTctaVpIQzRtcTRDWkt5dkFwRFA3ZHVZc1N0RWF6UzYzMzd2TUJQdXZ3MGpFaE9IOUtrenFhLThTNjByTlpnQ0laeHJXMVpJZ25fcmxGUmRmb0ViRW1DRFJmV3M2elhTWllZM3M4TzNXS01SQjVldDVvTnFDbkdjaVlCcGV2VHAzSnFfS29ldVNRUVJEUU9iTnRqS1ZlemJZNEhhY3RvakY1RGNjd2VpR0R0Z9IB4AFBVV95cUxNSUF6V3NtcTJFd0tRQ1FQbTlxbmdwLXVCd3hlcE05amFITks4Z2RaT0I5Znp2UUN3UjNpbWlKVWNXQ2YydkpjUVBQaHdqZVFQM2tpM0xYWlV5bU1tN3QxbnpwRDhUVmliNmU3dnJ4Uk56ejRuaG1NSWNrRnZFc0gtYTJubVdSaUIxX2Q5TmRmWEZIMkFwTDc0UFpJSWo3TVhtTnBZRzl1RExGTWU5N2l3Y1FmRmd2RU9JUU9WY1dvaWZQdlZQWUpYbC1pY2VFemRJbUVPQ2tWb2cxenVHTFpRSw?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-28",
+        "description": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement  Gulf News",
+        "hoursAgo": 7,
+        "score": 8,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLWxHNTZNMkNZUTRHY3hWSFRld05JZm9FRzh3TlZsQzNCS2NqX3kwQjBvbFpjUXBCSG8xRmRLUFBhM25YYTVVNXNyQWFmYjdUTk9ndTZCRmY3dDVObUpsLW85bC1pZzUtWGM5UmR3d2hEckZDUDEzdXN2MEN3MXpFa1JaZWRDVGU5aGE3Ul9nVlZPN0FhVGRjSlctX2lnSHNyeDQ3Z2RFTEN6UmRZRXVuMkNBbGRrbFJfaGpZazZQT07SAdMBQVVfeXFMUEhrM2xRZk5Uc2Z2ZkRUV1p3bGpQSkEzaGpaQkdhZ1lrYld2LUMxd3ozdTh6WmxJVkJYNkJCeGxGOURPY2dsbU9RdmphOXpncm03bjZvSWRDeUp0Ykg5NmpOQjUyZ1MwS08xcTdzOXhnSFZGNklnbGxpTk44aldNOFJrNVNuS2trMkphb0xpOXN3ZU13Y0JmN0Q1ZlQtWTZscmNwa0RTbGg4M1M0cHd2R2NXTV9fRFZwQk5aNjMyUF90VXUwX2prR09OaklId0VYSFlHaw?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-26",
+        "description": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines  Gulf News",
+        "hoursAgo": 57,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 2
 }
