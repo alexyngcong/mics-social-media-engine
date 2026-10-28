@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-28T17:54:46.379Z",
+  "generatedAt": "2026-10-28T23:53:50.904Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 38,
-    "googleNews": 146,
+    "gdelt": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 194,
-    "afterDedup": 176,
-    "big4Rejected": 2,
-    "englishOnly": 169,
-    "withinRecency": 67,
-    "scored": 67,
+    "totalFetched": 160,
+    "afterDedup": 149,
+    "big4Rejected": 3,
+    "englishOnly": 146,
+    "withinRecency": 45,
+    "scored": 45,
     "passed": 2
   },
   "rooms": {
@@ -27,12 +27,12 @@
     "risk": [
       {
         "title": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVlFDSEtCd1I4TTB1M2NIQlBtSUtHWEJGelF2aTctaVpIQzRtcTRDWkt5dkFwRFA3ZHVZc1N0RWF6UzYzMzd2TUJQdXZ3MGpFaE9IOUtrenFhLThTNjByTlpnQ0laeHJXMVpJZ25fcmxGUmRmb0ViRW1DRFJmV3M2elhTWllZM3M4TzNXS01SQjVldDVvTnFDbkdjaVlCcGV2VHAzSnFfS29ldVNRUVJEUU9iTnRqS1ZlemJZNEhhY3RvakY1RGNjd2VpR0R0Z9IB4AFBVV95cUxNSUF6V3NtcTJFd0tRQ1FQbTlxbmdwLXVCd3hlcE05amFITks4Z2RaT0I5Znp2UUN3UjNpbWlKVWNXQ2YydkpjUVBQaHdqZVFQM2tpM0xYWlV5bU1tN3QxbnpwRDhUVmliNmU3dnJ4Uk56ejRuaG1NSWNrRnZFc0gtYTJubVdSaUIxX2Q5TmRmWEZIMkFwTDc0UFpJSWo3TVhtTnBZRzl1RExGTWU5N2l3Y1FmRmd2RU9JUU9WY1dvaWZQdlZQWUpYbC1pY2VFemRJbUVPQ2tWb2cxenVHTFpRSw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVExVbDNybUdxMGMtTEtoQjBYQk4xY3VRWUhBR0h0U29CMDlXNHFRR3k4dmVybFBaUmZPX3MzNVZqTVZzOTkwdnNFOTB3YzR0dkk2Ni12VXNDZlA1NldyU3R2aktYRWpzUkx3emo1SWtHX3dMV0t3MENHMUJXdFNId0N3aVI4eEt5NzZFOURhNXFVUVNPNlc2Y2V5SE16bkd2NDg3dlItUmFyRU9INTRoY2VaWVFTQ0RVNFZHa3VTekxueFBUckxqTkVoS0tWMzjSAeIBQVVfeXFMTmRVcW9uRVNhMWUzUkFGcWhMSXczZ3k4a2I3Wm5mYWFyMm9MZkdzMFVEREIwYmRDcW01SllFUnBTVG5oSFlaVTd2eTcwUzk2ZHhIeTVpWVJCSkthU0VCZHlpUlB2d1Jrc0lrR2syVXEzbk5kbjJObVJIb050QTYydzlmT1NETXlKWlZpdVlqMUVJUUR5aDA3b2ZMNWFnZnRMWEp0cmd2R3dvRDBrVXhYTmlwMWNWMHFDSzZHQkljUllTbVNTZWp6RjNnUFNSODFmdXQ3M1FfSnFBcjFhbDRLczZXZw?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-10-28",
         "description": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement  Gulf News",
-        "hoursAgo": 7,
+        "hoursAgo": 13,
         "score": 8,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -44,7 +44,7 @@
         "domain": "gulfnews.com",
         "date": "2026-10-26",
         "description": "UAE e-invoicing deadline in 4 days: Who must comply to avoid Dh5,000 fines  Gulf News",
-        "hoursAgo": 57,
+        "hoursAgo": 63,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
