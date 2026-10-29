@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T10:27:57.057Z",
-  "weekOf": "28 Oct 2026",
+  "generatedAt": "2026-10-29T04:23:29.632Z",
+  "weekOf": "29 Oct 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "uae-e-invoicing-deadline-businesses-have",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVExVbDNybUdxMGMtTEtoQjBYQk4xY3VRWUhBR0h0U29CMDlXNHFRR3k4dmVybFBaUmZPX3MzNVZqTVZzOTkwdnNFOTB3YzR0dkk2Ni12VXNDZlA1NldyU3R2aktYRWpzUkx3emo1SWtHX3dMV0t3MENHMUJXdFNId0N3aVI4eEt5NzZFOURhNXFVUVNPNlc2Y2V5SE16bkd2NDg3dlItUmFyRU9INTRoY2VaWVFTQ0RVNFZHa3VTekxueFBUckxqTkVoS0tWMzjSAeIBQVVfeXFMTmRVcW9uRVNhMWUzUkFGcWhMSXczZ3k4a2I3Wm5mYWFyMm9MZkdzMFVEREIwYmRDcW01SllFUnBTVG5oSFlaVTd2eTcwUzk2ZHhIeTVpWVJCSkthU0VCZHlpUlB2d1Jrc0lrR2syVXEzbk5kbjJObVJIb050QTYydzlmT1NETXlKWlZpdVlqMUVJUUR5aDA3b2ZMNWFnZnRMWEp0cmd2R3dvRDBrVXhYTmlwMWNWMHFDSzZHQkljUllTbVNTZWp6RjNnUFNSODFmdXQ3M1FfSnFBcjFhbDRLczZXZw?oc=5",
+      "filenameBase": "post-1-uae-e-invoicing-deadline-businesses-have",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "UAE e-invoicing deadline: Businesses…",
+      "headlineLine2": "until October 30 to meet first requi…",
+      "hoursAgo": 17
     },
     {
       "n": 2,
