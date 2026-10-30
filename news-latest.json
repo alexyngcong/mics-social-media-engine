@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-30T14:50:32.762Z",
+  "generatedAt": "2026-10-30T20:24:05.174Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 1,
-    "englishOnly": 150,
-    "withinRecency": 49,
-    "scored": 49,
-    "passed": 6
+    "totalFetched": 157,
+    "afterDedup": 144,
+    "big4Rejected": 0,
+    "englishOnly": 144,
+    "withinRecency": 42,
+    "scored": 42,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
-        "hoursAgo": 6,
+        "hoursAgo": 12,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -43,7 +43,7 @@
         "domain": "khaleejtimes.com",
         "date": "2026-10-30",
         "description": "UAE's Arada raises $400 million in first property debt issuance since regional conflict began  Khaleej Times",
-        "hoursAgo": 6,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -57,33 +57,9 @@
         "domain": "gulfnews.com",
         "date": "2026-10-28",
         "description": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement  Gulf News",
-        "hoursAgo": 52,
+        "hoursAgo": 57,
         "score": 7,
         "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "UAE updates e-invoicing penalty rules ahead of rollout - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeVR4VExvNDJpWHNEZ2gwS2VfakEtb2FnVkVHbzZhNmxLb09BWG8xbjc4SU13elF0dTRWSUFXYjBXbTdxZEd1ajQ3UTRXaWdrRmVvMVZsOXBxQTBoVVRUVWF0LWVLMWNvaFV2SEptcFd3dXFicjFfaDFsazNuZVlDb2E5bnpkM0JfeEQ4N0ZSTENUSUQ1MTFNNWxoXzIyQVV3c1BlbmRn0gG4AUFVX3lxTE5pcmVESWNvU2ZTSU14YWMxcktCMG55REdCX0xweHlMbm0zaVpwMktnQmt3RVdZN0RCQUFmSllkcHJibnRHdWVTM1lITTVOWnZCWkJmbWtHOHNsQWIxWmd4cEhaUHlIM3hkX3NBVlZRTU5GZmUwZnI2bkY1SkZyM1JaN2VkazV1MWFDY2h5M25XMFZvWXVub1BiMlh0OWdacnpVTGFpbXVNSjNaV0ZWT183bzNDMUY3WkU?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-10-30",
-        "description": "UAE updates e-invoicing penalty rules ahead of rollout  Gulf News",
-        "hoursAgo": 2,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
-        "title": "Houthis and Iran hijack new tech to threaten Red Sea and Hormuz shipping, Bahrain warns - Arab News",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOGFEMDRVZzRfR2VZYldUeFJTT2tYZGt2Wm5wVUk2SVNKdU5MUGFNalNWdnlXS1F0Smx5TG81WXpwUTFGbWpsbW1vR0VwUHFyQWVITFY2djFKNVpyVHkycVlSS3JpT09WSk9aaUdnWkVUbW0zUHk2UHNia1VNOS1DTzdaeU92a1JZajdNdDRrdU9weGdTU2ZiQzVZc0dXYkg2d0hrOFZCNlkzWVZRbENmUEJfZm1JVnVMYzBpVDhUcnVUTVpFczF3TDZWdw?oc=5",
-        "source": "Arab News",
-        "domain": "arabnews.com",
-        "date": "2026-10-29",
-        "description": "Houthis and Iran hijack new tech to threaten Red Sea and Hormuz shipping, Bahrain warns  Arab News",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
@@ -95,12 +71,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE capital markets eye tokenisation, AI and new investment opportunities as foreign investors drive 49% of trading  Arabian Business",
-        "hoursAgo": 4,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 4
 }
