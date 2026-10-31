@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-31T14:18:09.261Z",
+  "generatedAt": "2026-10-31T19:43:44.463Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 149,
-    "big4Rejected": 3,
-    "englishOnly": 146,
-    "withinRecency": 40,
-    "scored": 40,
-    "passed": 3
+    "totalFetched": 158,
+    "afterDedup": 144,
+    "big4Rejected": 0,
+    "englishOnly": 144,
+    "withinRecency": 36,
+    "scored": 36,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
-        "hoursAgo": 30,
+        "hoursAgo": 35,
         "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -43,27 +43,14 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE developer Arada raises $400m in first property sukuk since regional conflict began  Arabian Business",
-        "hoursAgo": 17,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Banking & Rates",
         "origin": "google-news"
       }
     ],
-    "risk": [
-      {
-        "title": "UAE limits e-invoicing fines at Dh50,000, removes Dh1,000 daily penalty—how it works now - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNajE3TG03bDdTcEQ1ejV4MERDZW5KbmhEUGpvUW9EWUVtTWJrMDM4VUo5V0hrTDREVk00Zjd1c2lFWTdxQTZzNDFUbE1uSTNkSVdwZl9Ua0hwODU1aW5LTms2eGtRTTgyUkxya295cExLMmxKdVJKQlYzcHdTS1dmbDZmazhNOEFrdlF2R1BHemxvVTFXNS14RThJUHlXZnpyUVQwVGdBdnk3eExUci1iTkVtZi12cnhuUkdJbTE0R184MUc1R3V6V2xQYWxPX1NO0gHjAUFVX3lxTFBxeENsbkRyZHRmbFVVenJRLUtWSUhOQXlvcExkMlhUcHJpckNoMWw5dGt0MVB4WHhVMGhfMkFzX0h4RUdvdXcxcUhXelhUc3NXTVVydWljZlBKRzc1UVMyVG9kdlhydFd0NzJwanRXcUc2bE1YMzM5aHNhdEJKNUYxVlk4dGRqX3V2RURlY0h0MVFrc2dxU0YyWnVud1pnTXJrRkh2UFJPZjZlR29nYW9SYjRmblRsZXNGUXV1OFZhYkQ2VEVnaTNDRlFRbVB6SEVySkVQZHNhY08xNUduRllmREFN?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-10-31",
-        "description": "UAE limits e-invoicing fines at Dh50,000, removes Dh1,000 daily penalty—how it works now  Gulf News",
-        "hoursAgo": 12,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 3
+  "totalCount": 2
 }
