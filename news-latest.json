@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-31T04:02:37.525Z",
+  "generatedAt": "2026-10-31T14:18:09.261Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 146,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 156,
-    "afterDedup": 151,
-    "big4Rejected": 1,
-    "englishOnly": 150,
-    "withinRecency": 47,
-    "scored": 47,
-    "passed": 5
+    "totalFetched": 160,
+    "afterDedup": 149,
+    "big4Rejected": 3,
+    "englishOnly": 146,
+    "withinRecency": 40,
+    "scored": 40,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -31,8 +31,8 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
-        "hoursAgo": 20,
-        "score": 8,
+        "hoursAgo": 30,
+        "score": 7.5,
         "topic": "Corporate Finance",
         "origin": "google-news"
       },
@@ -43,7 +43,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE developer Arada raises $400m in first property sukuk since regional conflict began  Arabian Business",
-        "hoursAgo": 7,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Banking & Rates",
         "origin": "google-news"
@@ -51,44 +51,19 @@
     ],
     "risk": [
       {
-        "title": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVExVbDNybUdxMGMtTEtoQjBYQk4xY3VRWUhBR0h0U29CMDlXNHFRR3k4dmVybFBaUmZPX3MzNVZqTVZzOTkwdnNFOTB3YzR0dkk2Ni12VXNDZlA1NldyU3R2aktYRWpzUkx3emo1SWtHX3dMV0t3MENHMUJXdFNId0N3aVI4eEt5NzZFOURhNXFVUVNPNlc2Y2V5SE16bkd2NDg3dlItUmFyRU9INTRoY2VaWVFTQ0RVNFZHa3VTekxueFBUckxqTkVoS0tWMzjSAeIBQVVfeXFMTmRVcW9uRVNhMWUzUkFGcWhMSXczZ3k4a2I3Wm5mYWFyMm9MZkdzMFVEREIwYmRDcW01SllFUnBTVG5oSFlaVTd2eTcwUzk2ZHhIeTVpWVJCSkthU0VCZHlpUlB2d1Jrc0lrR2syVXEzbk5kbjJObVJIb050QTYydzlmT1NETXlKWlZpdVlqMUVJUUR5aDA3b2ZMNWFnZnRMWEp0cmd2R3dvRDBrVXhYTmlwMWNWMHFDSzZHQkljUllTbVNTZWp6RjNnUFNSODFmdXQ3M1FfSnFBcjFhbDRLczZXZw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-10-28",
-        "description": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement  Gulf News",
-        "hoursAgo": 65,
-        "score": 7,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
         "title": "UAE limits e-invoicing fines at Dh50,000, removes Dh1,000 daily penalty—how it works now - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNajE3TG03bDdTcEQ1ejV4MERDZW5KbmhEUGpvUW9EWUVtTWJrMDM4VUo5V0hrTDREVk00Zjd1c2lFWTdxQTZzNDFUbE1uSTNkSVdwZl9Ua0hwODU1aW5LTms2eGtRTTgyUkxya295cExLMmxKdVJKQlYzcHdTS1dmbDZmazhNOEFrdlF2R1BHemxvVTFXNS14RThJUHlXZnpyUVQwVGdBdnk3eExUci1iTkVtZi12cnhuUkdJbTE0R184MUc1R3V6V2xQYWxPX1NO0gHjAUFVX3lxTFBxeENsbkRyZHRmbFVVenJRLUtWSUhOQXlvcExkMlhUcHJpckNoMWw5dGt0MVB4WHhVMGhfMkFzX0h4RUdvdXcxcUhXelhUc3NXTVVydWljZlBKRzc1UVMyVG9kdlhydFd0NzJwanRXcUc2bE1YMzM5aHNhdEJKNUYxVlk4dGRqX3V2RURlY0h0MVFrc2dxU0YyWnVud1pnTXJrRkh2UFJPZjZlR29nYW9SYjRmblRsZXNGUXV1OFZhYkQ2VEVnaTNDRlFRbVB6SEVySkVQZHNhY08xNUduRllmREFN?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-10-31",
         "description": "UAE limits e-invoicing fines at Dh50,000, removes Dh1,000 daily penalty—how it works now  Gulf News",
-        "hoursAgo": 2,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "UAE capital markets eye tokenisation, AI and new investment opportunities as foreign investors drive 49% of trading - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNalB1LXo1Q1dPUjFzTGlTUXFFT000NHQzSGFPUW5EU2Y3VUxrQ1YydW85SzNzSWUyajNuZ0NIWmk1OUYxYlJvbzQ2djVHLUdnUVFjX0lXaUlsZk1HVGs4cm94RDZEX2UzX05vaDZ3UzNmVURxTGtROHNsOXZ3YU5wdlo3WUpObWhHUFhYcWdaQnlidlFfZ1E1a0RDSnl1SGJQQkx0ckNmM1RnYTFkWUgtWFpXOU0teXFwNHVianA3dEZUc3U2azN6UjlSZXNscTl2ODZNaXNwajZfUUxpWG9HOWxEZVFuUjRqaFJWWlRMWDNiUzQ?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-10-30",
-        "description": "UAE capital markets eye tokenisation, AI and new investment opportunities as foreign investors drive 49% of trading  Arabian Business",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "AI & Technology",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 5
+  "totalCount": 3
 }
