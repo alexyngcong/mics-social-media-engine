@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-30T20:24:05.174Z",
+  "generatedAt": "2026-10-31T04:02:37.525Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 147,
+    "googleNews": 146,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
-    "afterDedup": 144,
-    "big4Rejected": 0,
-    "englishOnly": 144,
-    "withinRecency": 42,
-    "scored": 42,
-    "passed": 4
+    "totalFetched": 156,
+    "afterDedup": 151,
+    "big4Rejected": 1,
+    "englishOnly": 150,
+    "withinRecency": 47,
+    "scored": 47,
+    "passed": 5
   },
   "rooms": {
     "growth": [],
@@ -31,21 +31,21 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
-        "hoursAgo": 12,
+        "hoursAgo": 20,
         "score": 8,
         "topic": "Corporate Finance",
         "origin": "google-news"
       },
       {
-        "title": "UAE's Arada raises $400 million in first property debt issuance since regional conflict began - Khaleej Times",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSWVVNGZna0Mxb0wxb1FqVXVzWFY1ZzRfMFh3eEwxUllfZUotYWJpNk9nNm5uZDU2N3ppdERfa2hBNnRYZ212aHpXQVZSa2s0WnJ3LWthQVNhZVRpejUzXzI1NFg5RFcwYUVGYUxxdGt2dHotZGk0SUstNENpVzdPUVpqU05UTDBGZzB6NVJ6NTZsSC16NGI2Q21YQ05jcWFSaWFxNlBhYXd2MVlLb3lSQnpOd1N1YXV2X1ZMWld2djEyNEJ1M1k3Y9IB0AFBVV95cUxNNlJzVG0xdmdRMkdkOVI5Rm1OaTZObnRxTzNpUU5Ta3lvWWM3Y3B6cWs2WGF2WG1DVFZoWGFfT0xCaFNXa1hNb2lfcDBkaXV2OGUzcWtDd2M3TUVmTmY4d21LcHI2WURsNDRsQkQ3bms1eWtqSkF2VWpoNHhMNGJiSXpjcGZfejZteTM5eVJtWWNHTXdkQjA0dGNOdTFZMFVLanVBTXA3eWlTWVJMWGI5QWhsVjZDdTB1MDhfaHA3aXo1TjIxZm9nTmN1V1VNcUtC?oc=5",
-        "source": "Khaleej Times",
-        "domain": "khaleejtimes.com",
+        "title": "UAE developer Arada raises $400m in first property sukuk since regional conflict began - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbWRiNlh5Yk9KalZ6czBOYU5TclFXc0NjTzY2cXRySXZxYldwRkdud2dXNUlRdGsyU293dXRLblhoOXlRdmdsNmNvSnVUYXJQa0dxRDBhanc0cVRKNVlIbWh4QV92Q0dHM18yWFBXMkxMQXpkbzlpRWo2YjZtY2NmTFpmMmdhMVZoQzNuN3paTUF0RzBXWnpyazA3czRSNS1GS3Q4MW9HV29PR0FyY3huaDUzS1N5Nnp1WW9DYk45eUhCalBRcDYwSQ?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
         "date": "2026-10-30",
-        "description": "UAE's Arada raises $400 million in first property debt issuance since regional conflict began  Khaleej Times",
-        "hoursAgo": 11,
-        "score": 7,
-        "topic": "Corporate Finance",
+        "description": "UAE developer Arada raises $400m in first property sukuk since regional conflict began  Arabian Business",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Banking & Rates",
         "origin": "google-news"
       }
     ],
@@ -57,8 +57,20 @@
         "domain": "gulfnews.com",
         "date": "2026-10-28",
         "description": "UAE e-invoicing deadline: Businesses have until October 30 to meet first requirement  Gulf News",
-        "hoursAgo": 57,
+        "hoursAgo": 65,
         "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE limits e-invoicing fines at Dh50,000, removes Dh1,000 daily penalty—how it works now - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNajE3TG03bDdTcEQ1ejV4MERDZW5KbmhEUGpvUW9EWUVtTWJrMDM4VUo5V0hrTDREVk00Zjd1c2lFWTdxQTZzNDFUbE1uSTNkSVdwZl9Ua0hwODU1aW5LTms2eGtRTTgyUkxya295cExLMmxKdVJKQlYzcHdTS1dmbDZmazhNOEFrdlF2R1BHemxvVTFXNS14RThJUHlXZnpyUVQwVGdBdnk3eExUci1iTkVtZi12cnhuUkdJbTE0R184MUc1R3V6V2xQYWxPX1NO0gHjAUFVX3lxTFBxeENsbkRyZHRmbFVVenJRLUtWSUhOQXlvcExkMlhUcHJpckNoMWw5dGt0MVB4WHhVMGhfMkFzX0h4RUdvdXcxcUhXelhUc3NXTVVydWljZlBKRzc1UVMyVG9kdlhydFd0NzJwanRXcUc2bE1YMzM5aHNhdEJKNUYxVlk4dGRqX3V2RURlY0h0MVFrc2dxU0YyWnVud1pnTXJrRkh2UFJPZjZlR29nYW9SYjRmblRsZXNGUXV1OFZhYkQ2VEVnaTNDRlFRbVB6SEVySkVQZHNhY08xNUduRllmREFN?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-10-31",
+        "description": "UAE limits e-invoicing fines at Dh50,000, removes Dh1,000 daily penalty—how it works now  Gulf News",
+        "hoursAgo": 2,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -71,12 +83,12 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE capital markets eye tokenisation, AI and new investment opportunities as foreign investors drive 49% of trading  Arabian Business",
-        "hoursAgo": 11,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 5
 }
