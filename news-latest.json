@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-01T14:44:48.396Z",
+  "generatedAt": "2026-11-01T20:10:14.932Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 150,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 151,
-    "big4Rejected": 3,
+    "totalFetched": 157,
+    "afterDedup": 150,
+    "big4Rejected": 2,
     "englishOnly": 148,
-    "withinRecency": 39,
-    "scored": 39,
-    "passed": 2
+    "withinRecency": 45,
+    "scored": 45,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -31,8 +31,20 @@
         "domain": "arabianbusiness.com",
         "date": "2026-10-30",
         "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
-        "hoursAgo": 54,
+        "hoursAgo": 60,
         "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE's Arada raises $400 million in first property debt issuance since regional conflict began - Khaleej Times",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSWVVNGZna0Mxb0wxb1FqVXVzWFY1ZzRfMFh3eEwxUllfZUotYWJpNk9nNm5uZDU2N3ppdERfa2hBNnRYZ212aHpXQVZSa2s0WnJ3LWthQVNhZVRpejUzXzI1NFg5RFcwYUVGYUxxdGt2dHotZGk0SUstNENpVzdPUVpqU05UTDBGZzB6NVJ6NTZsSC16NGI2Q21YQ05jcWFSaWFxNlBhYXd2MVlLb3lSQnpOd1N1YXV2X1ZMWld2djEyNEJ1M1k3Y9IB0AFBVV95cUxNNlJzVG0xdmdRMkdkOVI5Rm1OaTZObnRxTzNpUU5Ta3lvWWM3Y3B6cWs2WGF2WG1DVFZoWGFfT0xCaFNXa1hNb2lfcDBkaXV2OGUzcWtDd2M3TUVmTmY4d21LcHI2WURsNDRsQkQ3bms1eWtqSkF2VWpoNHhMNGJiSXpjcGZfejZteTM5eVJtWWNHTXdkQjA0dGNOdTFZMFVLanVBTXA3eWlTWVJMWGI5QWhsVjZDdTB1MDhfaHA3aXo1TjIxZm9nTmN1V1VNcUtC?oc=5",
+        "source": "Khaleej Times",
+        "domain": "khaleejtimes.com",
+        "date": "2026-10-30",
+        "description": "UAE's Arada raises $400 million in first property debt issuance since regional conflict began  Khaleej Times",
+        "hoursAgo": 59,
+        "score": 6,
         "topic": "Corporate Finance",
         "origin": "google-news"
       }
@@ -46,12 +58,12 @@
         "domain": "emirates247.com",
         "date": "2026-11-01",
         "description": "Dubai RTA launches updated AI strategy targeting more than AED 300 million in annual added value  Emirates 24|7",
-        "hoursAgo": 7,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 3
 }
