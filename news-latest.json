@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-10-31T23:05:21.960Z",
+  "generatedAt": "2026-11-01T04:24:11.109Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,44 +14,18 @@
   },
   "diagnostic": {
     "totalFetched": 157,
-    "afterDedup": 149,
+    "afterDedup": 153,
     "big4Rejected": 3,
-    "englishOnly": 146,
-    "withinRecency": 46,
-    "scored": 46,
-    "passed": 2
+    "englishOnly": 150,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "UAE top-up tax deadline nears for multinationals with $800 million revenue - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTFZnWXNReHhfaFJQbkIxNlJHOHQxYlUzX3J4d0xaQ0lqWTc2Rk9MeUJodEF6eEtjMmRzcEJDcmtoTGUzanRyX0kwTE1ycWZ5ZS1Uc0lNeHphTjdXeXU3YnpWdGNIVEk1cEUzYkJLMUxESE9xdHpLa0RJUVpQTWNvZlVna1lUa29SUXFsUlQxRnZDdkF0WnJnQnZCeHExOURzWlpRMGVMVjJuN0JLUkpKNTRQZw?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-10-30",
-        "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
-        "hoursAgo": 39,
-        "score": 7.5,
-        "topic": "Corporate Finance",
-        "origin": "google-news"
-      }
-    ],
+    "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "ROX delivers first 100 UAE-Made Vehicles - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSUhMVXRyOG5UV3VnUnVEZlhpa2IwbExua1ZLdXZiU3V0YXZ0bWFwNWI2cERqN0p3enJ4SzRtVE01SE1vbS1vbzRmLUN0dVJPWF9JdWVSNzVJZUU1RzNIVUlONXI0eDdNRUJpUHBtNFVRNWFwckFwWHFCRDVzOHZVYnUwMGFUdk82QnZVYkln?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-10-31",
-        "description": "ROX delivers first 100 UAE-Made Vehicles  Gulf Today",
-        "hoursAgo": 9,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 0
 }
