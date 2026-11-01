@@ -1,31 +1,57 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-01T04:24:11.109Z",
+  "generatedAt": "2026-11-01T14:44:48.396Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 147,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
-    "afterDedup": 153,
+    "totalFetched": 160,
+    "afterDedup": 151,
     "big4Rejected": 3,
-    "englishOnly": 150,
-    "withinRecency": 41,
-    "scored": 41,
-    "passed": 0
+    "englishOnly": 148,
+    "withinRecency": 39,
+    "scored": 39,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [],
+    "capital": [
+      {
+        "title": "UAE top-up tax deadline nears for multinationals with $800 million revenue - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTFZnWXNReHhfaFJQbkIxNlJHOHQxYlUzX3J4d0xaQ0lqWTc2Rk9MeUJodEF6eEtjMmRzcEJDcmtoTGUzanRyX0kwTE1ycWZ5ZS1Uc0lNeHphTjdXeXU3YnpWdGNIVEk1cEUzYkJLMUxESE9xdHpLa0RJUVpQTWNvZlVna1lUa29SUXFsUlQxRnZDdkF0WnJnQnZCeHExOURzWlpRMGVMVjJuN0JLUkpKNTRQZw?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-10-30",
+        "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
+        "hoursAgo": 54,
+        "score": 7,
+        "topic": "Corporate Finance",
+        "origin": "google-news"
+      }
+    ],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Dubai RTA launches updated AI strategy targeting more than AED 300 million in annual added value - Emirates 24|7",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNS1E5c3hzZ3dOc1MyNHlNX1dlZEN2enYwVDFReXNPZnBCcFhQWDYwNy1hQTFUTEZHVjJOM1cxNTgzUWpQeWFDMm9VdUNTY0owcml0WHJ6akF0Q2FGeFlwVzRoWEpadE1tY3Ffd0hzYS1XaEtKRnhGR3VCS09YcVRQVlhDOVNubEdaMnhRcC1DZlFWMUt5ZVhORDJlcXNzUDM4ZDdZN2JvYkNPbnpWbVI5Wk93MlpoTVlScWJZMUNwQ18wakNNb1dfR3dDM3pQQdIB6AFBVV95cUxQVkNSTWhtOVZla21PS1A5WnBJazZkLVZzR0Y4ckRoSWZCb2pwT2k3cDZYM3JSeExwNWdBZ0p2dFVHZHA1WmZpQXQyOXgtREJzNi1pU05aLUlyV0VjUkxqN05LV09XazFOVFJiTUxIY1lRb1dVNlI2eGRMY2o0R0tLUy16OU9ta1Q3THBBT1hJbjJ2SEtMQ19kbGxtSmVyVlZfeTdXUDV0UHh4RDBKc1N4eDh6VXhRbjdXT2NMZjRoTmpDN0dmM1kteTNPRzlaaHJPSE9vbVRYWmtUWlZRZXRFSmVlR08xVmlE?oc=5",
+        "source": "Emirates 24|7",
+        "domain": "emirates247.com",
+        "date": "2026-11-01",
+        "description": "Dubai RTA launches updated AI strategy targeting more than AED 300 million in annual added value  Emirates 24|7",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "AI & Technology",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 2
 }
