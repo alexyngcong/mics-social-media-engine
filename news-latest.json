@@ -1,54 +1,54 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-02T04:26:00.921Z",
+  "generatedAt": "2026-11-02T17:48:27.648Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 146,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 156,
+    "totalFetched": 157,
     "afterDedup": 148,
-    "big4Rejected": 2,
-    "englishOnly": 146,
-    "withinRecency": 45,
-    "scored": 45,
+    "big4Rejected": 3,
+    "englishOnly": 145,
+    "withinRecency": 44,
+    "scored": 44,
     "passed": 2
   },
   "rooms": {
-    "growth": [],
-    "capital": [
+    "growth": [
       {
-        "title": "UAE top-up tax deadline nears for multinationals with $800 million revenue - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTFZnWXNReHhfaFJQbkIxNlJHOHQxYlUzX3J4d0xaQ0lqWTc2Rk9MeUJodEF6eEtjMmRzcEJDcmtoTGUzanRyX0kwTE1ycWZ5ZS1Uc0lNeHphTjdXeXU3YnpWdGNIVEk1cEUzYkJLMUxESE9xdHpLa0RJUVpQTWNvZlVna1lUa29SUXFsUlQxRnZDdkF0WnJnQnZCeHExOURzWlpRMGVMVjJuN0JLUkpKNTRQZw?oc=5",
+        "title": "Dubai real estate mortgages hit record $5.94bn as buyers secure 10,000 loans - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb01nZldwcndOTkU4S1UzR0xpdEhZbnZiN0RTMU1DSjZQc3J2cXlJY3NSdWJxc3RjaWpfZHdVdEZ5ckJ6VHhRMHF0S2ptVkoySjc2Qk0tNzhJS0ptQXJZc3YycUQ3ZDVOZDE2RnNCS2VxWEF2TjdMbzBKd09BejBYcWRoOXpIdGdncmppaTlITUgycC1OMjhuTEs3RlhLVnk4d295Qm1oWUNvV1JWN051TmJnWG5hQ2JWSVE?oc=5",
         "source": "Arabian Business",
         "domain": "arabianbusiness.com",
-        "date": "2026-10-30",
-        "description": "UAE top-up tax deadline nears for multinationals with $800 million revenue  Arabian Business",
-        "hoursAgo": 68,
-        "score": 7,
-        "topic": "Corporate Finance",
+        "date": "2026-11-02",
+        "description": "Dubai real estate mortgages hit record $5.94bn as buyers secure 10,000 loans  Arabian Business",
+        "hoursAgo": 12,
+        "score": 6,
+        "topic": "Real Estate & Construction",
         "origin": "google-news"
       }
     ],
+    "capital": [],
     "risk": [],
     "world": [
       {
-        "title": "Dubai RTA launches updated AI strategy targeting more than AED 300 million in annual added value - Emirates 24|7",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNS1E5c3hzZ3dOc1MyNHlNX1dlZEN2enYwVDFReXNPZnBCcFhQWDYwNy1hQTFUTEZHVjJOM1cxNTgzUWpQeWFDMm9VdUNTY0owcml0WHJ6akF0Q2FGeFlwVzRoWEpadE1tY3Ffd0hzYS1XaEtKRnhGR3VCS09YcVRQVlhDOVNubEdaMnhRcC1DZlFWMUt5ZVhORDJlcXNzUDM4ZDdZN2JvYkNPbnpWbVI5Wk93MlpoTVlScWJZMUNwQ18wakNNb1dfR3dDM3pQQdIB6AFBVV95cUxQVkNSTWhtOVZla21PS1A5WnBJazZkLVZzR0Y4ckRoSWZCb2pwT2k3cDZYM3JSeExwNWdBZ0p2dFVHZHA1WmZpQXQyOXgtREJzNi1pU05aLUlyV0VjUkxqN05LV09XazFOVFJiTUxIY1lRb1dVNlI2eGRMY2o0R0tLUy16OU9ta1Q3THBBT1hJbjJ2SEtMQ19kbGxtSmVyVlZfeTdXUDV0UHh4RDBKc1N4eDh6VXhRbjdXT2NMZjRoTmpDN0dmM1kteTNPRzlaaHJPSE9vbVRYWmtUWlZRZXRFSmVlR08xVmlE?oc=5",
-        "source": "Emirates 24|7",
-        "domain": "emirates247.com",
-        "date": "2026-11-01",
-        "description": "Dubai RTA launches updated AI strategy targeting more than AED 300 million in annual added value  Emirates 24|7",
-        "hoursAgo": 21,
+        "title": "Abu Dhabi's Adia, Avolon and I Squared Capital to launch aviation investment platform - The National",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPLVZGXzEtRTdid0JSWUNIb3ZZRC1mSERLZnE5dVMyVGJxTmx0MkZOWHJnQXdnSFpYZGtXMFJ4akI4Z1p1allURnM5bm5LTnRNUTFxR2h6U3lhamZMSmlzVndmeDdvaGJTR3NlbnpsUS01Y1RITmdkemZtUjdfQkNNWFMwSk9DYnozZWxxc1Q5NFM3ZGhZSTZzXzJod1ZkQlhZc2FOUkF3SFdhM3BKQ1VkUDVLY25oWXc0T2RTMV96THI1WnVaY3RvMWRyNlpYa2lBYWRLcXNMMFVudkpuZXc?oc=5",
+        "source": "The National",
+        "domain": "thenationalnews.com",
+        "date": "2026-11-02",
+        "description": "Abu Dhabi's Adia, Avolon and I Squared Capital to launch aviation investment platform  The National",
+        "hoursAgo": 4,
         "score": 6,
-        "topic": "AI & Technology",
+        "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
