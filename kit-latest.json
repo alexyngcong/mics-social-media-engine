@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T04:24:25.208Z",
-  "weekOf": "1 Nov 2026",
+  "generatedAt": "2026-11-03T02:01:04.960Z",
+  "weekOf": "3 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "abu-dhabi-s-adia-avolon-and-i-squared-ca",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
+      "theme": "treasury_capital",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "title": "Abu Dhabi's Adia, Avolon and I Squared Capital to launch aviation investment platform - The National",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPLVZGXzEtRTdid0JSWUNIb3ZZRC1mSERLZnE5dVMyVGJxTmx0MkZOWHJnQXdnSFpYZGtXMFJ4akI4Z1p1allURnM5bm5LTnRNUTFxR2h6U3lhamZMSmlzVndmeDdvaGJTR3NlbnpsUS01Y1RITmdkemZtUjdfQkNNWFMwSk9DYnozZWxxc1Q5NFM3ZGhZSTZzXzJod1ZkQlhZc2FOUkF3SFdhM3BKQ1VkUDVLY25oWXc0T2RTMV96THI1WnVaY3RvMWRyNlpYa2lBYWRLcXNMMFVudkpuZXc?oc=5",
+      "filenameBase": "post-1-abu-dhabi-s-adia-avolon-and-i-squared-ca",
+      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "Abu Dhabi's Adia, Avolon and I Squared",
+      "headlineLine2": "Capital to launch aviation investmen…",
+      "hoursAgo": 12
     },
     {
       "n": 2,
