@@ -1,41 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-02T17:48:27.648Z",
+  "generatedAt": "2026-11-03T02:00:45.447Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 147,
+    "googleNews": 149,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
-    "afterDedup": 148,
-    "big4Rejected": 3,
-    "englishOnly": 145,
-    "withinRecency": 44,
-    "scored": 44,
-    "passed": 2
+    "totalFetched": 159,
+    "afterDedup": 152,
+    "big4Rejected": 0,
+    "englishOnly": 152,
+    "withinRecency": 49,
+    "scored": 49,
+    "passed": 1
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Dubai real estate mortgages hit record $5.94bn as buyers secure 10,000 loans - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb01nZldwcndOTkU4S1UzR0xpdEhZbnZiN0RTMU1DSjZQc3J2cXlJY3NSdWJxc3RjaWpfZHdVdEZ5ckJ6VHhRMHF0S2ptVkoySjc2Qk0tNzhJS0ptQXJZc3YycUQ3ZDVOZDE2RnNCS2VxWEF2TjdMbzBKd09BejBYcWRoOXpIdGdncmppaTlITUgycC1OMjhuTEs3RlhLVnk4d295Qm1oWUNvV1JWN051TmJnWG5hQ2JWSVE?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-11-02",
-        "description": "Dubai real estate mortgages hit record $5.94bn as buyers secure 10,000 loans  Arabian Business",
-        "hoursAgo": 12,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [],
     "risk": [],
     "world": [
@@ -46,12 +33,12 @@
         "domain": "thenationalnews.com",
         "date": "2026-11-02",
         "description": "Abu Dhabi's Adia, Avolon and I Squared Capital to launch aviation investment platform  The National",
-        "hoursAgo": 4,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
