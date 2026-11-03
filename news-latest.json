@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-03T02:00:45.447Z",
+  "generatedAt": "2026-11-03T11:38:08.653Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 149,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 159,
-    "afterDedup": 152,
-    "big4Rejected": 0,
-    "englishOnly": 152,
+    "totalFetched": 157,
+    "afterDedup": 149,
+    "big4Rejected": 3,
+    "englishOnly": 146,
     "withinRecency": 49,
     "scored": 49,
-    "passed": 1
+    "passed": 2
   },
   "rooms": {
     "growth": [],
@@ -33,12 +33,24 @@
         "domain": "thenationalnews.com",
         "date": "2026-11-02",
         "description": "Abu Dhabi's Adia, Avolon and I Squared Capital to launch aviation investment platform  The National",
-        "hoursAgo": 12,
+        "hoursAgo": 22,
         "score": 6,
         "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "OpenAI and Abu Dhabi join forces to build the world’s first AI-native government - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMHdGY1Y3ZHNhSWQ4a1BrZURCLVU5ZTMxNjllSnNKMWVzU1BBejFaN3ljampFUWtjODVkeUJkYllDNWRXR2ppYklYWWo1aWVIaWRDVWJFOTlSSGNGeUc0dm9TTV9wVnEza1IyZHlSRnlQQ1BRaGhUbHFMV0pEZDZfWDRkSWJjYkZvVkpfQVBVNFgyWWh6WUo3ZkEzRGxaTG9zaUgwN2FFLUhncHV2Y1lEOWNTV0xadlVMZG1uQ1lUekNkajBQX0YwWG5fY1ZmWFBOemc?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-11-03",
+        "description": "OpenAI and Abu Dhabi join forces to build the world’s first AI-native government  Gulf Business",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 1
+  "totalCount": 2
 }
