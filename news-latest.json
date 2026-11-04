@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-04T00:23:27.827Z",
+  "generatedAt": "2026-11-04T11:51:57.436Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,17 +14,30 @@
   },
   "diagnostic": {
     "totalFetched": 160,
-    "afterDedup": 152,
-    "big4Rejected": 1,
-    "englishOnly": 151,
-    "withinRecency": 49,
-    "scored": 49,
+    "afterDedup": 150,
+    "big4Rejected": 2,
+    "englishOnly": 148,
+    "withinRecency": 47,
+    "scored": 47,
     "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed? - MEP Middle East",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYW9tYmt6SzA0OUdRak5SVFYwMXBBUXNEV2pZc3FiWV9jZ0xRbGxkU3pEdFJtN01IdXQwOTZVOXNnZ1ZncUdiT3BxSm1WSzd5MnJaSVdzMm9QVDJVUkxwTVZvY2RWUGVfOHFkWXhsRzl1eVJIYUIzRmhWWWRnT2FXd1lHb1NTakFhWWlvaTFZbFgxLWZuRnFkM254T01ORkhQWXVrektGckFqODJCM3IzeQ?oc=5",
+        "source": "MEP Middle East",
+        "domain": "mepmiddleeast.com",
+        "date": "2026-11-04",
+        "description": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed?  MEP Middle East",
+        "hoursAgo": 6,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": [
       {
         "title": "Italy UAE’s second-largest oil & gas equipment supplier with 17% market share in 2026 - Gulf Today",
@@ -33,21 +46,9 @@
         "domain": "gulftoday.ae",
         "date": "2026-11-03",
         "description": "Italy UAE’s second-largest oil & gas equipment supplier with 17% market share in 2026  Gulf Today",
-        "hoursAgo": 12,
+        "hoursAgo": 23,
         "score": 7,
         "topic": "Oil & Energy Markets",
-        "origin": "google-news"
-      },
-      {
-        "title": "OpenAI and Abu Dhabi join forces to build the world’s first AI-native government - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOOU1rNE9QRThfZlFlaE5ld0o3ZkxTZjFmV0x4cmhYeHc1RzJhdkIzdWVyaG1JSzdYTWdJOXcwckpXRTVfSmdEQU96VktDVnJiNEZWbVA4VTh1ZTdiamlJbnkxRXFGNUd2eXgxTXBBaHgxQU4zRkZudlNSQmVvNmhVYjU2ODhYdEVfWG02VW1QbUVYY2FYeHJGX3J3VHVxY0dHYU1wZUI0YlZHTmZNNG1lbnBqeG9qWGxBdzk5NUFZR1dyVjdJMk53UDNxY2xqYjdkUHVN?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-11-03",
-        "description": "OpenAI and Abu Dhabi join forces to build the world’s first AI-native government  Gulf Business",
-        "hoursAgo": 16,
-        "score": 6,
-        "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
