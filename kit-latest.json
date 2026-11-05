@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T02:01:04.960Z",
-  "weekOf": "3 Nov 2026",
+  "generatedAt": "2026-11-05T11:52:19.881Z",
+  "weekOf": "5 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "abu-dhabi-s-adia-avolon-and-i-squared-ca",
+      "slug": "uae-e-invoicing-the-deadline-has-passed-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "treasury_capital",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Abu Dhabi's Adia, Avolon and I Squared Capital to launch aviation investment platform - The National",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPLVZGXzEtRTdid0JSWUNIb3ZZRC1mSERLZnE5dVMyVGJxTmx0MkZOWHJnQXdnSFpYZGtXMFJ4akI4Z1p1allURnM5bm5LTnRNUTFxR2h6U3lhamZMSmlzVndmeDdvaGJTR3NlbnpsUS01Y1RITmdkemZtUjdfQkNNWFMwSk9DYnozZWxxc1Q5NFM3ZGhZSTZzXzJod1ZkQlhZc2FOUkF3SFdhM3BKQ1VkUDVLY25oWXc0T2RTMV96THI1WnVaY3RvMWRyNlpYa2lBYWRLcXNMMFVudkpuZXc?oc=5",
-      "filenameBase": "post-1-abu-dhabi-s-adia-avolon-and-i-squared-ca",
-      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
+      "room": "risk",
+      "roomColor": "#EF5555",
+      "roomLabel": "RISK · COMPLIANCE",
+      "theme": "compliance_risk",
+      "tier": "WEEK AHEAD",
+      "title": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed? - MEP Middle East",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYW9tYmt6SzA0OUdRak5SVFYwMXBBUXNEV2pZc3FiWV9jZ0xRbGxkU3pEdFJtN01IdXQwOTZVOXNnZ1ZncUdiT3BxSm1WSzd5MnJaSVdzMm9QVDJVUkxwTVZvY2RWUGVfOHFkWXhsRzl1eVJIYUIzRmhWWWRnT2FXd1lHb1NTakFhWWlvaTFZbFgxLWZuRnFkM254T01ORkhQWXVrektGckFqODJCM3IzeQ?oc=5",
+      "filenameBase": "post-1-uae-e-invoicing-the-deadline-has-passed-",
+      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
       "stat": "",
-      "headlineLine1": "Abu Dhabi's Adia, Avolon and I Squared",
-      "headlineLine2": "Capital to launch aviation investmen…",
-      "hoursAgo": 12
+      "headlineLine1": "UAE E-Invoicing: The Deadline Has Pa…",
+      "headlineLine2": "Has The Compliance Landscape Changed",
+      "hoursAgo": 30
     },
     {
       "n": 2,
