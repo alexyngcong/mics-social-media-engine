@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-05T00:44:07.902Z",
+  "generatedAt": "2026-11-05T11:52:08.394Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 20,
+    "gdelt": 0,
     "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 177,
-    "afterDedup": 166,
-    "big4Rejected": 3,
+    "totalFetched": 157,
+    "afterDedup": 153,
+    "big4Rejected": 2,
     "englishOnly": 151,
-    "withinRecency": 53,
-    "scored": 53,
-    "passed": 2
+    "withinRecency": 44,
+    "scored": 44,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
@@ -32,26 +32,13 @@
         "domain": "mepmiddleeast.com",
         "date": "2026-11-04",
         "description": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed?  MEP Middle East",
-        "hoursAgo": 19,
-        "score": 7,
+        "hoursAgo": 30,
+        "score": 6.5,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": [
-      {
-        "title": "Italy UAE’s second-largest oil & gas equipment supplier with 17% market share in 2026 - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMVh6MHAwcy03SGlMV2ZNVmEzLUl6ZnpnWjFrdmJ4eWN5QjM4ZGpNVGNOUGtmNEY4ZFM0WVA2Um44WHY5WE11YU9GcnV1TFQ4WUp4TjFpSEo1Sy1FUVZUYUloZlhKMlZHMERQM0lBVUFkdFNKYkVqTmNBSGd1MnNBdzBxOEkwOGtFRjZyeGlqUHNOei1xVm45YjNiLXloWVluSDlLaTRpYm5jVXROYzZSOURNd181SDRmT1RkNncwT2xwQXZH?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-11-03",
-        "description": "Italy UAE’s second-largest oil & gas equipment supplier with 17% market share in 2026  Gulf Today",
-        "hoursAgo": 36,
-        "score": 6.5,
-        "topic": "Oil & Energy Markets",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
