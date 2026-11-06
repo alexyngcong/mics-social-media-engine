@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-05T19:30:00.626Z",
+  "generatedAt": "2026-11-06T00:44:38.244Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,31 +14,43 @@
   },
   "diagnostic": {
     "totalFetched": 158,
-    "afterDedup": 152,
+    "afterDedup": 151,
     "big4Rejected": 3,
-    "englishOnly": 149,
+    "englishOnly": 148,
     "withinRecency": 35,
     "scored": 35,
-    "passed": 1
+    "passed": 2
   },
   "rooms": {
     "growth": [],
-    "capital": [],
-    "risk": [
+    "capital": [
       {
-        "title": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed? - MEP Middle East",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYW9tYmt6SzA0OUdRak5SVFYwMXBBUXNEV2pZc3FiWV9jZ0xRbGxkU3pEdFJtN01IdXQwOTZVOXNnZ1ZncUdiT3BxSm1WSzd5MnJaSVdzMm9QVDJVUkxwTVZvY2RWUGVfOHFkWXhsRzl1eVJIYUIzRmhWWWRnT2FXd1lHb1NTakFhWWlvaTFZbFgxLWZuRnFkM254T01ORkhQWXVrektGckFqODJCM3IzeQ?oc=5",
-        "source": "MEP Middle East",
-        "domain": "mepmiddleeast.com",
-        "date": "2026-11-04",
-        "description": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed?  MEP Middle East",
-        "hoursAgo": 38,
-        "score": 6.5,
-        "topic": "Tax & Regulatory",
+        "title": "Abu Dhabi's IHC more than doubles net profit in first nine months of 2026 - The National",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQV1QwMGl0bF82ZDV5MUhZcjVCNGluOUhIOVpVcWVWczdsX1RJWWlvSURIMjlueFVHVURGV3dfQ3pUZ0Z6WUlROWRRUnppUEQ4dWl3d19ieW5uNVJ6ZmhQTjJScXRiSVhKS0VSM0t4Qk45dU04ajNPR2J5Q2xHMEtKWnVNc1NLZ3pDbGU0V01hRG9saXlJME53Qm83Q0wxckt0R0xoNFE1QW5IRWZ0OW1UM1dPQ01GdThPNV9UWUlLUDJjeDE1V0VfMVA0TzhXUQ?oc=5",
+        "source": "The National",
+        "domain": "thenationalnews.com",
+        "date": "2026-11-05",
+        "description": "Abu Dhabi's IHC more than doubles net profit in first nine months of 2026  The National",
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "Corporate Finance",
+        "origin": "google-news"
+      },
+      {
+        "title": "Emaar announces $1.2bn special dividend as Dubai property profit rises 18% to $5.4bn - Arabian Business",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRFRWaFZkaEdFNDg0dU92UzY1ZklFZk5iek1IQ1Y1VWlzYXdXYmxYZ1VsMng4VmZWeDBEUmFDYjNGZXN1c1ZZLW4yNm1iam9OMEJHRmdTTUxEZW5QczVEMTlBTUMtSUJtdkNHM3pJX3FoNmJJdFkyeUYxT191LVdjbThZbjV6Q29Rc2I5VTAxck8zV2I0X1JMXzRkeUFsbFFyQ3lIX1hFNW9RR3NqNlY1aVd1NENyOTAxVUVKOS1QbFlHUEU?oc=5",
+        "source": "Arabian Business",
+        "domain": "arabianbusiness.com",
+        "date": "2026-11-05",
+        "description": "Emaar announces $1.2bn special dividend as Dubai property profit rises 18% to $5.4bn  Arabian Business",
+        "hoursAgo": 5,
+        "score": 6,
+        "topic": "Corporate Finance",
         "origin": "google-news"
       }
     ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
