@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-06T11:49:54.465Z",
+  "generatedAt": "2026-11-06T18:54:04.336Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
-    "googleNews": 147,
+    "gdelt": 0,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 257,
-    "afterDedup": 211,
+    "totalFetched": 158,
+    "afterDedup": 151,
     "big4Rejected": 4,
-    "englishOnly": 175,
-    "withinRecency": 66,
-    "scored": 66,
-    "passed": 2
+    "englishOnly": 147,
+    "withinRecency": 41,
+    "scored": 41,
+    "passed": 4
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-11-05",
         "description": "Emaar announces $1.2bn special dividend as Dubai property profit rises 18% to $5.4bn  Arabian Business",
-        "hoursAgo": 16,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Corporate Finance",
         "origin": "google-news"
@@ -45,13 +45,38 @@
         "domain": "mepmiddleeast.com",
         "date": "2026-11-04",
         "description": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed?  MEP Middle East",
-        "hoursAgo": 54,
+        "hoursAgo": 61,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPb2h1MzNZTnV6TG9nY3FZaHVBV3BxWmNlWktxZWVCNjJ1QmtZY3czMnZjNUVvMVNPX3hhTXdkcE80c3hsU1BPUUwtZlBLSG4wSldCZXNNYTZXSG1CcFludEZxSjkxNm1vdzZXYnd2ZEt2b20wOUNiUl83RDJkZVVYUkxsREk0T1R3ZzFudER1SWlVODNqVHJDYlNKaUFfcVc0ZExRT1c2WGRRNWtubXp6N280TlpaM1dvVFBRTWZZazR5U0w2b3fSAdgBQVVfeXFMT0FPS3NRZmc5Tl9QMGNhRzdURDJLZVZNc1J5TV9SRVN6ZTVQMkNlejhnVlZhVWZialRVcWw5YThPTksxckRxMk9PX0NRMGs4WFVlaUI5eXM2N1czM0ZIWjc4Q0dxTk5zNzAxWFo2MU1ZTHBJRWdvQ1lhNnRWaUJGNWVhdWplZXhrcU93THY1bEZqaW1jUVotcElreWlIVENLMzRIeWhKQktyRDYwWmxaSUhpOEJuR09xb3NnUlJ5V1dHZTdhS2JRQXBfeG1TaWhjeEI1R00yczRj?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-06",
+        "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
+        "hoursAgo": 6,
+        "score": 7,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment - مكتب أبوظبي الإعلامي",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPVTFPVTh2eUlucGk1S21RcGx6YVc2VC1YRjJneW5IaFA3V09xYTV0VG1iLURGaHppbGVtdEd2dWxxaGpycUlOZ016cHlXNkVsSFR1QTRXTnhZa0h6TW1yQWZLLWRWMmJCT0k4LTdvcFV6VkVCZUJiNEhENndqeEhDbDB3SjBwYkVQVnNwQlVGVVAtZ0NkSGV5ZDBkZ0FWMkZ4V0xMRDFLNDRPU0FudEYwRGZjWHVfZjUzSlFEVlBGRUw2bmVpd3lpdko1RnhDdFZzcDlQWEI3WTBmdlNyWHhiWld0LWRULTdCTWNLLTZ6ZTg1VEdKYXJCNlB6NDRRU1E?oc=5",
+        "source": "مكتب أبوظبي الإعلامي",
+        "domain": "mediaoffice.abudhabi",
+        "date": "2026-11-06",
+        "description": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment  مكتب أبوظبي الإعلامي",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 2
+  "totalCount": 4
 }
