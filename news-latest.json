@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-06T18:54:04.336Z",
+  "generatedAt": "2026-11-06T23:58:00.633Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,29 +14,16 @@
   },
   "diagnostic": {
     "totalFetched": 158,
-    "afterDedup": 151,
+    "afterDedup": 150,
     "big4Rejected": 4,
-    "englishOnly": 147,
-    "withinRecency": 41,
-    "scored": 41,
-    "passed": 4
+    "englishOnly": 146,
+    "withinRecency": 36,
+    "scored": 36,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Emaar announces $1.2bn special dividend as Dubai property profit rises 18% to $5.4bn - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRFRWaFZkaEdFNDg0dU92UzY1ZklFZk5iek1IQ1Y1VWlzYXdXYmxYZ1VsMng4VmZWeDBEUmFDYjNGZXN1c1ZZLW4yNm1iam9OMEJHRmdTTUxEZW5QczVEMTlBTUMtSUJtdkNHM3pJX3FoNmJJdFkyeUYxT191LVdjbThZbjV6Q29Rc2I5VTAxck8zV2I0X1JMXzRkeUFsbFFyQ3lIX1hFNW9RR3NqNlY1aVd1NENyOTAxVUVKOS1QbFlHUEU?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-11-05",
-        "description": "Emaar announces $1.2bn special dividend as Dubai property profit rises 18% to $5.4bn  Arabian Business",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Corporate Finance",
-        "origin": "google-news"
-      }
-    ],
+    "capital": [],
     "risk": [
       {
         "title": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed? - MEP Middle East",
@@ -45,7 +32,7 @@
         "domain": "mepmiddleeast.com",
         "date": "2026-11-04",
         "description": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed?  MEP Middle East",
-        "hoursAgo": 61,
+        "hoursAgo": 66,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -59,7 +46,7 @@
         "domain": "gulfnews.com",
         "date": "2026-11-06",
         "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 6,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -71,12 +58,12 @@
         "domain": "mediaoffice.abudhabi",
         "date": "2026-11-06",
         "description": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 1,
+        "hoursAgo": 6,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 3
 }
