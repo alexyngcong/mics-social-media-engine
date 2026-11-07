@@ -1,19 +1,19 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-06T23:58:00.633Z",
+  "generatedAt": "2026-11-07T05:05:12.128Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 148,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
+    "totalFetched": 157,
     "afterDedup": 150,
     "big4Rejected": 4,
     "englishOnly": 146,
@@ -24,20 +24,7 @@
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed? - MEP Middle East",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYW9tYmt6SzA0OUdRak5SVFYwMXBBUXNEV2pZc3FiWV9jZ0xRbGxkU3pEdFJtN01IdXQwOTZVOXNnZ1ZncUdiT3BxSm1WSzd5MnJaSVdzMm9QVDJVUkxwTVZvY2RWUGVfOHFkWXhsRzl1eVJIYUIzRmhWWWRnT2FXd1lHb1NTakFhWWlvaTFZbFgxLWZuRnFkM254T01ORkhQWXVrektGckFqODJCM3IzeQ?oc=5",
-        "source": "MEP Middle East",
-        "domain": "mepmiddleeast.com",
-        "date": "2026-11-04",
-        "description": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed?  MEP Middle East",
-        "hoursAgo": 66,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": [
       {
         "title": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference - Gulf News",
@@ -46,7 +33,7 @@
         "domain": "gulfnews.com",
         "date": "2026-11-06",
         "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 11,
+        "hoursAgo": 16,
         "score": 7,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -58,7 +45,19 @@
         "domain": "mediaoffice.abudhabi",
         "date": "2026-11-06",
         "description": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 6,
+        "hoursAgo": 11,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "BYD electric hypercar sets world speed record of 503kph in Abu Dhabi - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeVhEYTRHaDlKUlBSYThwQXVXaFNvWEMyTGc3YW9YMlpkeVh3U2FGVGRmbHRFbThlUldBRXZvcHNpeWl2dmptbVpnUW9lakhsVWxfSU1oaUlNdi1zb204RklKU0l1aWdjME9GR280SlJTWkJ1Q2xhb0tnX2YydXpKUkZMZmVuZUh0TDI5SGV3WVFZck1PektoRzk2MU9JOGx3YVpMYlNFcEp6SVFtZXc?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-11-06",
+        "description": "BYD electric hypercar sets world speed record of 503kph in Abu Dhabi  Gulf Today",
+        "hoursAgo": 10,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
