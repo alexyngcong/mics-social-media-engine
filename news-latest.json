@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-07T19:52:43.843Z",
+  "generatedAt": "2026-11-07T23:25:32.177Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 100,
+    "gdelt": 0,
     "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 258,
-    "afterDedup": 196,
+    "totalFetched": 158,
+    "afterDedup": 151,
     "big4Rejected": 4,
-    "englishOnly": 174,
-    "withinRecency": 57,
-    "scored": 57,
-    "passed": 6
+    "englishOnly": 147,
+    "withinRecency": 32,
+    "scored": 32,
+    "passed": 5
   },
   "rooms": {
     "growth": [
@@ -30,7 +30,7 @@
         "domain": "gulfnews.com",
         "date": "2026-11-07",
         "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
-        "hoursAgo": 9,
+        "hoursAgo": 13,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -42,7 +42,7 @@
         "domain": "mediaoffice.abudhabi",
         "date": "2026-11-07",
         "description": "Abu Dhabi Real Estate Centre records 76.1% year-on-year increase in transaction value, reaching AED171.2bn+ during first 9 months of 2026  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 11,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -58,23 +58,10 @@
         "domain": "gulfnews.com",
         "date": "2026-11-06",
         "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 31,
+        "hoursAgo": 35,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
-      },
-      {
-        "title": "Burjeel Medical City introduces Gulf first chronic sinusitis treatment administered once every six months - Emirates 24",
-        "url": "https://www.emirates247.com/uae/burjeel-medical-city-introduces-gulfs-first-chronic-sinusitis-treatment-administered-once-every-six-months/7531",
-        "source": "Emirates247",
-        "domain": "emirates247.com",
-        "date": "2026-11-06",
-        "description": "Burjeel Medical City introduces Gulf first chronic sinusitis treatment administered once every six months - Emirates 24",
-        "imageUrl": "https://api.emirates247.com/emirates247/uploads/images/2026/11/06/11801.webp",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "gdelt"
       },
       {
         "title": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026 - The National",
@@ -83,7 +70,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-11-07",
         "description": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026  The National",
-        "hoursAgo": 9,
+        "hoursAgo": 12,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -95,12 +82,12 @@
         "domain": "gulftoday.ae",
         "date": "2026-11-07",
         "description": "UAE opens its first dedicated showroom for humanoid robots  Gulf Today",
-        "hoursAgo": 4,
+        "hoursAgo": 8,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 6
+  "totalCount": 5
 }
