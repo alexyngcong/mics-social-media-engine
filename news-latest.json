@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-07T14:40:40.216Z",
+  "generatedAt": "2026-11-07T19:52:43.843Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 3,
+    "gdelt": 100,
     "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 161,
-    "afterDedup": 157,
+    "totalFetched": 258,
+    "afterDedup": 196,
     "big4Rejected": 4,
-    "englishOnly": 153,
-    "withinRecency": 37,
-    "scored": 37,
+    "englishOnly": 174,
+    "withinRecency": 57,
+    "scored": 57,
     "passed": 6
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "gulfnews.com",
         "date": "2026-11-07",
         "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
-        "hoursAgo": 4,
+        "hoursAgo": 9,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -42,7 +42,7 @@
         "domain": "mediaoffice.abudhabi",
         "date": "2026-11-07",
         "description": "Abu Dhabi Real Estate Centre records 76.1% year-on-year increase in transaction value, reaching AED171.2bn+ during first 9 months of 2026  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 6,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -58,10 +58,23 @@
         "domain": "gulfnews.com",
         "date": "2026-11-06",
         "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 26,
+        "hoursAgo": 31,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
+      },
+      {
+        "title": "Burjeel Medical City introduces Gulf first chronic sinusitis treatment administered once every six months - Emirates 24",
+        "url": "https://www.emirates247.com/uae/burjeel-medical-city-introduces-gulfs-first-chronic-sinusitis-treatment-administered-once-every-six-months/7531",
+        "source": "Emirates247",
+        "domain": "emirates247.com",
+        "date": "2026-11-06",
+        "description": "Burjeel Medical City introduces Gulf first chronic sinusitis treatment administered once every six months - Emirates 24",
+        "imageUrl": "https://api.emirates247.com/emirates247/uploads/images/2026/11/06/11801.webp",
+        "hoursAgo": 20,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "gdelt"
       },
       {
         "title": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026 - The National",
@@ -70,31 +83,19 @@
         "domain": "thenationalnews.com",
         "date": "2026-11-07",
         "description": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026  The National",
-        "hoursAgo": 4,
+        "hoursAgo": 9,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       },
       {
-        "title": "BYD electric hypercar sets world speed record of 503kph in Abu Dhabi - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeVhEYTRHaDlKUlBSYThwQXVXaFNvWEMyTGc3YW9YMlpkeVh3U2FGVGRmbHRFbThlUldBRXZvcHNpeWl2dmptbVpnUW9lakhsVWxfSU1oaUlNdi1zb204RklKU0l1aWdjME9GR280SlJTWkJ1Q2xhb0tnX2YydXpKUkZMZmVuZUh0TDI5SGV3WVFZck1PektoRzk2MU9JOGx3YVpMYlNFcEp6SVFtZXc?oc=5",
+        "title": "UAE opens its first dedicated showroom for humanoid robots - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaWxGVllaWURhdDVqVXRibWNBeFJwQ2pvTVhqNzdKay1lRHh0X3BYRWlhSjNyNms2OWhmYkdwU29QX0p0ZEhWTE1ZR3pXV1o2VWFMMU1hSmVaUTVzZU5ZOTd6MkFGYzJGWFBGSFhSZEVYcUV4U2VLTHVZMjFPalFtRGRoUmNrRVM1Wkg4dUFDT0xOWjRrMmxOejhDNDQ4bU1xV0paSV9B?oc=5",
         "source": "Gulf Today",
         "domain": "gulftoday.ae",
-        "date": "2026-11-06",
-        "description": "BYD electric hypercar sets world speed record of 503kph in Abu Dhabi  Gulf Today",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
-        "title": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment - مكتب أبوظبي الإعلامي",
-        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPVTFPVTh2eUlucGk1S21RcGx6YVc2VC1YRjJneW5IaFA3V09xYTV0VG1iLURGaHppbGVtdEd2dWxxaGpycUlOZ016cHlXNkVsSFR1QTRXTnhZa0h6TW1yQWZLLWRWMmJCT0k4LTdvcFV6VkVCZUJiNEhENndqeEhDbDB3SjBwYkVQVnNwQlVGVVAtZ0NkSGV5ZDBkZ0FWMkZ4V0xMRDFLNDRPU0FudEYwRGZjWHVfZjUzSlFEVlBGRUw2bmVpd3lpdko1RnhDdFZzcDlQWEI3WTBmdlNyWHhiWld0LWRULTdCTWNLLTZ6ZTg1VEdKYXJCNlB6NDRRU1E?oc=5",
-        "source": "مكتب أبوظبي الإعلامي",
-        "domain": "mediaoffice.abudhabi",
-        "date": "2026-11-06",
-        "description": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 21,
+        "date": "2026-11-07",
+        "description": "UAE opens its first dedicated showroom for humanoid robots  Gulf Today",
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
