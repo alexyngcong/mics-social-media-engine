@@ -1,28 +1,53 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-07T05:05:12.128Z",
+  "generatedAt": "2026-11-07T14:40:40.216Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 147,
+    "gdelt": 3,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
-    "afterDedup": 150,
+    "totalFetched": 161,
+    "afterDedup": 157,
     "big4Rejected": 4,
-    "englishOnly": 146,
-    "withinRecency": 36,
-    "scored": 36,
-    "passed": 3
+    "englishOnly": 153,
+    "withinRecency": 37,
+    "scored": 37,
+    "passed": 6
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMmRad0tIWlBKeG1oQy1BSjN1NURtbnk5TFBZTzlid3dvT0lxd255RHpYSUpfUXFtM0tRVFJwQndaSDI4eVZYellETVlhbFA0QzdXaklvX0NTMDJqRDNJbG51SF9kb0hXc3dSZS1NODl1QlJ3LWo5VEFnRUFvV1hmN1F4cFZTUDAtWmtYaXlZbFhoMVdUQVByT3Mwd2RBT055cUxkLTVjVlc2NFJFcERVU0l4cVYtZUZo0gHLAUFVX3lxTE5xbmlJekFyaFJZY0hlZGlOWm11REV4TnNWQUJrMGFBb3BNUmJjalZ0bHdKbzFjNXJnTldwSnYxVzNhRlZJczV2VHlfR2UwWTBVbDA5VzZsSE0xdmltbkZsNElPY0Iyd3EwR09XWFE5X05PaWhrYXB1aWpxOVdrSi1lYVl5UmZIN2UxTi1hZEZVdUZlbGZfWnJ3d2tFeDVWUlBpbmpoNjZVN25ZMkF5cV9LX01mbXljeXA1ZGp2UkFZbkgzWV96b0V3cVVR?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-07",
+        "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
+        "hoursAgo": 4,
+        "score": 7,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      },
+      {
+        "title": "Abu Dhabi Real Estate Centre records 76.1% year-on-year increase in transaction value, reaching AED171.2bn+ during first 9 months of 2026 - مكتب أبوظبي الإعلامي",
+        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQWWNxVndvaFo3dVNnYUVaVTAwdmlWTUl3aUZTLVd2dl81a3VSaVR0WS0zOThYTWp3cTdudzYtbkZnVXdGRlBuVzgwX1pURm82U1RDOHo3Q21nZjhmZk1yOUxKQ2NVNV9TWHUtQjNEVkN4UDFvNXNXV01FWUZEYzRucXFjZXlWdTUwQWs5YVdVRC1zQ3dXdHM3MXZoaVRkelRJWUkxRUl4RHRFN3VXY2NXM1JWNnQ4Y3ZvNjhYdFVyZ293ZFdBdjFTbXNqYURNZEwwZThmUGpQM2xyVlpOTGdacXlCMXZIYVJfVzNFeFAyTkZYbzhGUDhXcmdodE0tZjVVVGRzZWV0VmE?oc=5",
+        "source": "مكتب أبوظبي الإعلامي",
+        "domain": "mediaoffice.abudhabi",
+        "date": "2026-11-07",
+        "description": "Abu Dhabi Real Estate Centre records 76.1% year-on-year increase in transaction value, reaching AED171.2bn+ during first 9 months of 2026  مكتب أبوظبي الإعلامي",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [],
     "world": [
@@ -33,19 +58,19 @@
         "domain": "gulfnews.com",
         "date": "2026-11-06",
         "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 16,
-        "score": 7,
+        "hoursAgo": 26,
+        "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       },
       {
-        "title": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment - مكتب أبوظبي الإعلامي",
-        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPVTFPVTh2eUlucGk1S21RcGx6YVc2VC1YRjJneW5IaFA3V09xYTV0VG1iLURGaHppbGVtdEd2dWxxaGpycUlOZ016cHlXNkVsSFR1QTRXTnhZa0h6TW1yQWZLLWRWMmJCT0k4LTdvcFV6VkVCZUJiNEhENndqeEhDbDB3SjBwYkVQVnNwQlVGVVAtZ0NkSGV5ZDBkZ0FWMkZ4V0xMRDFLNDRPU0FudEYwRGZjWHVfZjUzSlFEVlBGRUw2bmVpd3lpdko1RnhDdFZzcDlQWEI3WTBmdlNyWHhiWld0LWRULTdCTWNLLTZ6ZTg1VEdKYXJCNlB6NDRRU1E?oc=5",
-        "source": "مكتب أبوظبي الإعلامي",
-        "domain": "mediaoffice.abudhabi",
-        "date": "2026-11-06",
-        "description": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 11,
+        "title": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026 - The National",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNzVaUF9nbUo4WGNLb20zSUlpYjI5ZDNrOW1nalI5WHRUdGRYUXBtSjhsZ29iVGdjQmlJbnpFaFMzQndYdnQyX0JISEtRY3cxNEEwQkJYNDdXNVN4V05sTVBMTmFuMlFWRWdDcVFOTjhlNUk3ZEJVNFphR1JmNkt0WmxvYmFzMEZZUHRDWkw0NlloSTE4OTA0OTJmN2FGaGUyZGNDWUhPQ0FyVmNwN3EtazBzXzNQOTJzbjVYV3BlYlVuU18yTVQ2ckRzUFBFV3ZHQldYS0JMY2U?oc=5",
+        "source": "The National",
+        "domain": "thenationalnews.com",
+        "date": "2026-11-07",
+        "description": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026  The National",
+        "hoursAgo": 4,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -57,12 +82,24 @@
         "domain": "gulftoday.ae",
         "date": "2026-11-06",
         "description": "BYD electric hypercar sets world speed record of 503kph in Abu Dhabi  Gulf Today",
-        "hoursAgo": 10,
+        "hoursAgo": 20,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      },
+      {
+        "title": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment - مكتب أبوظبي الإعلامي",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPVTFPVTh2eUlucGk1S21RcGx6YVc2VC1YRjJneW5IaFA3V09xYTV0VG1iLURGaHppbGVtdEd2dWxxaGpycUlOZ016cHlXNkVsSFR1QTRXTnhZa0h6TW1yQWZLLWRWMmJCT0k4LTdvcFV6VkVCZUJiNEhENndqeEhDbDB3SjBwYkVQVnNwQlVGVVAtZ0NkSGV5ZDBkZ0FWMkZ4V0xMRDFLNDRPU0FudEYwRGZjWHVfZjUzSlFEVlBGRUw2bmVpd3lpdko1RnhDdFZzcDlQWEI3WTBmdlNyWHhiWld0LWRULTdCTWNLLTZ6ZTg1VEdKYXJCNlB6NDRRU1E?oc=5",
+        "source": "مكتب أبوظبي الإعلامي",
+        "domain": "mediaoffice.abudhabi",
+        "date": "2026-11-06",
+        "description": "Abu Dhabi shapes future of energy resilience and security as record-breaking ADIPEC 2026 mobilises US$67bn in energy investment  مكتب أبوظبي الإعلامي",
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 6
 }
