@@ -1,57 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-08T14:46:27.152Z",
+  "generatedAt": "2026-11-08T20:12:05.657Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 147,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
+    "totalFetched": 158,
     "afterDedup": 152,
     "big4Rejected": 2,
     "englishOnly": 150,
-    "withinRecency": 37,
-    "scored": 37,
-    "passed": 2
+    "withinRecency": 32,
+    "scored": 32,
+    "passed": 0
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMmRad0tIWlBKeG1oQy1BSjN1NURtbnk5TFBZTzlid3dvT0lxd255RHpYSUpfUXFtM0tRVFJwQndaSDI4eVZYellETVlhbFA0QzdXaklvX0NTMDJqRDNJbG51SF9kb0hXc3dSZS1NODl1QlJ3LWo5VEFnRUFvV1hmN1F4cFZTUDAtWmtYaXlZbFhoMVdUQVByT3Mwd2RBT055cUxkLTVjVlc2NFJFcERVU0l4cVYtZUZo0gHLAUFVX3lxTE5xbmlJekFyaFJZY0hlZGlOWm11REV4TnNWQUJrMGFBb3BNUmJjalZ0bHdKbzFjNXJnTldwSnYxVzNhRlZJczV2VHlfR2UwWTBVbDA5VzZsSE0xdmltbkZsNElPY0Iyd3EwR09XWFE5X05PaWhrYXB1aWpxOVdrSi1lYVl5UmZIN2UxTi1hZEZVdUZlbGZfWnJ3d2tFeDVWUlBpbmpoNjZVN25ZMkF5cV9LX01mbXljeXA1ZGp2UkFZbkgzWV96b0V3cVVR?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-07",
-        "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
-        "hoursAgo": 28,
-        "score": 6.5,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "UAE opens its first dedicated showroom for humanoid robots - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaWxGVllaWURhdDVqVXRibWNBeFJwQ2pvTVhqNzdKay1lRHh0X3BYRWlhSjNyNms2OWhmYkdwU29QX0p0ZEhWTE1ZR3pXV1o2VWFMMU1hSmVaUTVzZU5ZOTd6MkFGYzJGWFBGSFhSZEVYcUV4U2VLTHVZMjFPalFtRGRoUmNrRVM1Wkg4dUFDT0xOWjRrMmxOejhDNDQ4bU1xV0paSV9B?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-11-07",
-        "description": "UAE opens its first dedicated showroom for humanoid robots  Gulf Today",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 0
 }
