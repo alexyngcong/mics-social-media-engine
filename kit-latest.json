@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T19:30:14.168Z",
-  "weekOf": "5 Nov 2026",
+  "generatedAt": "2026-11-08T20:12:17.830Z",
+  "weekOf": "8 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "uae-e-invoicing-the-deadline-has-passed-",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "risk",
-      "roomColor": "#EF5555",
-      "roomLabel": "RISK · COMPLIANCE",
-      "theme": "compliance_risk",
-      "tier": "WEEK AHEAD",
-      "title": "UAE E-Invoicing: The Deadline Has Passed. Has The Compliance Landscape Changed? - MEP Middle East",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYW9tYmt6SzA0OUdRak5SVFYwMXBBUXNEV2pZc3FiWV9jZ0xRbGxkU3pEdFJtN01IdXQwOTZVOXNnZ1ZncUdiT3BxSm1WSzd5MnJaSVdzMm9QVDJVUkxwTVZvY2RWUGVfOHFkWXhsRzl1eVJIYUIzRmhWWWRnT2FXd1lHb1NTakFhWWlvaTFZbFgxLWZuRnFkM254T01ORkhQWXVrektGckFqODJCM3IzeQ?oc=5",
-      "filenameBase": "post-1-uae-e-invoicing-the-deadline-has-passed-",
-      "photoUrl": "/mics-social-media-engine/photos/risk/05_audit_documents.jpg",
+      "room": "world",
+      "roomColor": "#5B8DEE",
+      "roomLabel": "WORLD PULSE",
+      "theme": "geopolitics",
+      "tier": "WEEK AHEAD MACRO",
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
       "stat": "",
-      "headlineLine1": "UAE E-Invoicing: The Deadline Has Pa…",
-      "headlineLine2": "Has The Compliance Landscape Changed",
-      "hoursAgo": 38
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
