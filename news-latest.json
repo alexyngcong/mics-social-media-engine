@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-07T23:25:32.177Z",
+  "generatedAt": "2026-11-08T04:27:39.366Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,9 +14,9 @@
   },
   "diagnostic": {
     "totalFetched": 158,
-    "afterDedup": 151,
+    "afterDedup": 149,
     "big4Rejected": 4,
-    "englishOnly": 147,
+    "englishOnly": 145,
     "withinRecency": 32,
     "scored": 32,
     "passed": 5
@@ -30,7 +30,7 @@
         "domain": "gulfnews.com",
         "date": "2026-11-07",
         "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
-        "hoursAgo": 13,
+        "hoursAgo": 18,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -42,7 +42,7 @@
         "domain": "mediaoffice.abudhabi",
         "date": "2026-11-07",
         "description": "Abu Dhabi Real Estate Centre records 76.1% year-on-year increase in transaction value, reaching AED171.2bn+ during first 9 months of 2026  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 14,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -58,7 +58,7 @@
         "domain": "gulfnews.com",
         "date": "2026-11-06",
         "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 35,
+        "hoursAgo": 40,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -70,7 +70,7 @@
         "domain": "thenationalnews.com",
         "date": "2026-11-07",
         "description": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026  The National",
-        "hoursAgo": 12,
+        "hoursAgo": 17,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
@@ -82,7 +82,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-11-07",
         "description": "UAE opens its first dedicated showroom for humanoid robots  Gulf Today",
-        "hoursAgo": 8,
+        "hoursAgo": 13,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
