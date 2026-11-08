@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-08T04:27:39.366Z",
+  "generatedAt": "2026-11-08T14:46:27.152Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 148,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 149,
-    "big4Rejected": 4,
-    "englishOnly": 145,
-    "withinRecency": 32,
-    "scored": 32,
-    "passed": 5
+    "totalFetched": 157,
+    "afterDedup": 152,
+    "big4Rejected": 2,
+    "englishOnly": 150,
+    "withinRecency": 37,
+    "scored": 37,
+    "passed": 2
   },
   "rooms": {
     "growth": [
@@ -30,20 +30,8 @@
         "domain": "gulfnews.com",
         "date": "2026-11-07",
         "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
-        "hoursAgo": 18,
-        "score": 7,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      },
-      {
-        "title": "Abu Dhabi Real Estate Centre records 76.1% year-on-year increase in transaction value, reaching AED171.2bn+ during first 9 months of 2026 - مكتب أبوظبي الإعلامي",
-        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQWWNxVndvaFo3dVNnYUVaVTAwdmlWTUl3aUZTLVd2dl81a3VSaVR0WS0zOThYTWp3cTdudzYtbkZnVXdGRlBuVzgwX1pURm82U1RDOHo3Q21nZjhmZk1yOUxKQ2NVNV9TWHUtQjNEVkN4UDFvNXNXV01FWUZEYzRucXFjZXlWdTUwQWs5YVdVRC1zQ3dXdHM3MXZoaVRkelRJWUkxRUl4RHRFN3VXY2NXM1JWNnQ4Y3ZvNjhYdFVyZ293ZFdBdjFTbXNqYURNZEwwZThmUGpQM2xyVlpOTGdacXlCMXZIYVJfVzNFeFAyTkZYbzhGUDhXcmdodE0tZjVVVGRzZWV0VmE?oc=5",
-        "source": "مكتب أبوظبي الإعلامي",
-        "domain": "mediaoffice.abudhabi",
-        "date": "2026-11-07",
-        "description": "Abu Dhabi Real Estate Centre records 76.1% year-on-year increase in transaction value, reaching AED171.2bn+ during first 9 months of 2026  مكتب أبوظبي الإعلامي",
-        "hoursAgo": 19,
-        "score": 6,
+        "hoursAgo": 28,
+        "score": 6.5,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
       }
@@ -52,42 +40,18 @@
     "risk": [],
     "world": [
       {
-        "title": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPb2h1MzNZTnV6TG9nY3FZaHVBV3BxWmNlWktxZWVCNjJ1QmtZY3czMnZjNUVvMVNPX3hhTXdkcE80c3hsU1BPUUwtZlBLSG4wSldCZXNNYTZXSG1CcFludEZxSjkxNm1vdzZXYnd2ZEt2b20wOUNiUl83RDJkZVVYUkxsREk0T1R3ZzFudER1SWlVODNqVHJDYlNKaUFfcVc0ZExRT1c2WGRRNWtubXp6N280TlpaM1dvVFBRTWZZazR5U0w2b3fSAdgBQVVfeXFMT0FPS3NRZmc5Tl9QMGNhRzdURDJLZVZNc1J5TV9SRVN6ZTVQMkNlejhnVlZhVWZialRVcWw5YThPTksxckRxMk9PX0NRMGs4WFVlaUI5eXM2N1czM0ZIWjc4Q0dxTk5zNzAxWFo2MU1ZTHBJRWdvQ1lhNnRWaUJGNWVhdWplZXhrcU93THY1bEZqaW1jUVotcElreWlIVENLMzRIeWhKQktyRDYwWmxaSUhpOEJuR09xb3NnUlJ5V1dHZTdhS2JRQXBfeG1TaWhjeEI1R00yczRj?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-06",
-        "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 40,
-        "score": 6.5,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
-        "title": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026 - The National",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNzVaUF9nbUo4WGNLb20zSUlpYjI5ZDNrOW1nalI5WHRUdGRYUXBtSjhsZ29iVGdjQmlJbnpFaFMzQndYdnQyX0JISEtRY3cxNEEwQkJYNDdXNVN4V05sTVBMTmFuMlFWRWdDcVFOTjhlNUk3ZEJVNFphR1JmNkt0WmxvYmFzMEZZUHRDWkw0NlloSTE4OTA0OTJmN2FGaGUyZGNDWUhPQ0FyVmNwN3EtazBzXzNQOTJzbjVYV3BlYlVuU18yTVQ2ckRzUFBFV3ZHQldYS0JMY2U?oc=5",
-        "source": "The National",
-        "domain": "thenationalnews.com",
-        "date": "2026-11-07",
-        "description": "Abu Dhabi property transactions jump 76% to Dh171bn in first nine months of 2026  The National",
-        "hoursAgo": 17,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      },
-      {
         "title": "UAE opens its first dedicated showroom for humanoid robots - Gulf Today",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaWxGVllaWURhdDVqVXRibWNBeFJwQ2pvTVhqNzdKay1lRHh0X3BYRWlhSjNyNms2OWhmYkdwU29QX0p0ZEhWTE1ZR3pXV1o2VWFMMU1hSmVaUTVzZU5ZOTd6MkFGYzJGWFBGSFhSZEVYcUV4U2VLTHVZMjFPalFtRGRoUmNrRVM1Wkg4dUFDT0xOWjRrMmxOejhDNDQ4bU1xV0paSV9B?oc=5",
         "source": "Gulf Today",
         "domain": "gulftoday.ae",
         "date": "2026-11-07",
         "description": "UAE opens its first dedicated showroom for humanoid robots  Gulf Today",
-        "hoursAgo": 13,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 5
+  "totalCount": 2
 }
