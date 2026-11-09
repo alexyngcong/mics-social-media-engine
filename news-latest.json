@@ -1,57 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-09T04:40:33.421Z",
+  "generatedAt": "2026-11-09T18:19:24.941Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 147,
+    "gdelt": 5,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 157,
-    "afterDedup": 150,
+    "totalFetched": 163,
+    "afterDedup": 155,
     "big4Rejected": 2,
-    "englishOnly": 148,
-    "withinRecency": 29,
-    "scored": 29,
-    "passed": 2
+    "englishOnly": 153,
+    "withinRecency": 34,
+    "scored": 34,
+    "passed": 1
   },
   "rooms": {
-    "growth": [
+    "growth": [],
+    "capital": [],
+    "risk": [
       {
-        "title": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026 - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMmRad0tIWlBKeG1oQy1BSjN1NURtbnk5TFBZTzlid3dvT0lxd255RHpYSUpfUXFtM0tRVFJwQndaSDI4eVZYellETVlhbFA0QzdXaklvX0NTMDJqRDNJbG51SF9kb0hXc3dSZS1NODl1QlJ3LWo5VEFnRUFvV1hmN1F4cFZTUDAtWmtYaXlZbFhoMVdUQVByT3Mwd2RBT055cUxkLTVjVlc2NFJFcERVU0l4cVYtZUZo0gHLAUFVX3lxTE5xbmlJekFyaFJZY0hlZGlOWm11REV4TnNWQUJrMGFBb3BNUmJjalZ0bHdKbzFjNXJnTldwSnYxVzNhRlZJczV2VHlfR2UwWTBVbDA5VzZsSE0xdmltbkZsNElPY0Iyd3EwR09XWFE5X05PaWhrYXB1aWpxOVdrSi1lYVl5UmZIN2UxTi1hZEZVdUZlbGZfWnJ3d2tFeDVWUlBpbmpoNjZVN25ZMkF5cV9LX01mbXljeXA1ZGp2UkFZbkgzWV96b0V3cVVR?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-07",
-        "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
-        "hoursAgo": 42,
-        "score": 6.5,
-        "topic": "Real Estate & Construction",
+        "title": "Saudi Pipeline Attacked as OPEC Output Climbs to 90% of Pre-War Levels - Crude Oil Prices Today | OilPrice.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcEN5Rnp2anlVblctWFNKal9hWHFXbGJaWk9KSWVIaHV1NmZGTDZPeWNPRDVlblVhTWNqRV9XOHFSbnducTItYmI3WnA5bS1PQUVTSmJ2dWVXSlp0eTZTOWI5ZEFTNGVLUVpQM3hmdWxwbU4yblFDcTZYanM4Wk9LUHpYNTJtb3ZhWTFFbzRYc1VaYlh1NWl1NEh1ZkpEOW1FMi1SeEtDYUdSZERYWlRfaXZ1OTNvWE5kQXJaSmt2R1M1d0HSAcgBQVVfeXFMTUVIRWVNODhhQzRESnhrXzAzWjhQNzJkT3BycHNQOE4xZDhXTUxiTmlfTG1FbFRyTldfMEVoZm5jUlBNMkRFXzlSM0I0NGhQUFJ2TllGWjFwQ1VyYzF0bm1MaTZLUWxLTm11N3ZXdmJnSnVLOWVjZEJSS19IaGpWUVFMaXFOeHU0Zm81TXBISjM2YnFsNmFqMWUwN1Q0T2ZTVkhGcmxLZUQ5LTRzenZiTy1FUnc1V3lqWExmbU9FYlRfVzhrdHpMN04?oc=5",
+        "source": "Crude Oil Prices Today | OilPrice.com",
+        "domain": "oilprice.com",
+        "date": "2026-11-09",
+        "description": "Saudi Pipeline Attacked as OPEC Output Climbs to 90% of Pre-War Levels  Crude Oil Prices Today | OilPrice.com",
+        "hoursAgo": 1,
+        "score": 6,
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "capital": [],
-    "risk": [],
-    "world": [
-      {
-        "title": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPb2h1MzNZTnV6TG9nY3FZaHVBV3BxWmNlWktxZWVCNjJ1QmtZY3czMnZjNUVvMVNPX3hhTXdkcE80c3hsU1BPUUwtZlBLSG4wSldCZXNNYTZXSG1CcFludEZxSjkxNm1vdzZXYnd2ZEt2b20wOUNiUl83RDJkZVVYUkxsREk0T1R3ZzFudER1SWlVODNqVHJDYlNKaUFfcVc0ZExRT1c2WGRRNWtubXp6N280TlpaM1dvVFBRTWZZazR5U0w2b3fSAdgBQVVfeXFMT0FPS3NRZmc5Tl9QMGNhRzdURDJLZVZNc1J5TV9SRVN6ZTVQMkNlejhnVlZhVWZialRVcWw5YThPTksxckRxMk9PX0NRMGs4WFVlaUI5eXM2N1czM0ZIWjc4Q0dxTk5zNzAxWFo2MU1ZTHBJRWdvQ1lhNnRWaUJGNWVhdWplZXhrcU93THY1bEZqaW1jUVotcElreWlIVENLMzRIeWhKQktyRDYwWmxaSUhpOEJuR09xb3NnUlJ5V1dHZTdhS2JRQXBfeG1TaWhjeEI1R00yczRj?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-06",
-        "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
-        "hoursAgo": 64,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 2
+  "totalCount": 1
 }
