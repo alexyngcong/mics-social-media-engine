@@ -1,31 +1,57 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-08T20:12:05.657Z",
+  "generatedAt": "2026-11-09T04:40:33.421Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 148,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 152,
+    "totalFetched": 157,
+    "afterDedup": 150,
     "big4Rejected": 2,
-    "englishOnly": 150,
-    "withinRecency": 32,
-    "scored": 32,
-    "passed": 0
+    "englishOnly": 148,
+    "withinRecency": 29,
+    "scored": 29,
+    "passed": 2
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026 - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMmRad0tIWlBKeG1oQy1BSjN1NURtbnk5TFBZTzlid3dvT0lxd255RHpYSUpfUXFtM0tRVFJwQndaSDI4eVZYellETVlhbFA0QzdXaklvX0NTMDJqRDNJbG51SF9kb0hXc3dSZS1NODl1QlJ3LWo5VEFnRUFvV1hmN1F4cFZTUDAtWmtYaXlZbFhoMVdUQVByT3Mwd2RBT055cUxkLTVjVlc2NFJFcERVU0l4cVYtZUZo0gHLAUFVX3lxTE5xbmlJekFyaFJZY0hlZGlOWm11REV4TnNWQUJrMGFBb3BNUmJjalZ0bHdKbzFjNXJnTldwSnYxVzNhRlZJczV2VHlfR2UwWTBVbDA5VzZsSE0xdmltbkZsNElPY0Iyd3EwR09XWFE5X05PaWhrYXB1aWpxOVdrSi1lYVl5UmZIN2UxTi1hZEZVdUZlbGZfWnJ3d2tFeDVWUlBpbmpoNjZVN25ZMkF5cV9LX01mbXljeXA1ZGp2UkFZbkgzWV96b0V3cVVR?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-07",
+        "description": "Abu Dhabi Real Estate transactions surge 76% to Dh171.26 billion in 2026  Gulf News",
+        "hoursAgo": 42,
+        "score": 6.5,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPb2h1MzNZTnV6TG9nY3FZaHVBV3BxWmNlWktxZWVCNjJ1QmtZY3czMnZjNUVvMVNPX3hhTXdkcE80c3hsU1BPUUwtZlBLSG4wSldCZXNNYTZXSG1CcFludEZxSjkxNm1vdzZXYnd2ZEt2b20wOUNiUl83RDJkZVVYUkxsREk0T1R3ZzFudER1SWlVODNqVHJDYlNKaUFfcVc0ZExRT1c2WGRRNWtubXp6N280TlpaM1dvVFBRTWZZazR5U0w2b3fSAdgBQVVfeXFMT0FPS3NRZmc5Tl9QMGNhRzdURDJLZVZNc1J5TV9SRVN6ZTVQMkNlejhnVlZhVWZialRVcWw5YThPTksxckRxMk9PX0NRMGs4WFVlaUI5eXM2N1czM0ZIWjc4Q0dxTk5zNzAxWFo2MU1ZTHBJRWdvQ1lhNnRWaUJGNWVhdWplZXhrcU93THY1bEZqaW1jUVotcElreWlIVENLMzRIeWhKQktyRDYwWmxaSUhpOEJuR09xb3NnUlJ5V1dHZTdhS2JRQXBfeG1TaWhjeEI1R00yczRj?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-06",
+        "description": "UAE to launch world's first approved oral treatment for vitiligo at Dubai conference  Gulf News",
+        "hoursAgo": 64,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 2
 }
