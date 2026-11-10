@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-10T02:32:32.398Z",
+  "generatedAt": "2026-11-10T12:06:24.879Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 1,
+    "gdelt": 0,
     "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 159,
-    "afterDedup": 149,
-    "big4Rejected": 2,
-    "englishOnly": 147,
-    "withinRecency": 32,
-    "scored": 32,
+    "totalFetched": 158,
+    "afterDedup": 151,
+    "big4Rejected": 3,
+    "englishOnly": 148,
+    "withinRecency": 35,
+    "scored": 35,
     "passed": 2
   },
   "rooms": {
@@ -32,7 +32,7 @@
         "domain": "oilprice.com",
         "date": "2026-11-09",
         "description": "Saudi Pipeline Attacked as OPEC Output Climbs to 90% of Pre-War Levels  Crude Oil Prices Today | OilPrice.com",
-        "hoursAgo": 9,
+        "hoursAgo": 19,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
@@ -46,7 +46,7 @@
         "domain": "arabianbusiness.com",
         "date": "2026-11-10",
         "description": "Abu Dhabi property sales surge 105% to $32.5bn as foreign investment jumps 131%  Arabian Business",
-        "hoursAgo": 1,
+        "hoursAgo": 11,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
