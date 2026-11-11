@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-11T04:43:09.464Z",
+  "generatedAt": "2026-11-11T15:52:08.796Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,56 @@
   },
   "diagnostic": {
     "totalFetched": 257,
-    "afterDedup": 201,
-    "big4Rejected": 4,
-    "englishOnly": 168,
-    "withinRecency": 53,
-    "scored": 53,
-    "passed": 0
+    "afterDedup": 193,
+    "big4Rejected": 2,
+    "englishOnly": 165,
+    "withinRecency": 67,
+    "scored": 67,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [],
-    "world": []
+    "risk": [
+      {
+        "title": "UAE Corporate Tax revenue jumps 33.9% to Dh46.52 billion in 2025 - Khaleej Times",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYno0N0NoUWZXeFF4RUlTbzlMbTBkWkFxcTRFYV9Sc2szdlFmQmN2Wjh2VTZMa25QbnQ5aVdyUXAxcUlYcWVBOE81cWtuY1h1clowRGh2eHMzR0Q2elljWHA2Y0trMG1QWEZZeG5oRW5JLWlYXy1GRFhsVTIxaFJjRUYtSFk3akJKUFI0SGJiUlVMLW4yN3Nfc29Xc2M2SzR50gGoAUFVX3lxTFBWZWdreEdnNWdPNWZSSERJb2p0ZmxmQVVFRm41WnR1WWhtZDIxNXlxanpxTzFhUXprZnZVaHRvdm12d2lYM0E2dzU2dUl6VTRQZEdZMnRENUNZckFqS2IxWjRVVW1XMGoyQUZpTjd4NWEtNTEzUW9fRThka0FPb3d4SmxUQzFRbHAycXpTb1RIYVEwa0pKUUVINzRtekpydFhNOUx0VFd1bw?oc=5",
+        "source": "Khaleej Times",
+        "domain": "khaleejtimes.com",
+        "date": "2026-11-11",
+        "description": "UAE Corporate Tax revenue jumps 33.9% to Dh46.52 billion in 2025  Khaleej Times",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE corporate tax collections jump 34% to Dh46.5 billion as more businesses file on time - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNkw3YUFfZHZ4TU13TXRhWlRBR0JvV2RCMFdpMnVLZjRwU2pEOFJtdWNoQmRZaWRIU0hpMXFHX3p0ZDg2QmFQOG9LU2dOMDI0eHNFbEJsZFlwcWY3SHNWQ0pvbzdId2Qwb1hjR0FhM1Q0MU51dmdKUkoySmdMMUpPOWRfa2RyT0l2cXBDYk1XdGRqSU5UX3cxMXJBOURLNVV3T2lyUEZmTVYzcS1XdGo0SWlrUnlIWkk5UXBCMXh1YlVOQk5fYzRWdGxQbml6dmNUNElxalpkZU5UZ9IB7AFBVV95cUxQUUJkbTFyZzBLTUxuZ0lQR2VOdHljQk1CN0ZwTmhmb0g5emd1dUljQ2tsZy1CZmljeFFkenJhdjFjV19jTDFObUEtY3IxZGxCRmRwTDdfaFlCa2loT0gtQWthWGxYTmIyTmtNdW9zOUY5bGdkRV9GNzhPVUlxa0ZnLWhaVFNMcGxDUVFDT0ZPak5tLTg2bDBCMEF4NzZwTHVoZml4Z1A5ejJCMmhmc2cza21EWkdhUGVTd2MzY0JDZndUclZSTEdfRzVLNUhjVWZwczlhNDhLcVE3TzBTVmtXck84bFFYbFZfMk1Ubw?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-11",
+        "description": "UAE corporate tax collections jump 34% to Dh46.5 billion as more businesses file on time  Gulf News",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
+    "world": [
+      {
+        "title": "GITEX Global 2026: Dubai prepares for major AI, robotics and technology showcase - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOXR2ZVBrS0lzeFBHRTd0OFFxUThlRkFxZFlvd05BU05VeTV1ZnFSUk9uVU5oNk8xZk1TQkxjLVZsYV83X0twODhLMmJCU3NGeUo3aHRkZzVUMDc5UGQ3RS1iUTdiZFp2YkNxeHlLZUJwNkx6R1BDcTZabTBKdE9QdTRRXzhPTm02RmlkRmwzWFJNMXBlN0g0S1ZQOGNSWl9iZTdoTEp5bGVuRFFwal9FNEE5X3AwNHhRRFE?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-11-11",
+        "description": "GITEX Global 2026: Dubai prepares for major AI, robotics and technology showcase  Gulf Business",
+        "hoursAgo": 6,
+        "score": 6,
+        "topic": "AI & Technology",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 3
 }
