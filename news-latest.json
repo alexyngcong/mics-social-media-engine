@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-10T21:39:46.116Z",
+  "generatedAt": "2026-11-11T04:43:09.464Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 4,
-    "googleNews": 148,
+    "gdelt": 100,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 162,
-    "afterDedup": 158,
-    "big4Rejected": 3,
-    "englishOnly": 155,
-    "withinRecency": 39,
-    "scored": 39,
-    "passed": 1
+    "totalFetched": 257,
+    "afterDedup": 201,
+    "big4Rejected": 4,
+    "englishOnly": 168,
+    "withinRecency": 53,
+    "scored": 53,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Abu Dhabi property sales surge 105% to $32.5bn as foreign investment jumps 131% - Arabian Business",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRW01dTJwMnYtTzduaVlZU3pVMW9FU2YybTVnQVk0MUhtRXZ3V2dkZDFiREM2REl1MTFfWWpzZWIzVWhOeFZNblE3U0l1MzVQUkVTVjFjSWF4QjR1NEl3MVlyVzFQOXI0aEJoVVFKOTBMV2lDelB0SVdfd3dqNWttbGNYc0tvNzJDVTdha3FTeC1sV01LMzk0VzFjZkRsWlNkaDdCZHhMNGJFU25qVlUycTZxOFF5bnJuTW9kMw?oc=5",
-        "source": "Arabian Business",
-        "domain": "arabianbusiness.com",
-        "date": "2026-11-10",
-        "description": "Abu Dhabi property sales surge 105% to $32.5bn as foreign investment jumps 131%  Arabian Business",
-        "hoursAgo": 21,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
