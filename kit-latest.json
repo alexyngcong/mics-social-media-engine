@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T21:39:59.446Z",
-  "weekOf": "10 Nov 2026",
+  "generatedAt": "2026-11-11T04:43:22.787Z",
+  "weekOf": "11 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "abu-dhabi-property-sales-surge-105-to-32",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "growth_expansion",
+      "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Abu Dhabi property sales surge 105% to $32.5bn as foreign investment jumps 131% - Arabian Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRW01dTJwMnYtTzduaVlZU3pVMW9FU2YybTVnQVk0MUhtRXZ3V2dkZDFiREM2REl1MTFfWWpzZWIzVWhOeFZNblE3U0l1MzVQUkVTVjFjSWF4QjR1NEl3MVlyVzFQOXI0aEJoVVFKOTBMV2lDelB0SVdfd3dqNWttbGNYc0tvNzJDVTdha3FTeC1sV01LMzk0VzFjZkRsWlNkaDdCZHhMNGJFU25qVlUycTZxOFF5bnJuTW9kMw?oc=5",
-      "filenameBase": "post-1-abu-dhabi-property-sales-surge-105-to-32",
-      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
-      "stat": "$32.5b",
-      "headlineLine1": "Abu Dhabi property sales surge 105% to",
-      "headlineLine2": "$32.5bn as foreign investment jumps …",
-      "hoursAgo": 21
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
