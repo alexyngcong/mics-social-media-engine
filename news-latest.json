@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-11T22:29:01.373Z",
+  "generatedAt": "2026-11-12T05:45:37.599Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 148,
+    "gdelt": 74,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 151,
-    "big4Rejected": 1,
-    "englishOnly": 150,
-    "withinRecency": 56,
-    "scored": 56,
+    "totalFetched": 231,
+    "afterDedup": 181,
+    "big4Rejected": 2,
+    "englishOnly": 161,
+    "withinRecency": 65,
+    "scored": 65,
     "passed": 2
   },
   "rooms": {
@@ -26,31 +26,32 @@
     "capital": [],
     "risk": [
       {
-        "title": "UAE Corporate Tax revenue jumps 33.9% to Dh46.52 billion in 2025 - Khaleej Times",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYno0N0NoUWZXeFF4RUlTbzlMbTBkWkFxcTRFYV9Sc2szdlFmQmN2Wjh2VTZMa25QbnQ5aVdyUXAxcUlYcWVBOE81cWtuY1h1clowRGh2eHMzR0Q2elljWHA2Y0trMG1QWEZZeG5oRW5JLWlYXy1GRFhsVTIxaFJjRUYtSFk3akJKUFI0SGJiUlVMLW4yN3Nfc29Xc2M2SzR50gGoAUFVX3lxTFBWZWdreEdnNWdPNWZSSERJb2p0ZmxmQVVFRm41WnR1WWhtZDIxNXlxanpxTzFhUXprZnZVaHRvdm12d2lYM0E2dzU2dUl6VTRQZEdZMnRENUNZckFqS2IxWjRVVW1XMGoyQUZpTjd4NWEtNTEzUW9fRThka0FPb3d4SmxUQzFRbHAycXpTb1RIYVEwa0pKUUVINzRtekpydFhNOUx0VFd1bw?oc=5",
-        "source": "Khaleej Times",
-        "domain": "khaleejtimes.com",
-        "date": "2026-11-11",
-        "description": "UAE Corporate Tax revenue jumps 33.9% to Dh46.52 billion in 2025  Khaleej Times",
-        "hoursAgo": 10,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
-      {
         "title": "UAE corporate tax collections jump 34% to Dh46.5 billion as more businesses file on time - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNkw3YUFfZHZ4TU13TXRhWlRBR0JvV2RCMFdpMnVLZjRwU2pEOFJtdWNoQmRZaWRIU0hpMXFHX3p0ZDg2QmFQOG9LU2dOMDI0eHNFbEJsZFlwcWY3SHNWQ0pvbzdId2Qwb1hjR0FhM1Q0MU51dmdKUkoySmdMMUpPOWRfa2RyT0l2cXBDYk1XdGRqSU5UX3cxMXJBOURLNVV3T2lyUEZmTVYzcS1XdGo0SWlrUnlIWkk5UXBCMXh1YlVOQk5fYzRWdGxQbml6dmNUNElxalpkZU5UZ9IB7AFBVV95cUxQUUJkbTFyZzBLTUxuZ0lQR2VOdHljQk1CN0ZwTmhmb0g5emd1dUljQ2tsZy1CZmljeFFkenJhdjFjV19jTDFObUEtY3IxZGxCRmRwTDdfaFlCa2loT0gtQWthWGxYTmIyTmtNdW9zOUY5bGdkRV9GNzhPVUlxa0ZnLWhaVFNMcGxDUVFDT0ZPak5tLTg2bDBCMEF4NzZwTHVoZml4Z1A5ejJCMmhmc2cza21EWkdhUGVTd2MzY0JDZndUclZSTEdfRzVLNUhjVWZwczlhNDhLcVE3TzBTVmtXck84bFFYbFZfMk1Ubw?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-11-11",
         "description": "UAE corporate tax collections jump 34% to Dh46.5 billion as more businesses file on time  Gulf News",
-        "hoursAgo": 13,
+        "hoursAgo": 20,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "Global investors converge on IREIS 2026, as Abu Dhabi property transactions surge to Dh171 billion - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUldSSlNGeko3Q2IxOU1KTkJuR3h0ZXFLSXRQY3lucUUtVWo4TGl5ZmlnRGYwWHdadHBQWEMweldWb2xsWTltZzRYZzZ2NXdublRpTUpDbU42TVM4OWtyQ2s4alFxM29tRFlMT3VHdEt5MGpWUjJWRkNHMEU5anlHY2hGV201Qkg2RWU2NnBwbWRVRVFZZ2cybTU3b0NjeTQ0TDVDRTF0WGJDTWg5WTBidDNaR1JfRmpuZTEyaHlkMkpFS3NHMXJNdWNsLS14TjdHNmlXOWcxLW9hOTJh0gHvAUFVX3lxTE9qSnpQUmtJUDZ2VDM3Q0dzM1FaUEctWWhGNHNTTzBCMkUxMDV1REdjS1p4V0RmaXZCLXBPT25WbEIwSkcwVjhhaTY5LW5ZNTNBS1hvRkJCY0FBX29WVm8yY0RfQkVnVnhxRW5vRHlXMnF6Rng3Wlo1dXlSYmJXMGNBZDdLZy04dFFLWmZmWWhQaldmSDFfLW9vM3d6VlVKb1pUWldIOHlwWVBHNlJjNWFnel9YdXFLMXRtel9sbjFSUGxoVkZDZFFGV2Jod2FDbkVoU1NHdzc4WmF5V3o2b0I0M21jeWlQUVNQMkoyd25Z?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-12",
+        "description": "Global investors converge on IREIS 2026, as Abu Dhabi property transactions surge to Dh171 billion  Gulf News",
+        "hoursAgo": 3,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
   "totalCount": 2
 }
