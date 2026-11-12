@@ -1,43 +1,30 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-12T05:45:37.599Z",
+  "generatedAt": "2026-11-12T16:34:48.372Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 74,
-    "googleNews": 147,
+    "gdelt": 0,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 231,
-    "afterDedup": 181,
+    "totalFetched": 158,
+    "afterDedup": 148,
     "big4Rejected": 2,
-    "englishOnly": 161,
-    "withinRecency": 65,
-    "scored": 65,
-    "passed": 2
+    "englishOnly": 146,
+    "withinRecency": 51,
+    "scored": 51,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "UAE corporate tax collections jump 34% to Dh46.5 billion as more businesses file on time - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNkw3YUFfZHZ4TU13TXRhWlRBR0JvV2RCMFdpMnVLZjRwU2pEOFJtdWNoQmRZaWRIU0hpMXFHX3p0ZDg2QmFQOG9LU2dOMDI0eHNFbEJsZFlwcWY3SHNWQ0pvbzdId2Qwb1hjR0FhM1Q0MU51dmdKUkoySmdMMUpPOWRfa2RyT0l2cXBDYk1XdGRqSU5UX3cxMXJBOURLNVV3T2lyUEZmTVYzcS1XdGo0SWlrUnlIWkk5UXBCMXh1YlVOQk5fYzRWdGxQbml6dmNUNElxalpkZU5UZ9IB7AFBVV95cUxQUUJkbTFyZzBLTUxuZ0lQR2VOdHljQk1CN0ZwTmhmb0g5emd1dUljQ2tsZy1CZmljeFFkenJhdjFjV19jTDFObUEtY3IxZGxCRmRwTDdfaFlCa2loT0gtQWthWGxYTmIyTmtNdW9zOUY5bGdkRV9GNzhPVUlxa0ZnLWhaVFNMcGxDUVFDT0ZPak5tLTg2bDBCMEF4NzZwTHVoZml4Z1A5ejJCMmhmc2cza21EWkdhUGVTd2MzY0JDZndUclZSTEdfRzVLNUhjVWZwczlhNDhLcVE3TzBTVmtXck84bFFYbFZfMk1Ubw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-11",
-        "description": "UAE corporate tax collections jump 34% to Dh46.5 billion as more businesses file on time  Gulf News",
-        "hoursAgo": 20,
-        "score": 6,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": [
       {
         "title": "Global investors converge on IREIS 2026, as Abu Dhabi property transactions surge to Dh171 billion - Gulf News",
@@ -46,12 +33,12 @@
         "domain": "gulfnews.com",
         "date": "2026-11-12",
         "description": "Global investors converge on IREIS 2026, as Abu Dhabi property transactions surge to Dh171 billion  Gulf News",
-        "hoursAgo": 3,
+        "hoursAgo": 14,
         "score": 6,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 2
+  "totalCount": 1
 }
