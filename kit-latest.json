@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T04:43:22.787Z",
-  "weekOf": "11 Nov 2026",
+  "generatedAt": "2026-11-12T16:35:00.454Z",
+  "weekOf": "12 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "global-investors-converge-on-ireis-2026-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -19,16 +19,16 @@
       "room": "world",
       "roomColor": "#5B8DEE",
       "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
+      "theme": "real_estate",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "title": "Global investors converge on IREIS 2026, as Abu Dhabi property transactions surge to Dh171 billion - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUldSSlNGeko3Q2IxOU1KTkJuR3h0ZXFLSXRQY3lucUUtVWo4TGl5ZmlnRGYwWHdadHBQWEMweldWb2xsWTltZzRYZzZ2NXdublRpTUpDbU42TVM4OWtyQ2s4alFxM29tRFlMT3VHdEt5MGpWUjJWRkNHMEU5anlHY2hGV201Qkg2RWU2NnBwbWRVRVFZZ2cybTU3b0NjeTQ0TDVDRTF0WGJDTWg5WTBidDNaR1JfRmpuZTEyaHlkMkpFS3NHMXJNdWNsLS14TjdHNmlXOWcxLW9hOTJh0gHvAUFVX3lxTE9qSnpQUmtJUDZ2VDM3Q0dzM1FaUEctWWhGNHNTTzBCMkUxMDV1REdjS1p4V0RmaXZCLXBPT25WbEIwSkcwVjhhaTY5LW5ZNTNBS1hvRkJCY0FBX29WVm8yY0RfQkVnVnhxRW5vRHlXMnF6Rng3Wlo1dXlSYmJXMGNBZDdLZy04dFFLWmZmWWhQaldmSDFfLW9vM3d6VlVKb1pUWldIOHlwWVBHNlJjNWFnel9YdXFLMXRtel9sbjFSUGxoVkZDZFFGV2Jod2FDbkVoU1NHdzc4WmF5V3o2b0I0M21jeWlQUVNQMkoyd25Z?oc=5",
+      "filenameBase": "post-1-global-investors-converge-on-ireis-2026-",
+      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
       "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "headlineLine1": "Global investors converge on IREIS 2…",
+      "headlineLine2": "Dhabi property transactions surge to…",
+      "hoursAgo": 14
     },
     {
       "n": 2,
