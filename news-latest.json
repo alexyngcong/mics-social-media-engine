@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-12T16:34:48.372Z",
+  "generatedAt": "2026-11-13T00:54:12.134Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 148,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 148,
-    "big4Rejected": 2,
+    "totalFetched": 157,
+    "afterDedup": 147,
+    "big4Rejected": 1,
     "englishOnly": 146,
-    "withinRecency": 51,
-    "scored": 51,
-    "passed": 1
+    "withinRecency": 50,
+    "scored": 50,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "Global investors converge on IREIS 2026, as Abu Dhabi property transactions surge to Dh171 billion - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUldSSlNGeko3Q2IxOU1KTkJuR3h0ZXFLSXRQY3lucUUtVWo4TGl5ZmlnRGYwWHdadHBQWEMweldWb2xsWTltZzRYZzZ2NXdublRpTUpDbU42TVM4OWtyQ2s4alFxM29tRFlMT3VHdEt5MGpWUjJWRkNHMEU5anlHY2hGV201Qkg2RWU2NnBwbWRVRVFZZ2cybTU3b0NjeTQ0TDVDRTF0WGJDTWg5WTBidDNaR1JfRmpuZTEyaHlkMkpFS3NHMXJNdWNsLS14TjdHNmlXOWcxLW9hOTJh0gHvAUFVX3lxTE9qSnpQUmtJUDZ2VDM3Q0dzM1FaUEctWWhGNHNTTzBCMkUxMDV1REdjS1p4V0RmaXZCLXBPT25WbEIwSkcwVjhhaTY5LW5ZNTNBS1hvRkJCY0FBX29WVm8yY0RfQkVnVnhxRW5vRHlXMnF6Rng3Wlo1dXlSYmJXMGNBZDdLZy04dFFLWmZmWWhQaldmSDFfLW9vM3d6VlVKb1pUWldIOHlwWVBHNlJjNWFnel9YdXFLMXRtel9sbjFSUGxoVkZDZFFGV2Jod2FDbkVoU1NHdzc4WmF5V3o2b0I0M21jeWlQUVNQMkoyd25Z?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-12",
-        "description": "Global investors converge on IREIS 2026, as Abu Dhabi property transactions surge to Dh171 billion  Gulf News",
-        "hoursAgo": 14,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
