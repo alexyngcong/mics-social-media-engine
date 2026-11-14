@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-14T11:13:43.482Z",
+  "generatedAt": "2026-11-14T17:40:35.894Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 148,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 150,
+    "totalFetched": 157,
+    "afterDedup": 149,
     "big4Rejected": 3,
-    "englishOnly": 147,
-    "withinRecency": 43,
-    "scored": 43,
-    "passed": 1
+    "englishOnly": 146,
+    "withinRecency": 34,
+    "scored": 34,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": [
-      {
-        "title": "UAE ranks fifth globally, first in MENA in 2026 industrial quality infrastructure index - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQVpFRE9TY0lLTVUzMTZkZjFHVkE1RzR5X2xFTUlZcnI4bXZkUERoTW5JR25valBKY095SzNiSm5MV295bS1IakJKUVdHZFdoeTZXNXVlRVA3bU4wNWhWX3c1dzFFbVVyOEppOU1YQldhXzBpekZzV3RZd1NsTXlzWFg1bWNyMlRaMWNJNS1lQ2IzY19SME1tTmMwSXVZaUtVTDRmRnBHZTZabkprTkdtZG44em10U180bnQ5OG8xN3ZZbzJudzI4VGQ1Q3hrUjDSAeIBQVVfeXFMTjVSTVJxdzlGNlgwNzl4SjMxM0FzcVhRaFJ6ZGdaN0ZIdV8yZkt0dDNEeFEwdHIyZXJaUmNQWG1FeWl1bEpXdzN5Zi1aRXAwMDdQajR3N0ZuclFOcTRZZTlwLTRKdXZjMkx0M2xRcm1MckQ2aXRzbGhRTktqQkhuSUxYLWZpUHlFblpHUG5tQ2RReEh2N0RMeVBYSWxVREd2c1hDSUNGazV0ejlod01BN0lOZzJJUzc0RFNqVXN2STJIWFY2Q2xGb3VUbjk1anZVWVZGWnBpUUEtV0l1bmdWX1dmZw?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-13",
-        "description": "UAE ranks fifth globally, first in MENA in 2026 industrial quality infrastructure index  Gulf News",
-        "hoursAgo": 19,
-        "score": 6,
-        "topic": "Global Economic Signals",
-        "origin": "google-news"
-      }
-    ]
+    "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
