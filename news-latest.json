@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-16T17:56:52.471Z",
+  "generatedAt": "2026-11-17T02:46:57.529Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 148,
+    "gdelt": 18,
+    "googleNews": 90,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 152,
-    "big4Rejected": 4,
-    "englishOnly": 148,
-    "withinRecency": 33,
-    "scored": 33,
-    "passed": 0
+    "totalFetched": 118,
+    "afterDedup": 99,
+    "big4Rejected": 2,
+    "englishOnly": 95,
+    "withinRecency": 29,
+    "scored": 29,
+    "passed": 1
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [],
-    "world": []
+    "world": [
+      {
+        "title": "Starting a business in Abu Dhabi? New reforms aim to cut waiting time by 53% - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRGVrcFN4Z0kyeG1YdzI4cEtxaGlUVW1XVzVEOVVwekJrZ2ZtMy1ud3lSQ20zMXJDUm04bGVGdW84aVVrY3lUcWc1NkxKYlFPem01b0JCWUtXeWhHd0ZnWVZCcjJyNWpPMEhyMFdObUhmQ3NGMUFMdzlzN3hhU2wzOXhTQXluRUhYcmY3M0RtWUJsSjFhcHBsaEFkeUY5ZWdiODBZVi1RbkNWR2MteWF3OGpnYTBaMVFvb2phSnRB0gHQAUFVX3lxTE1mTlhTY3ZCc29iUlBuM3NCTlFXeC1nQk5YQnAtX3lWSmNhV1ZJelN6VFdwTjVqTnlKa0lGMUZtblFNaDNtU25TdXVISDJuSnQ2d3Ztek80MEtBanV6WEFJX0VRU1NZelVfVldSbVViZWRGZDhocmdwZkx4QUIwU3lOQ0NuZHlCWmpjeEh2cER0WlVjN2tIR0pyamV2QXZPaGFEMUliVnVOQk9fRWc1ZWhDQWVGNHI0MHZiVFN3SHZwWU9Jd2dVRjJJWGhidjNQNmc?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-16",
+        "description": "Starting a business in Abu Dhabi? New reforms aim to cut waiting time by 53%  Gulf News",
+        "hoursAgo": 9,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
-  "totalCount": 0
+  "totalCount": 1
 }
