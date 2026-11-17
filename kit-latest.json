@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T02:47:10.240Z",
+  "generatedAt": "2026-11-17T12:47:32.881Z",
   "weekOf": "17 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "starting-a-business-in-abu-dhabi-new-ref",
+      "slug": "awaiting-world-signal",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -21,14 +21,14 @@
       "roomLabel": "WORLD PULSE",
       "theme": "geopolitics",
       "tier": "WEEK AHEAD MACRO",
-      "title": "Starting a business in Abu Dhabi? New reforms aim to cut waiting time by 53% - Gulf News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRGVrcFN4Z0kyeG1YdzI4cEtxaGlUVW1XVzVEOVVwekJrZ2ZtMy1ud3lSQ20zMXJDUm04bGVGdW84aVVrY3lUcWc1NkxKYlFPem01b0JCWUtXeWhHd0ZnWVZCcjJyNWpPMEhyMFdObUhmQ3NGMUFMdzlzN3hhU2wzOXhTQXluRUhYcmY3M0RtWUJsSjFhcHBsaEFkeUY5ZWdiODBZVi1RbkNWR2MteWF3OGpnYTBaMVFvb2phSnRB0gHQAUFVX3lxTE1mTlhTY3ZCc29iUlBuM3NCTlFXeC1nQk5YQnAtX3lWSmNhV1ZJelN6VFdwTjVqTnlKa0lGMUZtblFNaDNtU25TdXVISDJuSnQ2d3Ztek80MEtBanV6WEFJX0VRU1NZelVfVldSbVViZWRGZDhocmdwZkx4QUIwU3lOQ0NuZHlCWmpjeEh2cER0WlVjN2tIR0pyamV2QXZPaGFEMUliVnVOQk9fRWc1ZWhDQWVGNHI0MHZiVFN3SHZwWU9Jd2dVRjJJWGhidjNQNmc?oc=5",
-      "filenameBase": "post-1-starting-a-business-in-abu-dhabi-new-ref",
-      "photoUrl": "/mics-social-media-engine/photos/growth/02_abu_dhabi_towers.jpg",
-      "stat": "53%",
-      "headlineLine1": "Starting a business in Abu Dhabi? New",
-      "headlineLine2": "reforms aim to cut waiting time by 53%",
-      "hoursAgo": 9
+      "title": "Awaiting World signal",
+      "sourceUrl": "",
+      "filenameBase": "post-1-awaiting-world-signal",
+      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
+      "stat": "",
+      "headlineLine1": "Awaiting World signal",
+      "headlineLine2": "",
+      "hoursAgo": null
     },
     {
       "n": 2,
