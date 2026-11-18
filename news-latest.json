@@ -1,31 +1,44 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-18T05:55:11.971Z",
+  "generatedAt": "2026-11-18T16:57:08.532Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 16,
-    "googleNews": 148,
+    "gdelt": 0,
+    "googleNews": 147,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 174,
-    "afterDedup": 156,
-    "big4Rejected": 5,
-    "englishOnly": 149,
-    "withinRecency": 40,
-    "scored": 40,
-    "passed": 0
+    "totalFetched": 157,
+    "afterDedup": 147,
+    "big4Rejected": 4,
+    "englishOnly": 143,
+    "withinRecency": 44,
+    "scored": 44,
+    "passed": 1
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "UAE growth accelerating to 7.3% in 2027 as trade and tourism recover: IMF - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUkFWRHhEc2ZWa0xPdVlEaGd5cmdBem5mNnNzdXItemo0MS1QaU5oYU5tNVFIN0h2ZVp0MFNUWktIVzBwOEFlWmVOcUZnNWFMUlkwSGI5WlVHcURYRzBqbmVIeWlWR2tiTWp0UTB4Q2sxZUU5dGMydXowZkFHb1dPcVVONXB0Szk0UHBtakNXYmNrVXhCczRqNXdmc2tZd3AyaE56d3lmdjlDeS1uRU5NVEpValhHb3M3bTluMNIBzwFBVV95cUxQRl8xSHpJUkoyRlh2bU94cFFnXzBfWk0xVlcybW40RHNiRTFYVVJGZ3FITy1XQWFUY3JsU2Fqb3N4ek05Q0FETXR6TjRlU2IwdEFTR1drUlRzTU9FbzRlMzVEQm9qYUdQTDJYZnJBNmxKQW8wQTc0VjEydDFhbnVZU1hXQlN1QU01TXhsN2VaU1NPQ0kzNVo1Yk9leVF5WGlRQkVIaGxHTy1jcTk3bUM1X3NZT2s3NWNmLURSdjlNSHJYRXlXYUxpdG5uTVRzaU0?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-18",
+        "description": "UAE growth accelerating to 7.3% in 2027 as trade and tourism recover: IMF  Gulf News",
+        "hoursAgo": 7,
+        "score": 6,
+        "topic": "Consumer & Retail",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 1
 }
