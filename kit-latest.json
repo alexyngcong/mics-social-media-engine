@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-18T05:55:24.144Z",
+  "generatedAt": "2026-11-18T16:57:24.473Z",
   "weekOf": "18 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "uae-growth-accelerating-to-7-3-in-2027-a",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "room": "growth",
+      "roomColor": "#4ADE80",
+      "roomLabel": "GROWTH SIGNALS",
+      "theme": "growth_expansion",
+      "tier": "WEEK AHEAD GROWTH",
+      "title": "UAE growth accelerating to 7.3% in 2027 as trade and tourism recover: IMF - Gulf News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUkFWRHhEc2ZWa0xPdVlEaGd5cmdBem5mNnNzdXItemo0MS1QaU5oYU5tNVFIN0h2ZVp0MFNUWktIVzBwOEFlWmVOcUZnNWFMUlkwSGI5WlVHcURYRzBqbmVIeWlWR2tiTWp0UTB4Q2sxZUU5dGMydXowZkFHb1dPcVVONXB0Szk0UHBtakNXYmNrVXhCczRqNXdmc2tZd3AyaE56d3lmdjlDeS1uRU5NVEpValhHb3M3bTluMNIBzwFBVV95cUxQRl8xSHpJUkoyRlh2bU94cFFnXzBfWk0xVlcybW40RHNiRTFYVVJGZ3FITy1XQWFUY3JsU2Fqb3N4ek05Q0FETXR6TjRlU2IwdEFTR1drUlRzTU9FbzRlMzVEQm9qYUdQTDJYZnJBNmxKQW8wQTc0VjEydDFhbnVZU1hXQlN1QU01TXhsN2VaU1NPQ0kzNVo1Yk9leVF5WGlRQkVIaGxHTy1jcTk3bUM1X3NZT2s3NWNmLURSdjlNSHJYRXlXYUxpdG5uTVRzaU0?oc=5",
+      "filenameBase": "post-1-uae-growth-accelerating-to-7-3-in-2027-a",
+      "photoUrl": "https://images.unsplash.com/photo-1546412414-e1885259563a?w=1600&q=80&fit=crop&crop=entropy&auto=format",
+      "stat": "7.3%",
+      "headlineLine1": "UAE growth accelerating to 7.3% in",
+      "headlineLine2": "2027 as trade and tourism recover: IMF",
+      "hoursAgo": 7
     },
     {
       "n": 2,
