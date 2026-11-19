@@ -1,43 +1,43 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-19T01:43:00.545Z",
+  "generatedAt": "2026-11-19T12:30:10.246Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 148,
+    "gdelt": 9,
+    "googleNews": 149,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 158,
-    "afterDedup": 153,
-    "big4Rejected": 3,
-    "englishOnly": 150,
-    "withinRecency": 49,
-    "scored": 49,
+    "totalFetched": 168,
+    "afterDedup": 156,
+    "big4Rejected": 1,
+    "englishOnly": 152,
+    "withinRecency": 50,
+    "scored": 50,
     "passed": 1
   },
   "rooms": {
-    "growth": [
+    "growth": [],
+    "capital": [],
+    "risk": [
       {
-        "title": "UAE growth accelerating to 7.3% in 2027 as trade and tourism recover: IMF - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUkFWRHhEc2ZWa0xPdVlEaGd5cmdBem5mNnNzdXItemo0MS1QaU5oYU5tNVFIN0h2ZVp0MFNUWktIVzBwOEFlWmVOcUZnNWFMUlkwSGI5WlVHcURYRzBqbmVIeWlWR2tiTWp0UTB4Q2sxZUU5dGMydXowZkFHb1dPcVVONXB0Szk0UHBtakNXYmNrVXhCczRqNXdmc2tZd3AyaE56d3lmdjlDeS1uRU5NVEpValhHb3M3bTluMNIBzwFBVV95cUxQRl8xSHpJUkoyRlh2bU94cFFnXzBfWk0xVlcybW40RHNiRTFYVVJGZ3FITy1XQWFUY3JsU2Fqb3N4ek05Q0FETXR6TjRlU2IwdEFTR1drUlRzTU9FbzRlMzVEQm9qYUdQTDJYZnJBNmxKQW8wQTc0VjEydDFhbnVZU1hXQlN1QU01TXhsN2VaU1NPQ0kzNVo1Yk9leVF5WGlRQkVIaGxHTy1jcTk3bUM1X3NZT2s3NWNmLURSdjlNSHJYRXlXYUxpdG5uTVRzaU0?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-18",
-        "description": "UAE growth accelerating to 7.3% in 2027 as trade and tourism recover: IMF  Gulf News",
-        "hoursAgo": 16,
+        "title": "Middle East latest: Saudi wealth fund tower damaged in Riyadh as Houthis launch attacks - The National",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPam9XS0tmcEhaa3NBUzd2bUJ5ME1FWktqN2hhaVFzd2k0MlVDaExwX0EyUW84Ylg2QkNFZ2FMTC1RbkZ2VGtUNV9xQzhMQ1lhcklId3JXbGQ1dTBHNDg3Qm0wT1RBWEZYRGFIUjZ0YVZlcHI3NUcyZV9yNFdaam9qX1FHZUtIbnFpRU5EU2dxMnRXZ2lRNlpfYTFJWQ?oc=5",
+        "source": "The National",
+        "domain": "thenationalnews.com",
+        "date": "2026-11-19",
+        "description": "Middle East latest: Saudi wealth fund tower damaged in Riyadh as Houthis launch attacks  The National",
+        "hoursAgo": 1,
         "score": 6,
-        "topic": "Consumer & Retail",
+        "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "capital": [],
-    "risk": [],
     "world": []
   },
   "totalCount": 1
