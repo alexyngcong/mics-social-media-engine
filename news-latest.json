@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-19T12:30:10.246Z",
+  "generatedAt": "2026-11-19T22:54:44.147Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 9,
+    "gdelt": 0,
     "googleNews": 149,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 168,
-    "afterDedup": 156,
-    "big4Rejected": 1,
-    "englishOnly": 152,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 1
+    "totalFetched": 159,
+    "afterDedup": 149,
+    "big4Rejected": 7,
+    "englishOnly": 142,
+    "withinRecency": 48,
+    "scored": 48,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Middle East latest: Saudi wealth fund tower damaged in Riyadh as Houthis launch attacks - The National",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPam9XS0tmcEhaa3NBUzd2bUJ5ME1FWktqN2hhaVFzd2k0MlVDaExwX0EyUW84Ylg2QkNFZ2FMTC1RbkZ2VGtUNV9xQzhMQ1lhcklId3JXbGQ1dTBHNDg3Qm0wT1RBWEZYRGFIUjZ0YVZlcHI3NUcyZV9yNFdaam9qX1FHZUtIbnFpRU5EU2dxMnRXZ2lRNlpfYTFJWQ?oc=5",
-        "source": "The National",
-        "domain": "thenationalnews.com",
-        "date": "2026-11-19",
-        "description": "Middle East latest: Saudi wealth fund tower damaged in Riyadh as Houthis launch attacks  The National",
-        "hoursAgo": 1,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
