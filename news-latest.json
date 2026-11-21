@@ -1,44 +1,31 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-20T16:42:39.556Z",
+  "generatedAt": "2026-11-21T01:05:15.962Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 91,
-    "googleNews": 130,
+    "gdelt": 0,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 231,
-    "afterDedup": 178,
-    "big4Rejected": 5,
-    "englishOnly": 158,
-    "withinRecency": 59,
-    "scored": 59,
-    "passed": 1
+    "totalFetched": 160,
+    "afterDedup": 152,
+    "big4Rejected": 4,
+    "englishOnly": 148,
+    "withinRecency": 46,
+    "scored": 46,
+    "passed": 0
   },
   "rooms": {
     "growth": [],
     "capital": [],
-    "risk": [
-      {
-        "title": "Middle East latest: Saudi coalition and Houthis threaten strikes on ports - The National",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPV2s2d2xVNlpZamM1RXpfRURTUFM4eFhHeFBkQVp6TTlLTXZWMjB5WFEwcF8wQ2dqR3U5SDd2VUNKdm1uV2RfV256RHUzUS1ZQWZJdnNlRmJtemxFeUZLR2tLWXhza2EwOVBWUEVPeUJ2VG9aV0R0RjVSWU1wVG8zU3p4RWJQMmhDcjdKOF9XZXBMQQ?oc=5",
-        "source": "The National",
-        "domain": "thenationalnews.com",
-        "date": "2026-11-20",
-        "description": "Middle East latest: Saudi coalition and Houthis threaten strikes on ports  The National",
-        "hoursAgo": 3,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      }
-    ],
+    "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 0
 }
