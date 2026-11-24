@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-24T04:36:39.152Z",
+  "generatedAt": "2026-11-24T19:20:27.664Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,18 +14,56 @@
   },
   "diagnostic": {
     "totalFetched": 159,
-    "afterDedup": 152,
-    "big4Rejected": 4,
-    "englishOnly": 148,
-    "withinRecency": 48,
-    "scored": 48,
-    "passed": 0
+    "afterDedup": 150,
+    "big4Rejected": 3,
+    "englishOnly": 147,
+    "withinRecency": 46,
+    "scored": 46,
+    "passed": 3
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcFBQQlVoZUlpejFGM3Z2ZUxLc1JKZVZfTWNTb3Jyd244QVdUVDlHRk1IeXBTaVkyalFzUi00R3hrY3FJMFhKRWYyMlAyVnFiZUk0TEVINUdleE9rWlBZNlNIX25rVTZSSlZQU1ZSdGxJWHIyWUtnM2NWMk9zektFS1RFdU9NSHNGdW1QcTBqUWp4WF84c3VLblRXNW1wMGRsb0RYWGxLTEdqNjdhY3g2N05hQTVIV2VPSFpJQ3d5NEFOOWZLSlpJWDBVRGtDNjlIcmo5cFdEcjVxQQ?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-11-24",
+        "description": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half  Gulf Today",
+        "hoursAgo": 10,
+        "score": 7,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
-    "risk": [],
+    "risk": [
+      {
+        "title": "Ship hit by projectile off UAE coast amid Iran's warning over Hormuz routes - The Times of India",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRU9GMlNxNWtRZlltUnNjS09UenN6XzNBMXVZSG1qTzZqVkdpTkJwc1lVVk9VQXkzZF9QVHpITThvOTJIUW1ZLUROV2lDc01HYTFwQ3o4N3BfRV9xMEc5b2VsRVVPT2pnUldKWksteTltX0U4M1hOZGNFcjFkSTVKeW5uYlFmNFl5cjJWS3ZSWlJYemdVVElkOWJfdXgwUm5ZY3ZnTk9lZ0lrRFJqUGFGUkNaVy1meTNGal95WmRUVnExUDRLNXZJbmV4VVdwdGFMQTZGakRzV1Z3ZTl0bjR6LTBaR09pV0xvMFHSAe8BQVVfeXFMUEJOZjJEVmhMWlBCbWxwQXBrd2ctREZfbGVrdzZ5ZFptcDVGZm9md2dwTFVHNGxfYUJfRU9lYVNPbnJ1ZkNYQ1hzLWVtUE1zNHhEQ2lNTFhJSUo0OVZTSC1xeW1jT3JKbEhtWmxwRmljWVh5Z2RQQ2F2SXR0eU1xOVRTdnMxY2FMZHNqQ1ZNWXNlMmtwT1hpcUFMRGNzX05ERFBYWVk3MjZFazhtR3R3Rl9rcDhZalI1cnVub1FpNnQ1N210OXo0VUR1LUpUS0R1RFlBbjVMOWstbFNJQk1iSV90NWp4c2xtS1J5emJGaU0?oc=5",
+        "source": "The Times of India",
+        "domain": "timesofindia.indiatimes.com",
+        "date": "2026-11-24",
+        "description": "Ship hit by projectile off UAE coast amid Iran's warning over Hormuz routes  The Times of India",
+        "hoursAgo": 10,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      },
+      {
+        "title": "Brent falls 3.5% to lowest since August as Gulf supply returns and Libya’s Sharara pipeline restarts - Oil & Gas Middle East",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fX2o1NHRSZkxIem9PWktpWU5YWlJTb3dnanVjMkE0S1NPd0l2YlNOTll5Y1V5a25pMUVMbkR6MF9vSHBwa0YyRklzeTJKanRFNDFLQVZwRWMtSTZ3VGpJc2JHTEdBRUU0THJlcmU2aFdwcU9QWHc?oc=5",
+        "source": "Oil & Gas Middle East",
+        "domain": "oilandgasmiddleeast.com",
+        "date": "2026-11-24",
+        "description": "Brent falls 3.5% to lowest since August as Gulf supply returns and Libya’s Sharara pipeline restarts  Oil & Gas Middle East",
+        "hoursAgo": 14,
+        "score": 6,
+        "topic": "Geopolitical Risk",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 0
+  "totalCount": 3
 }
