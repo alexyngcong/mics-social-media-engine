@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T04:36:56.928Z",
-  "weekOf": "24 Nov 2026",
+  "generatedAt": "2026-11-25T13:54:36.051Z",
+  "weekOf": "25 Nov 2026",
   "totalCount": 10,
   "posts": [
     {
       "n": 1,
-      "slug": "awaiting-world-signal",
+      "slug": "abu-dhabi-real-estate-fdi-surges-309-to-",
       "slot": {
         "day": "Sun",
         "time": "18:00 GST"
@@ -16,19 +16,19 @@
       "typeLabel": "WEEK AHEAD",
       "typeIcon": "🔒",
       "typeAccent": "#A8926A",
-      "room": "world",
-      "roomColor": "#5B8DEE",
-      "roomLabel": "WORLD PULSE",
-      "theme": "geopolitics",
-      "tier": "WEEK AHEAD MACRO",
-      "title": "Awaiting World signal",
-      "sourceUrl": "",
-      "filenameBase": "post-1-awaiting-world-signal",
-      "photoUrl": "/mics-social-media-engine/photos/world/05_world_globe.jpg",
-      "stat": "",
-      "headlineLine1": "Awaiting World signal",
-      "headlineLine2": "",
-      "hoursAgo": null
+      "room": "growth",
+      "roomColor": "#4ADE80",
+      "roomLabel": "GROWTH SIGNALS",
+      "theme": "real_estate",
+      "tier": "WEEK AHEAD GROWTH",
+      "title": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half - Gulf Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcFBQQlVoZUlpejFGM3Z2ZUxLc1JKZVZfTWNTb3Jyd244QVdUVDlHRk1IeXBTaVkyalFzUi00R3hrY3FJMFhKRWYyMlAyVnFiZUk0TEVINUdleE9rWlBZNlNIX25rVTZSSlZQU1ZSdGxJWHIyWUtnM2NWMk9zektFS1RFdU9NSHNGdW1QcTBqUWp4WF84c3VLblRXNW1wMGRsb0RYWGxLTEdqNjdhY3g2N05hQTVIV2VPSFpJQ3d5NEFOOWZLSlpJWDBVRGtDNjlIcmo5cFdEcjVxQQ?oc=5",
+      "filenameBase": "post-1-abu-dhabi-real-estate-fdi-surges-309-to-",
+      "photoUrl": "/mics-social-media-engine/photos/growth/04_abu_dhabi_corniche.jpg",
+      "stat": "309%",
+      "headlineLine1": "Abu Dhabi real estate FDI surges",
+      "headlineLine2": "309% to Dhs13.8 billion in first half",
+      "hoursAgo": 28
     },
     {
       "n": 2,
