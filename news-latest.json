@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-24T19:20:27.664Z",
+  "generatedAt": "2026-11-25T03:22:53.856Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 149,
+    "gdelt": 100,
+    "googleNews": 128,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 159,
-    "afterDedup": 150,
-    "big4Rejected": 3,
-    "englishOnly": 147,
-    "withinRecency": 46,
-    "scored": 46,
+    "totalFetched": 238,
+    "afterDedup": 189,
+    "big4Rejected": 2,
+    "englishOnly": 177,
+    "withinRecency": 92,
+    "scored": 92,
     "passed": 3
   },
   "rooms": {
@@ -30,7 +30,7 @@
         "domain": "gulftoday.ae",
         "date": "2026-11-24",
         "description": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half  Gulf Today",
-        "hoursAgo": 10,
+        "hoursAgo": 18,
         "score": 7,
         "topic": "Real Estate & Construction",
         "origin": "google-news"
@@ -45,25 +45,26 @@
         "domain": "timesofindia.indiatimes.com",
         "date": "2026-11-24",
         "description": "Ship hit by projectile off UAE coast amid Iran's warning over Hormuz routes  The Times of India",
-        "hoursAgo": 10,
-        "score": 6,
-        "topic": "Geopolitical Risk",
-        "origin": "google-news"
-      },
-      {
-        "title": "Brent falls 3.5% to lowest since August as Gulf supply returns and Libya’s Sharara pipeline restarts - Oil & Gas Middle East",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fX2o1NHRSZkxIem9PWktpWU5YWlJTb3dnanVjMkE0S1NPd0l2YlNOTll5Y1V5a25pMUVMbkR6MF9vSHBwa0YyRklzeTJKanRFNDFLQVZwRWMtSTZ3VGpJc2JHTEdBRUU0THJlcmU2aFdwcU9QWHc?oc=5",
-        "source": "Oil & Gas Middle East",
-        "domain": "oilandgasmiddleeast.com",
-        "date": "2026-11-24",
-        "description": "Brent falls 3.5% to lowest since August as Gulf supply returns and Libya’s Sharara pipeline restarts  Oil & Gas Middle East",
-        "hoursAgo": 14,
+        "hoursAgo": 18,
         "score": 6,
         "topic": "Geopolitical Risk",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "Abu Dhabi strengthens investor confidence through integrated framework for growth, quality of life - www.wam.ae",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTWt6UVJZaWtCUVZCdDNYdDgzZ09xWlBGRXpkOHk3SFY4S2t0eXdiUWRXNzAyS2wwVlJlX3FVbnlsOTh3X1lqOWtTaWRjOW9zYVpqbHdBRW92MVIxQURZNDJYeUNtR2lucldIQ3VCeWpVbnBubGRwNWFSM3lpYzdOd2w4b2VjUER3dlp5blNDc0Y?oc=5",
+        "source": "www.wam.ae",
+        "domain": "wam.ae",
+        "date": "2026-11-24",
+        "description": "Abu Dhabi strengthens investor confidence through integrated framework for growth, quality of life  www.wam.ae",
+        "hoursAgo": 20,
+        "score": 6,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
   "totalCount": 3
 }
