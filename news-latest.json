@@ -1,44 +1,56 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-25T13:54:22.509Z",
+  "generatedAt": "2026-11-25T23:59:35.052Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
-    "googleNews": 149,
+    "gdelt": 2,
+    "googleNews": 148,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 159,
-    "afterDedup": 151,
-    "big4Rejected": 2,
-    "englishOnly": 149,
-    "withinRecency": 53,
-    "scored": 53,
-    "passed": 1
+    "totalFetched": 160,
+    "afterDedup": 152,
+    "big4Rejected": 1,
+    "englishOnly": 151,
+    "withinRecency": 49,
+    "scored": 49,
+    "passed": 2
   },
   "rooms": {
-    "growth": [
+    "growth": [],
+    "capital": [
       {
-        "title": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcFBQQlVoZUlpejFGM3Z2ZUxLc1JKZVZfTWNTb3Jyd244QVdUVDlHRk1IeXBTaVkyalFzUi00R3hrY3FJMFhKRWYyMlAyVnFiZUk0TEVINUdleE9rWlBZNlNIX25rVTZSSlZQU1ZSdGxJWHIyWUtnM2NWMk9zektFS1RFdU9NSHNGdW1QcTBqUWp4WF84c3VLblRXNW1wMGRsb0RYWGxLTEdqNjdhY3g2N05hQTVIV2VPSFpJQ3d5NEFOOWZLSlpJWDBVRGtDNjlIcmo5cFdEcjVxQQ?oc=5",
+        "title": "Dubai Islamic Bank board approves acquisition of Emirates Islamic in all-share deal - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNR2tIdloyeDl5WHh4X1ZCeVk5eEFBay1wM1kwNjVvMHpEd3JBTHNLcmdNQTU5am92Yk9EWGVNSVVoTDN1RVhmeVpERGV4dWEtaGQ4RXVnQTNGY3VFMTBuZzhhOHI1bnJKNjZMbHdoU1JheDBMSU8wVk1FVkQ0YjBxT3VETzliUm4zaEpBNm1xRmdGb3dmNzVmVTBkQkNaRGg5Zldqa25wMlNCMzdPSDlDY2sxZDRhOHg5M1RWVmY1dw?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-11-25",
+        "description": "Dubai Islamic Bank board approves acquisition of Emirates Islamic in all-share deal  Gulf Business",
+        "hoursAgo": 7,
+        "score": 7,
+        "topic": "IPO & M&A",
+        "origin": "google-news"
+      },
+      {
+        "title": "Dec. 31 deadline for private sector establishments to meet Emiratisation targets for 2026 - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYWNGVXdCZnZ6OXNTS3ByNWI2d0JrSk1senlvR09tLUlJTUNSQ2lPdkNYRXNfdjU1Q3lzYng0c01oeXpUTlBmUHVFZFBWTjJJSC1nU0tIY3FaLUNXeE9Cd2daSUh5X21Jamp1Z3FzZ0hNZEw5bUpEVHJVZWEzSEhkZUFNN0h1RFRuNDdmcjFjYkFacFFZZ2RVNWJ1cmZPWVpFcDdaMjNiSUM5bXFGVm5kZGNJSGc1eUwzUUt4cGNOeXFNXzBiNXZ5OA?oc=5",
         "source": "Gulf Today",
         "domain": "gulftoday.ae",
-        "date": "2026-11-24",
-        "description": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half  Gulf Today",
-        "hoursAgo": 28,
-        "score": 6.5,
-        "topic": "Real Estate & Construction",
+        "date": "2026-11-25",
+        "description": "Dec. 31 deadline for private sector establishments to meet Emiratisation targets for 2026  Gulf Today",
+        "hoursAgo": 15,
+        "score": 6,
+        "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
-    "capital": [],
     "risk": [],
     "world": []
   },
-  "totalCount": 1
+  "totalCount": 2
 }
