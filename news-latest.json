@@ -1,25 +1,25 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-25T23:59:35.052Z",
+  "generatedAt": "2026-11-26T07:53:20.127Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 2,
-    "googleNews": 148,
+    "gdelt": 3,
+    "googleNews": 140,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 152,
+    "totalFetched": 153,
+    "afterDedup": 142,
     "big4Rejected": 1,
-    "englishOnly": 151,
-    "withinRecency": 49,
-    "scored": 49,
-    "passed": 2
+    "englishOnly": 141,
+    "withinRecency": 50,
+    "scored": 50,
+    "passed": 3
   },
   "rooms": {
     "growth": [],
@@ -31,7 +31,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-11-25",
         "description": "Dubai Islamic Bank board approves acquisition of Emirates Islamic in all-share deal  Gulf Business",
-        "hoursAgo": 7,
+        "hoursAgo": 15,
         "score": 7,
         "topic": "IPO & M&A",
         "origin": "google-news"
@@ -43,14 +43,27 @@
         "domain": "gulftoday.ae",
         "date": "2026-11-25",
         "description": "Dec. 31 deadline for private sector establishments to meet Emiratisation targets for 2026  Gulf Today",
-        "hoursAgo": 15,
+        "hoursAgo": 23,
         "score": 6,
         "topic": "Workforce & HR",
         "origin": "google-news"
       }
     ],
-    "risk": [],
+    "risk": [
+      {
+        "title": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZXZkWkF0VU1GeHhqS1ViclVDM0VJMkp1WFNjYzdfcVBQWVpxVGl1X21XZkNfdGYtUWZUWW9lV2p1NU8zSVBIVDVyQ3B6MG9mNE9HZ0RzbjFhZGFMa3o2bmR4OFVubTRCQmtXRUphTllZRmJlS252T29USHhuSVphaU8zbFQ5dWxtb005UHRZRWd3T0lXYUtucVRHQ2FwT2ZPSnI0d20xcjM0aWFiQ0J6TUcybmFrNUtDeGVhY2pFTdIBzwFBVV95cUxOVlVUMy1RUXY1ODBWR2FZaXUybTBRcTk4UlJaVDMxd0tEQTRfSzZRcmNXX2UxN0dWSF9hOW9IaXJpbDdRYWs5MGtyTTlxX0V6WVZvblBmdlZXbGJnTzdzRV95MXNBU1dWWnA0VS1nc2xCZTBtbHdyTkl0bmN2eEZCWE1oYW5YSU1iSmRPWmlzTDlfNDdHY3BuNi0wWm9UQ2FaMTNJT1hoVGpHa0oySkpKaWY3dktNTXdTMHZyYm9aeThxaVI4Sk0tdWM0MzIzSmc?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-26",
+        "description": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate  Gulf News",
+        "hoursAgo": 1,
+        "score": 7,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      }
+    ],
     "world": []
   },
-  "totalCount": 2
+  "totalCount": 3
 }
