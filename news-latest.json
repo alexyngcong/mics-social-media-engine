@@ -1,69 +1,69 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-26T07:53:20.127Z",
+  "generatedAt": "2026-11-26T18:08:24.253Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 3,
-    "googleNews": 140,
+    "gdelt": 0,
+    "googleNews": 149,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 153,
-    "afterDedup": 142,
+    "totalFetched": 159,
+    "afterDedup": 151,
     "big4Rejected": 1,
-    "englishOnly": 141,
+    "englishOnly": 150,
     "withinRecency": 50,
     "scored": 50,
     "passed": 3
   },
   "rooms": {
     "growth": [],
-    "capital": [
-      {
-        "title": "Dubai Islamic Bank board approves acquisition of Emirates Islamic in all-share deal - Gulf Business",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNR2tIdloyeDl5WHh4X1ZCeVk5eEFBay1wM1kwNjVvMHpEd3JBTHNLcmdNQTU5am92Yk9EWGVNSVVoTDN1RVhmeVpERGV4dWEtaGQ4RXVnQTNGY3VFMTBuZzhhOHI1bnJKNjZMbHdoU1JheDBMSU8wVk1FVkQ0YjBxT3VETzliUm4zaEpBNm1xRmdGb3dmNzVmVTBkQkNaRGg5Zldqa25wMlNCMzdPSDlDY2sxZDRhOHg5M1RWVmY1dw?oc=5",
-        "source": "Gulf Business",
-        "domain": "gulfbusiness.com",
-        "date": "2026-11-25",
-        "description": "Dubai Islamic Bank board approves acquisition of Emirates Islamic in all-share deal  Gulf Business",
-        "hoursAgo": 15,
-        "score": 7,
-        "topic": "IPO & M&A",
-        "origin": "google-news"
-      },
-      {
-        "title": "Dec. 31 deadline for private sector establishments to meet Emiratisation targets for 2026 - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYWNGVXdCZnZ6OXNTS3ByNWI2d0JrSk1senlvR09tLUlJTUNSQ2lPdkNYRXNfdjU1Q3lzYng0c01oeXpUTlBmUHVFZFBWTjJJSC1nU0tIY3FaLUNXeE9Cd2daSUh5X21Jamp1Z3FzZ0hNZEw5bUpEVHJVZWEzSEhkZUFNN0h1RFRuNDdmcjFjYkFacFFZZ2RVNWJ1cmZPWVpFcDdaMjNiSUM5bXFGVm5kZGNJSGc1eUwzUUt4cGNOeXFNXzBiNXZ5OA?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-11-25",
-        "description": "Dec. 31 deadline for private sector establishments to meet Emiratisation targets for 2026  Gulf Today",
-        "hoursAgo": 23,
-        "score": 6,
-        "topic": "Workforce & HR",
-        "origin": "google-news"
-      }
-    ],
+    "capital": [],
     "risk": [
       {
         "title": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZXZkWkF0VU1GeHhqS1ViclVDM0VJMkp1WFNjYzdfcVBQWVpxVGl1X21XZkNfdGYtUWZUWW9lV2p1NU8zSVBIVDVyQ3B6MG9mNE9HZ0RzbjFhZGFMa3o2bmR4OFVubTRCQmtXRUphTllZRmJlS252T29USHhuSVphaU8zbFQ5dWxtb005UHRZRWd3T0lXYUtucVRHQ2FwT2ZPSnI0d20xcjM0aWFiQ0J6TUcybmFrNUtDeGVhY2pFTdIBzwFBVV95cUxOVlVUMy1RUXY1ODBWR2FZaXUybTBRcTk4UlJaVDMxd0tEQTRfSzZRcmNXX2UxN0dWSF9hOW9IaXJpbDdRYWs5MGtyTTlxX0V6WVZvblBmdlZXbGJnTzdzRV95MXNBU1dWWnA0VS1nc2xCZTBtbHdyTkl0bmN2eEZCWE1oYW5YSU1iSmRPWmlzTDlfNDdHY3BuNi0wWm9UQ2FaMTNJT1hoVGpHa0oySkpKaWY3dktNTXdTMHZyYm9aeThxaVI4Sk0tdWM0MzIzSmc?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVlVUMy1RUXY1ODBWR2FZaXUybTBRcTk4UlJaVDMxd0tEQTRfSzZRcmNXX2UxN0dWSF9hOW9IaXJpbDdRYWs5MGtyTTlxX0V6WVZvblBmdlZXbGJnTzdzRV95MXNBU1dWWnA0VS1nc2xCZTBtbHdyTkl0bmN2eEZCWE1oYW5YSU1iSmRPWmlzTDlfNDdHY3BuNi0wWm9UQ2FaMTNJT1hoVGpHa0oySkpKaWY3dktNTXdTMHZyYm9aeThxaVI4Sk0tdWM0MzIzSmfSAc8BQVVfeXFMTlZVVDMtUVF2NTgwVkdhWWl1Mm0wUXE5OFJSWlQzMXdLREE0X0s2UXJjV19lMTdHVkhfYTlvSGlyaWw3UWFrOTBrck05cV9FellWb25QZnZWV2xiZ083c0VfeTFzQVNXVlpwNFUtZ3NsQmUwbWx3ck5JdG5jdnhGQlhNaGFuWElNYkpkT1ppc0w5XzQ3R2NwbjYtMFpvVENhWjEzSU9YaFRqR2tKMkpKSmlmN3ZLTU13UzB2cmJvWnk4cWlSOEpNLXVjNDMyM0pn?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-11-26",
         "description": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate  Gulf News",
-        "hoursAgo": 1,
+        "hoursAgo": 11,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
     ],
-    "world": []
+    "world": [
+      {
+        "title": "UAE Cabinet approves Agentic AI strategy, sets March 2027 launch for government AI concierge Mira - Gulf Business",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTTk2LXp0WElqWkZJLWVZRkRWMjhHeVNPLXZsUTVzamZxcUR5UjViOERJT3VoanJxRGZ3WXYwQzFRSEk1U2ZBdTZRWU9QRGtmUTJMRDRJRHotZ2Q5c3VwLWN4SEF4NS11ZlNsOHVvbHZqOGhSQ0h0cGNZNktBTHVHT0NVT1NidzBIemJEclhkc18tb0FzZDhsWFFadmZxZHhRM2RLaXFNNlJGaE9uenJQQ2NhdjYxSVVZamFmOV95UFZrLTAtNGJPbC1CUEhzZk0?oc=5",
+        "source": "Gulf Business",
+        "domain": "gulfbusiness.com",
+        "date": "2026-11-26",
+        "description": "UAE Cabinet approves Agentic AI strategy, sets March 2027 launch for government AI concierge Mira  Gulf Business",
+        "hoursAgo": 9,
+        "score": 7,
+        "topic": "AI & Technology",
+        "origin": "google-news"
+      },
+      {
+        "title": "First-time buyers in Dubai can now buy ready homes with just a 10% down payment - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSXoxRWd0RFlvSEtNV182UlAyM0FMSWRGbVRUSFdrem51Mi1sWHlJbEtUUllzR19WaGxmOGpKa2pfQk9uZklHU1dBNkphWHZ2WnRleHBaemtlZE5wS3ZxMVZ5UnFDRHkwaFdXWjlJbmQ1Q1VlMlNFQTVORUN3MlJ2SVdDYTFPeDRJQVM1OXhkd084ajB2UW5tUnJkdW00TXRJNGczckpMRTFqWUhIMkJUcU1rb21FUHRWLUNkddIBzAFBVV95cUxPSmxZdlNRY3FELUNHNTFycGl1NjdYc3NqRElpbmFidXU4NlJWX2dRZTdJLWdJQ2d0U29HcmNESGZtYUJHWUc5T01FOXNENGczWHJBTVVxOEtDVEpfQmlZVFU3RVowUmNral9vZl90emloeUdNc054dEVxLWFKVTJiWW1rSDZESzktbUF3YXRac0N6Q0cxbGJRMWROX1JnNnp6cWhlZzh5Q1gxNkFFZ3lIMjBZN2xRZ0dUeGN5Q25KZ29oM1hlaWtRMGRMTXk?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-25",
+        "description": "First-time buyers in Dubai can now buy ready homes with just a 10% down payment  Gulf News",
+        "hoursAgo": 36,
+        "score": 6.5,
+        "topic": "Global Economic Signals",
+        "origin": "google-news"
+      }
+    ]
   },
   "totalCount": 3
 }
