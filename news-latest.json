@@ -1,42 +1,30 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-27T13:29:15.963Z",
+  "generatedAt": "2026-11-27T23:54:47.721Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
-    "gdelt": 0,
+    "gdelt": 4,
     "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 160,
-    "afterDedup": 150,
-    "big4Rejected": 2,
-    "englishOnly": 148,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 3
+    "totalFetched": 164,
+    "afterDedup": 152,
+    "big4Rejected": 1,
+    "englishOnly": 151,
+    "withinRecency": 53,
+    "scored": 53,
+    "passed": 2
   },
   "rooms": {
     "growth": [],
     "capital": [],
     "risk": [
-      {
-        "title": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZXZkWkF0VU1GeHhqS1ViclVDM0VJMkp1WFNjYzdfcVBQWVpxVGl1X21XZkNfdGYtUWZUWW9lV2p1NU8zSVBIVDVyQ3B6MG9mNE9HZ0RzbjFhZGFMa3o2bmR4OFVubTRCQmtXRUphTllZRmJlS252T29USHhuSVphaU8zbFQ5dWxtb005UHRZRWd3T0lXYUtucVRHQ2FwT2ZPSnI0d20xcjM0aWFiQ0J6TUcybmFrNUtDeGVhY2pFTdIBzwFBVV95cUxOVlVUMy1RUXY1ODBWR2FZaXUybTBRcTk4UlJaVDMxd0tEQTRfSzZRcmNXX2UxN0dWSF9hOW9IaXJpbDdRYWs5MGtyTTlxX0V6WVZvblBmdlZXbGJnTzdzRV95MXNBU1dWWnA0VS1nc2xCZTBtbHdyTkl0bmN2eEZCWE1oYW5YSU1iSmRPWmlzTDlfNDdHY3BuNi0wWm9UQ2FaMTNJT1hoVGpHa0oySkpKaWY3dktNTXdTMHZyYm9aeThxaVI4Sk0tdWM0MzIzSmc?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-26",
-        "description": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate  Gulf News",
-        "hoursAgo": 30,
-        "score": 6.5,
-        "topic": "Tax & Regulatory",
-        "origin": "google-news"
-      },
       {
         "title": "UAE e-invoicing: Does a group TRN replace subsidiaries’ TINs? What rules reveal - Gulf News",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaTAtRXphYnZDSEhBMDh4c01ZcUw4cG11ZmdMWDJQanFLbXYwU0t5NXd0RGZwM3BLUWRzRm1Kblo1TWxxb0dHUXlGRnMxdlJFZkZ6Q0Zlby1NMkZ5SHpzcVAxc0F6Slg0TURNZ0tSZW44WXJJSXV2Wlk3bmJPQlVUbWs5QXVETUJsRDVoUlBKcmUtdHFxbW1EeXY3ZE1XWVZYOEdzdTVGd1ZLX3dfU1RXcFBpRzZKNnNGWnFFamxEalNicTl1UFHSAdgBQVVfeXFMTlFWNXZ6ZHNPU1JHdmJOX0J6VDZ4TFBxeGk4Uzgya0c2TmhFeEk0VmI5YnFtZkx5a0JwVDNzUmNncDNPRHBhZkJfc1MxSTJrUE03QThMTjJySFRKZXFmWDB0MUNIZkFQRUpxQjN1SlpvNmlCODBnSTFTR3BLaEhsUlZodE9iYk4wbkxDSFFneUVTbDRZUGRpNVZiWTNFb2ZRMU5oZkJfVWN5N2NBWlBabWZ1dFVDbGZzQWVmSG1RV1lCcExJS19ENWVCTDVDRGFnRWdXNGw5OUVG?oc=5",
@@ -44,7 +32,7 @@
         "domain": "gulfnews.com",
         "date": "2026-11-27",
         "description": "UAE e-invoicing: Does a group TRN replace subsidiaries’ TINs? What rules reveal  Gulf News",
-        "hoursAgo": 10,
+        "hoursAgo": 21,
         "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -56,14 +44,14 @@
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTTk2LXp0WElqWkZJLWVZRkRWMjhHeVNPLXZsUTVzamZxcUR5UjViOERJT3VoanJxRGZ3WXYwQzFRSEk1U2ZBdTZRWU9QRGtmUTJMRDRJRHotZ2Q5c3VwLWN4SEF4NS11ZlNsOHVvbHZqOGhSQ0h0cGNZNktBTHVHT0NVT1NidzBIemJEclhkc18tb0FzZDhsWFFadmZxZHhRM2RLaXFNNlJGaE9uenJQQ2NhdjYxSVVZamFmOV95UFZrLTAtNGJPbC1CUEhzZk0?oc=5",
         "source": "Gulf Business",
         "domain": "gulfbusiness.com",
-        "date": "2026-11-26",
+        "date": "2026-11-27",
         "description": "UAE Cabinet approves Agentic AI strategy, sets March 2027 launch for government AI concierge Mira  Gulf Business",
-        "hoursAgo": 28,
-        "score": 6.5,
+        "hoursAgo": 0,
+        "score": 7,
         "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 2
 }
