@@ -1,41 +1,28 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-27T02:39:53.388Z",
+  "generatedAt": "2026-11-27T13:29:15.963Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
   "sources": {
     "gdelt": 0,
-    "googleNews": 149,
+    "googleNews": 150,
     "reddit": 0,
     "trends": 10,
     "uaeRss": 0
   },
   "diagnostic": {
-    "totalFetched": 159,
+    "totalFetched": 160,
     "afterDedup": 150,
-    "big4Rejected": 1,
-    "englishOnly": 149,
-    "withinRecency": 56,
-    "scored": 56,
-    "passed": 4
+    "big4Rejected": 2,
+    "englishOnly": 148,
+    "withinRecency": 50,
+    "scored": 50,
+    "passed": 3
   },
   "rooms": {
-    "growth": [
-      {
-        "title": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half - Gulf Today",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcFBQQlVoZUlpejFGM3Z2ZUxLc1JKZVZfTWNTb3Jyd244QVdUVDlHRk1IeXBTaVkyalFzUi00R3hrY3FJMFhKRWYyMlAyVnFiZUk0TEVINUdleE9rWlBZNlNIX25rVTZSSlZQU1ZSdGxJWHIyWUtnM2NWMk9zektFS1RFdU9NSHNGdW1QcTBqUWp4WF84c3VLblRXNW1wMGRsb0RYWGxLTEdqNjdhY3g2N05hQTVIV2VPSFpJQ3d5NEFOOWZLSlpJWDBVRGtDNjlIcmo5cFdEcjVxQQ?oc=5",
-        "source": "Gulf Today",
-        "domain": "gulftoday.ae",
-        "date": "2026-11-24",
-        "description": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half  Gulf Today",
-        "hoursAgo": 65,
-        "score": 6,
-        "topic": "Real Estate & Construction",
-        "origin": "google-news"
-      }
-    ],
+    "growth": [],
     "capital": [],
     "risk": [
       {
@@ -45,8 +32,20 @@
         "domain": "gulfnews.com",
         "date": "2026-11-26",
         "description": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate  Gulf News",
-        "hoursAgo": 19,
-        "score": 7,
+        "hoursAgo": 30,
+        "score": 6.5,
+        "topic": "Tax & Regulatory",
+        "origin": "google-news"
+      },
+      {
+        "title": "UAE e-invoicing: Does a group TRN replace subsidiaries’ TINs? What rules reveal - Gulf News",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaTAtRXphYnZDSEhBMDh4c01ZcUw4cG11ZmdMWDJQanFLbXYwU0t5NXd0RGZwM3BLUWRzRm1Kblo1TWxxb0dHUXlGRnMxdlJFZkZ6Q0Zlby1NMkZ5SHpzcVAxc0F6Slg0TURNZ0tSZW44WXJJSXV2Wlk3bmJPQlVUbWs5QXVETUJsRDVoUlBKcmUtdHFxbW1EeXY3ZE1XWVZYOEdzdTVGd1ZLX3dfU1RXcFBpRzZKNnNGWnFFamxEalNicTl1UFHSAdgBQVVfeXFMTlFWNXZ6ZHNPU1JHdmJOX0J6VDZ4TFBxeGk4Uzgya0c2TmhFeEk0VmI5YnFtZkx5a0JwVDNzUmNncDNPRHBhZkJfc1MxSTJrUE03QThMTjJySFRKZXFmWDB0MUNIZkFQRUpxQjN1SlpvNmlCODBnSTFTR3BLaEhsUlZodE9iYk4wbkxDSFFneUVTbDRZUGRpNVZiWTNFb2ZRMU5oZkJfVWN5N2NBWlBabWZ1dFVDbGZzQWVmSG1RV1lCcExJS19ENWVCTDVDRGFnRWdXNGw5OUVG?oc=5",
+        "source": "Gulf News",
+        "domain": "gulfnews.com",
+        "date": "2026-11-27",
+        "description": "UAE e-invoicing: Does a group TRN replace subsidiaries’ TINs? What rules reveal  Gulf News",
+        "hoursAgo": 10,
+        "score": 6,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
       }
@@ -59,24 +58,12 @@
         "domain": "gulfbusiness.com",
         "date": "2026-11-26",
         "description": "UAE Cabinet approves Agentic AI strategy, sets March 2027 launch for government AI concierge Mira  Gulf Business",
-        "hoursAgo": 17,
-        "score": 7,
-        "topic": "AI & Technology",
-        "origin": "google-news"
-      },
-      {
-        "title": "First-time buyers in Dubai can now buy ready homes with just a 10% down payment - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSXoxRWd0RFlvSEtNV182UlAyM0FMSWRGbVRUSFdrem51Mi1sWHlJbEtUUllzR19WaGxmOGpKa2pfQk9uZklHU1dBNkphWHZ2WnRleHBaemtlZE5wS3ZxMVZ5UnFDRHkwaFdXWjlJbmQ1Q1VlMlNFQTVORUN3MlJ2SVdDYTFPeDRJQVM1OXhkd084ajB2UW5tUnJkdW00TXRJNGczckpMRTFqWUhIMkJUcU1rb21FUHRWLUNkddIBzAFBVV95cUxPSmxZdlNRY3FELUNHNTFycGl1NjdYc3NqRElpbmFidXU4NlJWX2dRZTdJLWdJQ2d0U29HcmNESGZtYUJHWUc5T01FOXNENGczWHJBTVVxOEtDVEpfQmlZVFU3RVowUmNral9vZl90emloeUdNc054dEVxLWFKVTJiWW1rSDZESzktbUF3YXRac0N6Q0cxbGJRMWROX1JnNnp6cWhlZzh5Q1gxNkFFZ3lIMjBZN2xRZ0dUeGN5Q25KZ29oM1hlaWtRMGRMTXk?oc=5",
-        "source": "Gulf News",
-        "domain": "gulfnews.com",
-        "date": "2026-11-25",
-        "description": "First-time buyers in Dubai can now buy ready homes with just a 10% down payment  Gulf News",
-        "hoursAgo": 44,
+        "hoursAgo": 28,
         "score": 6.5,
-        "topic": "Global Economic Signals",
+        "topic": "AI & Technology",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 4
+  "totalCount": 3
 }
