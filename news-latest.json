@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "spec": "AI Business Intelligence Command Center v1.0",
-  "generatedAt": "2026-11-26T18:08:24.253Z",
+  "generatedAt": "2026-11-27T02:39:53.388Z",
   "minScore": 6,
   "maxScore": 14,
   "cutoffHours": 72,
@@ -14,25 +14,38 @@
   },
   "diagnostic": {
     "totalFetched": 159,
-    "afterDedup": 151,
+    "afterDedup": 150,
     "big4Rejected": 1,
-    "englishOnly": 150,
-    "withinRecency": 50,
-    "scored": 50,
-    "passed": 3
+    "englishOnly": 149,
+    "withinRecency": 56,
+    "scored": 56,
+    "passed": 4
   },
   "rooms": {
-    "growth": [],
+    "growth": [
+      {
+        "title": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half - Gulf Today",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcFBQQlVoZUlpejFGM3Z2ZUxLc1JKZVZfTWNTb3Jyd244QVdUVDlHRk1IeXBTaVkyalFzUi00R3hrY3FJMFhKRWYyMlAyVnFiZUk0TEVINUdleE9rWlBZNlNIX25rVTZSSlZQU1ZSdGxJWHIyWUtnM2NWMk9zektFS1RFdU9NSHNGdW1QcTBqUWp4WF84c3VLblRXNW1wMGRsb0RYWGxLTEdqNjdhY3g2N05hQTVIV2VPSFpJQ3d5NEFOOWZLSlpJWDBVRGtDNjlIcmo5cFdEcjVxQQ?oc=5",
+        "source": "Gulf Today",
+        "domain": "gulftoday.ae",
+        "date": "2026-11-24",
+        "description": "Abu Dhabi real estate FDI surges 309% to Dhs13.8 billion in first half  Gulf Today",
+        "hoursAgo": 65,
+        "score": 6,
+        "topic": "Real Estate & Construction",
+        "origin": "google-news"
+      }
+    ],
     "capital": [],
     "risk": [
       {
         "title": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate - Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVlVUMy1RUXY1ODBWR2FZaXUybTBRcTk4UlJaVDMxd0tEQTRfSzZRcmNXX2UxN0dWSF9hOW9IaXJpbDdRYWs5MGtyTTlxX0V6WVZvblBmdlZXbGJnTzdzRV95MXNBU1dWWnA0VS1nc2xCZTBtbHdyTkl0bmN2eEZCWE1oYW5YSU1iSmRPWmlzTDlfNDdHY3BuNi0wWm9UQ2FaMTNJT1hoVGpHa0oySkpKaWY3dktNTXdTMHZyYm9aeThxaVI4Sk0tdWM0MzIzSmfSAc8BQVVfeXFMTlZVVDMtUVF2NTgwVkdhWWl1Mm0wUXE5OFJSWlQzMXdLREE0X0s2UXJjV19lMTdHVkhfYTlvSGlyaWw3UWFrOTBrck05cV9FellWb25QZnZWV2xiZ083c0VfeTFzQVNXVlpwNFUtZ3NsQmUwbWx3ck5JdG5jdnhGQlhNaGFuWElNYkpkT1ppc0w5XzQ3R2NwbjYtMFpvVENhWjEzSU9YaFRqR2tKMkpKSmlmN3ZLTU13UzB2cmJvWnk4cWlSOEpNLXVjNDMyM0pn?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZXZkWkF0VU1GeHhqS1ViclVDM0VJMkp1WFNjYzdfcVBQWVpxVGl1X21XZkNfdGYtUWZUWW9lV2p1NU8zSVBIVDVyQ3B6MG9mNE9HZ0RzbjFhZGFMa3o2bmR4OFVubTRCQmtXRUphTllZRmJlS252T29USHhuSVphaU8zbFQ5dWxtb005UHRZRWd3T0lXYUtucVRHQ2FwT2ZPSnI0d20xcjM0aWFiQ0J6TUcybmFrNUtDeGVhY2pFTdIBzwFBVV95cUxOVlVUMy1RUXY1ODBWR2FZaXUybTBRcTk4UlJaVDMxd0tEQTRfSzZRcmNXX2UxN0dWSF9hOW9IaXJpbDdRYWs5MGtyTTlxX0V6WVZvblBmdlZXbGJnTzdzRV95MXNBU1dWWnA0VS1nc2xCZTBtbHdyTkl0bmN2eEZCWE1oYW5YSU1iSmRPWmlzTDlfNDdHY3BuNi0wWm9UQ2FaMTNJT1hoVGpHa0oySkpKaWY3dktNTXdTMHZyYm9aeThxaVI4Sk0tdWM0MzIzSmc?oc=5",
         "source": "Gulf News",
         "domain": "gulfnews.com",
         "date": "2026-11-26",
         "description": "UAE Free Zones: Transfer pricing compliance key to retaining 0% corporate tax rate  Gulf News",
-        "hoursAgo": 11,
+        "hoursAgo": 19,
         "score": 7,
         "topic": "Tax & Regulatory",
         "origin": "google-news"
@@ -46,7 +59,7 @@
         "domain": "gulfbusiness.com",
         "date": "2026-11-26",
         "description": "UAE Cabinet approves Agentic AI strategy, sets March 2027 launch for government AI concierge Mira  Gulf Business",
-        "hoursAgo": 9,
+        "hoursAgo": 17,
         "score": 7,
         "topic": "AI & Technology",
         "origin": "google-news"
@@ -58,12 +71,12 @@
         "domain": "gulfnews.com",
         "date": "2026-11-25",
         "description": "First-time buyers in Dubai can now buy ready homes with just a 10% down payment  Gulf News",
-        "hoursAgo": 36,
+        "hoursAgo": 44,
         "score": 6.5,
         "topic": "Global Economic Signals",
         "origin": "google-news"
       }
     ]
   },
-  "totalCount": 3
+  "totalCount": 4
 }
